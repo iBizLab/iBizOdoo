@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_mail/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.MAIL_MAIL"
+  },
+  "formCaption" : "发出邮件",
+  "name" : "发出邮件默认关系界面组"
+}

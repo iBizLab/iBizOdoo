@@ -1,0 +1,243 @@
+{
+  "aggMode" : "NONE",
+  "codeName" : "main",
+  "columnEnableFilter" : 2,
+  "columnEnableLink" : 2,
+  "controlType" : "GRID",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/hr_leave/PSGRIDS/main.json",
+  "getFetchPSControlAction" : {
+    "modelref" : true,
+    "id" : "fetch",
+    "actionType" : "DEDATASET",
+    "name" : "fetch",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/hr_leave.json"
+    }
+  },
+  "groupMode" : "NONE",
+  "logicName" : "主表格",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/hr_leave.json"
+  },
+  "getPSDEGridColumns" : [ {
+    "align" : "LEFT",
+    "cLConvertMode" : "FRONT",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.WRITE_UID"
+    },
+    "caption" : "更新人",
+    "codeName" : "write_uid",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "write_uid",
+    "excelCaption" : "更新人",
+    "name" : "write_uid",
+    "noPrivDisplayMode" : 1,
+    "getPSAppCodeList" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/SysOperator.json"
+    },
+    "getPSAppDEField" : {
+      "name" : "WRITE_UID",
+      "codeName" : "write_uid"
+    },
+    "width" : 150,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.WRITE_DATE"
+    },
+    "caption" : "更新时间",
+    "codeName" : "write_date",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "write_date",
+    "excelCaption" : "更新时间",
+    "name" : "write_date",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "WRITE_DATE",
+      "codeName" : "write_date"
+    },
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss",
+    "width" : 150,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  } ],
+  "getPSDEGridDataItems" : [ {
+    "dataType" : 25,
+    "name" : "write_uid",
+    "getPSAppDEField" : {
+      "name" : "WRITE_UID",
+      "codeName" : "write_uid"
+    }
+  }, {
+    "format" : "YYYY-MM-DD HH:mm:ss",
+    "dataType" : 5,
+    "name" : "write_date",
+    "getPSAppDEField" : {
+      "name" : "WRITE_DATE",
+      "codeName" : "write_date"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfdataaccaction",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "dataAccessAction" : true
+  }, {
+    "dataType" : 25,
+    "name" : "manager_id",
+    "getPSAppDEField" : {
+      "name" : "MANAGER_ID",
+      "codeName" : "manager_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "user_id",
+    "getPSAppDEField" : {
+      "name" : "USER_ID",
+      "codeName" : "user_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "message_main_attachment_id",
+    "getPSAppDEField" : {
+      "name" : "MESSAGE_MAIN_ATTACHMENT_ID",
+      "codeName" : "message_main_attachment_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "company_id",
+    "getPSAppDEField" : {
+      "name" : "COMPANY_ID",
+      "codeName" : "company_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "holiday_status_id",
+    "getPSAppDEField" : {
+      "name" : "HOLIDAY_STATUS_ID",
+      "codeName" : "holiday_status_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "department_id",
+    "getPSAppDEField" : {
+      "name" : "DEPARTMENT_ID",
+      "codeName" : "department_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "employee_company_id",
+    "getPSAppDEField" : {
+      "name" : "EMPLOYEE_COMPANY_ID",
+      "codeName" : "employee_company_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "employee_id",
+    "getPSAppDEField" : {
+      "name" : "EMPLOYEE_ID",
+      "codeName" : "employee_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "overtime_id",
+    "getPSAppDEField" : {
+      "name" : "OVERTIME_ID",
+      "codeName" : "overtime_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "second_approver_id",
+    "getPSAppDEField" : {
+      "name" : "SECOND_APPROVER_ID",
+      "codeName" : "second_approver_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "first_approver_id",
+    "getPSAppDEField" : {
+      "name" : "FIRST_APPROVER_ID",
+      "codeName" : "first_approver_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "resource_calendar_id",
+    "getPSAppDEField" : {
+      "name" : "RESOURCE_CALENDAR_ID",
+      "codeName" : "resource_calendar_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfmajortext",
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  } ],
+  "getPSDEGridEditItems" : [ {
+    "caption" : "标识",
+    "codeName" : "srfkey",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "getPSEditor" : {
+      "editorType" : "HIDDEN",
+      "name" : "srfkey"
+    },
+    "allowEmpty" : true
+  } ],
+  "pagingMode" : 1,
+  "pagingSize" : 20,
+  "getRemovePSControlAction" : {
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/hr_leave.json"
+    }
+  },
+  "sortMode" : "REMOTE",
+  "hasWFDataItems" : false,
+  "enableColFilter" : false,
+  "enableCustomized" : true,
+  "enableGroup" : false,
+  "enablePagingBar" : true,
+  "enableRowEdit" : false,
+  "enableRowEditOrder" : false,
+  "enableRowNew" : false,
+  "forceFit" : false,
+  "hideHeader" : false,
+  "noSort" : false,
+  "singleSelect" : false,
+  "modelid" : "ddd28b3e1058d34d78f4eb5a7e59dcc5",
+  "modeltype" : "PSDEGRID"
+}

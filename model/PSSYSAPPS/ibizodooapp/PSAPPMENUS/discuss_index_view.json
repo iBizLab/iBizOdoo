@@ -1,0 +1,27 @@
+{
+  "codeName" : "discuss_index_view",
+  "controlType" : "APPMENU",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPMENUS/discuss_index_view.json",
+  "logicName" : "讨论",
+  "getPSAppMenuItems" : [ {
+    "accUserMode" : 2,
+    "caption" : "讨论",
+    "itemType" : "MENUITEM",
+    "name" : "discuss",
+    "getPSAppFunc" : {
+      "modelref" : true,
+      "id" : "discuss"
+    },
+    "tooltip" : "讨论",
+    "openDefault" : true
+  }, {
+    "accUserMode" : 0,
+    "caption" : "配置",
+    "itemType" : "MENUITEM",
+    "name" : "discuss_config",
+    "tooltip" : "配置"
+  } ],
+  "name" : "discussindexview",
+  "modelid" : "47290d04eedc3abddcd83ad6d03c1226",
+  "modeltype" : "PSAPPMENU"
+}

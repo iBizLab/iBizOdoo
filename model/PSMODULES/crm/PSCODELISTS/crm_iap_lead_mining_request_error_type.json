@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "crm__crm_iap_lead_mining_request_error_type",
+  "codeListType" : "STATIC",
+  "codeName" : "crm_iap_lead_mining_request_error_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_error_type.json",
+  "emptyText" : "未定义",
+  "name" : "错误类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "credits",
+    "text" : "信用不足",
+    "value" : "credits"
+  }, {
+    "codeName" : "no_result",
+    "text" : "没有结果",
+    "value" : "no_result"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

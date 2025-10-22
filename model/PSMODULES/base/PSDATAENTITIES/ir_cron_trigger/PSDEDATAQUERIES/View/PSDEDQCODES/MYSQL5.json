@@ -1,0 +1,31 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`CALL_AT`",
+    "name" : "CALL_AT"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t11.`CRON_NAME`",
+    "name" : "CRON_CRON_NAME"
+  }, {
+    "expression" : "t1.`CRON_ID`",
+    "name" : "CRON_ID"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`CALL_AT`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt11.`CRON_NAME` AS `CRON_CRON_NAME`,\nt1.`CRON_ID`,\nt1.`ID`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `ir_cron_trigger` t1 \nLEFT JOIN `ir_cron` t11 ON t1.`CRON_ID` = t11.`ID` \n",
+  "id" : "PSMODULES/base/PSDATAENTITIES/ir_cron_trigger/PSDEDATAQUERIES/View/PSDEDQCODES/MYSQL5.json"
+}

@@ -1,0 +1,27 @@
+{
+  "codeName" : "contract",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_employee/PSDERS/DER1N_HR_EMPLOYEE_HR_CONTRACT_CONTRACT_ID.json",
+  "fKeyName" : "F54F319188D0AE9623",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_contract.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee.json"
+  },
+  "name" : "DER1N_HR_EMPLOYEE_HR_CONTRACT_CONTRACT_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "CONTRACT_ID",
+    "codeName" : "contract_id"
+  },
+  "pickupDEFName" : "CONTRACT_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "contract",
+  "enableFKey" : true
+}

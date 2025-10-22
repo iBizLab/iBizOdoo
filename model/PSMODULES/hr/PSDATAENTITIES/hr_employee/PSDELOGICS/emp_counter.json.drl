@@ -1,0 +1,20 @@
+package cn.ibizlab.ibizodoo.hr.logic.hr_employeelogic.emp_counter;
+        import java.util.Map;
+        import java.util.HashMap;
+        import com.alibaba.fastjson.JSONObject;
+        import org.springframework.util.StringUtils;
+        import org.springframework.util.ObjectUtils;
+        import cn.ibizlab.ibizodoo.util.errors.BadRequestAlertException;
+                global cn.ibizlab.ibizodoo.core.hr.domain.hr_employee hr_employeeemp_counterdefault;
+        global cn.ibizlab.ibizodoo.core.hr.service.Ihr_employeeService iBzSysHr_employeeDefaultService;
+        global cn.ibizlab.ibizodoo.util.security.AuthenticationUser curuser;
+
+
+    no-loop
+
+            //逻辑处理节点[开始]
+            rule "begin"
+            ruleflow-group "hr_employeeemp_counterbegin"
+            when
+            then
+            end

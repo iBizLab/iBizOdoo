@@ -1,0 +1,27 @@
+{
+  "codeName" : "mail_message",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_message/PSDERS/DER1N_MAIL_RESEND_MESSAGE_MAIL_MESSAGE_MAIL_MESSAGE_ID.json",
+  "fKeyName" : "F72C8A1B8D8FF37306",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_message.json"
+  },
+  "name" : "DER1N_MAIL_RESEND_MESSAGE_MAIL_MESSAGE_MAIL_MESSAGE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "MAIL_MESSAGE_ID",
+    "codeName" : "mail_message_id"
+  },
+  "pickupDEFName" : "MAIL_MESSAGE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "mail_message",
+  "enableFKey" : true
+}

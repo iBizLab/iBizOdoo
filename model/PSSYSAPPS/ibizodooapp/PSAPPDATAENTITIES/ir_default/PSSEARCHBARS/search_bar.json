@@ -1,0 +1,26 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_default/PSSEARCHBARS/search_bar.json",
+  "groupMode" : "AND",
+  "logicName" : "默认值搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_default.json"
+  },
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : false,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "19c6b3357e8b9adcf6ca84105cedfab9",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

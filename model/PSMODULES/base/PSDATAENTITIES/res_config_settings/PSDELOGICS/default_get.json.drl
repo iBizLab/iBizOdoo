@@ -1,0 +1,135 @@
+package cn.ibizlab.ibizodoo.base.logic.res_config_settingslogic.default_get;
+        import java.util.Map;
+        import java.util.HashMap;
+        import com.alibaba.fastjson.JSONObject;
+        import org.springframework.util.StringUtils;
+        import org.springframework.util.ObjectUtils;
+        import cn.ibizlab.ibizodoo.util.errors.BadRequestAlertException;
+                global cn.ibizlab.ibizodoo.core.base.domain.res_config_settings res_config_settingsdefault_getdefault;
+                global java.util.Map res_config_settingsdefault_getconfiglist;
+                global java.util.Map res_config_settingsdefault_getdefaultlist;
+                global java.util.Map res_config_settingsdefault_getgrouplist;
+                global java.util.Map res_config_settingsdefault_getmodulelist;
+                global cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter res_config_settingsdefault_getparameter_filter;
+                global cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter res_config_settingsdefault_getparameter_list;
+                global cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter res_config_settingsdefault_getparameter_temp;
+                    global cn.ibizlab.ibizodoo.core.base.service.Iir_config_parameterService ir_config_parameterservice;
+        global cn.ibizlab.ibizodoo.core.base.service.Ires_config_settingsService iBzSysRes_config_settingsDefaultService;
+        global cn.ibizlab.ibizodoo.util.security.AuthenticationUser curuser;
+
+
+    no-loop
+
+            //逻辑处理节点[开始]
+            rule "begin"
+            ruleflow-group "res_config_settingsdefault_getbegin"
+            when
+            then
+            end
+
+            //逻辑处理节点[分类属性]
+            rule "rawsfcode_01"
+            ruleflow-group "res_config_settingsdefault_getrawsfcode_01"
+            when
+            then
+                        update(res_config_settingsdefault_getdefault);//更新fact中变量值
+                        update(res_config_settingsdefault_getconfiglist);//更新fact中变量值
+                        update(res_config_settingsdefault_getdefaultlist);//更新fact中变量值
+                        update(res_config_settingsdefault_getgrouplist);//更新fact中变量值
+                        update(res_config_settingsdefault_getmodulelist);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_filter);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_list);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_temp);//更新fact中变量值
+            end
+
+            //逻辑处理节点[准备config过滤参数]
+            rule "prepareparam_01"
+            ruleflow-group "res_config_settingsdefault_getprepareparam_01"
+            when
+            then
+                            res_config_settingsdefault_getparameter_filter.set("n_key_in",res_config_settingsdefault_getconfiglist.get(""));
+                            res_config_settingsdefault_getparameter_filter.set("size","1000");
+                        update(res_config_settingsdefault_getdefault);//更新fact中变量值
+                        update(res_config_settingsdefault_getconfiglist);//更新fact中变量值
+                        update(res_config_settingsdefault_getdefaultlist);//更新fact中变量值
+                        update(res_config_settingsdefault_getgrouplist);//更新fact中变量值
+                        update(res_config_settingsdefault_getmodulelist);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_filter);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_list);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_temp);//更新fact中变量值
+            end
+
+            //逻辑处理节点[获取parameter数据]
+            rule "dedataset_01"
+            ruleflow-group "res_config_settingsdefault_getdedataset_01"
+            when
+            then
+                        update(res_config_settingsdefault_getdefault);//更新fact中变量值
+                        update(res_config_settingsdefault_getconfiglist);//更新fact中变量值
+                        update(res_config_settingsdefault_getdefaultlist);//更新fact中变量值
+                        update(res_config_settingsdefault_getgrouplist);//更新fact中变量值
+                        update(res_config_settingsdefault_getmodulelist);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_filter);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_list);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_temp);//更新fact中变量值
+            end
+
+            //逻辑处理节点[循环子调用]
+            rule "loopsubcall_01"
+            ruleflow-group "res_config_settingsdefault_getloopsubcall_01"
+            when
+            then
+                        update(res_config_settingsdefault_getdefault);//更新fact中变量值
+                        update(res_config_settingsdefault_getconfiglist);//更新fact中变量值
+                        update(res_config_settingsdefault_getdefaultlist);//更新fact中变量值
+                        update(res_config_settingsdefault_getgrouplist);//更新fact中变量值
+                        update(res_config_settingsdefault_getmodulelist);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_filter);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_list);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_temp);//更新fact中变量值
+            end
+
+            //逻辑处理节点[结束]
+            rule "end_02"
+            ruleflow-group "res_config_settingsdefault_getend_02"
+            when
+            then
+                        update(res_config_settingsdefault_getdefault);//更新fact中变量值
+                        update(res_config_settingsdefault_getconfiglist);//更新fact中变量值
+                        update(res_config_settingsdefault_getdefaultlist);//更新fact中变量值
+                        update(res_config_settingsdefault_getgrouplist);//更新fact中变量值
+                        update(res_config_settingsdefault_getmodulelist);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_filter);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_list);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_temp);//更新fact中变量值
+            end
+
+            //逻辑处理节点[回写参数]
+            rule "rawsfcode_02"
+            ruleflow-group "res_config_settingsdefault_getrawsfcode_02"
+            when
+            then
+                        update(res_config_settingsdefault_getdefault);//更新fact中变量值
+                        update(res_config_settingsdefault_getconfiglist);//更新fact中变量值
+                        update(res_config_settingsdefault_getdefaultlist);//更新fact中变量值
+                        update(res_config_settingsdefault_getgrouplist);//更新fact中变量值
+                        update(res_config_settingsdefault_getmodulelist);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_filter);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_list);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_temp);//更新fact中变量值
+            end
+
+            //逻辑处理节点[结束]
+            rule "end_01"
+            ruleflow-group "res_config_settingsdefault_getend_01"
+            when
+            then
+                        update(res_config_settingsdefault_getdefault);//更新fact中变量值
+                        update(res_config_settingsdefault_getconfiglist);//更新fact中变量值
+                        update(res_config_settingsdefault_getdefaultlist);//更新fact中变量值
+                        update(res_config_settingsdefault_getgrouplist);//更新fact中变量值
+                        update(res_config_settingsdefault_getmodulelist);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_filter);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_list);//更新fact中变量值
+                        update(res_config_settingsdefault_getparameter_temp);//更新fact中变量值
+            end

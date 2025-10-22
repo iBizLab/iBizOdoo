@@ -1,0 +1,26 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/hr_resume_line_type/PSSEARCHBARS/search_bar.json",
+  "groupMode" : "AND",
+  "logicName" : "简历明细的类型搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/hr_resume_line_type.json"
+  },
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : false,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "67d589f3fdc56b1844426b1b00d4e6e0",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

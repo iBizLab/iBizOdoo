@@ -1,0 +1,26 @@
+{
+  "actionMode" : "MOVEORDER",
+  "actionType" : "BUILTIN",
+  "codeName" : "MoveOrder",
+  "dataAccessAction" : "NONE",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_mail_server/PSDEACTIONS/MoveOrder.json",
+  "logicName" : "移动位置",
+  "name" : "MoveOrder",
+  "getPSDEActionInput" : {
+    "name" : "MoveOrderInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "ir_mail_server_dto"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "MoveOrderResult",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "ir_mail_server_dto"
+    },
+    "type" : "DTOS"
+  },
+  "builtinAction" : true
+}

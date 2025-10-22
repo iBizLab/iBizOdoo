@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_attendance_overtime/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.HR_ATTENDANCE_OVERTIME"
+  },
+  "formCaption" : "出勤 加班",
+  "name" : "出勤 加班默认关系界面组"
+}

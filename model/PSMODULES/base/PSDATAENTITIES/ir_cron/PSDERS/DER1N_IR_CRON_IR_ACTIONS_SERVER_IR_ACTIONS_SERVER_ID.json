@@ -1,0 +1,33 @@
+{
+  "codeName" : "ir_actions_server",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_cron/PSDERS/DER1N_IR_CRON_IR_ACTIONS_SERVER_IR_ACTIONS_SERVER_ID.json",
+  "fKeyName" : "FE4F1812FA0EBF8AA3",
+  "logicName" : "服务器动作",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_actions_server.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_cron.json"
+  },
+  "name" : "DER1N_IR_CRON_IR_ACTIONS_SERVER_IR_ACTIONS_SERVER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "IR_ACTIONS_SERVER_ID",
+    "codeName" : "ir_actions_server_id"
+  },
+  "getPSPickupTextDEField" : {
+    "name" : "NAME",
+    "codeName" : "name"
+  },
+  "pickupDEFName" : "IR_ACTIONS_SERVER_ID",
+  "removeActionType" : -1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "ir_actions_server",
+  "enableDEFieldWriteBack" : true,
+  "enableFKey" : true
+}

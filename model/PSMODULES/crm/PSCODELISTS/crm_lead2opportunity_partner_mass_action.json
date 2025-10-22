@@ -1,0 +1,37 @@
+{
+  "codeListTag" : "crm__crm_lead2opportunity_partner_mass_action",
+  "codeListType" : "STATIC",
+  "codeName" : "crm_lead2opportunity_partner_mass_action",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/crm/PSCODELISTS/crm_lead2opportunity_partner_mass_action.json",
+  "emptyText" : "未定义",
+  "name" : "相关客户",
+  "getPSCodeItems" : [ {
+    "codeName" : "create",
+    "text" : "创建新客户",
+    "value" : "create"
+  }, {
+    "codeName" : "exist",
+    "text" : "链接至现有客户",
+    "value" : "exist"
+  }, {
+    "codeName" : "nothing",
+    "text" : "不要链接至客户",
+    "value" : "nothing"
+  }, {
+    "codeName" : "each_exist_or_create",
+    "text" : "使用现有合作伙伴或创建合作伙伴",
+    "value" : "each_exist_or_create"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

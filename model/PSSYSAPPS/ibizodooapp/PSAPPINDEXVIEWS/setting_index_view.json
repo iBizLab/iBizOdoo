@@ -1,0 +1,1227 @@
+{
+  "accUserMode" : 0,
+  "appSwitchMode" : 1,
+  "caption" : "设置",
+  "codeName" : "setting_index_view",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPINDEXVIEWS/setting_index_view.json",
+  "mainMenuAlign" : "TOP",
+  "name" : "SettingIndexView",
+  "getPSAppModule" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPMODULES/base.json"
+  },
+  "getPSViewLayoutPanel" : {
+    "codeName" : "usr0816975858",
+    "controlType" : "VIEWLAYOUTPANEL",
+    "layoutMode" : "FLEX",
+    "logicName" : "AppIndexView",
+    "name" : "layoutpanel",
+    "getPSControlParam" : { },
+    "getPSLayout" : {
+      "layout" : "FLEX"
+    },
+    "getRootPSPanelItems" : [ {
+      "caption" : "滚动条容器",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "CONTAINER",
+      "name" : "container_scroll1",
+      "getPSLayout" : {
+        "layout" : "BORDER"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX"
+      },
+      "getPSPanelItems" : [ {
+        "caption" : "面板容器",
+        "contentWidth" : 100.0,
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "container_scroll_main",
+        "getPSLayout" : {
+          "layout" : "BORDER"
+        },
+        "getPSLayoutPos" : {
+          "layout" : "BORDER",
+          "layoutPos" : "CENTER",
+          "width" : 100,
+          "widthMode" : "PERCENTAGE"
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "容器",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "container6_all",
+          "getPSLayout" : {
+            "align" : "center",
+            "dir" : "row",
+            "layout" : "FLEX"
+          },
+          "getPSLayoutPos" : {
+            "heightMode" : "FULL",
+            "layout" : "BORDER",
+            "layoutPos" : "CENTER"
+          },
+          "getPSPanelItems" : [ {
+            "caption" : "容器",
+            "contentHeight" : 100.0,
+            "height" : 100.0,
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container4_all",
+            "getPSLayout" : {
+              "layout" : "FLEX"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "height" : 100,
+              "heightMode" : "FULL",
+              "layout" : "FLEX",
+              "widthMode" : "FULL"
+            },
+            "getPSPanelItems" : [ {
+              "caption" : "面包屑导航",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "RAWITEM",
+              "name" : "nav_breadcrumb",
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "getPSRawItem" : {
+                "name" : "nav_breadcrumb",
+                "predefinedType" : "NAV_BREADCRUMB"
+              },
+              "showCaption" : true
+            }, {
+              "caption" : "导航区占位",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "RAWITEM",
+              "name" : "nav_pos_index",
+              "getPSLayoutPos" : {
+                "grow" : 1,
+                "heightMode" : "FULL",
+                "layout" : "FLEX"
+              },
+              "getPSRawItem" : {
+                "name" : "nav_pos_index",
+                "predefinedType" : "NAV_POS_INDEX"
+              },
+              "showCaption" : true
+            } ]
+          } ]
+        }, {
+          "caption" : "标签",
+          "contentType" : "RAW",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "RAWITEM",
+          "name" : "static_label",
+          "getPSLayoutPos" : {
+            "layout" : "BORDER",
+            "layoutPos" : "CENTER"
+          },
+          "getPSRawItem" : {
+            "caption" : "标签",
+            "contentType" : "RAW",
+            "name" : "static_label",
+            "predefinedType" : "STATIC_LABEL",
+            "renderMode" : "PARAGRAPH"
+          },
+          "getPSSysPFPlugin" : {
+            "pluginType" : "CUSTOM",
+            "pluginCode" : "ODOO_CHAT",
+            "runtimeObject" : true
+          },
+          "rawContent" : "标签",
+          "showCaption" : true
+        } ],
+        "predefinedType" : "CONTAINER_SCROLL_MAIN",
+        "showCaption" : true
+      }, {
+        "caption" : "面板容器",
+        "contentHeight" : 60.0,
+        "height" : 60.0,
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "container_scroll_header",
+        "getPSLayout" : {
+          "layout" : "BORDER"
+        },
+        "getPSLayoutPos" : {
+          "height" : 60,
+          "heightMode" : "PX",
+          "layout" : "BORDER",
+          "layoutPos" : "NORTH"
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "容器",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "app_header",
+          "getPSLayout" : {
+            "align" : "center",
+            "dir" : "row",
+            "layout" : "FLEX",
+            "vAlign" : "center"
+          },
+          "getPSLayoutPos" : {
+            "heightMode" : "FULL",
+            "layout" : "BORDER",
+            "layoutPos" : "CENTER",
+            "widthMode" : "FULL"
+          },
+          "getPSPanelItems" : [ {
+            "caption" : "容器",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container7",
+            "getPSLayout" : {
+              "align" : "space-between",
+              "dir" : "row",
+              "layout" : "FLEX",
+              "vAlign" : "center"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX",
+              "widthMode" : "FULL"
+            },
+            "getPSPanelItems" : [ {
+              "caption" : "容器",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "CONTAINER",
+              "name" : "container2",
+              "getPSLayout" : {
+                "align" : "flex-start",
+                "dir" : "row",
+                "layout" : "FLEX",
+                "vAlign" : "center"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX",
+                "shrink" : 0
+              },
+              "getPSPanelItems" : [ {
+                "caption" : "应用切换器",
+                "contentType" : "USER",
+                "itemStyle" : "DEFAULT",
+                "itemType" : "RAWITEM",
+                "name" : "app_switch",
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "layout" : "FLEX",
+                  "spacingLeft" : "OUTERMEDIUM"
+                },
+                "getPSRawItem" : {
+                  "contentType" : "USER",
+                  "name" : "app_switch",
+                  "getPSRawItemParams" : [ {
+                    "key" : "sourcetype",
+                    "value" : "UTIL"
+                  } ],
+                  "predefinedType" : "APP_SWITCH"
+                },
+                "showCaption" : true
+              }, {
+                "caption" : "首页菜单",
+                "contentHeight" : 60.0,
+                "contentWidth" : 800.0,
+                "height" : 60.0,
+                "itemStyle" : "DEFAULT",
+                "itemType" : "CTRLPOS",
+                "name" : "appmenu",
+                "getPSLayoutPos" : {
+                  "grow" : 1,
+                  "height" : 60,
+                  "heightMode" : "PX",
+                  "layout" : "FLEX",
+                  "width" : 800,
+                  "widthMode" : "PX"
+                },
+                "width" : 800.0,
+                "showCaption" : true
+              } ]
+            }, {
+              "caption" : "容器",
+              "contentHeight" : 52.0,
+              "height" : 52.0,
+              "itemStyle" : "DEFAULT",
+              "itemType" : "CONTAINER",
+              "name" : "container",
+              "getPSLayout" : {
+                "align" : "center",
+                "layout" : "FLEX",
+                "vAlign" : "center"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "height" : 52,
+                "heightMode" : "PX",
+                "layout" : "FLEX",
+                "shrink" : 0
+              },
+              "getPSPanelItems" : [ {
+                "caption" : "搜索栏",
+                "contentType" : "RAW",
+                "itemStyle" : "DEFAULT",
+                "itemType" : "RAWITEM",
+                "name" : "index_view_search",
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "layout" : "FLEX"
+                },
+                "getPSRawItem" : {
+                  "caption" : "文本内容",
+                  "contentType" : "RAW",
+                  "name" : "index_view_search",
+                  "predefinedType" : "INDEX_VIEW_SEARCH",
+                  "renderMode" : "TEXT"
+                },
+                "rawContent" : "文本内容",
+                "showCaption" : true
+              } ]
+            }, {
+              "caption" : "容器",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "CONTAINER",
+              "name" : "indexactions",
+              "getPSLayout" : {
+                "align" : "space-between",
+                "dir" : "row",
+                "layout" : "FLEX",
+                "vAlign" : "center"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX",
+                "shrink" : 0
+              },
+              "getPSPanelItems" : [ {
+                "caption" : "容器",
+                "contentHeight" : 48.0,
+                "contentWidth" : 48.0,
+                "height" : 48.0,
+                "itemStyle" : "DEFAULT",
+                "itemType" : "CONTAINER",
+                "name" : "container1",
+                "getPSLayout" : {
+                  "layout" : "FLEX"
+                },
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "height" : 48,
+                  "heightMode" : "PX",
+                  "layout" : "FLEX",
+                  "width" : 48,
+                  "widthMode" : "PX"
+                },
+                "getPSPanelItems" : [ {
+                  "caption" : "消息通知",
+                  "contentType" : "IMAGE",
+                  "itemStyle" : "DEFAULT",
+                  "itemType" : "RAWITEM",
+                  "name" : "usermessage",
+                  "getPSLayoutPos" : {
+                    "grow" : -1,
+                    "heightMode" : "FULL",
+                    "layout" : "FLEX",
+                    "widthMode" : "FULL"
+                  },
+                  "getPSRawItem" : {
+                    "contentType" : "IMAGE",
+                    "name" : "usermessage",
+                    "predefinedType" : "USERMESSAGE"
+                  },
+                  "showCaption" : true
+                } ],
+                "width" : 48.0
+              }, {
+                "caption" : "用户信息",
+                "contentHeight" : 60.0,
+                "height" : 60.0,
+                "itemStyle" : "DEFAULT",
+                "itemType" : "RAWITEM",
+                "name" : "auth_userinfo",
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "height" : 60,
+                  "heightMode" : "PX",
+                  "layout" : "FLEX",
+                  "shrink" : 0
+                },
+                "getPSRawItem" : {
+                  "name" : "auth_userinfo",
+                  "getPSRawItemParams" : [ {
+                    "key" : "AVATAR",
+                    "value" : "avatar"
+                  }, {
+                    "key" : "TITLE",
+                    "value" : "srfusername"
+                  }, {
+                    "key" : "SUBTITLE",
+                    "value" : "loginname"
+                  }, {
+                    "key" : "NAVVIEWNAME",
+                    "value" : "res_users_info_custom_view"
+                  } ],
+                  "predefinedType" : "AUTH_USERINFO",
+                  "rawItemHeight" : 60.0
+                },
+                "getPSSysPFPlugin" : {
+                  "pluginType" : "CUSTOM",
+                  "pluginCode" : "CUSTOM_AUTH_USERINFO",
+                  "runtimeObject" : true
+                },
+                "rawItemHeight" : 60.0,
+                "showCaption" : true
+              } ],
+              "predefinedType" : "INDEX_ACTIONS"
+            } ]
+          } ],
+          "predefinedType" : "AppHeader"
+        } ],
+        "predefinedType" : "CONTAINER_SCROLL_HEADER",
+        "showCaption" : true
+      } ],
+      "predefinedType" : "CONTAINER_SCROLL"
+    } ],
+    "layoutBodyOnly" : false,
+    "layoutPanel" : true,
+    "useDefaultLayout" : false,
+    "viewProxyMode" : true,
+    "modelid" : "21f3f21b39a12e6aa06af432c6ee2d0b",
+    "modeltype" : "PSSYSVIEWLAYOUTPANEL",
+    "getPSControls" : [ {
+      "appMenuStyle" : "EXTVIEW1",
+      "codeName" : "setting_index_view",
+      "controlStyle" : "EXTVIEW1",
+      "controlType" : "APPMENU",
+      "layoutMode" : "TABLE_24COL",
+      "logicName" : "设置首页视图",
+      "name" : "appmenu",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "一般设置",
+        "itemType" : "MENUITEM",
+        "name" : "base_config_setting",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "employee_modifysetting"
+        },
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "tooltip" : "一般设置",
+        "openDefault" : true
+      }, {
+        "accUserMode" : 0,
+        "caption" : "用户和公司",
+        "itemType" : "MENUITEM",
+        "name" : "userandcompany",
+        "getPSAppMenuItems" : [ {
+          "accUserMode" : 2,
+          "caption" : "用户",
+          "itemType" : "MENUITEM",
+          "name" : "base_user",
+          "getPSAppFunc" : {
+            "modelref" : true,
+            "id" : "user"
+          },
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "用户"
+        }, {
+          "accUserMode" : 2,
+          "caption" : "群组",
+          "itemType" : "MENUITEM",
+          "name" : "base_group",
+          "getPSAppFunc" : {
+            "modelref" : true,
+            "id" : "group"
+          },
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "群组"
+        }, {
+          "accUserMode" : 2,
+          "caption" : "公司",
+          "itemType" : "MENUITEM",
+          "name" : "base_company",
+          "getPSAppFunc" : {
+            "modelref" : true,
+            "id" : "company"
+          },
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "公司"
+        } ],
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "tooltip" : "用户和公司"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "模块",
+        "itemType" : "MENUITEM",
+        "name" : "base_module",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "ir_module_module"
+        },
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "tooltip" : "模块"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "应用市场",
+        "itemType" : "MENUITEM",
+        "name" : "base_market",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "app_market"
+        },
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "tooltip" : "应用市场"
+      }, {
+        "accUserMode" : 0,
+        "caption" : "技术",
+        "itemType" : "MENUITEM",
+        "name" : "config",
+        "getPSAppMenuItems" : [ {
+          "accUserMode" : 0,
+          "caption" : "讨论",
+          "itemType" : "MENUITEM",
+          "name" : "discuss",
+          "getPSAppMenuItems" : [ {
+            "accUserMode" : 2,
+            "caption" : "消息",
+            "itemType" : "MENUITEM",
+            "name" : "mail_message",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "message"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "消息"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "通知",
+            "itemType" : "MENUITEM",
+            "name" : "mail_notification",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "notification"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "通知"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "关注者",
+            "itemType" : "MENUITEM",
+            "name" : "mail_followers",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "followers"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "关注者"
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "讨论"
+        }, {
+          "accUserMode" : 0,
+          "itemType" : "SEPERATOR",
+          "name" : "seperator2",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "seperator" : true
+        }, {
+          "accUserMode" : 0,
+          "caption" : "活动",
+          "itemType" : "MENUITEM",
+          "name" : "activity",
+          "getPSAppMenuItems" : [ {
+            "accUserMode" : 2,
+            "caption" : "活动概览",
+            "itemType" : "MENUITEM",
+            "name" : "mail_activity",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "mail_activity"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "活动概览"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "活动类型",
+            "itemType" : "MENUITEM",
+            "name" : "mail_activity_type",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "mail_activity_type"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "活动类型"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "活动计划",
+            "itemType" : "MENUITEM",
+            "name" : "mail_activity_plan",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "mail_activity_plan2"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "活动计划"
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "活动"
+        }, {
+          "accUserMode" : 0,
+          "itemType" : "SEPERATOR",
+          "name" : "seperator8",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "seperator" : true
+        }, {
+          "accUserMode" : 0,
+          "caption" : "邮箱",
+          "itemType" : "MENUITEM",
+          "name" : "mail",
+          "getPSAppMenuItems" : [ {
+            "accUserMode" : 2,
+            "caption" : "EMail",
+            "itemType" : "MENUITEM",
+            "name" : "mail_mail",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "mail"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "EMail"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "发送服务器",
+            "itemType" : "MENUITEM",
+            "name" : "base_mail_server",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "mail_server"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "发送服务器"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "收件服务器",
+            "itemType" : "MENUITEM",
+            "name" : "mail_fetchmail_server",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "fetchmail_server"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "收件服务器"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "EMail模板",
+            "itemType" : "MENUITEM",
+            "name" : "mail_template",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "mail_template"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "EMail模板"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "别名",
+            "itemType" : "MENUITEM",
+            "name" : "mail_alias",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "mail_alias"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "别名"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "别名域",
+            "itemType" : "MENUITEM",
+            "name" : "mail_alias_domain",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "mail_alias_domain"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "别名域"
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "邮箱"
+        }, {
+          "accUserMode" : 0,
+          "itemType" : "SEPERATOR",
+          "name" : "seperator7",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "seperator" : true
+        }, {
+          "accUserMode" : 0,
+          "caption" : "操作",
+          "itemType" : "MENUITEM",
+          "name" : "operation",
+          "getPSAppMenuItems" : [ {
+            "accUserMode" : 2,
+            "caption" : "服务器操作",
+            "itemType" : "MENUITEM",
+            "name" : "base_actions_server",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "actions_server"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "服务器操作"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "用户定义的默认值",
+            "itemType" : "MENUITEM",
+            "name" : "base_default",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "ir_default"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "用户定义的默认值"
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "操作"
+        }, {
+          "accUserMode" : 0,
+          "itemType" : "SEPERATOR",
+          "name" : "seperator5",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "seperator" : true
+        }, {
+          "accUserMode" : 0,
+          "caption" : "数据库结构",
+          "itemType" : "MENUITEM",
+          "name" : "database_structure",
+          "getPSAppMenuItems" : [ {
+            "accUserMode" : 2,
+            "caption" : "模型",
+            "itemType" : "MENUITEM",
+            "name" : "base_model",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "model"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "模型"
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "数据库结构"
+        }, {
+          "accUserMode" : 0,
+          "itemType" : "SEPERATOR",
+          "name" : "seperator6",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "seperator" : true
+        }, {
+          "accUserMode" : 0,
+          "caption" : "自动化",
+          "itemType" : "MENUITEM",
+          "name" : "automation",
+          "getPSAppMenuItems" : [ {
+            "accUserMode" : 2,
+            "caption" : "计划的操作",
+            "itemType" : "MENUITEM",
+            "name" : "base_cron",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "cron"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "计划的操作"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "计划行动触发器",
+            "itemType" : "MENUITEM",
+            "name" : "base_cron_trigger",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "cron_trigger"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "计划行动触发器"
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "自动化"
+        }, {
+          "accUserMode" : 0,
+          "itemType" : "SEPERATOR",
+          "name" : "seperator4",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "seperator" : true
+        }, {
+          "accUserMode" : 2,
+          "caption" : "系统参数",
+          "itemType" : "MENUITEM",
+          "name" : "base_config_param",
+          "getPSAppFunc" : {
+            "modelref" : true,
+            "id" : "config_parameter"
+          },
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "系统参数"
+        }, {
+          "accUserMode" : 0,
+          "itemType" : "SEPERATOR",
+          "name" : "seperator1",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "seperator" : true
+        }, {
+          "accUserMode" : 0,
+          "caption" : "安全",
+          "itemType" : "MENUITEM",
+          "name" : "safety",
+          "getPSAppMenuItems" : [ {
+            "accUserMode" : 2,
+            "caption" : "记录规则",
+            "itemType" : "MENUITEM",
+            "name" : "base_rule",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "rule"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "记录规则"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "访问权限",
+            "itemType" : "MENUITEM",
+            "name" : "base_model_access",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "ir_model_access"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "访问权限"
+          }, {
+            "accUserMode" : 2,
+            "caption" : "统一资源",
+            "itemType" : "MENUITEM",
+            "name" : "base_extend_unires",
+            "getPSAppFunc" : {
+              "modelref" : true,
+              "id" : "unires"
+            },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "tooltip" : "统一资源"
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "安全"
+        }, {
+          "accUserMode" : 0,
+          "itemType" : "SEPERATOR",
+          "name" : "seperator3",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "seperator" : true
+        }, {
+          "accUserMode" : 2,
+          "caption" : "应用分类",
+          "itemType" : "MENUITEM",
+          "name" : "base_module_category",
+          "getPSAppFunc" : {
+            "modelref" : true,
+            "id" : "ir_module_category"
+          },
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "tooltip" : "应用分类"
+        } ],
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "tooltip" : "技术"
+      } ],
+      "getPSControlHandler" : {
+        "enableDEFieldPrivilege" : false,
+        "id" : "appmenu"
+      },
+      "getPSControlParam" : {
+        "autoLoad" : true,
+        "showBusyIndicator" : true
+      },
+      "getPSLayout" : {
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "modelid" : "ee54fe6b6d5724649ed016e36e88b06c",
+      "modeltype" : "PSAPPMENU"
+    }, {
+      "caption" : "设置",
+      "codeName" : "captionbar",
+      "controlType" : "CAPTIONBAR",
+      "name" : "captionbar",
+      "getPSControlParam" : { },
+      "subCaption" : "设置"
+    } ]
+  },
+  "subCaption" : "设置",
+  "title" : "设置",
+  "userTag4" : "9999",
+  "viewStyle" : "DEFAULT",
+  "viewType" : "APPINDEXVIEW",
+  "blankMode" : false,
+  "enableAppSwitch" : true,
+  "enableDP" : true,
+  "modelid" : "88f77fdace3687e3607d1c1b569380ea",
+  "modeltype" : "PSAPPINDEXVIEW"
+}

@@ -1,0 +1,27 @@
+{
+  "codeName" : "author",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report/PSDERS/DER1N_CRM_ACTIVITY_REPORT_RES_PARTNER_AUTHOR_ID.json",
+  "fKeyName" : "FAB36AC74797393125",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report.json"
+  },
+  "name" : "DER1N_CRM_ACTIVITY_REPORT_RES_PARTNER_AUTHOR_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "AUTHOR_ID",
+    "codeName" : "author_id"
+  },
+  "pickupDEFName" : "AUTHOR_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "author",
+  "enableFKey" : true
+}

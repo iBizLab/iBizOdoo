@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_type_mail_template_rel/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.MAIL_ACTIVITY_TYPE_MAIL_TEMPLATE_REL"
+  },
+  "formCaption" : "活动类型模板",
+  "name" : "活动类型模板默认关系界面组"
+}

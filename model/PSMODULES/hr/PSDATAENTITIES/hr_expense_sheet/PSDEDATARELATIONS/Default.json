@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_sheet/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.HR_EXPENSE_SHEET"
+  },
+  "formCaption" : "费用报表",
+  "name" : "费用报表默认关系界面组"
+}

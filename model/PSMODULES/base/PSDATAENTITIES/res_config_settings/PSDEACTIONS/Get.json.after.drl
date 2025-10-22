@@ -1,0 +1,27 @@
+global cn.ibizlab.ibizodoo.core.base.service.Ires_config_settingsService  resConfigSettingsService;
+global cn.ibizlab.ibizodoo.core.base.domain.res_config_settings et;
+
+    no-loop
+
+    rule "res_config_settingsdefault_get"
+    ruleflow-group "95d7c6f540e9eb5bd0ad6f344f0bf07a"
+    when
+    then
+    cn.ibizlab.ibizodoo.core.base.domain.res_config_settings actionLogicDE =new cn.ibizlab.ibizodoo.core.base.domain.res_config_settings();
+    et.copyTo(actionLogicDE,true);
+    resConfigSettingsService.default_get(actionLogicDE);
+    end
+
+    rule "res_config_settingsget_values"
+    ruleflow-group "9328104053b6445417c0fbb8749a921d"
+    when
+    then
+        try {
+    cn.ibizlab.ibizodoo.core.base.domain.res_config_settings actionLogicDE =new cn.ibizlab.ibizodoo.core.base.domain.res_config_settings();
+    et.copyTo(actionLogicDE,true);
+    resConfigSettingsService.get_values(actionLogicDE);
+        }
+        catch(Exception e) {
+            log.error("执行[get_values]行为附加逻辑发生异常");
+        }
+    end

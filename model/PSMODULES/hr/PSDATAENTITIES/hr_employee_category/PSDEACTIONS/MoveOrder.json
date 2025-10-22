@@ -1,0 +1,25 @@
+{
+  "actionMode" : "MOVEORDER",
+  "actionType" : "BUILTIN",
+  "codeName" : "MoveOrder",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_category/PSDEACTIONS/MoveOrder.json",
+  "logicName" : "移动位置",
+  "name" : "MoveOrder",
+  "getPSDEActionInput" : {
+    "name" : "MoveOrderInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "hr_employee_category_dto"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "MoveOrderResult",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "hr_employee_category_dto"
+    },
+    "type" : "DTOS"
+  },
+  "builtinAction" : true
+}

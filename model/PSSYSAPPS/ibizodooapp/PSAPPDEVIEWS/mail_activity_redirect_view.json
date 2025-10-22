@@ -1,0 +1,181 @@
+{
+  "accUserMode" : 2,
+  "getCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.MAIL_ACTIVITY"
+  },
+  "caption" : "活动",
+  "codeName" : "mail_activity_redirect_view",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_redirect_view.json",
+  "funcViewMode" : "REDIRECTVIEW",
+  "getGetDataPSAppDEAction" : {
+    "modelref" : true,
+    "id" : "get"
+  },
+  "name" : "mail_activityredirect_view",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+  },
+  "getPSAppModule" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPMODULES/mail.json"
+  },
+  "getPSAppViewRefs" : [ {
+    "name" : "CRM_LEAD",
+    "getPSNavigateContexts" : [ {
+      "key" : "CRM_LEAD",
+      "name" : "CRM_LEAD",
+      "value" : "res_id",
+      "rawValue" : false
+    } ],
+    "realTitle" : "线索/商机编辑视图",
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/crm_lead_main_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  }, {
+    "name" : "HR_DEPARTMENT",
+    "getPSNavigateContexts" : [ {
+      "key" : "HR_DEPARTMENT",
+      "name" : "HR_DEPARTMENT",
+      "value" : "res_id",
+      "rawValue" : false
+    } ],
+    "realTitle" : "部门",
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_department_main_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  }, {
+    "name" : "RES_PARTNER",
+    "getPSNavigateContexts" : [ {
+      "key" : "RES_PARTNER",
+      "name" : "RES_PARTNER",
+      "value" : "res_id",
+      "rawValue" : false
+    } ],
+    "realTitle" : "联系人",
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_partner_main_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  }, {
+    "name" : "RES_COMPANY",
+    "getPSNavigateContexts" : [ {
+      "key" : "RES_COMPANY",
+      "name" : "RES_COMPANY",
+      "value" : "res_id",
+      "rawValue" : false
+    } ],
+    "realTitle" : "公司",
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_company_main_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  }, {
+    "name" : "HR_EMPLOYEE",
+    "getPSNavigateContexts" : [ {
+      "key" : "HR_EMPLOYEE",
+      "name" : "HR_EMPLOYEE",
+      "value" : "res_id",
+      "rawValue" : false
+    } ],
+    "realOpenMode" : "INDEXVIEWTAB",
+    "realTitle" : "员工编辑视图",
+    "getRealTitlePSLanguageRes" : {
+      "lanResTag" : "PAGE.TITLE.HR_EMPLOYEE.MAIN_VIEW"
+    },
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_main_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  } ],
+  "getPSControls" : [ {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DE.LNAME.MAIL_ACTIVITY"
+    },
+    "caption" : "活动",
+    "codeName" : "redirect_view_captionbar",
+    "controlType" : "CAPTIONBAR",
+    "name" : "captionbar",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+    },
+    "getPSControlParam" : { }
+  } ],
+  "getPSDEViewCodeName" : "redirect_view",
+  "getPSDEViewId" : "aa2a0147be05226e741c90da46aa192e",
+  "getPSViewLayoutPanel" : {
+    "codeName" : "layoutpanel",
+    "controlStyle" : "APPDEREDIRECTVIEW",
+    "controlType" : "VIEWLAYOUTPANEL",
+    "name" : "layoutpanel",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+    },
+    "getPSControlParam" : { },
+    "layoutBodyOnly" : true,
+    "layoutPanel" : true,
+    "useDefaultLayout" : true
+  },
+  "getRedirectPSAppViewRefs" : [ {
+    "name" : "MAIL_ACTIVITY:EDITVIEW",
+    "realTitle" : "活动编辑视图",
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_edit_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  }, {
+    "name" : "EDITVIEW",
+    "realTitle" : "活动编辑视图",
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_edit_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  } ],
+  "title" : "活动实体数据重定向视图",
+  "getTypePSAppDEField" : {
+    "name" : "RES_MODEL",
+    "codeName" : "res_model"
+  },
+  "viewStyle" : "DEFAULT",
+  "viewType" : "DEREDIRECTVIEW",
+  "enableCustomGetDataAction" : true,
+  "enableDP" : true,
+  "enableWorkflow" : true,
+  "redirectView" : true,
+  "modelid" : "2eefd1ecd077322045dddb3ef3398b53",
+  "modeltype" : "PSAPPDEVIEW",
+  "getPSAppDERSPaths" : [ [ {
+    "actionRSMode" : 1,
+    "codeName" : "mail_activities",
+    "dataRSMode" : 0,
+    "majorDECodeName" : "mail_activity_mixin",
+    "majorDEName" : "MAIL_ACTIVITY_MIXIN",
+    "getMajorPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity_mixin.json"
+    },
+    "minorDECodeName" : "mail_activity",
+    "minorDEName" : "MAIL_ACTIVITY",
+    "getMinorPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+    },
+    "name" : "活动Mixin-活动",
+    "getParentPSAppDEField" : {
+      "name" : "RES_ID",
+      "codeName" : "res_id"
+    },
+    "rSMode" : 2
+  } ] ]
+}

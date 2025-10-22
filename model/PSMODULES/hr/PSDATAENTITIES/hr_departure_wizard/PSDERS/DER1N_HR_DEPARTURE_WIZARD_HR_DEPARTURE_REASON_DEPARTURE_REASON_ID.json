@@ -1,0 +1,27 @@
+{
+  "codeName" : "departure_reason",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_departure_wizard/PSDERS/DER1N_HR_DEPARTURE_WIZARD_HR_DEPARTURE_REASON_DEPARTURE_REASON_ID.json",
+  "fKeyName" : "F82DE0C5FC3CC068D9",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_departure_reason.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_departure_wizard.json"
+  },
+  "name" : "DER1N_HR_DEPARTURE_WIZARD_HR_DEPARTURE_REASON_DEPARTURE_REASON_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "DEPARTURE_REASON_ID",
+    "codeName" : "departure_reason_id"
+  },
+  "pickupDEFName" : "DEPARTURE_REASON_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "departure_reason",
+  "enableFKey" : true
+}

@@ -1,0 +1,27 @@
+{
+  "codeName" : "crm_team",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_team_member/PSDERS/DER1N_CRM_TEAM_MEMBER_CRM_TEAM_CRM_TEAM_ID.json",
+  "fKeyName" : "F8BE850DB11EEC81B2",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team_member.json"
+  },
+  "name" : "DER1N_CRM_TEAM_MEMBER_CRM_TEAM_CRM_TEAM_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "CRM_TEAM_ID",
+    "codeName" : "crm_team_id"
+  },
+  "pickupDEFName" : "CRM_TEAM_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "crm_team",
+  "enableFKey" : true
+}

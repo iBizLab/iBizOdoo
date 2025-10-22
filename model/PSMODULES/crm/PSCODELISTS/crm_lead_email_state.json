@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "crm__crm_lead_email_state",
+  "codeListType" : "STATIC",
+  "codeName" : "crm_lead_email_state",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/crm/PSCODELISTS/crm_lead_email_state.json",
+  "emptyText" : "未定义",
+  "name" : "电子邮件质量",
+  "getPSCodeItems" : [ {
+    "codeName" : "correct",
+    "text" : "正确",
+    "value" : "correct"
+  }, {
+    "codeName" : "incorrect",
+    "text" : "不正确",
+    "value" : "incorrect"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

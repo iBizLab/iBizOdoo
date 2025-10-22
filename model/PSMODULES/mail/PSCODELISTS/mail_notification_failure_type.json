@@ -1,0 +1,121 @@
+{
+  "codeListTag" : "mail__mail_notification_failure_type",
+  "codeListType" : "STATIC",
+  "codeName" : "mail_notification_failure_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/mail/PSCODELISTS/mail_notification_failure_type.json",
+  "emptyText" : "未定义",
+  "name" : "失败类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "unknown",
+    "text" : "未知错误",
+    "value" : "unknown"
+  }, {
+    "codeName" : "mail_bounce",
+    "text" : "退回",
+    "value" : "mail_bounce"
+  }, {
+    "codeName" : "mail_email_invalid",
+    "text" : "无效的EMail地址",
+    "value" : "mail_email_invalid"
+  }, {
+    "codeName" : "mail_email_missing",
+    "text" : "缺少电子邮件地址",
+    "value" : "mail_email_missing"
+  }, {
+    "codeName" : "mail_from_invalid",
+    "text" : "来自地址无效",
+    "value" : "mail_from_invalid"
+  }, {
+    "codeName" : "mail_from_missing",
+    "text" : "地址丢失",
+    "value" : "mail_from_missing"
+  }, {
+    "codeName" : "mail_smtp",
+    "text" : "连接失败(发件服务器问题)",
+    "value" : "mail_smtp"
+  }, {
+    "codeName" : "sms_number_missing",
+    "text" : "遗失号码",
+    "value" : "sms_number_missing"
+  }, {
+    "codeName" : "sms_number_format",
+    "text" : "错误的数字格式",
+    "value" : "sms_number_format"
+  }, {
+    "codeName" : "sms_credit",
+    "text" : "信用不足",
+    "value" : "sms_credit"
+  }, {
+    "codeName" : "sms_country_not_supported",
+    "text" : "不支持的国家",
+    "value" : "sms_country_not_supported"
+  }, {
+    "codeName" : "sms_registration_needed",
+    "text" : "需要进行国别注册",
+    "value" : "sms_registration_needed"
+  }, {
+    "codeName" : "sms_server",
+    "text" : "服务器错误",
+    "value" : "sms_server"
+  }, {
+    "codeName" : "sms_acc",
+    "text" : "未注册的账户",
+    "value" : "sms_acc"
+  }, {
+    "codeName" : "sms_expired",
+    "text" : "过期",
+    "value" : "sms_expired"
+  }, {
+    "codeName" : "sms_invalid_destination",
+    "text" : "无效目的地",
+    "value" : "sms_invalid_destination"
+  }, {
+    "codeName" : "sms_not_allowed",
+    "text" : "不允许",
+    "value" : "sms_not_allowed"
+  }, {
+    "codeName" : "sms_not_delivered",
+    "text" : "已发货",
+    "value" : "sms_not_delivered"
+  }, {
+    "codeName" : "sms_rejected",
+    "text" : "拒绝",
+    "value" : "sms_rejected"
+  }, {
+    "codeName" : "sn_credit",
+    "text" : "蜗牛信用错误",
+    "value" : "sn_credit"
+  }, {
+    "codeName" : "sn_trial",
+    "text" : "蜗牛邮件试用错误",
+    "value" : "sn_trial"
+  }, {
+    "codeName" : "sn_price",
+    "text" : "蜗居 没有提供价格",
+    "value" : "sn_price"
+  }, {
+    "codeName" : "sn_fields",
+    "text" : "蜗牛邮件缺少必要的字段",
+    "value" : "sn_fields"
+  }, {
+    "codeName" : "sn_format",
+    "text" : "蜗牛邮件格式错误",
+    "value" : "sn_format"
+  }, {
+    "codeName" : "sn_error",
+    "text" : "蜗牛邮件未知错误",
+    "value" : "sn_error"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

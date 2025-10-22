@@ -1,0 +1,311 @@
+{
+  "aggMode" : "NONE",
+  "codeName" : "main",
+  "columnEnableFilter" : 2,
+  "columnEnableLink" : 2,
+  "controlType" : "GRID",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_notification/PSGRIDS/main.json",
+  "getFetchPSControlAction" : {
+    "modelref" : true,
+    "id" : "fetch",
+    "actionType" : "DEDATASET",
+    "name" : "fetch",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_notification.json"
+    }
+  },
+  "groupMode" : "NONE",
+  "logicName" : "主表格",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_notification.json"
+  },
+  "getPSDEGridColumns" : [ {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "caption" : "消息",
+    "codeName" : "mail_message_record_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "mail_message_record_name",
+    "excelCaption" : "消息",
+    "getLinkPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_main_view.json",
+      "viewType" : "DEEDITVIEW"
+    },
+    "linkValueItem" : "mail_message_id",
+    "name" : "mail_message_record_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "MAIL_MESSAGE_RECORD_NAME",
+      "codeName" : "mail_message_record_name"
+    },
+    "width" : 250,
+    "widthUnit" : "PX",
+    "enableLinkView" : true,
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "FRONT",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.MAIL_NOTIFICATION.NOTIFICATION_TYPE"
+    },
+    "caption" : "通知类型",
+    "codeName" : "notification_type",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "notification_type",
+    "excelCaption" : "通知类型",
+    "name" : "notification_type",
+    "noPrivDisplayMode" : 1,
+    "getPSAppCodeList" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__mail_notification_notification_type.json"
+    },
+    "getPSAppDEField" : {
+      "name" : "NOTIFICATION_TYPE",
+      "codeName" : "notification_type"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "caption" : "收件人",
+    "codeName" : "res_partner_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "res_partner_name",
+    "excelCaption" : "收件人",
+    "name" : "res_partner_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "RES_PARTNER_NAME",
+      "codeName" : "res_partner_name"
+    },
+    "width" : 250,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.MAIL_NOTIFICATION.SMS_NUMBER"
+    },
+    "caption" : "短信息号码",
+    "codeName" : "sms_number",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "sms_number",
+    "excelCaption" : "短信息号码",
+    "name" : "sms_number",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "SMS_NUMBER",
+      "codeName" : "sms_number"
+    },
+    "width" : 250,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "FRONT",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.MAIL_NOTIFICATION.IS_READ"
+    },
+    "caption" : "已读",
+    "codeName" : "is_read",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "is_read",
+    "excelCaption" : "已读",
+    "name" : "is_read",
+    "noPrivDisplayMode" : 1,
+    "getPSAppCodeList" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/YesNo.json"
+    },
+    "getPSAppDEField" : {
+      "name" : "IS_READ",
+      "codeName" : "is_read"
+    },
+    "width" : 100,
+    "widthUnit" : "PX",
+    "enableRowEdit" : true,
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "FRONT",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.MAIL_NOTIFICATION.FAILURE_TYPE"
+    },
+    "caption" : "失败类型",
+    "codeName" : "failure_type",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "failure_type",
+    "excelCaption" : "失败类型",
+    "name" : "failure_type",
+    "noPrivDisplayMode" : 1,
+    "getPSAppCodeList" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__mail_notification_failure_type.json"
+    },
+    "getPSAppDEField" : {
+      "name" : "FAILURE_TYPE",
+      "codeName" : "failure_type"
+    },
+    "width" : 250,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  } ],
+  "getPSDEGridDataItems" : [ {
+    "dataType" : 25,
+    "name" : "mail_message_record_name",
+    "getPSAppDEField" : {
+      "name" : "MAIL_MESSAGE_RECORD_NAME",
+      "codeName" : "mail_message_record_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "notification_type",
+    "getPSAppDEField" : {
+      "name" : "NOTIFICATION_TYPE",
+      "codeName" : "notification_type"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "res_partner_name",
+    "getPSAppDEField" : {
+      "name" : "RES_PARTNER_NAME",
+      "codeName" : "res_partner_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "sms_number",
+    "getPSAppDEField" : {
+      "name" : "SMS_NUMBER",
+      "codeName" : "sms_number"
+    }
+  }, {
+    "dataType" : 9,
+    "name" : "is_read",
+    "getPSAppDEField" : {
+      "name" : "IS_READ",
+      "codeName" : "is_read"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "failure_type",
+    "getPSAppDEField" : {
+      "name" : "FAILURE_TYPE",
+      "codeName" : "failure_type"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfdataaccaction",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "dataAccessAction" : true
+  }, {
+    "dataType" : 25,
+    "name" : "mail_mail_id",
+    "getPSAppDEField" : {
+      "name" : "MAIL_MAIL_ID",
+      "codeName" : "mail_mail_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "mail_message_id",
+    "getPSAppDEField" : {
+      "name" : "MAIL_MESSAGE_ID",
+      "codeName" : "mail_message_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "author_id",
+    "getPSAppDEField" : {
+      "name" : "AUTHOR_ID",
+      "codeName" : "author_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "res_partner_id",
+    "getPSAppDEField" : {
+      "name" : "RES_PARTNER_ID",
+      "codeName" : "res_partner_id"
+    }
+  } ],
+  "getPSDEGridEditItems" : [ {
+    "caption" : "已读",
+    "codeName" : "is_read",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "is_read",
+    "getPSAppDEField" : {
+      "name" : "IS_READ",
+      "codeName" : "is_read"
+    },
+    "getPSEditor" : {
+      "editorType" : "CHECKBOX",
+      "name" : "is_read"
+    },
+    "allowEmpty" : true
+  }, {
+    "caption" : "标识",
+    "codeName" : "srfkey",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "getPSEditor" : {
+      "editorType" : "HIDDEN",
+      "name" : "srfkey"
+    },
+    "allowEmpty" : true
+  } ],
+  "pagingMode" : 1,
+  "pagingSize" : 20,
+  "getRemovePSControlAction" : {
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_notification.json"
+    }
+  },
+  "sortMode" : "REMOTE",
+  "hasWFDataItems" : false,
+  "enableColFilter" : false,
+  "enableCustomized" : false,
+  "enableGroup" : false,
+  "enablePagingBar" : true,
+  "enableRowEdit" : false,
+  "enableRowEditOrder" : false,
+  "enableRowNew" : false,
+  "forceFit" : false,
+  "hideHeader" : false,
+  "noSort" : false,
+  "singleSelect" : false,
+  "modelid" : "2e87b6473ee8b151f1f323a2c3a42fc6",
+  "modeltype" : "PSDEGRID"
+}

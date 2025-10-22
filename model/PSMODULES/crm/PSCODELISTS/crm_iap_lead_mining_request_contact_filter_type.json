@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "crm__crm_iap_lead_mining_request_contact_filter_type",
+  "codeListType" : "STATIC",
+  "codeName" : "crm_iap_lead_mining_request_contact_filter_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_contact_filter_type.json",
+  "emptyText" : "未定义",
+  "name" : "筛选于",
+  "getPSCodeItems" : [ {
+    "codeName" : "role",
+    "text" : "角色",
+    "value" : "role"
+  }, {
+    "codeName" : "seniority",
+    "text" : "资历",
+    "value" : "seniority"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

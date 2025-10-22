@@ -1,0 +1,31 @@
+{
+  "codeListTag" : "base__ir_cron_interval_type",
+  "codeListType" : "STATIC",
+  "codeName" : "base__ir_cron_interval_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_cron_interval_type.json",
+  "emptyText" : "未定义",
+  "name" : "间隔单位",
+  "getPSCodeItems" : [ {
+    "codeName" : "minutes",
+    "text" : "分钟",
+    "value" : "minutes"
+  }, {
+    "codeName" : "hours",
+    "text" : "小时",
+    "value" : "hours"
+  }, {
+    "codeName" : "days",
+    "text" : "天",
+    "value" : "days"
+  }, {
+    "codeName" : "weeks",
+    "text" : "周",
+    "value" : "weeks"
+  }, {
+    "codeName" : "months",
+    "text" : "月",
+    "value" : "months"
+  } ],
+  "enableCache" : true
+}

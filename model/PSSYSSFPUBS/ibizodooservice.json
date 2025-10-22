@@ -1,0 +1,15 @@
+{
+  "codeName" : "ibizodooservice",
+  "contentType" : "CODE",
+  "defaultFlag" : true,
+  "dynaModelFilePath" : "PSSYSSFPUBS/ibizodooservice.json",
+  "groovySourceFolder" : "backend/ibizodooservice-core/src/main/groovy",
+  "modelFolder" : "model",
+  "name" : "ibizodooservice",
+  "pKGCodeName" : "cn.ibizlab.ibizodoo",
+  "versionString" : "1.0.0.0",
+  "codeMode" : true,
+  "enableModelRT" : true,
+  "mainPSSysSFPub" : true,
+  "pubModel" : true
+}

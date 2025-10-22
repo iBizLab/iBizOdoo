@@ -1,0 +1,31 @@
+{
+  "codeName" : "template_id",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_actions_server/PSDERS/DER1N_IR_ACTIONS_SERVER_MAIL_TEMPLATE_TEMPLATE_ID.json",
+  "fKeyName" : "FE7EC4F641680AF253",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_template.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_actions_server.json"
+  },
+  "name" : "DER1N_IR_ACTIONS_SERVER_MAIL_TEMPLATE_TEMPLATE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "TEMPLATE_ID",
+    "codeName" : "template_id"
+  },
+  "getPSPickupTextDEField" : {
+    "name" : "TEMPLATE_NAME",
+    "codeName" : "template_name"
+  },
+  "pickupDEFName" : "TEMPLATE_ID",
+  "removeActionType" : -1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "template_id",
+  "enableFKey" : true
+}

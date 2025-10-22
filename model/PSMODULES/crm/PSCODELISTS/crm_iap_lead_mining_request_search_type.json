@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "crm__crm_iap_lead_mining_request_search_type",
+  "codeListType" : "STATIC",
+  "codeName" : "crm_iap_lead_mining_request_search_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_search_type.json",
+  "emptyText" : "未定义",
+  "name" : "目标",
+  "getPSCodeItems" : [ {
+    "codeName" : "companies",
+    "text" : "公司",
+    "value" : "companies"
+  }, {
+    "codeName" : "people",
+    "text" : "公司及其联系人",
+    "value" : "people"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

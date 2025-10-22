@@ -1,0 +1,94 @@
+{
+  "codeName" : "PUBLIC_USER",
+  "dynaModelFilePath" : "PSSYSUSERROLES/PUBLIC_USER.json",
+  "name" : "公开用户",
+  "getPSSysUserRoleDatas" : [ {
+    "name" : "公开用户-RES_USERS[res_users_all]",
+    "getPSDEUserRole" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/res_users/PSDEUSERROLES/res_users_all.json"
+    },
+    "getPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+    }
+  }, {
+    "name" : "公开用户-RES_USERS[test]",
+    "getPSDEUserRole" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/res_users/PSDEUSERROLES/test.json"
+    },
+    "getPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+    }
+  } ],
+  "getPSSysUserRoleReses" : [ {
+    "name" : "公开用户-菜单_HR首页_设置_简历",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "MENU_RESUME"
+    },
+    "sysUniResCode" : "MENU_RESUME"
+  }, {
+    "name" : "公开用户-菜单_HR首页_设置_活动计划",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "MENU_ACTIVITY_PLAN"
+    },
+    "sysUniResCode" : "MENU_ACTIVITY_PLAN"
+  }, {
+    "name" : "公开用户-首页视图_HR首页",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "INDEX_VIEW_HR"
+    },
+    "sysUniResCode" : "INDEX_VIEW_HR"
+  }, {
+    "name" : "公开用户-菜单_HR首页_员工",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "MENU_EMPLOYEE"
+    },
+    "sysUniResCode" : "MENU_EMPLOYEE"
+  }, {
+    "name" : "公开用户-菜单_HR首页_设置_招聘",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "MENU_RECRUITMENT"
+    },
+    "sysUniResCode" : "MENU_RECRUITMENT"
+  }, {
+    "name" : "公开用户-菜单_HR首页_设置_员工",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "MENU_CONFIG_EMPLOYEE"
+    },
+    "sysUniResCode" : "MENU_CONFIG_EMPLOYEE"
+  }, {
+    "name" : "公开用户-菜单_HR首页_部门",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "MENU_DEPARTMENT"
+    },
+    "sysUniResCode" : "MENU_DEPARTMENT"
+  }, {
+    "name" : "公开用户-菜单_HR首页_设置_挑战",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "MENU_CHALLENGE"
+    },
+    "sysUniResCode" : "MENU_CHALLENGE"
+  }, {
+    "name" : "公开用户-菜单_HR首页_设置",
+    "getPSSysUniRes" : {
+      "modelref" : true,
+      "id" : "MENU_CONFIG"
+    },
+    "sysUniResCode" : "MENU_CONFIG"
+  } ],
+  "roleTag" : "PUBLIC_USER",
+  "roleType" : "CUSTOM",
+  "uniResTags" : [ "MENU_RESUME", "MENU_ACTIVITY_PLAN", "INDEX_VIEW_HR", "MENU_EMPLOYEE", "MENU_RECRUITMENT", "MENU_CONFIG_EMPLOYEE", "MENU_DEPARTMENT", "MENU_CHALLENGE", "MENU_CONFIG" ],
+  "globalRole" : true
+}

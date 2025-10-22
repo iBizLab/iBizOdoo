@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_stage/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.CRM_STAGE"
+  },
+  "formCaption" : "客户关系管理阶段",
+  "name" : "客户关系管理阶段默认关系界面组"
+}

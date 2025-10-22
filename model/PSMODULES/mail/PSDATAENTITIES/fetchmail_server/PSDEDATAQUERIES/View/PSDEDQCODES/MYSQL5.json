@@ -1,0 +1,82 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`ACTIVE`",
+    "name" : "ACTIVE"
+  }, {
+    "expression" : "t1.`ATTACH`",
+    "name" : "ATTACH"
+  }, {
+    "expression" : "t1.`CONFIGURATION`",
+    "name" : "CONFIGURATION"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`DATE`",
+    "name" : "DATE"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_ACCESS_TOKEN`",
+    "name" : "GOOGLE_GMAIL_ACCESS_TOKEN"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION`",
+    "name" : "GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_AUTHORIZATION_CODE`",
+    "name" : "GOOGLE_GMAIL_AUTHORIZATION_CODE"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_REFRESH_TOKEN`",
+    "name" : "GOOGLE_GMAIL_REFRESH_TOKEN"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`IS_SSL`",
+    "name" : "IS_SSL"
+  }, {
+    "expression" : "t1.`NAME`",
+    "name" : "NAME"
+  }, {
+    "expression" : "t1.`OBJECT_ID`",
+    "name" : "OBJECT_ID"
+  }, {
+    "expression" : "t1.`ORIGINAL`",
+    "name" : "ORIGINAL"
+  }, {
+    "expression" : "t1.`PASSWORD`",
+    "name" : "PASSWORD"
+  }, {
+    "expression" : "t1.`PORT`",
+    "name" : "PORT"
+  }, {
+    "expression" : "t1.`PRIORITY`",
+    "name" : "PRIORITY"
+  }, {
+    "expression" : "t1.`SCRIPT`",
+    "name" : "SCRIPT"
+  }, {
+    "expression" : "t1.`SERVER`",
+    "name" : "SERVER"
+  }, {
+    "expression" : "t1.`SERVER_TYPE`",
+    "name" : "SERVER_TYPE"
+  }, {
+    "expression" : "t1.`STATE`",
+    "name" : "STATE"
+  }, {
+    "expression" : "t1.`USER`",
+    "name" : "USER"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`ACTIVE`,\nt1.`ATTACH`,\nt1.`CONFIGURATION`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`DATE`,\nt1.`GOOGLE_GMAIL_ACCESS_TOKEN`,\nt1.`GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION`,\nt1.`GOOGLE_GMAIL_AUTHORIZATION_CODE`,\nt1.`GOOGLE_GMAIL_REFRESH_TOKEN`,\nt1.`ID`,\nt1.`IS_SSL`,\nt1.`NAME`,\nt1.`OBJECT_ID`,\nt1.`ORIGINAL`,\nt1.`PASSWORD`,\nt1.`PORT`,\nt1.`PRIORITY`,\nt1.`SCRIPT`,\nt1.`SERVER`,\nt1.`SERVER_TYPE`,\nt1.`STATE`,\nt1.`USER`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `fetchmail_server` t1 \n",
+  "id" : "PSMODULES/mail/PSDATAENTITIES/fetchmail_server/PSDEDATAQUERIES/View/PSDEDQCODES/MYSQL5.json"
+}

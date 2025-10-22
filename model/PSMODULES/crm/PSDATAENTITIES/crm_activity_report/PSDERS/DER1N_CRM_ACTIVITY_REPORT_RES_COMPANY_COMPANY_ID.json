@@ -1,0 +1,27 @@
+{
+  "codeName" : "company",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report/PSDERS/DER1N_CRM_ACTIVITY_REPORT_RES_COMPANY_COMPANY_ID.json",
+  "fKeyName" : "F706BB3502C11EC66B",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_company.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report.json"
+  },
+  "name" : "DER1N_CRM_ACTIVITY_REPORT_RES_COMPANY_COMPANY_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "COMPANY_ID",
+    "codeName" : "company_id"
+  },
+  "pickupDEFName" : "COMPANY_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "company",
+  "enableFKey" : true
+}

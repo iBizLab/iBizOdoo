@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/bus/PSDATAENTITIES/bus_event_bus/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.BUS_EVENT_BUS"
+  },
+  "formCaption" : "事件总线",
+  "name" : "事件总线默认关系界面组"
+}

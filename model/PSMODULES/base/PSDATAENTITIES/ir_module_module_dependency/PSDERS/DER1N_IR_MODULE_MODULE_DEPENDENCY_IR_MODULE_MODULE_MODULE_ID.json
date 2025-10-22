@@ -1,0 +1,27 @@
+{
+  "codeName" : "module",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_module_module_dependency/PSDERS/DER1N_IR_MODULE_MODULE_DEPENDENCY_IR_MODULE_MODULE_MODULE_ID.json",
+  "fKeyName" : "F34502A18E24018540",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module_dependency.json"
+  },
+  "name" : "DER1N_IR_MODULE_MODULE_DEPENDENCY_IR_MODULE_MODULE_MODULE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "MODULE_ID",
+    "codeName" : "module_id"
+  },
+  "pickupDEFName" : "MODULE_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "module",
+  "enableFKey" : true
+}

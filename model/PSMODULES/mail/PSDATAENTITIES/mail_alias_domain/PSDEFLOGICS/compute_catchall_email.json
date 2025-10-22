@@ -1,0 +1,17 @@
+{
+  "codeName" : "compute_catchall_email",
+  "dEFLogicMode" : "COMPUTE",
+  "defaultParamName" : "DEFAULT",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_domain/PSDEFLOGICS/compute_catchall_email.json",
+  "logicName" : "compute_catchall_email",
+  "logicSubType" : "DEFIELD",
+  "name" : "compute_catchall_email",
+  "getPSDEField" : {
+    "name" : "CATCHALL_EMAIL",
+    "codeName" : "catchall_email"
+  },
+  "scriptCode" : "data.catchall_email=data.catchall_alias+'@'+data.name;",
+  "customCode" : true,
+  "enableBackend" : false,
+  "enableFront" : true
+}

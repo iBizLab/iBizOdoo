@@ -1,0 +1,114 @@
+## DEFAULT(Default) <!-- {docsify-ignore-all} -->
+
+
+
+<p class="panel-title"><b>查看SQL语句</b></p>
+<br>
+
+<el-row>
+&nbsp;<el-tag @click="MYSQL5 = true">MYSQL5</el-tag>
+</el-row>
+
+<br>
+<p class="panel-title"><b>是否默认查询</b></p>
+
+* `是`
+
+<p class="panel-title"><b>是否权限使用</b></p>
+
+* `否`
+
+<p class="panel-title"><b>是否自定义SQL</b></p>
+
+* `否`
+
+<p class="panel-title"><b>查询列级别</b></p>
+
+* `默认（全部查询列）`
+
+
+
+
+
+
+<el-dialog v-model="MYSQL5" title="MYSQL5">
+
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`AUTOMATED_PROBABILITY`,
+t1.`CITY`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CONTACT_NAME`,
+t1.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_AUTOMATION_LAST`,
+t1.`DATE_CLOSED`,
+t1.`DATE_CONVERSION`,
+t1.`DATE_DEADLINE`,
+t1.`DATE_LAST_STAGE_UPDATE`,
+t1.`DATE_OPEN`,
+t1.`DAY_CLOSE`,
+t1.`DAY_OPEN`,
+t1.`EMAIL_CC`,
+t1.`EMAIL_DOMAIN_CRITERION`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMAIL_STATE`,
+t1.`EXPECTED_REVENUE`,
+t1.`FUNCTION`,
+t1.`IAP_ENRICH_DONE`,
+t1.`ID`,
+t1.`LANG_ID`,
+t1.`LEAD_MINING_REQUEST_ID`,
+t1.`LOST_REASON_ID`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MOBILE`,
+t1.`NAME`,
+t1.`PARTNER_ID`,
+t1.`PARTNER_NAME`,
+t1.`PHONE`,
+t1.`PHONE_SANITIZED`,
+t1.`PHONE_STATE`,
+t1.`PRIORITY`,
+t1.`PROBABILITY`,
+t1.`PRORATED_REVENUE`,
+t1.`RECURRING_REVENUE`,
+t1.`RECURRING_REVENUE_MONTHLY`,
+t1.`RECURRING_REVENUE_MONTHLY_PRORATED`,
+t1.`RECURRING_REVENUE_PRORATED`,
+t1.`REFERRED`,
+t1.`REVEAL_ID`,
+t1.`STAGE_ID`,
+t1.`STATE_ID`,
+t1.`STREET`,
+t1.`STREET2`,
+t1.`TEAM_ID`,
+t1.`TYPE`,
+t1.`USER_ID`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP`
+FROM `crm_lead` t1 
+
+
+```
+
+</el-dialog>
+
+<script>
+ const { createApp } = Vue
+  createApp({
+    data() {
+      return {
+                MYSQL5 : false
+        
+      }
+    },
+    methods: {
+    }
+  }).use(ElementPlus).mount('#app')
+</script>

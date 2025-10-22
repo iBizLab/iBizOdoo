@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_notification/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.MAIL_NOTIFICATION"
+  },
+  "formCaption" : "消息通知",
+  "name" : "消息通知默认关系界面组"
+}

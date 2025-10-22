@@ -1,0 +1,6720 @@
+# MYSQL5 <!-- {docsify-ignore-all} -->
+
+## [审计记录(AUDIT_RECORD)](module/audit/audit_record.md) :id=audit_record
+
+#### DEFAULT :id=audit_record-Default
+```sql
+SELECT
+t1.`AUDIT_TYPE`,
+t1.`ID`,
+t1.`IP_ADDRESS`,
+t1.`NAME`,
+t1.`OBJECT_ID`,
+t1.`OBJECT_TYPE`,
+t1.`OP_PERSON_ID`,
+t1.`OP_PERSON_NAME`
+FROM `audit_record` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=audit_record-View
+```sql
+SELECT
+t1.`AUDIT_INFO`,
+t1.`AUDIT_TYPE`,
+t1.`ID`,
+t1.`IP_ADDRESS`,
+t1.`NAME`,
+t1.`OBJECT_ID`,
+t1.`OBJECT_TYPE`,
+t1.`OP_PERSON_ID`,
+t1.`OP_PERSON_NAME`
+FROM `audit_record` t1 
+
+```
+
+
+## [总线事件记录(BUS_EVENT_RECORD)](module/bus/bus_event_record.md) :id=bus_event_record
+
+#### DEFAULT :id=bus_event_record-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EVENT`,
+t1.`ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `T_BUS_EVENT_RECORD` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=bus_event_record-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATA`,
+t1.`EVENT`,
+t1.`ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `T_BUS_EVENT_RECORD` t1 
+
+```
+
+
+## [线索/商机(CRM_LEAD)](module/crm/crm_lead.md) :id=crm_lead
+
+#### DEFAULT :id=crm_lead-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`AUTOMATED_PROBABILITY`,
+t1.`CITY`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CONTACT_NAME`,
+t1.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_AUTOMATION_LAST`,
+t1.`DATE_CLOSED`,
+t1.`DATE_CONVERSION`,
+t1.`DATE_DEADLINE`,
+t1.`DATE_LAST_STAGE_UPDATE`,
+t1.`DATE_OPEN`,
+t1.`DAY_CLOSE`,
+t1.`DAY_OPEN`,
+t1.`EMAIL_CC`,
+t1.`EMAIL_DOMAIN_CRITERION`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMAIL_STATE`,
+t1.`EXPECTED_REVENUE`,
+t1.`FUNCTION`,
+t1.`IAP_ENRICH_DONE`,
+t1.`ID`,
+t1.`LANG_ID`,
+t1.`LEAD_MINING_REQUEST_ID`,
+t1.`LOST_REASON_ID`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MOBILE`,
+t1.`NAME`,
+t1.`PARTNER_ID`,
+t1.`PARTNER_NAME`,
+t1.`PHONE`,
+t1.`PHONE_SANITIZED`,
+t1.`PHONE_STATE`,
+t1.`PRIORITY`,
+t1.`PROBABILITY`,
+t1.`PRORATED_REVENUE`,
+t1.`RECURRING_REVENUE`,
+t1.`RECURRING_REVENUE_MONTHLY`,
+t1.`RECURRING_REVENUE_MONTHLY_PRORATED`,
+t1.`RECURRING_REVENUE_PRORATED`,
+t1.`REFERRED`,
+t1.`REVEAL_ID`,
+t1.`STAGE_ID`,
+t1.`STATE_ID`,
+t1.`STREET`,
+t1.`STREET2`,
+t1.`TEAM_ID`,
+t1.`TYPE`,
+t1.`USER_ID`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP`
+FROM `crm_lead` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=crm_lead-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`AUTOMATED_PROBABILITY`,
+t1.`CITY`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CONTACT_NAME`,
+t1.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_AUTOMATION_LAST`,
+t1.`DATE_CLOSED`,
+t1.`DATE_CONVERSION`,
+t1.`DATE_DEADLINE`,
+t1.`DATE_LAST_STAGE_UPDATE`,
+t1.`DATE_OPEN`,
+t1.`DAY_CLOSE`,
+t1.`DAY_OPEN`,
+t1.`DESCRIPTION`,
+t1.`DURATION_TRACKING`,
+t1.`EMAIL_CC`,
+t1.`EMAIL_DOMAIN_CRITERION`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMAIL_STATE`,
+t1.`EXPECTED_REVENUE`,
+t1.`FUNCTION`,
+t1.`IAP_ENRICH_DONE`,
+t1.`ID`,
+t1.`LANG_ID`,
+t1.`LEAD_MINING_REQUEST_ID`,
+t1.`LOST_REASON_ID`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MOBILE`,
+t1.`NAME`,
+t1.`PARTNER_ID`,
+t1.`PARTNER_NAME`,
+t1.`PHONE`,
+t1.`PHONE_SANITIZED`,
+t1.`PHONE_STATE`,
+t1.`PRIORITY`,
+t1.`PROBABILITY`,
+t1.`PRORATED_REVENUE`,
+t1.`RECURRING_REVENUE`,
+t1.`RECURRING_REVENUE_MONTHLY`,
+t1.`RECURRING_REVENUE_MONTHLY_PRORATED`,
+t1.`RECURRING_REVENUE_PRORATED`,
+t1.`REFERRED`,
+t1.`REVEAL_ID`,
+t1.`STAGE_ID`,
+t1.`STATE_ID`,
+t1.`STREET`,
+t1.`STREET2`,
+t1.`TEAM_ID`,
+t1.`TYPE`,
+t1.`USER_ID`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP`
+FROM `crm_lead` t1 
+
+```
+
+
+## [客户关系管理阶段(CRM_STAGE)](module/crm/crm_stage.md) :id=crm_stage
+
+#### DEFAULT :id=crm_stage-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FOLD`,
+t1.`ID`,
+t1.`IS_WON`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`TEAM_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `crm_stage` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=crm_stage-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FOLD`,
+t1.`ID`,
+t1.`IS_WON`,
+t1.`NAME`,
+t1.`REQUIREMENTS`,
+t1.`SEQUENCE`,
+t1.`TEAM_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `crm_stage` t1 
+
+```
+
+
+## [讨论频道(DISCUSS_CHANNEL)](module/discuss/discuss_channel.md) :id=discuss_channel
+
+#### DEFAULT :id=discuss_channel-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ALLOW_PUBLIC_UPLOAD`,
+t1.`CHANNEL_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_DISPLAY_MODE`,
+t1.`FROM_MESSAGE_ID`,
+t1.`GROUP_PUBLIC_ID`,
+t21.`NAME` AS `GROUP_PUBLIC_NAME`,
+t1.`ID`,
+t1.`LAST_INTEREST_DT`,
+t1.`NAME`,
+t1.`PARENT_CHANNEL_ID`,
+t11.`NAME` AS `PARENT_CHANNEL_NAME`,
+t1.`SFU_CHANNEL_UUID`,
+t1.`SFU_SERVER_URL`,
+t1.`UUID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel` t1 
+LEFT JOIN `discuss_channel` t11 ON t1.`PARENT_CHANNEL_ID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`GROUP_PUBLIC_ID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=discuss_channel-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ALLOW_PUBLIC_UPLOAD`,
+t1.`CHANNEL_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_DISPLAY_MODE`,
+t1.`DESCRIPTION`,
+t1.`FROM_MESSAGE_ID`,
+t1.`GROUP_PUBLIC_ID`,
+t21.`NAME` AS `GROUP_PUBLIC_NAME`,
+t1.`ID`,
+t1.`LAST_INTEREST_DT`,
+t1.`NAME`,
+t1.`PARENT_CHANNEL_ID`,
+t11.`NAME` AS `PARENT_CHANNEL_NAME`,
+t1.`SFU_CHANNEL_UUID`,
+t1.`SFU_SERVER_URL`,
+t1.`UUID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel` t1 
+LEFT JOIN `discuss_channel` t11 ON t1.`PARENT_CHANNEL_ID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`GROUP_PUBLIC_ID` = t21.`ID` 
+
+```
+
+#### 当前用户加入公共频道(cur_user_public) :id=discuss_channel-cur_user_public
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ALLOW_PUBLIC_UPLOAD`,
+t1.`CHANNEL_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_DISPLAY_MODE`,
+t1.`FROM_MESSAGE_ID`,
+t1.`GROUP_PUBLIC_ID`,
+t21.`NAME` AS `GROUP_PUBLIC_NAME`,
+t1.`ID`,
+t1.`LAST_INTEREST_DT`,
+t1.`NAME`,
+t1.`PARENT_CHANNEL_ID`,
+t11.`NAME` AS `PARENT_CHANNEL_NAME`,
+t1.`SFU_CHANNEL_UUID`,
+t1.`SFU_SERVER_URL`,
+t1.`UUID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel` t1 
+LEFT JOIN `discuss_channel` t11 ON t1.`PARENT_CHANNEL_ID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`GROUP_PUBLIC_ID` = t21.`ID` 
+
+/*ALIAS.channel=t1*/
+WHERE EXISTS(SELECT * FROM `discuss_channel_member` t31 
+ WHERE 
+ t1.`ID` = t31.`CHANNEL_ID`  AND  ( t31.`PARTNER_ID` = #{ctx.sessioncontext.srfpartnerid} ) ) AND ( t1.`CHANNEL_TYPE` = 'channel' )
+```
+
+#### 群聊和私人频道查询(group_private) :id=discuss_channel-group_private
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ALLOW_PUBLIC_UPLOAD`,
+t1.`CHANNEL_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_DISPLAY_MODE`,
+t1.`FROM_MESSAGE_ID`,
+t1.`GROUP_PUBLIC_ID`,
+t21.`NAME` AS `GROUP_PUBLIC_NAME`,
+t1.`ID`,
+t1.`LAST_INTEREST_DT`,
+t1.`NAME`,
+t1.`PARENT_CHANNEL_ID`,
+t11.`NAME` AS `PARENT_CHANNEL_NAME`,
+t1.`SFU_CHANNEL_UUID`,
+t1.`SFU_SERVER_URL`,
+t1.`UUID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel` t1 
+LEFT JOIN `discuss_channel` t11 ON t1.`PARENT_CHANNEL_ID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`GROUP_PUBLIC_ID` = t21.`ID` 
+
+/*ALIAS.channel=t1*/
+WHERE ( ( t1.`CHANNEL_TYPE` = 'chat'  OR  t1.`CHANNEL_TYPE` = 'group' ) )
+```
+
+#### 公共频道查询(public) :id=discuss_channel-public
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ALLOW_PUBLIC_UPLOAD`,
+t1.`CHANNEL_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_DISPLAY_MODE`,
+t1.`FROM_MESSAGE_ID`,
+t1.`GROUP_PUBLIC_ID`,
+t21.`NAME` AS `GROUP_PUBLIC_NAME`,
+t1.`ID`,
+t1.`LAST_INTEREST_DT`,
+t1.`NAME`,
+t1.`PARENT_CHANNEL_ID`,
+t11.`NAME` AS `PARENT_CHANNEL_NAME`,
+t1.`SFU_CHANNEL_UUID`,
+t1.`SFU_SERVER_URL`,
+t1.`UUID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel` t1 
+LEFT JOIN `discuss_channel` t11 ON t1.`PARENT_CHANNEL_ID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`GROUP_PUBLIC_ID` = t21.`ID` 
+
+/*ALIAS.channel=t1*/
+WHERE ( t1.`CHANNEL_TYPE` = 'channel' )
+```
+
+
+## [频道成员(DISCUSS_CHANNEL_MEMBER)](module/discuss/discuss_channel_member.md) :id=discuss_channel_member
+
+#### DEFAULT :id=discuss_channel_member-Default
+```sql
+SELECT
+t1.`CHANNEL_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CUSTOM_CHANNEL_NAME`,
+t1.`CUSTOM_NOTIFICATIONS`,
+t1.`FETCHED_MESSAGE_ID`,
+t1.`FOLD_STATE`,
+t1.`GUEST_ID`,
+t21.`NAME` AS `GUEST_NAME`,
+t1.`ID`,
+t1.`LAST_INTEREST_DT`,
+t1.`LAST_SEEN_DT`,
+t1.`MUTE_UNTIL_DT`,
+t1.`NEW_MESSAGE_SEPARATOR`,
+t1.`PARTNER_ID`,
+t11.`NAME` AS `PARTNER_NAME`,
+t1.`RTC_INVITING_SESSION_ID`,
+t1.`SEEN_MESSAGE_ID`,
+t1.`UNPIN_DT`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel_member` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `mail_guest` t21 ON t1.`GUEST_ID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=discuss_channel_member-View
+```sql
+SELECT
+t1.`CHANNEL_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CUSTOM_CHANNEL_NAME`,
+t1.`CUSTOM_NOTIFICATIONS`,
+t1.`FETCHED_MESSAGE_ID`,
+t1.`FOLD_STATE`,
+t1.`GUEST_ID`,
+t21.`NAME` AS `GUEST_NAME`,
+t1.`ID`,
+t1.`LAST_INTEREST_DT`,
+t1.`LAST_SEEN_DT`,
+t1.`MUTE_UNTIL_DT`,
+t1.`NEW_MESSAGE_SEPARATOR`,
+t1.`PARTNER_ID`,
+t11.`NAME` AS `PARTNER_NAME`,
+t1.`RTC_INVITING_SESSION_ID`,
+t1.`SEEN_MESSAGE_ID`,
+t1.`UNPIN_DT`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel_member` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `mail_guest` t21 ON t1.`GUEST_ID` = t21.`ID` 
+
+```
+
+
+## [邮件 RTC 会话(DISCUSS_CHANNEL_RTC_SESSION)](module/discuss/discuss_channel_rtc_session.md) :id=discuss_channel_rtc_session
+
+#### DEFAULT :id=discuss_channel_rtc_session-Default
+```sql
+SELECT
+t1.`CHANNEL_ID`,
+t1.`CHANNEL_MEMBER_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`IS_CAMERA_ON`,
+t1.`IS_DEAF`,
+t1.`IS_MUTED`,
+t1.`IS_SCREEN_SHARING_ON`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel_rtc_session` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=discuss_channel_rtc_session-View
+```sql
+SELECT
+t1.`CHANNEL_ID`,
+t1.`CHANNEL_MEMBER_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`IS_CAMERA_ON`,
+t1.`IS_DEAF`,
+t1.`IS_MUTED`,
+t1.`IS_SCREEN_SHARING_ON`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_channel_rtc_session` t1 
+
+```
+
+
+## [语音附件的元数据(DISCUSS_VOICE_METADATA)](module/discuss/discuss_voice_metadata.md) :id=discuss_voice_metadata
+
+#### DEFAULT :id=discuss_voice_metadata-Default
+```sql
+SELECT
+t1.`ATTACHMENT_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_voice_metadata` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=discuss_voice_metadata-View
+```sql
+SELECT
+t1.`ATTACHMENT_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `discuss_voice_metadata` t1 
+
+```
+
+
+## [收件服务器(FETCHMAIL_SERVER)](module/mail/fetchmail_server.md) :id=fetchmail_server
+
+#### DEFAULT :id=fetchmail_server-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ATTACH`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`GOOGLE_GMAIL_ACCESS_TOKEN`,
+t1.`GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION`,
+t1.`GOOGLE_GMAIL_AUTHORIZATION_CODE`,
+t1.`GOOGLE_GMAIL_REFRESH_TOKEN`,
+t1.`ID`,
+t1.`IS_SSL`,
+t1.`NAME`,
+t1.`OBJECT_ID`,
+t1.`ORIGINAL`,
+t1.`PASSWORD`,
+t1.`PORT`,
+t1.`PRIORITY`,
+t1.`SCRIPT`,
+t1.`SERVER`,
+t1.`SERVER_TYPE`,
+t1.`STATE`,
+t1.`USER`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `fetchmail_server` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=fetchmail_server-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ATTACH`,
+t1.`CONFIGURATION`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`GOOGLE_GMAIL_ACCESS_TOKEN`,
+t1.`GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION`,
+t1.`GOOGLE_GMAIL_AUTHORIZATION_CODE`,
+t1.`GOOGLE_GMAIL_REFRESH_TOKEN`,
+t1.`ID`,
+t1.`IS_SSL`,
+t1.`NAME`,
+t1.`OBJECT_ID`,
+t1.`ORIGINAL`,
+t1.`PASSWORD`,
+t1.`PORT`,
+t1.`PRIORITY`,
+t1.`SCRIPT`,
+t1.`SERVER`,
+t1.`SERVER_TYPE`,
+t1.`STATE`,
+t1.`USER`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `fetchmail_server` t1 
+
+```
+
+
+## [申请人(HR_APPLICANT)](module/hr/hr_applicant.md) :id=hr_applicant
+
+#### DEFAULT :id=hr_applicant-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CANDIDATE_ID`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_CLOSED`,
+t1.`DATE_LAST_STAGE_UPDATE`,
+t1.`DATE_OPEN`,
+t1.`DELAY_CLOSE`,
+t1.`DEPARTMENT_ID`,
+t1.`EMAIL_CC`,
+t1.`ID`,
+t1.`JOB_ID`,
+t1.`KANBAN_STATE`,
+t1.`LAST_STAGE_ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`PRIORITY`,
+t1.`PROBABILITY`,
+t1.`REFUSE_DATE`,
+t1.`REFUSE_REASON_ID`,
+t1.`SALARY_EXPECTED`,
+t1.`SALARY_EXPECTED_EXTRA`,
+t1.`SALARY_PROPOSED`,
+t1.`SALARY_PROPOSED_EXTRA`,
+t1.`STAGE_ID`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_applicant` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_applicant-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`APPLICANT_NOTES`,
+t1.`CANDIDATE_ID`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_CLOSED`,
+t1.`DATE_LAST_STAGE_UPDATE`,
+t1.`DATE_OPEN`,
+t1.`DELAY_CLOSE`,
+t1.`DEPARTMENT_ID`,
+t1.`EMAIL_CC`,
+t1.`ID`,
+t1.`JOB_ID`,
+t1.`KANBAN_STATE`,
+t1.`LAST_STAGE_ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`PRIORITY`,
+t1.`PROBABILITY`,
+t1.`REFUSE_DATE`,
+t1.`REFUSE_REASON_ID`,
+t1.`SALARY_EXPECTED`,
+t1.`SALARY_EXPECTED_EXTRA`,
+t1.`SALARY_PROPOSED`,
+t1.`SALARY_PROPOSED_EXTRA`,
+t1.`STAGE_ID`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_applicant` t1 
+
+```
+
+
+## [出勤(HR_ATTENDANCE)](module/hr/hr_attendance.md) :id=hr_attendance
+
+#### DEFAULT :id=hr_attendance-Default
+```sql
+SELECT
+t1.`CHECK_IN`,
+t1.`CHECK_OUT`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EMPLOYEE_ID`,
+t1.`EXPECTED_HOURS`,
+t1.`ID`,
+t1.`IN_BROWSER`,
+t1.`IN_CITY`,
+t1.`IN_COUNTRY_NAME`,
+t1.`IN_IP_ADDRESS`,
+t1.`IN_LATITUDE`,
+t1.`IN_LONGITUDE`,
+t1.`IN_MODE`,
+t1.`OUT_BROWSER`,
+t1.`OUT_CITY`,
+t1.`OUT_COUNTRY_NAME`,
+t1.`OUT_IP_ADDRESS`,
+t1.`OUT_LATITUDE`,
+t1.`OUT_LONGITUDE`,
+t1.`OUT_MODE`,
+t1.`OVERTIME_HOURS`,
+t1.`OVERTIME_STATUS`,
+t1.`VALIDATED_OVERTIME_HOURS`,
+t1.`WORKED_HOURS`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_attendance` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_attendance-View
+```sql
+SELECT
+t1.`CHECK_IN`,
+t1.`CHECK_OUT`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EMPLOYEE_ID`,
+t1.`EXPECTED_HOURS`,
+t1.`ID`,
+t1.`IN_BROWSER`,
+t1.`IN_CITY`,
+t1.`IN_COUNTRY_NAME`,
+t1.`IN_IP_ADDRESS`,
+t1.`IN_LATITUDE`,
+t1.`IN_LONGITUDE`,
+t1.`IN_MODE`,
+t1.`OUT_BROWSER`,
+t1.`OUT_CITY`,
+t1.`OUT_COUNTRY_NAME`,
+t1.`OUT_IP_ADDRESS`,
+t1.`OUT_LATITUDE`,
+t1.`OUT_LONGITUDE`,
+t1.`OUT_MODE`,
+t1.`OVERTIME_HOURS`,
+t1.`OVERTIME_STATUS`,
+t1.`VALIDATED_OVERTIME_HOURS`,
+t1.`WORKED_HOURS`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_attendance` t1 
+
+```
+
+
+## [出勤 加班(HR_ATTENDANCE_OVERTIME)](module/hr/hr_attendance_overtime.md) :id=hr_attendance_overtime
+
+#### DEFAULT :id=hr_attendance_overtime-Default
+```sql
+SELECT
+t1.`ADJUSTMENT`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`DURATION`,
+t1.`DURATION_REAL`,
+t1.`EMPLOYEE_ID`,
+t1.`ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_attendance_overtime` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_attendance_overtime-View
+```sql
+SELECT
+t1.`ADJUSTMENT`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`DURATION`,
+t1.`DURATION_REAL`,
+t1.`EMPLOYEE_ID`,
+t1.`ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_attendance_overtime` t1 
+
+```
+
+
+## [应聘人(HR_CANDIDATE)](module/hr/hr_candidate.md) :id=hr_candidate
+
+#### DEFAULT :id=hr_candidate-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`AVAILABILITY`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EMAIL_CC`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMPLOYEE_ID`,
+t1.`ID`,
+t1.`LINKEDIN_PROFILE`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`PARTNER_ID`,
+t1.`PARTNER_NAME`,
+t1.`PARTNER_PHONE`,
+t1.`PARTNER_PHONE_SANITIZED`,
+t1.`PHONE_SANITIZED`,
+t1.`PRIORITY`,
+t1.`TYPE_ID`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_candidate` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_candidate-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`AVAILABILITY`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EMAIL_CC`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMPLOYEE_ID`,
+t1.`ID`,
+t1.`LINKEDIN_PROFILE`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`PARTNER_ID`,
+t1.`PARTNER_NAME`,
+t1.`PARTNER_PHONE`,
+t1.`PARTNER_PHONE_SANITIZED`,
+t1.`PHONE_SANITIZED`,
+t1.`PRIORITY`,
+t1.`TYPE_ID`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_candidate` t1 
+
+```
+
+
+## [合同类型(HR_CONTRACT_TYPE)](module/hr/hr_contract_type.md) :id=hr_contract_type
+
+#### DEFAULT :id=hr_contract_type-Default
+```sql
+SELECT
+t1.`CODE`,
+t1.`COUNTRY_ID`,
+t11.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_contract_type` t1 
+LEFT JOIN `res_country` t11 ON t1.`COUNTRY_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_contract_type-View
+```sql
+SELECT
+t1.`CODE`,
+t1.`COUNTRY_ID`,
+t11.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_contract_type` t1 
+LEFT JOIN `res_country` t11 ON t1.`COUNTRY_ID` = t11.`ID` 
+
+```
+
+
+## [部门(HR_DEPARTMENT)](module/hr/hr_department.md) :id=hr_department
+
+#### DEFAULT :id=hr_department-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+(SELECT count(1) child_count  FROM `hr_department`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`COMPLETE_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`MANAGER_ID`,
+t21.`NAME` AS `MANAGER_NAME`,
+t1.`MASTER_DEPARTMENT_ID`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+(SELECT count(1) FROM `mail_activity_plan` t where t.DEPARTMENT_ID= t1.`ID`) AS `PLANS_COUNT`,
+(SELECT count(1)  FROM `hr_employee` t where t.DEPARTMENT_ID= t1.`ID` ) AS `TOTAL_EMPLOYEE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_department` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+LEFT JOIN `hr_employee` t21 ON t1.`MANAGER_ID` = t21.`ID` 
+LEFT JOIN `hr_department` t31 ON t1.`PARENT_ID` = t31.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_department-View
+```sql
+SELECT
+t1.`ACTIVE`,
+(SELECT count(1) child_count  FROM `hr_department`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`COMPLETE_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`MANAGER_ID`,
+t21.`NAME` AS `MANAGER_NAME`,
+t1.`MASTER_DEPARTMENT_ID`,
+t1.`NAME`,
+t1.`NOTE`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+(SELECT count(1) FROM `mail_activity_plan` t where t.DEPARTMENT_ID= t1.`ID`) AS `PLANS_COUNT`,
+(SELECT count(1)  FROM `hr_employee` t where t.DEPARTMENT_ID= t1.`ID` ) AS `TOTAL_EMPLOYEE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_department` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+LEFT JOIN `hr_employee` t21 ON t1.`MANAGER_ID` = t21.`ID` 
+LEFT JOIN `hr_department` t31 ON t1.`PARENT_ID` = t31.`ID` 
+
+```
+
+#### 部门架构(department_chart) :id=hr_department-department_chart
+```sql
+SELECT
+t1.`ACTIVE`,
+(SELECT count(1) child_count  FROM `hr_department`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`COMPLETE_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`MANAGER_ID`,
+t21.`NAME` AS `MANAGER_NAME`,
+t1.`MASTER_DEPARTMENT_ID`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+(SELECT count(1) FROM `mail_activity_plan` t where t.DEPARTMENT_ID= t1.`ID`) AS `PLANS_COUNT`,
+(SELECT count(1)  FROM `hr_employee` t where t.DEPARTMENT_ID= t1.`ID` ) AS `TOTAL_EMPLOYEE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_department` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+LEFT JOIN `hr_employee` t21 ON t1.`MANAGER_ID` = t21.`ID` 
+LEFT JOIN `hr_department` t31 ON t1.`PARENT_ID` = t31.`ID` 
+
+WHERE ( ( t1.`ID` = #{ctx.datacontext.department}  OR  t1.`PARENT_ID` = #{ctx.datacontext.department}  OR  FIND_IN_SET(T1.ID,REPLACE(#{ctx.datacontext.parent_path},'/',',')) >0 ) )
+```
+
+#### 部门层级(department_hierarchy) :id=hr_department-department_hierarchy
+```sql
+SELECT
+t1.`ACTIVE`,
+(SELECT count(1) child_count  FROM `hr_department`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`COMPLETE_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`MANAGER_ID`,
+t21.`NAME` AS `MANAGER_NAME`,
+t1.`MASTER_DEPARTMENT_ID`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+(SELECT count(1) FROM `mail_activity_plan` t where t.DEPARTMENT_ID= t1.`ID`) AS `PLANS_COUNT`,
+(SELECT count(1)  FROM `hr_employee` t where t.DEPARTMENT_ID= t1.`ID` ) AS `TOTAL_EMPLOYEE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_department` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+LEFT JOIN `hr_employee` t21 ON t1.`MANAGER_ID` = t21.`ID` 
+LEFT JOIN `hr_department` t31 ON t1.`PARENT_ID` = t31.`ID` 
+
+WHERE ( t1.`PARENT_ID` IS NULL  AND  <choose><when test="ctx.datacontext.hr_department !=null ">  t1.`ID` = #{ctx.datacontext.hr_department}  </when><otherwise>1=1</otherwise></choose> )
+```
+
+#### 根部门(ROOT) :id=hr_department-root
+```sql
+SELECT
+t1.`ACTIVE`,
+(SELECT count(1) child_count  FROM `hr_department`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`COMPLETE_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`MANAGER_ID`,
+t21.`NAME` AS `MANAGER_NAME`,
+t1.`MASTER_DEPARTMENT_ID`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+(SELECT count(1) FROM `mail_activity_plan` t where t.DEPARTMENT_ID= t1.`ID`) AS `PLANS_COUNT`,
+(SELECT count(1)  FROM `hr_employee` t where t.DEPARTMENT_ID= t1.`ID` ) AS `TOTAL_EMPLOYEE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_department` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+LEFT JOIN `hr_employee` t21 ON t1.`MANAGER_ID` = t21.`ID` 
+LEFT JOIN `hr_department` t31 ON t1.`PARENT_ID` = t31.`ID` 
+
+WHERE ( t1.`PARENT_ID` IS NULL )
+```
+
+#### 简单查询(simple) :id=hr_department-simple
+```sql
+SELECT
+t1.`ACTIVE`,
+(SELECT count(1) child_count  FROM `hr_department`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`COMPLETE_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`MANAGER_ID`,
+t21.`NAME` AS `MANAGER_NAME`,
+t1.`MASTER_DEPARTMENT_ID`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+(SELECT count(1) FROM `mail_activity_plan` t where t.DEPARTMENT_ID= t1.`ID`) AS `PLANS_COUNT`,
+(SELECT count(1)  FROM `hr_employee` t where t.DEPARTMENT_ID= t1.`ID` ) AS `TOTAL_EMPLOYEE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_department` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+LEFT JOIN `hr_employee` t21 ON t1.`MANAGER_ID` = t21.`ID` 
+LEFT JOIN `hr_department` t31 ON t1.`PARENT_ID` = t31.`ID` 
+
+```
+
+
+## [离职原因(HR_DEPARTURE_REASON)](module/hr/hr_departure_reason.md) :id=hr_departure_reason
+
+#### DEFAULT :id=hr_departure_reason-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`REASON_CODE`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_departure_reason` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_departure_reason-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`REASON_CODE`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_departure_reason` t1 
+
+```
+
+
+## [员工(HR_EMPLOYEE)](module/hr/hr_employee.md) :id=hr_employee
+
+#### DEFAULT :id=hr_employee-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t61.`NAME` AS `ADDRESS_NAME`,
+t1.`ATTENDANCE_MANAGER_ID`,
+t181.`NAME` AS `ATTENDANCE_MANAGER_NAME`,
+t1.`BANK_ACCOUNT_ID`,
+t161.`NAME` AS `BANK_ACCOUNT_NAME`,
+t1.`BARCODE`,
+t1.`BIRTHDAY`,
+t1.`CERTIFICATE`,
+t1.`CHILDREN`,
+(SELECT count(1) child_count  FROM `hr_employee`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COACH_ID`,
+t41.`NAME` AS `COACH_NAME`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CONTRACT_ID`,
+t1.`CONTRACT_WARNING`,
+t1.`COUNTRY_ID`,
+t131.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`DEPARTURE_DATE`,
+t1.`DEPARTURE_REASON_ID`,
+t1.`DISTANCE_HOME_WORK`,
+t1.`DISTANCE_HOME_WORK_UNIT`,
+t1.`EMERGENCY_CONTACT`,
+t1.`EMERGENCY_PHONE`,
+t1.`EMPLOYEE_TYPE`,
+t1.`EXPENSE_MANAGER_ID`,
+t1.`FIRST_CONTRACT_DATE`,
+t1.`GENDER`,
+t1.`ID`,
+t1.`IDENTIFICATION_ID`,
+t1.`IS_FLEXIBLE`,
+t1.`IS_FULLY_FLEXIBLE`,
+t1.`JOB_ID`,
+t31.`NAME` AS `JOB_NAME`,
+t1.`JOB_TITLE`,
+t1.`KM_HOME_WORK`,
+t1.`LAST_ATTENDANCE_ID`,
+t1.`LEAVE_MANAGER_ID`,
+t91.`NAME` AS `LEAVE_MANAGER_NAME`,
+t1.`LEGAL_NAME`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`MOBILE_PHONE`,
+t1.`MOBILITY_CARD`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t51.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PASSPORT_ID`,
+t1.`PERMIT_NO`,
+t1.`PIN`,
+t1.`PLACE_OF_BIRTH`,
+t1.`PRIVATE_CAR_PLATE`,
+t1.`PRIVATE_CITY`,
+t1.`PRIVATE_COUNTRY_ID`,
+t121.`NAME` AS `PRIVATE_COUNTRY_NAME`,
+t1.`PRIVATE_EMAIL`,
+t1.`PRIVATE_PHONE`,
+t1.`PRIVATE_STATE_ID`,
+t111.`NAME` AS `PRIVATE_STATE_NAME`,
+t1.`PRIVATE_STREET`,
+t1.`PRIVATE_STREET2`,
+t1.`PRIVATE_ZIP`,
+t1.`RESOURCE_CALENDAR_ID`,
+t101.`NAME` AS `RESOURCE_CALENDAR_NAME`,
+t1.`RESOURCE_ID`,
+t1.`SINID`,
+t1.`SPOUSE_BIRTHDATE`,
+t1.`SPOUSE_COMPLETE_NAME`,
+t1.`SSNID`,
+t1.`STUDY_FIELD`,
+t1.`STUDY_SCHOOL`,
+t1.`USER_ID`,
+t151.`NAME` AS `USER_NAME`,
+t1.`VEHICLE`,
+t1.`VISA_EXPIRE`,
+t1.`VISA_NO`,
+t1.`WORK_CONTACT_ID`,
+t1.`WORK_EMAIL`,
+t1.`WORK_LOCATION_ID`,
+t71.`NAME` AS `WORK_LOCATION_NAME`,
+t1.`WORK_PERMIT_EXPIRATION_DATE`,
+t1.`WORK_PERMIT_SCHEDULED_ACTIVITY`,
+t1.`WORK_PHONE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `hr_job` t31 ON t1.`JOB_ID` = t31.`ID` 
+LEFT JOIN `hr_employee` t41 ON t1.`COACH_ID` = t41.`ID` 
+LEFT JOIN `hr_employee` t51 ON t1.`PARENT_ID` = t51.`ID` 
+LEFT JOIN `res_partner` t61 ON t1.`ADDRESS_ID` = t61.`ID` 
+LEFT JOIN `hr_work_location` t71 ON t1.`WORK_LOCATION_ID` = t71.`ID` 
+LEFT JOIN `res_users` t81 ON t1.`LEAVE_MANAGER_ID` = t81.`ID` 
+LEFT JOIN `res_partner` t91 ON t81.`PARTNER_ID` = t91.`ID` 
+LEFT JOIN `resource_calendar` t101 ON t1.`RESOURCE_CALENDAR_ID` = t101.`ID` 
+LEFT JOIN `res_country_state` t111 ON t1.`PRIVATE_STATE_ID` = t111.`ID` 
+LEFT JOIN `res_country` t121 ON t1.`PRIVATE_COUNTRY_ID` = t121.`ID` 
+LEFT JOIN `res_country` t131 ON t1.`COUNTRY_ID` = t131.`ID` 
+LEFT JOIN `res_users` t141 ON t1.`USER_ID` = t141.`ID` 
+LEFT JOIN `res_partner` t151 ON t141.`PARTNER_ID` = t151.`ID` 
+LEFT JOIN `res_partner_bank` t161 ON t1.`BANK_ACCOUNT_ID` = t161.`ID` 
+LEFT JOIN `res_users` t171 ON t1.`ATTENDANCE_MANAGER_ID` = t171.`ID` 
+LEFT JOIN `res_partner` t181 ON t171.`PARTNER_ID` = t181.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_employee-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDITIONAL_NOTE`,
+t1.`ADDRESS_ID`,
+t61.`NAME` AS `ADDRESS_NAME`,
+t1.`ATTENDANCE_MANAGER_ID`,
+t181.`NAME` AS `ATTENDANCE_MANAGER_NAME`,
+t1.`BANK_ACCOUNT_ID`,
+t161.`NAME` AS `BANK_ACCOUNT_NAME`,
+t1.`BARCODE`,
+t1.`BIRTHDAY`,
+t1.`CERTIFICATE`,
+t1.`CHILDREN`,
+(SELECT count(1) child_count  FROM `hr_employee`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COACH_ID`,
+t41.`NAME` AS `COACH_NAME`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CONTRACT_ID`,
+t1.`CONTRACT_WARNING`,
+t1.`COUNTRY_ID`,
+t131.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`DEPARTURE_DATE`,
+t1.`DEPARTURE_DESCRIPTION`,
+t1.`DEPARTURE_REASON_ID`,
+t1.`DISTANCE_HOME_WORK`,
+t1.`DISTANCE_HOME_WORK_UNIT`,
+t1.`EMERGENCY_CONTACT`,
+t1.`EMERGENCY_PHONE`,
+t1.`EMPLOYEE_TYPE`,
+t1.`EXPENSE_MANAGER_ID`,
+t1.`FIRST_CONTRACT_DATE`,
+t1.`GENDER`,
+t1.`ID`,
+t1.`IDENTIFICATION_ID`,
+t1.`IS_FLEXIBLE`,
+t1.`IS_FULLY_FLEXIBLE`,
+t1.`JOB_ID`,
+t31.`NAME` AS `JOB_NAME`,
+t1.`JOB_TITLE`,
+t1.`KM_HOME_WORK`,
+t1.`LAST_ATTENDANCE_ID`,
+t1.`LEAVE_MANAGER_ID`,
+t91.`NAME` AS `LEAVE_MANAGER_NAME`,
+t1.`LEGAL_NAME`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`MOBILE_PHONE`,
+t1.`MOBILITY_CARD`,
+t1.`NAME`,
+t1.`NOTES`,
+t1.`PARENT_ID`,
+t51.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PASSPORT_ID`,
+t1.`PERMIT_NO`,
+t1.`PIN`,
+t1.`PLACE_OF_BIRTH`,
+t1.`PRIVATE_CAR_PLATE`,
+t1.`PRIVATE_CITY`,
+t1.`PRIVATE_COUNTRY_ID`,
+t121.`NAME` AS `PRIVATE_COUNTRY_NAME`,
+t1.`PRIVATE_EMAIL`,
+t1.`PRIVATE_PHONE`,
+t1.`PRIVATE_STATE_ID`,
+t111.`NAME` AS `PRIVATE_STATE_NAME`,
+t1.`PRIVATE_STREET`,
+t1.`PRIVATE_STREET2`,
+t1.`PRIVATE_ZIP`,
+t1.`RESOURCE_CALENDAR_ID`,
+t101.`NAME` AS `RESOURCE_CALENDAR_NAME`,
+t1.`RESOURCE_ID`,
+t1.`SINID`,
+t1.`SPOUSE_BIRTHDATE`,
+t1.`SPOUSE_COMPLETE_NAME`,
+t1.`SSNID`,
+t1.`STUDY_FIELD`,
+t1.`STUDY_SCHOOL`,
+t1.`USER_ID`,
+t151.`NAME` AS `USER_NAME`,
+t1.`VEHICLE`,
+t1.`VISA_EXPIRE`,
+t1.`VISA_NO`,
+t1.`WORK_CONTACT_ID`,
+t1.`WORK_EMAIL`,
+t1.`WORK_LOCATION_ID`,
+t71.`NAME` AS `WORK_LOCATION_NAME`,
+t1.`WORK_PERMIT_EXPIRATION_DATE`,
+t1.`WORK_PERMIT_SCHEDULED_ACTIVITY`,
+t1.`WORK_PHONE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `hr_job` t31 ON t1.`JOB_ID` = t31.`ID` 
+LEFT JOIN `hr_employee` t41 ON t1.`COACH_ID` = t41.`ID` 
+LEFT JOIN `hr_employee` t51 ON t1.`PARENT_ID` = t51.`ID` 
+LEFT JOIN `res_partner` t61 ON t1.`ADDRESS_ID` = t61.`ID` 
+LEFT JOIN `hr_work_location` t71 ON t1.`WORK_LOCATION_ID` = t71.`ID` 
+LEFT JOIN `res_users` t81 ON t1.`LEAVE_MANAGER_ID` = t81.`ID` 
+LEFT JOIN `res_partner` t91 ON t81.`PARTNER_ID` = t91.`ID` 
+LEFT JOIN `resource_calendar` t101 ON t1.`RESOURCE_CALENDAR_ID` = t101.`ID` 
+LEFT JOIN `res_country_state` t111 ON t1.`PRIVATE_STATE_ID` = t111.`ID` 
+LEFT JOIN `res_country` t121 ON t1.`PRIVATE_COUNTRY_ID` = t121.`ID` 
+LEFT JOIN `res_country` t131 ON t1.`COUNTRY_ID` = t131.`ID` 
+LEFT JOIN `res_users` t141 ON t1.`USER_ID` = t141.`ID` 
+LEFT JOIN `res_partner` t151 ON t141.`PARTNER_ID` = t151.`ID` 
+LEFT JOIN `res_partner_bank` t161 ON t1.`BANK_ACCOUNT_ID` = t161.`ID` 
+LEFT JOIN `res_users` t171 ON t1.`ATTENDANCE_MANAGER_ID` = t171.`ID` 
+LEFT JOIN `res_partner` t181 ON t171.`PARTNER_ID` = t181.`ID` 
+
+```
+
+#### 员工组织图表(emp_org_chart) :id=hr_employee-emp_org_chart
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t61.`NAME` AS `ADDRESS_NAME`,
+t1.`ATTENDANCE_MANAGER_ID`,
+t181.`NAME` AS `ATTENDANCE_MANAGER_NAME`,
+t1.`BANK_ACCOUNT_ID`,
+t161.`NAME` AS `BANK_ACCOUNT_NAME`,
+t1.`BARCODE`,
+t1.`BIRTHDAY`,
+t1.`CERTIFICATE`,
+t1.`CHILDREN`,
+(SELECT count(1) child_count  FROM `hr_employee`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COACH_ID`,
+t41.`NAME` AS `COACH_NAME`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CONTRACT_ID`,
+t1.`CONTRACT_WARNING`,
+t1.`COUNTRY_ID`,
+t131.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`DEPARTURE_DATE`,
+t1.`DEPARTURE_REASON_ID`,
+t1.`DISTANCE_HOME_WORK`,
+t1.`DISTANCE_HOME_WORK_UNIT`,
+t1.`EMERGENCY_CONTACT`,
+t1.`EMERGENCY_PHONE`,
+t1.`EMPLOYEE_TYPE`,
+t1.`EXPENSE_MANAGER_ID`,
+t1.`FIRST_CONTRACT_DATE`,
+t1.`GENDER`,
+t1.`ID`,
+t1.`IDENTIFICATION_ID`,
+t1.`IS_FLEXIBLE`,
+t1.`IS_FULLY_FLEXIBLE`,
+t1.`JOB_ID`,
+t31.`NAME` AS `JOB_NAME`,
+t1.`JOB_TITLE`,
+t1.`KM_HOME_WORK`,
+t1.`LAST_ATTENDANCE_ID`,
+t1.`LEAVE_MANAGER_ID`,
+t91.`NAME` AS `LEAVE_MANAGER_NAME`,
+t1.`LEGAL_NAME`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`MOBILE_PHONE`,
+t1.`MOBILITY_CARD`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t51.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PASSPORT_ID`,
+t1.`PERMIT_NO`,
+t1.`PIN`,
+t1.`PLACE_OF_BIRTH`,
+t1.`PRIVATE_CAR_PLATE`,
+t1.`PRIVATE_CITY`,
+t1.`PRIVATE_COUNTRY_ID`,
+t121.`NAME` AS `PRIVATE_COUNTRY_NAME`,
+t1.`PRIVATE_EMAIL`,
+t1.`PRIVATE_PHONE`,
+t1.`PRIVATE_STATE_ID`,
+t111.`NAME` AS `PRIVATE_STATE_NAME`,
+t1.`PRIVATE_STREET`,
+t1.`PRIVATE_STREET2`,
+t1.`PRIVATE_ZIP`,
+t1.`RESOURCE_CALENDAR_ID`,
+t101.`NAME` AS `RESOURCE_CALENDAR_NAME`,
+t1.`RESOURCE_ID`,
+t1.`SINID`,
+t1.`SPOUSE_BIRTHDATE`,
+t1.`SPOUSE_COMPLETE_NAME`,
+t1.`SSNID`,
+t1.`STUDY_FIELD`,
+t1.`STUDY_SCHOOL`,
+t1.`USER_ID`,
+t151.`NAME` AS `USER_NAME`,
+t1.`VEHICLE`,
+t1.`VISA_EXPIRE`,
+t1.`VISA_NO`,
+t1.`WORK_CONTACT_ID`,
+t1.`WORK_EMAIL`,
+t1.`WORK_LOCATION_ID`,
+t71.`NAME` AS `WORK_LOCATION_NAME`,
+t1.`WORK_PERMIT_EXPIRATION_DATE`,
+t1.`WORK_PERMIT_SCHEDULED_ACTIVITY`,
+t1.`WORK_PHONE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `hr_job` t31 ON t1.`JOB_ID` = t31.`ID` 
+LEFT JOIN `hr_employee` t41 ON t1.`COACH_ID` = t41.`ID` 
+LEFT JOIN `hr_employee` t51 ON t1.`PARENT_ID` = t51.`ID` 
+LEFT JOIN `res_partner` t61 ON t1.`ADDRESS_ID` = t61.`ID` 
+LEFT JOIN `hr_work_location` t71 ON t1.`WORK_LOCATION_ID` = t71.`ID` 
+LEFT JOIN `res_users` t81 ON t1.`LEAVE_MANAGER_ID` = t81.`ID` 
+LEFT JOIN `res_partner` t91 ON t81.`PARTNER_ID` = t91.`ID` 
+LEFT JOIN `resource_calendar` t101 ON t1.`RESOURCE_CALENDAR_ID` = t101.`ID` 
+LEFT JOIN `res_country_state` t111 ON t1.`PRIVATE_STATE_ID` = t111.`ID` 
+LEFT JOIN `res_country` t121 ON t1.`PRIVATE_COUNTRY_ID` = t121.`ID` 
+LEFT JOIN `res_country` t131 ON t1.`COUNTRY_ID` = t131.`ID` 
+LEFT JOIN `res_users` t141 ON t1.`USER_ID` = t141.`ID` 
+LEFT JOIN `res_partner` t151 ON t141.`PARTNER_ID` = t151.`ID` 
+LEFT JOIN `res_partner_bank` t161 ON t1.`BANK_ACCOUNT_ID` = t161.`ID` 
+LEFT JOIN `res_users` t171 ON t1.`ATTENDANCE_MANAGER_ID` = t171.`ID` 
+LEFT JOIN `res_partner` t181 ON t171.`PARTNER_ID` = t181.`ID` 
+
+WHERE ( t1.`PARENT_ID` IS NULL  AND  <choose><when test="ctx.datacontext.hr_employee !=null ">  t1.`ID` = #{ctx.datacontext.hr_employee}  </when><otherwise>1=1</otherwise></choose> )
+```
+
+#### 员工组织图表2(emp_org_chart2) :id=hr_employee-emp_org_chart2
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t61.`NAME` AS `ADDRESS_NAME`,
+t1.`ATTENDANCE_MANAGER_ID`,
+t181.`NAME` AS `ATTENDANCE_MANAGER_NAME`,
+t1.`BANK_ACCOUNT_ID`,
+t161.`NAME` AS `BANK_ACCOUNT_NAME`,
+t1.`BARCODE`,
+t1.`BIRTHDAY`,
+t1.`CERTIFICATE`,
+t1.`CHILDREN`,
+(SELECT count(1) child_count  FROM `hr_employee`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COACH_ID`,
+t41.`NAME` AS `COACH_NAME`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CONTRACT_ID`,
+t1.`CONTRACT_WARNING`,
+t1.`COUNTRY_ID`,
+t131.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`DEPARTURE_DATE`,
+t1.`DEPARTURE_REASON_ID`,
+t1.`DISTANCE_HOME_WORK`,
+t1.`DISTANCE_HOME_WORK_UNIT`,
+t1.`EMERGENCY_CONTACT`,
+t1.`EMERGENCY_PHONE`,
+t1.`EMPLOYEE_TYPE`,
+t1.`EXPENSE_MANAGER_ID`,
+t1.`FIRST_CONTRACT_DATE`,
+t1.`GENDER`,
+t1.`ID`,
+t1.`IDENTIFICATION_ID`,
+t1.`IS_FLEXIBLE`,
+t1.`IS_FULLY_FLEXIBLE`,
+t1.`JOB_ID`,
+t31.`NAME` AS `JOB_NAME`,
+t1.`JOB_TITLE`,
+t1.`KM_HOME_WORK`,
+t1.`LAST_ATTENDANCE_ID`,
+t1.`LEAVE_MANAGER_ID`,
+t91.`NAME` AS `LEAVE_MANAGER_NAME`,
+t1.`LEGAL_NAME`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`MOBILE_PHONE`,
+t1.`MOBILITY_CARD`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t51.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PASSPORT_ID`,
+t1.`PERMIT_NO`,
+t1.`PIN`,
+t1.`PLACE_OF_BIRTH`,
+t1.`PRIVATE_CAR_PLATE`,
+t1.`PRIVATE_CITY`,
+t1.`PRIVATE_COUNTRY_ID`,
+t121.`NAME` AS `PRIVATE_COUNTRY_NAME`,
+t1.`PRIVATE_EMAIL`,
+t1.`PRIVATE_PHONE`,
+t1.`PRIVATE_STATE_ID`,
+t111.`NAME` AS `PRIVATE_STATE_NAME`,
+t1.`PRIVATE_STREET`,
+t1.`PRIVATE_STREET2`,
+t1.`PRIVATE_ZIP`,
+t1.`RESOURCE_CALENDAR_ID`,
+t101.`NAME` AS `RESOURCE_CALENDAR_NAME`,
+t1.`RESOURCE_ID`,
+t1.`SINID`,
+t1.`SPOUSE_BIRTHDATE`,
+t1.`SPOUSE_COMPLETE_NAME`,
+t1.`SSNID`,
+t1.`STUDY_FIELD`,
+t1.`STUDY_SCHOOL`,
+t1.`USER_ID`,
+t151.`NAME` AS `USER_NAME`,
+t1.`VEHICLE`,
+t1.`VISA_EXPIRE`,
+t1.`VISA_NO`,
+t1.`WORK_CONTACT_ID`,
+t1.`WORK_EMAIL`,
+t1.`WORK_LOCATION_ID`,
+t71.`NAME` AS `WORK_LOCATION_NAME`,
+t1.`WORK_PERMIT_EXPIRATION_DATE`,
+t1.`WORK_PERMIT_SCHEDULED_ACTIVITY`,
+t1.`WORK_PHONE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `hr_job` t31 ON t1.`JOB_ID` = t31.`ID` 
+LEFT JOIN `hr_employee` t41 ON t1.`COACH_ID` = t41.`ID` 
+LEFT JOIN `hr_employee` t51 ON t1.`PARENT_ID` = t51.`ID` 
+LEFT JOIN `res_partner` t61 ON t1.`ADDRESS_ID` = t61.`ID` 
+LEFT JOIN `hr_work_location` t71 ON t1.`WORK_LOCATION_ID` = t71.`ID` 
+LEFT JOIN `res_users` t81 ON t1.`LEAVE_MANAGER_ID` = t81.`ID` 
+LEFT JOIN `res_partner` t91 ON t81.`PARTNER_ID` = t91.`ID` 
+LEFT JOIN `resource_calendar` t101 ON t1.`RESOURCE_CALENDAR_ID` = t101.`ID` 
+LEFT JOIN `res_country_state` t111 ON t1.`PRIVATE_STATE_ID` = t111.`ID` 
+LEFT JOIN `res_country` t121 ON t1.`PRIVATE_COUNTRY_ID` = t121.`ID` 
+LEFT JOIN `res_country` t131 ON t1.`COUNTRY_ID` = t131.`ID` 
+LEFT JOIN `res_users` t141 ON t1.`USER_ID` = t141.`ID` 
+LEFT JOIN `res_partner` t151 ON t141.`PARTNER_ID` = t151.`ID` 
+LEFT JOIN `res_partner_bank` t161 ON t1.`BANK_ACCOUNT_ID` = t161.`ID` 
+LEFT JOIN `res_users` t171 ON t1.`ATTENDANCE_MANAGER_ID` = t171.`ID` 
+LEFT JOIN `res_partner` t181 ON t171.`PARTNER_ID` = t181.`ID` 
+
+WHERE ( <choose><when test="ctx.datacontext.hr_employee !=null ">  t1.`ID` = #{ctx.datacontext.hr_employee}  </when><otherwise>1=1</otherwise></choose> )
+```
+
+#### 组织图表(org_chart) :id=hr_employee-org_chart
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t61.`NAME` AS `ADDRESS_NAME`,
+t1.`ATTENDANCE_MANAGER_ID`,
+t181.`NAME` AS `ATTENDANCE_MANAGER_NAME`,
+t1.`BANK_ACCOUNT_ID`,
+t161.`NAME` AS `BANK_ACCOUNT_NAME`,
+t1.`BARCODE`,
+t1.`BIRTHDAY`,
+t1.`CERTIFICATE`,
+t1.`CHILDREN`,
+(SELECT count(1) child_count  FROM `hr_employee`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COACH_ID`,
+t41.`NAME` AS `COACH_NAME`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CONTRACT_ID`,
+t1.`CONTRACT_WARNING`,
+t1.`COUNTRY_ID`,
+t131.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`DEPARTURE_DATE`,
+t1.`DEPARTURE_REASON_ID`,
+t1.`DISTANCE_HOME_WORK`,
+t1.`DISTANCE_HOME_WORK_UNIT`,
+t1.`EMERGENCY_CONTACT`,
+t1.`EMERGENCY_PHONE`,
+t1.`EMPLOYEE_TYPE`,
+t1.`EXPENSE_MANAGER_ID`,
+t1.`FIRST_CONTRACT_DATE`,
+t1.`GENDER`,
+t1.`ID`,
+t1.`IDENTIFICATION_ID`,
+t1.`IS_FLEXIBLE`,
+t1.`IS_FULLY_FLEXIBLE`,
+t1.`JOB_ID`,
+t31.`NAME` AS `JOB_NAME`,
+t1.`JOB_TITLE`,
+t1.`KM_HOME_WORK`,
+t1.`LAST_ATTENDANCE_ID`,
+t1.`LEAVE_MANAGER_ID`,
+t91.`NAME` AS `LEAVE_MANAGER_NAME`,
+t1.`LEGAL_NAME`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`MOBILE_PHONE`,
+t1.`MOBILITY_CARD`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t51.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PASSPORT_ID`,
+t1.`PERMIT_NO`,
+t1.`PIN`,
+t1.`PLACE_OF_BIRTH`,
+t1.`PRIVATE_CAR_PLATE`,
+t1.`PRIVATE_CITY`,
+t1.`PRIVATE_COUNTRY_ID`,
+t121.`NAME` AS `PRIVATE_COUNTRY_NAME`,
+t1.`PRIVATE_EMAIL`,
+t1.`PRIVATE_PHONE`,
+t1.`PRIVATE_STATE_ID`,
+t111.`NAME` AS `PRIVATE_STATE_NAME`,
+t1.`PRIVATE_STREET`,
+t1.`PRIVATE_STREET2`,
+t1.`PRIVATE_ZIP`,
+t1.`RESOURCE_CALENDAR_ID`,
+t101.`NAME` AS `RESOURCE_CALENDAR_NAME`,
+t1.`RESOURCE_ID`,
+t1.`SINID`,
+t1.`SPOUSE_BIRTHDATE`,
+t1.`SPOUSE_COMPLETE_NAME`,
+t1.`SSNID`,
+t1.`STUDY_FIELD`,
+t1.`STUDY_SCHOOL`,
+t1.`USER_ID`,
+t151.`NAME` AS `USER_NAME`,
+t1.`VEHICLE`,
+t1.`VISA_EXPIRE`,
+t1.`VISA_NO`,
+t1.`WORK_CONTACT_ID`,
+t1.`WORK_EMAIL`,
+t1.`WORK_LOCATION_ID`,
+t71.`NAME` AS `WORK_LOCATION_NAME`,
+t1.`WORK_PERMIT_EXPIRATION_DATE`,
+t1.`WORK_PERMIT_SCHEDULED_ACTIVITY`,
+t1.`WORK_PHONE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `hr_job` t31 ON t1.`JOB_ID` = t31.`ID` 
+LEFT JOIN `hr_employee` t41 ON t1.`COACH_ID` = t41.`ID` 
+LEFT JOIN `hr_employee` t51 ON t1.`PARENT_ID` = t51.`ID` 
+LEFT JOIN `res_partner` t61 ON t1.`ADDRESS_ID` = t61.`ID` 
+LEFT JOIN `hr_work_location` t71 ON t1.`WORK_LOCATION_ID` = t71.`ID` 
+LEFT JOIN `res_users` t81 ON t1.`LEAVE_MANAGER_ID` = t81.`ID` 
+LEFT JOIN `res_partner` t91 ON t81.`PARTNER_ID` = t91.`ID` 
+LEFT JOIN `resource_calendar` t101 ON t1.`RESOURCE_CALENDAR_ID` = t101.`ID` 
+LEFT JOIN `res_country_state` t111 ON t1.`PRIVATE_STATE_ID` = t111.`ID` 
+LEFT JOIN `res_country` t121 ON t1.`PRIVATE_COUNTRY_ID` = t121.`ID` 
+LEFT JOIN `res_country` t131 ON t1.`COUNTRY_ID` = t131.`ID` 
+LEFT JOIN `res_users` t141 ON t1.`USER_ID` = t141.`ID` 
+LEFT JOIN `res_partner` t151 ON t141.`PARTNER_ID` = t151.`ID` 
+LEFT JOIN `res_partner_bank` t161 ON t1.`BANK_ACCOUNT_ID` = t161.`ID` 
+LEFT JOIN `res_users` t171 ON t1.`ATTENDANCE_MANAGER_ID` = t171.`ID` 
+LEFT JOIN `res_partner` t181 ON t171.`PARTNER_ID` = t181.`ID` 
+
+WHERE ( ( t1.`PARENT_ID` = #{ctx.datacontext.employee}  OR  t1.`ID` = #{ctx.datacontext.employee}  OR  FIND_IN_SET(T1.ID,REPLACE(#{ctx.datacontext.parent_path},'/',',')) >0 ) )
+```
+
+#### 简单查询(simple) :id=hr_employee-simple
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t61.`NAME` AS `ADDRESS_NAME`,
+t1.`ATTENDANCE_MANAGER_ID`,
+t181.`NAME` AS `ATTENDANCE_MANAGER_NAME`,
+t1.`BANK_ACCOUNT_ID`,
+t161.`NAME` AS `BANK_ACCOUNT_NAME`,
+t1.`BARCODE`,
+t1.`BIRTHDAY`,
+t1.`CERTIFICATE`,
+t1.`CHILDREN`,
+(SELECT count(1) child_count  FROM `hr_employee`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COACH_ID`,
+t41.`NAME` AS `COACH_NAME`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CONTRACT_ID`,
+t1.`CONTRACT_WARNING`,
+t1.`COUNTRY_ID`,
+t131.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`DEPARTURE_DATE`,
+t1.`DEPARTURE_REASON_ID`,
+t1.`DISTANCE_HOME_WORK`,
+t1.`DISTANCE_HOME_WORK_UNIT`,
+t1.`EMERGENCY_CONTACT`,
+t1.`EMERGENCY_PHONE`,
+t1.`EMPLOYEE_TYPE`,
+t1.`EXPENSE_MANAGER_ID`,
+t1.`FIRST_CONTRACT_DATE`,
+t1.`GENDER`,
+t1.`ID`,
+t1.`IDENTIFICATION_ID`,
+t1.`IS_FLEXIBLE`,
+t1.`IS_FULLY_FLEXIBLE`,
+t1.`JOB_ID`,
+t31.`NAME` AS `JOB_NAME`,
+t1.`JOB_TITLE`,
+t1.`KM_HOME_WORK`,
+t1.`LAST_ATTENDANCE_ID`,
+t1.`LEAVE_MANAGER_ID`,
+t91.`NAME` AS `LEAVE_MANAGER_NAME`,
+t1.`LEGAL_NAME`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`MOBILE_PHONE`,
+t1.`MOBILITY_CARD`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t51.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PASSPORT_ID`,
+t1.`PERMIT_NO`,
+t1.`PIN`,
+t1.`PLACE_OF_BIRTH`,
+t1.`PRIVATE_CAR_PLATE`,
+t1.`PRIVATE_CITY`,
+t1.`PRIVATE_COUNTRY_ID`,
+t121.`NAME` AS `PRIVATE_COUNTRY_NAME`,
+t1.`PRIVATE_EMAIL`,
+t1.`PRIVATE_PHONE`,
+t1.`PRIVATE_STATE_ID`,
+t111.`NAME` AS `PRIVATE_STATE_NAME`,
+t1.`PRIVATE_STREET`,
+t1.`PRIVATE_STREET2`,
+t1.`PRIVATE_ZIP`,
+t1.`RESOURCE_CALENDAR_ID`,
+t101.`NAME` AS `RESOURCE_CALENDAR_NAME`,
+t1.`RESOURCE_ID`,
+t1.`SINID`,
+t1.`SPOUSE_BIRTHDATE`,
+t1.`SPOUSE_COMPLETE_NAME`,
+t1.`SSNID`,
+t1.`STUDY_FIELD`,
+t1.`STUDY_SCHOOL`,
+t1.`USER_ID`,
+t151.`NAME` AS `USER_NAME`,
+t1.`VEHICLE`,
+t1.`VISA_EXPIRE`,
+t1.`VISA_NO`,
+t1.`WORK_CONTACT_ID`,
+t1.`WORK_EMAIL`,
+t1.`WORK_LOCATION_ID`,
+t71.`NAME` AS `WORK_LOCATION_NAME`,
+t1.`WORK_PERMIT_EXPIRATION_DATE`,
+t1.`WORK_PERMIT_SCHEDULED_ACTIVITY`,
+t1.`WORK_PHONE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `hr_job` t31 ON t1.`JOB_ID` = t31.`ID` 
+LEFT JOIN `hr_employee` t41 ON t1.`COACH_ID` = t41.`ID` 
+LEFT JOIN `hr_employee` t51 ON t1.`PARENT_ID` = t51.`ID` 
+LEFT JOIN `res_partner` t61 ON t1.`ADDRESS_ID` = t61.`ID` 
+LEFT JOIN `hr_work_location` t71 ON t1.`WORK_LOCATION_ID` = t71.`ID` 
+LEFT JOIN `res_users` t81 ON t1.`LEAVE_MANAGER_ID` = t81.`ID` 
+LEFT JOIN `res_partner` t91 ON t81.`PARTNER_ID` = t91.`ID` 
+LEFT JOIN `resource_calendar` t101 ON t1.`RESOURCE_CALENDAR_ID` = t101.`ID` 
+LEFT JOIN `res_country_state` t111 ON t1.`PRIVATE_STATE_ID` = t111.`ID` 
+LEFT JOIN `res_country` t121 ON t1.`PRIVATE_COUNTRY_ID` = t121.`ID` 
+LEFT JOIN `res_country` t131 ON t1.`COUNTRY_ID` = t131.`ID` 
+LEFT JOIN `res_users` t141 ON t1.`USER_ID` = t141.`ID` 
+LEFT JOIN `res_partner` t151 ON t141.`PARTNER_ID` = t151.`ID` 
+LEFT JOIN `res_partner_bank` t161 ON t1.`BANK_ACCOUNT_ID` = t161.`ID` 
+LEFT JOIN `res_users` t171 ON t1.`ATTENDANCE_MANAGER_ID` = t171.`ID` 
+LEFT JOIN `res_partner` t181 ON t171.`PARTNER_ID` = t181.`ID` 
+
+```
+
+#### 带活动查询(with_activities) :id=hr_employee-with_activities
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t61.`NAME` AS `ADDRESS_NAME`,
+t1.`ATTENDANCE_MANAGER_ID`,
+t181.`NAME` AS `ATTENDANCE_MANAGER_NAME`,
+t1.`BANK_ACCOUNT_ID`,
+t161.`NAME` AS `BANK_ACCOUNT_NAME`,
+t1.`BARCODE`,
+t1.`BIRTHDAY`,
+t1.`CERTIFICATE`,
+t1.`CHILDREN`,
+(SELECT count(1) child_count  FROM `hr_employee`  t  where t.PARENT_ID= t1.`ID` ) AS `CHILD_COUNT`,
+t1.`COACH_ID`,
+t41.`NAME` AS `COACH_NAME`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CONTRACT_ID`,
+t1.`CONTRACT_WARNING`,
+t1.`COUNTRY_ID`,
+t131.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`DEPARTURE_DATE`,
+t1.`DEPARTURE_REASON_ID`,
+t1.`DISTANCE_HOME_WORK`,
+t1.`DISTANCE_HOME_WORK_UNIT`,
+t1.`EMERGENCY_CONTACT`,
+t1.`EMERGENCY_PHONE`,
+t1.`EMPLOYEE_TYPE`,
+t1.`EXPENSE_MANAGER_ID`,
+t1.`FIRST_CONTRACT_DATE`,
+t1.`GENDER`,
+t1.`ID`,
+t1.`IDENTIFICATION_ID`,
+t1.`IS_FLEXIBLE`,
+t1.`IS_FULLY_FLEXIBLE`,
+t1.`JOB_ID`,
+t31.`NAME` AS `JOB_NAME`,
+t1.`JOB_TITLE`,
+t1.`KM_HOME_WORK`,
+t1.`LAST_ATTENDANCE_ID`,
+t1.`LEAVE_MANAGER_ID`,
+t91.`NAME` AS `LEAVE_MANAGER_NAME`,
+t1.`LEGAL_NAME`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`MOBILE_PHONE`,
+t1.`MOBILITY_CARD`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t51.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PASSPORT_ID`,
+t1.`PERMIT_NO`,
+t1.`PIN`,
+t1.`PLACE_OF_BIRTH`,
+t1.`PRIVATE_CAR_PLATE`,
+t1.`PRIVATE_CITY`,
+t1.`PRIVATE_COUNTRY_ID`,
+t121.`NAME` AS `PRIVATE_COUNTRY_NAME`,
+t1.`PRIVATE_EMAIL`,
+t1.`PRIVATE_PHONE`,
+t1.`PRIVATE_STATE_ID`,
+t111.`NAME` AS `PRIVATE_STATE_NAME`,
+t1.`PRIVATE_STREET`,
+t1.`PRIVATE_STREET2`,
+t1.`PRIVATE_ZIP`,
+t1.`RESOURCE_CALENDAR_ID`,
+t101.`NAME` AS `RESOURCE_CALENDAR_NAME`,
+t1.`RESOURCE_ID`,
+t1.`SINID`,
+t1.`SPOUSE_BIRTHDATE`,
+t1.`SPOUSE_COMPLETE_NAME`,
+t1.`SSNID`,
+t1.`STUDY_FIELD`,
+t1.`STUDY_SCHOOL`,
+t1.`USER_ID`,
+t151.`NAME` AS `USER_NAME`,
+t1.`VEHICLE`,
+t1.`VISA_EXPIRE`,
+t1.`VISA_NO`,
+t1.`WORK_CONTACT_ID`,
+t1.`WORK_EMAIL`,
+t1.`WORK_LOCATION_ID`,
+t71.`NAME` AS `WORK_LOCATION_NAME`,
+t1.`WORK_PERMIT_EXPIRATION_DATE`,
+t1.`WORK_PERMIT_SCHEDULED_ACTIVITY`,
+t1.`WORK_PHONE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `hr_job` t31 ON t1.`JOB_ID` = t31.`ID` 
+LEFT JOIN `hr_employee` t41 ON t1.`COACH_ID` = t41.`ID` 
+LEFT JOIN `hr_employee` t51 ON t1.`PARENT_ID` = t51.`ID` 
+LEFT JOIN `res_partner` t61 ON t1.`ADDRESS_ID` = t61.`ID` 
+LEFT JOIN `hr_work_location` t71 ON t1.`WORK_LOCATION_ID` = t71.`ID` 
+LEFT JOIN `res_users` t81 ON t1.`LEAVE_MANAGER_ID` = t81.`ID` 
+LEFT JOIN `res_partner` t91 ON t81.`PARTNER_ID` = t91.`ID` 
+LEFT JOIN `resource_calendar` t101 ON t1.`RESOURCE_CALENDAR_ID` = t101.`ID` 
+LEFT JOIN `res_country_state` t111 ON t1.`PRIVATE_STATE_ID` = t111.`ID` 
+LEFT JOIN `res_country` t121 ON t1.`PRIVATE_COUNTRY_ID` = t121.`ID` 
+LEFT JOIN `res_country` t131 ON t1.`COUNTRY_ID` = t131.`ID` 
+LEFT JOIN `res_users` t141 ON t1.`USER_ID` = t141.`ID` 
+LEFT JOIN `res_partner` t151 ON t141.`PARTNER_ID` = t151.`ID` 
+LEFT JOIN `res_partner_bank` t161 ON t1.`BANK_ACCOUNT_ID` = t161.`ID` 
+LEFT JOIN `res_users` t171 ON t1.`ATTENDANCE_MANAGER_ID` = t171.`ID` 
+LEFT JOIN `res_partner` t181 ON t171.`PARTNER_ID` = t181.`ID` 
+
+```
+
+
+## [员工类别(HR_EMPLOYEE_CATEGORY)](module/hr/hr_employee_category.md) :id=hr_employee_category
+
+#### DEFAULT :id=hr_employee_category-Default
+```sql
+SELECT
+t1.`COLOR`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee_category` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_employee_category-View
+```sql
+SELECT
+t1.`COLOR`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_employee_category` t1 
+
+```
+
+
+## [费用(HR_EXPENSE)](module/hr/hr_expense.md) :id=hr_expense
+
+#### DEFAULT :id=hr_expense-Default
+```sql
+SELECT
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t1.`DATE`,
+t1.`EMPLOYEE_ID`,
+t1.`ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`NAME`,
+t1.`PAYMENT_MODE`,
+t1.`PRICE_UNIT`,
+t1.`QUANTITY`,
+t1.`SHEET_ID`,
+t1.`STATE`,
+t1.`TAX_AMOUNT`,
+t1.`TAX_AMOUNT_CURRENCY`,
+t1.`TOTAL_AMOUNT`,
+t1.`TOTAL_AMOUNT_CURRENCY`,
+t1.`UNTAXED_AMOUNT_CURRENCY`,
+t1.`VENDOR_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_expense` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_expense-View
+```sql
+SELECT
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t1.`DATE`,
+t1.`DESCRIPTION`,
+t1.`EMPLOYEE_ID`,
+t1.`ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`NAME`,
+t1.`PAYMENT_MODE`,
+t1.`PRICE_UNIT`,
+t1.`QUANTITY`,
+t1.`SHEET_ID`,
+t1.`STATE`,
+t1.`TAX_AMOUNT`,
+t1.`TAX_AMOUNT_CURRENCY`,
+t1.`TOTAL_AMOUNT`,
+t1.`TOTAL_AMOUNT_CURRENCY`,
+t1.`UNTAXED_AMOUNT_CURRENCY`,
+t1.`VENDOR_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_expense` t1 
+
+```
+
+
+## [费用报表(HR_EXPENSE_SHEET)](module/hr/hr_expense_sheet.md) :id=hr_expense_sheet
+
+#### DEFAULT :id=hr_expense_sheet-Default
+```sql
+SELECT
+t1.`ACCOUNTING_DATE`,
+t1.`AMOUNT_RESIDUAL`,
+t1.`APPROVAL_DATE`,
+t1.`APPROVAL_STATE`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t1.`DEPARTMENT_ID`,
+t1.`EMPLOYEE_ID`,
+t1.`ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`NAME`,
+t1.`STATE`,
+t1.`TOTAL_AMOUNT`,
+t1.`TOTAL_TAX_AMOUNT`,
+t1.`UNTAXED_AMOUNT`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_expense_sheet` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_expense_sheet-View
+```sql
+SELECT
+t1.`ACCOUNTING_DATE`,
+t1.`AMOUNT_RESIDUAL`,
+t1.`APPROVAL_DATE`,
+t1.`APPROVAL_STATE`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t1.`DEPARTMENT_ID`,
+t1.`EMPLOYEE_ID`,
+t1.`ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`NAME`,
+t1.`STATE`,
+t1.`TOTAL_AMOUNT`,
+t1.`TOTAL_TAX_AMOUNT`,
+t1.`UNTAXED_AMOUNT`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_expense_sheet` t1 
+
+```
+
+
+## [工作岗位(HR_JOB)](module/hr/hr_job.md) :id=hr_job
+
+#### DEFAULT :id=hr_job-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CONTRACT_TYPE_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`DEPARTMENT_ID`,
+t1.`EXPECTED_EMPLOYEES`,
+t1.`ID`,
+t1.`INDUSTRY_ID`,
+t1.`MANAGER_ID`,
+t1.`NAME`,
+t1.`NO_OF_EMPLOYEE`,
+t1.`NO_OF_HIRED_EMPLOYEE`,
+t1.`NO_OF_RECRUITMENT`,
+t1.`SEQUENCE`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_job` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_job-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t1.`APPLICANT_PROPERTIES_DEFINITION`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CONTRACT_TYPE_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`DEPARTMENT_ID`,
+t1.`DESCRIPTION`,
+t1.`EXPECTED_EMPLOYEES`,
+t1.`ID`,
+t1.`INDUSTRY_ID`,
+t1.`MANAGER_ID`,
+t1.`NAME`,
+t1.`NO_OF_EMPLOYEE`,
+t1.`NO_OF_HIRED_EMPLOYEE`,
+t1.`NO_OF_RECRUITMENT`,
+t1.`REQUIREMENTS`,
+t1.`SEQUENCE`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_job` t1 
+
+```
+
+
+## [休假(HR_LEAVE)](module/hr/hr_leave.md) :id=hr_leave
+
+#### DEFAULT :id=hr_leave-Default
+```sql
+SELECT
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`DEPARTMENT_ID`,
+t1.`DURATION_DISPLAY`,
+t1.`EMPLOYEE_COMPANY_ID`,
+t1.`EMPLOYEE_ID`,
+t1.`FIRST_APPROVER_ID`,
+t1.`HOLIDAY_STATUS_ID`,
+t1.`ID`,
+t1.`MANAGER_ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`NAME`,
+t1.`NUMBER_OF_DAYS`,
+t1.`NUMBER_OF_HOURS`,
+t1.`OVERTIME_ID`,
+t1.`PRIVATE_NAME`,
+t1.`REQUEST_DATE_FROM`,
+t1.`REQUEST_DATE_FROM_PERIOD`,
+t1.`REQUEST_DATE_TO`,
+t1.`REQUEST_HOUR_FROM`,
+t1.`REQUEST_HOUR_TO`,
+t1.`REQUEST_UNIT_HALF`,
+t1.`REQUEST_UNIT_HOURS`,
+t1.`RESOURCE_CALENDAR_ID`,
+t1.`SECOND_APPROVER_ID`,
+t1.`STATE`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_leave` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_leave-View
+```sql
+SELECT
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`DEPARTMENT_ID`,
+t1.`DURATION_DISPLAY`,
+t1.`EMPLOYEE_COMPANY_ID`,
+t1.`EMPLOYEE_ID`,
+t1.`FIRST_APPROVER_ID`,
+t1.`HOLIDAY_STATUS_ID`,
+t1.`ID`,
+t1.`MANAGER_ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`NAME`,
+t1.`NOTES`,
+t1.`NUMBER_OF_DAYS`,
+t1.`NUMBER_OF_HOURS`,
+t1.`OVERTIME_ID`,
+t1.`PRIVATE_NAME`,
+t1.`REQUEST_DATE_FROM`,
+t1.`REQUEST_DATE_FROM_PERIOD`,
+t1.`REQUEST_DATE_TO`,
+t1.`REQUEST_HOUR_FROM`,
+t1.`REQUEST_HOUR_TO`,
+t1.`REQUEST_UNIT_HALF`,
+t1.`REQUEST_UNIT_HOURS`,
+t1.`RESOURCE_CALENDAR_ID`,
+t1.`SECOND_APPROVER_ID`,
+t1.`STATE`,
+t1.`USER_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_leave` t1 
+
+```
+
+
+## [休假类型(HR_LEAVE_TYPE)](module/hr/hr_leave_type.md) :id=hr_leave_type
+
+#### DEFAULT :id=hr_leave_type-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ALLOCATION_NOTIF_SUBTYPE_ID`,
+t1.`ALLOCATION_VALIDATION_TYPE`,
+t1.`ALLOWS_NEGATIVE`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CREATE_CALENDAR_MEETING`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EMPLOYEE_REQUESTS`,
+t1.`ICON_ID`,
+t1.`ID`,
+t1.`INCLUDE_PUBLIC_HOLIDAYS_IN_DURATION`,
+t1.`LEAVE_NOTIF_SUBTYPE_ID`,
+t1.`LEAVE_VALIDATION_TYPE`,
+t1.`MAX_ALLOWED_NEGATIVE`,
+t1.`NAME`,
+t1.`OVERTIME_DEDUCTIBLE`,
+t1.`REQUEST_UNIT`,
+t1.`REQUIRES_ALLOCATION`,
+t1.`SEQUENCE`,
+t1.`SHOW_ON_DASHBOARD`,
+t1.`SUPPORT_DOCUMENT`,
+t1.`TIME_TYPE`,
+t1.`UNPAID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_leave_type` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_leave_type-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ALLOCATION_NOTIF_SUBTYPE_ID`,
+t1.`ALLOCATION_VALIDATION_TYPE`,
+t1.`ALLOWS_NEGATIVE`,
+t1.`COLOR`,
+t1.`COMPANY_ID`,
+t1.`CREATE_CALENDAR_MEETING`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EMPLOYEE_REQUESTS`,
+t1.`ICON_ID`,
+t1.`ID`,
+t1.`INCLUDE_PUBLIC_HOLIDAYS_IN_DURATION`,
+t1.`LEAVE_NOTIF_SUBTYPE_ID`,
+t1.`LEAVE_VALIDATION_TYPE`,
+t1.`MAX_ALLOWED_NEGATIVE`,
+t1.`NAME`,
+t1.`OVERTIME_DEDUCTIBLE`,
+t1.`REQUEST_UNIT`,
+t1.`REQUIRES_ALLOCATION`,
+t1.`SEQUENCE`,
+t1.`SHOW_ON_DASHBOARD`,
+t1.`SUPPORT_DOCUMENT`,
+t1.`TIME_TYPE`,
+t1.`UNPAID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_leave_type` t1 
+
+```
+
+
+## [简历明细的类型(HR_RESUME_LINE_TYPE)](module/hr/hr_resume_line_type.md) :id=hr_resume_line_type
+
+#### DEFAULT :id=hr_resume_line_type-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_resume_line_type` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_resume_line_type-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_resume_line_type` t1 
+
+```
+
+
+## [技能(HR_SKILL)](module/hr/hr_skill.md) :id=hr_skill
+
+#### DEFAULT :id=hr_skill-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`SKILL_TYPE_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_skill` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_skill-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`SKILL_TYPE_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_skill` t1 
+
+```
+
+
+## [技能等级(HR_SKILL_LEVEL)](module/hr/hr_skill_level.md) :id=hr_skill_level
+
+#### DEFAULT :id=hr_skill_level-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_LEVEL`,
+t1.`ID`,
+t1.`LEVEL_PROGRESS`,
+t1.`NAME`,
+t1.`SKILL_TYPE_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_skill_level` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_skill_level-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_LEVEL`,
+t1.`ID`,
+t1.`LEVEL_PROGRESS`,
+t1.`NAME`,
+t1.`SKILL_TYPE_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_skill_level` t1 
+
+```
+
+
+## [技能类型(HR_SKILL_TYPE)](module/hr/hr_skill_type.md) :id=hr_skill_type
+
+#### DEFAULT :id=hr_skill_type-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`COLOR`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_skill_type` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_skill_type-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`COLOR`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_skill_type` t1 
+
+```
+
+
+## [工作地点(HR_WORK_LOCATION)](module/hr/hr_work_location.md) :id=hr_work_location
+
+#### DEFAULT :id=hr_work_location-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t21.`NAME` AS `ADDRESS_NAME`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`LOCATION_NUMBER`,
+t1.`LOCATION_TYPE`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_work_location` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`ADDRESS_ID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hr_work_location-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDRESS_ID`,
+t21.`NAME` AS `ADDRESS_NAME`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`LOCATION_NUMBER`,
+t1.`LOCATION_TYPE`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hr_work_location` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`ADDRESS_ID` = t21.`ID` 
+
+```
+
+
+## [集成应用(HUB_APP)](module/base/hub_app.md) :id=hub_app
+
+#### DEFAULT :id=hub_app-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`APP_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DISPLAY_NAME`,
+t1.`ID`,
+t1.`INDEX_ID`,
+t1.`NAME`,
+t1.`ORDER`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hub_app` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=hub_app-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`APP_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DISPLAY_NAME`,
+t1.`ID`,
+t1.`INDEX_ID`,
+t1.`NAME`,
+t1.`ORDER`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `hub_app` t1 
+
+```
+
+
+## [服务器动作(IR_ACTIONS_SERVER)](module/base/ir_actions_server.md) :id=ir_actions_server
+
+#### DEFAULT :id=ir_actions_server-Default
+```sql
+SELECT
+t1.`ACTIVITY_DATE_DEADLINE_RANGE`,
+t1.`ACTIVITY_DATE_DEADLINE_RANGE_TYPE`,
+t1.`ACTIVITY_SUMMARY`,
+t1.`ACTIVITY_TYPE_ID`,
+t41.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`ACTIVITY_USER_FIELD_NAME`,
+t1.`ACTIVITY_USER_ID`,
+t31.`NAME` AS `ACTIVITY_USER_NAME`,
+t1.`ACTIVITY_USER_TYPE`,
+t1.`BINDING_TYPE`,
+t1.`BINDING_VIEW_TYPES`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CRUD_MODEL_ID`,
+t1.`EVALUATION_TYPE`,
+t1.`ID`,
+t1.`LINK_FIELD_ID`,
+t1.`MAIL_POST_AUTOFOLLOW`,
+t1.`MAIL_POST_METHOD`,
+t1.`MODEL_ID`,
+t1.`NAME`,
+t1.`PATH`,
+t1.`SEQUENCE`,
+t1.`SMS_METHOD`,
+t1.`STATE`,
+t1.`TEMPLATE_ID`,
+t11.`NAME` AS `TEMPLATE_NAME`,
+t1.`TYPE`,
+t1.`UPDATE_BOOLEAN_VALUE`,
+t1.`UPDATE_FIELD_ID`,
+t1.`UPDATE_M2M_OPERATION`,
+t1.`UPDATE_PATH`,
+t1.`UPDATE_RELATED_MODEL_ID`,
+t1.`USAGE`,
+t1.`WEBHOOK_URL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_actions_server` t1 
+LEFT JOIN `mail_template` t11 ON t1.`TEMPLATE_ID` = t11.`ID` 
+LEFT JOIN `res_users` t21 ON t1.`ACTIVITY_USER_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t21.`PARTNER_ID` = t31.`ID` 
+LEFT JOIN `mail_activity_type` t41 ON t1.`ACTIVITY_TYPE_ID` = t41.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_actions_server-View
+```sql
+SELECT
+t1.`ACTIVITY_DATE_DEADLINE_RANGE`,
+t1.`ACTIVITY_DATE_DEADLINE_RANGE_TYPE`,
+t1.`ACTIVITY_NOTE`,
+t1.`ACTIVITY_SUMMARY`,
+t1.`ACTIVITY_TYPE_ID`,
+t41.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`ACTIVITY_USER_FIELD_NAME`,
+t1.`ACTIVITY_USER_ID`,
+t31.`NAME` AS `ACTIVITY_USER_NAME`,
+t1.`ACTIVITY_USER_TYPE`,
+t1.`BINDING_TYPE`,
+t1.`BINDING_VIEW_TYPES`,
+t1.`CODE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CRUD_MODEL_ID`,
+t1.`EVALUATION_TYPE`,
+t1.`HELP`,
+t1.`ID`,
+t1.`LINK_FIELD_ID`,
+t1.`MAIL_POST_AUTOFOLLOW`,
+t1.`MAIL_POST_METHOD`,
+t1.`MODEL_ID`,
+t1.`NAME`,
+t1.`PATH`,
+t1.`SEQUENCE`,
+t1.`SMS_METHOD`,
+t1.`STATE`,
+t1.`TEMPLATE_ID`,
+t11.`NAME` AS `TEMPLATE_NAME`,
+t1.`TYPE`,
+t1.`UPDATE_BOOLEAN_VALUE`,
+t1.`UPDATE_FIELD_ID`,
+t1.`UPDATE_M2M_OPERATION`,
+t1.`UPDATE_PATH`,
+t1.`UPDATE_RELATED_MODEL_ID`,
+t1.`USAGE`,
+t1.`VALUE`,
+t1.`WEBHOOK_URL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_actions_server` t1 
+LEFT JOIN `mail_template` t11 ON t1.`TEMPLATE_ID` = t11.`ID` 
+LEFT JOIN `res_users` t21 ON t1.`ACTIVITY_USER_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t21.`PARTNER_ID` = t31.`ID` 
+LEFT JOIN `mail_activity_type` t41 ON t1.`ACTIVITY_TYPE_ID` = t41.`ID` 
+
+```
+
+
+## [附件(IR_ATTACHMENT)](module/base/ir_attachment.md) :id=ir_attachment
+
+#### DEFAULT :id=ir_attachment-Default
+```sql
+SELECT
+t1.`ACCESS_TOKEN`,
+t1.`CHECKSUM`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FILE_ID`,
+t1.`FILE_SIZE`,
+t1.`ID`,
+t1.`MIMETYPE`,
+t1.`NAME`,
+t1.`ORIGINAL_ID`,
+t1.`PUBLIC`,
+t1.`RES_FIELD`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`STORE_FNAME`,
+t1.`TYPE`,
+t1.`URL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_attachment` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_attachment-View
+```sql
+SELECT
+t1.`ACCESS_TOKEN`,
+t1.`CHECKSUM`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DESCRIPTION`,
+t1.`FILE_ID`,
+t1.`FILE_SIZE`,
+t1.`ID`,
+t1.`INDEX_CONTENT`,
+t1.`MIMETYPE`,
+t1.`NAME`,
+t1.`ORIGINAL_ID`,
+t1.`PUBLIC`,
+t1.`RES_FIELD`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`STORE_FNAME`,
+t1.`TYPE`,
+t1.`URL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_attachment` t1 
+
+```
+
+#### 常规(common) :id=ir_attachment-common
+```sql
+SELECT
+t1.`ACCESS_TOKEN`,
+t1.`CHECKSUM`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FILE_ID`,
+t1.`FILE_SIZE`,
+t1.`ID`,
+t1.`MIMETYPE`,
+t1.`NAME`,
+t1.`ORIGINAL_ID`,
+t1.`PUBLIC`,
+t1.`RES_FIELD`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`STORE_FNAME`,
+t1.`TYPE`,
+t1.`URL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_attachment` t1 
+
+WHERE ( t1.`RES_FIELD` IS NULL )
+```
+
+#### 常规(common_by_model) :id=ir_attachment-common_by_model
+```sql
+SELECT
+t1.`ACCESS_TOKEN`,
+t1.`CHECKSUM`,
+t1.`COMPANY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FILE_ID`,
+t1.`FILE_SIZE`,
+t1.`ID`,
+t1.`MIMETYPE`,
+t1.`NAME`,
+t1.`ORIGINAL_ID`,
+t1.`PUBLIC`,
+t1.`RES_FIELD`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`STORE_FNAME`,
+t1.`TYPE`,
+t1.`URL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_attachment` t1 
+
+WHERE ( t1.`RES_MODEL` = #{ctx.datacontext.srfmodelname}  AND  t1.`RES_FIELD` IS NULL )
+```
+
+
+## [系统参数(IR_CONFIG_PARAMETER)](module/base/ir_config_parameter.md) :id=ir_config_parameter
+
+#### DEFAULT :id=ir_config_parameter-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`KEY`,
+t1.`VALUE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_config_parameter` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_config_parameter-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`KEY`,
+t1.`VALUE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_config_parameter` t1 
+
+```
+
+
+## [计划的操作(IR_CRON)](module/base/ir_cron.md) :id=ir_cron
+
+#### DEFAULT :id=ir_cron-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t11.`ACTIVITY_DATE_DEADLINE_RANGE`,
+t11.`ACTIVITY_DATE_DEADLINE_RANGE_TYPE`,
+t11.`ACTIVITY_SUMMARY`,
+t11.`ACTIVITY_TYPE_ID`,
+t21.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t11.`ACTIVITY_USER_FIELD_NAME`,
+t11.`ACTIVITY_USER_ID`,
+t41.`NAME` AS `ACTIVITY_USER_NAME`,
+t11.`ACTIVITY_USER_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CRON_NAME`,
+t11.`CRUD_MODEL_ID`,
+t11.`EVALUATION_TYPE`,
+t1.`FAILURE_COUNT`,
+t1.`FIRST_FAILURE_DATE`,
+t1.`ID`,
+t1.`INTERVAL_NUMBER`,
+t1.`INTERVAL_TYPE`,
+t1.`IR_ACTIONS_SERVER_ID`,
+t1.`LASTCALL`,
+t11.`LINK_FIELD_ID`,
+t11.`MAIL_POST_AUTOFOLLOW`,
+t11.`MAIL_POST_METHOD`,
+t1.`MODEL_ID`,
+t11.`NAME`,
+t1.`NEXTCALL`,
+t1.`PRIORITY`,
+t11.`SMS_METHOD`,
+t11.`STATE`,
+t11.`TEMPLATE_ID`,
+t51.`NAME` AS `TEMPLATE_NAME`,
+t11.`UPDATE_BOOLEAN_VALUE`,
+t11.`UPDATE_FIELD_ID`,
+t11.`UPDATE_PATH`,
+t11.`UPDATE_RELATED_MODEL_ID`,
+t11.`USAGE`,
+t1.`USER_ID`,
+t71.`NAME` AS `USER_NAME`,
+t11.`WEBHOOK_URL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_cron` t1 
+LEFT JOIN `ir_actions_server` t11 ON t1.`IR_ACTIONS_SERVER_ID` = t11.`ID` 
+LEFT JOIN `mail_activity_type` t21 ON t11.`ACTIVITY_TYPE_ID` = t21.`ID` 
+LEFT JOIN `res_users` t31 ON t11.`ACTIVITY_USER_ID` = t31.`ID` 
+LEFT JOIN `res_partner` t41 ON t31.`PARTNER_ID` = t41.`ID` 
+LEFT JOIN `mail_template` t51 ON t11.`TEMPLATE_ID` = t51.`ID` 
+LEFT JOIN `res_users` t61 ON t1.`USER_ID` = t61.`ID` 
+LEFT JOIN `res_partner` t71 ON t61.`PARTNER_ID` = t71.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_cron-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t11.`ACTIVITY_DATE_DEADLINE_RANGE`,
+t11.`ACTIVITY_DATE_DEADLINE_RANGE_TYPE`,
+t11.`ACTIVITY_NOTE`,
+t11.`ACTIVITY_SUMMARY`,
+t11.`ACTIVITY_TYPE_ID`,
+t21.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t11.`ACTIVITY_USER_FIELD_NAME`,
+t11.`ACTIVITY_USER_ID`,
+t41.`NAME` AS `ACTIVITY_USER_NAME`,
+t11.`ACTIVITY_USER_TYPE`,
+t11.`CODE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CRON_NAME`,
+t11.`CRUD_MODEL_ID`,
+t11.`EVALUATION_TYPE`,
+t1.`FAILURE_COUNT`,
+t1.`FIRST_FAILURE_DATE`,
+t1.`ID`,
+t1.`INTERVAL_NUMBER`,
+t1.`INTERVAL_TYPE`,
+t1.`IR_ACTIONS_SERVER_ID`,
+t1.`LASTCALL`,
+t11.`LINK_FIELD_ID`,
+t11.`MAIL_POST_AUTOFOLLOW`,
+t11.`MAIL_POST_METHOD`,
+t1.`MODEL_ID`,
+t11.`NAME`,
+t1.`NEXTCALL`,
+t1.`PRIORITY`,
+t11.`SMS_METHOD`,
+t11.`STATE`,
+t11.`TEMPLATE_ID`,
+t51.`NAME` AS `TEMPLATE_NAME`,
+t11.`UPDATE_BOOLEAN_VALUE`,
+t11.`UPDATE_FIELD_ID`,
+t11.`UPDATE_PATH`,
+t11.`UPDATE_RELATED_MODEL_ID`,
+t11.`USAGE`,
+t1.`USER_ID`,
+t71.`NAME` AS `USER_NAME`,
+t11.`VALUE`,
+t11.`WEBHOOK_URL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_cron` t1 
+LEFT JOIN `ir_actions_server` t11 ON t1.`IR_ACTIONS_SERVER_ID` = t11.`ID` 
+LEFT JOIN `mail_activity_type` t21 ON t11.`ACTIVITY_TYPE_ID` = t21.`ID` 
+LEFT JOIN `res_users` t31 ON t11.`ACTIVITY_USER_ID` = t31.`ID` 
+LEFT JOIN `res_partner` t41 ON t31.`PARTNER_ID` = t41.`ID` 
+LEFT JOIN `mail_template` t51 ON t11.`TEMPLATE_ID` = t51.`ID` 
+LEFT JOIN `res_users` t61 ON t1.`USER_ID` = t61.`ID` 
+LEFT JOIN `res_partner` t71 ON t61.`PARTNER_ID` = t71.`ID` 
+
+```
+
+
+## [触发行动(IR_CRON_TRIGGER)](module/base/ir_cron_trigger.md) :id=ir_cron_trigger
+
+#### DEFAULT :id=ir_cron_trigger-Default
+```sql
+SELECT
+t1.`CALL_AT`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t11.`CRON_NAME` AS `CRON_CRON_NAME`,
+t1.`CRON_ID`,
+t1.`ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_cron_trigger` t1 
+LEFT JOIN `ir_cron` t11 ON t1.`CRON_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_cron_trigger-View
+```sql
+SELECT
+t1.`CALL_AT`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t11.`CRON_NAME` AS `CRON_CRON_NAME`,
+t1.`CRON_ID`,
+t1.`ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_cron_trigger` t1 
+LEFT JOIN `ir_cron` t11 ON t1.`CRON_ID` = t11.`ID` 
+
+```
+
+
+## [默认值(IR_DEFAULT)](module/base/ir_default.md) :id=ir_default
+
+#### DEFAULT :id=ir_default-Default
+```sql
+SELECT
+t1.`COMPANY_ID`,
+t31.`NAME` AS `COMPANY_NAME`,
+t1.`CONDITION`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FIELD_ID`,
+t1.`ID`,
+t1.`JSON_VALUE`,
+t1.`USER_ID`,
+t21.`NAME` AS `USER_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_default` t1 
+LEFT JOIN `res_users` t11 ON t1.`USER_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t11.`PARTNER_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`COMPANY_ID` = t31.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_default-View
+```sql
+SELECT
+t1.`COMPANY_ID`,
+t31.`NAME` AS `COMPANY_NAME`,
+t1.`CONDITION`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FIELD_ID`,
+t1.`ID`,
+t1.`JSON_VALUE`,
+t1.`USER_ID`,
+t21.`NAME` AS `USER_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_default` t1 
+LEFT JOIN `res_users` t11 ON t1.`USER_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t11.`PARTNER_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`COMPANY_ID` = t31.`ID` 
+
+```
+
+
+## [邮件服务器(IR_MAIL_SERVER)](module/base/ir_mail_server.md) :id=ir_mail_server
+
+#### DEFAULT :id=ir_mail_server-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FROM_FILTER`,
+t1.`GOOGLE_GMAIL_ACCESS_TOKEN`,
+t1.`GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION`,
+t1.`GOOGLE_GMAIL_AUTHORIZATION_CODE`,
+t1.`GOOGLE_GMAIL_REFRESH_TOKEN`,
+t1.`ID`,
+t1.`MAX_EMAIL_SIZE`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`SMTP_AUTHENTICATION`,
+t1.`SMTP_DEBUG`,
+t1.`SMTP_ENCRYPTION`,
+t1.`SMTP_HOST`,
+t1.`SMTP_PASS`,
+t1.`SMTP_PORT`,
+t1.`SMTP_USER`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_mail_server` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_mail_server-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FROM_FILTER`,
+t1.`GOOGLE_GMAIL_ACCESS_TOKEN`,
+t1.`GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION`,
+t1.`GOOGLE_GMAIL_AUTHORIZATION_CODE`,
+t1.`GOOGLE_GMAIL_REFRESH_TOKEN`,
+t1.`ID`,
+t1.`MAX_EMAIL_SIZE`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`SMTP_AUTHENTICATION`,
+t1.`SMTP_DEBUG`,
+t1.`SMTP_ENCRYPTION`,
+t1.`SMTP_HOST`,
+t1.`SMTP_PASS`,
+t1.`SMTP_PORT`,
+t1.`SMTP_USER`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_mail_server` t1 
+
+```
+
+
+## [模型(IR_MODEL)](module/base/ir_model.md) :id=ir_model
+
+#### DEFAULT :id=ir_model-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`IS_MAIL_ACTIVITY`,
+t1.`IS_MAIL_BLACKLIST`,
+t1.`IS_MAIL_THREAD`,
+t1.`MODEL`,
+t1.`NAME`,
+t1.`ORDER`,
+t1.`STATE`,
+t1.`TRANSIENT`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_model` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_model-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`INFO`,
+t1.`IS_MAIL_ACTIVITY`,
+t1.`IS_MAIL_BLACKLIST`,
+t1.`IS_MAIL_THREAD`,
+t1.`MODEL`,
+t1.`NAME`,
+t1.`ORDER`,
+t1.`STATE`,
+t1.`TRANSIENT`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_model` t1 
+
+```
+
+
+## [模型访问(IR_MODEL_ACCESS)](module/base/ir_model_access.md) :id=ir_model_access
+
+#### DEFAULT :id=ir_model_access-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`GROUP_ID`,
+t11.`NAME` AS `GROUP_NAME`,
+t1.`ID`,
+t1.`MODEL_ID`,
+t1.`NAME`,
+t1.`PERM_CREATE`,
+t1.`PERM_READ`,
+t1.`PERM_UNLINK`,
+t1.`PERM_WRITE`
+FROM `ir_model_access` t1 
+LEFT JOIN `res_groups` t11 ON t1.`GROUP_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_model_access-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`GROUP_ID`,
+t11.`NAME` AS `GROUP_NAME`,
+t1.`ID`,
+t1.`MODEL_ID`,
+t1.`NAME`,
+t1.`PERM_CREATE`,
+t1.`PERM_READ`,
+t1.`PERM_UNLINK`,
+t1.`PERM_WRITE`
+FROM `ir_model_access` t1 
+LEFT JOIN `res_groups` t11 ON t1.`GROUP_ID` = t11.`ID` 
+
+```
+
+
+## [字段(IR_MODEL_FIELDS)](module/base/ir_model_fields.md) :id=ir_model_fields
+
+#### DEFAULT :id=ir_model_fields-Default
+```sql
+SELECT
+t1.`COLUMN1`,
+t1.`COLUMN2`,
+t1.`COMPANY_DEPENDENT`,
+t1.`COMPLETE_NAME`,
+t1.`COPIED`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_FIELD`,
+t1.`DEPENDS`,
+t1.`DOMAIN`,
+t1.`FIELD_DESCRIPTION`,
+t1.`GROUP_EXPAND`,
+t1.`ID`,
+t1.`INDEX`,
+t1.`MODEL`,
+t1.`NAME`,
+t1.`ON_DELETE`,
+t1.`READONLY`,
+t1.`RELATED`,
+t1.`RELATION`,
+t1.`RELATION_FIELD`,
+t1.`RELATION_TABLE`,
+t1.`REQUIRED`,
+t1.`SANITIZE`,
+t1.`SANITIZE_ATTRIBUTES`,
+t1.`SANITIZE_FORM`,
+t1.`SANITIZE_OVERRIDABLE`,
+t1.`SANITIZE_STYLE`,
+t1.`SANITIZE_TAGS`,
+t1.`SELECTABLE`,
+t1.`SIZE`,
+t1.`STATE`,
+t1.`STORE`,
+t1.`STRIP_CLASSES`,
+t1.`STRIP_STYLE`,
+t1.`TRACKING`,
+t1.`TRANSLATE`,
+t1.`TTYPE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_model_fields` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_model_fields-View
+```sql
+SELECT
+t1.`COLUMN1`,
+t1.`COLUMN2`,
+t1.`COMPANY_DEPENDENT`,
+t1.`COMPLETE_NAME`,
+t1.`COMPUTE`,
+t1.`COPIED`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_FIELD`,
+t1.`DEPENDS`,
+t1.`DOMAIN`,
+t1.`FIELD_DESCRIPTION`,
+t1.`GROUP_EXPAND`,
+t1.`HELP`,
+t1.`ID`,
+t1.`INDEX`,
+t1.`MODEL`,
+t1.`NAME`,
+t1.`ON_DELETE`,
+t1.`READONLY`,
+t1.`RELATED`,
+t1.`RELATION`,
+t1.`RELATION_FIELD`,
+t1.`RELATION_TABLE`,
+t1.`REQUIRED`,
+t1.`SANITIZE`,
+t1.`SANITIZE_ATTRIBUTES`,
+t1.`SANITIZE_FORM`,
+t1.`SANITIZE_OVERRIDABLE`,
+t1.`SANITIZE_STYLE`,
+t1.`SANITIZE_TAGS`,
+t1.`SELECTABLE`,
+t1.`SIZE`,
+t1.`STATE`,
+t1.`STORE`,
+t1.`STRIP_CLASSES`,
+t1.`STRIP_STYLE`,
+t1.`TRACKING`,
+t1.`TRANSLATE`,
+t1.`TTYPE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_model_fields` t1 
+
+```
+
+
+## [应用(IR_MODULE_CATEGORY)](module/base/ir_module_category.md) :id=ir_module_category
+
+#### DEFAULT :id=ir_module_category-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EXCLUSIVE`,
+t1.`ID`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t11.`NAME` AS `PARENT_NAME`,
+t1.`SEQUENCE`,
+t1.`VISIBLE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_module_category` t1 
+LEFT JOIN `ir_module_category` t11 ON t1.`PARENT_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_module_category-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DESCRIPTION`,
+t1.`EXCLUSIVE`,
+t1.`ID`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t11.`NAME` AS `PARENT_NAME`,
+t1.`SEQUENCE`,
+t1.`VISIBLE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_module_category` t1 
+LEFT JOIN `ir_module_category` t11 ON t1.`PARENT_ID` = t11.`ID` 
+
+```
+
+
+## [模块(IR_MODULE_MODULE)](module/base/ir_module_module.md) :id=ir_module_module
+
+#### DEFAULT :id=ir_module_module-Default
+```sql
+SELECT
+t1.`APPLICATION`,
+t1.`APP_ID`,
+t1.`AUTHOR`,
+t1.`AUTO_INSTALL`,
+t1.`CATEGORY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEMO`,
+t1.`DISPLAY_NAME`,
+t1.`ICON`,
+t1.`ID`,
+t1.`IMPORTED`,
+t1.`LATEST_VERSION`,
+t1.`LICENSE`,
+t1.`MAINTAINER`,
+t1.`MODULE_TYPE`,
+t1.`NAME`,
+t1.`ORDER`,
+t1.`PUBLISHED_VERSION`,
+t1.`RES_CODE`,
+t1.`SEQUENCE`,
+t1.`SHORTDESC`,
+t1.`STATE`,
+t1.`SUMMARY`,
+t1.`TO_BUY`,
+t1.`URL`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_module_module` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_module_module-View
+```sql
+SELECT
+t1.`APPLICATION`,
+t1.`APP_ID`,
+t1.`AUTHOR`,
+t1.`AUTO_INSTALL`,
+t1.`CATEGORY_ID`,
+t1.`CONTRIBUTORS`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEMO`,
+t1.`DESCRIPTION`,
+t1.`DISPLAY_NAME`,
+t1.`ICON`,
+t1.`ID`,
+t1.`IMPORTED`,
+t1.`LATEST_VERSION`,
+t1.`LICENSE`,
+t1.`MAINTAINER`,
+t1.`MENUS_BY_MODULE`,
+t1.`MODULE_TYPE`,
+t1.`NAME`,
+t1.`ORDER`,
+t1.`PUBLISHED_VERSION`,
+t1.`REPORTS_BY_MODULE`,
+t1.`RES_CODE`,
+t1.`SEQUENCE`,
+t1.`SHORTDESC`,
+t1.`STATE`,
+t1.`SUMMARY`,
+t1.`TO_BUY`,
+t1.`URL`,
+t1.`VIEWS_BY_MODULE`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_module_module` t1 
+
+```
+
+#### 已安装(installed) :id=ir_module_module-installed
+```sql
+SELECT
+t1.`APPLICATION`,
+t1.`APP_ID`,
+t1.`AUTHOR`,
+t1.`AUTO_INSTALL`,
+t1.`CATEGORY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEMO`,
+t1.`DISPLAY_NAME`,
+t1.`ICON`,
+t1.`ID`,
+t1.`IMPORTED`,
+t1.`LATEST_VERSION`,
+t1.`LICENSE`,
+t1.`MAINTAINER`,
+t1.`MODULE_TYPE`,
+t1.`NAME`,
+t1.`ORDER`,
+t1.`PUBLISHED_VERSION`,
+t1.`RES_CODE`,
+t1.`SEQUENCE`,
+t1.`SHORTDESC`,
+t1.`STATE`,
+t1.`SUMMARY`,
+t1.`TO_BUY`,
+t1.`URL`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_module_module` t1 
+
+WHERE ( t1.`STATE` = 'installed' )
+```
+
+#### 已安装应用(installed_app) :id=ir_module_module-installed_app
+```sql
+SELECT
+t1.`APPLICATION`,
+t1.`APP_ID`,
+t1.`AUTHOR`,
+t1.`AUTO_INSTALL`,
+t1.`CATEGORY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEMO`,
+t1.`DISPLAY_NAME`,
+t1.`ICON`,
+t1.`ID`,
+t1.`IMPORTED`,
+t1.`LATEST_VERSION`,
+t1.`LICENSE`,
+t1.`MAINTAINER`,
+t1.`MODULE_TYPE`,
+t1.`NAME`,
+t1.`ORDER`,
+t1.`PUBLISHED_VERSION`,
+t1.`RES_CODE`,
+t1.`SEQUENCE`,
+t1.`SHORTDESC`,
+t1.`STATE`,
+t1.`SUMMARY`,
+t1.`TO_BUY`,
+t1.`URL`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_module_module` t1 
+
+WHERE ( t1.`STATE` = 'installed'  AND  t1.`APPLICATION` = 1 )
+```
+
+
+## [规则(IR_RULE)](module/base/ir_rule.md) :id=ir_rule
+
+#### DEFAULT :id=ir_rule-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DISPLAY_NAME`,
+t1.`DOMAIN_FORCE`,
+t1.`GLOBAL`,
+t1.`ID`,
+t1.`MODEL_ID`,
+t1.`NAME`,
+t1.`PERM_CREATE`,
+t1.`PERM_READ`,
+t1.`PERM_UNLINK`,
+t1.`PERM_WRITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_rule` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_rule-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DISPLAY_NAME`,
+t1.`DOMAIN_FORCE`,
+t1.`GLOBAL`,
+t1.`ID`,
+t1.`MODEL_ID`,
+t1.`NAME`,
+t1.`PERM_CREATE`,
+t1.`PERM_READ`,
+t1.`PERM_UNLINK`,
+t1.`PERM_WRITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_rule` t1 
+
+```
+
+#### 全局(global) :id=ir_rule-global
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DISPLAY_NAME`,
+t1.`GLOBAL`,
+t1.`ID`,
+t1.`MODEL_ID`,
+t1.`NAME`,
+t1.`PERM_CREATE`,
+t1.`PERM_READ`,
+t1.`PERM_UNLINK`,
+t1.`PERM_WRITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_rule` t1 
+
+WHERE ( t1.`GLOBAL` = 1 )
+```
+
+
+## [统一资源(IR_UNIRES)](module/base_extend/ir_unires.md) :id=ir_unires
+
+#### DEFAULT :id=ir_unires-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DISPLAY_NAME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`RES_CODE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_unires` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=ir_unires-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DISPLAY_NAME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`RES_CODE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `ir_unires` t1 
+
+```
+
+
+## [活动(MAIL_ACTIVITY)](module/mail/mail_activity.md) :id=mail_activity
+
+#### DEFAULT :id=mail_activity-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ACTIVITY_TYPE_ID`,
+t11.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`AUTOMATED`,
+t11.`CHAINING_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_DEADLINE`,
+t1.`DATE_DONE`,
+t1.`ID`,
+t11.`KEEP_DONE`,
+t1.`PREVIOUS_ACTIVITY_TYPE_ID`,
+t1.`RECOMMENDED_ACTIVITY_TYPE_ID`,
+t1.`REQUEST_PARTNER_ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`RES_NAME`,
+t1.`SUMMARY`,
+t1.`USER_ID`,
+t31.`NAME` AS `USER_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`ACTIVITY_TYPE_ID` = t11.`ID` 
+LEFT JOIN `res_users` t21 ON t1.`USER_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t21.`PARTNER_ID` = t31.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_activity-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ACTIVITY_TYPE_ID`,
+t11.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`AUTOMATED`,
+t11.`CHAINING_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_DEADLINE`,
+t1.`DATE_DONE`,
+t1.`ID`,
+t11.`KEEP_DONE`,
+t1.`NOTE`,
+t1.`PREVIOUS_ACTIVITY_TYPE_ID`,
+t1.`RECOMMENDED_ACTIVITY_TYPE_ID`,
+t1.`REQUEST_PARTNER_ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`RES_NAME`,
+t1.`SUMMARY`,
+t1.`USER_ID`,
+t31.`NAME` AS `USER_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`ACTIVITY_TYPE_ID` = t11.`ID` 
+LEFT JOIN `res_users` t21 ON t1.`USER_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t21.`PARTNER_ID` = t31.`ID` 
+
+```
+
+#### 未完成(un_finished) :id=mail_activity-un_finished
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ACTIVITY_TYPE_ID`,
+t11.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`AUTOMATED`,
+t11.`CHAINING_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_DEADLINE`,
+t1.`DATE_DONE`,
+t1.`ID`,
+t11.`KEEP_DONE`,
+t1.`PREVIOUS_ACTIVITY_TYPE_ID`,
+t1.`RECOMMENDED_ACTIVITY_TYPE_ID`,
+t1.`REQUEST_PARTNER_ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`RES_NAME`,
+t1.`SUMMARY`,
+t1.`USER_ID`,
+t31.`NAME` AS `USER_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`ACTIVITY_TYPE_ID` = t11.`ID` 
+LEFT JOIN `res_users` t21 ON t1.`USER_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t21.`PARTNER_ID` = t31.`ID` 
+
+WHERE ( t1.`ACTIVE` = 1 )
+```
+
+
+## [活动计划(MAIL_ACTIVITY_PLAN)](module/mail/mail_activity_plan.md) :id=mail_activity_plan
+
+#### DEFAULT :id=mail_activity_plan-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_plan` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_activity_plan-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEPARTMENT_ID`,
+t11.`NAME` AS `DEPARTMENT_NAME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_plan` t1 
+LEFT JOIN `hr_department` t11 ON t1.`DEPARTMENT_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+
+```
+
+
+## [活动计划模板(MAIL_ACTIVITY_PLAN_TEMPLATE)](module/mail/mail_activity_plan_template.md) :id=mail_activity_plan_template
+
+#### DEFAULT :id=mail_activity_plan_template-Default
+```sql
+SELECT
+t1.`ACTIVITY_TYPE_ID`,
+t31.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DELAY_COUNT`,
+t1.`DELAY_FROM`,
+t1.`DELAY_UNIT`,
+t1.`ID`,
+t1.`PLAN_ID`,
+t41.`NAME` AS `PLAN_NAME`,
+t1.`RESPONSIBLE_ID`,
+t21.`NAME` AS `RESPONSIBLE_NAME`,
+t1.`RESPONSIBLE_TYPE`,
+t1.`SEQUENCE`,
+t1.`SUMMARY`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_plan_template` t1 
+LEFT JOIN `res_users` t11 ON t1.`RESPONSIBLE_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t11.`PARTNER_ID` = t21.`ID` 
+LEFT JOIN `mail_activity_type` t31 ON t1.`ACTIVITY_TYPE_ID` = t31.`ID` 
+LEFT JOIN `mail_activity_plan` t41 ON t1.`PLAN_ID` = t41.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_activity_plan_template-View
+```sql
+SELECT
+t1.`ACTIVITY_TYPE_ID`,
+t31.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DELAY_COUNT`,
+t1.`DELAY_FROM`,
+t1.`DELAY_UNIT`,
+t1.`ID`,
+t1.`NOTE`,
+t1.`PLAN_ID`,
+t41.`NAME` AS `PLAN_NAME`,
+t1.`RESPONSIBLE_ID`,
+t21.`NAME` AS `RESPONSIBLE_NAME`,
+t1.`RESPONSIBLE_TYPE`,
+t1.`SEQUENCE`,
+t1.`SUMMARY`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_plan_template` t1 
+LEFT JOIN `res_users` t11 ON t1.`RESPONSIBLE_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t11.`PARTNER_ID` = t21.`ID` 
+LEFT JOIN `mail_activity_type` t31 ON t1.`ACTIVITY_TYPE_ID` = t31.`ID` 
+LEFT JOIN `mail_activity_plan` t41 ON t1.`PLAN_ID` = t41.`ID` 
+
+```
+
+
+## [活动日程计划向导(MAIL_ACTIVITY_SCHEDULE)](module/mail/mail_activity_schedule.md) :id=mail_activity_schedule
+
+#### DEFAULT :id=mail_activity_schedule-Default
+```sql
+SELECT
+t1.`ACTIVITY_TYPE_ID`,
+t11.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`ACTIVITY_USER_ID`,
+t31.`NAME` AS `ACTIVITY_USER_NAME`,
+t11.`CHAINING_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_DEADLINE`,
+t1.`ID`,
+t1.`PLAN_DATE`,
+t1.`PLAN_ID`,
+t1.`PLAN_ON_DEMAND_USER_ID`,
+t1.`RES_MODEL`,
+t1.`SUMMARY`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_schedule` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`ACTIVITY_TYPE_ID` = t11.`ID` 
+LEFT JOIN `res_users` t21 ON t1.`ACTIVITY_USER_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t21.`PARTNER_ID` = t31.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_activity_schedule-View
+```sql
+SELECT
+t1.`ACTIVITY_TYPE_ID`,
+t11.`NAME` AS `ACTIVITY_TYPE_NAME`,
+t1.`ACTIVITY_USER_ID`,
+t31.`NAME` AS `ACTIVITY_USER_NAME`,
+t11.`CHAINING_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_DEADLINE`,
+t1.`ID`,
+t1.`NOTE`,
+t1.`PLAN_DATE`,
+t1.`PLAN_ID`,
+t1.`PLAN_ON_DEMAND_USER_ID`,
+t1.`RES_IDS`,
+t1.`RES_MODEL`,
+t1.`SUMMARY`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_schedule` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`ACTIVITY_TYPE_ID` = t11.`ID` 
+LEFT JOIN `res_users` t21 ON t1.`ACTIVITY_USER_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t21.`PARTNER_ID` = t31.`ID` 
+
+```
+
+
+## [活动类型(MAIL_ACTIVITY_TYPE)](module/mail/mail_activity_type.md) :id=mail_activity_type
+
+#### DEFAULT :id=mail_activity_type-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CATEGORY`,
+t1.`CHAINING_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DECORATION_TYPE`,
+t1.`DEFAULT_USER_ID`,
+t1.`DELAY_COUNT`,
+t1.`DELAY_FROM`,
+t1.`DELAY_UNIT`,
+t1.`ICON`,
+t1.`ID`,
+t1.`KEEP_DONE`,
+t1.`NAME`,
+t1.`RES_MODEL`,
+t1.`SEQUENCE`,
+t1.`SUMMARY`,
+t1.`TRIGGERED_NEXT_TYPE_ID`,
+t11.`NAME` AS `TRIGGERED_NEXT_TYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_type` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`TRIGGERED_NEXT_TYPE_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_activity_type-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CATEGORY`,
+t1.`CHAINING_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DECORATION_TYPE`,
+t1.`DEFAULT_NOTE`,
+t1.`DEFAULT_USER_ID`,
+t1.`DELAY_COUNT`,
+t1.`DELAY_FROM`,
+t1.`DELAY_UNIT`,
+t1.`ICON`,
+t1.`ID`,
+t1.`KEEP_DONE`,
+t1.`NAME`,
+t1.`RES_MODEL`,
+t1.`SEQUENCE`,
+t1.`SUMMARY`,
+t1.`TRIGGERED_NEXT_TYPE_ID`,
+t11.`NAME` AS `TRIGGERED_NEXT_TYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_type` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`TRIGGERED_NEXT_TYPE_ID` = t11.`ID` 
+
+```
+
+#### 资源类型及系统(res_and_sys) :id=mail_activity_type-res_and_sys
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CATEGORY`,
+t1.`CHAINING_TYPE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DECORATION_TYPE`,
+t1.`DEFAULT_USER_ID`,
+t1.`DELAY_COUNT`,
+t1.`DELAY_FROM`,
+t1.`DELAY_UNIT`,
+t1.`ICON`,
+t1.`ID`,
+t1.`KEEP_DONE`,
+t1.`NAME`,
+t1.`RES_MODEL`,
+t1.`SEQUENCE`,
+t1.`SUMMARY`,
+t1.`TRIGGERED_NEXT_TYPE_ID`,
+t11.`NAME` AS `TRIGGERED_NEXT_TYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_activity_type` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`TRIGGERED_NEXT_TYPE_ID` = t11.`ID` 
+
+WHERE ( ( t1.`RES_MODEL` = #{ctx.datacontext.srfmodelname}  OR  t1.`RES_MODEL` IS NULL ) )
+```
+
+
+## [活动类型模板(MAIL_ACTIVITY_TYPE_MAIL_TEMPLATE_REL)](module/mail/mail_activity_type_mail_template_rel.md) :id=mail_activity_type_mail_template_rel
+
+#### DEFAULT :id=mail_activity_type_mail_template_rel-Default
+```sql
+SELECT
+t1.`ID`,
+t1.`MAIL_ACTIVITY_TYPE_ID`,
+t11.`NAME` AS `MAIL_ACTIVITY_TYPE_NAME`,
+t1.`MAIL_TEMPLATE_ID`,
+t21.`NAME` AS `MAIL_TEMPLATE_NAME`,
+t1.`NAME`
+FROM `mail_activity_type_mail_template_rel` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`MAIL_ACTIVITY_TYPE_ID` = t11.`ID` 
+LEFT JOIN `mail_template` t21 ON t1.`MAIL_TEMPLATE_ID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_activity_type_mail_template_rel-View
+```sql
+SELECT
+t1.`ID`,
+t1.`MAIL_ACTIVITY_TYPE_ID`,
+t11.`NAME` AS `MAIL_ACTIVITY_TYPE_NAME`,
+t1.`MAIL_TEMPLATE_ID`,
+t21.`NAME` AS `MAIL_TEMPLATE_NAME`,
+t1.`NAME`
+FROM `mail_activity_type_mail_template_rel` t1 
+LEFT JOIN `mail_activity_type` t11 ON t1.`MAIL_ACTIVITY_TYPE_ID` = t11.`ID` 
+LEFT JOIN `mail_template` t21 ON t1.`MAIL_TEMPLATE_ID` = t21.`ID` 
+
+```
+
+
+## [EMail别名(MAIL_ALIAS)](module/mail/mail_alias.md) :id=mail_alias
+
+#### DEFAULT :id=mail_alias-Default
+```sql
+SELECT
+t1.`ALIAS_CONTACT`,
+t1.`ALIAS_DOMAIN_ID`,
+t11.`NAME` AS `ALIAS_DOMAIN_NAME`,
+t1.`ALIAS_FORCE_THREAD_ID`,
+t1.`ALIAS_FULL_NAME`,
+t1.`ALIAS_INCOMING_LOCAL`,
+t1.`ALIAS_MODEL_ID`,
+t1.`ALIAS_NAME`,
+t1.`ALIAS_PARENT_MODEL_ID`,
+t1.`ALIAS_PARENT_THREAD_ID`,
+t1.`ALIAS_STATUS`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_alias` t1 
+LEFT JOIN `mail_alias_domain` t11 ON t1.`ALIAS_DOMAIN_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_alias-View
+```sql
+SELECT
+t1.`ALIAS_BOUNCED_CONTENT`,
+t1.`ALIAS_CONTACT`,
+t1.`ALIAS_DEFAULTS`,
+t1.`ALIAS_DOMAIN_ID`,
+t11.`NAME` AS `ALIAS_DOMAIN_NAME`,
+t1.`ALIAS_FORCE_THREAD_ID`,
+t1.`ALIAS_FULL_NAME`,
+t1.`ALIAS_INCOMING_LOCAL`,
+t1.`ALIAS_MODEL_ID`,
+t1.`ALIAS_NAME`,
+t1.`ALIAS_PARENT_MODEL_ID`,
+t1.`ALIAS_PARENT_THREAD_ID`,
+t1.`ALIAS_STATUS`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_alias` t1 
+LEFT JOIN `mail_alias_domain` t11 ON t1.`ALIAS_DOMAIN_ID` = t11.`ID` 
+
+```
+
+
+## [电子邮件域名(MAIL_ALIAS_DOMAIN)](module/mail/mail_alias_domain.md) :id=mail_alias_domain
+
+#### DEFAULT :id=mail_alias_domain-Default
+```sql
+SELECT
+t1.`BOUNCE_ALIAS`,
+t1.`CATCHALL_ALIAS`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_FROM`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_alias_domain` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_alias_domain-View
+```sql
+SELECT
+t1.`BOUNCE_ALIAS`,
+t1.`CATCHALL_ALIAS`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_FROM`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_alias_domain` t1 
+
+```
+
+
+## [单据关注者(MAIL_FOLLOWERS)](module/mail/mail_followers.md) :id=mail_followers
+
+#### DEFAULT :id=mail_followers-Default
+```sql
+SELECT
+t1.`ID`,
+t11.`NAME`,
+t1.`PARTNER_ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`TYPE`
+FROM `mail_followers` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_followers-View
+```sql
+SELECT
+t1.`ID`,
+t11.`NAME`,
+t1.`PARTNER_ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`TYPE`
+FROM `mail_followers` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+
+```
+
+#### 常规(common) :id=mail_followers-common
+```sql
+SELECT
+t1.`ID`,
+t11.`NAME`,
+t1.`PARTNER_ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`TYPE`
+FROM `mail_followers` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+
+WHERE ( t1.`RES_MODEL` = #{ctx.datacontext.srfmodelname} )
+```
+
+#### 消息提醒(mail_message_notify) :id=mail_followers-mail_message_notify
+```sql
+SELECT
+t1.`ID`,
+t1.`PARTNER_ID`,
+t21.`ID` AS `USER_ID`
+FROM `mail_followers` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT OUTER JOIN `res_users` t21 ON t11.`ID` = t21.`PARTNER_ID` 
+
+WHERE ( t21.`ID` IS NOT NULL ) AND ( exists(select 1 from `mail_message` t2 where t1.	
+res_model = t2.model and t2.id=#{ctx.webcontext.id})  AND  t1.`TYPE` = '40'  AND  t1.`PARTNER_ID` <> #{ctx.sessioncontext.srfpartnerid} )
+```
+
+
+## [访客(MAIL_GUEST)](module/mail/mail_guest.md) :id=mail_guest
+
+#### DEFAULT :id=mail_guest-Default
+```sql
+SELECT
+t1.`ACCESS_TOKEN`,
+t1.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_guest` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_guest-View
+```sql
+SELECT
+t1.`ACCESS_TOKEN`,
+t1.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_guest` t1 
+
+```
+
+
+## [发出邮件(MAIL_MAIL)](module/mail/mail_mail.md) :id=mail_mail
+
+#### DEFAULT :id=mail_mail-Default
+```sql
+SELECT
+t1.`AUTO_DELETE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EMAIL_CC`,
+t1.`FAILURE_TYPE`,
+t1.`ID`,
+t1.`IS_NOTIFICATION`,
+t1.`MAIL_MESSAGE_ID`,
+t1.`SCHEDULED_DATE`,
+t1.`STATE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_mail` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_mail-View
+```sql
+SELECT
+t1.`AUTO_DELETE`,
+t1.`BODY_HTML`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`EMAIL_CC`,
+t1.`EMAIL_TO`,
+t1.`FAILURE_REASON`,
+t1.`FAILURE_TYPE`,
+t1.`HEADERS`,
+t1.`ID`,
+t1.`IS_NOTIFICATION`,
+t1.`MAIL_MESSAGE_ID`,
+t1.`REFERENCES`,
+t1.`SCHEDULED_DATE`,
+t1.`STATE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_mail` t1 
+
+```
+
+
+## [消息(MAIL_MESSAGE)](module/mail/mail_message.md) :id=mail_message
+
+#### DEFAULT :id=mail_message-Default
+```sql
+SELECT
+t1.`AUTHOR_GUEST_ID`,
+t1.`AUTHOR_ID`,
+t21.`NAME` AS `AUTHOR_NAME`,
+t1.`BODY`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`EMAIL_ADD_SIGNATURE`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_LAYOUT_XMLID`,
+t1.`ID`,
+t1.`IS_INTERNAL`,
+t1.`MAIL_ACTIVITY_TYPE_ID`,
+t1.`MESSAGE_ID`,
+t1.`MESSAGE_TYPE`,
+t1.`MODEL`,
+t11.`AUTHOR_ID` AS `PARENT_AUTHOR_ID`,
+t11.`BODY` AS `PARENT_BODY`,
+t1.`PARENT_ID`,
+t11.`RECORD_NAME` AS `PARENT_NAME`,
+t1.`PINNED_AT`,
+t1.`RECORD_ALIAS_DOMAIN_ID`,
+t1.`RECORD_COMPANY_ID`,
+t1.`RECORD_NAME`,
+t1.`REPLY_TO`,
+t1.`REPLY_TO_FORCE_NEW`,
+t1.`RES_ID`,
+t1.`SUBJECT`,
+t1.`SUBTYPE_ID`,
+t31.`NAME` AS `SUBTYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_message` t1 
+LEFT JOIN `mail_message` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`AUTHOR_ID` = t21.`ID` 
+LEFT JOIN `mail_message_subtype` t31 ON t1.`SUBTYPE_ID` = t31.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_message-View
+```sql
+SELECT
+t1.`AUTHOR_GUEST_ID`,
+t1.`AUTHOR_ID`,
+t21.`NAME` AS `AUTHOR_NAME`,
+t1.`BODY`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`EMAIL_ADD_SIGNATURE`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_LAYOUT_XMLID`,
+t1.`ID`,
+t1.`IS_INTERNAL`,
+t1.`MAIL_ACTIVITY_TYPE_ID`,
+t1.`MESSAGE_ID`,
+t1.`MESSAGE_TYPE`,
+t1.`MODEL`,
+t11.`AUTHOR_ID` AS `PARENT_AUTHOR_ID`,
+t11.`BODY` AS `PARENT_BODY`,
+t1.`PARENT_ID`,
+t11.`RECORD_NAME` AS `PARENT_NAME`,
+t1.`PINNED_AT`,
+t1.`RECORD_ALIAS_DOMAIN_ID`,
+t1.`RECORD_COMPANY_ID`,
+t1.`RECORD_NAME`,
+t1.`REPLY_TO`,
+t1.`REPLY_TO_FORCE_NEW`,
+t1.`RES_ID`,
+t1.`SUBJECT`,
+t1.`SUBTYPE_ID`,
+t31.`NAME` AS `SUBTYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_message` t1 
+LEFT JOIN `mail_message` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`AUTHOR_ID` = t21.`ID` 
+LEFT JOIN `mail_message_subtype` t31 ON t1.`SUBTYPE_ID` = t31.`ID` 
+
+```
+
+#### 常规(common) :id=mail_message-common
+```sql
+SELECT
+t1.`AUTHOR_GUEST_ID`,
+t1.`AUTHOR_ID`,
+t21.`NAME` AS `AUTHOR_NAME`,
+t1.`BODY`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`EMAIL_ADD_SIGNATURE`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_LAYOUT_XMLID`,
+t1.`ID`,
+t1.`IS_INTERNAL`,
+t1.`MAIL_ACTIVITY_TYPE_ID`,
+t1.`MESSAGE_ID`,
+t1.`MESSAGE_TYPE`,
+t1.`MODEL`,
+t11.`AUTHOR_ID` AS `PARENT_AUTHOR_ID`,
+t11.`BODY` AS `PARENT_BODY`,
+t1.`PARENT_ID`,
+t11.`RECORD_NAME` AS `PARENT_NAME`,
+t1.`PINNED_AT`,
+t1.`RECORD_ALIAS_DOMAIN_ID`,
+t1.`RECORD_COMPANY_ID`,
+t1.`RECORD_NAME`,
+t1.`REPLY_TO`,
+t1.`REPLY_TO_FORCE_NEW`,
+t1.`RES_ID`,
+t1.`SUBJECT`,
+t1.`SUBTYPE_ID`,
+t31.`NAME` AS `SUBTYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_message` t1 
+LEFT JOIN `mail_message` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`AUTHOR_ID` = t21.`ID` 
+LEFT JOIN `mail_message_subtype` t31 ON t1.`SUBTYPE_ID` = t31.`ID` 
+
+WHERE ( ( t1.`MESSAGE_TYPE` = 'auto_comment'  OR  t1.`MESSAGE_TYPE` = 'email'  OR  t1.`MESSAGE_TYPE` = 'comment'  OR  t1.`MESSAGE_TYPE` = 'notification' )  AND  t1.`MODEL` = #{ctx.datacontext.srfmodelname}  AND  t1.`RES_ID` = #{ctx.datacontext.mail_thread} )
+```
+
+#### 常规(全部)(common_all) :id=mail_message-common_all
+```sql
+SELECT
+t1.`AUTHOR_GUEST_ID`,
+t1.`AUTHOR_ID`,
+t21.`NAME` AS `AUTHOR_NAME`,
+t1.`BODY`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`EMAIL_ADD_SIGNATURE`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_LAYOUT_XMLID`,
+t1.`ID`,
+t1.`IS_INTERNAL`,
+t1.`MAIL_ACTIVITY_TYPE_ID`,
+t1.`MESSAGE_ID`,
+t1.`MESSAGE_TYPE`,
+t1.`MODEL`,
+t11.`AUTHOR_ID` AS `PARENT_AUTHOR_ID`,
+t11.`BODY` AS `PARENT_BODY`,
+t1.`PARENT_ID`,
+t11.`RECORD_NAME` AS `PARENT_NAME`,
+t1.`PINNED_AT`,
+t1.`RECORD_ALIAS_DOMAIN_ID`,
+t1.`RECORD_COMPANY_ID`,
+t1.`RECORD_NAME`,
+t1.`REPLY_TO`,
+t1.`REPLY_TO_FORCE_NEW`,
+t1.`RES_ID`,
+t1.`SUBJECT`,
+t1.`SUBTYPE_ID`,
+t31.`NAME` AS `SUBTYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_message` t1 
+LEFT JOIN `mail_message` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`AUTHOR_ID` = t21.`ID` 
+LEFT JOIN `mail_message_subtype` t31 ON t1.`SUBTYPE_ID` = t31.`ID` 
+
+WHERE ( ( t1.`MESSAGE_TYPE` = 'auto_comment'  OR  t1.`MESSAGE_TYPE` = 'email'  OR  t1.`MESSAGE_TYPE` = 'comment'  OR  t1.`MESSAGE_TYPE` = 'notification' )  AND  t1.`MODEL` = #{ctx.datacontext.srfmodelname} )
+```
+
+#### 当前用户(cur_user) :id=mail_message-cur_user
+```sql
+SELECT
+t1.`AUTHOR_GUEST_ID`,
+t1.`AUTHOR_ID`,
+t21.`NAME` AS `AUTHOR_NAME`,
+t1.`BODY`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`EMAIL_ADD_SIGNATURE`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_LAYOUT_XMLID`,
+t1.`ID`,
+t1.`IS_INTERNAL`,
+t1.`MAIL_ACTIVITY_TYPE_ID`,
+t1.`MESSAGE_ID`,
+t1.`MESSAGE_TYPE`,
+t1.`MODEL`,
+t11.`AUTHOR_ID` AS `PARENT_AUTHOR_ID`,
+t11.`BODY` AS `PARENT_BODY`,
+t1.`PARENT_ID`,
+t11.`RECORD_NAME` AS `PARENT_NAME`,
+t1.`PINNED_AT`,
+t1.`RECORD_ALIAS_DOMAIN_ID`,
+t1.`RECORD_COMPANY_ID`,
+t1.`RECORD_NAME`,
+t1.`REPLY_TO`,
+t1.`REPLY_TO_FORCE_NEW`,
+t1.`RES_ID`,
+t1.`SUBJECT`,
+t1.`SUBTYPE_ID`,
+t31.`NAME` AS `SUBTYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_message` t1 
+LEFT JOIN `mail_message` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`AUTHOR_ID` = t21.`ID` 
+LEFT JOIN `mail_message_subtype` t31 ON t1.`SUBTYPE_ID` = t31.`ID` 
+
+WHERE EXISTS(SELECT * FROM `MAIL_MESSAGE_RECIPIENT` t41 
+ WHERE 
+ t1.`ID` = t41.`MESSAGE_ID`  AND  ( t41.`PARTNER_ID` = #{ctx.sessioncontext.srfpartnerid} ) )
+```
+
+#### 置顶消息(pinned) :id=mail_message-pinned
+```sql
+SELECT
+t1.`AUTHOR_GUEST_ID`,
+t1.`AUTHOR_ID`,
+t21.`NAME` AS `AUTHOR_NAME`,
+t1.`BODY`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE`,
+t1.`EMAIL_ADD_SIGNATURE`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_LAYOUT_XMLID`,
+t1.`ID`,
+t1.`IS_INTERNAL`,
+t1.`MAIL_ACTIVITY_TYPE_ID`,
+t1.`MESSAGE_ID`,
+t1.`MESSAGE_TYPE`,
+t1.`MODEL`,
+t11.`AUTHOR_ID` AS `PARENT_AUTHOR_ID`,
+t11.`BODY` AS `PARENT_BODY`,
+t1.`PARENT_ID`,
+t11.`RECORD_NAME` AS `PARENT_NAME`,
+t1.`PINNED_AT`,
+t1.`RECORD_ALIAS_DOMAIN_ID`,
+t1.`RECORD_COMPANY_ID`,
+t1.`RECORD_NAME`,
+t1.`REPLY_TO`,
+t1.`REPLY_TO_FORCE_NEW`,
+t1.`RES_ID`,
+t1.`SUBJECT`,
+t1.`SUBTYPE_ID`,
+t31.`NAME` AS `SUBTYPE_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_message` t1 
+LEFT JOIN `mail_message` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`AUTHOR_ID` = t21.`ID` 
+LEFT JOIN `mail_message_subtype` t31 ON t1.`SUBTYPE_ID` = t31.`ID` 
+
+WHERE ( t1.`PINNED_AT` IS NOT NULL )
+```
+
+
+## [消息收件人(MAIL_MESSAGE_RECIPIENT)](module/mail/mail_message_recipient.md) :id=mail_message_recipient
+
+#### DEFAULT :id=mail_message_recipient-Default
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`MESSAGE_ID`,
+t1.`NAME`,
+t1.`PARTNER_ID`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `MAIL_MESSAGE_RECIPIENT` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_message_recipient-View
+```sql
+SELECT
+t1.`CREATE_MAN`,
+t1.`CREATE_TIME`,
+t1.`ID`,
+t1.`MESSAGE_ID`,
+t1.`NAME`,
+t1.`PARTNER_ID`,
+t1.`UPDATE_MAN`,
+t1.`UPDATE_TIME`
+FROM `MAIL_MESSAGE_RECIPIENT` t1 
+
+```
+
+
+## [消息通知(MAIL_NOTIFICATION)](module/mail/mail_notification.md) :id=mail_notification
+
+#### DEFAULT :id=mail_notification-Default
+```sql
+SELECT
+t1.`AUTHOR_ID`,
+t1.`FAILURE_TYPE`,
+t1.`ID`,
+t1.`IS_READ`,
+t1.`MAIL_MAIL_ID`,
+t1.`MAIL_MESSAGE_ID`,
+t11.`RECORD_NAME` AS `MAIL_MESSAGE_RECORD_NAME`,
+t11.`BODY` AS `MESSAGE_CONTENT`,
+t1.`NOTIFICATION_STATUS`,
+t1.`NOTIFICATION_TYPE`,
+t1.`READ_DATE`,
+t1.`RES_PARTNER_ID`,
+t21.`NAME` AS `RES_PARTNER_NAME`,
+t1.`SMS_ID_INT`,
+t1.`SMS_NUMBER`
+FROM `mail_notification` t1 
+LEFT JOIN `mail_message` t11 ON t1.`MAIL_MESSAGE_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`RES_PARTNER_ID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_notification-View
+```sql
+SELECT
+t1.`AUTHOR_ID`,
+t1.`FAILURE_REASON`,
+t1.`FAILURE_TYPE`,
+t1.`ID`,
+t1.`IS_READ`,
+t1.`MAIL_MAIL_ID`,
+t1.`MAIL_MESSAGE_ID`,
+t11.`RECORD_NAME` AS `MAIL_MESSAGE_RECORD_NAME`,
+t11.`BODY` AS `MESSAGE_CONTENT`,
+t1.`NOTIFICATION_STATUS`,
+t1.`NOTIFICATION_TYPE`,
+t1.`READ_DATE`,
+t1.`RES_PARTNER_ID`,
+t21.`NAME` AS `RES_PARTNER_NAME`,
+t1.`SMS_ID_INT`,
+t1.`SMS_NUMBER`
+FROM `mail_notification` t1 
+LEFT JOIN `mail_message` t11 ON t1.`MAIL_MESSAGE_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t1.`RES_PARTNER_ID` = t21.`ID` 
+
+```
+
+
+## [EMail模板(MAIL_TEMPLATE)](module/mail/mail_template.md) :id=mail_template
+
+#### DEFAULT :id=mail_template-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`AUTO_DELETE`,
+t1.`BODY_HTML`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DESCRIPTION`,
+t1.`EMAIL_CC`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_LAYOUT_XMLID`,
+t1.`EMAIL_TO`,
+t1.`ID`,
+t1.`LANG`,
+t1.`NAME`,
+t1.`PARTNER_TO`,
+t1.`REPLY_TO`,
+t1.`SCHEDULED_DATE`,
+t1.`SUBJECT`,
+t1.`TEMPLATE_FS`,
+t1.`USER_ID`,
+t1.`USE_DEFAULT_TO`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_template` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_template-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`AUTO_DELETE`,
+t1.`BODY_HTML`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DESCRIPTION`,
+t1.`EMAIL_CC`,
+t1.`EMAIL_FROM`,
+t1.`EMAIL_LAYOUT_XMLID`,
+t1.`EMAIL_TO`,
+t1.`ID`,
+t1.`LANG`,
+t1.`NAME`,
+t1.`PARTNER_TO`,
+t1.`REPLY_TO`,
+t1.`SCHEDULED_DATE`,
+t1.`SUBJECT`,
+t1.`TEMPLATE_FS`,
+t1.`USER_ID`,
+t1.`USE_DEFAULT_TO`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_template` t1 
+
+```
+
+
+## [主邮件附件管理(MAIL_THREAD_MAIN_ATTACHMENT)](module/mail/mail_thread_main_attachment.md) :id=mail_thread_main_attachment
+
+#### DEFAULT :id=mail_thread_main_attachment-Default
+```sql
+SELECT
+t1.`ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`NAME`
+FROM `mail_thread_main_attachment` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_thread_main_attachment-View
+```sql
+SELECT
+t1.`ID`,
+t1.`MESSAGE_MAIN_ATTACHMENT_ID`,
+t1.`NAME`
+FROM `mail_thread_main_attachment` t1 
+
+```
+
+
+## [用于计算记录在 many2one 字段的每个值上所花费时间的混合函数(MAIL_TRACKING_DURATION_MIXIN)](module/mail/mail_tracking_duration_mixin.md) :id=mail_tracking_duration_mixin
+
+#### DEFAULT :id=mail_tracking_duration_mixin-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_tracking_duration_mixin` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_tracking_duration_mixin-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DURATION_TRACKING`,
+t1.`ID`,
+t1.`NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_tracking_duration_mixin` t1 
+
+```
+
+
+## [邮件跟踪值(MAIL_TRACKING_VALUE)](module/mail/mail_tracking_value.md) :id=mail_tracking_value
+
+#### DEFAULT :id=mail_tracking_value-Default
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t1.`FIELD_ID`,
+t1.`ID`,
+t1.`MAIL_MESSAGE_ID`,
+t11.`MODEL`,
+t1.`NEW_VALUE_CHAR`,
+t1.`NEW_VALUE_DATETIME`,
+t1.`NEW_VALUE_FLOAT`,
+t1.`NEW_VALUE_INTEGER`,
+t1.`OLD_VALUE_CHAR`,
+t1.`OLD_VALUE_DATETIME`,
+t1.`OLD_VALUE_FLOAT`,
+t1.`OLD_VALUE_INTEGER`,
+t11.`RES_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_tracking_value` t1 
+LEFT JOIN `mail_message` t11 ON t1.`MAIL_MESSAGE_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=mail_tracking_value-View
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t1.`FIELD_ID`,
+t1.`FIELD_INFO`,
+t1.`ID`,
+t1.`MAIL_MESSAGE_ID`,
+t11.`MODEL`,
+t1.`NEW_VALUE_CHAR`,
+t1.`NEW_VALUE_DATETIME`,
+t1.`NEW_VALUE_FLOAT`,
+t1.`NEW_VALUE_INTEGER`,
+t1.`NEW_VALUE_TEXT`,
+t1.`OLD_VALUE_CHAR`,
+t1.`OLD_VALUE_DATETIME`,
+t1.`OLD_VALUE_FLOAT`,
+t1.`OLD_VALUE_INTEGER`,
+t1.`OLD_VALUE_TEXT`,
+t11.`RES_ID`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_tracking_value` t1 
+LEFT JOIN `mail_message` t11 ON t1.`MAIL_MESSAGE_ID` = t11.`ID` 
+
+```
+
+
+## [公司(RES_COMPANY)](module/base/res_company.md) :id=res_company
+
+#### 数据查询(DATAQUERY) :id=res_company-DataQuery
+```sql
+SELECT
+t1.`ABSENCE_MANAGEMENT`,
+t1.`ACCOUNT_FISCAL_COUNTRY_ID`,
+t1.`ACCOUNT_OPENING_DATE`,
+t1.`ACCOUNT_PRICE_INCLUDE`,
+t1.`ACCOUNT_STORNO`,
+t1.`ACCOUNT_USE_CREDIT_LIMIT`,
+t1.`ACTIVE`,
+t1.`ALIAS_DOMAIN_ID`,
+t1.`ANGLO_SAXON_ACCOUNTING`,
+t1.`ANNUAL_INVENTORY_DAY`,
+t1.`ANNUAL_INVENTORY_MONTH`,
+t1.`ATTENDANCE_BARCODE_SOURCE`,
+t1.`ATTENDANCE_FROM_SYSTRAY`,
+t1.`ATTENDANCE_KIOSK_DELAY`,
+t1.`ATTENDANCE_KIOSK_KEY`,
+t1.`ATTENDANCE_KIOSK_MODE`,
+t1.`ATTENDANCE_KIOSK_USE_PIN`,
+t1.`ATTENDANCE_OVERTIME_VALIDATION`,
+t1.`AUTOPOST_BILLS`,
+t1.`AUTO_CHECK_OUT`,
+t1.`AUTO_CHECK_OUT_TOLERANCE`,
+t1.`BANK_ACCOUNT_CODE_PREFIX`,
+t1.`BATCH_PAYMENT_SEQUENCE_ID`,
+t1.`CASH_ACCOUNT_CODE_PREFIX`,
+t1.`CHECK_ACCOUNT_AUDIT_TRAIL`,
+t1.`CONTRACT_EXPIRATION_NOTICE_PERIOD`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t21.`NAME` AS `CURRENCY_NAME`,
+t1.`DAYS_TO_PURCHASE`,
+t1.`DISPLAY_INVOICE_AMOUNT_TOTAL_WORDS`,
+t1.`DISPLAY_INVOICE_TAX_COMPANY_CURRENCY`,
+t1.`EMAIL_PRIMARY_COLOR`,
+t1.`EMAIL_SECONDARY_COLOR`,
+t1.`EXPECTS_CHART_OF_ACCOUNTS`,
+t1.`FISCALYEAR_LAST_DAY`,
+t1.`FISCALYEAR_LAST_MONTH`,
+t1.`FISCALYEAR_LOCK_DATE`,
+t1.`FONT`,
+t1.`HARD_LOCK_DATE`,
+t1.`HAS_RECEIVED_WARNING_STOCK_SMS`,
+t1.`HR_ATTENDANCE_DISPLAY_OVERTIME`,
+t1.`HR_PRESENCE_CONTROL_ATTENDANCE`,
+t1.`HR_PRESENCE_CONTROL_EMAIL`,
+t1.`HR_PRESENCE_CONTROL_EMAIL_AMOUNT`,
+t1.`HR_PRESENCE_CONTROL_IP`,
+t1.`HR_PRESENCE_CONTROL_IP_LIST`,
+t1.`HR_PRESENCE_CONTROL_LOGIN`,
+t1.`IAP_ENRICH_AUTO_DONE`,
+t1.`ID`,
+t1.`LAYOUT_BACKGROUND`,
+t1.`MANUFACTURING_LEAD`,
+t1.`NAME`,
+t1.`OVERTIME_COMPANY_THRESHOLD`,
+t1.`OVERTIME_EMPLOYEE_THRESHOLD`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PARTNER_ID`,
+t11.`NAME` AS `PARTNER_NAME`,
+t1.`PAYMENT_ONBOARDING_PAYMENT_METHOD`,
+t1.`PORTAL_CONFIRMATION_PAY`,
+t1.`PORTAL_CONFIRMATION_SIGN`,
+t1.`PO_DOUBLE_VALIDATION`,
+t1.`PO_DOUBLE_VALIDATION_AMOUNT`,
+t1.`PO_LEAD`,
+t1.`PO_LOCK`,
+t1.`PREPAYMENT_PERCENT`,
+t1.`PRIMARY_COLOR`,
+t1.`PURCHASE_LOCK_DATE`,
+t1.`QR_CODE`,
+t1.`QUICK_EDIT_MODE`,
+t1.`QUOTATION_VALIDITY_DAYS`,
+t1.`RESOURCE_CALENDAR_ID`,
+t1.`SALE_LOCK_DATE`,
+t1.`SALE_ONBOARDING_PAYMENT_METHOD`,
+t1.`SECONDARY_COLOR`,
+t1.`SECURITY_LEAD`,
+t1.`SEQUENCE`,
+t1.`SNAILMAIL_COLOR`,
+t1.`SNAILMAIL_COVER`,
+t1.`SNAILMAIL_DUPLEX`,
+t1.`SOCIAL_FACEBOOK`,
+t1.`SOCIAL_GITHUB`,
+t1.`SOCIAL_INSTAGRAM`,
+t1.`SOCIAL_LINKEDIN`,
+t1.`SOCIAL_TIKTOK`,
+t1.`SOCIAL_TWITTER`,
+t1.`SOCIAL_YOUTUBE`,
+t1.`STOCK_MAIL_CONFIRMATION_TEMPLATE_ID`,
+t1.`STOCK_MOVE_EMAIL_VALIDATION`,
+t1.`STOCK_MOVE_SMS_VALIDATION`,
+t1.`TAX_CALCULATION_ROUNDING_METHOD`,
+t1.`TAX_EXIGIBILITY`,
+t1.`TAX_LOCK_DATE`,
+t1.`TERMS_TYPE`,
+t1.`TRANSFER_ACCOUNT_CODE_PREFIX`,
+t1.`USES_DEFAULT_LOGO`,
+t1.`WORK_PERMIT_EXPIRATION_NOTICE_PERIOD`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_company` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `res_currency` t21 ON t1.`CURRENCY_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`PARENT_ID` = t31.`ID` 
+LEFT OUTER JOIN `ir_default` t41 ON t1.`ID` = t41.`COMPANY_ID` 
+
+/*ALIAS.bac=t41*/
+```
+
+#### DEFAULT :id=res_company-Default
+```sql
+SELECT
+t1.`ABSENCE_MANAGEMENT`,
+t1.`ACCOUNT_FISCAL_COUNTRY_ID`,
+t1.`ACCOUNT_OPENING_DATE`,
+t1.`ACCOUNT_PRICE_INCLUDE`,
+t1.`ACCOUNT_STORNO`,
+t1.`ACCOUNT_USE_CREDIT_LIMIT`,
+t1.`ACTIVE`,
+t1.`ALIAS_DOMAIN_ID`,
+t1.`ANGLO_SAXON_ACCOUNTING`,
+t1.`ANNUAL_INVENTORY_DAY`,
+t1.`ANNUAL_INVENTORY_MONTH`,
+t1.`ATTENDANCE_BARCODE_SOURCE`,
+t1.`ATTENDANCE_FROM_SYSTRAY`,
+t1.`ATTENDANCE_KIOSK_DELAY`,
+t1.`ATTENDANCE_KIOSK_KEY`,
+t1.`ATTENDANCE_KIOSK_MODE`,
+t1.`ATTENDANCE_KIOSK_USE_PIN`,
+t1.`ATTENDANCE_OVERTIME_VALIDATION`,
+t1.`AUTOPOST_BILLS`,
+t1.`AUTO_CHECK_OUT`,
+t1.`AUTO_CHECK_OUT_TOLERANCE`,
+t1.`BANK_ACCOUNT_CODE_PREFIX`,
+t1.`BATCH_PAYMENT_SEQUENCE_ID`,
+t1.`CASH_ACCOUNT_CODE_PREFIX`,
+t1.`CHECK_ACCOUNT_AUDIT_TRAIL`,
+t1.`CONTRACT_EXPIRATION_NOTICE_PERIOD`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t21.`NAME` AS `CURRENCY_NAME`,
+t1.`DAYS_TO_PURCHASE`,
+t1.`DISPLAY_INVOICE_AMOUNT_TOTAL_WORDS`,
+t1.`DISPLAY_INVOICE_TAX_COMPANY_CURRENCY`,
+t1.`EMAIL_PRIMARY_COLOR`,
+t1.`EMAIL_SECONDARY_COLOR`,
+t1.`EXPECTS_CHART_OF_ACCOUNTS`,
+t1.`FISCALYEAR_LAST_DAY`,
+t1.`FISCALYEAR_LAST_MONTH`,
+t1.`FISCALYEAR_LOCK_DATE`,
+t1.`FONT`,
+t1.`HARD_LOCK_DATE`,
+t1.`HAS_RECEIVED_WARNING_STOCK_SMS`,
+t1.`HR_ATTENDANCE_DISPLAY_OVERTIME`,
+t1.`HR_PRESENCE_CONTROL_ATTENDANCE`,
+t1.`HR_PRESENCE_CONTROL_EMAIL`,
+t1.`HR_PRESENCE_CONTROL_EMAIL_AMOUNT`,
+t1.`HR_PRESENCE_CONTROL_IP`,
+t1.`HR_PRESENCE_CONTROL_IP_LIST`,
+t1.`HR_PRESENCE_CONTROL_LOGIN`,
+t1.`IAP_ENRICH_AUTO_DONE`,
+t1.`ID`,
+t1.`LAYOUT_BACKGROUND`,
+t1.`MANUFACTURING_LEAD`,
+t1.`NAME`,
+t1.`OVERTIME_COMPANY_THRESHOLD`,
+t1.`OVERTIME_EMPLOYEE_THRESHOLD`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PARTNER_ID`,
+t11.`NAME` AS `PARTNER_NAME`,
+t1.`PAYMENT_ONBOARDING_PAYMENT_METHOD`,
+t1.`PORTAL_CONFIRMATION_PAY`,
+t1.`PORTAL_CONFIRMATION_SIGN`,
+t1.`PO_DOUBLE_VALIDATION`,
+t1.`PO_DOUBLE_VALIDATION_AMOUNT`,
+t1.`PO_LEAD`,
+t1.`PO_LOCK`,
+t1.`PREPAYMENT_PERCENT`,
+t1.`PRIMARY_COLOR`,
+t1.`PURCHASE_LOCK_DATE`,
+t1.`QR_CODE`,
+t1.`QUICK_EDIT_MODE`,
+t1.`QUOTATION_VALIDITY_DAYS`,
+t1.`RESOURCE_CALENDAR_ID`,
+t1.`SALE_LOCK_DATE`,
+t1.`SALE_ONBOARDING_PAYMENT_METHOD`,
+t1.`SECONDARY_COLOR`,
+t1.`SECURITY_LEAD`,
+t1.`SEQUENCE`,
+t1.`SNAILMAIL_COLOR`,
+t1.`SNAILMAIL_COVER`,
+t1.`SNAILMAIL_DUPLEX`,
+t1.`SOCIAL_FACEBOOK`,
+t1.`SOCIAL_GITHUB`,
+t1.`SOCIAL_INSTAGRAM`,
+t1.`SOCIAL_LINKEDIN`,
+t1.`SOCIAL_TIKTOK`,
+t1.`SOCIAL_TWITTER`,
+t1.`SOCIAL_YOUTUBE`,
+t1.`STOCK_MAIL_CONFIRMATION_TEMPLATE_ID`,
+t1.`STOCK_MOVE_EMAIL_VALIDATION`,
+t1.`STOCK_MOVE_SMS_VALIDATION`,
+t1.`TAX_CALCULATION_ROUNDING_METHOD`,
+t1.`TAX_EXIGIBILITY`,
+t1.`TAX_LOCK_DATE`,
+t1.`TERMS_TYPE`,
+t1.`TRANSFER_ACCOUNT_CODE_PREFIX`,
+t1.`USES_DEFAULT_LOGO`,
+t1.`WORK_PERMIT_EXPIRATION_NOTICE_PERIOD`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_company` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `res_currency` t21 ON t1.`CURRENCY_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`PARENT_ID` = t31.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_company-View
+```sql
+SELECT
+t1.`ABSENCE_MANAGEMENT`,
+t1.`ACCOUNT_FISCAL_COUNTRY_ID`,
+t1.`ACCOUNT_OPENING_DATE`,
+t1.`ACCOUNT_PRICE_INCLUDE`,
+t1.`ACCOUNT_STORNO`,
+t1.`ACCOUNT_USE_CREDIT_LIMIT`,
+t1.`ACTIVE`,
+t1.`ALIAS_DOMAIN_ID`,
+t1.`ANGLO_SAXON_ACCOUNTING`,
+t1.`ANNUAL_INVENTORY_DAY`,
+t1.`ANNUAL_INVENTORY_MONTH`,
+t1.`ATTENDANCE_BARCODE_SOURCE`,
+t1.`ATTENDANCE_FROM_SYSTRAY`,
+t1.`ATTENDANCE_KIOSK_DELAY`,
+t1.`ATTENDANCE_KIOSK_KEY`,
+t1.`ATTENDANCE_KIOSK_MODE`,
+t1.`ATTENDANCE_KIOSK_USE_PIN`,
+t1.`ATTENDANCE_OVERTIME_VALIDATION`,
+t1.`AUTOPOST_BILLS`,
+t1.`AUTO_CHECK_OUT`,
+t1.`AUTO_CHECK_OUT_TOLERANCE`,
+t1.`BANK_ACCOUNT_CODE_PREFIX`,
+t1.`BATCH_PAYMENT_SEQUENCE_ID`,
+t1.`CANDIDATE_PROPERTIES_DEFINITION`,
+t1.`CASH_ACCOUNT_CODE_PREFIX`,
+t1.`CHECK_ACCOUNT_AUDIT_TRAIL`,
+t1.`COMPANY_DETAILS`,
+t1.`CONTRACT_EXPIRATION_NOTICE_PERIOD`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t21.`NAME` AS `CURRENCY_NAME`,
+t1.`DAYS_TO_PURCHASE`,
+t1.`DISPLAY_INVOICE_AMOUNT_TOTAL_WORDS`,
+t1.`DISPLAY_INVOICE_TAX_COMPANY_CURRENCY`,
+t1.`EMAIL_PRIMARY_COLOR`,
+t1.`EMAIL_SECONDARY_COLOR`,
+t1.`EMPLOYEE_PROPERTIES_DEFINITION`,
+t1.`EXPECTS_CHART_OF_ACCOUNTS`,
+t1.`FISCALYEAR_LAST_DAY`,
+t1.`FISCALYEAR_LAST_MONTH`,
+t1.`FISCALYEAR_LOCK_DATE`,
+t1.`FONT`,
+t1.`HARD_LOCK_DATE`,
+t1.`HAS_RECEIVED_WARNING_STOCK_SMS`,
+t1.`HR_ATTENDANCE_DISPLAY_OVERTIME`,
+t1.`HR_PRESENCE_CONTROL_ATTENDANCE`,
+t1.`HR_PRESENCE_CONTROL_EMAIL`,
+t1.`HR_PRESENCE_CONTROL_EMAIL_AMOUNT`,
+t1.`HR_PRESENCE_CONTROL_IP`,
+t1.`HR_PRESENCE_CONTROL_IP_LIST`,
+t1.`HR_PRESENCE_CONTROL_LOGIN`,
+t1.`IAP_ENRICH_AUTO_DONE`,
+t1.`ID`,
+t1.`INVOICE_TERMS`,
+t1.`INVOICE_TERMS_HTML`,
+t1.`JOB_PROPERTIES_DEFINITION`,
+t1.`LAYOUT_BACKGROUND`,
+t1.`MANUFACTURING_LEAD`,
+t1.`NAME`,
+t1.`OVERTIME_COMPANY_THRESHOLD`,
+t1.`OVERTIME_EMPLOYEE_THRESHOLD`,
+t1.`PARENT_ID`,
+t31.`NAME` AS `PARENT_NAME`,
+t1.`PARENT_PATH`,
+t1.`PARTNER_ID`,
+t11.`NAME` AS `PARTNER_NAME`,
+t1.`PAYMENT_ONBOARDING_PAYMENT_METHOD`,
+t1.`PORTAL_CONFIRMATION_PAY`,
+t1.`PORTAL_CONFIRMATION_SIGN`,
+t1.`PO_DOUBLE_VALIDATION`,
+t1.`PO_DOUBLE_VALIDATION_AMOUNT`,
+t1.`PO_LEAD`,
+t1.`PO_LOCK`,
+t1.`PREPAYMENT_PERCENT`,
+t1.`PRIMARY_COLOR`,
+t1.`PURCHASE_LOCK_DATE`,
+t1.`QR_CODE`,
+t1.`QUICK_EDIT_MODE`,
+t1.`QUOTATION_VALIDITY_DAYS`,
+t1.`REPORT_FOOTER`,
+t1.`REPORT_HEADER`,
+t1.`RESOURCE_CALENDAR_ID`,
+t1.`SALE_LOCK_DATE`,
+t1.`SALE_ONBOARDING_PAYMENT_METHOD`,
+t1.`SECONDARY_COLOR`,
+t1.`SECURITY_LEAD`,
+t1.`SEQUENCE`,
+t1.`SNAILMAIL_COLOR`,
+t1.`SNAILMAIL_COVER`,
+t1.`SNAILMAIL_DUPLEX`,
+t1.`SOCIAL_FACEBOOK`,
+t1.`SOCIAL_GITHUB`,
+t1.`SOCIAL_INSTAGRAM`,
+t1.`SOCIAL_LINKEDIN`,
+t1.`SOCIAL_TIKTOK`,
+t1.`SOCIAL_TWITTER`,
+t1.`SOCIAL_YOUTUBE`,
+t1.`STOCK_MAIL_CONFIRMATION_TEMPLATE_ID`,
+t1.`STOCK_MOVE_EMAIL_VALIDATION`,
+t1.`STOCK_MOVE_SMS_VALIDATION`,
+t1.`TAX_CALCULATION_ROUNDING_METHOD`,
+t1.`TAX_EXIGIBILITY`,
+t1.`TAX_LOCK_DATE`,
+t1.`TERMS_TYPE`,
+t1.`TRANSFER_ACCOUNT_CODE_PREFIX`,
+t1.`USES_DEFAULT_LOGO`,
+t1.`WORK_PERMIT_EXPIRATION_NOTICE_PERIOD`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_company` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `res_currency` t21 ON t1.`CURRENCY_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`PARENT_ID` = t31.`ID` 
+
+```
+
+
+## [配置设定(RES_CONFIG_SETTINGS)](module/base/res_config_settings.md) :id=res_config_settings
+
+#### DEFAULT :id=res_config_settings-Default
+```sql
+SELECT
+(SELECT count(1) FROM `res_users` user where user.`SHARE`=0 ) AS `ACTIVE_USER_COUNT`,
+t1.`AUTH_SIGNUP_RESET_PASSWORD`,
+t1.`AUTH_SIGNUP_TEMPLATE_USER_ID`,
+t1.`AUTH_SIGNUP_UNINVITED`,
+t1.`AUTOMATIC_INVOICE`,
+t1.`BARCODE_SEPARATOR`,
+(SELECT count(1)  FROM `res_company`) AS `COMPANY_COUNT`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CRM_AUTO_ASSIGNMENT_ACTION`,
+t1.`CRM_AUTO_ASSIGNMENT_INTERVAL_NUMBER`,
+t1.`CRM_AUTO_ASSIGNMENT_INTERVAL_TYPE`,
+t1.`CRM_AUTO_ASSIGNMENT_RUN_DATETIME`,
+t1.`CRM_USE_AUTO_ASSIGNMENT`,
+t1.`DEFAULT_INVOICE_POLICY`,
+t1.`DEFAULT_PICKING_POLICY`,
+t1.`DEFAULT_PURCHASE_METHOD`,
+t1.`DELAY_ALERT_CONTRACT`,
+t1.`DIGEST_EMAILS`,
+t1.`EXTERNAL_EMAIL_SERVER_DEFAULT`,
+t1.`GOOGLE_GMAIL_CLIENT_IDENTIFIER`,
+t1.`GOOGLE_GMAIL_CLIENT_SECRET`,
+t1.`GOOGLE_TRANSLATE_API_KEY`,
+t1.`GROUP_ANALYTIC_ACCOUNTING`,
+t1.`GROUP_APPLICANT_CV_DISPLAY`,
+t1.`GROUP_AUTO_DONE_SETTING`,
+t1.`GROUP_CASH_ROUNDING`,
+t1.`GROUP_DISCOUNT_PER_SO_LINE`,
+t1.`GROUP_LOT_ON_DELIVERY_SLIP`,
+t1.`GROUP_LOT_ON_INVOICE`,
+t1.`GROUP_MASS_MAILING_CAMPAIGN`,
+t1.`GROUP_MRP_BYPRODUCTS`,
+t1.`GROUP_MRP_RECEPTION_REPORT`,
+t1.`GROUP_MRP_ROUTINGS`,
+t1.`GROUP_MRP_WORKORDER_DEPENDENCIES`,
+t1.`GROUP_MULTI_CURRENCY`,
+t1.`GROUP_PRODUCT_PRICELIST`,
+t1.`GROUP_PRODUCT_VARIANT`,
+t1.`GROUP_PROFORMA_SALES`,
+t1.`GROUP_PROJECT_MILESTONE`,
+t1.`GROUP_PROJECT_RATING`,
+t1.`GROUP_PROJECT_RECURRING_TASKS`,
+t1.`GROUP_PROJECT_STAGES`,
+t1.`GROUP_PROJECT_TASK_DEPENDENCIES`,
+t1.`GROUP_SALE_DELIVERY_ADDRESS`,
+t1.`GROUP_SALE_ORDER_TEMPLATE`,
+t1.`GROUP_SEND_REMINDER`,
+t1.`GROUP_SHOW_PURCHASE_RECEIPTS`,
+t1.`GROUP_SHOW_SALE_RECEIPTS`,
+t1.`GROUP_STOCK_ACCOUNTING_AUTOMATIC`,
+t1.`GROUP_STOCK_ADV_LOCATION`,
+t1.`GROUP_STOCK_LOT_PRINT_GS1`,
+t1.`GROUP_STOCK_MULTI_LOCATIONS`,
+t1.`GROUP_STOCK_PACKAGING`,
+t1.`GROUP_STOCK_PRODUCTION_LOT`,
+t1.`GROUP_STOCK_RECEPTION_REPORT`,
+t1.`GROUP_STOCK_SIGN_DELIVERY`,
+t1.`GROUP_STOCK_TRACKING_LOT`,
+t1.`GROUP_STOCK_TRACKING_OWNER`,
+t1.`GROUP_UNLOCKED_BY_DEFAULT`,
+t1.`GROUP_UOM`,
+t1.`GROUP_USE_LEAD`,
+t1.`GROUP_USE_RECURRING_REVENUES`,
+t1.`GROUP_WARNING_ACCOUNT`,
+t1.`GROUP_WARNING_PURCHASE`,
+t1.`GROUP_WARNING_SALE`,
+t1.`GROUP_WARNING_STOCK`,
+t1.`HR_EMPLOYEE_SELF_EDIT`,
+t1.`HR_EXPENSE_ALIAS_PREFIX`,
+t1.`HR_EXPENSE_USE_MAILGATEWAY`,
+t1.`ID`,
+t1.`INVOICE_MAIL_TEMPLATE_ID`,
+t1.`IS_INSTALLED_SALE`,
+t1.`IS_MEMBERSHIP_MULTI`,
+t1.`LEAD_ENRICH_AUTO`,
+t1.`LEAD_MINING_IN_PIPELINE`,
+t1.`LOCK_CONFIRMED_PO`,
+t1.`MASS_MAILING_OUTGOING_MAIL_SERVER`,
+t1.`MASS_MAILING_REPORTS`,
+t1.`MASS_MAILING_SPLIT_CONTACT_NAME`,
+t1.`MODULE_ACCOUNT_3WAY_MATCH`,
+t1.`MODULE_ACCOUNT_ACCOUNTANT`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_EXTRACT`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CAMT`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CSV`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_OFX`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_QIF`,
+t1.`MODULE_ACCOUNT_BATCH_PAYMENT`,
+t1.`MODULE_ACCOUNT_BUDGET`,
+t1.`MODULE_ACCOUNT_CHECK_PRINTING`,
+t1.`MODULE_ACCOUNT_EXTRACT`,
+t1.`MODULE_ACCOUNT_INTER_COMPANY_RULES`,
+t1.`MODULE_ACCOUNT_INTRASTAT`,
+t1.`MODULE_ACCOUNT_INVOICE_EXTRACT`,
+t1.`MODULE_ACCOUNT_ISO20022`,
+t1.`MODULE_ACCOUNT_PAYMENT`,
+t1.`MODULE_ACCOUNT_PEPPOL`,
+t1.`MODULE_ACCOUNT_REPORTS`,
+t1.`MODULE_ACCOUNT_SEPA_DIRECT_DEBIT`,
+t1.`MODULE_AUTH_LDAP`,
+t1.`MODULE_AUTH_OAUTH`,
+t1.`MODULE_BASE_GEOLOCALIZE`,
+t1.`MODULE_BASE_IMPORT`,
+t1.`MODULE_CRM_IAP_ENRICH`,
+t1.`MODULE_CRM_IAP_MINE`,
+t1.`MODULE_CURRENCY_RATE_LIVE`,
+t1.`MODULE_DELIVERY`,
+t1.`MODULE_DELIVERY_BPOST`,
+t1.`MODULE_DELIVERY_DHL`,
+t1.`MODULE_DELIVERY_EASYPOST`,
+t1.`MODULE_DELIVERY_FEDEX`,
+t1.`MODULE_DELIVERY_SENDCLOUD`,
+t1.`MODULE_DELIVERY_SHIPROCKET`,
+t1.`MODULE_DELIVERY_STARSHIPIT`,
+t1.`MODULE_DELIVERY_UPS`,
+t1.`MODULE_DELIVERY_USPS`,
+t1.`MODULE_GOOGLE_CALENDAR`,
+t1.`MODULE_GOOGLE_GMAIL`,
+t1.`MODULE_GOOGLE_RECAPTCHA`,
+t1.`MODULE_HR_EXPENSE_EXTRACT`,
+t1.`MODULE_HR_HOMEWORKING`,
+t1.`MODULE_HR_PAYROLL_EXPENSE`,
+t1.`MODULE_HR_PRESENCE`,
+t1.`MODULE_HR_RECRUITMENT_EXTRACT`,
+t1.`MODULE_HR_RECRUITMENT_SURVEY`,
+t1.`MODULE_HR_SKILLS`,
+t1.`MODULE_HR_TIMESHEET`,
+t1.`MODULE_L10N_EU_OSS`,
+t1.`MODULE_LOYALTY`,
+t1.`MODULE_MAIL_PLUGIN`,
+t1.`MODULE_MAINTENANCE_WORKSHEET`,
+t1.`MODULE_MICROSOFT_CALENDAR`,
+t1.`MODULE_MICROSOFT_OUTLOOK`,
+t1.`MODULE_MRP_MPS`,
+t1.`MODULE_MRP_PLM`,
+t1.`MODULE_MRP_SUBCONTRACTING`,
+t1.`MODULE_PARTNER_AUTOCOMPLETE`,
+t1.`MODULE_PRODUCT_EMAIL_TEMPLATE`,
+t1.`MODULE_PRODUCT_EXPIRY`,
+t1.`MODULE_PRODUCT_IMAGES`,
+t1.`MODULE_PRODUCT_MARGIN`,
+t1.`MODULE_PURCHASE_PRODUCT_MATRIX`,
+t1.`MODULE_PURCHASE_REQUISITION`,
+t1.`MODULE_QUALITY_CONTROL`,
+t1.`MODULE_QUALITY_CONTROL_WORKSHEET`,
+t1.`MODULE_SALE_AMAZON`,
+t1.`MODULE_SALE_COMMISSION`,
+t1.`MODULE_SALE_LOYALTY`,
+t1.`MODULE_SALE_MARGIN`,
+t1.`MODULE_SALE_PDF_QUOTE_BUILDER`,
+t1.`MODULE_SALE_PRODUCT_MATRIX`,
+t1.`MODULE_SMS`,
+t1.`MODULE_SNAILMAIL_ACCOUNT`,
+t1.`MODULE_STOCK_BARCODE`,
+t1.`MODULE_STOCK_BARCODE_BARCODELOOKUP`,
+t1.`MODULE_STOCK_DROPSHIPPING`,
+t1.`MODULE_STOCK_FLEET`,
+t1.`MODULE_STOCK_LANDED_COSTS`,
+t1.`MODULE_STOCK_PICKING_BATCH`,
+t1.`MODULE_STOCK_SMS`,
+t1.`MODULE_VOIP`,
+t1.`MODULE_WEBSITE_CF_TURNSTILE`,
+t1.`MODULE_WEBSITE_CRM_IAP_REVEAL`,
+t1.`MODULE_WEBSITE_HR_RECRUITMENT`,
+t1.`MODULE_WEB_UNSPLASH`,
+t1.`OVERTIME_COMPANY_THRESHOLD`,
+t1.`OVERTIME_EMPLOYEE_THRESHOLD`,
+t1.`PAY_INVOICES_ONLINE`,
+t1.`PO_ORDER_APPROVAL`,
+t1.`PREDICTIVE_LEAD_SCORING_FIELDS_STR`,
+t1.`PREDICTIVE_LEAD_SCORING_START_DATE_STR`,
+t1.`PRODUCT_VOLUME_VOLUME_IN_CUBIC_FEET`,
+t1.`PRODUCT_WEIGHT_IN_LBS`,
+t1.`PROFILING_ENABLED_UNTIL`,
+t1.`RESTRICT_TEMPLATE_RENDERING`,
+t1.`SFU_SERVER_KEY`,
+t1.`SFU_SERVER_URL`,
+t1.`SHOW_BLACKLIST_BUTTONS`,
+t1.`SHOW_EFFECT`,
+t1.`TENOR_API_KEY`,
+t1.`TENOR_CONTENT_FILTER`,
+t1.`TENOR_GIF_LIMIT`,
+t1.`TWILIO_ACCOUNT_SID`,
+t1.`TWILIO_ACCOUNT_TOKEN`,
+t1.`UNSPLASH_ACCESS_KEY`,
+t1.`UNSPLASH_APP_ID`,
+t1.`USER_DEFAULT_RIGHTS`,
+t1.`USE_INVOICE_TERMS`,
+t1.`USE_MANUFACTURING_LEAD`,
+t1.`USE_PO_LEAD`,
+t1.`USE_SECURITY_LEAD`,
+t1.`USE_TWILIO_RTC_SERVERS`,
+t1.`WEB_APP_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_config_settings` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_config_settings-View
+```sql
+SELECT
+(SELECT count(1) FROM `res_users` user where user.`SHARE`=0 ) AS `ACTIVE_USER_COUNT`,
+t1.`AUTH_SIGNUP_RESET_PASSWORD`,
+t1.`AUTH_SIGNUP_TEMPLATE_USER_ID`,
+t1.`AUTH_SIGNUP_UNINVITED`,
+t1.`AUTOMATIC_INVOICE`,
+t1.`BARCODE_SEPARATOR`,
+(SELECT count(1)  FROM `res_company`) AS `COMPANY_COUNT`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CRM_AUTO_ASSIGNMENT_ACTION`,
+t1.`CRM_AUTO_ASSIGNMENT_INTERVAL_NUMBER`,
+t1.`CRM_AUTO_ASSIGNMENT_INTERVAL_TYPE`,
+t1.`CRM_AUTO_ASSIGNMENT_RUN_DATETIME`,
+t1.`CRM_USE_AUTO_ASSIGNMENT`,
+t1.`DEFAULT_INVOICE_POLICY`,
+t1.`DEFAULT_PICKING_POLICY`,
+t1.`DEFAULT_PURCHASE_METHOD`,
+t1.`DELAY_ALERT_CONTRACT`,
+t1.`DIGEST_EMAILS`,
+t1.`EXTERNAL_EMAIL_SERVER_DEFAULT`,
+t1.`GOOGLE_GMAIL_CLIENT_IDENTIFIER`,
+t1.`GOOGLE_GMAIL_CLIENT_SECRET`,
+t1.`GOOGLE_TRANSLATE_API_KEY`,
+t1.`GROUP_ANALYTIC_ACCOUNTING`,
+t1.`GROUP_APPLICANT_CV_DISPLAY`,
+t1.`GROUP_AUTO_DONE_SETTING`,
+t1.`GROUP_CASH_ROUNDING`,
+t1.`GROUP_DISCOUNT_PER_SO_LINE`,
+t1.`GROUP_LOT_ON_DELIVERY_SLIP`,
+t1.`GROUP_LOT_ON_INVOICE`,
+t1.`GROUP_MASS_MAILING_CAMPAIGN`,
+t1.`GROUP_MRP_BYPRODUCTS`,
+t1.`GROUP_MRP_RECEPTION_REPORT`,
+t1.`GROUP_MRP_ROUTINGS`,
+t1.`GROUP_MRP_WORKORDER_DEPENDENCIES`,
+t1.`GROUP_MULTI_CURRENCY`,
+t1.`GROUP_PRODUCT_PRICELIST`,
+t1.`GROUP_PRODUCT_VARIANT`,
+t1.`GROUP_PROFORMA_SALES`,
+t1.`GROUP_PROJECT_MILESTONE`,
+t1.`GROUP_PROJECT_RATING`,
+t1.`GROUP_PROJECT_RECURRING_TASKS`,
+t1.`GROUP_PROJECT_STAGES`,
+t1.`GROUP_PROJECT_TASK_DEPENDENCIES`,
+t1.`GROUP_SALE_DELIVERY_ADDRESS`,
+t1.`GROUP_SALE_ORDER_TEMPLATE`,
+t1.`GROUP_SEND_REMINDER`,
+t1.`GROUP_SHOW_PURCHASE_RECEIPTS`,
+t1.`GROUP_SHOW_SALE_RECEIPTS`,
+t1.`GROUP_STOCK_ACCOUNTING_AUTOMATIC`,
+t1.`GROUP_STOCK_ADV_LOCATION`,
+t1.`GROUP_STOCK_LOT_PRINT_GS1`,
+t1.`GROUP_STOCK_MULTI_LOCATIONS`,
+t1.`GROUP_STOCK_PACKAGING`,
+t1.`GROUP_STOCK_PRODUCTION_LOT`,
+t1.`GROUP_STOCK_RECEPTION_REPORT`,
+t1.`GROUP_STOCK_SIGN_DELIVERY`,
+t1.`GROUP_STOCK_TRACKING_LOT`,
+t1.`GROUP_STOCK_TRACKING_OWNER`,
+t1.`GROUP_UNLOCKED_BY_DEFAULT`,
+t1.`GROUP_UOM`,
+t1.`GROUP_USE_LEAD`,
+t1.`GROUP_USE_RECURRING_REVENUES`,
+t1.`GROUP_WARNING_ACCOUNT`,
+t1.`GROUP_WARNING_PURCHASE`,
+t1.`GROUP_WARNING_SALE`,
+t1.`GROUP_WARNING_STOCK`,
+t1.`HR_EMPLOYEE_SELF_EDIT`,
+t1.`HR_EXPENSE_ALIAS_PREFIX`,
+t1.`HR_EXPENSE_USE_MAILGATEWAY`,
+t1.`ID`,
+t1.`INVOICE_MAIL_TEMPLATE_ID`,
+t1.`IS_INSTALLED_SALE`,
+t1.`IS_MEMBERSHIP_MULTI`,
+t1.`LEAD_ENRICH_AUTO`,
+t1.`LEAD_MINING_IN_PIPELINE`,
+t1.`LOCK_CONFIRMED_PO`,
+t1.`MASS_MAILING_OUTGOING_MAIL_SERVER`,
+t1.`MASS_MAILING_REPORTS`,
+t1.`MASS_MAILING_SPLIT_CONTACT_NAME`,
+t1.`MODULE_ACCOUNT_3WAY_MATCH`,
+t1.`MODULE_ACCOUNT_ACCOUNTANT`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_EXTRACT`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CAMT`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CSV`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_OFX`,
+t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_QIF`,
+t1.`MODULE_ACCOUNT_BATCH_PAYMENT`,
+t1.`MODULE_ACCOUNT_BUDGET`,
+t1.`MODULE_ACCOUNT_CHECK_PRINTING`,
+t1.`MODULE_ACCOUNT_EXTRACT`,
+t1.`MODULE_ACCOUNT_INTER_COMPANY_RULES`,
+t1.`MODULE_ACCOUNT_INTRASTAT`,
+t1.`MODULE_ACCOUNT_INVOICE_EXTRACT`,
+t1.`MODULE_ACCOUNT_ISO20022`,
+t1.`MODULE_ACCOUNT_PAYMENT`,
+t1.`MODULE_ACCOUNT_PEPPOL`,
+t1.`MODULE_ACCOUNT_REPORTS`,
+t1.`MODULE_ACCOUNT_SEPA_DIRECT_DEBIT`,
+t1.`MODULE_AUTH_LDAP`,
+t1.`MODULE_AUTH_OAUTH`,
+t1.`MODULE_BASE_GEOLOCALIZE`,
+t1.`MODULE_BASE_IMPORT`,
+t1.`MODULE_CRM_IAP_ENRICH`,
+t1.`MODULE_CRM_IAP_MINE`,
+t1.`MODULE_CURRENCY_RATE_LIVE`,
+t1.`MODULE_DELIVERY`,
+t1.`MODULE_DELIVERY_BPOST`,
+t1.`MODULE_DELIVERY_DHL`,
+t1.`MODULE_DELIVERY_EASYPOST`,
+t1.`MODULE_DELIVERY_FEDEX`,
+t1.`MODULE_DELIVERY_SENDCLOUD`,
+t1.`MODULE_DELIVERY_SHIPROCKET`,
+t1.`MODULE_DELIVERY_STARSHIPIT`,
+t1.`MODULE_DELIVERY_UPS`,
+t1.`MODULE_DELIVERY_USPS`,
+t1.`MODULE_GOOGLE_CALENDAR`,
+t1.`MODULE_GOOGLE_GMAIL`,
+t1.`MODULE_GOOGLE_RECAPTCHA`,
+t1.`MODULE_HR_EXPENSE_EXTRACT`,
+t1.`MODULE_HR_HOMEWORKING`,
+t1.`MODULE_HR_PAYROLL_EXPENSE`,
+t1.`MODULE_HR_PRESENCE`,
+t1.`MODULE_HR_RECRUITMENT_EXTRACT`,
+t1.`MODULE_HR_RECRUITMENT_SURVEY`,
+t1.`MODULE_HR_SKILLS`,
+t1.`MODULE_HR_TIMESHEET`,
+t1.`MODULE_L10N_EU_OSS`,
+t1.`MODULE_LOYALTY`,
+t1.`MODULE_MAIL_PLUGIN`,
+t1.`MODULE_MAINTENANCE_WORKSHEET`,
+t1.`MODULE_MICROSOFT_CALENDAR`,
+t1.`MODULE_MICROSOFT_OUTLOOK`,
+t1.`MODULE_MRP_MPS`,
+t1.`MODULE_MRP_PLM`,
+t1.`MODULE_MRP_SUBCONTRACTING`,
+t1.`MODULE_PARTNER_AUTOCOMPLETE`,
+t1.`MODULE_PRODUCT_EMAIL_TEMPLATE`,
+t1.`MODULE_PRODUCT_EXPIRY`,
+t1.`MODULE_PRODUCT_IMAGES`,
+t1.`MODULE_PRODUCT_MARGIN`,
+t1.`MODULE_PURCHASE_PRODUCT_MATRIX`,
+t1.`MODULE_PURCHASE_REQUISITION`,
+t1.`MODULE_QUALITY_CONTROL`,
+t1.`MODULE_QUALITY_CONTROL_WORKSHEET`,
+t1.`MODULE_SALE_AMAZON`,
+t1.`MODULE_SALE_COMMISSION`,
+t1.`MODULE_SALE_LOYALTY`,
+t1.`MODULE_SALE_MARGIN`,
+t1.`MODULE_SALE_PDF_QUOTE_BUILDER`,
+t1.`MODULE_SALE_PRODUCT_MATRIX`,
+t1.`MODULE_SMS`,
+t1.`MODULE_SNAILMAIL_ACCOUNT`,
+t1.`MODULE_STOCK_BARCODE`,
+t1.`MODULE_STOCK_BARCODE_BARCODELOOKUP`,
+t1.`MODULE_STOCK_DROPSHIPPING`,
+t1.`MODULE_STOCK_FLEET`,
+t1.`MODULE_STOCK_LANDED_COSTS`,
+t1.`MODULE_STOCK_PICKING_BATCH`,
+t1.`MODULE_STOCK_SMS`,
+t1.`MODULE_VOIP`,
+t1.`MODULE_WEBSITE_CF_TURNSTILE`,
+t1.`MODULE_WEBSITE_CRM_IAP_REVEAL`,
+t1.`MODULE_WEBSITE_HR_RECRUITMENT`,
+t1.`MODULE_WEB_UNSPLASH`,
+t1.`OVERTIME_COMPANY_THRESHOLD`,
+t1.`OVERTIME_EMPLOYEE_THRESHOLD`,
+t1.`PAY_INVOICES_ONLINE`,
+t1.`PO_ORDER_APPROVAL`,
+t1.`PREDICTIVE_LEAD_SCORING_FIELDS_STR`,
+t1.`PREDICTIVE_LEAD_SCORING_START_DATE_STR`,
+t1.`PRODUCT_VOLUME_VOLUME_IN_CUBIC_FEET`,
+t1.`PRODUCT_WEIGHT_IN_LBS`,
+t1.`PROFILING_ENABLED_UNTIL`,
+t1.`RESTRICT_TEMPLATE_RENDERING`,
+t1.`SFU_SERVER_KEY`,
+t1.`SFU_SERVER_URL`,
+t1.`SHOW_BLACKLIST_BUTTONS`,
+t1.`SHOW_EFFECT`,
+t1.`TENOR_API_KEY`,
+t1.`TENOR_CONTENT_FILTER`,
+t1.`TENOR_GIF_LIMIT`,
+t1.`TWILIO_ACCOUNT_SID`,
+t1.`TWILIO_ACCOUNT_TOKEN`,
+t1.`UNSPLASH_ACCESS_KEY`,
+t1.`UNSPLASH_APP_ID`,
+t1.`USER_DEFAULT_RIGHTS`,
+t1.`USE_INVOICE_TERMS`,
+t1.`USE_MANUFACTURING_LEAD`,
+t1.`USE_PO_LEAD`,
+t1.`USE_SECURITY_LEAD`,
+t1.`USE_TWILIO_RTC_SERVERS`,
+t1.`WEB_APP_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_config_settings` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+
+```
+
+
+## [国家/地区(RES_COUNTRY)](module/base/res_country.md) :id=res_country
+
+#### DEFAULT :id=res_country-Default
+```sql
+SELECT
+t1.`CODE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`NAME_POSITION`,
+t1.`PHONE_CODE`,
+t1.`STATE_REQUIRED`,
+t1.`VAT_LABEL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP_REQUIRED`
+FROM `res_country` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_country-View
+```sql
+SELECT
+t1.`ADDRESS_FORMAT`,
+t1.`CODE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_ID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`NAME_POSITION`,
+t1.`PHONE_CODE`,
+t1.`STATE_REQUIRED`,
+t1.`VAT_LABEL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP_REQUIRED`
+FROM `res_country` t1 
+
+```
+
+
+## [币别(RES_CURRENCY)](module/base/res_currency.md) :id=res_currency
+
+#### DEFAULT :id=res_currency-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_SUBUNIT_LABEL`,
+t1.`CURRENCY_UNIT_LABEL`,
+t1.`DECIMAL_PLACES`,
+t1.`FULL_NAME`,
+t1.`ID`,
+t1.`ISO_NUMERIC`,
+t1.`NAME`,
+t1.`POSITION`,
+t1.`ROUNDING`,
+t1.`SYMBOL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_currency` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_currency-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CURRENCY_SUBUNIT_LABEL`,
+t1.`CURRENCY_UNIT_LABEL`,
+t1.`DECIMAL_PLACES`,
+t1.`FULL_NAME`,
+t1.`ID`,
+t1.`ISO_NUMERIC`,
+t1.`NAME`,
+t1.`POSITION`,
+t1.`ROUNDING`,
+t1.`SYMBOL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_currency` t1 
+
+```
+
+
+## [权限组(RES_GROUPS)](module/base/res_groups.md) :id=res_groups
+
+#### DEFAULT :id=res_groups-Default
+```sql
+SELECT
+t1.`API_KEY_DURATION`,
+t1.`CATEGORY_ID`,
+t11.`NAME` AS `CATEGORY_NAME`,
+t1.`COLOR`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SHARE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_groups` t1 
+LEFT JOIN `ir_module_category` t11 ON t1.`CATEGORY_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_groups-View
+```sql
+SELECT
+t1.`API_KEY_DURATION`,
+t1.`CATEGORY_ID`,
+t11.`NAME` AS `CATEGORY_NAME`,
+t1.`COLOR`,
+t1.`COMMENT`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SHARE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_groups` t1 
+LEFT JOIN `ir_module_category` t11 ON t1.`CATEGORY_ID` = t11.`ID` 
+
+```
+
+#### 当前用户权限组(cur_user_ref) :id=res_groups-cur_user_ref
+```sql
+SELECT
+t1.`API_KEY_DURATION`,
+t1.`CATEGORY_ID`,
+t11.`NAME` AS `CATEGORY_NAME`,
+t1.`COLOR`,
+t1.`COMMENT`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SHARE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_groups` t1 
+LEFT JOIN `ir_module_category` t11 ON t1.`CATEGORY_ID` = t11.`ID` 
+
+WHERE EXISTS(SELECT * FROM `res_groups_users_rel` t21 
+LEFT JOIN `res_users` t31 ON t21.`USER_ID` = t31.`ID` 
+ WHERE 
+ t1.`ID` = t21.`GID`  AND  ( t31.`PARTNER_ID` = #{ctx.sessioncontext.srfpartnerid} ) )
+```
+
+#### 用户归属组(user_ref) :id=res_groups-user_ref
+```sql
+SELECT
+t1.`API_KEY_DURATION`,
+t1.`CATEGORY_ID`,
+t11.`NAME` AS `CATEGORY_NAME`,
+t1.`COLOR`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SHARE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_groups` t1 
+LEFT JOIN `ir_module_category` t11 ON t1.`CATEGORY_ID` = t11.`ID` 
+
+WHERE EXISTS(SELECT * FROM `res_groups_users_rel` t21 
+ WHERE 
+ t1.`ID` = t21.`GID`  AND  ( t21.`USER_ID` = #{ctx.datacontext.user_id} ) )
+```
+
+#### 包含嵌套数据(with_nested) :id=res_groups-with_nested
+```sql
+SELECT
+t1.`API_KEY_DURATION`,
+t1.`CATEGORY_ID`,
+t11.`NAME` AS `CATEGORY_NAME`,
+t1.`COLOR`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SHARE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `res_groups` t1 
+LEFT JOIN `ir_module_category` t11 ON t1.`CATEGORY_ID` = t11.`ID` 
+
+```
+
+
+## [权限组继承(RES_GROUPS_IMPLIED_REL)](module/base/res_groups_implied_rel.md) :id=res_groups_implied_rel
+
+#### DEFAULT :id=res_groups_implied_rel-Default
+```sql
+SELECT
+t1.`GID`,
+t11.`NAME` AS `GNAME`,
+t1.`HID`,
+t21.`NAME` AS `HNAME`,
+t1.`ID`,
+t1.`NAME`
+FROM `res_groups_implied_rel` t1 
+LEFT JOIN `res_groups` t11 ON t1.`GID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`HID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_groups_implied_rel-View
+```sql
+SELECT
+t1.`GID`,
+t11.`NAME` AS `GNAME`,
+t1.`HID`,
+t21.`NAME` AS `HNAME`,
+t1.`ID`,
+t1.`NAME`
+FROM `res_groups_implied_rel` t1 
+LEFT JOIN `res_groups` t11 ON t1.`GID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`HID` = t21.`ID` 
+
+```
+
+
+## [权限组成员(RES_GROUPS_USERS_REL)](module/base/res_groups_users_rel.md) :id=res_groups_users_rel
+
+#### DEFAULT :id=res_groups_users_rel-Default
+```sql
+SELECT
+t41.`CATEGORY_ID`,
+t51.`NAME` AS `CATEGORY_NAME`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`GID`,
+t41.`NAME` AS `GROUP_NAME`,
+t1.`ID`,
+t11.`LOGIN`,
+t1.`NAME`,
+t1.`USER_ID`,
+t31.`NAME` AS `USER_NAME`
+FROM `res_groups_users_rel` t1 
+LEFT JOIN `res_users` t11 ON t1.`USER_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t11.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t11.`PARTNER_ID` = t31.`ID` 
+LEFT JOIN `res_groups` t41 ON t1.`GID` = t41.`ID` 
+LEFT JOIN `ir_module_category` t51 ON t41.`CATEGORY_ID` = t51.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_groups_users_rel-View
+```sql
+SELECT
+t41.`CATEGORY_ID`,
+t51.`NAME` AS `CATEGORY_NAME`,
+t21.`NAME` AS `COMPANY_NAME`,
+t1.`GID`,
+t41.`NAME` AS `GROUP_NAME`,
+t1.`ID`,
+t11.`LOGIN`,
+t1.`NAME`,
+t1.`USER_ID`,
+t31.`NAME` AS `USER_NAME`
+FROM `res_groups_users_rel` t1 
+LEFT JOIN `res_users` t11 ON t1.`USER_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t11.`COMPANY_ID` = t21.`ID` 
+LEFT JOIN `res_partner` t31 ON t11.`PARTNER_ID` = t31.`ID` 
+LEFT JOIN `res_groups` t41 ON t1.`GID` = t41.`ID` 
+LEFT JOIN `ir_module_category` t51 ON t41.`CATEGORY_ID` = t51.`ID` 
+
+```
+
+
+## [联系人(RES_PARTNER)](module/base/res_partner.md) :id=res_partner
+
+#### DEFAULT :id=res_partner-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDITIONAL_INFO`,
+t1.`AUTOPOST_BILLS`,
+t1.`BARCODE`,
+t1.`BUYER_ID`,
+t1.`CALENDAR_LAST_NOTIF_ACK`,
+t1.`CITY`,
+t1.`COLOR`,
+t1.`COMMERCIAL_COMPANY_NAME`,
+t1.`COMMERCIAL_PARTNER_ID`,
+t1.`COMPANY_ID`,
+t1.`COMPANY_NAME`,
+t1.`COMPANY_REGISTRY`,
+t1.`COMPLETE_NAME`,
+t1.`COUNTRY_ID`,
+t31.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CREDIT_LIMIT`,
+t1.`CUSTOMER_RANK`,
+t1.`DEBIT_LIMIT`,
+t1.`EMAIL`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMPLOYEE`,
+t1.`FUNCTION`,
+t1.`ID`,
+t1.`IGNORE_ABNORMAL_INVOICE_AMOUNT`,
+t1.`IGNORE_ABNORMAL_INVOICE_DATE`,
+t1.`INDUSTRY_ID`,
+t1.`INVOICE_EDI_FORMAT_STORE`,
+t1.`INVOICE_SENDING_METHOD`,
+t1.`INVOICE_WARN`,
+t1.`IS_COMPANY`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MOBILE`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t11.`NAME` AS `PARENT_NAME`,
+t1.`PARTNER_GID`,
+t1.`PARTNER_LATITUDE`,
+t1.`PARTNER_LONGITUDE`,
+t1.`PARTNER_SHARE`,
+t1.`PEPPOL_EAS`,
+t1.`PEPPOL_ENDPOINT`,
+t1.`PHONE`,
+t1.`PHONE_SANITIZED`,
+t1.`PICKING_WARN`,
+t1.`PLAN_TO_CHANGE_BIKE`,
+t1.`PLAN_TO_CHANGE_CAR`,
+t1.`PROPERTY_PURCHASE_CURRENCY_ID`,
+t1.`PURCHASE_WARN`,
+t1.`RECEIPT_REMINDER_EMAIL`,
+t1.`REF`,
+t1.`REMINDER_DATE_BEFORE_RECEIPT`,
+t1.`SALE_WARN`,
+t1.`SIGNUP_TYPE`,
+t1.`STATE_ID`,
+t21.`NAME` AS `STATE_NAME`,
+t1.`STREET`,
+t1.`STREET2`,
+t1.`SUPPLIER_RANK`,
+t1.`TRUST`,
+t1.`TYPE`,
+t1.`TZ`,
+t1.`USER_ID`,
+t51.`NAME` AS `USER_NAME`,
+t1.`VAT`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP`
+FROM `res_partner` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_country_state` t21 ON t1.`STATE_ID` = t21.`ID` 
+LEFT JOIN `res_country` t31 ON t1.`COUNTRY_ID` = t31.`ID` 
+LEFT JOIN `res_users` t41 ON t1.`USER_ID` = t41.`ID` 
+LEFT JOIN `res_partner` t51 ON t41.`PARTNER_ID` = t51.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_partner-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDITIONAL_INFO`,
+t1.`AUTOPOST_BILLS`,
+t1.`BARCODE`,
+t1.`BUYER_ID`,
+t1.`CALENDAR_LAST_NOTIF_ACK`,
+t1.`CITY`,
+t1.`COLOR`,
+t1.`COMMENT`,
+t1.`COMMERCIAL_COMPANY_NAME`,
+t1.`COMMERCIAL_PARTNER_ID`,
+t1.`COMPANY_ID`,
+t1.`COMPANY_NAME`,
+t1.`COMPANY_REGISTRY`,
+t1.`COMPLETE_NAME`,
+t1.`COUNTRY_ID`,
+t31.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CREDIT_LIMIT`,
+t1.`CUSTOMER_RANK`,
+t1.`DEBIT_LIMIT`,
+t1.`EMAIL`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMPLOYEE`,
+t61.`ID` AS `EMPLOYEE_ID`,
+t1.`FUNCTION`,
+t1.`ID`,
+t1.`IGNORE_ABNORMAL_INVOICE_AMOUNT`,
+t1.`IGNORE_ABNORMAL_INVOICE_DATE`,
+t1.`INDUSTRY_ID`,
+t1.`INVOICE_EDI_FORMAT_STORE`,
+t1.`INVOICE_SENDING_METHOD`,
+t1.`INVOICE_WARN`,
+t1.`INVOICE_WARN_MSG`,
+t1.`IS_COMPANY`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MOBILE`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t11.`NAME` AS `PARENT_NAME`,
+t1.`PARTNER_GID`,
+t1.`PARTNER_LATITUDE`,
+t1.`PARTNER_LONGITUDE`,
+t1.`PARTNER_SHARE`,
+t1.`PEPPOL_EAS`,
+t1.`PEPPOL_ENDPOINT`,
+t1.`PHONE`,
+t1.`PHONE_SANITIZED`,
+t1.`PICKING_WARN`,
+t1.`PICKING_WARN_MSG`,
+t1.`PLAN_TO_CHANGE_BIKE`,
+t1.`PLAN_TO_CHANGE_CAR`,
+t1.`PROPERTY_PURCHASE_CURRENCY_ID`,
+t1.`PURCHASE_WARN`,
+t1.`PURCHASE_WARN_MSG`,
+t1.`RECEIPT_REMINDER_EMAIL`,
+t1.`REF`,
+t1.`REMINDER_DATE_BEFORE_RECEIPT`,
+t1.`SALE_WARN`,
+t1.`SALE_WARN_MSG`,
+t1.`SIGNUP_TYPE`,
+t1.`STATE_ID`,
+t21.`NAME` AS `STATE_NAME`,
+t1.`STREET`,
+t1.`STREET2`,
+t1.`SUPPLIER_RANK`,
+t1.`TRUST`,
+t1.`TYPE`,
+t1.`TZ`,
+t1.`USER_ID`,
+t51.`NAME` AS `USER_NAME`,
+t1.`VAT`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP`
+FROM `res_partner` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_country_state` t21 ON t1.`STATE_ID` = t21.`ID` 
+LEFT JOIN `res_country` t31 ON t1.`COUNTRY_ID` = t31.`ID` 
+LEFT JOIN `res_users` t41 ON t1.`USER_ID` = t41.`ID` 
+LEFT JOIN `res_partner` t51 ON t41.`PARTNER_ID` = t51.`ID` 
+LEFT OUTER JOIN `hr_employee` t61 ON t1.`ID` = t61.`WORK_CONTACT_ID` 
+
+```
+
+#### 频道可邀请的联系人(channel_invite) :id=res_partner-channel_invite
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDITIONAL_INFO`,
+t1.`AUTOPOST_BILLS`,
+t1.`BARCODE`,
+t1.`BUYER_ID`,
+t1.`CALENDAR_LAST_NOTIF_ACK`,
+t1.`CITY`,
+t1.`COLOR`,
+t1.`COMMERCIAL_COMPANY_NAME`,
+t1.`COMMERCIAL_PARTNER_ID`,
+t1.`COMPANY_ID`,
+t1.`COMPANY_NAME`,
+t1.`COMPANY_REGISTRY`,
+t1.`COMPLETE_NAME`,
+t1.`COUNTRY_ID`,
+t31.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CREDIT_LIMIT`,
+t1.`CUSTOMER_RANK`,
+t1.`DEBIT_LIMIT`,
+t1.`EMAIL`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMPLOYEE`,
+t1.`FUNCTION`,
+t1.`ID`,
+t1.`IGNORE_ABNORMAL_INVOICE_AMOUNT`,
+t1.`IGNORE_ABNORMAL_INVOICE_DATE`,
+t1.`INDUSTRY_ID`,
+t1.`INVOICE_EDI_FORMAT_STORE`,
+t1.`INVOICE_SENDING_METHOD`,
+t1.`INVOICE_WARN`,
+t1.`IS_COMPANY`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MOBILE`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t11.`NAME` AS `PARENT_NAME`,
+t1.`PARTNER_GID`,
+t1.`PARTNER_LATITUDE`,
+t1.`PARTNER_LONGITUDE`,
+t1.`PARTNER_SHARE`,
+t1.`PEPPOL_EAS`,
+t1.`PEPPOL_ENDPOINT`,
+t1.`PHONE`,
+t1.`PHONE_SANITIZED`,
+t1.`PICKING_WARN`,
+t1.`PLAN_TO_CHANGE_BIKE`,
+t1.`PLAN_TO_CHANGE_CAR`,
+t1.`PROPERTY_PURCHASE_CURRENCY_ID`,
+t1.`PURCHASE_WARN`,
+t1.`RECEIPT_REMINDER_EMAIL`,
+t1.`REF`,
+t1.`REMINDER_DATE_BEFORE_RECEIPT`,
+t1.`SALE_WARN`,
+t1.`SIGNUP_TYPE`,
+t1.`STATE_ID`,
+t21.`NAME` AS `STATE_NAME`,
+t1.`STREET`,
+t1.`STREET2`,
+t1.`SUPPLIER_RANK`,
+t1.`TRUST`,
+t1.`TYPE`,
+t1.`TZ`,
+t1.`USER_ID`,
+t51.`NAME` AS `USER_NAME`,
+t1.`VAT`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP`
+FROM `res_partner` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_country_state` t21 ON t1.`STATE_ID` = t21.`ID` 
+LEFT JOIN `res_country` t31 ON t1.`COUNTRY_ID` = t31.`ID` 
+LEFT JOIN `res_users` t41 ON t1.`USER_ID` = t41.`ID` 
+LEFT JOIN `res_partner` t51 ON t41.`PARTNER_ID` = t51.`ID` 
+
+WHERE NOT(EXISTS(SELECT * FROM `discuss_channel_member` t61 
+ WHERE 
+ t1.`ID` = t61.`PARTNER_ID`  AND  ( t61.`CHANNEL_ID` = #{ctx.datacontext.channel_id} ) ))
+```
+
+#### 公司联系人(is_company) :id=res_partner-is_company
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`ADDITIONAL_INFO`,
+t1.`AUTOPOST_BILLS`,
+t1.`BARCODE`,
+t1.`BUYER_ID`,
+t1.`CALENDAR_LAST_NOTIF_ACK`,
+t1.`CITY`,
+t1.`COLOR`,
+t1.`COMMERCIAL_COMPANY_NAME`,
+t1.`COMMERCIAL_PARTNER_ID`,
+t1.`COMPANY_ID`,
+t1.`COMPANY_NAME`,
+t1.`COMPANY_REGISTRY`,
+t1.`COMPLETE_NAME`,
+t1.`COUNTRY_ID`,
+t31.`NAME` AS `COUNTRY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`CREDIT_LIMIT`,
+t1.`CUSTOMER_RANK`,
+t1.`DEBIT_LIMIT`,
+t1.`EMAIL`,
+t1.`EMAIL_NORMALIZED`,
+t1.`EMPLOYEE`,
+t1.`FUNCTION`,
+t1.`ID`,
+t1.`IGNORE_ABNORMAL_INVOICE_AMOUNT`,
+t1.`IGNORE_ABNORMAL_INVOICE_DATE`,
+t1.`INDUSTRY_ID`,
+t1.`INVOICE_EDI_FORMAT_STORE`,
+t1.`INVOICE_SENDING_METHOD`,
+t1.`INVOICE_WARN`,
+t1.`IS_COMPANY`,
+t1.`MESSAGE_BOUNCE`,
+t1.`MOBILE`,
+t1.`NAME`,
+t1.`PARENT_ID`,
+t11.`NAME` AS `PARENT_NAME`,
+t1.`PARTNER_GID`,
+t1.`PARTNER_LATITUDE`,
+t1.`PARTNER_LONGITUDE`,
+t1.`PARTNER_SHARE`,
+t1.`PEPPOL_EAS`,
+t1.`PEPPOL_ENDPOINT`,
+t1.`PHONE`,
+t1.`PHONE_SANITIZED`,
+t1.`PICKING_WARN`,
+t1.`PLAN_TO_CHANGE_BIKE`,
+t1.`PLAN_TO_CHANGE_CAR`,
+t1.`PROPERTY_PURCHASE_CURRENCY_ID`,
+t1.`PURCHASE_WARN`,
+t1.`RECEIPT_REMINDER_EMAIL`,
+t1.`REF`,
+t1.`REMINDER_DATE_BEFORE_RECEIPT`,
+t1.`SALE_WARN`,
+t1.`SIGNUP_TYPE`,
+t1.`STATE_ID`,
+t21.`NAME` AS `STATE_NAME`,
+t1.`STREET`,
+t1.`STREET2`,
+t1.`SUPPLIER_RANK`,
+t1.`TRUST`,
+t1.`TYPE`,
+t1.`TZ`,
+t1.`USER_ID`,
+t51.`NAME` AS `USER_NAME`,
+t1.`VAT`,
+t1.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t1.`ZIP`
+FROM `res_partner` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARENT_ID` = t11.`ID` 
+LEFT JOIN `res_country_state` t21 ON t1.`STATE_ID` = t21.`ID` 
+LEFT JOIN `res_country` t31 ON t1.`COUNTRY_ID` = t31.`ID` 
+LEFT JOIN `res_users` t41 ON t1.`USER_ID` = t41.`ID` 
+LEFT JOIN `res_partner` t51 ON t41.`PARTNER_ID` = t51.`ID` 
+
+WHERE ( t1.`IS_COMPANY` = 1 )
+```
+
+
+## [用户(RES_USERS)](module/base/res_users.md) :id=res_users
+
+#### DEFAULT :id=res_users-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t11.`ADDITIONAL_INFO`,
+t11.`AUTOPOST_BILLS`,
+t11.`BARCODE`,
+t11.`BUYER_ID`,
+t11.`CALENDAR_LAST_NOTIF_ACK`,
+t11.`CITY`,
+t11.`COLOR`,
+t11.`COMMERCIAL_COMPANY_NAME`,
+t11.`COMMERCIAL_PARTNER_ID`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t11.`COMPANY_REGISTRY`,
+t11.`COMPLETE_NAME`,
+t11.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t11.`CREDIT_LIMIT`,
+t11.`CUSTOMER_RANK`,
+t11.`DEBIT_LIMIT`,
+t1.`DISPLAY_NAME`,
+t11.`EMAIL`,
+t11.`EMAIL_NORMALIZED`,
+t11.`EMPLOYEE`,
+t11.`FUNCTION`,
+(SELECT count(1) FROM `res_groups_users_rel` t where  t.USER_ID=t1.`ID`) AS `GROUPS_COUNT`,
+t1.`ID`,
+t11.`IGNORE_ABNORMAL_INVOICE_AMOUNT`,
+t11.`IGNORE_ABNORMAL_INVOICE_DATE`,
+t11.`INDUSTRY_ID`,
+t11.`INVOICE_EDI_FORMAT_STORE`,
+t11.`INVOICE_SENDING_METHOD`,
+t11.`INVOICE_WARN`,
+t11.`IS_COMPANY`,
+t1.`KARMA`,
+t1.`LOGIN`,
+t11.`MESSAGE_BOUNCE`,
+t11.`MOBILE`,
+t11.`NAME`,
+t1.`NOTIFICATION_TYPE`,
+t1.`ODOOBOT_FAILED`,
+t1.`ODOOBOT_STATE`,
+t11.`PARENT_ID`,
+t11.`PARTNER_GID`,
+t1.`PARTNER_ID`,
+t11.`PARTNER_LATITUDE`,
+t11.`PARTNER_LONGITUDE`,
+t11.`NAME` AS `PARTNER_NAME`,
+t11.`PARTNER_SHARE`,
+t1.`PASSWORD`,
+t11.`PEPPOL_EAS`,
+t11.`PEPPOL_ENDPOINT`,
+t11.`PHONE`,
+t11.`PHONE_SANITIZED`,
+t11.`PICKING_WARN`,
+t11.`PLAN_TO_CHANGE_BIKE`,
+t11.`PLAN_TO_CHANGE_CAR`,
+t11.`PROPERTY_PURCHASE_CURRENCY_ID`,
+t11.`PURCHASE_WARN`,
+t11.`RECEIPT_REMINDER_EMAIL`,
+t11.`REF`,
+t11.`REMINDER_DATE_BEFORE_RECEIPT`,
+t1.`SALE_TEAM_ID`,
+t11.`SALE_WARN`,
+t1.`SHARE`,
+t11.`SIGNUP_TYPE`,
+t11.`STATE_ID`,
+t11.`STREET`,
+t11.`STREET2`,
+t11.`SUPPLIER_RANK`,
+t1.`TARGET_SALES_DONE`,
+t1.`TARGET_SALES_INVOICED`,
+t1.`TARGET_SALES_WON`,
+t1.`TOUR_ENABLED`,
+t11.`TRUST`,
+t11.`TYPE`,
+t11.`TZ`,
+t11.`USER_ID`,
+t11.`VAT`,
+t11.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t11.`ZIP`
+FROM `res_users` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=res_users-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t11.`ADDITIONAL_INFO`,
+t11.`AUTOPOST_BILLS`,
+t11.`BARCODE`,
+t11.`BUYER_ID`,
+t11.`CALENDAR_LAST_NOTIF_ACK`,
+t11.`CITY`,
+t11.`COLOR`,
+t11.`COMMENT`,
+t11.`COMMERCIAL_COMPANY_NAME`,
+t11.`COMMERCIAL_PARTNER_ID`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t11.`COMPANY_REGISTRY`,
+t11.`COMPLETE_NAME`,
+t11.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t11.`CREDIT_LIMIT`,
+t11.`CUSTOMER_RANK`,
+t11.`DEBIT_LIMIT`,
+t1.`DISPLAY_NAME`,
+t11.`EMAIL`,
+t11.`EMAIL_NORMALIZED`,
+t11.`EMPLOYEE`,
+t11.`FUNCTION`,
+(SELECT count(1) FROM `res_groups_users_rel` t where  t.USER_ID=t1.`ID`) AS `GROUPS_COUNT`,
+t1.`ID`,
+t11.`IGNORE_ABNORMAL_INVOICE_AMOUNT`,
+t11.`IGNORE_ABNORMAL_INVOICE_DATE`,
+t11.`INDUSTRY_ID`,
+t11.`INVOICE_EDI_FORMAT_STORE`,
+t11.`INVOICE_SENDING_METHOD`,
+t11.`INVOICE_WARN`,
+t11.`INVOICE_WARN_MSG`,
+t11.`IS_COMPANY`,
+t1.`KARMA`,
+t1.`LOGIN`,
+t11.`MESSAGE_BOUNCE`,
+t11.`MOBILE`,
+t11.`NAME`,
+t1.`NOTIFICATION_TYPE`,
+t1.`ODOOBOT_FAILED`,
+t1.`ODOOBOT_STATE`,
+t11.`PARENT_ID`,
+t11.`PARTNER_GID`,
+t1.`PARTNER_ID`,
+t11.`PARTNER_LATITUDE`,
+t11.`PARTNER_LONGITUDE`,
+t11.`NAME` AS `PARTNER_NAME`,
+t11.`PARTNER_SHARE`,
+t1.`PASSWORD`,
+t11.`PEPPOL_EAS`,
+t11.`PEPPOL_ENDPOINT`,
+t11.`PHONE`,
+t11.`PHONE_SANITIZED`,
+t11.`PICKING_WARN`,
+t11.`PICKING_WARN_MSG`,
+t11.`PLAN_TO_CHANGE_BIKE`,
+t11.`PLAN_TO_CHANGE_CAR`,
+t11.`PROPERTY_PURCHASE_CURRENCY_ID`,
+t11.`PURCHASE_WARN`,
+t11.`PURCHASE_WARN_MSG`,
+t11.`RECEIPT_REMINDER_EMAIL`,
+t11.`REF`,
+t11.`REMINDER_DATE_BEFORE_RECEIPT`,
+t1.`SALE_TEAM_ID`,
+t11.`SALE_WARN`,
+t11.`SALE_WARN_MSG`,
+t1.`SHARE`,
+t1.`SIGNATURE`,
+t11.`SIGNUP_TYPE`,
+t11.`STATE_ID`,
+t11.`STREET`,
+t11.`STREET2`,
+t11.`SUPPLIER_RANK`,
+t1.`TARGET_SALES_DONE`,
+t1.`TARGET_SALES_INVOICED`,
+t1.`TARGET_SALES_WON`,
+t1.`TOUR_ENABLED`,
+t11.`TRUST`,
+t11.`TYPE`,
+t11.`TZ`,
+t11.`USER_ID`,
+t11.`VAT`,
+t11.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t11.`ZIP`
+FROM `res_users` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+
+```
+
+#### 简单查询(simple) :id=res_users-simple
+```sql
+SELECT
+t1.`ACTIVE`,
+t11.`ADDITIONAL_INFO`,
+t11.`AUTOPOST_BILLS`,
+t11.`BARCODE`,
+t11.`BUYER_ID`,
+t11.`CALENDAR_LAST_NOTIF_ACK`,
+t11.`CITY`,
+t11.`COLOR`,
+t11.`COMMERCIAL_COMPANY_NAME`,
+t11.`COMMERCIAL_PARTNER_ID`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t11.`COMPANY_REGISTRY`,
+t11.`COMPLETE_NAME`,
+t11.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t11.`CREDIT_LIMIT`,
+t11.`CUSTOMER_RANK`,
+t11.`DEBIT_LIMIT`,
+t1.`DISPLAY_NAME`,
+t11.`EMAIL`,
+t11.`EMAIL_NORMALIZED`,
+t11.`EMPLOYEE`,
+t11.`FUNCTION`,
+(SELECT count(1) FROM `res_groups_users_rel` t where  t.USER_ID=t1.`ID`) AS `GROUPS_COUNT`,
+t1.`ID`,
+t11.`IGNORE_ABNORMAL_INVOICE_AMOUNT`,
+t11.`IGNORE_ABNORMAL_INVOICE_DATE`,
+t11.`INDUSTRY_ID`,
+t11.`INVOICE_EDI_FORMAT_STORE`,
+t11.`INVOICE_SENDING_METHOD`,
+t11.`INVOICE_WARN`,
+t11.`IS_COMPANY`,
+t1.`KARMA`,
+t1.`LOGIN`,
+t11.`MESSAGE_BOUNCE`,
+t11.`MOBILE`,
+t11.`NAME`,
+t1.`NOTIFICATION_TYPE`,
+t1.`ODOOBOT_FAILED`,
+t1.`ODOOBOT_STATE`,
+t11.`PARENT_ID`,
+t11.`PARTNER_GID`,
+t1.`PARTNER_ID`,
+t11.`PARTNER_LATITUDE`,
+t11.`PARTNER_LONGITUDE`,
+t11.`NAME` AS `PARTNER_NAME`,
+t11.`PARTNER_SHARE`,
+t1.`PASSWORD`,
+t11.`PEPPOL_EAS`,
+t11.`PEPPOL_ENDPOINT`,
+t11.`PHONE`,
+t11.`PHONE_SANITIZED`,
+t11.`PICKING_WARN`,
+t11.`PLAN_TO_CHANGE_BIKE`,
+t11.`PLAN_TO_CHANGE_CAR`,
+t11.`PROPERTY_PURCHASE_CURRENCY_ID`,
+t11.`PURCHASE_WARN`,
+t11.`RECEIPT_REMINDER_EMAIL`,
+t11.`REF`,
+t11.`REMINDER_DATE_BEFORE_RECEIPT`,
+t1.`SALE_TEAM_ID`,
+t11.`SALE_WARN`,
+t1.`SHARE`,
+t11.`SIGNUP_TYPE`,
+t11.`STATE_ID`,
+t11.`STREET`,
+t11.`STREET2`,
+t11.`SUPPLIER_RANK`,
+t1.`TARGET_SALES_DONE`,
+t1.`TARGET_SALES_INVOICED`,
+t1.`TARGET_SALES_WON`,
+t1.`TOUR_ENABLED`,
+t11.`TRUST`,
+t11.`TYPE`,
+t11.`TZ`,
+t11.`USER_ID`,
+t11.`VAT`,
+t11.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t11.`ZIP`
+FROM `res_users` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+
+```
+
+#### 未被使用的用户(unuse) :id=res_users-unuse
+```sql
+SELECT
+t1.`ACTIVE`,
+t11.`ADDITIONAL_INFO`,
+t11.`AUTOPOST_BILLS`,
+t11.`BARCODE`,
+t11.`BUYER_ID`,
+t11.`CALENDAR_LAST_NOTIF_ACK`,
+t11.`CITY`,
+t11.`COLOR`,
+t11.`COMMERCIAL_COMPANY_NAME`,
+t11.`COMMERCIAL_PARTNER_ID`,
+t1.`COMPANY_ID`,
+t21.`NAME` AS `COMPANY_NAME`,
+t11.`COMPANY_REGISTRY`,
+t11.`COMPLETE_NAME`,
+t11.`COUNTRY_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t11.`CREDIT_LIMIT`,
+t11.`CUSTOMER_RANK`,
+t11.`DEBIT_LIMIT`,
+t1.`DISPLAY_NAME`,
+t11.`EMAIL`,
+t11.`EMAIL_NORMALIZED`,
+t11.`EMPLOYEE`,
+t11.`FUNCTION`,
+(SELECT count(1) FROM `res_groups_users_rel` t where  t.USER_ID=t1.`ID`) AS `GROUPS_COUNT`,
+t1.`ID`,
+t11.`IGNORE_ABNORMAL_INVOICE_AMOUNT`,
+t11.`IGNORE_ABNORMAL_INVOICE_DATE`,
+t11.`INDUSTRY_ID`,
+t11.`INVOICE_EDI_FORMAT_STORE`,
+t11.`INVOICE_SENDING_METHOD`,
+t11.`INVOICE_WARN`,
+t11.`IS_COMPANY`,
+t1.`KARMA`,
+t1.`LOGIN`,
+t11.`MESSAGE_BOUNCE`,
+t11.`MOBILE`,
+t11.`NAME`,
+t1.`NOTIFICATION_TYPE`,
+t1.`ODOOBOT_FAILED`,
+t1.`ODOOBOT_STATE`,
+t11.`PARENT_ID`,
+t11.`PARTNER_GID`,
+t1.`PARTNER_ID`,
+t11.`PARTNER_LATITUDE`,
+t11.`PARTNER_LONGITUDE`,
+t11.`NAME` AS `PARTNER_NAME`,
+t11.`PARTNER_SHARE`,
+t1.`PASSWORD`,
+t11.`PEPPOL_EAS`,
+t11.`PEPPOL_ENDPOINT`,
+t11.`PHONE`,
+t11.`PHONE_SANITIZED`,
+t11.`PICKING_WARN`,
+t11.`PLAN_TO_CHANGE_BIKE`,
+t11.`PLAN_TO_CHANGE_CAR`,
+t11.`PROPERTY_PURCHASE_CURRENCY_ID`,
+t11.`PURCHASE_WARN`,
+t11.`RECEIPT_REMINDER_EMAIL`,
+t11.`REF`,
+t11.`REMINDER_DATE_BEFORE_RECEIPT`,
+t1.`SALE_TEAM_ID`,
+t11.`SALE_WARN`,
+t1.`SHARE`,
+t11.`SIGNUP_TYPE`,
+t11.`STATE_ID`,
+t11.`STREET`,
+t11.`STREET2`,
+t11.`SUPPLIER_RANK`,
+t1.`TARGET_SALES_DONE`,
+t1.`TARGET_SALES_INVOICED`,
+t1.`TARGET_SALES_WON`,
+t1.`TOUR_ENABLED`,
+t11.`TRUST`,
+t11.`TYPE`,
+t11.`TZ`,
+t11.`USER_ID`,
+t11.`VAT`,
+t11.`WEBSITE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`,
+t11.`ZIP`
+FROM `res_users` t1 
+LEFT JOIN `res_partner` t11 ON t1.`PARTNER_ID` = t11.`ID` 
+LEFT JOIN `res_company` t21 ON t1.`COMPANY_ID` = t21.`ID` 
+
+WHERE NOT(EXISTS(SELECT * FROM `hr_employee` t31 
+ WHERE 
+ t1.`ID` = t31.`USER_ID` ))
+```
+
+
+## [资源工作时间(RESOURCE_CALENDAR)](module/resource/resource_calendar.md) :id=resource_calendar
+
+#### DEFAULT :id=resource_calendar-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FLEXIBLE_HOURS`,
+t1.`FULL_TIME_REQUIRED_HOURS`,
+t1.`HOURS_PER_DAY`,
+t1.`ID`,
+t1.`NAME`,
+t1.`TWO_WEEKS_CALENDAR`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_calendar` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=resource_calendar-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`COMPANY_ID`,
+t11.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`FLEXIBLE_HOURS`,
+t1.`FULL_TIME_REQUIRED_HOURS`,
+t1.`HOURS_PER_DAY`,
+t1.`ID`,
+t1.`NAME`,
+t1.`TWO_WEEKS_CALENDAR`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_calendar` t1 
+LEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` 
+
+```
+
+
+## [工作细节(RESOURCE_CALENDAR_ATTENDANCE)](module/resource/resource_calendar_attendance.md) :id=resource_calendar_attendance
+
+#### DEFAULT :id=resource_calendar_attendance-Default
+```sql
+SELECT
+t1.`CALENDAR_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`DAYOFWEEK`,
+t1.`DAY_PERIOD`,
+t1.`DISPLAY_TYPE`,
+t1.`DURATION_DAYS`,
+t1.`HOUR_FROM`,
+t1.`HOUR_TO`,
+t1.`ID`,
+t1.`NAME`,
+t1.`RESOURCE_ID`,
+t1.`SEQUENCE`,
+t1.`WEEK_TYPE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_calendar_attendance` t1 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=resource_calendar_attendance-View
+```sql
+SELECT
+t1.`CALENDAR_ID`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`DAYOFWEEK`,
+t1.`DAY_PERIOD`,
+t1.`DISPLAY_TYPE`,
+t1.`DURATION_DAYS`,
+t1.`HOUR_FROM`,
+t1.`HOUR_TO`,
+t1.`ID`,
+t1.`NAME`,
+t1.`RESOURCE_ID`,
+t1.`SEQUENCE`,
+t1.`WEEK_TYPE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_calendar_attendance` t1 
+
+```
+
+
+## [休假详细信息(RESOURCE_CALENDAR_LEAVES)](module/resource/resource_calendar_leaves.md) :id=resource_calendar_leaves
+
+#### DEFAULT :id=resource_calendar_leaves-Default
+```sql
+SELECT
+t1.`CALENDAR_ID`,
+t11.`NAME` AS `CALENDAR_NAME`,
+t1.`COMPANY_ID`,
+t31.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`HOLIDAY_ID`,
+t41.`NAME` AS `HOLNAMEAY_NAME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`RESOURCE_ID`,
+t21.`NAME` AS `RESOURCE_NAME`,
+t1.`TIME_TYPE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_calendar_leaves` t1 
+LEFT JOIN `resource_calendar` t11 ON t1.`CALENDAR_ID` = t11.`ID` 
+LEFT JOIN `resource_resource` t21 ON t1.`RESOURCE_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`COMPANY_ID` = t31.`ID` 
+LEFT JOIN `hr_leave` t41 ON t1.`HOLIDAY_ID` = t41.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=resource_calendar_leaves-View
+```sql
+SELECT
+t1.`CALENDAR_ID`,
+t11.`NAME` AS `CALENDAR_NAME`,
+t1.`COMPANY_ID`,
+t31.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`HOLIDAY_ID`,
+t41.`NAME` AS `HOLNAMEAY_NAME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`RESOURCE_ID`,
+t21.`NAME` AS `RESOURCE_NAME`,
+t1.`TIME_TYPE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_calendar_leaves` t1 
+LEFT JOIN `resource_calendar` t11 ON t1.`CALENDAR_ID` = t11.`ID` 
+LEFT JOIN `resource_resource` t21 ON t1.`RESOURCE_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`COMPANY_ID` = t31.`ID` 
+LEFT JOIN `hr_leave` t41 ON t1.`HOLIDAY_ID` = t41.`ID` 
+
+```
+
+#### 公共节假日(PUBLIC) :id=resource_calendar_leaves-public
+```sql
+SELECT
+t1.`CALENDAR_ID`,
+t11.`NAME` AS `CALENDAR_NAME`,
+t1.`COMPANY_ID`,
+t31.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATE_FROM`,
+t1.`DATE_TO`,
+t1.`HOLIDAY_ID`,
+t41.`NAME` AS `HOLNAMEAY_NAME`,
+t1.`ID`,
+t1.`NAME`,
+t1.`RESOURCE_ID`,
+t21.`NAME` AS `RESOURCE_NAME`,
+t1.`TIME_TYPE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_calendar_leaves` t1 
+LEFT JOIN `resource_calendar` t11 ON t1.`CALENDAR_ID` = t11.`ID` 
+LEFT JOIN `resource_resource` t21 ON t1.`RESOURCE_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`COMPANY_ID` = t31.`ID` 
+LEFT JOIN `hr_leave` t41 ON t1.`HOLIDAY_ID` = t41.`ID` 
+
+WHERE ( t1.`CALENDAR_ID` IS NULL )
+```
+
+
+## [资源(RESOURCE_RESOURCE)](module/resource/resource_resource.md) :id=resource_resource
+
+#### DEFAULT :id=resource_resource-Default
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CALENDAR_ID`,
+t41.`NAME` AS `CALENDAR_NAME`,
+t1.`COMPANY_ID`,
+t31.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t21.`EMAIL`,
+t1.`ID`,
+t1.`NAME`,
+t21.`PHONE`,
+t1.`RESOURCE_TYPE`,
+t11.`SHARE`,
+t1.`TIME_EFFICIENCY`,
+t1.`USER_ID`,
+t21.`NAME` AS `USER_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_resource` t1 
+LEFT JOIN `res_users` t11 ON t1.`USER_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t11.`PARTNER_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`COMPANY_ID` = t31.`ID` 
+LEFT JOIN `resource_calendar` t41 ON t1.`CALENDAR_ID` = t41.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=resource_resource-View
+```sql
+SELECT
+t1.`ACTIVE`,
+t1.`CALENDAR_ID`,
+t41.`NAME` AS `CALENDAR_NAME`,
+t1.`COMPANY_ID`,
+t31.`NAME` AS `COMPANY_NAME`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t21.`EMAIL`,
+t1.`ID`,
+t1.`NAME`,
+t21.`PHONE`,
+t1.`RESOURCE_TYPE`,
+t11.`SHARE`,
+t1.`TIME_EFFICIENCY`,
+t1.`USER_ID`,
+t21.`NAME` AS `USER_NAME`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `resource_resource` t1 
+LEFT JOIN `res_users` t11 ON t1.`USER_ID` = t11.`ID` 
+LEFT JOIN `res_partner` t21 ON t11.`PARTNER_ID` = t21.`ID` 
+LEFT JOIN `res_company` t31 ON t1.`COMPANY_ID` = t31.`ID` 
+LEFT JOIN `resource_calendar` t41 ON t1.`CALENDAR_ID` = t41.`ID` 
+
+```
+
+
+## [权限组关联规则(RULE_GROUP_REL)](module/base/rule_group_rel.md) :id=rule_group_rel
+
+#### DEFAULT :id=rule_group_rel-Default
+```sql
+SELECT
+t11.`DOMAIN_FORCE`,
+t1.`GID`,
+t21.`NAME` AS `GNAME`,
+t1.`ID`,
+t11.`MODEL_ID`,
+t1.`NAME`,
+t11.`PERM_CREATE`,
+t11.`PERM_READ`,
+t11.`PERM_UNLINK`,
+t11.`PERM_WRITE`,
+t1.`RULE_ID`,
+t11.`NAME` AS `RULE_NAME`
+FROM `rule_group_rel` t1 
+LEFT JOIN `ir_rule` t11 ON t1.`RULE_ID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`GID` = t21.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=rule_group_rel-View
+```sql
+SELECT
+t11.`DOMAIN_FORCE`,
+t1.`GID`,
+t21.`NAME` AS `GNAME`,
+t1.`ID`,
+t11.`MODEL_ID`,
+t1.`NAME`,
+t11.`PERM_CREATE`,
+t11.`PERM_READ`,
+t11.`PERM_UNLINK`,
+t11.`PERM_WRITE`,
+t1.`RULE_ID`,
+t11.`NAME` AS `RULE_NAME`
+FROM `rule_group_rel` t1 
+LEFT JOIN `ir_rule` t11 ON t1.`RULE_ID` = t11.`ID` 
+LEFT JOIN `res_groups` t21 ON t1.`GID` = t21.`ID` 
+
+```
+
+
+## [权限组关联统一资源(UNIRES_GROUP_REL)](module/base_extend/unires_group_rel.md) :id=unires_group_rel
+
+#### DEFAULT :id=unires_group_rel-Default
+```sql
+SELECT
+t1.`GID`,
+t1.`ID`,
+t1.`NAME`,
+t11.`RES_CODE`,
+t1.`UNIRES_ID`,
+t11.`NAME` AS `UNIRES_NAME`
+FROM `unires_group_rel` t1 
+LEFT JOIN `ir_unires` t11 ON t1.`UNIRES_ID` = t11.`ID` 
+
+```
+
+#### 默认（全部数据）(VIEW) :id=unires_group_rel-View
+```sql
+SELECT
+t1.`GID`,
+t1.`ID`,
+t1.`NAME`,
+t11.`RES_CODE`,
+t1.`UNIRES_ID`,
+t11.`NAME` AS `UNIRES_NAME`
+FROM `unires_group_rel` t1 
+LEFT JOIN `ir_unires` t11 ON t1.`UNIRES_ID` = t11.`ID` 
+
+```
+

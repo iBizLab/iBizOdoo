@@ -1,0 +1,387 @@
+{
+  "getAllPSPanelFields" : [ {
+    "id" : "activity_type_name",
+    "viewFieldName" : "ACTIVITY_TYPE_NAME"
+  }, {
+    "id" : "user_id",
+    "viewFieldName" : "user_id"
+  }, {
+    "id" : "state",
+    "hidden" : true,
+    "viewFieldName" : "state"
+  }, {
+    "id" : "deadline_day",
+    "hidden" : true,
+    "viewFieldName" : "deadline_day"
+  } ],
+  "codeName" : "activity_kanban_panel",
+  "controlType" : "PANEL",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity/PSPANELS/activity_kanban_panel.json",
+  "layoutMode" : "FLEX",
+  "logicName" : "activity_kanban卡片视图",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+  },
+  "getPSLayout" : {
+    "layout" : "FLEX"
+  },
+  "getRootPSPanelItems" : [ {
+    "caption" : "容器",
+    "itemStyle" : "DEFAULT",
+    "itemType" : "CONTAINER",
+    "name" : "container",
+    "getPSLayout" : {
+      "dir" : "column",
+      "layout" : "FLEX"
+    },
+    "getPSLayoutPos" : {
+      "grow" : -1,
+      "layout" : "FLEX"
+    },
+    "getPSPanelItems" : [ {
+      "caption" : "容器",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "CONTAINER",
+      "name" : "container10",
+      "getPSLayout" : {
+        "dir" : "column",
+        "layout" : "FLEX"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX",
+        "spacingLeft" : "OUTERSMALL"
+      },
+      "getPSPanelItems" : [ {
+        "caption" : "容器",
+        "contentWidth" : 100.0,
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "container3",
+        "getPSLayout" : {
+          "align" : "space-between",
+          "dir" : "row",
+          "layout" : "FLEX",
+          "vAlign" : "center"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "layout" : "FLEX",
+          "width" : 100,
+          "widthMode" : "PERCENTAGE"
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "文本(动态)",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "FIELD",
+          "name" : "activity_type_name",
+          "getPSEditor" : {
+            "editorType" : "SPAN",
+            "name" : "activity_type_name",
+            "predefinedType" : "FIELD_TEXT_DYNAMIC",
+            "renderMode" : "TEXT_DYNAMIC",
+            "enableLinkView" : false
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX",
+            "spacingLeft" : "OUTERSMALL"
+          },
+          "viewFieldName" : "ACTIVITY_TYPE_NAME"
+        }, {
+          "caption" : "按钮组",
+          "itemStyle" : "STYLE2",
+          "itemType" : "BUTTONLIST",
+          "name" : "buttonlist",
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX"
+          },
+          "getPSUIActionGroup" : {
+            "codeName" : "activity_card",
+            "name" : "卡片界面行为组",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSUIActionGroupDetails" : [ {
+              "detailType" : "DEUIACTION",
+              "name" : "u5fc4fcd",
+              "getPSSysCss" : {
+                "cssName" : "success-rawitem"
+              },
+              "getPSSysImage" : {
+                "glyph" : "xf00c@FontAwesome",
+                "cssClass" : "fa fa-check"
+              },
+              "getPSUIAction" : {
+                "actionTarget" : "SINGLEKEY",
+                "caption" : "完成活动",
+                "codeName" : "open_action_done_view",
+                "getFrontPSAppView" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_feedback_view.json",
+                  "viewType" : "DEEDITVIEW"
+                },
+                "frontProcessType" : "WIZARD",
+                "fullCodeName" : "mail_activity_open_action_done_view",
+                "name" : "打开完成活动视图",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "action_done"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+                },
+                "getPSNavigateParams" : [ {
+                  "key" : "mail_activity_mixin",
+                  "name" : "mail_activity_mixin",
+                  "value" : "mail_activity_mixin",
+                  "rawValue" : false
+                }, {
+                  "key" : "srfmodelname",
+                  "name" : "srfmodelname",
+                  "value" : "srfmodelname",
+                  "rawValue" : false
+                } ],
+                "getPSSysImage" : {
+                  "glyph" : "xf00c@FontAwesome",
+                  "cssClass" : "fa fa-check"
+                },
+                "tooltip" : "标记为完成",
+                "uIActionMode" : "FRONT",
+                "uIActionTag" : "open_action_done_view",
+                "uIActionType" : "DEUIACTION",
+                "globalUIAction" : true,
+                "id" : "open_action_done_view@mail_activity"
+              },
+              "tooltip" : "标记为完成",
+              "addSeparator" : false,
+              "showCaption" : false,
+              "showIcon" : true
+            }, {
+              "detailType" : "DEUIACTION",
+              "name" : "u3526ed0",
+              "getPSSysImage" : {
+                "glyph" : "xf040@FontAwesome",
+                "cssClass" : "fa fa-pencil"
+              },
+              "getPSUIAction" : {
+                "actionTarget" : "SINGLEKEY",
+                "caption" : "编辑",
+                "codeName" : "edit_activity",
+                "getFrontPSAppView" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_quick_cfg_view.json",
+                  "viewType" : "DEEDITVIEW"
+                },
+                "frontProcessType" : "WIZARD",
+                "fullCodeName" : "mail_activity_edit_activity",
+                "name" : "编辑活动",
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+                },
+                "getPSNavigateParams" : [ {
+                  "key" : "mail_activity_mixin",
+                  "name" : "mail_activity_mixin",
+                  "value" : "mail_activity_mixin",
+                  "rawValue" : false
+                }, {
+                  "key" : "srfmodelname",
+                  "name" : "srfmodelname",
+                  "value" : "srfmodelname",
+                  "rawValue" : false
+                } ],
+                "getPSSysImage" : {
+                  "glyph" : "xf040@FontAwesome",
+                  "cssClass" : "fa fa-pencil"
+                },
+                "tooltip" : "编辑",
+                "uIActionMode" : "FRONT",
+                "uIActionTag" : "edit_activity",
+                "uIActionType" : "DEUIACTION",
+                "id" : "edit_activity@mail_activity"
+              },
+              "tooltip" : "编辑",
+              "addSeparator" : false,
+              "showCaption" : false,
+              "showIcon" : true
+            }, {
+              "detailType" : "DEUIACTION",
+              "name" : "u2e5883e",
+              "getPSSysImage" : {
+                "glyph" : "xf00d@FontAwesome",
+                "cssClass" : "fa fa-remove"
+              },
+              "getPSUIAction" : {
+                "actionTarget" : "SINGLEKEY",
+                "caption" : "取消",
+                "codeName" : "del_activity",
+                "confirmMsg" : "确认取消活动？",
+                "fullCodeName" : "mail_activity_del_activity",
+                "name" : "取消活动",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "remove"
+                },
+                "getPSAppDEUILogic" : {
+                  "modelref" : true,
+                  "id" : "refresh_activity"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+                },
+                "getPSSysImage" : {
+                  "glyph" : "xf00d@FontAwesome",
+                  "cssClass" : "fa fa-remove"
+                },
+                "successMsg" : "取消成功",
+                "timeout" : 60000,
+                "tooltip" : "取消",
+                "uIActionMode" : "BACKEND",
+                "uIActionTag" : "del_activity",
+                "uIActionType" : "DEUIACTION",
+                "uILogicAttachMode" : "AFTER",
+                "enableConfirm" : true,
+                "id" : "del_activity@mail_activity"
+              },
+              "tooltip" : "取消",
+              "addSeparator" : false,
+              "showCaption" : false,
+              "showIcon" : true
+            } ],
+            "uniqueTag" : "mail_activity__activity_card"
+          }
+        } ],
+        "width" : 100.0
+      }, {
+        "caption" : "容器",
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "container1",
+        "getPSLayout" : {
+          "align" : "flex-start",
+          "dir" : "row",
+          "layout" : "FLEX",
+          "vAlign" : "center"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "layout" : "FLEX",
+          "shrink" : 0
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "容器",
+          "contentWidth" : 100.0,
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "container2",
+          "getPSLayout" : {
+            "align" : "flex-start",
+            "dir" : "row",
+            "layout" : "FLEX",
+            "vAlign" : "center"
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX",
+            "width" : 100,
+            "widthMode" : "PERCENTAGE"
+          },
+          "getPSPanelItems" : [ {
+            "caption" : "文本(动态)",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "FIELD",
+            "name" : "user_id",
+            "getPSEditor" : {
+              "editorParams" : {
+                "SHOWNAMETEXT" : "false"
+              },
+              "editorStyle" : "PERSONNEL_INFO",
+              "editorType" : "SPAN",
+              "name" : "user_id",
+              "getPSAppCodeList" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__res_users.json"
+              },
+              "getPSSysPFPlugin" : {
+                "pluginType" : "EDITOR_CUSTOMSTYLE",
+                "pluginCode" : "PERSONNEL_INFO",
+                "runtimeObject" : true
+              },
+              "predefinedType" : "FIELD_TEXT_DYNAMIC",
+              "renderMode" : "TEXT_DYNAMIC",
+              "enableLinkView" : false
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "viewFieldName" : "user_id",
+            "convertToCodeItemText" : true
+          }, {
+            "caption" : "文本",
+            "contentType" : "RAW",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "RAWITEM",
+            "name" : "deadline_info",
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX",
+              "spacingLeft" : "OUTERSMALL"
+            },
+            "getPSRawItem" : {
+              "caption" : "{{#if (eq deadline_day 0)}}\n  今天\n{{else if (eq deadline_day -1)}}\n  昨天\n{{else if (lt deadline_day -1)}}\n  逾期: {{abs deadline_day}}天\n{{else if (eq deadline_day 1)}}\n  明天\n{{else}}\n  到期时间: {{deadline_day}}天\n{{/if}}",
+              "contentType" : "RAW",
+              "dynaClass" : "{\"danger-rawitem\": data.state===\"overdue\", \"warning-rawitem\": data.state===\"today\",\"success-rawitem\": data.state===\"planned\"}",
+              "name" : "deadline_info",
+              "predefinedType" : "STATIC_TEXT",
+              "renderMode" : "TEXT",
+              "templateMode" : true
+            },
+            "rawContent" : "{{#if (eq deadline_day 0)}}\n  今天\n{{else if (eq deadline_day -1)}}\n  昨天\n{{else if (lt deadline_day -1)}}\n  逾期: {{abs deadline_day}}天\n{{else if (eq deadline_day 1)}}\n  明天\n{{else}}\n  到期时间: {{deadline_day}}天\n{{/if}}",
+            "showCaption" : true
+          } ],
+          "width" : 100.0
+        } ]
+      } ]
+    }, {
+      "caption" : "文本(动态)",
+      "itemType" : "FIELD",
+      "name" : "state",
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "state",
+        "predefinedType" : "FIELD_TEXT_DYNAMIC"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX"
+      },
+      "viewFieldName" : "state",
+      "hidden" : true
+    }, {
+      "caption" : "文本(动态)",
+      "itemType" : "FIELD",
+      "name" : "deadline_day",
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "deadline_day",
+        "predefinedType" : "FIELD_TEXT_DYNAMIC"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX"
+      },
+      "viewFieldName" : "deadline_day",
+      "hidden" : true
+    } ]
+  } ],
+  "layoutPanel" : true,
+  "modelid" : "b6fefd16139ca6666c102cd0c2c669cb",
+  "modeltype" : "PSSYSVIEWPANEL"
+}

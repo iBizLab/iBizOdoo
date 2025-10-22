@@ -1,0 +1,21 @@
+{
+  "codeName" : "LIQUIBASE_CHANGELOGS__DEFAULT",
+  "dynaModelFilePath" : "PSSYSCONTENTCATS/LIQUIBASE_CHANGELOGS__DEFAULT.json",
+  "name" : "默认源",
+  "getPSSysContents" : [ {
+    "codeName" : "UsrContent202509011321",
+    "contentType" : "RAW",
+    "name" : "initMsgTempl",
+    "_file" : true
+  }, {
+    "codeName" : "UsrContent202509071239",
+    "contentType" : "RAW",
+    "name" : "initDefaultRes",
+    "_file" : true
+  }, {
+    "codeName" : "UsrContent202509011326",
+    "contentType" : "RAW",
+    "name" : "initResConfig",
+    "_file" : true
+  } ]
+}

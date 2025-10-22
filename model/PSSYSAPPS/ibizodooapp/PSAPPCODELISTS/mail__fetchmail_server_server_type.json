@@ -1,0 +1,27 @@
+{
+  "codeListTag" : "mail__fetchmail_server_server_type",
+  "codeListType" : "STATIC",
+  "codeName" : "mail__fetchmail_server_server_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__fetchmail_server_server_type.json",
+  "emptyText" : "未定义",
+  "name" : "服务器类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "imap",
+    "text" : "IMAP 服务器",
+    "value" : "imap"
+  }, {
+    "codeName" : "pop",
+    "text" : "POP 服务器",
+    "value" : "pop"
+  }, {
+    "codeName" : "local",
+    "text" : "本地服务器",
+    "value" : "local"
+  }, {
+    "codeName" : "gmail",
+    "text" : "Gmail OAuth身份验证",
+    "value" : "gmail"
+  } ],
+  "enableCache" : true
+}

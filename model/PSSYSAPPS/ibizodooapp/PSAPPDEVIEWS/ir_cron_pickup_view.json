@@ -1,0 +1,659 @@
+{
+  "accUserMode" : 2,
+  "getCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.IR_CRON"
+  },
+  "caption" : "计划的操作",
+  "codeName" : "ir_cron_pickup_view",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_pickup_view.json",
+  "funcViewMode" : "PICKUPVIEW",
+  "memo" : "系统自动添加",
+  "name" : "ir_cronPickupView",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+  },
+  "getPSAppModule" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPMODULES/base.json"
+  },
+  "getPSAppViewEngines" : [ {
+    "engineCat" : "VIEW",
+    "engineType" : "PickupView",
+    "name" : "engine"
+  } ],
+  "getPSControls" : [ {
+    "codeName" : "pickup_view_pickupviewpanel",
+    "controlType" : "PICKUPVIEWPANEL",
+    "getEmbeddedPSAppDEView" : {
+      "accUserMode" : 2,
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "DE.LNAME.IR_CRON"
+      },
+      "caption" : "计划的操作",
+      "codeName" : "ir_cron_pickup_grid_view",
+      "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_pickup_grid_view.json",
+      "gridRowActiveMode" : 1,
+      "memo" : "系统自动添加",
+      "name" : "ir_cronPickupGridView",
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+      },
+      "getPSAppModule" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPMODULES/base.json"
+      },
+      "getPSAppViewEngines" : [ {
+        "engineCat" : "VIEW",
+        "engineType" : "PickupGridView",
+        "name" : "engine"
+      } ],
+      "getPSControls" : [ {
+        "aggMode" : "NONE",
+        "codeName" : "main",
+        "columnEnableFilter" : 2,
+        "columnEnableLink" : 2,
+        "controlType" : "GRID",
+        "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron/PSGRIDS/main.json",
+        "getFetchPSControlAction" : {
+          "modelref" : true,
+          "id" : "fetch",
+          "actionType" : "DEDATASET",
+          "name" : "fetch",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "fetch_default"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+          }
+        },
+        "groupMode" : "NONE",
+        "logicName" : "主表格",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+        },
+        "getPSControlHandler" : {
+          "getPSHandlerActions" : [ {
+            "actionName" : "Get",
+            "actionType" : "DEACTION",
+            "dataAccessAction" : "READ",
+            "name" : "load",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "get"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          }, {
+            "actionName" : "Create",
+            "actionType" : "DEACTION",
+            "dataAccessAction" : "CREATE",
+            "name" : "create",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "create"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          }, {
+            "actionName" : "Update",
+            "actionType" : "DEACTION",
+            "dataAccessAction" : "UPDATE",
+            "name" : "update",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "update"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          }, {
+            "actionName" : "Remove",
+            "actionType" : "DEACTION",
+            "dataAccessAction" : "DELETE",
+            "name" : "remove",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "remove"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          }, {
+            "actionName" : "GetDraft",
+            "actionType" : "DEACTION",
+            "dataAccessAction" : "CREATE",
+            "name" : "loaddraft",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "get_draft"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          }, {
+            "actionType" : "DEDATASET",
+            "name" : "fetch",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "fetch_default"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          } ],
+          "userDRAction" : "READ",
+          "enableDEFieldPrivilege" : false,
+          "id" : "数据表格处理器"
+        },
+        "getPSControlParam" : {
+          "autoLoad" : true,
+          "showBusyIndicator" : true,
+          "id" : "GRID"
+        },
+        "getPSDEGridColumns" : [ {
+          "align" : "RIGHT",
+          "cLConvertMode" : "NONE",
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.IR_CRON.PRIORITY"
+          },
+          "caption" : "优先级",
+          "codeName" : "priority",
+          "columnType" : "DEFGRIDCOLUMN",
+          "dataItemName" : "priority",
+          "excelCaption" : "优先级",
+          "name" : "priority",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "PRIORITY",
+            "codeName" : "priority"
+          },
+          "width" : 120,
+          "widthUnit" : "PX",
+          "enableSort" : true
+        }, {
+          "align" : "LEFT",
+          "cLConvertMode" : "NONE",
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.IR_CRON.CRON_NAME"
+          },
+          "caption" : "名称",
+          "codeName" : "cron_name",
+          "columnType" : "DEFGRIDCOLUMN",
+          "dataItemName" : "cron_name",
+          "excelCaption" : "名称",
+          "name" : "cron_name",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "CRON_NAME",
+            "codeName" : "cron_name"
+          },
+          "width" : 1,
+          "widthUnit" : "STAR",
+          "enableSort" : true
+        }, {
+          "align" : "LEFT",
+          "cLConvertMode" : "FRONT",
+          "caption" : "模型",
+          "codeName" : "model_id",
+          "columnType" : "DEFGRIDCOLUMN",
+          "dataItemName" : "model_id",
+          "excelCaption" : "模型",
+          "name" : "model_id",
+          "noPrivDisplayMode" : 1,
+          "getPSAppCodeList" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_model.json"
+          },
+          "getPSAppDEField" : {
+            "name" : "MODEL_ID",
+            "codeName" : "model_id"
+          },
+          "width" : 200,
+          "widthUnit" : "PX",
+          "enableSort" : true
+        }, {
+          "align" : "LEFT",
+          "cLConvertMode" : "NONE",
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.IR_CRON.NEXTCALL"
+          },
+          "caption" : "下一次执行日期",
+          "codeName" : "nextcall",
+          "columnType" : "DEFGRIDCOLUMN",
+          "dataItemName" : "nextcall",
+          "excelCaption" : "下一次执行日期",
+          "name" : "nextcall",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "NEXTCALL",
+            "codeName" : "nextcall"
+          },
+          "valueFormat" : "YYYY-MM-DD HH:mm:ss",
+          "width" : 300,
+          "widthUnit" : "PX",
+          "enableSort" : true
+        }, {
+          "align" : "RIGHT",
+          "cLConvertMode" : "NONE",
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.IR_CRON.INTERVAL_NUMBER"
+          },
+          "caption" : "间隔数值",
+          "codeName" : "interval_number",
+          "columnType" : "DEFGRIDCOLUMN",
+          "dataItemName" : "interval_number",
+          "excelCaption" : "间隔数值",
+          "name" : "interval_number",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "INTERVAL_NUMBER",
+            "codeName" : "interval_number"
+          },
+          "width" : 150,
+          "widthUnit" : "PX",
+          "enableSort" : true
+        }, {
+          "align" : "LEFT",
+          "cLConvertMode" : "FRONT",
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.IR_CRON.INTERVAL_TYPE"
+          },
+          "caption" : "间隔单位",
+          "codeName" : "interval_type",
+          "columnType" : "DEFGRIDCOLUMN",
+          "dataItemName" : "interval_type",
+          "excelCaption" : "间隔单位",
+          "name" : "interval_type",
+          "noPrivDisplayMode" : 1,
+          "getPSAppCodeList" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_cron_interval_type.json"
+          },
+          "getPSAppDEField" : {
+            "name" : "INTERVAL_TYPE",
+            "codeName" : "interval_type"
+          },
+          "width" : 150,
+          "widthUnit" : "PX",
+          "enableSort" : true
+        }, {
+          "align" : "LEFT",
+          "cLConvertMode" : "FRONT",
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.IR_CRON.ACTIVE"
+          },
+          "caption" : "有效",
+          "codeName" : "active",
+          "columnType" : "DEFGRIDCOLUMN",
+          "dataItemName" : "active",
+          "excelCaption" : "有效",
+          "name" : "active",
+          "noPrivDisplayMode" : 1,
+          "getPSAppCodeList" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/YesNo.json"
+          },
+          "getPSAppDEField" : {
+            "name" : "ACTIVE",
+            "codeName" : "active"
+          },
+          "width" : 100,
+          "widthUnit" : "PX",
+          "enableRowEdit" : true,
+          "enableSort" : true
+        } ],
+        "getPSDEGridDataItems" : [ {
+          "dataType" : 9,
+          "name" : "priority",
+          "getPSAppDEField" : {
+            "name" : "PRIORITY",
+            "codeName" : "priority"
+          }
+        }, {
+          "dataType" : 25,
+          "name" : "cron_name",
+          "getPSAppDEField" : {
+            "name" : "CRON_NAME",
+            "codeName" : "cron_name"
+          }
+        }, {
+          "dataType" : 25,
+          "name" : "model_id",
+          "getPSAppDEField" : {
+            "name" : "MODEL_ID",
+            "codeName" : "model_id"
+          }
+        }, {
+          "format" : "YYYY-MM-DD HH:mm:ss",
+          "dataType" : 5,
+          "name" : "nextcall",
+          "getPSAppDEField" : {
+            "name" : "NEXTCALL",
+            "codeName" : "nextcall"
+          }
+        }, {
+          "dataType" : 9,
+          "name" : "interval_number",
+          "getPSAppDEField" : {
+            "name" : "INTERVAL_NUMBER",
+            "codeName" : "interval_number"
+          }
+        }, {
+          "dataType" : 25,
+          "name" : "interval_type",
+          "getPSAppDEField" : {
+            "name" : "INTERVAL_TYPE",
+            "codeName" : "interval_type"
+          }
+        }, {
+          "dataType" : 9,
+          "name" : "active",
+          "getPSAppDEField" : {
+            "name" : "ACTIVE",
+            "codeName" : "active"
+          }
+        }, {
+          "dataType" : 25,
+          "name" : "srfkey",
+          "getPSAppDEField" : {
+            "name" : "ID",
+            "codeName" : "id"
+          }
+        }, {
+          "dataType" : 25,
+          "name" : "srfdataaccaction",
+          "getPSAppDEField" : {
+            "name" : "ID",
+            "codeName" : "id"
+          },
+          "dataAccessAction" : true
+        }, {
+          "dataType" : 25,
+          "name" : "ir_actions_server_id",
+          "getPSAppDEField" : {
+            "name" : "IR_ACTIONS_SERVER_ID",
+            "codeName" : "ir_actions_server_id"
+          }
+        }, {
+          "dataType" : 25,
+          "name" : "user_id",
+          "getPSAppDEField" : {
+            "name" : "USER_ID",
+            "codeName" : "user_id"
+          }
+        }, {
+          "dataType" : 25,
+          "name" : "srfmajortext",
+          "getPSAppDEField" : {
+            "name" : "CRON_NAME",
+            "codeName" : "cron_name"
+          }
+        } ],
+        "getPSDEGridEditItems" : [ {
+          "caption" : "有效",
+          "codeName" : "active",
+          "enableCond" : 3,
+          "ignoreInput" : 0,
+          "name" : "active",
+          "getPSAppDEField" : {
+            "name" : "ACTIVE",
+            "codeName" : "active"
+          },
+          "getPSEditor" : {
+            "editorType" : "CHECKBOX",
+            "name" : "active"
+          },
+          "allowEmpty" : true
+        }, {
+          "caption" : "标识",
+          "codeName" : "srfkey",
+          "enableCond" : 3,
+          "ignoreInput" : 0,
+          "name" : "srfkey",
+          "getPSAppDEField" : {
+            "name" : "ID",
+            "codeName" : "id"
+          },
+          "getPSEditor" : {
+            "editorType" : "HIDDEN",
+            "name" : "srfkey"
+          },
+          "allowEmpty" : true
+        } ],
+        "pagingMode" : 1,
+        "pagingSize" : 20,
+        "getRemovePSControlAction" : {
+          "actionName" : "Remove",
+          "actionType" : "DEACTION",
+          "dataAccessAction" : "DELETE",
+          "name" : "remove",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "remove"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+          }
+        },
+        "sortMode" : "REMOTE",
+        "hasWFDataItems" : false,
+        "enableColFilter" : false,
+        "enableCustomized" : false,
+        "enableGroup" : false,
+        "enablePagingBar" : true,
+        "enableRowEdit" : false,
+        "enableRowEditOrder" : false,
+        "enableRowNew" : false,
+        "forceFit" : false,
+        "hideHeader" : false,
+        "noSort" : false,
+        "singleSelect" : false,
+        "name" : "grid",
+        "modelid" : "66f02f0e06606eca1c2b64908f4698b4",
+        "modeltype" : "PSDEGRID"
+      }, {
+        "codeName" : "default",
+        "controlType" : "SEARCHFORM",
+        "defaultLabelWidth" : 130,
+        "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron/PSSEARCHFORMS/default.json",
+        "logicName" : "默认搜索表单",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+        },
+        "getPSControlHandler" : {
+          "getPSHandlerActions" : [ {
+            "actionType" : "FILTERACTION",
+            "name" : "load",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "FilterGet"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          }, {
+            "actionType" : "FILTERACTION",
+            "name" : "loaddraft",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "FilterGetDraft"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          }, {
+            "actionType" : "FILTERACTION",
+            "name" : "search",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "FilterSearch"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+            }
+          } ],
+          "enableDEFieldPrivilege" : false,
+          "id" : "搜索表单处理器"
+        },
+        "getPSControlParam" : {
+          "autoLoad" : true,
+          "showBusyIndicator" : true,
+          "id" : "SEARCHFORM"
+        },
+        "getPSDEFormPages" : [ {
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "CONTROL.DEFORM.IR_CRON.DEFAULT.FORMPAGE.FORMPAGE1"
+          },
+          "caption" : "常规条件",
+          "codeName" : "formpage1",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "FORMPAGE",
+          "name" : "formpage1",
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "infoGroupMode" : false
+        } ],
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "searchButtonStyle" : "DEFAULT",
+        "tabHeaderPos" : "TOP",
+        "enableAdvanceSearch" : false,
+        "enableAutoSearch" : false,
+        "enableFilterSave" : false,
+        "noTabHeader" : true,
+        "name" : "searchform",
+        "modelid" : "34358fa524f6363c182d7bef1086f282",
+        "modeltype" : "PSDEFORM_SEARCHFORM"
+      }, {
+        "controlType" : "SEARCHBAR",
+        "name" : "searchbar",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+        },
+        "getPSControlParam" : {
+          "id" : "searchbar"
+        },
+        "quickGroupCount" : -1,
+        "quickSearchMode" : 0,
+        "quickSearchWidth" : 0,
+        "enableFilter" : false,
+        "enableGroup" : false,
+        "enableQuickSearch" : false,
+        "mobileSearchBar" : false
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DE.LNAME.IR_CRON"
+        },
+        "caption" : "计划的操作",
+        "codeName" : "pickup_grid_view_captionbar",
+        "controlType" : "CAPTIONBAR",
+        "name" : "captionbar",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+        },
+        "getPSControlParam" : { }
+      } ],
+      "getPSDEViewCodeName" : "PickupGridView",
+      "getPSDEViewId" : "99c54393cba85d61e2ba9de9cd121369",
+      "getPSViewLayoutPanel" : {
+        "codeName" : "layoutpanel",
+        "controlStyle" : "APPDEPICKUPGRIDVIEW",
+        "controlType" : "VIEWLAYOUTPANEL",
+        "name" : "layoutpanel",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+        },
+        "getPSControlParam" : { },
+        "layoutBodyOnly" : true,
+        "layoutPanel" : true,
+        "useDefaultLayout" : true
+      },
+      "title" : "计划的操作选择表格视图",
+      "viewStyle" : "DEFAULT",
+      "viewType" : "DEPICKUPGRIDVIEW",
+      "xDataControlName" : "grid",
+      "enableDP" : true,
+      "enableExport" : true,
+      "enableFilter" : true,
+      "enableImport" : true,
+      "enableRowEdit" : false,
+      "enableSearch" : true,
+      "expandSearchForm" : true,
+      "pickupMode" : true,
+      "rowEditDefault" : false,
+      "modelid" : "2ec1bd3822c36191861450391401951c",
+      "modeltype" : "PSAPPDEVIEW"
+    },
+    "name" : "pickupviewpanel",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+    },
+    "getPSControlParam" : {
+      "id" : "PICKUPVIEWPANEL"
+    }
+  }, {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DE.LNAME.IR_CRON"
+    },
+    "caption" : "计划的操作",
+    "codeName" : "pickup_view_captionbar",
+    "controlType" : "CAPTIONBAR",
+    "name" : "captionbar",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+    },
+    "getPSControlParam" : { }
+  } ],
+  "getPSDEViewCodeName" : "PickupView",
+  "getPSDEViewId" : "7c4c71906390727254c614245c875094",
+  "getPSViewLayoutPanel" : {
+    "codeName" : "layoutpanel",
+    "controlStyle" : "APPDEPICKUPVIEW",
+    "controlType" : "VIEWLAYOUTPANEL",
+    "name" : "layoutpanel",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_cron.json"
+    },
+    "getPSControlParam" : { },
+    "layoutBodyOnly" : true,
+    "layoutPanel" : true,
+    "useDefaultLayout" : true
+  },
+  "title" : "计划的操作数据选择视图",
+  "viewStyle" : "DEFAULT",
+  "viewType" : "DEPICKUPVIEW",
+  "enableDP" : true,
+  "showCaptionBar" : false,
+  "modelid" : "310cba957ec9119061f1347d4cb20742",
+  "modeltype" : "PSAPPDEVIEW"
+}

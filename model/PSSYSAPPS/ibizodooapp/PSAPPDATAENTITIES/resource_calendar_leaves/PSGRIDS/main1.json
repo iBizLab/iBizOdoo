@@ -1,0 +1,352 @@
+{
+  "aggMode" : "NONE",
+  "codeName" : "main1",
+  "columnEnableFilter" : 2,
+  "columnEnableLink" : 2,
+  "controlType" : "GRID",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/resource_calendar_leaves/PSGRIDS/main1.json",
+  "getFetchPSControlAction" : {
+    "modelref" : true,
+    "id" : "fetch",
+    "actionType" : "DEDATASET",
+    "name" : "fetch",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/resource_calendar_leaves.json"
+    }
+  },
+  "groupMode" : "NONE",
+  "logicName" : "休息时间主表格",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/resource_calendar_leaves.json"
+  },
+  "getPSDEGridColumns" : [ {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RESOURCE_CALENDAR_LEAVES.NAME"
+    },
+    "caption" : "原因",
+    "codeName" : "name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "name",
+    "excelCaption" : "原因",
+    "name" : "name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    },
+    "width" : 300,
+    "widthUnit" : "PX",
+    "enableRowEdit" : true,
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RESOURCE_CALENDAR_LEAVES.RESOURCE_ID"
+    },
+    "caption" : "资源",
+    "codeName" : "resource_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "resource_name",
+    "excelCaption" : "资源",
+    "name" : "resource_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "RESOURCE_NAME",
+      "codeName" : "resource_name"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RESOURCE_CALENDAR_LEAVES.COMPANY_ID"
+    },
+    "caption" : "公司",
+    "codeName" : "company_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "company_name",
+    "excelCaption" : "公司",
+    "hideMode" : 1,
+    "name" : "company_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "COMPANY_NAME",
+      "codeName" : "company_name"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : true,
+    "hideDefault" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RESOURCE_CALENDAR_LEAVES.CALENDAR_ID"
+    },
+    "caption" : "工作时间",
+    "codeName" : "calendar_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "calendar_name",
+    "excelCaption" : "工作时间",
+    "name" : "calendar_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "CALENDAR_NAME",
+      "codeName" : "calendar_name"
+    },
+    "width" : 1,
+    "widthUnit" : "STAR",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RESOURCE_CALENDAR_LEAVES.DATE_FROM"
+    },
+    "caption" : "开始日期",
+    "codeName" : "date_from",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "date_from",
+    "excelCaption" : "开始日期",
+    "name" : "date_from",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "DATE_FROM",
+      "codeName" : "date_from"
+    },
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss",
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableRowEdit" : true,
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RESOURCE_CALENDAR_LEAVES.DATE_TO"
+    },
+    "caption" : "结束日期",
+    "codeName" : "date_to",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "date_to",
+    "excelCaption" : "结束日期",
+    "name" : "date_to",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "DATE_TO",
+      "codeName" : "date_to"
+    },
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss",
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableRowEdit" : true,
+    "enableSort" : true
+  } ],
+  "getPSDEGridDataItems" : [ {
+    "dataType" : 25,
+    "name" : "name",
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "resource_name",
+    "getPSAppDEField" : {
+      "name" : "RESOURCE_NAME",
+      "codeName" : "resource_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "company_name",
+    "getPSAppDEField" : {
+      "name" : "COMPANY_NAME",
+      "codeName" : "company_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "calendar_name",
+    "getPSAppDEField" : {
+      "name" : "CALENDAR_NAME",
+      "codeName" : "calendar_name"
+    }
+  }, {
+    "format" : "YYYY-MM-DD HH:mm:ss",
+    "dataType" : 5,
+    "name" : "date_from",
+    "getPSAppDEField" : {
+      "name" : "DATE_FROM",
+      "codeName" : "date_from"
+    }
+  }, {
+    "format" : "YYYY-MM-DD HH:mm:ss",
+    "dataType" : 5,
+    "name" : "date_to",
+    "getPSAppDEField" : {
+      "name" : "DATE_TO",
+      "codeName" : "date_to"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfdataaccaction",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "dataAccessAction" : true
+  }, {
+    "dataType" : 25,
+    "name" : "company_id",
+    "getPSAppDEField" : {
+      "name" : "COMPANY_ID",
+      "codeName" : "company_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "calendar_id",
+    "getPSAppDEField" : {
+      "name" : "CALENDAR_ID",
+      "codeName" : "calendar_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "resource_id",
+    "getPSAppDEField" : {
+      "name" : "RESOURCE_ID",
+      "codeName" : "resource_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "holiday_id",
+    "getPSAppDEField" : {
+      "name" : "HOLIDAY_ID",
+      "codeName" : "holiday_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfmajortext",
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  } ],
+  "getPSDEGridEditItems" : [ {
+    "caption" : "原因",
+    "codeName" : "name",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "name",
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    },
+    "getPSEditor" : {
+      "editorType" : "TEXTBOX",
+      "maxLength" : 200,
+      "name" : "name"
+    },
+    "allowEmpty" : true
+  }, {
+    "caption" : "开始日期",
+    "codeName" : "date_from",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "date_from",
+    "getPSAppDEField" : {
+      "name" : "DATE_FROM",
+      "codeName" : "date_from"
+    },
+    "getPSEditor" : {
+      "dateTimeFormat" : "YYYY-MM-DD HH:mm:ss",
+      "editorParams" : {
+        "TIMEFMT" : "YYYY-MM-DD HH:mm:ss"
+      },
+      "editorType" : "DATEPICKER",
+      "name" : "date_from"
+    },
+    "allowEmpty" : false
+  }, {
+    "caption" : "结束日期",
+    "codeName" : "date_to",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "date_to",
+    "getPSAppDEField" : {
+      "name" : "DATE_TO",
+      "codeName" : "date_to"
+    },
+    "getPSEditor" : {
+      "dateTimeFormat" : "YYYY-MM-DD HH:mm:ss",
+      "editorParams" : {
+        "TIMEFMT" : "YYYY-MM-DD HH:mm:ss"
+      },
+      "editorType" : "DATEPICKER",
+      "name" : "date_to"
+    },
+    "allowEmpty" : false
+  }, {
+    "caption" : "标识",
+    "codeName" : "srfkey",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "getPSEditor" : {
+      "editorType" : "HIDDEN",
+      "name" : "srfkey"
+    },
+    "allowEmpty" : true
+  } ],
+  "pagingMode" : 1,
+  "pagingSize" : 20,
+  "getRemovePSControlAction" : {
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/resource_calendar_leaves.json"
+    }
+  },
+  "sortMode" : "REMOTE",
+  "hasWFDataItems" : false,
+  "enableColFilter" : false,
+  "enableCustomized" : true,
+  "enableGroup" : false,
+  "enablePagingBar" : true,
+  "enableRowEdit" : false,
+  "enableRowEditOrder" : false,
+  "enableRowNew" : false,
+  "forceFit" : false,
+  "hideHeader" : false,
+  "noSort" : false,
+  "singleSelect" : false,
+  "modelid" : "5a095e562ba94dd38e9a5fb74622f24c",
+  "modeltype" : "PSDEGRID"
+}

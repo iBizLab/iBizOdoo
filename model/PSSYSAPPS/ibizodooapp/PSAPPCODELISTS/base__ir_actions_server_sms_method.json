@@ -1,0 +1,23 @@
+{
+  "codeListTag" : "base__ir_actions_server_sms_method",
+  "codeListType" : "STATIC",
+  "codeName" : "base__ir_actions_server_sms_method",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_actions_server_sms_method.json",
+  "emptyText" : "未定义",
+  "name" : "发送短信为",
+  "getPSCodeItems" : [ {
+    "codeName" : "sms",
+    "text" : "短信（无备注）",
+    "value" : "sms"
+  }, {
+    "codeName" : "comment",
+    "text" : "短信（附注）",
+    "value" : "comment"
+  }, {
+    "codeName" : "note",
+    "text" : "仅供参考",
+    "value" : "note"
+  } ],
+  "enableCache" : true
+}

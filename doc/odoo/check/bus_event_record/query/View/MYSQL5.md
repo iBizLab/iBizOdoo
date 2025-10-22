@@ -1,0 +1,15 @@
+```sql
+SELECT
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DATA`,
+t1.`EVENT`,
+t1.`ID`,
+t1.`RES_ID`,
+t1.`RES_MODEL`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `T_BUS_EVENT_RECORD` t1 
+
+
+```

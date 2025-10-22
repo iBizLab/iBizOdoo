@@ -1,0 +1,15 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="heying" id="UsrContent202509011326"  failOnError="false">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <sqlCheck expectedResult="1">
+                    SELECT COUNT(*) FROM res_config_settings WHERE id = '__DEFAULT__'
+                </sqlCheck>
+            </not>
+        </preConditions>
+        <sql>
+         INSERT INTO res_config_settings (COMPANY_ID, DEFAULT_PICKING_POLICY, GROUP_PRODUCT_VARIANT,  GROUP_USE_RECURRING_REVENUES,ID, IS_MEMBERSHIP_MULTI, MODULE_HR_HOMEWORKING, MODULE_HR_PRESENCE,  MODULE_HR_SKILLS, PRODUCT_VOLUME_VOLUME_IN_CUBIC_FEET, PRODUCT_WEIGHT_IN_LBS, SFU_SERVER_URL) VALUES ( '000000',   'direct', 1, 1,'__DEFAULT__',  1,  1, 0,  1,  '0', '1', 'https://gitee.com/ibizlab/iBizOdoo');
+        </sql>
+    </changeSet>
+</databaseChangeLog>

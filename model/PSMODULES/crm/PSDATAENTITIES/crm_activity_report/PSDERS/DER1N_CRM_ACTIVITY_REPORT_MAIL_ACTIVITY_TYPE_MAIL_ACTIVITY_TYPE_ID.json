@@ -1,0 +1,27 @@
+{
+  "codeName" : "mail_activity_type",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report/PSDERS/DER1N_CRM_ACTIVITY_REPORT_MAIL_ACTIVITY_TYPE_MAIL_ACTIVITY_TYPE_ID.json",
+  "fKeyName" : "F40325344042ABE132",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_type.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report.json"
+  },
+  "name" : "DER1N_CRM_ACTIVITY_REPORT_MAIL_ACTIVITY_TYPE_MAIL_ACTIVITY_TYPE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "MAIL_ACTIVITY_TYPE_ID",
+    "codeName" : "mail_activity_type_id"
+  },
+  "pickupDEFName" : "MAIL_ACTIVITY_TYPE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "mail_activity_type",
+  "enableFKey" : true
+}

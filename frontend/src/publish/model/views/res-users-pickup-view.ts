@@ -1,0 +1,67 @@
+export default {
+  funcViewMode: 'PICKUPVIEW',
+  deviewCodeName: 'PickupView',
+  deviewId: '1d2d6e100b10b319b29f360a7469fac3',
+  accUserMode: 2,
+  capLanguageRes: {
+    lanResTag: 'DE.LNAME.RES_USERS',
+  },
+  caption: '用户',
+  codeName: 'res_users_pickup_view',
+  appDataEntityId: 'ibizodooapp.res_users',
+  appViewEngines: [
+    {
+      engineCat: 'VIEW',
+      engineType: 'PickupView',
+      id: 'engine',
+    },
+  ],
+  controls: [
+    {
+      embeddedAppDEViewId: 'ibizodooapp.res_users_pickup_grid_view',
+      codeName: 'pickup_view_pickupviewpanel',
+      controlType: 'PICKUPVIEWPANEL',
+      appDataEntityId: 'ibizodooapp.res_users',
+      controlParam: {
+        id: 'pickupviewpanel',
+      },
+      name: 'pickupviewpanel',
+      id: 'pickup_view_pickupviewpanel',
+    },
+    {
+      capLanguageRes: {
+        lanResTag: 'DE.LNAME.RES_USERS',
+      },
+      caption: '用户',
+      codeName: 'pickup_view_captionbar',
+      controlType: 'CAPTIONBAR',
+      appDataEntityId: 'ibizodooapp.res_users',
+      controlParam: {},
+      name: 'captionbar',
+      id: 'pickup_view_captionbar',
+    },
+  ],
+  viewLayoutPanel: {
+    layoutBodyOnly: true,
+    useDefaultLayout: true,
+    layoutPanel: true,
+    codeName: 'layoutpanel',
+    controlStyle: 'APPDEPICKUPVIEW',
+    controlType: 'VIEWLAYOUTPANEL',
+    appDataEntityId: 'ibizodooapp.res_users',
+    controlParam: {},
+    id: 'layoutpanel',
+  },
+  title: '用户数据选择视图',
+  titleLanguageRes: {
+    lanResTag: 'PAGE.TITLE.RES_USERS.PICKUPVIEW',
+  },
+  viewStyle: 'DEFAULT',
+  viewType: 'DEPICKUPVIEW',
+  enableDP: true,
+  showCaptionBar: false,
+  modelId: 'deae1208b9d7c3bff979cafff33f2b37',
+  modelType: 'PSAPPDEVIEW',
+  name: 'res_usersPickupView',
+  id: 'ibizodooapp.res_users_pickup_view',
+};

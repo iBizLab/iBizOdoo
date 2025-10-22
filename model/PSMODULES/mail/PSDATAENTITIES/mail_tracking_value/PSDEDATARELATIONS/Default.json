@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.MAIL_TRACKING_VALUE"
+  },
+  "formCaption" : "邮件跟踪值",
+  "name" : "邮件跟踪值默认关系界面组"
+}

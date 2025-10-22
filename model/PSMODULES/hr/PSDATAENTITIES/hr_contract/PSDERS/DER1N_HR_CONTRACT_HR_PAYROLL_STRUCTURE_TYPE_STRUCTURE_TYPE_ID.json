@@ -1,0 +1,27 @@
+{
+  "codeName" : "structure_type",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_contract/PSDERS/DER1N_HR_CONTRACT_HR_PAYROLL_STRUCTURE_TYPE_STRUCTURE_TYPE_ID.json",
+  "fKeyName" : "FB2EEC65E54848A2EB",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_payroll_structure_type.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_contract.json"
+  },
+  "name" : "DER1N_HR_CONTRACT_HR_PAYROLL_STRUCTURE_TYPE_STRUCTURE_TYPE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "STRUCTURE_TYPE_ID",
+    "codeName" : "structure_type_id"
+  },
+  "pickupDEFName" : "STRUCTURE_TYPE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "structure_type",
+  "enableFKey" : true
+}

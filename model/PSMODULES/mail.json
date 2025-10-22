@@ -1,0 +1,244 @@
+{
+  "getAllPSCodeLists" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_compose_message_reply_to_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_alias_alias_status.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_alias_alias_contact.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_plan_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/fetchmail_server_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_type_chaining_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_mail_failure_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_type_category.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_ice_server_server_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_compose_message_message_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_plan_template_delay_unit.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_template_template_category.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_mixin_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_compose_message_composition_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_type_delay_unit.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_notification_notification_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_plan_template_delay_from.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_plan_template_responsible_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_mixin_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_notification_failure_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_mail_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_notification_notification_status.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/activity_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/fetchmail_server_server_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_type_delay_from.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/principal_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/attention_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_activity_type_decoration_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSCODELISTS/mail_message_message_type.json"
+  } ],
+  "getAllPSDataEntities" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/fetchmail_server.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_mixin.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_plan.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_plan_template.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_schedule.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_todo_create.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_type_mail_template_rel.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_alias.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_domain.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_mixin.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_mixin_optional.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_blacklist.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_blacklist_remove.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_bot.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_canned_response.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_compose_message.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_composer_mixin.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_followers.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_gateway_allowed.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_guest.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_ice_server.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_link_preview.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_mail.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message_reaction.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message_recipient.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message_schedule.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message_subtype.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message_translation.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_notification.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_push.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_push_device.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_render_mixin.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_message.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_partner.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_scheduled_message.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_template.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_template_preview.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_template_reset.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_thread.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_thread_blacklist.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_thread_cc.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_thread_main_attachment.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_thread_phone.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_duration_mixin.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_wizard_invite.json"
+  } ],
+  "codeName" : "mail",
+  "dynaModelFilePath" : "PSMODULES/mail.json",
+  "name" : "邮件"
+}

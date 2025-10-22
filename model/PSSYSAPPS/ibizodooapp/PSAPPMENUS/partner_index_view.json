@@ -1,0 +1,21 @@
+{
+  "codeName" : "partner_index_view",
+  "controlType" : "APPMENU",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPMENUS/partner_index_view.json",
+  "logicName" : "联系人首页视图",
+  "getPSAppMenuItems" : [ {
+    "accUserMode" : 2,
+    "caption" : "联系人",
+    "itemType" : "MENUITEM",
+    "name" : "base_partner",
+    "getPSAppFunc" : {
+      "modelref" : true,
+      "id" : "partner"
+    },
+    "tooltip" : "联系人",
+    "openDefault" : true
+  } ],
+  "name" : "partnerindexview",
+  "modelid" : "a943565656251a2186aee47acafe85ec",
+  "modeltype" : "PSAPPMENU"
+}

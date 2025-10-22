@@ -1,0 +1,27 @@
+{
+  "codeName" : "country",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report/PSDERS/DER1N_CRM_ACTIVITY_REPORT_RES_COUNTRY_COUNTRY_ID.json",
+  "fKeyName" : "F5D1AB1191797DDC68",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_country.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report.json"
+  },
+  "name" : "DER1N_CRM_ACTIVITY_REPORT_RES_COUNTRY_COUNTRY_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "COUNTRY_ID",
+    "codeName" : "country_id"
+  },
+  "pickupDEFName" : "COUNTRY_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "country",
+  "enableFKey" : true
+}

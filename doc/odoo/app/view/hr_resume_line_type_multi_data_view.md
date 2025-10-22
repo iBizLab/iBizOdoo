@@ -1,0 +1,40 @@
+# 简历明细类型(hr_resume_line_type_multi_data_view)  <!-- {docsify-ignore-all} -->
+
+
+
+## 控件
+#### CAPTIONBAR(captionbar)
+#### 数据表格(grid)
+
+##### 部件逻辑
+* `onMounted`
+```
+var gridCtrl = view.getCtrl("GRID", "grid");
+if (gridCtrl) {
+  gridCtrl.state.rowEditOpen=true;
+}
+```
+#### 搜索栏(searchbar)
+#### 工具栏(toolbar)
+
+## 视图界面逻辑
+  * newdata(预置新建数据逻辑)
+  * opendata(预置打开数据逻辑)
+
+
+### 关联界面行为
+  * [简历明细的类型(HR_RESUME_LINE_TYPE)](module/hr/hr_resume_line_type) : [表格新建行_脚本](module/hr/hr_resume_line_type#界面行为)
+
+### 关联视图
+  * [简历明细的类型(hr_resume_line_type_edit_view)](app/view/hr_resume_line_type_edit_view)
+
+<script>
+ const { createApp } = Vue
+  createApp({
+    data() {
+      return {
+
+      }
+    }
+  }).use(ElementPlus).mount('#app')
+</script>

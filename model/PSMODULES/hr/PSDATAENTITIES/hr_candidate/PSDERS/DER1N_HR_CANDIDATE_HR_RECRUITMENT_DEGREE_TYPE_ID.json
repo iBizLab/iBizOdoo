@@ -1,0 +1,27 @@
+{
+  "codeName" : "type",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_candidate/PSDERS/DER1N_HR_CANDIDATE_HR_RECRUITMENT_DEGREE_TYPE_ID.json",
+  "fKeyName" : "FEFF7F8CBB6B205C7A",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_recruitment_degree.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_candidate.json"
+  },
+  "name" : "DER1N_HR_CANDIDATE_HR_RECRUITMENT_DEGREE_TYPE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "TYPE_ID",
+    "codeName" : "type_id"
+  },
+  "pickupDEFName" : "TYPE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "type",
+  "enableFKey" : true
+}

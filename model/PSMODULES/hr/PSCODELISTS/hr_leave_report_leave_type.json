@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "hr__hr_leave_report_leave_type",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_report_leave_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_report_leave_type.json",
+  "emptyText" : "未定义",
+  "name" : "申请类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "allocation",
+    "text" : "分配",
+    "value" : "allocation"
+  }, {
+    "codeName" : "request",
+    "text" : "休假",
+    "value" : "request"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

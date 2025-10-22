@@ -1,0 +1,61 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`ALIAS_BOUNCED_CONTENT`",
+    "name" : "ALIAS_BOUNCED_CONTENT"
+  }, {
+    "expression" : "t1.`ALIAS_DEFAULTS`",
+    "name" : "ALIAS_DEFAULTS"
+  }, {
+    "expression" : "t1.`ALIAS_CONTACT`",
+    "name" : "ALIAS_CONTACT"
+  }, {
+    "expression" : "t1.`ALIAS_DOMAIN_ID`",
+    "name" : "ALIAS_DOMAIN_ID"
+  }, {
+    "expression" : "t11.`NAME`",
+    "name" : "ALIAS_DOMAIN_NAME"
+  }, {
+    "expression" : "t1.`ALIAS_FORCE_THREAD_ID`",
+    "name" : "ALIAS_FORCE_THREAD_ID"
+  }, {
+    "expression" : "t1.`ALIAS_FULL_NAME`",
+    "name" : "ALIAS_FULL_NAME"
+  }, {
+    "expression" : "t1.`ALIAS_INCOMING_LOCAL`",
+    "name" : "ALIAS_INCOMING_LOCAL"
+  }, {
+    "expression" : "t1.`ALIAS_MODEL_ID`",
+    "name" : "ALIAS_MODEL_ID"
+  }, {
+    "expression" : "t1.`ALIAS_NAME`",
+    "name" : "ALIAS_NAME"
+  }, {
+    "expression" : "t1.`ALIAS_PARENT_MODEL_ID`",
+    "name" : "ALIAS_PARENT_MODEL_ID"
+  }, {
+    "expression" : "t1.`ALIAS_PARENT_THREAD_ID`",
+    "name" : "ALIAS_PARENT_THREAD_ID"
+  }, {
+    "expression" : "t1.`ALIAS_STATUS`",
+    "name" : "ALIAS_STATUS"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`ALIAS_CONTACT`,\nt1.`ALIAS_DOMAIN_ID`,\nt11.`NAME` AS `ALIAS_DOMAIN_NAME`,\nt1.`ALIAS_FORCE_THREAD_ID`,\nt1.`ALIAS_FULL_NAME`,\nt1.`ALIAS_INCOMING_LOCAL`,\nt1.`ALIAS_MODEL_ID`,\nt1.`ALIAS_NAME`,\nt1.`ALIAS_PARENT_MODEL_ID`,\nt1.`ALIAS_PARENT_THREAD_ID`,\nt1.`ALIAS_STATUS`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`ID`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `mail_alias` t1 \nLEFT JOIN `mail_alias_domain` t11 ON t1.`ALIAS_DOMAIN_ID` = t11.`ID` \n",
+  "id" : "PSMODULES/mail/PSDATAENTITIES/mail_alias/PSDEDATAQUERIES/Default/PSDEDQCODES/MYSQL5.json"
+}

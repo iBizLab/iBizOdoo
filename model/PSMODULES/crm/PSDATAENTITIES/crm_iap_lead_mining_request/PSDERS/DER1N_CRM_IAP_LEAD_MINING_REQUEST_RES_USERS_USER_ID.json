@@ -1,0 +1,27 @@
+{
+  "codeName" : "user",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request/PSDERS/DER1N_CRM_IAP_LEAD_MINING_REQUEST_RES_USERS_USER_ID.json",
+  "fKeyName" : "FA8563E02B7449A165",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request.json"
+  },
+  "name" : "DER1N_CRM_IAP_LEAD_MINING_REQUEST_RES_USERS_USER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "USER_ID",
+    "codeName" : "user_id"
+  },
+  "pickupDEFName" : "USER_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "user",
+  "enableFKey" : true
+}

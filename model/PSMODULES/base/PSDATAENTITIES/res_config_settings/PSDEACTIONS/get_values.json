@@ -1,0 +1,25 @@
+{
+  "actionMode" : "READ",
+  "actionType" : "USERCUSTOM",
+  "codeName" : "get_values",
+  "dataAccessAction" : "READ",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDEACTIONS/get_values.json",
+  "logicName" : "获取配置值",
+  "name" : "get_values",
+  "getPSDEActionInput" : {
+    "getKeyPSDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "name" : "Get_valuesInput",
+    "type" : "KEYFIELD"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "Get_valuesResult",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "res_config_settings_dto"
+    },
+    "type" : "DTO"
+  }
+}

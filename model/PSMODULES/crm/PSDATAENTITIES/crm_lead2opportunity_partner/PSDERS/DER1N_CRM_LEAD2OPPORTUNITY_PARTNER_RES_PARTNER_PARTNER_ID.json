@@ -1,0 +1,27 @@
+{
+  "codeName" : "partner",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead2opportunity_partner/PSDERS/DER1N_CRM_LEAD2OPPORTUNITY_PARTNER_RES_PARTNER_PARTNER_ID.json",
+  "fKeyName" : "F1D37EE61696A8F10A",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead2opportunity_partner.json"
+  },
+  "name" : "DER1N_CRM_LEAD2OPPORTUNITY_PARTNER_RES_PARTNER_PARTNER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "PARTNER_ID",
+    "codeName" : "partner_id"
+  },
+  "pickupDEFName" : "PARTNER_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "partner",
+  "enableFKey" : true
+}

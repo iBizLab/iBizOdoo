@@ -1,0 +1,27 @@
+{
+  "codeName" : "alias",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_mixin_optional/PSDERS/DER1N_MAIL_ALIAS_MIXIN_OPTIONAL_MAIL_ALIAS_ALIAS_ID.json",
+  "fKeyName" : "FEDD6F10DE27C123BD",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_alias.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_mixin_optional.json"
+  },
+  "name" : "DER1N_MAIL_ALIAS_MIXIN_OPTIONAL_MAIL_ALIAS_ALIAS_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "ALIAS_ID",
+    "codeName" : "alias_id"
+  },
+  "pickupDEFName" : "ALIAS_ID",
+  "removeActionType" : 3,
+  "removeOrder" : 0,
+  "serviceCodeName" : "alias",
+  "enableFKey" : true
+}

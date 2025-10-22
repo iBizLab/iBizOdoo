@@ -1,0 +1,42 @@
+{
+  "getAllPSCodeLists" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSCODELISTS/product_func_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSCODELISTS/extension_status.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSCODELISTS/pscoreprdfunc_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSCODELISTS/DELogicSubType.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSCODELISTS/pscoreprdfunc_category.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSCODELISTS/log_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSCODELISTS/enable_action.json"
+  } ],
+  "getAllPSDataEntities" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSDATAENTITIES/PSCorePrd.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSDATAENTITIES/PSCorePrdCat.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSDATAENTITIES/PSCorePrdFunc.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/extension/PSDATAENTITIES/PSDELogic.json"
+  } ],
+  "codeName" : "extension",
+  "dynaModelFilePath" : "PSMODULES/extension.json",
+  "memo" : "主要包含模型扩展类实体。",
+  "name" : "模型扩展",
+  "utilType" : "EXTENSION"
+}

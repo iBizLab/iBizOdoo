@@ -1,0 +1,1613 @@
+{
+  "accUserMode" : 2,
+  "getCapPSLanguageRes" : {
+    "lanResTag" : "PAGE.CAPTION.MAIL_MESSAGE.DISCUSS_MAIN_VIEW"
+  },
+  "caption" : "讨论",
+  "codeName" : "mail_message_discuss_main_view",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_main_view.json",
+  "name" : "mail_messagediscuss_main_view",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+  },
+  "getPSAppModule" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPMODULES/mail.json"
+  },
+  "getPSAppViewEngines" : [ {
+    "engineCat" : "VIEW",
+    "engineType" : "TreeExpView",
+    "name" : "engine"
+  } ],
+  "getPSAppViewLogics" : [ {
+    "logicTrigger" : "CUSTOM",
+    "logicType" : "APPUILOGIC",
+    "name" : "newdata",
+    "getPSAppUILogic" : {
+      "actionAfterWizard" : "DEFAULT",
+      "logicType" : "PREDEFINED",
+      "name" : "新建数据",
+      "viewLogicType" : "APP_NEWDATA",
+      "batchAddOnly" : false,
+      "enableBatchAdd" : false,
+      "enableWizardAdd" : false
+    }
+  }, {
+    "logicTrigger" : "CUSTOM",
+    "logicType" : "APPUILOGIC",
+    "name" : "opendata",
+    "getPSAppUILogic" : {
+      "logicType" : "PREDEFINED",
+      "name" : "打开数据",
+      "viewLogicType" : "APP_OPENDATA",
+      "editMode" : true
+    }
+  } ],
+  "getPSAppViewRefs" : [ {
+    "name" : "EDITDATA@channels",
+    "realTitle" : "讨论频道快速配置视图",
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  } ],
+  "getPSControls" : [ {
+    "codeName" : "discuss_main_view_treeexpbar",
+    "controlType" : "TREEEXPBAR",
+    "name" : "treeexpbar",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSAppViewRefs" : [ {
+      "name" : "EXPITEM:channels",
+      "realTitle" : "讨论频道主视图",
+      "getRefPSAppView" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_main_view.json",
+        "viewType" : "DECUSTOMVIEW"
+      }
+    }, {
+      "name" : "EXPITEM:history",
+      "realTitle" : "历史消息",
+      "getRealTitlePSLanguageRes" : {
+        "lanResTag" : "PAGE.TITLE.MAIL_MESSAGE.DISCUSS_HISTORY_LIST_VIEW"
+      },
+      "getRefPSAppView" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_history_list_view.json",
+        "viewType" : "DELISTVIEW"
+      }
+    }, {
+      "name" : "EXPITEM:inbox",
+      "realTitle" : "收件箱",
+      "getRealTitlePSLanguageRes" : {
+        "lanResTag" : "PAGE.TITLE.MAIL_MESSAGE.DISCUSS_INBOX_LIST_VIEW"
+      },
+      "getRefPSAppView" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_inbox_list_view.json",
+        "viewType" : "DELISTVIEW"
+      }
+    }, {
+      "name" : "EXPITEM:private_channels",
+      "realTitle" : "讨论频道主视图",
+      "getRefPSAppView" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_main_view.json",
+        "viewType" : "DECUSTOMVIEW"
+      }
+    }, {
+      "name" : "EXPITEM:starred",
+      "realTitle" : "星标消息",
+      "getRealTitlePSLanguageRes" : {
+        "lanResTag" : "PAGE.TITLE.MAIL_MESSAGE.DISCUSS_STARRED_LIST_VIEW"
+      },
+      "getRefPSAppView" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_starred_list_view.json",
+        "viewType" : "DELISTVIEW"
+      }
+    } ],
+    "getPSControlHandler" : {
+      "enableDEFieldPrivilege" : false,
+      "id" : "treeexpbar"
+    },
+    "getPSControlParam" : {
+      "autoLoad" : true,
+      "showBusyIndicator" : true,
+      "id" : "TREEEXPBAR"
+    },
+    "getPSControls" : [ {
+      "codeName" : "discuss_tree",
+      "controlType" : "TREEVIEW",
+      "getCreatePSControlAction" : {
+        "modelref" : true,
+        "id" : "create",
+        "actionName" : "Create",
+        "actionType" : "DEACTION",
+        "dataAccessAction" : "CREATE",
+        "name" : "create",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "create"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      },
+      "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message/PSTREEVIEWS/discuss_tree.json",
+      "getFetchPSControlAction" : {
+        "modelref" : true,
+        "id" : "fetch",
+        "actionType" : "DEDATASET",
+        "name" : "fetch",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      },
+      "getGetPSControlAction" : {
+        "modelref" : true,
+        "id" : "load",
+        "actionName" : "Get",
+        "actionType" : "DEACTION",
+        "dataAccessAction" : "READ",
+        "name" : "load",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "get"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      },
+      "hookEventNames" : [ "SELECTIONCHANGE", "LOAD" ],
+      "logicName" : "讨论边栏树",
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+      },
+      "getPSControlHandler" : {
+        "getPSHandlerActions" : [ {
+          "actionName" : "Get",
+          "actionType" : "DEACTION",
+          "dataAccessAction" : "READ",
+          "name" : "load",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "get"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+          }
+        }, {
+          "actionName" : "Create",
+          "actionType" : "DEACTION",
+          "dataAccessAction" : "CREATE",
+          "name" : "create",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "create"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+          }
+        }, {
+          "actionName" : "Update",
+          "actionType" : "DEACTION",
+          "dataAccessAction" : "UPDATE",
+          "name" : "update",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "update"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+          }
+        }, {
+          "actionName" : "Remove",
+          "actionType" : "DEACTION",
+          "dataAccessAction" : "DELETE",
+          "name" : "remove",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "remove"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+          }
+        }, {
+          "actionType" : "DEDATASET",
+          "name" : "fetch",
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+          }
+        } ],
+        "userDRAction" : "READ",
+        "enableDEFieldPrivilege" : false,
+        "id" : "树视图处理器"
+      },
+      "getPSControlLogics" : [ {
+        "eventNames" : "SELECTIONCHANGE",
+        "logicTag" : "treeexpbar_tree",
+        "logicType" : "CUSTOM",
+        "name" : "treeexpbar_selectionchange"
+      }, {
+        "eventNames" : "LOAD",
+        "logicTag" : "treeexpbar_tree",
+        "logicType" : "CUSTOM",
+        "name" : "treeexpbar_load"
+      } ],
+      "getPSControlParam" : {
+        "autoLoad" : true,
+        "showBusyIndicator" : true,
+        "id" : "treeexpbar_tree"
+      },
+      "getPSControls" : [ {
+        "codeName" : "discuss_main_view_channel_cm",
+        "controlType" : "CONTEXTMENU",
+        "logicName" : "公共频道静态树节点工具栏",
+        "name" : "channel_cm",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+        },
+        "getPSControlParam" : {
+          "id" : "channel_cm"
+        },
+        "getPSDEToolbarItems" : [ {
+          "actionLevel" : 250,
+          "caption" : "频道管理",
+          "groupExtractMode" : "ITEM",
+          "itemType" : "DEUIACTION",
+          "name" : "deuiaction2",
+          "noPrivDisplayMode" : 2,
+          "getPSAppViewUIAction" : {
+            "modelref" : true,
+            "id" : "channel_cm_deuiaction2"
+          },
+          "getPSSysImage" : {
+            "glyph" : "xf013@FontAwesome",
+            "cssClass" : "fa fa-cog"
+          },
+          "getPSUIAction" : {
+            "actionTarget" : "SINGLEDATA",
+            "caption" : "公共频道",
+            "codeName" : "toolbar_discuss_main_view_channel_cm_deuiaction2_click",
+            "getFrontPSAppView" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_public_multi_data_view.json",
+              "viewType" : "DEMDCUSTOMVIEW"
+            },
+            "frontProcessType" : "WIZARD",
+            "fullCodeName" : "discuss_channel_toolbar_discuss_main_view_channel_cm_deuiaction2_click",
+            "name" : "频道管理",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "uIActionMode" : "FRONT",
+            "uIActionTag" : "toolbar_discuss_main_view_channel_cm_deuiaction2_click",
+            "uIActionType" : "DEUIACTION",
+            "id" : "toolbar_discuss_main_view_channel_cm_deuiaction2_click@discuss_channel"
+          },
+          "tooltip" : "频道管理",
+          "uIActionTarget" : "SINGLEDATA",
+          "showCaption" : false,
+          "showIcon" : true
+        }, {
+          "actionLevel" : 250,
+          "caption" : "新建频道",
+          "groupExtractMode" : "ITEM",
+          "itemType" : "DEUIACTION",
+          "name" : "deuiaction1",
+          "noPrivDisplayMode" : 2,
+          "getPSAppViewUIAction" : {
+            "modelref" : true,
+            "id" : "channel_cm_deuiaction1"
+          },
+          "getPSSysImage" : {
+            "glyph" : "xf067@FontAwesome",
+            "cssClass" : "fa fa-plus"
+          },
+          "getPSUIAction" : {
+            "actionTarget" : "SINGLEDATA",
+            "caption" : "新建频道",
+            "codeName" : "toolbar_discuss_main_view_channel_cm_deuiaction1_click",
+            "frontProcessType" : "OTHER",
+            "fullCodeName" : "discuss_channel_toolbar_discuss_main_view_channel_cm_deuiaction1_click",
+            "name" : "新建频道",
+            "getPSAppDEUILogic" : {
+              "modelref" : true,
+              "id" : "create_public_channel"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "uIActionMode" : "FRONT",
+            "uIActionTag" : "toolbar_discuss_main_view_channel_cm_deuiaction1_click",
+            "uIActionType" : "DEUIACTION",
+            "uILogicAttachMode" : "REPLACE",
+            "uILogicType" : "DELOGIC",
+            "id" : "toolbar_discuss_main_view_channel_cm_deuiaction1_click@discuss_channel"
+          },
+          "tooltip" : "新建频道",
+          "uIActionTarget" : "SINGLEDATA",
+          "showCaption" : false,
+          "showIcon" : true
+        } ],
+        "toolbarStyle" : "CONTEXTMENU",
+        "modelid" : "aafe57e0288a1f7b21f312f6a826280a",
+        "modeltype" : "PSDETOOLBAR"
+      }, {
+        "codeName" : "discuss_main_view_channels_cm",
+        "controlType" : "CONTEXTMENU",
+        "logicName" : "公共频道动态树节点工具栏",
+        "name" : "channels_cm",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+        },
+        "getPSControlParam" : {
+          "id" : "channels_cm"
+        },
+        "getPSDEToolbarItems" : [ {
+          "actionLevel" : 200,
+          "caption" : "频道管理",
+          "groupExtractMode" : "ITEM",
+          "itemType" : "DEUIACTION",
+          "name" : "deuiaction2",
+          "noPrivDisplayMode" : 2,
+          "getPSAppViewUIAction" : {
+            "modelref" : true,
+            "id" : "channels_cm_deuiaction2"
+          },
+          "getPSSysImage" : {
+            "glyph" : "xf013@FontAwesome",
+            "cssClass" : "fa fa-cog"
+          },
+          "getPSUIAction" : {
+            "actionTarget" : "SINGLEDATA",
+            "caption" : "讨论频道",
+            "codeName" : "toolbar_discuss_main_view_channels_cm_deuiaction2_click",
+            "getFrontPSAppView" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+              "viewType" : "DEEDITVIEW"
+            },
+            "frontProcessType" : "WIZARD",
+            "fullCodeName" : "discuss_channel_toolbar_discuss_main_view_channels_cm_deuiaction2_click",
+            "name" : "频道管理",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "uIActionMode" : "FRONT",
+            "uIActionTag" : "toolbar_discuss_main_view_channels_cm_deuiaction2_click",
+            "uIActionType" : "DEUIACTION",
+            "id" : "toolbar_discuss_main_view_channels_cm_deuiaction2_click@discuss_channel"
+          },
+          "tooltip" : "频道管理",
+          "uIActionTarget" : "SINGLEDATA",
+          "showCaption" : false,
+          "showIcon" : true
+        }, {
+          "actionLevel" : 200,
+          "caption" : "离开频道",
+          "groupExtractMode" : "ITEM",
+          "itemType" : "DEUIACTION",
+          "name" : "deuiaction1",
+          "noPrivDisplayMode" : 2,
+          "getPSAppViewUIAction" : {
+            "modelref" : true,
+            "id" : "channels_cm_deuiaction1"
+          },
+          "getPSSysImage" : {
+            "glyph" : "xf00d@FontAwesome",
+            "cssClass" : "fa fa-remove"
+          },
+          "getPSUIAction" : {
+            "actionTarget" : "SINGLEKEY",
+            "caption" : "离开频道",
+            "codeName" : "action_unfollow",
+            "confirmMsg" : "确认离开频道？",
+            "fullCodeName" : "discuss_channel_action_unfollow",
+            "name" : "离开频道",
+            "getPSAppDEMethod" : {
+              "modelref" : true,
+              "id" : "action_unfollow"
+            },
+            "getPSAppDEUILogic" : {
+              "modelref" : true,
+              "id" : "refresh__channel"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "timeout" : 60000,
+            "uIActionMode" : "BACKEND",
+            "uIActionTag" : "action_unfollow",
+            "uIActionType" : "DEUIACTION",
+            "uILogicAttachMode" : "AFTER",
+            "enableConfirm" : true,
+            "id" : "action_unfollow@discuss_channel"
+          },
+          "tooltip" : "离开频道",
+          "uIActionTarget" : "SINGLEKEY",
+          "showCaption" : false,
+          "showIcon" : true
+        }, {
+          "caption" : "打开聊天",
+          "groupExtractMode" : "ITEM",
+          "itemType" : "DEUIACTION",
+          "name" : "deuiaction3",
+          "noPrivDisplayMode" : 2,
+          "getPSAppViewUIAction" : {
+            "modelref" : true,
+            "id" : "channels_cm_deuiaction3"
+          },
+          "getPSUIAction" : {
+            "actionTarget" : "SINGLEKEY",
+            "caption" : "打开聊天",
+            "codeName" : "open_chat",
+            "getFrontPSAppView" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_main_pop_view.json",
+              "viewType" : "DECUSTOMVIEW"
+            },
+            "frontProcessType" : "WIZARD",
+            "fullCodeName" : "discuss_channel_open_chat",
+            "name" : "打开聊天",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "getPSNavigateParams" : [ {
+              "key" : "icon",
+              "name" : "icon",
+              "value" : "avater",
+              "rawValue" : true
+            } ],
+            "getPSSysPFPlugin" : {
+              "pluginType" : "DEUIACTION",
+              "pluginCode" : "OPEN_ODOO_CHAT",
+              "runtimeObject" : true
+            },
+            "uIActionMode" : "FRONT",
+            "uIActionParamJO" : {
+              "icon" : "avater"
+            },
+            "uIActionTag" : "open_chat",
+            "uIActionType" : "DEUIACTION",
+            "id" : "open_chat@discuss_channel"
+          },
+          "tooltip" : "打开聊天",
+          "uIActionTarget" : "SINGLEKEY",
+          "showCaption" : true,
+          "showIcon" : true
+        } ],
+        "toolbarStyle" : "CONTEXTMENU",
+        "modelid" : "2250a2eeca436224b177d6b2154c7ec6",
+        "modeltype" : "PSDETOOLBAR"
+      }, {
+        "codeName" : "discuss_main_view_private_channel_cm",
+        "controlType" : "CONTEXTMENU",
+        "logicName" : "私聊频道静态树节点工具栏",
+        "name" : "private_channel_cm",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+        },
+        "getPSControlParam" : {
+          "id" : "private_channel_cm"
+        },
+        "getPSDEToolbarItems" : [ {
+          "actionLevel" : 250,
+          "caption" : "新建频道",
+          "groupExtractMode" : "ITEM",
+          "itemType" : "DEUIACTION",
+          "name" : "deuiaction1",
+          "noPrivDisplayMode" : 2,
+          "getPSAppViewUIAction" : {
+            "modelref" : true,
+            "id" : "private_channel_cm_deuiaction1"
+          },
+          "getPSSysImage" : {
+            "glyph" : "xf067@FontAwesome",
+            "cssClass" : "fa fa-plus"
+          },
+          "getPSUIAction" : {
+            "actionTarget" : "SINGLEDATA",
+            "caption" : "新建频道",
+            "codeName" : "toolbar_discuss_main_view_private_channel_cm_deuiaction1_click",
+            "frontProcessType" : "OTHER",
+            "fullCodeName" : "discuss_channel_toolbar_discuss_main_view_private_channel_cm_deuiaction1_click",
+            "name" : "新建频道",
+            "getPSAppDEUILogic" : {
+              "modelref" : true,
+              "id" : "create_private_channel"
+            },
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "uIActionMode" : "FRONT",
+            "uIActionTag" : "toolbar_discuss_main_view_private_channel_cm_deuiaction1_click",
+            "uIActionType" : "DEUIACTION",
+            "uILogicAttachMode" : "REPLACE",
+            "uILogicType" : "DELOGIC",
+            "id" : "toolbar_discuss_main_view_private_channel_cm_deuiaction1_click@discuss_channel"
+          },
+          "tooltip" : "新建频道",
+          "uIActionTarget" : "SINGLEDATA",
+          "showCaption" : false,
+          "showIcon" : true
+        } ],
+        "toolbarStyle" : "CONTEXTMENU",
+        "modelid" : "54bafcae58941c3285482069c93b3bac",
+        "modeltype" : "PSDETOOLBAR"
+      } ],
+      "getPSDETreeNodeRSs" : [ {
+        "getChildPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "inbox"
+        },
+        "name" : "默认根节点（ROOT）-收件箱（inbox）",
+        "getParentPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "ROOT"
+        },
+        "parentValueLevel" : 1,
+        "searchMode" : 3
+      }, {
+        "getChildPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "channels"
+        },
+        "name" : "频道（channel）-频道（动态）（channels）",
+        "getParentPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "channel"
+        },
+        "parentValueLevel" : 1,
+        "searchMode" : 3
+      }, {
+        "getChildPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "private_channels"
+        },
+        "name" : "私聊消息（private_channel）-私人频道（动态）（private_channels）",
+        "getParentPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "private_channel"
+        },
+        "parentValueLevel" : 1,
+        "searchMode" : 3
+      }, {
+        "getChildPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "starred"
+        },
+        "name" : "默认根节点（ROOT）-星标消息（starred）",
+        "getParentPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "ROOT"
+        },
+        "parentValueLevel" : 1,
+        "searchMode" : 3
+      }, {
+        "getChildPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "history"
+        },
+        "name" : "默认根节点（ROOT）-历史（history）",
+        "getParentPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "ROOT"
+        },
+        "parentValueLevel" : 1,
+        "searchMode" : 3
+      }, {
+        "getChildPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "channel"
+        },
+        "name" : "默认根节点（ROOT）-频道（node）",
+        "getParentPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "ROOT"
+        },
+        "parentValueLevel" : 1,
+        "searchMode" : 3
+      }, {
+        "getChildPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "private_channel"
+        },
+        "name" : "默认根节点（ROOT）-私聊消息（privatechannel）",
+        "getParentPSDETreeNode" : {
+          "modelref" : true,
+          "id" : "ROOT"
+        },
+        "parentValueLevel" : 1,
+        "searchMode" : 3
+      } ],
+      "getPSDETreeNodes" : [ {
+        "counterMode" : 0,
+        "name" : "默认根节点",
+        "nodeType" : "ROOT",
+        "text" : "默认根节点",
+        "treeNodeType" : "STATIC",
+        "hasPSDETreeNodeRSs" : true,
+        "appendPNodeId" : false,
+        "disableSelect" : false,
+        "enableCheck" : false,
+        "enableEditData" : false,
+        "enableNewData" : false,
+        "enableQuickCreate" : false,
+        "enableQuickSearch" : false,
+        "enableRemoveData" : false,
+        "enableViewData" : false,
+        "expandFirstOnly" : false,
+        "expanded" : false,
+        "rootNode" : true,
+        "selectFirstOnly" : false,
+        "selected" : false,
+        "id" : "ROOT"
+      }, {
+        "counterMode" : 0,
+        "name" : "频道",
+        "nodeType" : "channel",
+        "nodeValue" : "public",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+        },
+        "getPSDEContextMenu" : {
+          "codeName" : "discuss_main_view_channel_cm",
+          "controlType" : "CONTEXTMENU",
+          "logicName" : "公共频道静态树节点工具栏",
+          "name" : "channel_cm",
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+          },
+          "getPSControlParam" : {
+            "id" : "channel_cm"
+          },
+          "getPSDEToolbarItems" : [ {
+            "actionLevel" : 250,
+            "caption" : "频道管理",
+            "groupExtractMode" : "ITEM",
+            "itemType" : "DEUIACTION",
+            "name" : "deuiaction2",
+            "noPrivDisplayMode" : 2,
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "channel_cm_deuiaction2"
+            },
+            "getPSSysImage" : {
+              "glyph" : "xf013@FontAwesome",
+              "cssClass" : "fa fa-cog"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEDATA",
+              "caption" : "公共频道",
+              "codeName" : "toolbar_discuss_main_view_channel_cm_deuiaction2_click",
+              "getFrontPSAppView" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_public_multi_data_view.json",
+                "viewType" : "DEMDCUSTOMVIEW"
+              },
+              "frontProcessType" : "WIZARD",
+              "fullCodeName" : "discuss_channel_toolbar_discuss_main_view_channel_cm_deuiaction2_click",
+              "name" : "频道管理",
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+              },
+              "uIActionMode" : "FRONT",
+              "uIActionTag" : "toolbar_discuss_main_view_channel_cm_deuiaction2_click",
+              "uIActionType" : "DEUIACTION",
+              "id" : "toolbar_discuss_main_view_channel_cm_deuiaction2_click@discuss_channel"
+            },
+            "tooltip" : "频道管理",
+            "uIActionTarget" : "SINGLEDATA",
+            "showCaption" : false,
+            "showIcon" : true
+          }, {
+            "actionLevel" : 250,
+            "caption" : "新建频道",
+            "groupExtractMode" : "ITEM",
+            "itemType" : "DEUIACTION",
+            "name" : "deuiaction1",
+            "noPrivDisplayMode" : 2,
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "channel_cm_deuiaction1"
+            },
+            "getPSSysImage" : {
+              "glyph" : "xf067@FontAwesome",
+              "cssClass" : "fa fa-plus"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEDATA",
+              "caption" : "新建频道",
+              "codeName" : "toolbar_discuss_main_view_channel_cm_deuiaction1_click",
+              "frontProcessType" : "OTHER",
+              "fullCodeName" : "discuss_channel_toolbar_discuss_main_view_channel_cm_deuiaction1_click",
+              "name" : "新建频道",
+              "getPSAppDEUILogic" : {
+                "modelref" : true,
+                "id" : "create_public_channel"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+              },
+              "uIActionMode" : "FRONT",
+              "uIActionTag" : "toolbar_discuss_main_view_channel_cm_deuiaction1_click",
+              "uIActionType" : "DEUIACTION",
+              "uILogicAttachMode" : "REPLACE",
+              "uILogicType" : "DELOGIC",
+              "id" : "toolbar_discuss_main_view_channel_cm_deuiaction1_click@discuss_channel"
+            },
+            "tooltip" : "新建频道",
+            "uIActionTarget" : "SINGLEDATA",
+            "showCaption" : false,
+            "showIcon" : true
+          } ],
+          "toolbarStyle" : "CONTEXTMENU",
+          "modelid" : "aafe57e0288a1f7b21f312f6a826280a",
+          "modeltype" : "PSDETOOLBAR"
+        },
+        "text" : "频道",
+        "treeNodeType" : "STATIC",
+        "hasPSDETreeNodeRSs" : true,
+        "appendPNodeId" : false,
+        "disableSelect" : false,
+        "enableCheck" : false,
+        "enableEditData" : false,
+        "enableNewData" : false,
+        "enableQuickCreate" : false,
+        "enableQuickSearch" : false,
+        "enableRemoveData" : false,
+        "enableViewData" : false,
+        "expandFirstOnly" : false,
+        "expanded" : true,
+        "rootNode" : false,
+        "selectFirstOnly" : false,
+        "selected" : false,
+        "id" : "channel"
+      }, {
+        "counterMode" : 0,
+        "dataSourceType" : "DEDATASET",
+        "getIdPSAppDEField" : {
+          "name" : "ID",
+          "codeName" : "id"
+        },
+        "maxSize" : -1,
+        "name" : "频道（动态）",
+        "getNavPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_main_view.json",
+          "viewType" : "DECUSTOMVIEW"
+        },
+        "nodeType" : "channels",
+        "getPSAppDEDataSet" : {
+          "modelref" : true,
+          "id" : "fetch_cur_user_public"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+        },
+        "getPSControlRenders" : [ {
+          "name" : "public_channels_layout",
+          "getPSLayoutPanel" : {
+            "getAllPSPanelFields" : [ {
+              "id" : "name",
+              "viewFieldName" : "name"
+            } ],
+            "codeName" : "discuss_sidebar_node_panel",
+            "controlType" : "PANEL",
+            "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel/PSPANELS/discuss_sidebar_node_panel.json",
+            "layoutMode" : "FLEX",
+            "logicName" : "讨论边栏节点绘制面板",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "getPSControlParam" : { },
+            "getPSLayout" : {
+              "layout" : "FLEX"
+            },
+            "getRootPSPanelItems" : [ {
+              "caption" : "容器",
+              "contentHeight" : 32.0,
+              "height" : 32.0,
+              "itemStyle" : "DEFAULT",
+              "itemType" : "CONTAINER",
+              "name" : "container",
+              "getPSLayout" : {
+                "align" : "flex-start",
+                "dir" : "row",
+                "layout" : "FLEX",
+                "vAlign" : "center"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "height" : 32,
+                "heightMode" : "PX",
+                "layout" : "FLEX"
+              },
+              "getPSPanelItems" : [ {
+                "caption" : "图片",
+                "contentHeight" : 24.0,
+                "contentType" : "IMAGE",
+                "contentWidth" : 24.0,
+                "height" : 24.0,
+                "itemStyle" : "DEFAULT",
+                "itemType" : "RAWITEM",
+                "name" : "static_image",
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "height" : 24,
+                  "heightMode" : "PX",
+                  "layout" : "FLEX",
+                  "width" : 24,
+                  "widthMode" : "PX"
+                },
+                "getPSRawItem" : {
+                  "contentType" : "IMAGE",
+                  "name" : "static_image",
+                  "getPSSysImage" : {
+                    "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 530.06 530.06\">\n<circle cx=\"265.03\" cy=\"265.03\" r=\"265.03\" fill=\"hsl(257, 43%, 45%)\"/>\n<path d=\"M416.74,217.29l5-28a8.4,8.4,0,0,0-8.27-9.88H361.09l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H334.61a8.4,8.4,0,0,0-8.27,6.93L315.57,179.4H246.5l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H220a8.4,8.4,0,0,0-8.27,6.93L201,179.4H145.6a8.42,8.42,0,0,0-8.28,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H193l-16,89.62H121.59a8.4,8.4,0,0,0-8.27,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H169L158.73,416a8.4,8.4,0,0,0,8.27,9.88h28.45a8.42,8.42,0,0,0,8.28-6.93l10.76-60.29h69.07L273.32,416a8.4,8.4,0,0,0,8.27,9.88H310a8.4,8.4,0,0,0,8.27-6.93l10.77-60.29h55.38a8.41,8.41,0,0,0,8.28-6.93l5-28a8.4,8.4,0,0,0-8.27-9.88H337.08l16-89.62h55.38A8.4,8.4,0,0,0,416.74,217.29ZM291.56,313.84H222.5l16-89.62h69.07Z\" fill=\"#ffffff\"/>\n</svg>"
+                  },
+                  "predefinedType" : "STATIC_IMAGE",
+                  "rawItemHeight" : 24.0,
+                  "rawItemWidth" : 24.0
+                },
+                "getPSSysImage" : {
+                  "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 530.06 530.06\">\n<circle cx=\"265.03\" cy=\"265.03\" r=\"265.03\" fill=\"hsl(257, 43%, 45%)\"/>\n<path d=\"M416.74,217.29l5-28a8.4,8.4,0,0,0-8.27-9.88H361.09l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H334.61a8.4,8.4,0,0,0-8.27,6.93L315.57,179.4H246.5l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H220a8.4,8.4,0,0,0-8.27,6.93L201,179.4H145.6a8.42,8.42,0,0,0-8.28,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H193l-16,89.62H121.59a8.4,8.4,0,0,0-8.27,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H169L158.73,416a8.4,8.4,0,0,0,8.27,9.88h28.45a8.42,8.42,0,0,0,8.28-6.93l10.76-60.29h69.07L273.32,416a8.4,8.4,0,0,0,8.27,9.88H310a8.4,8.4,0,0,0,8.27-6.93l10.77-60.29h55.38a8.41,8.41,0,0,0,8.28-6.93l5-28a8.4,8.4,0,0,0-8.27-9.88H337.08l16-89.62h55.38A8.4,8.4,0,0,0,416.74,217.29ZM291.56,313.84H222.5l16-89.62h69.07Z\" fill=\"#ffffff\"/>\n</svg>"
+                },
+                "rawItemHeight" : 24.0,
+                "rawItemWidth" : 24.0,
+                "width" : 24.0,
+                "showCaption" : true
+              }, {
+                "caption" : "文本(动态)",
+                "itemStyle" : "DEFAULT",
+                "itemType" : "FIELD",
+                "name" : "name",
+                "getPSEditor" : {
+                  "editorType" : "SPAN",
+                  "name" : "name",
+                  "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                  "renderMode" : "TEXT_DYNAMIC",
+                  "enableLinkView" : false
+                },
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "layout" : "FLEX",
+                  "spacingLeft" : "OUTERSMALL"
+                },
+                "viewFieldName" : "name"
+              } ]
+            } ],
+            "layoutPanel" : true,
+            "mobilePanel" : true,
+            "name" : "public_channels_layout",
+            "modelid" : "f6923ad9acfcc7058fb95cd9b0f9599b",
+            "modeltype" : "PSSYSVIEWPANEL"
+          },
+          "renderType" : "LAYOUTPANEL"
+        }, {
+          "name" : "newnoderender_channels",
+          "getPSLayoutPanel" : {
+            "getAllPSPanelFields" : [ {
+              "id" : "name",
+              "viewFieldName" : "name"
+            } ],
+            "codeName" : "create_public_channel_node_panel",
+            "controlType" : "PANEL",
+            "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message/PSPANELS/create_public_channel_node_panel.json",
+            "layoutMode" : "TABLE_24COL",
+            "logicName" : "创建公共频道节点面板",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+            },
+            "getPSControlParam" : { },
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getRootPSPanelItems" : [ {
+              "caption" : "容器",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "CONTAINER",
+              "name" : "container",
+              "getPSLayout" : {
+                "layout" : "FLEX"
+              },
+              "getPSLayoutPos" : {
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "getPSPanelItems" : [ {
+                "caption" : "文本框",
+                "itemStyle" : "DEFAULT",
+                "itemType" : "FIELD",
+                "name" : "name",
+                "getPSEditor" : {
+                  "editorType" : "TEXTBOX",
+                  "name" : "name",
+                  "predefinedType" : "FIELD_TEXTBOX"
+                },
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "layout" : "FLEX"
+                },
+                "viewFieldName" : "name"
+              } ]
+            } ],
+            "layoutPanel" : true,
+            "mobilePanel" : true,
+            "name" : "newnoderender_channels",
+            "modelid" : "31484271ac3a1f60becc2343cb10c100",
+            "modeltype" : "PSSYSVIEWPANEL"
+          },
+          "renderType" : "LAYOUTPANEL"
+        } ],
+        "getPSDEContextMenu" : {
+          "codeName" : "discuss_main_view_channels_cm",
+          "controlType" : "CONTEXTMENU",
+          "logicName" : "公共频道动态树节点工具栏",
+          "name" : "channels_cm",
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+          },
+          "getPSControlParam" : {
+            "id" : "channels_cm"
+          },
+          "getPSDEToolbarItems" : [ {
+            "actionLevel" : 200,
+            "caption" : "频道管理",
+            "groupExtractMode" : "ITEM",
+            "itemType" : "DEUIACTION",
+            "name" : "deuiaction2",
+            "noPrivDisplayMode" : 2,
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "channels_cm_deuiaction2"
+            },
+            "getPSSysImage" : {
+              "glyph" : "xf013@FontAwesome",
+              "cssClass" : "fa fa-cog"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEDATA",
+              "caption" : "讨论频道",
+              "codeName" : "toolbar_discuss_main_view_channels_cm_deuiaction2_click",
+              "getFrontPSAppView" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+                "viewType" : "DEEDITVIEW"
+              },
+              "frontProcessType" : "WIZARD",
+              "fullCodeName" : "discuss_channel_toolbar_discuss_main_view_channels_cm_deuiaction2_click",
+              "name" : "频道管理",
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+              },
+              "uIActionMode" : "FRONT",
+              "uIActionTag" : "toolbar_discuss_main_view_channels_cm_deuiaction2_click",
+              "uIActionType" : "DEUIACTION",
+              "id" : "toolbar_discuss_main_view_channels_cm_deuiaction2_click@discuss_channel"
+            },
+            "tooltip" : "频道管理",
+            "uIActionTarget" : "SINGLEDATA",
+            "showCaption" : false,
+            "showIcon" : true
+          }, {
+            "actionLevel" : 200,
+            "caption" : "离开频道",
+            "groupExtractMode" : "ITEM",
+            "itemType" : "DEUIACTION",
+            "name" : "deuiaction1",
+            "noPrivDisplayMode" : 2,
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "channels_cm_deuiaction1"
+            },
+            "getPSSysImage" : {
+              "glyph" : "xf00d@FontAwesome",
+              "cssClass" : "fa fa-remove"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEKEY",
+              "caption" : "离开频道",
+              "codeName" : "action_unfollow",
+              "confirmMsg" : "确认离开频道？",
+              "fullCodeName" : "discuss_channel_action_unfollow",
+              "name" : "离开频道",
+              "getPSAppDEMethod" : {
+                "modelref" : true,
+                "id" : "action_unfollow"
+              },
+              "getPSAppDEUILogic" : {
+                "modelref" : true,
+                "id" : "refresh__channel"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+              },
+              "timeout" : 60000,
+              "uIActionMode" : "BACKEND",
+              "uIActionTag" : "action_unfollow",
+              "uIActionType" : "DEUIACTION",
+              "uILogicAttachMode" : "AFTER",
+              "enableConfirm" : true,
+              "id" : "action_unfollow@discuss_channel"
+            },
+            "tooltip" : "离开频道",
+            "uIActionTarget" : "SINGLEKEY",
+            "showCaption" : false,
+            "showIcon" : true
+          }, {
+            "caption" : "打开聊天",
+            "groupExtractMode" : "ITEM",
+            "itemType" : "DEUIACTION",
+            "name" : "deuiaction3",
+            "noPrivDisplayMode" : 2,
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "channels_cm_deuiaction3"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEKEY",
+              "caption" : "打开聊天",
+              "codeName" : "open_chat",
+              "getFrontPSAppView" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_main_pop_view.json",
+                "viewType" : "DECUSTOMVIEW"
+              },
+              "frontProcessType" : "WIZARD",
+              "fullCodeName" : "discuss_channel_open_chat",
+              "name" : "打开聊天",
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+              },
+              "getPSNavigateParams" : [ {
+                "key" : "icon",
+                "name" : "icon",
+                "value" : "avater",
+                "rawValue" : true
+              } ],
+              "getPSSysPFPlugin" : {
+                "pluginType" : "DEUIACTION",
+                "pluginCode" : "OPEN_ODOO_CHAT",
+                "runtimeObject" : true
+              },
+              "uIActionMode" : "FRONT",
+              "uIActionParamJO" : {
+                "icon" : "avater"
+              },
+              "uIActionTag" : "open_chat",
+              "uIActionType" : "DEUIACTION",
+              "id" : "open_chat@discuss_channel"
+            },
+            "tooltip" : "打开聊天",
+            "uIActionTarget" : "SINGLEKEY",
+            "showCaption" : true,
+            "showIcon" : true
+          } ],
+          "toolbarStyle" : "CONTEXTMENU",
+          "modelid" : "2250a2eeca436224b177d6b2154c7ec6",
+          "modeltype" : "PSDETOOLBAR"
+        },
+        "getPSDETreeNodeRVs" : [ {
+          "name" : "EDITDATA",
+          "getRefPSAppView" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+            "viewType" : "DEEDITVIEW"
+          }
+        } ],
+        "getTextPSAppDEField" : {
+          "name" : "NAME",
+          "codeName" : "name"
+        },
+        "treeNodeType" : "DE",
+        "hasPSDETreeNodeRSs" : false,
+        "appendPNodeId" : false,
+        "disableSelect" : false,
+        "enableCheck" : false,
+        "enableEditData" : false,
+        "enableNewData" : false,
+        "enableQuickCreate" : false,
+        "enableQuickSearch" : false,
+        "enableRemoveData" : false,
+        "enableViewData" : false,
+        "expandFirstOnly" : false,
+        "expanded" : false,
+        "rootNode" : false,
+        "selectFirstOnly" : false,
+        "selected" : false,
+        "id" : "channels"
+      }, {
+        "counterMode" : 0,
+        "name" : "历史",
+        "getNavPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_history_list_view.json",
+          "viewType" : "DELISTVIEW"
+        },
+        "nodeType" : "history",
+        "getPSSysImage" : {
+          "glyph" : "xf1da@FontAwesome",
+          "cssClass" : "fa fa-history"
+        },
+        "text" : "历史",
+        "treeNodeType" : "STATIC",
+        "hasPSDETreeNodeRSs" : false,
+        "appendPNodeId" : false,
+        "disableSelect" : false,
+        "enableCheck" : false,
+        "enableEditData" : false,
+        "enableNewData" : false,
+        "enableQuickCreate" : false,
+        "enableQuickSearch" : false,
+        "enableRemoveData" : false,
+        "enableViewData" : false,
+        "expandFirstOnly" : false,
+        "expanded" : false,
+        "rootNode" : false,
+        "selectFirstOnly" : false,
+        "selected" : false,
+        "id" : "history"
+      }, {
+        "counterMode" : 0,
+        "name" : "收件箱",
+        "getNavPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_inbox_list_view.json",
+          "viewType" : "DELISTVIEW"
+        },
+        "nodeType" : "inbox",
+        "getPSSysImage" : {
+          "glyph" : "xf01c@FontAwesome",
+          "cssClass" : "fa fa-inbox"
+        },
+        "text" : "收件箱",
+        "treeNodeType" : "STATIC",
+        "hasPSDETreeNodeRSs" : false,
+        "appendPNodeId" : false,
+        "disableSelect" : false,
+        "enableCheck" : false,
+        "enableEditData" : false,
+        "enableNewData" : false,
+        "enableQuickCreate" : false,
+        "enableQuickSearch" : false,
+        "enableRemoveData" : false,
+        "enableViewData" : false,
+        "expandFirstOnly" : false,
+        "expanded" : false,
+        "rootNode" : false,
+        "selectFirstOnly" : false,
+        "selected" : false,
+        "id" : "inbox"
+      }, {
+        "counterMode" : 0,
+        "name" : "私聊消息",
+        "nodeType" : "private_channel",
+        "nodeValue" : "private",
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+        },
+        "getPSDEContextMenu" : {
+          "codeName" : "discuss_main_view_private_channel_cm",
+          "controlType" : "CONTEXTMENU",
+          "logicName" : "私聊频道静态树节点工具栏",
+          "name" : "private_channel_cm",
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+          },
+          "getPSControlParam" : {
+            "id" : "private_channel_cm"
+          },
+          "getPSDEToolbarItems" : [ {
+            "actionLevel" : 250,
+            "caption" : "新建频道",
+            "groupExtractMode" : "ITEM",
+            "itemType" : "DEUIACTION",
+            "name" : "deuiaction1",
+            "noPrivDisplayMode" : 2,
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "private_channel_cm_deuiaction1"
+            },
+            "getPSSysImage" : {
+              "glyph" : "xf067@FontAwesome",
+              "cssClass" : "fa fa-plus"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEDATA",
+              "caption" : "新建频道",
+              "codeName" : "toolbar_discuss_main_view_private_channel_cm_deuiaction1_click",
+              "frontProcessType" : "OTHER",
+              "fullCodeName" : "discuss_channel_toolbar_discuss_main_view_private_channel_cm_deuiaction1_click",
+              "name" : "新建频道",
+              "getPSAppDEUILogic" : {
+                "modelref" : true,
+                "id" : "create_private_channel"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+              },
+              "uIActionMode" : "FRONT",
+              "uIActionTag" : "toolbar_discuss_main_view_private_channel_cm_deuiaction1_click",
+              "uIActionType" : "DEUIACTION",
+              "uILogicAttachMode" : "REPLACE",
+              "uILogicType" : "DELOGIC",
+              "id" : "toolbar_discuss_main_view_private_channel_cm_deuiaction1_click@discuss_channel"
+            },
+            "tooltip" : "新建频道",
+            "uIActionTarget" : "SINGLEDATA",
+            "showCaption" : false,
+            "showIcon" : true
+          } ],
+          "toolbarStyle" : "CONTEXTMENU",
+          "modelid" : "54bafcae58941c3285482069c93b3bac",
+          "modeltype" : "PSDETOOLBAR"
+        },
+        "text" : "私聊消息",
+        "treeNodeType" : "STATIC",
+        "hasPSDETreeNodeRSs" : true,
+        "appendPNodeId" : false,
+        "disableSelect" : false,
+        "enableCheck" : false,
+        "enableEditData" : false,
+        "enableNewData" : false,
+        "enableQuickCreate" : false,
+        "enableQuickSearch" : false,
+        "enableRemoveData" : false,
+        "enableViewData" : false,
+        "expandFirstOnly" : false,
+        "expanded" : true,
+        "rootNode" : false,
+        "selectFirstOnly" : false,
+        "selected" : false,
+        "id" : "private_channel"
+      }, {
+        "counterMode" : 0,
+        "dataSourceType" : "DEDATASET",
+        "getIdPSAppDEField" : {
+          "name" : "ID",
+          "codeName" : "id"
+        },
+        "maxSize" : -1,
+        "name" : "私人频道（动态）",
+        "getNavPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_main_view.json",
+          "viewType" : "DECUSTOMVIEW"
+        },
+        "nodeType" : "private_channels",
+        "getPSAppDEDataSet" : {
+          "modelref" : true,
+          "id" : "fetch_group_private"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+        },
+        "getPSControlRenders" : [ {
+          "name" : "private_channels_layout",
+          "getPSLayoutPanel" : {
+            "getAllPSPanelFields" : [ {
+              "id" : "name",
+              "viewFieldName" : "name"
+            } ],
+            "codeName" : "discuss_sidebar_node_panel",
+            "controlType" : "PANEL",
+            "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel/PSPANELS/discuss_sidebar_node_panel.json",
+            "layoutMode" : "FLEX",
+            "logicName" : "讨论边栏节点绘制面板",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "getPSControlParam" : { },
+            "getPSLayout" : {
+              "layout" : "FLEX"
+            },
+            "getRootPSPanelItems" : [ {
+              "caption" : "容器",
+              "contentHeight" : 32.0,
+              "height" : 32.0,
+              "itemStyle" : "DEFAULT",
+              "itemType" : "CONTAINER",
+              "name" : "container",
+              "getPSLayout" : {
+                "align" : "flex-start",
+                "dir" : "row",
+                "layout" : "FLEX",
+                "vAlign" : "center"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "height" : 32,
+                "heightMode" : "PX",
+                "layout" : "FLEX"
+              },
+              "getPSPanelItems" : [ {
+                "caption" : "图片",
+                "contentHeight" : 24.0,
+                "contentType" : "IMAGE",
+                "contentWidth" : 24.0,
+                "height" : 24.0,
+                "itemStyle" : "DEFAULT",
+                "itemType" : "RAWITEM",
+                "name" : "static_image",
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "height" : 24,
+                  "heightMode" : "PX",
+                  "layout" : "FLEX",
+                  "width" : 24,
+                  "widthMode" : "PX"
+                },
+                "getPSRawItem" : {
+                  "contentType" : "IMAGE",
+                  "name" : "static_image",
+                  "getPSSysImage" : {
+                    "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 530.06 530.06\">\n<circle cx=\"265.03\" cy=\"265.03\" r=\"265.03\" fill=\"hsl(257, 43%, 45%)\"/>\n<path d=\"M416.74,217.29l5-28a8.4,8.4,0,0,0-8.27-9.88H361.09l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H334.61a8.4,8.4,0,0,0-8.27,6.93L315.57,179.4H246.5l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H220a8.4,8.4,0,0,0-8.27,6.93L201,179.4H145.6a8.42,8.42,0,0,0-8.28,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H193l-16,89.62H121.59a8.4,8.4,0,0,0-8.27,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H169L158.73,416a8.4,8.4,0,0,0,8.27,9.88h28.45a8.42,8.42,0,0,0,8.28-6.93l10.76-60.29h69.07L273.32,416a8.4,8.4,0,0,0,8.27,9.88H310a8.4,8.4,0,0,0,8.27-6.93l10.77-60.29h55.38a8.41,8.41,0,0,0,8.28-6.93l5-28a8.4,8.4,0,0,0-8.27-9.88H337.08l16-89.62h55.38A8.4,8.4,0,0,0,416.74,217.29ZM291.56,313.84H222.5l16-89.62h69.07Z\" fill=\"#ffffff\"/>\n</svg>"
+                  },
+                  "predefinedType" : "STATIC_IMAGE",
+                  "rawItemHeight" : 24.0,
+                  "rawItemWidth" : 24.0
+                },
+                "getPSSysImage" : {
+                  "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 530.06 530.06\">\n<circle cx=\"265.03\" cy=\"265.03\" r=\"265.03\" fill=\"hsl(257, 43%, 45%)\"/>\n<path d=\"M416.74,217.29l5-28a8.4,8.4,0,0,0-8.27-9.88H361.09l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H334.61a8.4,8.4,0,0,0-8.27,6.93L315.57,179.4H246.5l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H220a8.4,8.4,0,0,0-8.27,6.93L201,179.4H145.6a8.42,8.42,0,0,0-8.28,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H193l-16,89.62H121.59a8.4,8.4,0,0,0-8.27,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H169L158.73,416a8.4,8.4,0,0,0,8.27,9.88h28.45a8.42,8.42,0,0,0,8.28-6.93l10.76-60.29h69.07L273.32,416a8.4,8.4,0,0,0,8.27,9.88H310a8.4,8.4,0,0,0,8.27-6.93l10.77-60.29h55.38a8.41,8.41,0,0,0,8.28-6.93l5-28a8.4,8.4,0,0,0-8.27-9.88H337.08l16-89.62h55.38A8.4,8.4,0,0,0,416.74,217.29ZM291.56,313.84H222.5l16-89.62h69.07Z\" fill=\"#ffffff\"/>\n</svg>"
+                },
+                "rawItemHeight" : 24.0,
+                "rawItemWidth" : 24.0,
+                "width" : 24.0,
+                "showCaption" : true
+              }, {
+                "caption" : "文本(动态)",
+                "itemStyle" : "DEFAULT",
+                "itemType" : "FIELD",
+                "name" : "name",
+                "getPSEditor" : {
+                  "editorType" : "SPAN",
+                  "name" : "name",
+                  "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                  "renderMode" : "TEXT_DYNAMIC",
+                  "enableLinkView" : false
+                },
+                "getPSLayoutPos" : {
+                  "grow" : -1,
+                  "layout" : "FLEX",
+                  "spacingLeft" : "OUTERSMALL"
+                },
+                "viewFieldName" : "name"
+              } ]
+            } ],
+            "layoutPanel" : true,
+            "mobilePanel" : true,
+            "name" : "private_channels_layout",
+            "modelid" : "f6923ad9acfcc7058fb95cd9b0f9599b",
+            "modeltype" : "PSSYSVIEWPANEL"
+          },
+          "renderType" : "LAYOUTPANEL"
+        } ],
+        "getTextPSAppDEField" : {
+          "name" : "NAME",
+          "codeName" : "name"
+        },
+        "treeNodeType" : "DE",
+        "hasPSDETreeNodeRSs" : false,
+        "appendPNodeId" : false,
+        "disableSelect" : false,
+        "enableCheck" : false,
+        "enableEditData" : false,
+        "enableNewData" : false,
+        "enableQuickCreate" : false,
+        "enableQuickSearch" : false,
+        "enableRemoveData" : false,
+        "enableViewData" : false,
+        "expandFirstOnly" : false,
+        "expanded" : false,
+        "rootNode" : false,
+        "selectFirstOnly" : false,
+        "selected" : false,
+        "id" : "private_channels"
+      }, {
+        "counterMode" : 0,
+        "name" : "星标消息",
+        "getNavPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_starred_list_view.json",
+          "viewType" : "DELISTVIEW"
+        },
+        "nodeType" : "starred",
+        "getPSSysImage" : {
+          "glyph" : "xf006@FontAwesome",
+          "cssClass" : "fa fa-star-o"
+        },
+        "text" : "星标消息",
+        "treeNodeType" : "STATIC",
+        "hasPSDETreeNodeRSs" : false,
+        "appendPNodeId" : false,
+        "disableSelect" : false,
+        "enableCheck" : false,
+        "enableEditData" : false,
+        "enableNewData" : false,
+        "enableQuickCreate" : false,
+        "enableQuickSearch" : false,
+        "enableRemoveData" : false,
+        "enableViewData" : false,
+        "expandFirstOnly" : false,
+        "expanded" : false,
+        "rootNode" : false,
+        "selectFirstOnly" : false,
+        "selected" : false,
+        "id" : "starred"
+      } ],
+      "getPSSysCss" : {
+        "cssName" : "discuss_tree_node"
+      },
+      "getRemovePSControlAction" : {
+        "modelref" : true,
+        "id" : "remove",
+        "actionName" : "Remove",
+        "actionType" : "DEACTION",
+        "dataAccessAction" : "DELETE",
+        "name" : "remove",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "remove"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      },
+      "treeGridMode" : 0,
+      "getUpdatePSControlAction" : {
+        "modelref" : true,
+        "id" : "update",
+        "actionName" : "Update",
+        "actionType" : "DEACTION",
+        "dataAccessAction" : "UPDATE",
+        "name" : "update",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "update"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      },
+      "enableRootSelect" : false,
+      "outputIconDefault" : false,
+      "rootVisible" : false,
+      "name" : "treeexpbar_tree",
+      "modelid" : "2da852397458eaf071df48756475a139",
+      "modeltype" : "PSDETREEVIEW"
+    } ],
+    "xDataControlName" : "treeexpbar_tree",
+    "enableCounter" : true,
+    "enableSearch" : false,
+    "showTitleBar" : true,
+    "modelid" : "f19efa06b2f5c01167feac6d3f7f07cc_treeexpbar",
+    "modeltype" : "PSEXPBAR"
+  }, {
+    "controlType" : "SEARCHBAR",
+    "name" : "searchbar",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSControlParam" : {
+      "id" : "searchbar"
+    },
+    "quickGroupCount" : -1,
+    "quickSearchMode" : 1,
+    "quickSearchWidth" : 0,
+    "enableFilter" : false,
+    "enableGroup" : false,
+    "enableQuickSearch" : true,
+    "mobileSearchBar" : false
+  }, {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "PAGE.CAPTION.MAIL_MESSAGE.DISCUSS_MAIN_VIEW"
+    },
+    "caption" : "讨论",
+    "codeName" : "discuss_main_view_captionbar",
+    "controlType" : "CAPTIONBAR",
+    "name" : "captionbar",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSControlParam" : { }
+  } ],
+  "getPSDEViewCodeName" : "discuss_main_view",
+  "getPSDEViewId" : "5d825023c2e71bcf6760859a92b5e213",
+  "getPSViewLayoutPanel" : {
+    "codeName" : "layoutpanel",
+    "controlStyle" : "APPDETREEEXPVIEW",
+    "controlType" : "VIEWLAYOUTPANEL",
+    "name" : "layoutpanel",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSControlParam" : { },
+    "layoutBodyOnly" : true,
+    "layoutPanel" : true,
+    "useDefaultLayout" : true
+  },
+  "title" : "讨论",
+  "getTitlePSLanguageRes" : {
+    "lanResTag" : "PAGE.TITLE.MAIL_MESSAGE.DISCUSS_MAIN_VIEW"
+  },
+  "viewStyle" : "DEFAULT",
+  "viewType" : "DETREEEXPVIEW",
+  "enableDP" : true,
+  "enableFilter" : true,
+  "enableQuickSearch" : true,
+  "enableSearch" : true,
+  "showDataInfoBar" : true,
+  "modelid" : "f19efa06b2f5c01167feac6d3f7f07cc",
+  "modeltype" : "PSAPPDEVIEW",
+  "getPSAppDERSPaths" : [ [ {
+    "actionRSMode" : 1,
+    "codeName" : "mail_messages",
+    "dataRSMode" : 0,
+    "majorDECodeName" : "mail_thread",
+    "majorDEName" : "MAIL_THREAD",
+    "getMajorPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_thread.json"
+    },
+    "minorDECodeName" : "mail_message",
+    "minorDEName" : "MAIL_MESSAGE",
+    "getMinorPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "name" : "邮件会话-邮件消息",
+    "getParentPSAppDEField" : {
+      "name" : "RES_ID",
+      "codeName" : "res_id"
+    },
+    "rSMode" : 2
+  } ] ]
+}

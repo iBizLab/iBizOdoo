@@ -1,0 +1,68 @@
+{
+  "getAllPSPanelFields" : [ {
+    "id" : "user_name",
+    "viewFieldName" : "id"
+  } ],
+  "codeName" : "list_panel",
+  "controlType" : "PANEL",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner/PSPANELS/list_panel.json",
+  "layoutMode" : "FLEX",
+  "logicName" : "list列表",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+  },
+  "getPSLayout" : {
+    "layout" : "FLEX"
+  },
+  "getRootPSPanelItems" : [ {
+    "contentHeight" : 40.0,
+    "height" : 40.0,
+    "itemStyle" : "DEFAULT",
+    "itemType" : "CONTAINER",
+    "name" : "container1",
+    "getPSLayout" : {
+      "align" : "flex-start",
+      "dir" : "row",
+      "layout" : "FLEX",
+      "vAlign" : "center"
+    },
+    "getPSLayoutPos" : {
+      "grow" : -1,
+      "height" : 40,
+      "heightMode" : "PX",
+      "layout" : "FLEX"
+    },
+    "getPSPanelItems" : [ {
+      "caption" : "文本(动态)",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "FIELD",
+      "name" : "user_name",
+      "getPSEditor" : {
+        "editorStyle" : "PERSONNEL_INFO",
+        "editorType" : "SPAN",
+        "name" : "user_name",
+        "getPSAppCodeList" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__res_partner.json"
+        },
+        "getPSSysPFPlugin" : {
+          "pluginType" : "EDITOR_CUSTOMSTYLE",
+          "pluginCode" : "PERSONNEL_INFO",
+          "runtimeObject" : true
+        },
+        "renderMode" : "TEXT_DYNAMIC",
+        "enableLinkView" : false
+      },
+      "getPSLayoutPos" : {
+        "grow" : 1,
+        "layout" : "FLEX"
+      },
+      "viewFieldName" : "id",
+      "convertToCodeItemText" : true
+    } ]
+  } ],
+  "layoutPanel" : true,
+  "modelid" : "c31b2d763aa6068f45758e352d83b4cf",
+  "modeltype" : "PSSYSVIEWPANEL"
+}

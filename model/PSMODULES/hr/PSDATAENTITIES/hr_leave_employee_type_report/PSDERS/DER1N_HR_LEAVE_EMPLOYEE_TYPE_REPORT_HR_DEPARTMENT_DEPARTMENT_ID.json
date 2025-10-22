@@ -1,0 +1,27 @@
+{
+  "codeName" : "department",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_employee_type_report/PSDERS/DER1N_HR_LEAVE_EMPLOYEE_TYPE_REPORT_HR_DEPARTMENT_DEPARTMENT_ID.json",
+  "fKeyName" : "FB0E97652E49D4D376",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_department.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_employee_type_report.json"
+  },
+  "name" : "DER1N_HR_LEAVE_EMPLOYEE_TYPE_REPORT_HR_DEPARTMENT_DEPARTMENT_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "DEPARTMENT_ID",
+    "codeName" : "department_id"
+  },
+  "pickupDEFName" : "DEPARTMENT_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "department",
+  "enableFKey" : true
+}

@@ -1,0 +1,136 @@
+{
+  "codeName" : "cur_user_app",
+  "defaultParamName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_module_module/PSDELOGICS/cur_user_app.json",
+  "logicName" : "cur_user_app",
+  "memo" : "包含校验权限",
+  "name" : "cur_user_app",
+  "getPSDELogicNodes" : [ {
+    "codeName" : "Begin",
+    "leftPos" : 200,
+    "logicNodeType" : "BEGIN",
+    "name" : "开始",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "DEDATASET_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "Begin"
+      }
+    } ],
+    "topPos" : 200,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "DEDATASET_01",
+    "getDstPSDEDataSet" : {
+      "modelref" : true,
+      "id" : "installed_app"
+    },
+    "getDstPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "Default"
+    },
+    "getDstPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module.json"
+    },
+    "leftPos" : 256,
+    "logicNodeType" : "DEDATASET",
+    "name" : "查询安装应用",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "DEDATASET_01"
+      }
+    } ],
+    "getRetPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "installed_modules"
+    },
+    "topPos" : 330,
+    "parallelOutput" : true
+  }, {
+    "code" : "def installedModules = logic.param('installed_modules').getReal();\r\ndef accessModules = logic.param('access_modules').getReal();\r\n\r\ndef accessManager = sys.getSystemAccessManager();\r\ndef currentUser = sys.user();\r\n\r\naccessModules = installedModules?.findAll { module ->\r\n    def resCode = module?.get(\"res_code\")\r\n    resCode == null || accessManager.testSysUniRes(currentUser, resCode)\r\n} ?: []",
+    "codeName" : "RAWSFCODE_01",
+    "codeType" : "Groovy",
+    "getDstPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "installed_modules"
+    },
+    "leftPos" : 570,
+    "logicNodeType" : "RAWSFCODE",
+    "name" : "查询当前用户的授权应用",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "END_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_01"
+      }
+    } ],
+    "getRetPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "access_modules"
+    },
+    "topPos" : 330,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "END_01",
+    "leftPos" : 610,
+    "logicNodeType" : "END",
+    "name" : "结束",
+    "getReturnParam" : {
+      "modelref" : true,
+      "id" : "access_modules"
+    },
+    "returnType" : "LOGICPARAM",
+    "topPos" : 523,
+    "parallelOutput" : true
+  } ],
+  "getPSDELogicParams" : [ {
+    "codeName" : "Default",
+    "logicName" : "传入变量",
+    "name" : "传入变量",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module.json"
+    },
+    "default" : true,
+    "filterParam" : true
+  }, {
+    "codeName" : "access_modules",
+    "logicName" : "已授权应用",
+    "name" : "已授权应用",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module.json"
+    },
+    "entityPageParam" : true
+  }, {
+    "codeName" : "installed_modules",
+    "logicName" : "已安装应用",
+    "name" : "已安装应用",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module.json"
+    },
+    "entityPageParam" : true
+  } ],
+  "getStartPSDELogicNode" : {
+    "modelref" : true,
+    "id" : "Begin"
+  },
+  "enableBackend" : true,
+  "enableFront" : false
+}

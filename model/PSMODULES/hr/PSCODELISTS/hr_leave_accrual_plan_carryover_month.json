@@ -1,0 +1,69 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_plan_carryover_month",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_plan_carryover_month",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_carryover_month.json",
+  "emptyText" : "未定义",
+  "name" : "结转月",
+  "getPSCodeItems" : [ {
+    "codeName" : "jan",
+    "text" : "一月",
+    "value" : "jan"
+  }, {
+    "codeName" : "feb",
+    "text" : "二月",
+    "value" : "feb"
+  }, {
+    "codeName" : "mar",
+    "text" : "三月",
+    "value" : "mar"
+  }, {
+    "codeName" : "apr",
+    "text" : "四月",
+    "value" : "apr"
+  }, {
+    "codeName" : "may",
+    "text" : "五月",
+    "value" : "may"
+  }, {
+    "codeName" : "jun",
+    "text" : "六月",
+    "value" : "jun"
+  }, {
+    "codeName" : "jul",
+    "text" : "七月",
+    "value" : "jul"
+  }, {
+    "codeName" : "aug",
+    "text" : "八月",
+    "value" : "aug"
+  }, {
+    "codeName" : "sep",
+    "text" : "九月",
+    "value" : "sep"
+  }, {
+    "codeName" : "oct",
+    "text" : "十月",
+    "value" : "oct"
+  }, {
+    "codeName" : "nov",
+    "text" : "十一月",
+    "value" : "nov"
+  }, {
+    "codeName" : "dec",
+    "text" : "十二月",
+    "value" : "dec"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

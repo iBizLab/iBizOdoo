@@ -1,0 +1,27 @@
+{
+  "codeName" : "last_attendance",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_employee/PSDERS/DER1N_HR_EMPLOYEE_HR_ATTENDANCE_LAST_ATTENDANCE_ID.json",
+  "fKeyName" : "F5ABE92684FBED206B",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_attendance.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee.json"
+  },
+  "name" : "DER1N_HR_EMPLOYEE_HR_ATTENDANCE_LAST_ATTENDANCE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "LAST_ATTENDANCE_ID",
+    "codeName" : "last_attendance_id"
+  },
+  "pickupDEFName" : "LAST_ATTENDANCE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "last_attendance",
+  "enableFKey" : true
+}

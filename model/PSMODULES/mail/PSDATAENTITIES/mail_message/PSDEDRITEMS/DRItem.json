@@ -1,0 +1,15 @@
+{
+  "codeName" : "DRItem",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_message/PSDEDRITEMS/DRItem.json",
+  "itemType" : "CUSTOM",
+  "name" : "打开文档",
+  "getPSSysImage" : {
+    "glyph" : "xf0f6@FontAwesome",
+    "cssClass" : "fa fa-file-text-o"
+  },
+  "parentDataJO" : {
+    "srfparentdename" : "MAIL_MESSAGE",
+    "SRFPARENTTYPE" : "CUSTOM"
+  },
+  "viewCodeName" : "RedirectView"
+}

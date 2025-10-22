@@ -1,0 +1,16 @@
+```sql
+SELECT
+t1.`BOUNCE_ALIAS`,
+t1.`CATCHALL_ALIAS`,
+t1.`CREATE_DATE`,
+t1.`CREATE_UID`,
+t1.`DEFAULT_FROM`,
+t1.`ID`,
+t1.`NAME`,
+t1.`SEQUENCE`,
+t1.`WRITE_DATE`,
+t1.`WRITE_UID`
+FROM `mail_alias_domain` t1 
+
+
+```

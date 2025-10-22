@@ -1,0 +1,27 @@
+{
+  "codeName" : "hr_responsible",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_contract_history/PSDERS/DER1N_HR_CONTRACT_HISTORY_RES_USERS_HR_RESPONSIBLE_ID.json",
+  "fKeyName" : "FB08BD47D7D67BADF9",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_contract_history.json"
+  },
+  "name" : "DER1N_HR_CONTRACT_HISTORY_RES_USERS_HR_RESPONSIBLE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "HR_RESPONSIBLE_ID",
+    "codeName" : "hr_responsible_id"
+  },
+  "pickupDEFName" : "HR_RESPONSIBLE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "hr_responsible",
+  "enableFKey" : true
+}

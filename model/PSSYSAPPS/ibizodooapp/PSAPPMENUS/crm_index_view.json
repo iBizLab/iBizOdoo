@@ -1,0 +1,40 @@
+{
+  "codeName" : "crm_index_view",
+  "controlType" : "APPMENU",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPMENUS/crm_index_view.json",
+  "logicName" : "客户关系管理首页",
+  "getPSAppMenuItems" : [ {
+    "accUserMode" : 0,
+    "caption" : "销售",
+    "itemType" : "MENUITEM",
+    "name" : "sale",
+    "getPSAppMenuItems" : [ {
+      "accUserMode" : 2,
+      "caption" : "我的渠道",
+      "itemType" : "MENUITEM",
+      "name" : "crm_lead",
+      "getPSAppFunc" : {
+        "modelref" : true,
+        "id" : "my_lead"
+      },
+      "tooltip" : "我的渠道",
+      "openDefault" : true
+    } ],
+    "tooltip" : "销售"
+  }, {
+    "accUserMode" : 0,
+    "caption" : "报表",
+    "itemType" : "MENUITEM",
+    "name" : "menuitem3",
+    "tooltip" : "报表"
+  }, {
+    "accUserMode" : 0,
+    "caption" : "配置",
+    "itemType" : "MENUITEM",
+    "name" : "menuitem4",
+    "tooltip" : "配置"
+  } ],
+  "name" : "crmindexview",
+  "modelid" : "058bf1004a53e51c7f37e106e4115e08",
+  "modeltype" : "PSAPPMENU"
+}

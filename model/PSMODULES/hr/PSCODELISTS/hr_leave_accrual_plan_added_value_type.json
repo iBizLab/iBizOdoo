@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_plan_added_value_type",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_plan_added_value_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_added_value_type.json",
+  "emptyText" : "未定义",
+  "name" : "附加值类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "day",
+    "text" : "天",
+    "value" : "day"
+  }, {
+    "codeName" : "hour",
+    "text" : "小时",
+    "value" : "hour"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

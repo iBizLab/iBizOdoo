@@ -1,0 +1,45 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_level_first_month",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_level_first_month",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_first_month.json",
+  "emptyText" : "未定义",
+  "name" : "第一个月",
+  "getPSCodeItems" : [ {
+    "codeName" : "jan",
+    "text" : "一月",
+    "value" : "jan"
+  }, {
+    "codeName" : "feb",
+    "text" : "二月",
+    "value" : "feb"
+  }, {
+    "codeName" : "mar",
+    "text" : "三月",
+    "value" : "mar"
+  }, {
+    "codeName" : "apr",
+    "text" : "四月",
+    "value" : "apr"
+  }, {
+    "codeName" : "may",
+    "text" : "五月",
+    "value" : "may"
+  }, {
+    "codeName" : "jun",
+    "text" : "六月",
+    "value" : "jun"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

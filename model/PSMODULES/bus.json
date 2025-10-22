@@ -1,0 +1,12 @@
+{
+  "getAllPSDataEntities" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/bus/PSDATAENTITIES/bus_event_bus.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/bus/PSDATAENTITIES/bus_event_record.json"
+  } ],
+  "codeName" : "bus",
+  "dynaModelFilePath" : "PSMODULES/bus.json",
+  "name" : "总线"
+}

@@ -1,0 +1,33 @@
+{
+  "codeListTag" : "hr__hr_holidays_summary_employee_holiday_type",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_holidays_summary_employee_holiday_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_holidays_summary_employee_holiday_type.json",
+  "emptyText" : "未定义",
+  "name" : "选择休假类别",
+  "getPSCodeItems" : [ {
+    "codeName" : "approved",
+    "text" : "已批准",
+    "value" : "Approved"
+  }, {
+    "codeName" : "confirmed",
+    "text" : "已确认",
+    "value" : "Confirmed"
+  }, {
+    "codeName" : "both",
+    "text" : "批准和确认",
+    "value" : "both"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

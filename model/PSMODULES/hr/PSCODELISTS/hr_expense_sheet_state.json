@@ -1,0 +1,45 @@
+{
+  "codeListTag" : "hr__hr_expense_sheet_state",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_expense_sheet_state",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_expense_sheet_state.json",
+  "emptyText" : "未定义",
+  "name" : "状态",
+  "getPSCodeItems" : [ {
+    "codeName" : "draft",
+    "text" : "待提交",
+    "value" : "draft"
+  }, {
+    "codeName" : "submit",
+    "text" : "发送",
+    "value" : "submit"
+  }, {
+    "codeName" : "approve",
+    "text" : "已批准",
+    "value" : "approve"
+  }, {
+    "codeName" : "post",
+    "text" : "已过账",
+    "value" : "post"
+  }, {
+    "codeName" : "done",
+    "text" : "已完成",
+    "value" : "done"
+  }, {
+    "codeName" : "cancel",
+    "text" : "已拒绝",
+    "value" : "cancel"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

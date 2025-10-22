@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "base__res_config_settings_crm_auto_assignment_action",
+  "codeListType" : "STATIC",
+  "codeName" : "res_config_settings_crm_auto_assignment_action",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/res_config_settings_crm_auto_assignment_action.json",
+  "emptyText" : "未定义",
+  "name" : "自动分配操作",
+  "getPSCodeItems" : [ {
+    "codeName" : "manual",
+    "text" : "手动",
+    "value" : "manual"
+  }, {
+    "codeName" : "auto",
+    "text" : "重复",
+    "value" : "auto"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

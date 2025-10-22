@@ -1,0 +1,532 @@
+{
+  "aggMode" : "NONE",
+  "codeName" : "main",
+  "columnEnableFilter" : 2,
+  "columnEnableLink" : 2,
+  "controlStyle" : "ODOO_GROUP_GRID",
+  "controlType" : "GRID",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity/PSGRIDS/main.json",
+  "getFetchPSControlAction" : {
+    "modelref" : true,
+    "id" : "fetch",
+    "actionType" : "DEDATASET",
+    "name" : "fetch",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+    }
+  },
+  "groupMode" : "NONE",
+  "hookEventNames" : [ "ONLOADSUCCESS" ],
+  "logicName" : "主表格",
+  "minorSortDir" : "ASC",
+  "getMinorSortPSAppDEField" : {
+    "name" : "DATE_DEADLINE",
+    "codeName" : "date_deadline"
+  },
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+  },
+  "getPSControlLogics" : [ {
+    "eventNames" : "onLoadSuccess",
+    "logicTag" : "grid",
+    "logicType" : "SCRIPT",
+    "name" : "show_hidden",
+    "scriptCode" : "const currentGrid=view.getCtrl('GRID','grid');\r\nif(currentGrid){\r\n    currentGrid.state.rows.forEach(row=> {\r\n   row.uaColStates.uagridcolumn1.visible = row.data.active === 1;\r\n  });\r\n}"
+  } ],
+  "getPSDEGridColumns" : [ {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.MAIL_ACTIVITY.RES_NAME"
+    },
+    "caption" : "单据名称",
+    "codeName" : "res_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "res_name",
+    "excelCaption" : "单据名称",
+    "name" : "res_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "RES_NAME",
+      "codeName" : "res_name"
+    },
+    "width" : 1,
+    "widthUnit" : "STAR",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "caption" : "活动类型",
+    "codeName" : "activity_type_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "activity_type_name",
+    "excelCaption" : "活动类型",
+    "name" : "activity_type_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "ACTIVITY_TYPE_NAME",
+      "codeName" : "activity_type_name"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "caption" : "分派给",
+    "codeName" : "user_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "user_name",
+    "excelCaption" : "分派给",
+    "name" : "user_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "USER_NAME",
+      "codeName" : "user_name"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableRowEdit" : true,
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.MAIL_ACTIVITY.SUMMARY"
+    },
+    "caption" : "摘要",
+    "codeName" : "summary",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "summary",
+    "excelCaption" : "摘要",
+    "name" : "summary",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "SUMMARY",
+      "codeName" : "summary"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "caption" : "到期日期",
+    "codeName" : "deadline_day",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "deadline_day",
+    "excelCaption" : "到期日期",
+    "name" : "deadline_day",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "DEADLINE_DAY",
+      "codeName" : "deadline_day"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : false
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.MAIL_ACTIVITY.DATE_DONE"
+    },
+    "caption" : "完成日期",
+    "codeName" : "date_done",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "date_done",
+    "excelCaption" : "完成日期",
+    "hideMode" : 1,
+    "name" : "date_done",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "DATE_DONE",
+      "codeName" : "date_done"
+    },
+    "valueFormat" : "YYYY-MM-DD",
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : true,
+    "hideDefault" : true
+  }, {
+    "align" : "RIGHT",
+    "codeName" : "uagridcolumn1",
+    "columnType" : "UAGRIDCOLUMN",
+    "name" : "uagridcolumn1",
+    "noPrivDisplayMode" : 1,
+    "getPSDEUIActionGroup" : {
+      "codeName" : "activity_multi",
+      "name" : "活动管理页面界面行为组",
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+      },
+      "getPSUIActionGroupDetails" : [ {
+        "caption" : "已完成",
+        "detailType" : "DEUIACTION",
+        "name" : "u51cd25d",
+        "getPSSysImage" : {
+          "glyph" : "xf00c@FontAwesome",
+          "cssClass" : "fa fa-check"
+        },
+        "getPSUIAction" : {
+          "actionTarget" : "SINGLEDATA",
+          "caption" : "已完成",
+          "codeName" : "action_done1",
+          "fullCodeName" : "mail_activity_action_done1",
+          "memo" : "供管理视图使用",
+          "name" : "已完成",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "action_done"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+          },
+          "getPSNavigateParams" : [ {
+            "key" : "srfpartnerid",
+            "name" : "srfpartnerid",
+            "value" : "srfpartnerid",
+            "rawValue" : false
+          }, {
+            "key" : "srfuserid",
+            "name" : "srfuserid",
+            "value" : "srfuserid",
+            "rawValue" : false
+          } ],
+          "getPSSysImage" : {
+            "glyph" : "xf00c@FontAwesome",
+            "cssClass" : "fa fa-check"
+          },
+          "refreshMode" : 1,
+          "successMsg" : "活动已完成！",
+          "timeout" : 60000,
+          "uIActionMode" : "BACKEND",
+          "uIActionTag" : "action_done1",
+          "uIActionType" : "DEUIACTION",
+          "enableConfirm" : true,
+          "reloadData" : true,
+          "id" : "action_done1@mail_activity"
+        },
+        "addSeparator" : false,
+        "showCaption" : true,
+        "showIcon" : true
+      }, {
+        "caption" : "取消",
+        "detailType" : "DEUIACTION",
+        "name" : "uc181c38",
+        "getPSSysImage" : {
+          "glyph" : "xf00d@FontAwesome",
+          "cssClass" : "fa fa-remove"
+        },
+        "getPSUIAction" : {
+          "actionTarget" : "SINGLEKEY",
+          "caption" : "取消",
+          "codeName" : "del_activity",
+          "confirmMsg" : "确认取消活动？",
+          "fullCodeName" : "mail_activity_del_activity",
+          "name" : "取消活动",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "remove"
+          },
+          "getPSAppDEUILogic" : {
+            "modelref" : true,
+            "id" : "refresh_activity"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+          },
+          "getPSSysImage" : {
+            "glyph" : "xf00d@FontAwesome",
+            "cssClass" : "fa fa-remove"
+          },
+          "successMsg" : "取消成功",
+          "timeout" : 60000,
+          "tooltip" : "取消",
+          "uIActionMode" : "BACKEND",
+          "uIActionTag" : "del_activity",
+          "uIActionType" : "DEUIACTION",
+          "uILogicAttachMode" : "AFTER",
+          "enableConfirm" : true,
+          "id" : "del_activity@mail_activity"
+        },
+        "tooltip" : "取消",
+        "addSeparator" : false,
+        "showCaption" : true,
+        "showIcon" : true
+      }, {
+        "caption" : "延后7天",
+        "detailType" : "DEUIACTION",
+        "name" : "u239dd7c",
+        "getPSSysImage" : {
+          "glyph" : "xf1f6@FontAwesome",
+          "cssClass" : "fa fa-bell-slash"
+        },
+        "getPSUIAction" : {
+          "actionTarget" : "SINGLEDATA",
+          "caption" : "延后7天",
+          "codeName" : "action_snooze",
+          "fullCodeName" : "mail_activity_action_snooze",
+          "name" : "延后7天",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "action_snooze"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+          },
+          "getPSSysImage" : {
+            "glyph" : "xf1f6@FontAwesome",
+            "cssClass" : "fa fa-bell-slash"
+          },
+          "refreshMode" : 1,
+          "timeout" : 60000,
+          "uIActionMode" : "BACKEND",
+          "uIActionTag" : "action_snooze",
+          "uIActionType" : "DEUIACTION",
+          "enableConfirm" : true,
+          "reloadData" : true,
+          "id" : "action_snooze@mail_activity"
+        },
+        "addSeparator" : false,
+        "showCaption" : true,
+        "showIcon" : true
+      } ],
+      "uniqueTag" : "mail_activity__activity_multi"
+    },
+    "width" : 280,
+    "widthUnit" : "PX",
+    "enableSort" : false
+  } ],
+  "getPSDEGridDataItems" : [ {
+    "dataType" : 25,
+    "name" : "res_name",
+    "getPSAppDEField" : {
+      "name" : "RES_NAME",
+      "codeName" : "res_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "activity_type_name",
+    "getPSAppDEField" : {
+      "name" : "ACTIVITY_TYPE_NAME",
+      "codeName" : "activity_type_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "user_name",
+    "getPSAppDEField" : {
+      "name" : "USER_NAME",
+      "codeName" : "user_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "summary",
+    "getPSAppDEField" : {
+      "name" : "SUMMARY",
+      "codeName" : "summary"
+    }
+  }, {
+    "dataType" : 9,
+    "name" : "deadline_day",
+    "getPSAppDEField" : {
+      "name" : "DEADLINE_DAY",
+      "codeName" : "deadline_day"
+    },
+    "scriptCode" : "switch (true) {\r\n    case data.deadline_day === 0:\r\n        return '<span class=\"warning-rawitem-grid\">今天</span>';\r\n    case data.deadline_day < 0:\r\n        return '<span class=\"danger-rawitem-grid\"> '+Math.abs(data.deadline_day)+' 天前</span>';\r\n    case data.deadline_day === 1:\r\n        return '<span class=\"success-rawitem-grid\">明天</span>';\r\n    case data.deadline_day > 1:\r\n        return '<span class=\"success-rawitem-grid\"> '+'在 '+data.deadline_day+' 天内</span>';\r\n    default:\r\n        return data.deadline_day;\r\n}",
+    "customCode" : true
+  }, {
+    "format" : "YYYY-MM-DD",
+    "dataType" : 5,
+    "name" : "date_done",
+    "getPSAppDEField" : {
+      "name" : "DATE_DONE",
+      "codeName" : "date_done"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "activity_type_id",
+    "getPSAppDEField" : {
+      "name" : "ACTIVITY_TYPE_ID",
+      "codeName" : "activity_type_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "res_model",
+    "getPSAppDEField" : {
+      "name" : "RES_MODEL",
+      "codeName" : "res_model"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfdataaccaction",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "dataAccessAction" : true
+  }, {
+    "dataType" : 25,
+    "name" : "recommended_activity_type_id",
+    "getPSAppDEField" : {
+      "name" : "RECOMMENDED_ACTIVITY_TYPE_ID",
+      "codeName" : "recommended_activity_type_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "request_partner_id",
+    "getPSAppDEField" : {
+      "name" : "REQUEST_PARTNER_ID",
+      "codeName" : "request_partner_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "user_id",
+    "getPSAppDEField" : {
+      "name" : "USER_ID",
+      "codeName" : "user_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "previous_activity_type_id",
+    "getPSAppDEField" : {
+      "name" : "PREVIOUS_ACTIVITY_TYPE_ID",
+      "codeName" : "previous_activity_type_id"
+    }
+  } ],
+  "getPSDEGridEditItems" : [ {
+    "caption" : "分派给",
+    "codeName" : "user_name",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "user_name",
+    "getPSAppDEField" : {
+      "name" : "USER_NAME",
+      "codeName" : "user_name"
+    },
+    "getPSEditor" : {
+      "editorParams" : {
+        "URL" : "/res_users/fetch_simple",
+        "ISSHOWTAB" : "false",
+        "USERMAP" : "{\"id\":\"id\",\"name\":\"name\",\"avatar\":\"avatar\"}",
+        "userauthentity" : "ibizodooapp.res_users",
+        "AC" : "TRUE",
+        "USERMETHOD" : "post",
+        "TRIGGER" : "TRUE",
+        "PICKUPVIEW" : "FALSE"
+      },
+      "editorStyle" : "PERSONEL_SELECT_USER_ALL",
+      "editorType" : "PICKEREX_TRIGGER",
+      "name" : "user_name",
+      "getPSAppDEACMode" : {
+        "modelref" : true,
+        "id" : "Default"
+      },
+      "getPSAppDEDataSet" : {
+        "modelref" : true,
+        "id" : "fetch_default"
+      },
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_users.json"
+      },
+      "getPSEditorItems" : [ { } ],
+      "getPSSysPFPlugin" : {
+        "pluginType" : "EDITOR_CUSTOMSTYLE",
+        "pluginCode" : "PERSON_SELECT",
+        "runtimeObject" : true
+      },
+      "valueItemName" : "user_id",
+      "enableAC" : true,
+      "enablePickupView" : false,
+      "forceSelection" : true,
+      "showTrigger" : true,
+      "singleSelect" : true
+    },
+    "valueItemName" : "user_id",
+    "allowEmpty" : false
+  }, {
+    "caption" : "标识",
+    "codeName" : "srfkey",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "getPSEditor" : {
+      "editorType" : "HIDDEN",
+      "name" : "srfkey"
+    },
+    "allowEmpty" : true
+  }, {
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "user_id",
+    "getPSAppDEField" : {
+      "name" : "USER_ID",
+      "codeName" : "user_id"
+    },
+    "getPSEditor" : {
+      "editorType" : "HIDDEN"
+    },
+    "allowEmpty" : true
+  } ],
+  "getPSSysPFPlugin" : {
+    "pluginType" : "GRID_RENDER",
+    "pluginCode" : "ODOO_GROUP_GRID",
+    "runtimeObject" : true,
+    "pluginParams" : {
+      "replaceglobal" : "true"
+    }
+  },
+  "pagingMode" : 1,
+  "pagingSize" : 20,
+  "getRemovePSControlAction" : {
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+    }
+  },
+  "sortMode" : "REMOTE",
+  "hasWFDataItems" : false,
+  "enableColFilter" : false,
+  "enableCustomized" : true,
+  "enableGroup" : false,
+  "enablePagingBar" : true,
+  "enableRowEdit" : false,
+  "enableRowEditOrder" : false,
+  "enableRowNew" : false,
+  "forceFit" : false,
+  "hideHeader" : false,
+  "noSort" : false,
+  "singleSelect" : false,
+  "modelid" : "4d6fd3ad3c1dc022ed06afc97e025b3a",
+  "modeltype" : "PSDEGRID"
+}

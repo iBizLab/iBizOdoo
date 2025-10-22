@@ -1,0 +1,37 @@
+{
+  "codeListTag" : "hr__hr_leave_generate_multi_wizard_allocation_mode",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_generate_multi_wizard_allocation_mode",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_generate_multi_wizard_allocation_mode.json",
+  "emptyText" : "未定义",
+  "name" : "分配模式",
+  "getPSCodeItems" : [ {
+    "codeName" : "employee",
+    "text" : "按员工",
+    "value" : "employee"
+  }, {
+    "codeName" : "company",
+    "text" : "由公司",
+    "value" : "company"
+  }, {
+    "codeName" : "department",
+    "text" : "部门",
+    "value" : "department"
+  }, {
+    "codeName" : "category",
+    "text" : "按员工标签",
+    "value" : "category"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

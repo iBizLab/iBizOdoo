@@ -1,0 +1,27 @@
+{
+  "codeName" : "allocation",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_report/PSDERS/DER1N_HR_LEAVE_REPORT_HR_LEAVE_ALLOCATION_ALLOCATION_ID.json",
+  "fKeyName" : "FC13E3D0DD4BB497B1",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_allocation.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_report.json"
+  },
+  "name" : "DER1N_HR_LEAVE_REPORT_HR_LEAVE_ALLOCATION_ALLOCATION_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "ALLOCATION_ID",
+    "codeName" : "allocation_id"
+  },
+  "pickupDEFName" : "ALLOCATION_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "allocation",
+  "enableFKey" : true
+}

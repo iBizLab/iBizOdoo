@@ -1,0 +1,19 @@
+{
+  "codeListTag" : "base__res_config_settings_auth_signup_uninvited",
+  "codeListType" : "STATIC",
+  "codeName" : "base__res_config_settings_auth_signup_uninvited",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__res_config_settings_auth_signup_uninvited.json",
+  "emptyText" : "未定义",
+  "name" : "客户帐号",
+  "getPSCodeItems" : [ {
+    "codeName" : "b2b",
+    "text" : "应邀",
+    "value" : "b2b"
+  }, {
+    "codeName" : "b2c",
+    "text" : "自由注册",
+    "value" : "b2c"
+  } ],
+  "enableCache" : true
+}

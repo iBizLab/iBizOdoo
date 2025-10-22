@@ -1,0 +1,37 @@
+{
+  "codeListTag" : "mail__principal_type",
+  "codeListType" : "STATIC",
+  "codeName" : "principal_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/mail/PSCODELISTS/principal_type.json",
+  "emptyText" : "未定义",
+  "name" : "评论主体类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "work_item",
+    "text" : "工作项",
+    "value" : "work_item"
+  }, {
+    "codeName" : "idea",
+    "text" : "需求",
+    "value" : "idea"
+  }, {
+    "codeName" : "test_case",
+    "text" : "用例",
+    "value" : "test_case"
+  } ],
+  "getPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message.json"
+  },
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

@@ -1,0 +1,439 @@
+{
+  "getAllPSCodeLists" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_invoice_warn.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_bank_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_fiscalyear_last_month.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_trust.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_crm_auto_assignment_action.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_lead_enrich_auto.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_invoice_edi_format.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users_odoobot_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_peppol_eas.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_terms_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_product_volume_volume_in_cubic_feet.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_autopost_bills.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_tenor_content_filter.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_attendance_barcode_source.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_layout_background.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_attendance_overtime_validation.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_model.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_module_module_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_model_fields_ttype.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users_calendar_default_privacy.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users_deletion_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_binding_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_module_module_module_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_invoice_sending_method.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_usage.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_annual_inventory_month.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_tax_calculation_rounding_method.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_module_module_license.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_crm_auto_assignment_interval_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/attendance_show.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_sale_onboarding_payment_method.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_mail_server_smtp_authentication.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_mail_post_method.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_bank_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_attendance_kiosk_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_po_double_validation.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_quick_edit_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_company_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users_settings_calendar_default_privacy.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_activity_date_deadline_range_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/module_hr_presence.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_activity_user_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_payment_onboarding_payment_method.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_attachment_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_evaluation_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_lang_direction.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users_settings_channel_notifications.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users_identitycheck_auth_method.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_po_lock.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_country_name_position.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_default_invoice_policy.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_mail_server_smtp_encryption.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_sms_method.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_account_price_include.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_tz.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_update_boolean_value.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_product_weight_in_lbs.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_model_fields_on_delete.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_country.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_device_device_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_sale_warn.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_auth_signup_uninvited.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_sequence_implementation.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_lang_week_start.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_model_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_default_purchase_method.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_purchase_warn.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_config_settings_default_picking_policy.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_picking_warn.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_model_fields_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_users_notification_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_partner_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_device_log_device_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_cron_interval_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_currency_position.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/ir_actions_server_update_m2m_operation.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/res_company_font.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSCODELISTS/module_categroy.json"
+  } ],
+  "getAllPSDataEntities" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/avatar_mixin.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/change_password_own.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/change_password_user.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/change_password_wizard.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/change_production_qty.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/hub_app.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/image_mixin.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_actions_server.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_attachment.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_config_parameter.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_cron.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_cron_progress.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_cron_trigger.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_default.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_mail_server.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_model.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_model_access.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_model_constraint.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_model_data.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_model_fields.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_model_fields_selection.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_model_inherit.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_model_relation.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_category.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module_dependency.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_module_module_exclusion.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_rule.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_sequence.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_bank.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_company.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_config.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_config_settings.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_country.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_country_group.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_country_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_currency.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_currency_rate.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_device.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_device_log.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_groups.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_groups_implied_rel.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_groups_users_rel.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_lang.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner_autocomplete_sync.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner_bank.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner_category.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner_industry.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner_title.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_apikeys.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_apikeys_description.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_apikeys_show.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_deletion.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_identitycheck.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_log.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_settings.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_settings_volumes.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/rule_group_rel.json"
+  } ],
+  "codeName" : "base",
+  "dynaModelFilePath" : "PSMODULES/base.json",
+  "name" : "基础模块"
+}

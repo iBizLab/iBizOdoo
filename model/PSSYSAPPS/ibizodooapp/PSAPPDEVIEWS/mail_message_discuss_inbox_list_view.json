@@ -1,0 +1,1370 @@
+{
+  "accUserMode" : 2,
+  "getCapPSLanguageRes" : {
+    "lanResTag" : "PAGE.CAPTION.MAIL_MESSAGE.DISCUSS_INBOX_LIST_VIEW"
+  },
+  "caption" : "收件箱",
+  "codeName" : "mail_message_discuss_inbox_list_view",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_inbox_list_view.json",
+  "mDCtrlActiveMode" : 1,
+  "name" : "mail_messagediscuss_inbox_list_view",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+  },
+  "getPSAppModule" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPMODULES/discuss.json"
+  },
+  "getPSAppViewEngines" : [ {
+    "engineCat" : "VIEW",
+    "engineType" : "ListView",
+    "name" : "engine"
+  } ],
+  "getPSAppViewLogics" : [ {
+    "logicTrigger" : "CUSTOM",
+    "logicType" : "APPUILOGIC",
+    "name" : "newdata",
+    "getPSAppUILogic" : {
+      "actionAfterWizard" : "DEFAULT",
+      "logicType" : "PREDEFINED",
+      "name" : "新建数据",
+      "getNewDataPSAppView" : {
+        "getRefPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_edit_view.json",
+          "viewType" : "DEEDITVIEW"
+        }
+      },
+      "getPSAppUILogicRefViews" : [ {
+        "getRefPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_edit_view.json",
+          "viewType" : "DEEDITVIEW"
+        }
+      } ],
+      "viewLogicType" : "APP_NEWDATA",
+      "batchAddOnly" : false,
+      "enableBatchAdd" : false,
+      "enableWizardAdd" : false
+    }
+  }, {
+    "logicTrigger" : "CUSTOM",
+    "logicType" : "APPUILOGIC",
+    "name" : "opendata",
+    "getPSAppUILogic" : {
+      "logicType" : "PREDEFINED",
+      "name" : "打开数据",
+      "getOpenDataPSAppView" : {
+        "getRefPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_edit_view.json",
+          "viewType" : "DEEDITVIEW"
+        }
+      },
+      "getPSAppUILogicRefViews" : [ {
+        "getRefPSAppView" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_edit_view.json",
+          "viewType" : "DEEDITVIEW"
+        }
+      } ],
+      "viewLogicType" : "APP_OPENDATA",
+      "editMode" : true
+    }
+  } ],
+  "getPSAppViewNavParams" : [ {
+    "key" : "n_needaction_eq",
+    "name" : "n_needaction_eq",
+    "value" : "1",
+    "rawValue" : true
+  } ],
+  "getPSAppViewRefs" : [ {
+    "name" : "NEWDATA",
+    "realTitle" : "消息编辑视图",
+    "getRealTitlePSLanguageRes" : {
+      "lanResTag" : "PAGE.TITLE.MAIL_MESSAGE.EDITVIEW"
+    },
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_edit_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  }, {
+    "name" : "EDITDATA",
+    "realTitle" : "消息编辑视图",
+    "getRealTitlePSLanguageRes" : {
+      "lanResTag" : "PAGE.TITLE.MAIL_MESSAGE.EDITVIEW"
+    },
+    "getRefPSAppView" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_edit_view.json",
+      "viewType" : "DEEDITVIEW"
+    }
+  } ],
+  "getPSControls" : [ {
+    "codeName" : "discuss_list",
+    "controlType" : "LIST",
+    "getCreatePSControlAction" : {
+      "modelref" : true,
+      "id" : "create",
+      "actionName" : "Create",
+      "actionType" : "DEACTION",
+      "dataAccessAction" : "CREATE",
+      "name" : "create",
+      "getPSAppDEMethod" : {
+        "modelref" : true,
+        "id" : "create"
+      },
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+      }
+    },
+    "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message/PSLISTS/discuss_list.json",
+    "getFetchPSControlAction" : {
+      "modelref" : true,
+      "id" : "fetch",
+      "actionType" : "DEDATASET",
+      "name" : "fetch",
+      "getPSAppDEMethod" : {
+        "modelref" : true,
+        "id" : "fetch_cur_user"
+      },
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+      }
+    },
+    "getGetPSControlAction" : {
+      "modelref" : true,
+      "id" : "load",
+      "actionName" : "Get",
+      "actionType" : "DEACTION",
+      "dataAccessAction" : "READ",
+      "name" : "load",
+      "getPSAppDEMethod" : {
+        "modelref" : true,
+        "id" : "get"
+      },
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+      }
+    },
+    "groupMode" : "AUTO",
+    "getGroupPSAppDEField" : {
+      "name" : "CREATE_DATE",
+      "codeName" : "create_date"
+    },
+    "groupStyle" : "STYLE2",
+    "getItemPSLayoutPanel" : {
+      "getAllPSPanelFields" : [ {
+        "id" : "user_name",
+        "viewFieldName" : "CREATE_UID"
+      }, {
+        "id" : "time",
+        "viewFieldName" : "CREATE_DATE"
+      }, {
+        "id" : "field_text_dynamic3",
+        "hidden" : true,
+        "viewFieldName" : "ID"
+      }, {
+        "id" : "pid",
+        "hidden" : true,
+        "viewFieldName" : "PID"
+      }, {
+        "id" : "id",
+        "hidden" : true,
+        "viewFieldName" : "ID"
+      }, {
+        "id" : "field_text_dynamic2",
+        "viewFieldName" : "BODY"
+      }, {
+        "id" : "parent_author_id",
+        "viewFieldName" : "PARENT_AUTHOR_ID"
+      }, {
+        "id" : "parent_body",
+        "viewFieldName" : "PARENT_BODY"
+      } ],
+      "codeName" : "channel_message_layout",
+      "controlType" : "PANEL",
+      "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message/PSPANELS/channel_message_layout.json",
+      "hookEventNames" : [ "ONCLICK" ],
+      "layoutMode" : "TABLE_24COL",
+      "logicName" : "频道消息显示面板",
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+      },
+      "getPSControlLogics" : [ {
+        "eventNames" : "onClick",
+        "itemName" : "BUTTON_CALLUILOGIC1",
+        "logicTag" : "list_itempanel",
+        "logicType" : "SCRIPT",
+        "name" : "edit_invoke",
+        "scriptCode" : "// 获取目标面板项\r\nconst panelItem = view.layoutPanel.findPanelItemByName(\"message_panel\");\r\nif (panelItem) {\r\n  // 切换可见状态\r\n  panelItem.state.visible =true;\r\n}"
+      }, {
+        "eventNames" : "onClick",
+        "itemName" : "BUTTON_CALLUILOGIC2",
+        "logicTag" : "list_itempanel",
+        "logicType" : "SCRIPT",
+        "name" : "reply_invoke",
+        "scriptCode" : "// 获取目标面板项\r\nconst panelItem = view.layoutPanel.findPanelItemByName(\"message_panel\");\r\nif (panelItem) {\r\n  // 切换可见状态\r\n  panelItem.state.visible =true;\r\n}"
+      } ],
+      "getPSControlParam" : { },
+      "getPSLayout" : {
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "getRootPSPanelItems" : [ {
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "page_container",
+        "getPSLayout" : {
+          "dir" : "column",
+          "layout" : "FLEX"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "容器",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "container",
+          "getPSLayout" : {
+            "align" : "space-between",
+            "dir" : "row",
+            "layout" : "FLEX"
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX"
+          },
+          "getPSPanelItems" : [ {
+            "caption" : "容器",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container1",
+            "getPSLayout" : {
+              "align" : "flex-start",
+              "dir" : "row",
+              "layout" : "FLEX",
+              "vAlign" : "center"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "getPSPanelItems" : [ {
+              "caption" : "文本(动态)",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "user_name",
+              "getPSEditor" : {
+                "editorStyle" : "PERSONNEL_INFO",
+                "editorType" : "SPAN",
+                "name" : "user_name",
+                "getPSAppCodeList" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/SysOperator.json"
+                },
+                "getPSSysPFPlugin" : {
+                  "pluginType" : "EDITOR_CUSTOMSTYLE",
+                  "pluginCode" : "PERSONNEL_INFO",
+                  "runtimeObject" : true
+                },
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "CREATE_UID",
+              "convertToCodeItemText" : true
+            }, {
+              "caption" : "文本(动态)",
+              "cssStyle" : "line-height: var(--ibiz-height-control-default);",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "time",
+              "getPSEditor" : {
+                "editorType" : "SPAN",
+                "name" : "time",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX",
+                "spacingLeft" : "OUTERMEDIUM"
+              },
+              "getPSSysCss" : {
+                "cssName" : "transition-time"
+              },
+              "viewFieldName" : "CREATE_DATE"
+            }, {
+              "caption" : "文本(动态)",
+              "itemType" : "FIELD",
+              "name" : "field_text_dynamic3",
+              "getPSEditor" : {
+                "editorType" : "HIDDEN",
+                "name" : "field_text_dynamic3",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "ID",
+              "hidden" : true
+            }, {
+              "caption" : "文本(动态)",
+              "itemType" : "FIELD",
+              "name" : "pid",
+              "getPSEditor" : {
+                "editorType" : "HIDDEN",
+                "name" : "pid",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "PID",
+              "hidden" : true
+            }, {
+              "caption" : "文本(动态)",
+              "itemType" : "FIELD",
+              "name" : "id",
+              "getPSEditor" : {
+                "editorType" : "HIDDEN",
+                "name" : "id",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "ID",
+              "hidden" : true
+            } ]
+          }, {
+            "caption" : "容器",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container2",
+            "getPSControlLogics" : [ {
+              "itemName" : "CONTAINER2",
+              "logicTag" : "list_itempanel",
+              "logicType" : "SCRIPT",
+              "name" : "readOnly",
+              "scriptCode" : "context.srfreadonly != true",
+              "triggerType" : "ITEMVISIBLE"
+            } ],
+            "getPSLayout" : {
+              "dir" : "row-reverse",
+              "layout" : "FLEX"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "getPSPanelItemGroupLogics" : [ {
+              "groupOP" : "AND",
+              "logicCat" : "PANELVISIBLE",
+              "logicType" : "GROUP",
+              "getPSPanelItemLogics" : [ {
+                "condOp" : "NOTEQ",
+                "dstModelField" : "FIELD_TEXT_DYNAMIC2",
+                "logicType" : "SINGLE",
+                "name" : "逻辑项",
+                "value" : "<p><del>该评论已删除</del></p>"
+              } ],
+              "relatedItemNames" : [ "field_text_dynamic2" ],
+              "notMode" : false
+            } ],
+            "getPSPanelItems" : [ {
+              "actionGroupExtractMode" : "ITEMS",
+              "itemStyle" : "STYLE2",
+              "itemType" : "BUTTONLIST",
+              "name" : "buttonlist",
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "getPSSysImage" : {
+                "glyph" : "xf142@FontAwesome",
+                "cssClass" : "fa fa-ellipsis-v"
+              },
+              "getPSUIActionGroup" : {
+                "codeName" : "Auto59229723",
+                "name" : "频道消息更多操作",
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+                },
+                "getPSUIActionGroupDetails" : [ {
+                  "caption" : "取消置顶",
+                  "detailType" : "DEUIACTION",
+                  "name" : "u4dba5bd",
+                  "getPSSysImage" : {
+                    "glyph" : "xf08d@FontAwesome",
+                    "cssClass" : "fa fa-thumb-tack"
+                  },
+                  "getPSUIAction" : {
+                    "actionTarget" : "SINGLEKEY",
+                    "caption" : "取消置顶",
+                    "codeName" : "unpin",
+                    "confirmMsg" : "是否取消置顶该消息",
+                    "fullCodeName" : "mail_message_unpin",
+                    "name" : "取消置顶",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "unpin"
+                    },
+                    "getPSAppDEUILogic" : {
+                      "modelref" : true,
+                      "id" : "refresh_comment"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+                    },
+                    "getPSSysImage" : {
+                      "glyph" : "xf08d@FontAwesome",
+                      "cssClass" : "fa fa-thumb-tack"
+                    },
+                    "timeout" : 60000,
+                    "uIActionMode" : "BACKEND",
+                    "uIActionTag" : "unpin",
+                    "uIActionType" : "DEUIACTION",
+                    "uILogicAttachMode" : "AFTER",
+                    "enableConfirm" : true,
+                    "id" : "unpin@mail_message"
+                  },
+                  "visibleScriptCode" : "data.pinned_at!=null",
+                  "addSeparator" : false,
+                  "showCaption" : true,
+                  "showIcon" : true
+                }, {
+                  "caption" : "置顶",
+                  "detailType" : "DEUIACTION",
+                  "name" : "uc963833",
+                  "getPSSysImage" : {
+                    "glyph" : "xf08d@FontAwesome",
+                    "cssClass" : "fa fa-thumb-tack"
+                  },
+                  "getPSUIAction" : {
+                    "actionTarget" : "SINGLEKEY",
+                    "caption" : "置顶",
+                    "codeName" : "pin",
+                    "confirmMsg" : "是否置顶该消息？",
+                    "fullCodeName" : "mail_message_pin",
+                    "name" : "置顶消息",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "pin"
+                    },
+                    "getPSAppDEUILogic" : {
+                      "modelref" : true,
+                      "id" : "refresh_comment"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+                    },
+                    "getPSSysImage" : {
+                      "glyph" : "xf08d@FontAwesome",
+                      "cssClass" : "fa fa-thumb-tack"
+                    },
+                    "timeout" : 60000,
+                    "uIActionMode" : "BACKEND",
+                    "uIActionTag" : "pin",
+                    "uIActionType" : "DEUIACTION",
+                    "uILogicAttachMode" : "AFTER",
+                    "enableConfirm" : true,
+                    "id" : "pin@mail_message"
+                  },
+                  "visibleScriptCode" : "data.pinned_at==null",
+                  "addSeparator" : false,
+                  "showCaption" : true,
+                  "showIcon" : true
+                }, {
+                  "caption" : "收藏",
+                  "detailType" : "DEUIACTION",
+                  "name" : "uc99fbe9",
+                  "getPSSysImage" : {
+                    "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M9.54013,6.48742551 L8,3.36677551 L6.45987,6.48742551 L3.01604,6.98784551 L5.50802,9.41692551 L4.91975,12.8468255 L8,11.2274255 L11.08025,12.8468255 L10.49195,9.41692551 L12.98395,6.98784551 L9.54013,6.48742551 Z M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"currentColor\" fill-rule=\"nonzero\"></path>\n</svg>"
+                  },
+                  "getPSUIAction" : {
+                    "actionTarget" : "SINGLEKEY",
+                    "caption" : "收藏",
+                    "codeName" : "add_favorite",
+                    "fullCodeName" : "mail_message_add_favorite",
+                    "name" : "收藏",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "add_favorite"
+                    },
+                    "getPSAppDEUILogic" : {
+                      "modelref" : true,
+                      "id" : "refresh_comment"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+                    },
+                    "getPSSysImage" : {
+                      "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M9.54013,6.48742551 L8,3.36677551 L6.45987,6.48742551 L3.01604,6.98784551 L5.50802,9.41692551 L4.91975,12.8468255 L8,11.2274255 L11.08025,12.8468255 L10.49195,9.41692551 L12.98395,6.98784551 L9.54013,6.48742551 Z M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"currentColor\" fill-rule=\"nonzero\"></path>\n</svg>"
+                    },
+                    "refreshMode" : 1,
+                    "timeout" : 60000,
+                    "tooltip" : "收藏",
+                    "uIActionMode" : "BACKEND",
+                    "uIActionTag" : "add_favorite",
+                    "uIActionType" : "DEUIACTION",
+                    "uILogicAttachMode" : "AFTER",
+                    "enableConfirm" : true,
+                    "reloadData" : true,
+                    "id" : "add_favorite@mail_message"
+                  },
+                  "tooltip" : "收藏",
+                  "visibleScriptCode" : "data.is_favorite!=1",
+                  "addSeparator" : false,
+                  "showCaption" : true,
+                  "showIcon" : true
+                }, {
+                  "caption" : "取消收藏",
+                  "detailType" : "DEUIACTION",
+                  "name" : "u9de05ba",
+                  "getPSSysImage" : {
+                    "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"#FFB31A\" fill-rule=\"nonzero\"></path>\n</svg>"
+                  },
+                  "getPSUIAction" : {
+                    "actionTarget" : "SINGLEKEY",
+                    "caption" : "取消收藏",
+                    "codeName" : "remove_favorite",
+                    "fullCodeName" : "mail_message_remove_favorite",
+                    "name" : "取消收藏",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "remove_favorite"
+                    },
+                    "getPSAppDEUILogic" : {
+                      "modelref" : true,
+                      "id" : "refresh_comment"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+                    },
+                    "getPSSysImage" : {
+                      "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"#FFB31A\" fill-rule=\"nonzero\"></path>\n</svg>"
+                    },
+                    "refreshMode" : 1,
+                    "timeout" : 60000,
+                    "tooltip" : "取消收藏",
+                    "uIActionMode" : "BACKEND",
+                    "uIActionTag" : "remove_favorite",
+                    "uIActionType" : "DEUIACTION",
+                    "uILogicAttachMode" : "AFTER",
+                    "enableConfirm" : true,
+                    "reloadData" : true,
+                    "id" : "remove_favorite@mail_message"
+                  },
+                  "tooltip" : "取消收藏",
+                  "visibleScriptCode" : "data.is_favorite==1",
+                  "addSeparator" : false,
+                  "showCaption" : true,
+                  "showIcon" : true
+                } ],
+                "uniqueTag" : "mail_message__Auto59229723"
+              }
+            }, {
+              "actionType" : "UIACTION",
+              "buttonStyle" : "STYLE2",
+              "caption" : "删除",
+              "itemStyle" : "STYLE2",
+              "itemType" : "BUTTON",
+              "name" : "button_calluilogic",
+              "getPSAppViewUIAction" : {
+                "modelref" : true,
+                "id" : "list_itempanel_button_calluilogic"
+              },
+              "getPSControlLogics" : [ {
+                "itemName" : "BUTTON_CALLUILOGIC",
+                "logicTag" : "list_itempanel",
+                "logicType" : "SCRIPT",
+                "name" : "trash",
+                "scriptCode" : "data.create_uid === context.srfuserid",
+                "triggerType" : "ITEMVISIBLE"
+              } ],
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "getPSSysImage" : {
+                "glyph" : "xf1f8@FontAwesome",
+                "cssClass" : "fa fa-trash"
+              },
+              "getPSUIAction" : {
+                "actionTarget" : "SINGLEKEY",
+                "caption" : "删除评论",
+                "codeName" : "del_comment",
+                "confirmMsg" : "确认删除该评论？",
+                "fullCodeName" : "mail_message_del_comment",
+                "name" : "删除评论",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "delete"
+                },
+                "getPSAppDEUILogic" : {
+                  "modelref" : true,
+                  "id" : "refresh_comment"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+                },
+                "successMsg" : "删除成功",
+                "timeout" : 60000,
+                "uIActionMode" : "BACKEND",
+                "uIActionTag" : "del_comment",
+                "uIActionType" : "DEUIACTION",
+                "uILogicAttachMode" : "AFTER",
+                "enableConfirm" : true,
+                "id" : "del_comment@mail_message"
+              },
+              "tooltip" : "删除",
+              "uIActionTarget" : "SINGLEKEY"
+            }, {
+              "actionType" : "UIACTION",
+              "buttonStyle" : "STYLE2",
+              "caption" : "编辑",
+              "itemStyle" : "STYLE2",
+              "itemType" : "BUTTON",
+              "name" : "button_calluilogic1",
+              "getPSAppViewUIAction" : {
+                "modelref" : true,
+                "id" : "list_itempanel_button_calluilogic1"
+              },
+              "getPSControlLogics" : [ {
+                "itemName" : "BUTTON_CALLUILOGIC1",
+                "logicTag" : "list_itempanel",
+                "logicType" : "SCRIPT",
+                "name" : "logic",
+                "scriptCode" : "data.create_uid === context.srfuserid",
+                "triggerType" : "ITEMVISIBLE"
+              } ],
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "getPSSysImage" : {
+                "glyph" : "xf044@FontAwesome",
+                "cssClass" : "fa fa-edit"
+              },
+              "getPSUIAction" : {
+                "actionTarget" : "SINGLEDATA",
+                "caption" : "编辑",
+                "codeName" : "panel_channel_message_layout_button_calluilogic1_click",
+                "frontProcessType" : "OTHER",
+                "fullCodeName" : "mail_message_panel_channel_message_layout_button_calluilogic1_click",
+                "name" : "编辑",
+                "getPSAppDEUILogic" : {
+                  "modelref" : true,
+                  "id" : "edit_comment"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+                },
+                "uIActionMode" : "FRONT",
+                "uIActionTag" : "panel_channel_message_layout_button_calluilogic1_click",
+                "uIActionType" : "DEUIACTION",
+                "uILogicAttachMode" : "REPLACE",
+                "uILogicType" : "DELOGIC",
+                "id" : "panel_channel_message_layout_button_calluilogic1_click@mail_message"
+              },
+              "tooltip" : "编辑",
+              "uIActionTarget" : "SINGLEDATA"
+            }, {
+              "actionType" : "UIACTION",
+              "buttonStyle" : "STYLE2",
+              "caption" : "回复",
+              "itemStyle" : "STYLE2",
+              "itemType" : "BUTTON",
+              "name" : "button_calluilogic2",
+              "getPSAppViewUIAction" : {
+                "modelref" : true,
+                "id" : "list_itempanel_button_calluilogic2"
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "getPSSysImage" : {
+                "glyph" : "xf0e5@FontAwesome",
+                "cssClass" : "fa fa-comment-o"
+              },
+              "getPSUIAction" : {
+                "actionTarget" : "SINGLEDATA",
+                "caption" : "回复",
+                "codeName" : "panel_channel_message_layout_button_calluilogic2_click",
+                "frontProcessType" : "OTHER",
+                "fullCodeName" : "mail_message_panel_channel_message_layout_button_calluilogic2_click",
+                "name" : "回复",
+                "getPSAppDEUILogic" : {
+                  "modelref" : true,
+                  "id" : "reply_comment"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+                },
+                "uIActionMode" : "FRONT",
+                "uIActionTag" : "panel_channel_message_layout_button_calluilogic2_click",
+                "uIActionType" : "DEUIACTION",
+                "uILogicAttachMode" : "REPLACE",
+                "uILogicType" : "DELOGIC",
+                "id" : "panel_channel_message_layout_button_calluilogic2_click@mail_message"
+              },
+              "tooltip" : "回复",
+              "uIActionTarget" : "SINGLEDATA"
+            } ]
+          } ]
+        }, {
+          "caption" : "容器",
+          "cssStyle" : "padding-left: 36px;",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "container4",
+          "getPSLayout" : {
+            "layout" : "FLEX"
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX"
+          },
+          "getPSPanelItems" : [ {
+            "caption" : "文本(动态)",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "FIELD",
+            "name" : "field_text_dynamic2",
+            "getPSEditor" : {
+              "contentType" : "HTML",
+              "editorParams" : {
+                "contenttype" : "HTML",
+                "LINKVIEWID" : "plmweb.recent_custom_redirect_view",
+                "SCRIPTCODE" : "data.content?.replace(/@{[^,]*,\"name\":\"(.*?)\"}/g,\"<span class='comment-tag'>@$1</span>\").replace(/@{[^,]*,name=(.*?)}/g,\"<span class='comment-tag'>@$1</span>\").replaceAll(/\\#\\{(\\\".+?\\\":\\\".+?\\\")(,\\\"icon\\\":\\\"((.|[\\t\\r\\f\\n\\s])+?)\\\")*\\}/g, (x, value, icon) => {const item = JSON.parse(\"{\" + value + \"}\"); if (icon) { icon = icon.slice(8).slice(1, -1).trim(); } return controller.parseCommentTag({icon, ...item});}).replaceAll(/\\{\\\"\\emoji\\\":\\\"(.+?)\\\"\\}/g,(x, emoji) => {const tempVal = decodeURIComponent(atob(emoji)); return `<span class=\"emoji-tag\">${tempVal}</span>`})",
+                "TRANSLATEOBJ" : "{\"&reg\":\"&amp;reg\"}"
+              },
+              "editorStyle" : "MAIL_MESSAGE_ITEM",
+              "editorType" : "RAW",
+              "name" : "field_text_dynamic2",
+              "getPSSysPFPlugin" : {
+                "pluginType" : "EDITOR_CUSTOMSTYLE",
+                "pluginCode" : "MAIL_MESSAGE_ITEM",
+                "runtimeObject" : true
+              },
+              "predefinedType" : "FIELD_TEXT_DYNAMIC"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "viewFieldName" : "BODY"
+          }, {
+            "caption" : "容器",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container3",
+            "getPSLayout" : {
+              "align" : "flex-start",
+              "dir" : "row",
+              "layout" : "FLEX",
+              "vAlign" : "center"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX",
+              "spacingBottom" : "OUTERSMALL",
+              "spacingLeft" : "OUTERSMALL",
+              "spacingRight" : "OUTERSMALL",
+              "spacingTop" : "OUTERSMALL"
+            },
+            "getPSPanelItemGroupLogics" : [ {
+              "groupOP" : "AND",
+              "logicCat" : "PANELVISIBLE",
+              "logicType" : "GROUP",
+              "getPSPanelItemLogics" : [ {
+                "condOp" : "ISNOTNULL",
+                "dstModelField" : "PID",
+                "logicType" : "SINGLE",
+                "name" : "逻辑项"
+              } ],
+              "relatedItemNames" : [ "pid" ],
+              "notMode" : false
+            } ],
+            "getPSPanelItems" : [ {
+              "caption" : "文本(动态)",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "parent_author_id",
+              "getPSEditor" : {
+                "editorType" : "SPAN",
+                "name" : "parent_author_id",
+                "getPSAppCodeList" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/SysOperator.json"
+                },
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX",
+                "shrink" : 0
+              },
+              "viewFieldName" : "PARENT_AUTHOR_ID",
+              "convertToCodeItemText" : true
+            }, {
+              "caption" : "标签",
+              "contentType" : "RAW",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "RAWITEM",
+              "name" : "static_label",
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX",
+                "shrink" : 0
+              },
+              "getPSRawItem" : {
+                "caption" : "：",
+                "contentType" : "RAW",
+                "name" : "static_label",
+                "predefinedType" : "STATIC_LABEL",
+                "renderMode" : "PARAGRAPH"
+              },
+              "rawContent" : "：",
+              "showCaption" : true
+            }, {
+              "caption" : "文本(动态)",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "parent_body",
+              "getPSEditor" : {
+                "contentType" : "HTML",
+                "editorParams" : {
+                  "contenttype" : "HTML",
+                  "SCRIPTCODE" : "data.content?.replace(/@{[^,]*,\"name\":\"(.*?)\"}/g,\"<span class='comment-tag'>@$1</span>\").replace(/@{[^,]*,name=(.*?)}/g,\"<span class='comment-tag'>@$1</span>\").replaceAll(/\\#\\{(\\\".+?\\\":\\\".+?\\\")(,\\\"icon\\\":\\\"((.|[\\t\\r\\f\\n\\s])+?)\\\")*\\}/g, (x, value, icon) => {const item = JSON.parse(\"{\" + value + \"}\"); if (icon) { icon = icon.slice(8).slice(1, -1).trim(); } return controller.parseCommentTag({icon, ...item});}).replaceAll(/\\{\\\"\\emoji\\\":\\\"(.+?)\\\"\\}/g,(x, emoji) => {const tempVal = decodeURIComponent(atob(emoji)); return `<span class=\"emoji-tag\">${tempVal}</span>`})",
+                  "TRANSLATEOBJ" : "{\"&reg\":\"&amp;reg\"}"
+                },
+                "editorStyle" : "MAIL_MESSAGE_ITEM",
+                "editorType" : "RAW",
+                "name" : "parent_body",
+                "getPSSysPFPlugin" : {
+                  "pluginType" : "EDITOR_CUSTOMSTYLE",
+                  "pluginCode" : "MAIL_MESSAGE_ITEM",
+                  "runtimeObject" : true
+                },
+                "predefinedType" : "FIELD_TEXT_DYNAMIC"
+              },
+              "getPSLayoutPos" : {
+                "grow" : 1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "PARENT_BODY"
+            } ],
+            "getPSSysCss" : {
+              "cssName" : "comment-replay"
+            }
+          } ],
+          "getPSSysCss" : {
+            "cssName" : "channel-message"
+          }
+        } ]
+      } ],
+      "name" : "list_itempanel",
+      "modelid" : "74ed72c8341b10877698f684ea0848e6",
+      "modeltype" : "PSSYSVIEWPANEL"
+    },
+    "logicName" : "discuss_list",
+    "minorSortDir" : "DESC",
+    "getMinorSortPSAppDEField" : {
+      "name" : "CREATE_DATE",
+      "codeName" : "create_date"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSControlHandler" : {
+      "getPSHandlerActions" : [ {
+        "actionName" : "Get",
+        "actionType" : "DEACTION",
+        "dataAccessAction" : "READ",
+        "name" : "load",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "get"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      }, {
+        "actionName" : "Create",
+        "actionType" : "DEACTION",
+        "dataAccessAction" : "CREATE",
+        "name" : "create",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "create"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      }, {
+        "actionName" : "Update",
+        "actionType" : "DEACTION",
+        "dataAccessAction" : "UPDATE",
+        "name" : "update",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "update"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      }, {
+        "actionName" : "Remove",
+        "actionType" : "DEACTION",
+        "dataAccessAction" : "DELETE",
+        "name" : "remove",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "remove"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      }, {
+        "actionType" : "DEDATASET",
+        "name" : "fetch",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "fetch_cur_user"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      } ],
+      "userDRAction" : "READ",
+      "enableDEFieldPrivilege" : false,
+      "id" : "列表控件处理器"
+    },
+    "getPSControlParam" : {
+      "autoLoad" : true,
+      "showBusyIndicator" : true,
+      "id" : "LIST"
+    },
+    "getPSDEListDataItems" : [ {
+      "dataType" : 21,
+      "name" : "body",
+      "getPSAppDEField" : {
+        "name" : "BODY",
+        "codeName" : "body"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "parent_author_id",
+      "getPSAppDEField" : {
+        "name" : "PARENT_AUTHOR_ID",
+        "codeName" : "parent_author_id"
+      }
+    }, {
+      "dataType" : 5,
+      "format" : "YYYY-MM-DD HH:mm:ss",
+      "name" : "create_date",
+      "getPSAppDEField" : {
+        "name" : "CREATE_DATE",
+        "codeName" : "create_date"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "pid",
+      "getPSAppDEField" : {
+        "name" : "PARENT_ID",
+        "codeName" : "parent_id"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "id",
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      }
+    }, {
+      "dataType" : 21,
+      "name" : "parent_body",
+      "getPSAppDEField" : {
+        "name" : "PARENT_BODY",
+        "codeName" : "parent_body"
+      }
+    }, {
+      "dataType" : 25,
+      "getFrontPSCodeList" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/SysOperator.json"
+      },
+      "name" : "create_uid",
+      "getPSAppDEField" : {
+        "name" : "CREATE_UID",
+        "codeName" : "create_uid"
+      }
+    }, {
+      "dataType" : 25,
+      "getFrontPSCodeList" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__mail_message_message_type.json"
+      },
+      "name" : "message_type",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_TYPE",
+        "codeName" : "message_type"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "srfkey",
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "srfmajortext",
+      "getPSAppDEField" : {
+        "name" : "RECORD_NAME",
+        "codeName" : "record_name"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "parent_id",
+      "getPSAppDEField" : {
+        "name" : "PARENT_ID",
+        "codeName" : "parent_id"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "record_company_id",
+      "getPSAppDEField" : {
+        "name" : "RECORD_COMPANY_ID",
+        "codeName" : "record_company_id"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "subtype_id",
+      "getPSAppDEField" : {
+        "name" : "SUBTYPE_ID",
+        "codeName" : "subtype_id"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "record_alias_domain_id",
+      "getPSAppDEField" : {
+        "name" : "RECORD_ALIAS_DOMAIN_ID",
+        "codeName" : "record_alias_domain_id"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "mail_activity_type_id",
+      "getPSAppDEField" : {
+        "name" : "MAIL_ACTIVITY_TYPE_ID",
+        "codeName" : "mail_activity_type_id"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "author_guest_id",
+      "getPSAppDEField" : {
+        "name" : "AUTHOR_GUEST_ID",
+        "codeName" : "author_guest_id"
+      }
+    }, {
+      "dataType" : 25,
+      "name" : "author_id",
+      "getPSAppDEField" : {
+        "name" : "AUTHOR_ID",
+        "codeName" : "author_id"
+      }
+    } ],
+    "pagingSize" : 1000,
+    "getRemovePSControlAction" : {
+      "modelref" : true,
+      "id" : "remove",
+      "actionName" : "Remove",
+      "actionType" : "DEACTION",
+      "dataAccessAction" : "DELETE",
+      "name" : "remove",
+      "getPSAppDEMethod" : {
+        "modelref" : true,
+        "id" : "remove"
+      },
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+      }
+    },
+    "getUpdatePSControlAction" : {
+      "modelref" : true,
+      "id" : "update",
+      "actionName" : "Update",
+      "actionType" : "DEACTION",
+      "dataAccessAction" : "UPDATE",
+      "name" : "update",
+      "getPSAppDEMethod" : {
+        "modelref" : true,
+        "id" : "update"
+      },
+      "getPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+      }
+    },
+    "hasWFDataItems" : false,
+    "enableGroup" : true,
+    "enableRowEdit" : false,
+    "enableRowEditGroup" : false,
+    "enableRowEditOrder" : false,
+    "enableRowNew" : false,
+    "noSort" : false,
+    "showHeader" : true,
+    "singleSelect" : true,
+    "name" : "list",
+    "modelid" : "01415b5d8d8aa9dca3c4d1aba05a2659",
+    "modeltype" : "PSDELIST"
+  }, {
+    "codeName" : "default",
+    "controlType" : "SEARCHFORM",
+    "defaultLabelWidth" : 130,
+    "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message/PSSEARCHFORMS/default.json",
+    "logicName" : "默认搜索表单",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSControlHandler" : {
+      "getPSHandlerActions" : [ {
+        "actionType" : "FILTERACTION",
+        "name" : "load",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "FilterGet"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      }, {
+        "actionType" : "FILTERACTION",
+        "name" : "loaddraft",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "FilterGetDraft"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      }, {
+        "actionType" : "FILTERACTION",
+        "name" : "search",
+        "getPSAppDEMethod" : {
+          "modelref" : true,
+          "id" : "FilterSearch"
+        },
+        "getPSAppDataEntity" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+        }
+      } ],
+      "enableDEFieldPrivilege" : false,
+      "id" : "搜索表单处理器"
+    },
+    "getPSControlParam" : {
+      "autoLoad" : true,
+      "showBusyIndicator" : true,
+      "id" : "SEARCHFORM"
+    },
+    "getPSDEFormItems" : [ {
+      "id" : "n_body_like",
+      "dataType" : 21,
+      "getPSAppDEField" : {
+        "name" : "BODY",
+        "codeName" : "body"
+      }
+    } ],
+    "getPSDEFormPages" : [ {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "CONTROL.DEFORM.MAIL_MESSAGE.DEFAULT.FORMPAGE.FORMPAGE1"
+      },
+      "caption" : "常规条件",
+      "codeName" : "formpage1",
+      "detailStyle" : "DEFAULT",
+      "detailType" : "FORMPAGE",
+      "name" : "formpage1",
+      "getPSDEFormDetails" : [ {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "CONTROL.DEFSFITEM.MAIL_MESSAGE.N_BODY_LIKE"
+        },
+        "caption" : "内容(%)",
+        "codeName" : "n_body_like",
+        "dataType" : 21,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "NONE",
+        "labelWidth" : 0,
+        "name" : "n_body_like",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "BODY",
+          "codeName" : "body"
+        },
+        "getPSEditor" : {
+          "editorType" : "TEXTBOX",
+          "name" : "n_body_like",
+          "placeHolder" : "搜索"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true
+      } ],
+      "getPSLayout" : {
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "infoGroupMode" : false
+    } ],
+    "getPSLayout" : {
+      "childColMD" : 24,
+      "columnCount" : 24,
+      "layout" : "TABLE_24COL"
+    },
+    "searchButtonStyle" : "DEFAULT",
+    "tabHeaderPos" : "TOP",
+    "enableAdvanceSearch" : false,
+    "enableAutoSearch" : false,
+    "enableFilterSave" : false,
+    "noTabHeader" : true,
+    "name" : "searchform",
+    "modelid" : "438ca85e1ff6f7dddbc7607a06f3e91d",
+    "modeltype" : "PSDEFORM_SEARCHFORM"
+  }, {
+    "controlType" : "SEARCHBAR",
+    "name" : "searchbar",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSControlParam" : {
+      "id" : "searchbar"
+    },
+    "quickGroupCount" : -1,
+    "quickSearchMode" : 1,
+    "quickSearchWidth" : 0,
+    "enableFilter" : false,
+    "enableGroup" : false,
+    "enableQuickSearch" : true,
+    "mobileSearchBar" : false
+  }, {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "PAGE.CAPTION.MAIL_MESSAGE.DISCUSS_INBOX_LIST_VIEW"
+    },
+    "caption" : "收件箱",
+    "codeName" : "discuss_inbox_list_view_captionbar",
+    "controlType" : "CAPTIONBAR",
+    "name" : "captionbar",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSControlParam" : { },
+    "getPSSysImage" : {
+      "glyph" : "xf01c@FontAwesome",
+      "cssClass" : "fa fa-inbox"
+    }
+  } ],
+  "getPSDEViewCodeName" : "discuss_inbox_list_view",
+  "getPSDEViewId" : "0c313407700ddd811391b2ebd8c41574",
+  "getPSSysImage" : {
+    "glyph" : "xf01c@FontAwesome",
+    "cssClass" : "fa fa-inbox"
+  },
+  "getPSViewLayoutPanel" : {
+    "codeName" : "layoutpanel",
+    "controlStyle" : "APPDELISTVIEW",
+    "controlType" : "VIEWLAYOUTPANEL",
+    "name" : "layoutpanel",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "getPSControlParam" : { },
+    "layoutBodyOnly" : true,
+    "layoutPanel" : true,
+    "useDefaultLayout" : true
+  },
+  "title" : "收件箱",
+  "getTitlePSLanguageRes" : {
+    "lanResTag" : "PAGE.TITLE.MAIL_MESSAGE.DISCUSS_INBOX_LIST_VIEW"
+  },
+  "viewStyle" : "DEFAULT",
+  "viewType" : "DELISTVIEW",
+  "xDataControlName" : "list",
+  "enableDP" : true,
+  "enableFilter" : true,
+  "enableQuickSearch" : true,
+  "enableSearch" : true,
+  "modelid" : "e8f33a116352138f95ff558bfbd6baa9",
+  "modeltype" : "PSAPPDEVIEW",
+  "getPSAppDERSPaths" : [ [ {
+    "actionRSMode" : 1,
+    "codeName" : "mail_messages",
+    "dataRSMode" : 0,
+    "majorDECodeName" : "mail_thread",
+    "majorDEName" : "MAIL_THREAD",
+    "getMajorPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_thread.json"
+    },
+    "minorDECodeName" : "mail_message",
+    "minorDEName" : "MAIL_MESSAGE",
+    "getMinorPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+    },
+    "name" : "邮件会话-邮件消息",
+    "getParentPSAppDEField" : {
+      "name" : "RES_ID",
+      "codeName" : "res_id"
+    },
+    "rSMode" : 2
+  } ] ]
+}

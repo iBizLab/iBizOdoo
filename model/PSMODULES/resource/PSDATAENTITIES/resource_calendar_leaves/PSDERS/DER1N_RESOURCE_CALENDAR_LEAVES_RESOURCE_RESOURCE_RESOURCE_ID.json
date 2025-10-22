@@ -1,0 +1,31 @@
+{
+  "codeName" : "resource",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/resource/PSDATAENTITIES/resource_calendar_leaves/PSDERS/DER1N_RESOURCE_CALENDAR_LEAVES_RESOURCE_RESOURCE_RESOURCE_ID.json",
+  "fKeyName" : "FC9811664B5DF53180",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/resource/PSDATAENTITIES/resource_resource.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/resource/PSDATAENTITIES/resource_calendar_leaves.json"
+  },
+  "name" : "DER1N_RESOURCE_CALENDAR_LEAVES_RESOURCE_RESOURCE_RESOURCE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "RESOURCE_ID",
+    "codeName" : "resource_id"
+  },
+  "getPSPickupTextDEField" : {
+    "name" : "RESOURCE_NAME",
+    "codeName" : "resource_name"
+  },
+  "pickupDEFName" : "RESOURCE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "resource",
+  "enableFKey" : true
+}

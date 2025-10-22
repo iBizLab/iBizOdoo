@@ -1,0 +1,27 @@
+{
+  "codeName" : "holiday_status",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_generate_multi_wizard/PSDERS/DER1N_HR_LEAVE_GENERATE_MULTI_WIZARD_HR_LEAVE_TYPE_HOLIDAY_STATUS_ID.json",
+  "fKeyName" : "F8DA02939E00A98272",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_type.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_generate_multi_wizard.json"
+  },
+  "name" : "DER1N_HR_LEAVE_GENERATE_MULTI_WIZARD_HR_LEAVE_TYPE_HOLIDAY_STATUS_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "HOLIDAY_STATUS_ID",
+    "codeName" : "holiday_status_id"
+  },
+  "pickupDEFName" : "HOLIDAY_STATUS_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "holiday_status",
+  "enableFKey" : true
+}

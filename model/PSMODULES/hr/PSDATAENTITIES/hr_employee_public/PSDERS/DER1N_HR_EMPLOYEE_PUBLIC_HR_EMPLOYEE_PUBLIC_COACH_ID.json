@@ -1,0 +1,27 @@
+{
+  "codeName" : "coach",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_public/PSDERS/DER1N_HR_EMPLOYEE_PUBLIC_HR_EMPLOYEE_PUBLIC_COACH_ID.json",
+  "fKeyName" : "FAA1CCFBAF40D63C34",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_public.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_public.json"
+  },
+  "name" : "DER1N_HR_EMPLOYEE_PUBLIC_HR_EMPLOYEE_PUBLIC_COACH_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "COACH_ID",
+    "codeName" : "coach_id"
+  },
+  "pickupDEFName" : "COACH_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "coach",
+  "enableFKey" : true
+}

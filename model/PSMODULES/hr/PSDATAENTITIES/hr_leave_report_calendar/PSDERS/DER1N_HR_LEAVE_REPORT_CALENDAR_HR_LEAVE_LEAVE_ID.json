@@ -1,0 +1,27 @@
+{
+  "codeName" : "leave",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_report_calendar/PSDERS/DER1N_HR_LEAVE_REPORT_CALENDAR_HR_LEAVE_LEAVE_ID.json",
+  "fKeyName" : "F6C30D066851032829",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_report_calendar.json"
+  },
+  "name" : "DER1N_HR_LEAVE_REPORT_CALENDAR_HR_LEAVE_LEAVE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "LEAVE_ID",
+    "codeName" : "leave_id"
+  },
+  "pickupDEFName" : "LEAVE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "leave",
+  "enableFKey" : true
+}

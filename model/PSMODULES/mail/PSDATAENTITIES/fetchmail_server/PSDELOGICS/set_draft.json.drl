@@ -1,0 +1,47 @@
+package cn.ibizlab.ibizodoo.mail.logic.fetchmail_serverlogic.set_draft;
+        import java.util.Map;
+        import java.util.HashMap;
+        import com.alibaba.fastjson.JSONObject;
+        import org.springframework.util.StringUtils;
+        import org.springframework.util.ObjectUtils;
+        import cn.ibizlab.ibizodoo.util.errors.BadRequestAlertException;
+                global cn.ibizlab.ibizodoo.core.mail.domain.fetchmail_server fetchmail_serverset_draftdefault;
+                    global cn.ibizlab.ibizodoo.core.mail.service.Ifetchmail_serverService fetchmail_serverservice;
+        global cn.ibizlab.ibizodoo.core.mail.service.Ifetchmail_serverService iBzSysFetchmail_serverDefaultService;
+        global cn.ibizlab.ibizodoo.util.security.AuthenticationUser curuser;
+
+
+    no-loop
+
+            //逻辑处理节点[开始]
+            rule "begin"
+            ruleflow-group "fetchmail_serverset_draftbegin"
+            when
+            then
+            end
+
+            //逻辑处理节点[变更状态]
+            rule "prepareparam_01"
+            ruleflow-group "fetchmail_serverset_draftprepareparam_01"
+            when
+            then
+                            fetchmail_serverset_draftdefault.set("state","draft");
+                        update(fetchmail_serverset_draftdefault);//更新fact中变量值
+            end
+
+            //逻辑处理节点[更新状态]
+            rule "deaction_01"
+            ruleflow-group "fetchmail_serverset_draftdeaction_01"
+            when
+            then
+                        fetchmail_serverservice.update(fetchmail_serverset_draftdefault);
+                        update(fetchmail_serverset_draftdefault);//更新fact中变量值
+            end
+
+            //逻辑处理节点[结束]
+            rule "end_01"
+            ruleflow-group "fetchmail_serverset_draftend_01"
+            when
+            then
+                        update(fetchmail_serverset_draftdefault);//更新fact中变量值
+            end

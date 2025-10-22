@@ -1,0 +1,35 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias/PSSEARCHBARS/search_bar.json",
+  "groupMode" : "AND",
+  "logicName" : "EMail别名搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias.json"
+  },
+  "getPSSearchBarGroups" : [ {
+    "caption" : "有效",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"alias_name\",\"condop\":\"ISNOTNULL\",\"value\":\"\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "alias_name_isnotnull",
+    "width" : 0.0,
+    "addSeparator" : true,
+    "defaultGroup" : true
+  } ],
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : true,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "a8d8e1a375620a1402e9db49cac8f73a",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

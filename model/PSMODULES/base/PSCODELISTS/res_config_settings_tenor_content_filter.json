@@ -1,0 +1,37 @@
+{
+  "codeListTag" : "base__res_config_settings_tenor_content_filter",
+  "codeListType" : "STATIC",
+  "codeName" : "res_config_settings_tenor_content_filter",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/res_config_settings_tenor_content_filter.json",
+  "emptyText" : "未定义",
+  "name" : "Tenor 内容过滤器",
+  "getPSCodeItems" : [ {
+    "codeName" : "high",
+    "text" : "高",
+    "value" : "high"
+  }, {
+    "codeName" : "medium",
+    "text" : "中等",
+    "value" : "medium"
+  }, {
+    "codeName" : "low",
+    "text" : "低",
+    "value" : "low"
+  }, {
+    "codeName" : "off",
+    "text" : "关闭",
+    "value" : "off"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

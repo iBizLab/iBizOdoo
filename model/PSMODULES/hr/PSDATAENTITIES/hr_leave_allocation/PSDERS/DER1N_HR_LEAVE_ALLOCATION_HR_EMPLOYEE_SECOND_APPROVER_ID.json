@@ -1,0 +1,27 @@
+{
+  "codeName" : "second_approver",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_allocation/PSDERS/DER1N_HR_LEAVE_ALLOCATION_HR_EMPLOYEE_SECOND_APPROVER_ID.json",
+  "fKeyName" : "FD87E7EE37BE0C3DD0",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_allocation.json"
+  },
+  "name" : "DER1N_HR_LEAVE_ALLOCATION_HR_EMPLOYEE_SECOND_APPROVER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "SECOND_APPROVER_ID",
+    "codeName" : "second_approver_id"
+  },
+  "pickupDEFName" : "SECOND_APPROVER_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "second_approver",
+  "enableFKey" : true
+}

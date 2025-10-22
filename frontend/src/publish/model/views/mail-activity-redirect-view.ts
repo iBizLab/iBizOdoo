@@ -1,0 +1,141 @@
+export default {
+  getDataAppDEActionId: 'get',
+  redirectAppViewRefs: [
+    {
+      realTitle: '活动编辑视图',
+      refAppViewId: 'ibizodooapp.mail_activity_edit_view',
+      name: 'MAIL_ACTIVITY:EDITVIEW',
+      id: 'mail_activity:editview',
+    },
+    {
+      realTitle: '活动编辑视图',
+      refAppViewId: 'ibizodooapp.mail_activity_edit_view',
+      name: 'EDITVIEW',
+      id: 'editview',
+    },
+  ],
+  typeAppDEFieldId: 'res_model',
+  enableCustomGetDataAction: true,
+  enableWorkflow: true,
+  funcViewMode: 'REDIRECTVIEW',
+  deviewCodeName: 'redirect_view',
+  deviewId: 'aa2a0147be05226e741c90da46aa192e',
+  accUserMode: 2,
+  capLanguageRes: {
+    lanResTag: 'DE.LNAME.MAIL_ACTIVITY',
+  },
+  caption: '活动',
+  codeName: 'mail_activity_redirect_view',
+  appDataEntityId: 'ibizodooapp.mail_activity',
+  appViewRefs: [
+    {
+      navigateContexts: [
+        {
+          key: 'CRM_LEAD',
+          value: 'res_id',
+          name: 'CRM_LEAD',
+          id: 'crm_lead',
+        },
+      ],
+      realTitle: '线索/商机编辑视图',
+      refAppViewId: 'ibizodooapp.crm_lead_main_view',
+      name: 'CRM_LEAD',
+      id: 'crm_lead',
+    },
+    {
+      navigateContexts: [
+        {
+          key: 'HR_DEPARTMENT',
+          value: 'res_id',
+          name: 'HR_DEPARTMENT',
+          id: 'hr_department',
+        },
+      ],
+      realTitle: '部门',
+      refAppViewId: 'ibizodooapp.hr_department_main_view',
+      name: 'HR_DEPARTMENT',
+      id: 'hr_department',
+    },
+    {
+      navigateContexts: [
+        {
+          key: 'RES_PARTNER',
+          value: 'res_id',
+          name: 'RES_PARTNER',
+          id: 'res_partner',
+        },
+      ],
+      realTitle: '联系人',
+      refAppViewId: 'ibizodooapp.res_partner_main_view',
+      name: 'RES_PARTNER',
+      id: 'res_partner',
+    },
+    {
+      navigateContexts: [
+        {
+          key: 'RES_COMPANY',
+          value: 'res_id',
+          name: 'RES_COMPANY',
+          id: 'res_company',
+        },
+      ],
+      realTitle: '公司',
+      refAppViewId: 'ibizodooapp.res_company_main_view',
+      name: 'RES_COMPANY',
+      id: 'res_company',
+    },
+    {
+      navigateContexts: [
+        {
+          key: 'HR_EMPLOYEE',
+          value: 'res_id',
+          name: 'HR_EMPLOYEE',
+          id: 'hr_employee',
+        },
+      ],
+      realOpenMode: 'INDEXVIEWTAB',
+      realTitle: '员工编辑视图',
+      realTitleLanguageRes: {
+        lanResTag: 'PAGE.TITLE.HR_EMPLOYEE.MAIN_VIEW',
+      },
+      refAppViewId: 'ibizodooapp.hr_employee_main_view',
+      name: 'HR_EMPLOYEE',
+      id: 'hr_employee',
+    },
+  ],
+  controls: [
+    {
+      capLanguageRes: {
+        lanResTag: 'DE.LNAME.MAIL_ACTIVITY',
+      },
+      caption: '活动',
+      codeName: 'redirect_view_captionbar',
+      controlType: 'CAPTIONBAR',
+      appDataEntityId: 'ibizodooapp.mail_activity',
+      controlParam: {},
+      name: 'captionbar',
+      id: 'redirect_view_captionbar',
+    },
+  ],
+  viewLayoutPanel: {
+    layoutBodyOnly: true,
+    useDefaultLayout: true,
+    layoutPanel: true,
+    codeName: 'layoutpanel',
+    controlStyle: 'APPDEREDIRECTVIEW',
+    controlType: 'VIEWLAYOUTPANEL',
+    appDataEntityId: 'ibizodooapp.mail_activity',
+    controlParam: {},
+    id: 'layoutpanel',
+  },
+  title: '活动实体数据重定向视图',
+  viewStyle: 'DEFAULT',
+  viewType: 'DEREDIRECTVIEW',
+  enableDP: true,
+  redirectView: true,
+  showCaptionBar: true,
+  modelId: '2eefd1ecd077322045dddb3ef3398b53',
+  modelType: 'PSAPPDEVIEW',
+  name: 'mail_activityredirect_view',
+  id: 'ibizodooapp.mail_activity_redirect_view',
+};

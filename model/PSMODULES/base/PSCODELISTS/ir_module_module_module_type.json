@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "base__ir_module_module_module_type",
+  "codeListType" : "STATIC",
+  "codeName" : "ir_module_module_module_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/ir_module_module_module_type.json",
+  "emptyText" : "未定义",
+  "name" : "模块类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "official",
+    "text" : "官方应用程序",
+    "value" : "official"
+  }, {
+    "codeName" : "industries",
+    "text" : "行业",
+    "value" : "industries"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

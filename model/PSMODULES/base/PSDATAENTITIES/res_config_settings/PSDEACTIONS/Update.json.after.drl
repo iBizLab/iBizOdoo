@@ -1,0 +1,13 @@
+global cn.ibizlab.ibizodoo.core.base.service.Ires_config_settingsService  resConfigSettingsService;
+global cn.ibizlab.ibizodoo.core.base.domain.res_config_settings et;
+
+    no-loop
+
+    rule "res_config_settingsset_values"
+    ruleflow-group "aaa21f98ff3dd0859b6674fcc4c586e9"
+    when
+    then
+    cn.ibizlab.ibizodoo.core.base.domain.res_config_settings actionLogicDE =new cn.ibizlab.ibizodoo.core.base.domain.res_config_settings();
+    et.copyTo(actionLogicDE,true);
+    resConfigSettingsService.set_values(actionLogicDE);
+    end

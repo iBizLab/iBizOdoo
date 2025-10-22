@@ -1,0 +1,14 @@
+{
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_skill_level/PSDEUSERROLES/hr_skill_level_employee.json",
+  "name" : "hr_skill_level_employee",
+  "getPSDEUserRoleOPPrivs" : [ {
+    "dataAccessAction" : "READ",
+    "name" : "READ",
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "READ"
+    }
+  } ],
+  "roleTag" : "hr_skill_level_employee",
+  "userDRAction" : "READ"
+}

@@ -1,0 +1,57 @@
+{
+  "codeListTag" : "mail__mail_mail_failure_type",
+  "codeListType" : "STATIC",
+  "codeName" : "mail_mail_failure_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/mail/PSCODELISTS/mail_mail_failure_type.json",
+  "emptyText" : "未定义",
+  "name" : "失败类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "unknown",
+    "text" : "未知错误",
+    "value" : "unknown"
+  }, {
+    "codeName" : "mail_email_invalid",
+    "text" : "无效的EMail地址",
+    "value" : "mail_email_invalid"
+  }, {
+    "codeName" : "mail_email_missing",
+    "text" : "缺少电子邮件",
+    "value" : "mail_email_missing"
+  }, {
+    "codeName" : "mail_from_invalid",
+    "text" : "来自地址无效",
+    "value" : "mail_from_invalid"
+  }, {
+    "codeName" : "mail_from_missing",
+    "text" : "地址丢失",
+    "value" : "mail_from_missing"
+  }, {
+    "codeName" : "mail_smtp",
+    "text" : "连接失败(发件服务器问题)",
+    "value" : "mail_smtp"
+  }, {
+    "codeName" : "mail_bl",
+    "text" : "黑名单地址",
+    "value" : "mail_bl"
+  }, {
+    "codeName" : "mail_optout",
+    "text" : "选择退出",
+    "value" : "mail_optout"
+  }, {
+    "codeName" : "mail_dup",
+    "text" : "复制电子邮件",
+    "value" : "mail_dup"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

@@ -1,0 +1,27 @@
+{
+  "codeName" : "wizard",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_split/PSDERS/DER1N_HR_EXPENSE_SPLIT_HR_EXPENSE_SPLIT_WIZARD_WIZARD_ID.json",
+  "fKeyName" : "F4CAC2EC15F2ED7DE0",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_split_wizard.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_split.json"
+  },
+  "name" : "DER1N_HR_EXPENSE_SPLIT_HR_EXPENSE_SPLIT_WIZARD_WIZARD_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "WIZARD_ID",
+    "codeName" : "wizard_id"
+  },
+  "pickupDEFName" : "WIZARD_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "wizard",
+  "enableFKey" : true
+}

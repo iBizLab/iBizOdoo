@@ -1,0 +1,27 @@
+{
+  "codeName" : "category",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_allocation_generate_multi_wizard/PSDERS/DER1N_HR_LEAVE_ALLOCATION_GENERATE_MULTI_WIZARD_HR_EMPLOYEE_CATEGORY_CATEGORY_ID.json",
+  "fKeyName" : "FC8436248A50A01D0F",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_category.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_allocation_generate_multi_wizard.json"
+  },
+  "name" : "DER1N_HR_LEAVE_ALLOCATION_GENERATE_MULTI_WIZARD_HR_EMPLOYEE_CATEGORY_CATEGORY_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "CATEGORY_ID",
+    "codeName" : "category_id"
+  },
+  "pickupDEFName" : "CATEGORY_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "category",
+  "enableFKey" : true
+}

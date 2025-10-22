@@ -1,0 +1,33 @@
+{
+  "codeListTag" : "hr__hr_leave_employee_type_report_holiday_status",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_employee_type_report_holiday_status",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_employee_type_report_holiday_status.json",
+  "emptyText" : "未定义",
+  "name" : "假期状况",
+  "getPSCodeItems" : [ {
+    "codeName" : "taken",
+    "text" : "花费",
+    "value" : "taken"
+  }, {
+    "codeName" : "left",
+    "text" : "左",
+    "value" : "left"
+  }, {
+    "codeName" : "planned",
+    "text" : "已安排",
+    "value" : "planned"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

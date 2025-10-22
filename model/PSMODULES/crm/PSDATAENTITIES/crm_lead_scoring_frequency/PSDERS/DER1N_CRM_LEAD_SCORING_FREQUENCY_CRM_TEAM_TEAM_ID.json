@@ -1,0 +1,27 @@
+{
+  "codeName" : "team",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead_scoring_frequency/PSDERS/DER1N_CRM_LEAD_SCORING_FREQUENCY_CRM_TEAM_TEAM_ID.json",
+  "fKeyName" : "F6F8EEFD3063E996D9",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead_scoring_frequency.json"
+  },
+  "name" : "DER1N_CRM_LEAD_SCORING_FREQUENCY_CRM_TEAM_TEAM_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "TEAM_ID",
+    "codeName" : "team_id"
+  },
+  "pickupDEFName" : "TEAM_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "team",
+  "enableFKey" : true
+}

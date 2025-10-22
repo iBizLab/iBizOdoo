@@ -1,0 +1,53 @@
+{
+  "getAllPSPanelFields" : [ {
+    "id" : "name",
+    "viewFieldName" : "name"
+  } ],
+  "codeName" : "create_public_channel_node_panel",
+  "controlType" : "PANEL",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message/PSPANELS/create_public_channel_node_panel.json",
+  "layoutMode" : "TABLE_24COL",
+  "logicName" : "创建公共频道节点面板",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+  },
+  "getPSLayout" : {
+    "childColMD" : 24,
+    "columnCount" : 24,
+    "layout" : "TABLE_24COL"
+  },
+  "getRootPSPanelItems" : [ {
+    "caption" : "容器",
+    "itemStyle" : "DEFAULT",
+    "itemType" : "CONTAINER",
+    "name" : "container",
+    "getPSLayout" : {
+      "layout" : "FLEX"
+    },
+    "getPSLayoutPos" : {
+      "colMD" : 24,
+      "layout" : "TABLE_24COL"
+    },
+    "getPSPanelItems" : [ {
+      "caption" : "文本框",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "FIELD",
+      "name" : "name",
+      "getPSEditor" : {
+        "editorType" : "TEXTBOX",
+        "name" : "name",
+        "predefinedType" : "FIELD_TEXTBOX"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX"
+      },
+      "viewFieldName" : "name"
+    } ]
+  } ],
+  "layoutPanel" : true,
+  "mobilePanel" : true,
+  "modelid" : "31484271ac3a1f60becc2343cb10c100",
+  "modeltype" : "PSSYSVIEWPANEL"
+}

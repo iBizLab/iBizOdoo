@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.CRM_LEAD"
+  },
+  "formCaption" : "线索/商机",
+  "name" : "线索/商机默认关系界面组"
+}

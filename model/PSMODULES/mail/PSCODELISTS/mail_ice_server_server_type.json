@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "mail__mail_ice_server_server_type",
+  "codeListType" : "STATIC",
+  "codeName" : "mail_ice_server_server_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/mail/PSCODELISTS/mail_ice_server_server_type.json",
+  "emptyText" : "未定义",
+  "name" : "类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "stun",
+    "text" : "stun:",
+    "value" : "stun"
+  }, {
+    "codeName" : "turn",
+    "text" : "turn:",
+    "value" : "turn"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

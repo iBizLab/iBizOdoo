@@ -1,0 +1,26 @@
+{
+  "codeName" : "Auto74251785",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_skill_type/PSDEDRITEMS/Auto74251785.json",
+  "itemType" : "DER1N",
+  "name" : "等级",
+  "getPSDER" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_skill_level/PSDERS/DER1N_HR_SKILL_LEVEL_HR_SKILL_TYPE_SKILL_TYPE_ID.json"
+  },
+  "parentDataJO" : {
+    "SRFPARENTTYPE" : "DER1N",
+    "srfparentdename" : "HR_SKILL_TYPE",
+    "srfparentmode" : "DER1N_HR_SKILL_LEVEL_HR_SKILL_TYPE_SKILL_TYPE_ID",
+    "srfparentdefname" : "SKILL_TYPE_ID",
+    "SRFDER1NID" : "DER1N_HR_SKILL_LEVEL_HR_SKILL_TYPE_SKILL_TYPE_ID"
+  },
+  "viewCodeName" : "GridView",
+  "getViewPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_skill_level.json"
+  },
+  "viewParamJO" : {
+    "SRFPARENTTYPE" : "DER1N",
+    "SRFDER1NID" : "DER1N_HR_SKILL_LEVEL_HR_SKILL_TYPE_SKILL_TYPE_ID"
+  }
+}

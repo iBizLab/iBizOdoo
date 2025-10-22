@@ -1,0 +1,33 @@
+{
+  "codeListTag" : "crm__crm_iap_lead_mining_request_state",
+  "codeListType" : "STATIC",
+  "codeName" : "crm_iap_lead_mining_request_state",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_state.json",
+  "emptyText" : "未定义",
+  "name" : "状态",
+  "getPSCodeItems" : [ {
+    "codeName" : "draft",
+    "text" : "草稿",
+    "value" : "draft"
+  }, {
+    "codeName" : "error",
+    "text" : "错误",
+    "value" : "error"
+  }, {
+    "codeName" : "done",
+    "text" : "已完成",
+    "value" : "done"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

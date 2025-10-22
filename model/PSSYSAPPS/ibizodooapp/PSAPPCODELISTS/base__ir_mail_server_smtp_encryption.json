@@ -1,0 +1,23 @@
+{
+  "codeListTag" : "base__ir_mail_server_smtp_encryption",
+  "codeListType" : "STATIC",
+  "codeName" : "base__ir_mail_server_smtp_encryption",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_mail_server_smtp_encryption.json",
+  "emptyText" : "未定义",
+  "name" : "连接加密",
+  "getPSCodeItems" : [ {
+    "codeName" : "none",
+    "text" : "无",
+    "value" : "none"
+  }, {
+    "codeName" : "starttls",
+    "text" : "TLS (STARTTLS)",
+    "value" : "starttls"
+  }, {
+    "codeName" : "ssl",
+    "text" : "SSL / TLS",
+    "value" : "ssl"
+  } ],
+  "enableCache" : true
+}

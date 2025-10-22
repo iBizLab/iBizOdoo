@@ -1,0 +1,837 @@
+{
+  "codeName" : "main3",
+  "controlType" : "FORM",
+  "getCreatePSControlAction" : {
+    "modelref" : true,
+    "id" : "create",
+    "actionName" : "Create",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "create",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "create"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template.json"
+    }
+  },
+  "defaultLabelWidth" : 130,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template/PSFORMS/main3.json",
+  "getGetDraftFromPSControlAction" : {
+    "modelref" : true,
+    "id" : "loaddraftfrom",
+    "actionName" : "GETDRAFTFROM",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "loaddraftfrom",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template.json"
+    }
+  },
+  "getGetDraftPSControlAction" : {
+    "modelref" : true,
+    "id" : "loaddraft",
+    "actionName" : "GetDraft",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "loaddraft",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get_draft"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template.json"
+    }
+  },
+  "getGetPSControlAction" : {
+    "modelref" : true,
+    "id" : "load",
+    "actionName" : "Get",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "READ",
+    "name" : "load",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template.json"
+    }
+  },
+  "logicName" : "EMail模板实体主视图_表单",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template.json"
+  },
+  "getPSDEFormItems" : [ {
+    "id" : "srfupdatedate",
+    "hidden" : true,
+    "dataType" : 5,
+    "getPSAppDEField" : {
+      "name" : "WRITE_DATE",
+      "codeName" : "write_date"
+    }
+  }, {
+    "id" : "srforikey",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfkey",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "id" : "srfmajortext",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "id" : "srftempmode",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfuf",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfdeid",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfsourcekey",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "name",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "id" : "subject",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "SUBJECT",
+      "codeName" : "subject"
+    }
+  }, {
+    "id" : "body_html",
+    "dataType" : 21,
+    "getPSAppDEField" : {
+      "name" : "BODY_HTML",
+      "codeName" : "body_html"
+    }
+  }, {
+    "id" : "email_from",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "EMAIL_FROM",
+      "codeName" : "email_from"
+    }
+  }, {
+    "id" : "use_default_to",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "USE_DEFAULT_TO",
+      "codeName" : "use_default_to"
+    }
+  }, {
+    "id" : "email_to",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "EMAIL_TO",
+      "codeName" : "email_to"
+    }
+  }, {
+    "id" : "partner_to",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "PARTNER_TO",
+      "codeName" : "partner_to"
+    }
+  }, {
+    "id" : "email_cc",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "EMAIL_CC",
+      "codeName" : "email_cc"
+    }
+  }, {
+    "id" : "reply_to",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "REPLY_TO",
+      "codeName" : "reply_to"
+    }
+  }, {
+    "id" : "scheduled_date",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "SCHEDULED_DATE",
+      "codeName" : "scheduled_date"
+    }
+  }, {
+    "id" : "lang",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "LANG",
+      "codeName" : "lang"
+    }
+  }, {
+    "id" : "auto_delete",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "AUTO_DELETE",
+      "codeName" : "auto_delete"
+    }
+  }, {
+    "id" : "template_fs",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "TEMPLATE_FS",
+      "codeName" : "template_fs"
+    }
+  }, {
+    "id" : "description",
+    "dataType" : 21,
+    "getPSAppDEField" : {
+      "name" : "DESCRIPTION",
+      "codeName" : "description"
+    }
+  }, {
+    "id" : "id",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  } ],
+  "getPSDEFormPages" : [ {
+    "caption" : "基本信息",
+    "codeName" : "formpage1",
+    "detailStyle" : "DEFAULT",
+    "detailType" : "FORMPAGE",
+    "name" : "formpage1",
+    "getPSDEFormDetails" : [ {
+      "caption" : "EMail模板基本信息",
+      "codeName" : "group1",
+      "detailStyle" : "DEFAULT",
+      "detailType" : "GROUPPANEL",
+      "name" : "group1",
+      "getPSDEFormDetails" : [ {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.NAME"
+        },
+        "caption" : "名称",
+        "codeName" : "name",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "TOP",
+        "labelWidth" : 130,
+        "name" : "name",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "NAME",
+          "codeName" : "name"
+        },
+        "getPSEditor" : {
+          "editorParams" : {
+            "ISAUTO" : "true"
+          },
+          "editorType" : "TEXTAREA",
+          "maxLength" : 200,
+          "name" : "name",
+          "placeHolder" : "例如“欢迎电子邮件”",
+          "showMaxLength" : true
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.SUBJECT"
+        },
+        "caption" : "主旨",
+        "codeName" : "subject",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 40,
+        "name" : "subject",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "SUBJECT",
+          "codeName" : "subject"
+        },
+        "getPSEditor" : {
+          "editorType" : "TEXTBOX",
+          "maxLength" : 500,
+          "name" : "subject",
+          "placeHolder" : "例如“欢迎来到我的公司”或“很高兴认识你，{{ object.name }}”"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "showCaption" : true
+      }, {
+        "codeName" : "tabpanel1",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "TABPANEL",
+        "name" : "tabpanel1",
+        "getPSDEFormTabPages" : [ {
+          "caption" : "内容",
+          "codeName" : "tabpage1",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "TABPAGE",
+          "name" : "tabpage1",
+          "getPSDEFormDetails" : [ {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.BODY_HTML"
+            },
+            "caption" : "正文",
+            "codeName" : "body_html",
+            "dataType" : 21,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 40,
+            "name" : "body_html",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "BODY_HTML",
+              "codeName" : "body_html"
+            },
+            "getPSEditor" : {
+              "editorParams" : {
+                "isauto" : "true"
+              },
+              "editorType" : "TEXTAREA",
+              "maxLength" : 1048576,
+              "name" : "body_html",
+              "showMaxLength" : true
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "allowEmpty" : true,
+            "showCaption" : true
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "infoGroupMode" : false,
+          "showCaption" : true
+        }, {
+          "caption" : "EMail配置",
+          "codeName" : "tabpage2",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "TABPAGE",
+          "name" : "tabpage2",
+          "getPSDEFormDetails" : [ {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.EMAIL_FROM"
+            },
+            "caption" : "来自",
+            "codeName" : "email_from",
+            "dataType" : 25,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 130,
+            "name" : "email_from",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "EMAIL_FROM",
+              "codeName" : "email_from"
+            },
+            "getPSEditor" : {
+              "editorType" : "TEXTBOX",
+              "maxLength" : 500,
+              "name" : "email_from",
+              "placeHolder" : "覆盖作者EMail"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "allowEmpty" : true,
+            "showCaption" : true
+          }, {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.USE_DEFAULT_TO"
+            },
+            "caption" : "默认收件人",
+            "codeName" : "use_default_to",
+            "dataType" : 9,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 130,
+            "name" : "use_default_to",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "USE_DEFAULT_TO",
+              "codeName" : "use_default_to"
+            },
+            "getPSEditor" : {
+              "editorType" : "CHECKBOX",
+              "name" : "use_default_to"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "allowEmpty" : true,
+            "showCaption" : true
+          }, {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.EMAIL_TO"
+            },
+            "caption" : "至（EMail）",
+            "codeName" : "email_to",
+            "dataType" : 25,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 130,
+            "name" : "email_to",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "EMAIL_TO",
+              "codeName" : "email_to"
+            },
+            "getPSEditor" : {
+              "editorType" : "TEXTBOX",
+              "maxLength" : 500,
+              "name" : "email_to",
+              "placeHolder" : "逗号分隔的收件人邮件地址"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "allowEmpty" : true,
+            "showCaption" : true
+          }, {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.PARTNER_TO"
+            },
+            "caption" : "至（合作伙伴）",
+            "codeName" : "partner_to",
+            "dataType" : 25,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 130,
+            "name" : "partner_to",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "PARTNER_TO",
+              "codeName" : "partner_to"
+            },
+            "getPSEditor" : {
+              "editorType" : "TEXTBOX",
+              "maxLength" : 500,
+              "name" : "partner_to",
+              "placeHolder" : "逗号分隔的收件人合作伙伴的邮件地址"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "allowEmpty" : true,
+            "showCaption" : true
+          }, {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.EMAIL_CC"
+            },
+            "caption" : "抄送",
+            "codeName" : "email_cc",
+            "dataType" : 25,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 130,
+            "name" : "email_cc",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "EMAIL_CC",
+              "codeName" : "email_cc"
+            },
+            "getPSEditor" : {
+              "editorType" : "TEXTBOX",
+              "maxLength" : 500,
+              "name" : "email_cc",
+              "placeHolder" : "逗号分隔抄送收件人邮件地址"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "allowEmpty" : true,
+            "showCaption" : true
+          }, {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.REPLY_TO"
+            },
+            "caption" : "回复",
+            "codeName" : "reply_to",
+            "dataType" : 25,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 130,
+            "name" : "reply_to",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "REPLY_TO",
+              "codeName" : "reply_to"
+            },
+            "getPSEditor" : {
+              "editorType" : "TEXTBOX",
+              "maxLength" : 500,
+              "name" : "reply_to",
+              "placeHolder" : "批量发送电子邮件时将回复重定向到的电子邮件地址"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "allowEmpty" : true,
+            "showCaption" : true
+          }, {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.SCHEDULED_DATE"
+            },
+            "caption" : "安排的发送日期",
+            "codeName" : "scheduled_date",
+            "dataType" : 25,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 130,
+            "name" : "scheduled_date",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "SCHEDULED_DATE",
+              "codeName" : "scheduled_date"
+            },
+            "getPSEditor" : {
+              "editorType" : "TEXTBOX",
+              "maxLength" : 500,
+              "name" : "scheduled_date"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "allowEmpty" : true,
+            "showCaption" : true
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "infoGroupMode" : false,
+          "showCaption" : true
+        }, {
+          "caption" : "设置",
+          "codeName" : "tabpage3",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "TABPAGE",
+          "name" : "tabpage3",
+          "getPSDEFormDetails" : [ {
+            "codeName" : "grouppanel1",
+            "detailStyle" : "DEFAULT",
+            "detailType" : "GROUPPANEL",
+            "name" : "grouppanel1",
+            "getPSDEFormDetails" : [ {
+              "getCapPSLanguageRes" : {
+                "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.LANG"
+              },
+              "caption" : "语言",
+              "codeName" : "lang",
+              "dataType" : 25,
+              "detailStyle" : "DEFAULT",
+              "detailType" : "FORMITEM",
+              "enableCond" : 3,
+              "ignoreInput" : 0,
+              "labelPos" : "LEFT",
+              "labelWidth" : 130,
+              "name" : "lang",
+              "noPrivDisplayMode" : 1,
+              "getPSAppDEField" : {
+                "name" : "LANG",
+                "codeName" : "lang"
+              },
+              "getPSEditor" : {
+                "editorType" : "TEXTBOX",
+                "maxLength" : 500,
+                "name" : "lang",
+                "placeHolder" : "{{ object.partner_id.lang }}"
+              },
+              "getPSLayoutPos" : {
+                "colLG" : 12,
+                "colMD" : 12,
+                "colSM" : 12,
+                "colXS" : 12,
+                "layout" : "TABLE_24COL"
+              },
+              "allowEmpty" : true,
+              "showCaption" : true
+            }, {
+              "getCapPSLanguageRes" : {
+                "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.AUTO_DELETE"
+              },
+              "caption" : "自动删除",
+              "codeName" : "auto_delete",
+              "dataType" : 9,
+              "detailStyle" : "DEFAULT",
+              "detailType" : "FORMITEM",
+              "enableCond" : 3,
+              "ignoreInput" : 0,
+              "labelPos" : "LEFT",
+              "labelWidth" : 130,
+              "name" : "auto_delete",
+              "noPrivDisplayMode" : 1,
+              "getPSAppDEField" : {
+                "name" : "AUTO_DELETE",
+                "codeName" : "auto_delete"
+              },
+              "getPSEditor" : {
+                "editorType" : "CHECKBOX",
+                "name" : "auto_delete"
+              },
+              "getPSLayoutPos" : {
+                "colLG" : 12,
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "allowEmpty" : true,
+              "showCaption" : true
+            }, {
+              "getCapPSLanguageRes" : {
+                "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.TEMPLATE_FS"
+              },
+              "caption" : "模板文件名",
+              "codeName" : "template_fs",
+              "dataType" : 25,
+              "detailStyle" : "DEFAULT",
+              "detailType" : "FORMITEM",
+              "enableCond" : 3,
+              "ignoreInput" : 0,
+              "labelPos" : "LEFT",
+              "labelWidth" : 130,
+              "name" : "template_fs",
+              "noPrivDisplayMode" : 1,
+              "getPSAppDEField" : {
+                "name" : "TEMPLATE_FS",
+                "codeName" : "template_fs"
+              },
+              "getPSEditor" : {
+                "editorType" : "TEXTBOX",
+                "maxLength" : 500,
+                "name" : "template_fs"
+              },
+              "getPSLayoutPos" : {
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "allowEmpty" : true,
+              "showCaption" : true
+            }, {
+              "getCapPSLanguageRes" : {
+                "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.DESCRIPTION"
+              },
+              "caption" : "模板描述",
+              "codeName" : "description",
+              "dataType" : 21,
+              "detailStyle" : "DEFAULT",
+              "detailType" : "FORMITEM",
+              "enableCond" : 3,
+              "ignoreInput" : 0,
+              "itemHeight" : 80.0,
+              "labelPos" : "LEFT",
+              "labelWidth" : 130,
+              "name" : "description",
+              "noPrivDisplayMode" : 1,
+              "getPSAppDEField" : {
+                "name" : "DESCRIPTION",
+                "codeName" : "description"
+              },
+              "getPSEditor" : {
+                "editorHeight" : 80.0,
+                "editorParams" : {
+                  "HEIGHT" : "200"
+                },
+                "editorType" : "TEXTAREA_10",
+                "maxLength" : 1048576,
+                "name" : "description",
+                "showMaxLength" : true
+              },
+              "getPSLayoutPos" : {
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "allowEmpty" : true,
+              "showCaption" : true
+            } ],
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "infoGroupMode" : false,
+            "showCaption" : false
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "infoGroupMode" : false,
+          "showCaption" : true
+        } ],
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        }
+      } ],
+      "getPSLayout" : {
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "infoGroupMode" : false,
+      "showCaption" : false
+    }, {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "DEF.LNAME.MAIL_TEMPLATE.ID"
+      },
+      "caption" : "标识",
+      "codeName" : "id",
+      "dataType" : 25,
+      "detailStyle" : "DEFAULT",
+      "detailType" : "FORMITEM",
+      "enableCond" : 3,
+      "ignoreInput" : 0,
+      "labelPos" : "LEFT",
+      "labelWidth" : 130,
+      "name" : "id",
+      "noPrivDisplayMode" : 1,
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "id"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "allowEmpty" : true,
+      "hidden" : true
+    } ],
+    "getPSLayout" : {
+      "childColMD" : 24,
+      "columnCount" : 24,
+      "layout" : "TABLE_24COL"
+    },
+    "infoGroupMode" : false
+  } ],
+  "getPSLayout" : {
+    "childColMD" : 24,
+    "columnCount" : 24,
+    "layout" : "TABLE_24COL"
+  },
+  "getRemovePSControlAction" : {
+    "modelref" : true,
+    "id" : "remove",
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template.json"
+    }
+  },
+  "tabHeaderPos" : "TOP",
+  "getUpdatePSControlAction" : {
+    "modelref" : true,
+    "id" : "update",
+    "actionName" : "Update",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "UPDATE",
+    "name" : "update",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "update"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template.json"
+    }
+  },
+  "noTabHeader" : true,
+  "modelid" : "fca49a7ef5f3c89493cd9695946ee147",
+  "modeltype" : "PSDEFORM_EDITFORM"
+}

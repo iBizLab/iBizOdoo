@@ -1,0 +1,31 @@
+{
+  "codeName" : "MAIL_ACTIVITY_TYPE",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_type_mail_template_rel/PSDERS/DER1N_MAIL_ACTIVITY_TYPE_MAIL_TEMPLATE_REL_MAIL_ACTIVITY_TYPE_MAIL_ACTIVITY_TYPE_ID.json",
+  "fKeyName" : "F67F849576624935CC",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_type.json"
+  },
+  "masterOrder" : 100,
+  "masterRS" : 7,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_type_mail_template_rel.json"
+  },
+  "name" : "DER1N_MAIL_ACTIVITY_TYPE_MAIL_TEMPLATE_REL_MAIL_ACTIVITY_TYPE_MAIL_ACTIVITY_TYPE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "MAIL_ACTIVITY_TYPE_ID",
+    "codeName" : "mail_activity_type_id"
+  },
+  "getPSPickupTextDEField" : {
+    "name" : "MAIL_ACTIVITY_TYPE_NAME",
+    "codeName" : "mail_activity_type_name"
+  },
+  "pickupDEFName" : "MAIL_ACTIVITY_TYPE_ID",
+  "removeActionType" : -1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "mail_activity_type",
+  "enableFKey" : true
+}

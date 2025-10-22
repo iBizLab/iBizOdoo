@@ -1,0 +1,19 @@
+{
+  "codeListTag" : "mail__fetchmail_server_state",
+  "codeListType" : "STATIC",
+  "codeName" : "mail__fetchmail_server_state",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__fetchmail_server_state.json",
+  "emptyText" : "未定义",
+  "name" : "状态",
+  "getPSCodeItems" : [ {
+    "codeName" : "draft",
+    "text" : "未确认",
+    "value" : "draft"
+  }, {
+    "codeName" : "done",
+    "text" : "已确认",
+    "value" : "done"
+  } ],
+  "enableCache" : true
+}

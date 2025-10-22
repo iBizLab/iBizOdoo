@@ -1,0 +1,49 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_level_frequency",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_level_frequency",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_frequency.json",
+  "emptyText" : "未定义",
+  "name" : "频率",
+  "getPSCodeItems" : [ {
+    "codeName" : "hourly",
+    "text" : "每小时",
+    "value" : "hourly"
+  }, {
+    "codeName" : "daily",
+    "text" : "每天",
+    "value" : "daily"
+  }, {
+    "codeName" : "weekly",
+    "text" : "每周",
+    "value" : "weekly"
+  }, {
+    "codeName" : "bimonthly",
+    "text" : "一个月两次",
+    "value" : "bimonthly"
+  }, {
+    "codeName" : "monthly",
+    "text" : "每月",
+    "value" : "monthly"
+  }, {
+    "codeName" : "biyearly",
+    "text" : "每年两次",
+    "value" : "biyearly"
+  }, {
+    "codeName" : "yearly",
+    "text" : "每年",
+    "value" : "yearly"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

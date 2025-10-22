@@ -1,0 +1,70 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`ACTIVE`",
+    "name" : "ACTIVE"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`FROM_FILTER`",
+    "name" : "FROM_FILTER"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_ACCESS_TOKEN`",
+    "name" : "GOOGLE_GMAIL_ACCESS_TOKEN"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION`",
+    "name" : "GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_AUTHORIZATION_CODE`",
+    "name" : "GOOGLE_GMAIL_AUTHORIZATION_CODE"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_REFRESH_TOKEN`",
+    "name" : "GOOGLE_GMAIL_REFRESH_TOKEN"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`MAX_EMAIL_SIZE`",
+    "name" : "MAX_EMAIL_SIZE"
+  }, {
+    "expression" : "t1.`NAME`",
+    "name" : "NAME"
+  }, {
+    "expression" : "t1.`SEQUENCE`",
+    "name" : "SEQUENCE"
+  }, {
+    "expression" : "t1.`SMTP_AUTHENTICATION`",
+    "name" : "SMTP_AUTHENTICATION"
+  }, {
+    "expression" : "t1.`SMTP_DEBUG`",
+    "name" : "SMTP_DEBUG"
+  }, {
+    "expression" : "t1.`SMTP_ENCRYPTION`",
+    "name" : "SMTP_ENCRYPTION"
+  }, {
+    "expression" : "t1.`SMTP_HOST`",
+    "name" : "SMTP_HOST"
+  }, {
+    "expression" : "t1.`SMTP_PASS`",
+    "name" : "SMTP_PASS"
+  }, {
+    "expression" : "t1.`SMTP_PORT`",
+    "name" : "SMTP_PORT"
+  }, {
+    "expression" : "t1.`SMTP_USER`",
+    "name" : "SMTP_USER"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`ACTIVE`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`FROM_FILTER`,\nt1.`GOOGLE_GMAIL_ACCESS_TOKEN`,\nt1.`GOOGLE_GMAIL_ACCESS_TOKEN_EXPIRATION`,\nt1.`GOOGLE_GMAIL_AUTHORIZATION_CODE`,\nt1.`GOOGLE_GMAIL_REFRESH_TOKEN`,\nt1.`ID`,\nt1.`MAX_EMAIL_SIZE`,\nt1.`NAME`,\nt1.`SEQUENCE`,\nt1.`SMTP_AUTHENTICATION`,\nt1.`SMTP_DEBUG`,\nt1.`SMTP_ENCRYPTION`,\nt1.`SMTP_HOST`,\nt1.`SMTP_PASS`,\nt1.`SMTP_PORT`,\nt1.`SMTP_USER`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `ir_mail_server` t1 \n",
+  "id" : "PSMODULES/base/PSDATAENTITIES/ir_mail_server/PSDEDATAQUERIES/View/PSDEDQCODES/MYSQL5.json"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:g="http://www.jboss.org/drools/flow/gpd" xmlns:tns="http://www.jboss.org/drools" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" expressionLanguage="http://www.mvel.org/2.0" id="Definition" name="" targetNamespace="http://www.jboss.org/drools" typeLanguage="http://www.java.com/javaTypes">
+        <process id="cn.ibizlab.ibizodoo.core.base.service.logic.res_config_settingsdefault_get" isClosed="false" isExecutable="true" name="base_res_config_settings_default_get_ruleFlow" processType="Private" tns:packageName="cn.ibizlab.ibizodoo.core.base.service.logic.res_config_settingsdefault_get">
+            <extensionElements>
+                <tns:import name="java.util.Map" />
+                <tns:import name="org.springframework.util.StringUtils"/>
+                <tns:import name="cn.ibizlab.ibizodoo.util.helper.RuleUtils"/>
+                                <tns:metaData express="" name="res_config_settingsdefault_getdefault" type="entity"/>
+                                <tns:metaData express="new HashMap()" name="res_config_settingsdefault_getconfiglist" type="refentity"/>
+                                <tns:metaData express="new HashMap()" name="res_config_settingsdefault_getdefaultlist" type="refentity"/>
+                                <tns:metaData express="new HashMap()" name="res_config_settingsdefault_getgrouplist" type="refentity"/>
+                                <tns:metaData express="new HashMap()" name="res_config_settingsdefault_getmodulelist" type="refentity"/>
+                                <tns:metaData express="new cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter()" name="res_config_settingsdefault_getparameter_filter" type="refentity"/>
+                                <tns:metaData express="new cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter()" name="res_config_settingsdefault_getparameter_list" type="refentity"/>
+                                <tns:metaData express="new cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter()" name="res_config_settingsdefault_getparameter_temp" type="refentity"/>
+                                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.SpringContextHolder).getBean(T(cn.ibizlab.ibizodoo.core.base.service.Iir_config_parameterService))" name="ir_config_parameterservice" type="service"/>
+                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.SpringContextHolder).getBean(T(cn.ibizlab.ibizodoo.core.base.service.Ires_config_settingsService))" name="iBzSysRes_config_settingsDefaultService" type="service"/>
+                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.AuthenticationUser).getAuthenticationUser()" name="curuser" type="session"/>
+                            <tns:global identifier="res_config_settingsdefault_getdefault" type="cn.ibizlab.ibizodoo.core.base.domain.res_config_settings" />
+                            <tns:global identifier="res_config_settingsdefault_getparameter_filter" type="cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter" />
+                            <tns:global identifier="res_config_settingsdefault_getparameter_list" type="cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter" />
+                            <tns:global identifier="res_config_settingsdefault_getparameter_temp" type="cn.ibizlab.ibizodoo.core.base.domain.ir_config_parameter" />
+            </extensionElements>
+                        <startEvent id="begin" isInterrupting="true"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="res_config_settingsdefault_getrawsfcode_01" id="rawsfcode_01" implementation="http://www.jboss.org/drools/rule" name="分类属性"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="res_config_settingsdefault_getprepareparam_01" id="prepareparam_01" implementation="http://www.jboss.org/drools/rule" name="准备config过滤参数"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="res_config_settingsdefault_getdedataset_01" id="dedataset_01" implementation="http://www.jboss.org/drools/rule" name="获取parameter数据"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="res_config_settingsdefault_getloopsubcall_01" id="loopsubcall_01" implementation="http://www.jboss.org/drools/rule" name="循环子调用"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="res_config_settingsdefault_getend_02" id="end_02" implementation="http://www.jboss.org/drools/rule" name="结束"/>
+                        <endEvent id="end_02_end" name="end"/>
+                        <sequenceFlow id="end_02_end_line" sourceRef="end_02" targetRef="end_02_end"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="res_config_settingsdefault_getrawsfcode_02" id="rawsfcode_02" implementation="http://www.jboss.org/drools/rule" name="回写参数"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="res_config_settingsdefault_getend_01" id="end_01" implementation="http://www.jboss.org/drools/rule" name="结束"/>
+                        <endEvent id="end_01_end" name="end"/>
+                        <sequenceFlow id="end_01_end_line" sourceRef="end_01" targetRef="end_01_end"/>
+                    <sequenceFlow id="begin_rawsfcode_01" sourceRef="begin" targetRef="rawsfcode_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="rawsfcode_01_prepareparam_01" sourceRef="rawsfcode_01" targetRef="prepareparam_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="prepareparam_01_dedataset_01" sourceRef="prepareparam_01" targetRef="dedataset_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="dedataset_01_loopsubcall_01" sourceRef="dedataset_01" targetRef="loopsubcall_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="loopsubcall_01_rawsfcode_02" sourceRef="loopsubcall_01" targetRef="rawsfcode_02">
+                    </sequenceFlow>
+                    <sequenceFlow id="loopsubcall_01_end_02" sourceRef="loopsubcall_01" targetRef="end_02">
+                    </sequenceFlow>
+                    <sequenceFlow id="rawsfcode_02_end_01" sourceRef="rawsfcode_02" targetRef="end_01">
+                    </sequenceFlow>
+        </process>
+    </definitions>

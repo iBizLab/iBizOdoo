@@ -1,0 +1,180 @@
+{
+  "codeName" : "compute_duration_tracking",
+  "defaultParamName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_duration_mixin/PSDELOGICS/compute_duration_tracking.json",
+  "logicName" : "计算跟踪属性耗时",
+  "name" : "计算跟踪属性耗时",
+  "getPSDELogicNodes" : [ {
+    "codeName" : "Begin",
+    "leftPos" : 80,
+    "logicNodeType" : "BEGIN",
+    "name" : "开始",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_01"
+      },
+      "name" : "开始 -> 准备参数",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "Begin"
+      }
+    } ],
+    "topPos" : 62,
+    "parallelOutput" : true
+  }, {
+    "code" : "// 获取默认参数对象\r\ndef _default = logic.param(\"Default\").getReal()\r\n// 获取过滤器参数实际对象\r\ndef filterEntity = logic.param(\"filterParam\").getReal()\r\n\r\n// 获取子实体运行时\r\ndef childDataDataEntityRuntime = net.ibizsys.runtime.util.DataEntityRuntimeHolder.peekChildDataEntityRuntime()\r\n\r\n//获取跟踪属性名\r\ndef filterField = \"__None__\"\r\ndef psDEFieldList = childDataDataEntityRuntime.getPSDataEntity().getAllPSDEFields();\r\nif(!org.springframework.util.ObjectUtils.isEmpty(psDEFieldList)) {\r\n  for(def iPSDEField : psDEFieldList) {\r\n      String strTag = iPSDEField.getFieldTag();\r\n      if (!org.springframework.util.StringUtils.hasLength(strTag)) {\r\n          continue;\r\n      }\r\n      if(\"DURATION_TRACK\".equals(strTag)){\r\n        filterField = iPSDEField.getName();\r\n        break;\r\n      }\r\n  }\r\n}\r\n\r\n// 直接设置属性值\r\nfilterEntity.set(\"n_res_id_eq\", _default.get(\"id\"))\r\nfilterEntity.set(\"n_model_eq\", childDataDataEntityRuntime.getName())\r\nfilterEntity.set(\"n_field_id_eq\", filterField)\r\nfilterEntity.set(\"size\", 100)\r\n",
+    "codeName" : "RAWSFCODE_01",
+    "codeType" : "Groovy",
+    "leftPos" : 320,
+    "logicNodeType" : "RAWSFCODE",
+    "name" : "构造查询条件",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "BINDPARAM_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_01"
+      }
+    } ],
+    "topPos" : 198,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "BINDPARAM_01",
+    "getDstPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "tracking_field"
+    },
+    "leftPos" : 320,
+    "logicNodeType" : "BINDPARAM",
+    "name" : "绑定跟踪属性参数",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "DEDATASET_01"
+      },
+      "name" : "准备参数 -> 数据集查询",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "BINDPARAM_01"
+      }
+    } ],
+    "srcFieldName" : "n_field_id_eq",
+    "getSrcPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "filterParam"
+    },
+    "topPos" : 330,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "DEDATASET_01",
+    "getDstPSDEDataSet" : {
+      "modelref" : true,
+      "id" : "Default"
+    },
+    "getDstPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "filterParam"
+    },
+    "getDstPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value.json"
+    },
+    "leftPos" : 580,
+    "logicNodeType" : "DEDATASET",
+    "name" : "查询邮件跟踪值数据集",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_02"
+      },
+      "name" : "数据集查询 -> 结束",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "DEDATASET_01"
+      }
+    } ],
+    "getRetPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "resultList"
+    },
+    "topPos" : 330,
+    "parallelOutput" : true
+  }, {
+    "code" : "// 获取默认参数对象\r\ndef _default = logic.param(\"Default\").getReal()\r\ndef resultList = logic.param(\"resultList\").getReal()\r\ndef tracking_field = logic.param(\"tracking_field\").getReal()\r\ndef durationMap = [:]\r\ndef trackValueList = []\r\ntrackValueList.addAll(resultList)\r\n // 添加当前值的“假”跟踪记录\r\n if(_default.get(tracking_field)){\r\n    trackValueList.add([\r\n        create_date: net.ibizsys.runtime.util.DateUtils.getCurTime(),\r\n        old_value_char: _default.get(tracking_field)\r\n    ])\r\n}\r\ndef previousDate = _default.get(\"create_date\").toLocalDateTime()\r\n// 计算每个阶段的持续时间\r\ntrackValueList.each { tracking ->\r\n    def oldId = tracking.old_value_char\r\n    def createDate = tracking.create_date.toLocalDateTime()\r\n\r\n    long duration = java.time.temporal.ChronoUnit.SECONDS.between(previousDate, createDate)\r\n    durationMap.putIfAbsent(oldId, 0L)\r\n    durationMap[oldId] += duration\r\n\r\n    previousDate = createDate\r\n}\r\n_default.set(\"duration_tracking\",durationMap)\r\n",
+    "codeName" : "RAWSFCODE_02",
+    "codeType" : "Groovy",
+    "leftPos" : 580,
+    "logicNodeType" : "RAWSFCODE",
+    "name" : "回填属性跟踪耗时结构对象",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "END_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_02"
+      }
+    } ],
+    "topPos" : 490,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "END_01",
+    "leftPos" : 980,
+    "logicNodeType" : "END",
+    "name" : "结束",
+    "getReturnParam" : {
+      "modelref" : true,
+      "id" : "Default"
+    },
+    "returnType" : "LOGICPARAM",
+    "topPos" : 492,
+    "parallelOutput" : true
+  } ],
+  "getPSDELogicParams" : [ {
+    "codeName" : "Default",
+    "logicName" : "传入变量",
+    "name" : "传入变量",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value.json"
+    },
+    "default" : true,
+    "entityParam" : true
+  }, {
+    "codeName" : "filterParam",
+    "logicName" : "过滤器参数",
+    "name" : "过滤器参数",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value.json"
+    },
+    "filterParam" : true
+  }, {
+    "codeName" : "resultList",
+    "logicName" : "查询结果列表",
+    "name" : "查询结果列表",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value.json"
+    },
+    "entityListParam" : true
+  }, {
+    "codeName" : "tracking_field",
+    "logicName" : "跟踪属性",
+    "name" : "跟踪属性",
+    "stdDataType" : 4,
+    "simpleParam" : true
+  } ],
+  "getStartPSDELogicNode" : {
+    "modelref" : true,
+    "id" : "Begin"
+  },
+  "enableBackend" : true,
+  "enableFront" : false
+}

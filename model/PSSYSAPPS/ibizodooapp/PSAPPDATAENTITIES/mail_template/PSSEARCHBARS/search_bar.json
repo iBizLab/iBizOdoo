@@ -1,0 +1,48 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template/PSSEARCHBARS/search_bar.json",
+  "logicName" : "EMail模板搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_template.json"
+  },
+  "getPSSearchBarGroups" : [ {
+    "caption" : "我的模板",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"user_id\",\"condop\":\"EQ\",\"value\":\"${context.srfpartnerid}\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "my_template",
+    "width" : 0.0,
+    "addSeparator" : false
+  }, {
+    "caption" : "基础模板",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"template_category\",\"condop\":\"EQ\",\"value\":\"base_template\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "base_template",
+    "width" : 0.0,
+    "addSeparator" : false,
+    "defaultGroup" : true
+  }, {
+    "caption" : "自定义模板",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"template_category\",\"condop\":\"EQ\",\"value\":\"custom_template\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "custom_template",
+    "width" : 0.0,
+    "addSeparator" : true
+  } ],
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : true,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "94f242a45b4dd544ae7e9a8dac56b33b",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

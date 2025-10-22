@@ -1,0 +1,67 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_mail/PSSEARCHBARS/search_bar.json",
+  "groupMode" : "AND",
+  "logicName" : "发送邮件搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_mail.json"
+  },
+  "getPSSearchBarGroups" : [ {
+    "caption" : "已收",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"state\",\"condop\":\"EQ\",\"value\":\"received\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "received",
+    "width" : 0.0,
+    "addSeparator" : false,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  }, {
+    "caption" : "发信",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"state\",\"condop\":\"EQ\",\"value\":\"outgoing\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "outgoing",
+    "width" : 0.0,
+    "addSeparator" : false,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  }, {
+    "caption" : "已发送",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"state\",\"condop\":\"EQ\",\"value\":\"sent\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "sent",
+    "width" : 0.0,
+    "addSeparator" : false,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  }, {
+    "caption" : "失败的",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"state\",\"condop\":\"EQ\",\"value\":\"exception\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "exception",
+    "width" : 0.0,
+    "addSeparator" : true,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  } ],
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : true,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "39092eaeab2ba456734d786745a4d971",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

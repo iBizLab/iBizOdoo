@@ -1,0 +1,27 @@
+{
+  "codeName" : "res_domain_user",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_compose_message/PSDERS/DER1N_MAIL_COMPOSE_MESSAGE_RES_USERS_RES_DOMAIN_USER_ID.json",
+  "fKeyName" : "F10CA77019C0C00AB9",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_compose_message.json"
+  },
+  "name" : "DER1N_MAIL_COMPOSE_MESSAGE_RES_USERS_RES_DOMAIN_USER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "RES_DOMAIN_USER_ID",
+    "codeName" : "res_domain_user_id"
+  },
+  "pickupDEFName" : "RES_DOMAIN_USER_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "res_domain_user",
+  "enableFKey" : true
+}

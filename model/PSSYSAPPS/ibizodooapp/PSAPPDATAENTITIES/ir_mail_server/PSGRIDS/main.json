@@ -1,0 +1,262 @@
+{
+  "aggMode" : "NONE",
+  "codeName" : "main",
+  "columnEnableFilter" : 2,
+  "columnEnableLink" : 2,
+  "controlType" : "GRID",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_mail_server/PSGRIDS/main.json",
+  "getFetchPSControlAction" : {
+    "modelref" : true,
+    "id" : "fetch",
+    "actionType" : "DEDATASET",
+    "name" : "fetch",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_mail_server.json"
+    }
+  },
+  "groupMode" : "NONE",
+  "logicName" : "主表格",
+  "minorSortDir" : "DESC",
+  "getMinorSortPSAppDEField" : {
+    "name" : "WRITE_DATE",
+    "codeName" : "write_date"
+  },
+  "getMovePSControlAction" : {
+    "actionName" : "MoveOrder",
+    "actionType" : "DEACTION",
+    "name" : "move",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "move_order"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_mail_server.json"
+    }
+  },
+  "getOrderValuePSAppDEField" : {
+    "name" : "SEQUENCE",
+    "codeName" : "sequence"
+  },
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_mail_server.json"
+  },
+  "getPSDEGridColumns" : [ {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_MAIL_SERVER.NAME"
+    },
+    "caption" : "名称",
+    "codeName" : "name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "name",
+    "excelCaption" : "名称",
+    "name" : "name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    },
+    "width" : 300,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_MAIL_SERVER.SMTP_HOST"
+    },
+    "caption" : "SMTP服务器",
+    "codeName" : "smtp_host",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "smtp_host",
+    "excelCaption" : "SMTP服务器",
+    "name" : "smtp_host",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "SMTP_HOST",
+      "codeName" : "smtp_host"
+    },
+    "width" : 1,
+    "widthUnit" : "STAR",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_MAIL_SERVER.SMTP_USER"
+    },
+    "caption" : "用户名",
+    "codeName" : "smtp_user",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "smtp_user",
+    "excelCaption" : "用户名",
+    "name" : "smtp_user",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "SMTP_USER",
+      "codeName" : "smtp_user"
+    },
+    "width" : 250,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "FRONT",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_MAIL_SERVER.SMTP_ENCRYPTION"
+    },
+    "caption" : "连接加密",
+    "codeName" : "smtp_encryption",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "smtp_encryption",
+    "excelCaption" : "连接加密",
+    "name" : "smtp_encryption",
+    "noPrivDisplayMode" : 1,
+    "getPSAppCodeList" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_mail_server_smtp_encryption.json"
+    },
+    "getPSAppDEField" : {
+      "name" : "SMTP_ENCRYPTION",
+      "codeName" : "smtp_encryption"
+    },
+    "width" : 250,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_MAIL_SERVER.FROM_FILTER"
+    },
+    "caption" : "FROM 过滤",
+    "codeName" : "from_filter",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "from_filter",
+    "excelCaption" : "FROM 过滤",
+    "hideMode" : 1,
+    "name" : "from_filter",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "FROM_FILTER",
+      "codeName" : "from_filter"
+    },
+    "width" : 250,
+    "widthUnit" : "PX",
+    "enableSort" : true,
+    "hideDefault" : true
+  } ],
+  "getPSDEGridDataItems" : [ {
+    "dataType" : 25,
+    "name" : "name",
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "smtp_host",
+    "getPSAppDEField" : {
+      "name" : "SMTP_HOST",
+      "codeName" : "smtp_host"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "smtp_user",
+    "getPSAppDEField" : {
+      "name" : "SMTP_USER",
+      "codeName" : "smtp_user"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "smtp_encryption",
+    "getPSAppDEField" : {
+      "name" : "SMTP_ENCRYPTION",
+      "codeName" : "smtp_encryption"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "from_filter",
+    "getPSAppDEField" : {
+      "name" : "FROM_FILTER",
+      "codeName" : "from_filter"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfdataaccaction",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "dataAccessAction" : true
+  }, {
+    "dataType" : 25,
+    "name" : "srfmajortext",
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  } ],
+  "getPSDEGridEditItems" : [ {
+    "caption" : "标识",
+    "codeName" : "srfkey",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "getPSEditor" : {
+      "editorType" : "HIDDEN",
+      "name" : "srfkey"
+    },
+    "allowEmpty" : true
+  } ],
+  "pagingMode" : 1,
+  "pagingSize" : 20,
+  "getRemovePSControlAction" : {
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_mail_server.json"
+    }
+  },
+  "sortMode" : "REMOTE",
+  "hasWFDataItems" : false,
+  "enableColFilter" : false,
+  "enableCustomized" : true,
+  "enableGroup" : false,
+  "enablePagingBar" : true,
+  "enableRowEdit" : false,
+  "enableRowEditOrder" : true,
+  "enableRowNew" : false,
+  "forceFit" : false,
+  "hideHeader" : false,
+  "noSort" : false,
+  "singleSelect" : false,
+  "modelid" : "4c8437a301467f68c18468fb0134dfdf",
+  "modeltype" : "PSDEGRID"
+}

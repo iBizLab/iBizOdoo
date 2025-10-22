@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "hr__hr_resume_line_display_type",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_resume_line_display_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_resume_line_display_type.json",
+  "emptyText" : "未定义",
+  "name" : "显示类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "classic",
+    "text" : "经典",
+    "value" : "classic"
+  }, {
+    "codeName" : "certification",
+    "text" : "认证",
+    "value" : "certification"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

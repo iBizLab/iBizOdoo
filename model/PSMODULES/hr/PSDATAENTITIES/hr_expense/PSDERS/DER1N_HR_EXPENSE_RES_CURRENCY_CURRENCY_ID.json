@@ -1,0 +1,27 @@
+{
+  "codeName" : "currency",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_expense/PSDERS/DER1N_HR_EXPENSE_RES_CURRENCY_CURRENCY_ID.json",
+  "fKeyName" : "F5B7F9B28D5B9791A4",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_currency.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense.json"
+  },
+  "name" : "DER1N_HR_EXPENSE_RES_CURRENCY_CURRENCY_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "CURRENCY_ID",
+    "codeName" : "currency_id"
+  },
+  "pickupDEFName" : "CURRENCY_ID",
+  "removeActionType" : 3,
+  "removeOrder" : 0,
+  "serviceCodeName" : "currency",
+  "enableFKey" : true
+}

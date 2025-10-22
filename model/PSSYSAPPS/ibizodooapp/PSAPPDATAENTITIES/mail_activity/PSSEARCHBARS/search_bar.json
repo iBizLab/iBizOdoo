@@ -1,0 +1,85 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity/PSSEARCHBARS/search_bar.json",
+  "groupMode" : "AND",
+  "logicName" : "活动搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+  },
+  "getPSSearchBarGroups" : [ {
+    "caption" : "未完成",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"active\",\"condop\":\"EQ\",\"value\":\"1\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "incomplete",
+    "width" : 0.0,
+    "addSeparator" : false,
+    "defaultGroup" : true,
+    "getUserParam" : {
+      "exclusive" : "group1"
+    }
+  }, {
+    "caption" : "我的活动",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"user_id\",\"condop\":\"EQ\",\"value\":\"${context.srfuserid}\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "my_activity",
+    "width" : 0.0,
+    "addSeparator" : true
+  }, {
+    "caption" : "逾期",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"date_deadline\",\"condop\":\"LT\",\"value\":\"${new Date().toISOString().split('T')[0]}\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "over_due",
+    "width" : 0.0,
+    "addSeparator" : false,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  }, {
+    "caption" : "今天",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"date_deadline\",\"condop\":\"EQ\",\"value\":\"${new Date().toISOString().split('T')[0]}\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "today",
+    "width" : 0.0,
+    "addSeparator" : false,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  }, {
+    "caption" : "未来",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"date_deadline\",\"condop\":\"GT\",\"value\":\"${new Date().toISOString().split('T')[0]}\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "future",
+    "width" : 0.0,
+    "addSeparator" : true,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  }, {
+    "caption" : "已完成",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"active\",\"condop\":\"EQ\",\"value\":\"0\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "completed",
+    "width" : 0.0,
+    "addSeparator" : true,
+    "getUserParam" : {
+      "exclusive" : "group1"
+    }
+  } ],
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : true,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "49090c13c82ca13b107232b42b9a0a10",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

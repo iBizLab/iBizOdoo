@@ -1,0 +1,23 @@
+{
+  "codeListTag" : "base__ir_actions_server_activity_date_deadline_range_type",
+  "codeListType" : "STATIC",
+  "codeName" : "base__ir_actions_server_activity_date_deadline_range_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_actions_server_activity_date_deadline_range_type.json",
+  "emptyText" : "未定义",
+  "name" : "到期类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "days",
+    "text" : "天",
+    "value" : "days"
+  }, {
+    "codeName" : "weeks",
+    "text" : "周",
+    "value" : "weeks"
+  }, {
+    "codeName" : "months",
+    "text" : "个月",
+    "value" : "months"
+  } ],
+  "enableCache" : true
+}

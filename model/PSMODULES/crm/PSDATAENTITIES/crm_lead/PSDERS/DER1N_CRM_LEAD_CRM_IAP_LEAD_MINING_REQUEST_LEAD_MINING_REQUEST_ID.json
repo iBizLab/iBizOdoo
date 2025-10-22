@@ -1,0 +1,27 @@
+{
+  "codeName" : "lead_mining_request",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDERS/DER1N_CRM_LEAD_CRM_IAP_LEAD_MINING_REQUEST_LEAD_MINING_REQUEST_ID.json",
+  "fKeyName" : "F97943D25082E73764",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead.json"
+  },
+  "name" : "DER1N_CRM_LEAD_CRM_IAP_LEAD_MINING_REQUEST_LEAD_MINING_REQUEST_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "LEAD_MINING_REQUEST_ID",
+    "codeName" : "lead_mining_request_id"
+  },
+  "pickupDEFName" : "LEAD_MINING_REQUEST_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "lead_mining_request",
+  "enableFKey" : true
+}

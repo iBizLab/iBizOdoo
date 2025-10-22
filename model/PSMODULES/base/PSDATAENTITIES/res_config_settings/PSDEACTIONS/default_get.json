@@ -1,0 +1,27 @@
+{
+  "actionHolder" : 1,
+  "actionMode" : "CUSTOM",
+  "actionType" : "DELOGIC",
+  "codeName" : "default_get",
+  "dataAccessAction" : "READ",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDEACTIONS/default_get.json",
+  "logicName" : "默认提取固定标识属性值",
+  "name" : "default_get",
+  "getPSDEActionInput" : {
+    "name" : "Default_getInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "res_config_settings_dto"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "Default_getResult",
+    "type" : "VOID"
+  },
+  "getPSDELogic" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDELOGICS/default_get.json"
+  },
+  "enableFront" : false
+}

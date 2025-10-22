@@ -1,0 +1,19 @@
+{
+  "codeListTag" : "base__ir_actions_server_activity_user_type",
+  "codeListType" : "STATIC",
+  "codeName" : "base__ir_actions_server_activity_user_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_actions_server_activity_user_type.json",
+  "emptyText" : "未定义",
+  "name" : "用户类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "specific",
+    "text" : "特定用户",
+    "value" : "specific"
+  }, {
+    "codeName" : "generic",
+    "text" : "动态用户（基于记录）",
+    "value" : "generic"
+  } ],
+  "enableCache" : true
+}

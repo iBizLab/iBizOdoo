@@ -1,0 +1,37 @@
+{
+  "codeListTag" : "hr__hr_applicant_application_status",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_applicant_application_status",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_applicant_application_status.json",
+  "emptyText" : "未定义",
+  "name" : "表单状态",
+  "getPSCodeItems" : [ {
+    "codeName" : "ongoing",
+    "text" : "正在进行",
+    "value" : "ongoing"
+  }, {
+    "codeName" : "hired",
+    "text" : "被雇佣的",
+    "value" : "hired"
+  }, {
+    "codeName" : "refused",
+    "text" : "已拒绝",
+    "value" : "refused"
+  }, {
+    "codeName" : "archived",
+    "text" : "已归档",
+    "value" : "archived"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

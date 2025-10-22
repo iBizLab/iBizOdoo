@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_type/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.HR_LEAVE_TYPE"
+  },
+  "formCaption" : "休假类型",
+  "name" : "休假类型默认关系界面组"
+}

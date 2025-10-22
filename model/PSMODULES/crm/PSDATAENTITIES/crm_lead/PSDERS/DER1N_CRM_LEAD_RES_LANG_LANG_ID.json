@@ -1,0 +1,27 @@
+{
+  "codeName" : "lang",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDERS/DER1N_CRM_LEAD_RES_LANG_LANG_ID.json",
+  "fKeyName" : "FD4F671DE1368187D1",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_lang.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead.json"
+  },
+  "name" : "DER1N_CRM_LEAD_RES_LANG_LANG_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "LANG_ID",
+    "codeName" : "lang_id"
+  },
+  "pickupDEFName" : "LANG_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "lang",
+  "enableFKey" : true
+}

@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_cron_trigger/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.IR_CRON_TRIGGER"
+  },
+  "formCaption" : "触发行动",
+  "name" : "触发行动默认关系界面组"
+}

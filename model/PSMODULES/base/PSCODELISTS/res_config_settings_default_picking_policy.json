@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "base__res_config_settings_default_picking_policy",
+  "codeListType" : "STATIC",
+  "codeName" : "res_config_settings_default_picking_policy",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/res_config_settings_default_picking_policy.json",
+  "emptyText" : "未定义",
+  "name" : "拣货策略",
+  "getPSCodeItems" : [ {
+    "codeName" : "direct",
+    "text" : "尽快运送产品，数量不足时创建欠单",
+    "value" : "direct"
+  }, {
+    "codeName" : "one",
+    "text" : "一次运送所有产品",
+    "value" : "one"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

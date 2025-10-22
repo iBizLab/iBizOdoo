@@ -1,0 +1,27 @@
+{
+  "codeName" : "default_resource_calendar",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_payroll_structure_type/PSDERS/DER1N_HR_PAYROLL_STRUCTURE_TYPE_RESOURCE_CALENDAR_DEFAULT_RESOURCE_CALENDAR_ID.json",
+  "fKeyName" : "FF3A305BEFAF5DF223",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/resource/PSDATAENTITIES/resource_calendar.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_payroll_structure_type.json"
+  },
+  "name" : "DER1N_HR_PAYROLL_STRUCTURE_TYPE_RESOURCE_CALENDAR_DEFAULT_RESOURCE_CALENDAR_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "DEFAULT_RESOURCE_CALENDAR_ID",
+    "codeName" : "default_resource_calendar_id"
+  },
+  "pickupDEFName" : "DEFAULT_RESOURCE_CALENDAR_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "default_resource_calendar",
+  "enableFKey" : true
+}

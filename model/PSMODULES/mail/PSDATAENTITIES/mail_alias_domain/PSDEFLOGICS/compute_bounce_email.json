@@ -1,0 +1,17 @@
+{
+  "codeName" : "compute_bounce_email",
+  "dEFLogicMode" : "COMPUTE",
+  "defaultParamName" : "DEFAULT",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_domain/PSDEFLOGICS/compute_bounce_email.json",
+  "logicName" : "compute_bounce_email",
+  "logicSubType" : "DEFIELD",
+  "name" : "compute_bounce_email",
+  "getPSDEField" : {
+    "name" : "BOUNCE_EMAIL",
+    "codeName" : "bounce_email"
+  },
+  "scriptCode" : "data.bounce_email=data.bounce_alias+'@'+data.name;",
+  "customCode" : true,
+  "enableBackend" : false,
+  "enableFront" : true
+}

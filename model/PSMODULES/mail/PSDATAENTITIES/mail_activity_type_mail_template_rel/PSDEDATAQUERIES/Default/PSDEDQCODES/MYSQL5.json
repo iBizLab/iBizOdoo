@@ -1,0 +1,25 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`MAIL_ACTIVITY_TYPE_ID`",
+    "name" : "MAIL_ACTIVITY_TYPE_ID"
+  }, {
+    "expression" : "t11.`NAME`",
+    "name" : "MAIL_ACTIVITY_TYPE_NAME"
+  }, {
+    "expression" : "t1.`MAIL_TEMPLATE_ID`",
+    "name" : "MAIL_TEMPLATE_ID"
+  }, {
+    "expression" : "t21.`NAME`",
+    "name" : "MAIL_TEMPLATE_NAME"
+  }, {
+    "expression" : "t1.`NAME`",
+    "name" : "NAME"
+  } ],
+  "queryCode" : "SELECT\nt1.`ID`,\nt1.`MAIL_ACTIVITY_TYPE_ID`,\nt11.`NAME` AS `MAIL_ACTIVITY_TYPE_NAME`,\nt1.`MAIL_TEMPLATE_ID`,\nt21.`NAME` AS `MAIL_TEMPLATE_NAME`,\nt1.`NAME`\nFROM `mail_activity_type_mail_template_rel` t1 \nLEFT JOIN `mail_activity_type` t11 ON t1.`MAIL_ACTIVITY_TYPE_ID` = t11.`ID` \nLEFT JOIN `mail_template` t21 ON t1.`MAIL_TEMPLATE_ID` = t21.`ID` \n",
+  "id" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_type_mail_template_rel/PSDEDATAQUERIES/Default/PSDEDQCODES/MYSQL5.json"
+}

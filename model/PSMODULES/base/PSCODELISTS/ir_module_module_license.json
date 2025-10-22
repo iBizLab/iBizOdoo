@@ -1,0 +1,61 @@
+{
+  "codeListTag" : "base__ir_module_module_license",
+  "codeListType" : "STATIC",
+  "codeName" : "ir_module_module_license",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/ir_module_module_license.json",
+  "emptyText" : "未定义",
+  "name" : "许可证",
+  "getPSCodeItems" : [ {
+    "codeName" : "gpl_SUB_2",
+    "text" : "GPL 版本 2",
+    "value" : "GPL-2"
+  }, {
+    "codeName" : "gpl_SUB_2_or_any_later_version",
+    "text" : "GPL-2 或更高版本",
+    "value" : "GPL-2 or any later version"
+  }, {
+    "codeName" : "gpl_SUB_3",
+    "text" : "GPL第3版",
+    "value" : "GPL-3"
+  }, {
+    "codeName" : "gpl_SUB_3_or_any_later_version",
+    "text" : "GPL-3或更高版本",
+    "value" : "GPL-3 or any later version"
+  }, {
+    "codeName" : "agpl_SUB_3",
+    "text" : "Affero GPL-3",
+    "value" : "AGPL-3"
+  }, {
+    "codeName" : "lgpl_SUB_3",
+    "text" : "LGPL 版本 3",
+    "value" : "LGPL-3"
+  }, {
+    "codeName" : "other_osi_approved_licence",
+    "text" : "OSI 批准的其他许可证",
+    "value" : "Other OSI approved licence"
+  }, {
+    "codeName" : "oeel_SUB_1",
+    "text" : "ERP 企业版授权协议 v1.0",
+    "value" : "OEEL-1"
+  }, {
+    "codeName" : "opl_SUB_1",
+    "text" : "Proprietary License v1.0",
+    "value" : "OPL-1"
+  }, {
+    "codeName" : "other_proprietary",
+    "text" : "其它所有权",
+    "value" : "Other proprietary"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

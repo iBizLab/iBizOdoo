@@ -1,0 +1,5906 @@
+{
+  "getAllPSAppDEActions" : [ {
+    "actionMode" : "CHECKKEY",
+    "actionTag" : "CheckKey",
+    "codeName" : "check_key",
+    "methodType" : "DEACTION",
+    "name" : "CheckKey",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/CheckKey.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "CREATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "check_key"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "requestPath" : "/check_key",
+    "builtinMethod" : false
+  }, {
+    "actionMode" : "CREATE",
+    "actionTag" : "Create",
+    "codeName" : "create",
+    "methodType" : "DEACTION",
+    "name" : "Create",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO",
+      "output" : true
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Create.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "CREATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "Create"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "builtinMethod" : false,
+    "noServiceCodeName" : true
+  }, {
+    "actionMode" : "READ",
+    "actionTag" : "Get",
+    "codeName" : "get",
+    "methodType" : "DEACTION",
+    "name" : "Get",
+    "getPSAppDEMethodInput" : {
+      "getKeyPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "name" : "输入对象",
+      "type" : "KEYFIELD"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Get.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "READ"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "Get"
+    },
+    "requestField" : "ID",
+    "requestMethod" : "GET",
+    "requestParamType" : "FIELD",
+    "builtinMethod" : false,
+    "needResourceKey" : true,
+    "noServiceCodeName" : true
+  }, {
+    "actionMode" : "GETDRAFT",
+    "actionTag" : "GetDraft",
+    "codeName" : "get_draft",
+    "methodType" : "DEACTION",
+    "name" : "GetDraft",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/GetDraft.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "CREATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "get_draft"
+    },
+    "requestMethod" : "GET",
+    "requestParamType" : "NONE",
+    "requestPath" : "/get_draft",
+    "builtinMethod" : false
+  }, {
+    "actionMode" : "CUSTOM",
+    "codeName" : "message_post_with_source",
+    "methodType" : "DEACTION",
+    "name" : "message_post_with_source",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "type" : "VOID"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/message_post_with_source.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "READ"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "message_post_with_source"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "requestPath" : "/message_post_with_source",
+    "builtinMethod" : false,
+    "needResourceKey" : true
+  }, {
+    "actionMode" : "DELETE",
+    "actionTag" : "Remove",
+    "batchActionMode" : 1,
+    "codeName" : "remove",
+    "methodType" : "DEACTION",
+    "name" : "Remove",
+    "getPSAppDEMethodInput" : {
+      "getKeyPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "name" : "输入对象",
+      "type" : "KEYFIELDS"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "type" : "VOID"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Remove.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "DELETE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "Remove"
+    },
+    "requestField" : "ID",
+    "requestMethod" : "DELETE",
+    "requestParamType" : "FIELD",
+    "builtinMethod" : false,
+    "enableBatchAction" : true,
+    "needResourceKey" : true,
+    "noServiceCodeName" : true
+  }, {
+    "actionMode" : "SAVE",
+    "actionTag" : "Save",
+    "codeName" : "save",
+    "methodType" : "DEACTION",
+    "name" : "Save",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO",
+      "output" : true
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Save.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "CREATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "save"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "requestPath" : "/save",
+    "builtinMethod" : false
+  }, {
+    "actionMode" : "UPDATE",
+    "actionTag" : "Update",
+    "codeName" : "update",
+    "methodType" : "DEACTION",
+    "name" : "Update",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO",
+      "output" : true
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Update.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "UPDATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "Update"
+    },
+    "requestMethod" : "PUT",
+    "requestParamType" : "ENTITY",
+    "builtinMethod" : false,
+    "needResourceKey" : true,
+    "noServiceCodeName" : true
+  } ],
+  "getAllPSAppDEDataSets" : [ {
+    "codeName" : "fetch_default",
+    "dataSetName" : "DEFAULT",
+    "dataSetTag" : "Default",
+    "methodType" : "FETCH",
+    "name" : "fetch_default",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_filter_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "PAGE"
+    },
+    "getPSDEDataSet" : {
+      "modelref" : true,
+      "id" : "Default"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "READ"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "requestPath" : "/fetch_default",
+    "builtinMethod" : false
+  } ],
+  "getAllPSAppDEFields" : [ {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[DURATION_TRACKING][状态时间]",
+      "getPSDEFFormItem" : {
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[DURATION_TRACKING][状态时间]",
+        "stringLength" : 1048576,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[DURATION_TRACKING][状态时间]移动端默认",
+      "getPSDEFFormItem" : {
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[DURATION_TRACKING][状态时间]移动端默认",
+        "stringLength" : 1048576,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "duration_tracking",
+    "logicName" : "状态时间",
+    "name" : "DURATION_TRACKING",
+    "stdDataType" : 21,
+    "stringLength" : 1048576
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[ACTIVITIES][活动集合]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ACTIVITY_MIXIN.ACTIVITIES"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[ACTIVITIES][活动集合]",
+        "stringLength" : 1048576,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[ACTIVITIES][活动集合]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ACTIVITY_MIXIN.ACTIVITIES"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[ACTIVITIES][活动集合]移动端默认",
+        "stringLength" : 1048576,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "activities",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.MAIL_ACTIVITY_MIXIN.ACTIVITIES"
+    },
+    "logicName" : "活动集合",
+    "name" : "ACTIVITIES",
+    "stdDataType" : 21,
+    "stringLength" : 1048576
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[ATTACHMENTS][附件集合]移动端默认",
+      "getPSDEFFormItem" : {
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[ATTACHMENTS][附件集合]移动端默认",
+        "stringLength" : 1048576,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[ATTACHMENTS][附件集合]",
+      "getPSDEFFormItem" : {
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[ATTACHMENTS][附件集合]",
+        "stringLength" : 1048576,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "attachments",
+    "logicName" : "附件集合",
+    "name" : "ATTACHMENTS",
+    "stdDataType" : 21,
+    "stringLength" : 1048576
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[FOLLOWERS][关注者]",
+      "getPSDEFFormItem" : {
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[FOLLOWERS][关注者]",
+        "stringLength" : 1048576,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[FOLLOWERS][关注者]移动端默认",
+      "getPSDEFFormItem" : {
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[FOLLOWERS][关注者]移动端默认",
+        "stringLength" : 1048576,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "followers",
+    "logicName" : "关注者",
+    "name" : "FOLLOWERS",
+    "stdDataType" : 21,
+    "stringLength" : 1048576
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[CREATE_UID][建立人]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CREATE_UID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "SPAN",
+        "name" : "[CREATE_UID][建立人]移动端默认",
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "allowEmpty" : false,
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[CREATE_UID][建立人]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CREATE_UID"
+        },
+        "codeName" : "Default",
+        "editorType" : "SPAN",
+        "name" : "[CREATE_UID][建立人]",
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT",
+        "allowEmpty" : false
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "create_uid",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CREATE_UID"
+    },
+    "logicName" : "建立人",
+    "name" : "CREATE_UID",
+    "predefinedType" : "CREATEMAN",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[CREATE_DATE][建立时间]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CREATE_DATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "SPAN",
+        "name" : "[CREATE_DATE][建立时间]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "allowEmpty" : false,
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[CREATE_DATE][建立时间]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CREATE_DATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "SPAN",
+        "name" : "[CREATE_DATE][建立时间]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "allowEmpty" : false
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "create_date",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CREATE_DATE"
+    },
+    "logicName" : "建立时间",
+    "name" : "CREATE_DATE",
+    "predefinedType" : "CREATEDATE",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[WRITE_UID][更新人]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.WRITE_UID"
+        },
+        "codeName" : "Default",
+        "editorType" : "SPAN",
+        "name" : "[WRITE_UID][更新人]",
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT",
+        "allowEmpty" : false
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[WRITE_UID][更新人]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.WRITE_UID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "SPAN",
+        "name" : "[WRITE_UID][更新人]移动端默认",
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "allowEmpty" : false,
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "write_uid",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.WRITE_UID"
+    },
+    "logicName" : "更新人",
+    "name" : "WRITE_UID",
+    "predefinedType" : "UPDATEMAN",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[NAME][名称]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.NAME"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[NAME][名称]移动端默认",
+        "stringLength" : 200,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[NAME][名称]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.NAME"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[NAME][名称]",
+        "stringLength" : 200,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "name",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.NAME"
+    },
+    "logicName" : "名称",
+    "name" : "NAME",
+    "stdDataType" : 25,
+    "stringLength" : 200,
+    "enableQuickSearch" : true,
+    "majorField" : true
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[ID][标识]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "SPAN",
+        "name" : "[ID][标识]移动端默认",
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "allowEmpty" : false,
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[ID][标识]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "SPAN",
+        "name" : "[ID][标识]",
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT",
+        "allowEmpty" : false
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.ID"
+    },
+    "logicName" : "标识",
+    "name" : "ID",
+    "stdDataType" : 25,
+    "stringLength" : 100,
+    "keyField" : true
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[WRITE_DATE][更新时间]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.WRITE_DATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "SPAN",
+        "name" : "[WRITE_DATE][更新时间]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "allowEmpty" : false
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[WRITE_DATE][更新时间]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.WRITE_DATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "SPAN",
+        "name" : "[WRITE_DATE][更新时间]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "allowEmpty" : false,
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "write_date",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.WRITE_DATE"
+    },
+    "logicName" : "更新时间",
+    "name" : "WRITE_DATE",
+    "predefinedType" : "UPDATEDATE",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[ACTIVE][有效]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[ACTIVE][有效]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[ACTIVE][有效]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[ACTIVE][有效]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "active",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVE"
+    },
+    "logicName" : "有效",
+    "name" : "ACTIVE",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[PRORATED_REVENUE][按比例分配的收入]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PRORATED_REVENUE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[PRORATED_REVENUE][按比例分配的收入]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[PRORATED_REVENUE][按比例分配的收入]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PRORATED_REVENUE"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[PRORATED_REVENUE][按比例分配的收入]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "prorated_revenue",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PRORATED_REVENUE"
+    },
+    "logicName" : "按比例分配的收入",
+    "name" : "PRORATED_REVENUE",
+    "stdDataType" : 6
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[EXPECTED_REVENUE][预期收入]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EXPECTED_REVENUE"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[EXPECTED_REVENUE][预期收入]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[EXPECTED_REVENUE][预期收入]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EXPECTED_REVENUE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[EXPECTED_REVENUE][预期收入]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "expected_revenue",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.EXPECTED_REVENUE"
+    },
+    "logicName" : "预期收入",
+    "name" : "EXPECTED_REVENUE",
+    "stdDataType" : 6
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[IAP_ENRICH_DONE][丰富结束]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.IAP_ENRICH_DONE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[IAP_ENRICH_DONE][丰富结束]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[IAP_ENRICH_DONE][丰富结束]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.IAP_ENRICH_DONE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[IAP_ENRICH_DONE][丰富结束]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "iap_enrich_done",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.IAP_ENRICH_DONE"
+    },
+    "logicName" : "丰富结束",
+    "name" : "IAP_ENRICH_DONE",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[DAY_CLOSE][待关闭天数]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DAY_CLOSE"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[DAY_CLOSE][待关闭天数]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[DAY_CLOSE][待关闭天数]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DAY_CLOSE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[DAY_CLOSE][待关闭天数]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "day_close",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DAY_CLOSE"
+    },
+    "logicName" : "待关闭天数",
+    "name" : "DAY_CLOSE",
+    "stdDataType" : 7
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[RECURRING_REVENUE_MONTHLY][预期 MRR]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_MONTHLY"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[RECURRING_REVENUE_MONTHLY][预期 MRR]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[RECURRING_REVENUE_MONTHLY][预期 MRR]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_MONTHLY"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[RECURRING_REVENUE_MONTHLY][预期 MRR]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "recurring_revenue_monthly",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_MONTHLY"
+    },
+    "logicName" : "预期 MRR",
+    "name" : "RECURRING_REVENUE_MONTHLY",
+    "stdDataType" : 6
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[RECURRING_REVENUE_MONTHLY_PRORATED][按比例分配的 MRR]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_MONTHLY_PRORATED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[RECURRING_REVENUE_MONTHLY_PRORATED][按比例分配的 MRR]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[RECURRING_REVENUE_MONTHLY_PRORATED][按比例分配的 MRR]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_MONTHLY_PRORATED"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[RECURRING_REVENUE_MONTHLY_PRORATED][按比例分配的 MRR]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "recurring_revenue_monthly_prorated",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_MONTHLY_PRORATED"
+    },
+    "logicName" : "按比例分配的 MRR",
+    "name" : "RECURRING_REVENUE_MONTHLY_PRORATED",
+    "stdDataType" : 6
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[DATE_CLOSED][关闭日期]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_CLOSED"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKER",
+        "name" : "[DATE_CLOSED][关闭日期]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[DATE_CLOSED][关闭日期]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_CLOSED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[DATE_CLOSED][关闭日期]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "date_closed",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_CLOSED"
+    },
+    "logicName" : "关闭日期",
+    "name" : "DATE_CLOSED",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[RECURRING_REVENUE][经常性收入]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[RECURRING_REVENUE][经常性收入]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[RECURRING_REVENUE][经常性收入]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[RECURRING_REVENUE][经常性收入]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "recurring_revenue",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE"
+    },
+    "logicName" : "经常性收入",
+    "name" : "RECURRING_REVENUE",
+    "stdDataType" : 6
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[AUTOMATED_PROBABILITY][自动概率]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.AUTOMATED_PROBABILITY"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[AUTOMATED_PROBABILITY][自动概率]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[AUTOMATED_PROBABILITY][自动概率]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.AUTOMATED_PROBABILITY"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[AUTOMATED_PROBABILITY][自动概率]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "automated_probability",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.AUTOMATED_PROBABILITY"
+    },
+    "logicName" : "自动概率",
+    "name" : "AUTOMATED_PROBABILITY",
+    "stdDataType" : 7
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[PROBABILITY][概率]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PROBABILITY"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[PROBABILITY][概率]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[PROBABILITY][概率]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PROBABILITY"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[PROBABILITY][概率]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "probability",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PROBABILITY"
+    },
+    "logicName" : "概率",
+    "name" : "PROBABILITY",
+    "stdDataType" : 7
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[DAY_OPEN][待分配天数]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DAY_OPEN"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[DAY_OPEN][待分配天数]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[DAY_OPEN][待分配天数]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DAY_OPEN"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[DAY_OPEN][待分配天数]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "day_open",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DAY_OPEN"
+    },
+    "logicName" : "待分配天数",
+    "name" : "DAY_OPEN",
+    "stdDataType" : 7
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[RECURRING_REVENUE_PRORATED][按比例分配的经常性收入]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_PRORATED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[RECURRING_REVENUE_PRORATED][按比例分配的经常性收入]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[RECURRING_REVENUE_PRORATED][按比例分配的经常性收入]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_PRORATED"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[RECURRING_REVENUE_PRORATED][按比例分配的经常性收入]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "recurring_revenue_prorated",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.RECURRING_REVENUE_PRORATED"
+    },
+    "logicName" : "按比例分配的经常性收入",
+    "name" : "RECURRING_REVENUE_PRORATED",
+    "stdDataType" : 6
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[DATE_AUTOMATION_LAST][最后操作]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_AUTOMATION_LAST"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[DATE_AUTOMATION_LAST][最后操作]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[DATE_AUTOMATION_LAST][最后操作]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_AUTOMATION_LAST"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKER",
+        "name" : "[DATE_AUTOMATION_LAST][最后操作]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "date_automation_last",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_AUTOMATION_LAST"
+    },
+    "logicName" : "最后操作",
+    "name" : "DATE_AUTOMATION_LAST",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[DATE_LAST_STAGE_UPDATE][最后阶段更新]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_LAST_STAGE_UPDATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[DATE_LAST_STAGE_UPDATE][最后阶段更新]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[DATE_LAST_STAGE_UPDATE][最后阶段更新]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_LAST_STAGE_UPDATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKER",
+        "name" : "[DATE_LAST_STAGE_UPDATE][最后阶段更新]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "date_last_stage_update",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_LAST_STAGE_UPDATE"
+    },
+    "logicName" : "最后阶段更新",
+    "name" : "DATE_LAST_STAGE_UPDATE",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[DATE_DEADLINE][预期结束]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_DEADLINE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[DATE_DEADLINE][预期结束]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[DATE_DEADLINE][预期结束]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_DEADLINE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKEREX_NOTIME",
+        "name" : "[DATE_DEADLINE][预期结束]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "date_deadline",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_DEADLINE"
+    },
+    "logicName" : "预期结束",
+    "name" : "DATE_DEADLINE",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[DATE_CONVERSION][转化日期]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_CONVERSION"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKER",
+        "name" : "[DATE_CONVERSION][转化日期]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[DATE_CONVERSION][转化日期]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_CONVERSION"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[DATE_CONVERSION][转化日期]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "date_conversion",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_CONVERSION"
+    },
+    "logicName" : "转化日期",
+    "name" : "DATE_CONVERSION",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[DATE_OPEN][指派日期]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_OPEN"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKER",
+        "name" : "[DATE_OPEN][指派日期]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[DATE_OPEN][指派日期]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_OPEN"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[DATE_OPEN][指派日期]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "date_open",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DATE_OPEN"
+    },
+    "logicName" : "指派日期",
+    "name" : "DATE_OPEN",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD HH:mm:ss"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[MESSAGE_BOUNCE][退回]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_BOUNCE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[MESSAGE_BOUNCE][退回]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[MESSAGE_BOUNCE][退回]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_BOUNCE"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[MESSAGE_BOUNCE][退回]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "message_bounce",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_BOUNCE"
+    },
+    "logicName" : "退回",
+    "name" : "MESSAGE_BOUNCE",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[COLOR][颜色索引]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.COLOR"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[COLOR][颜色索引]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[COLOR][颜色索引]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.COLOR"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[COLOR][颜色索引]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "color",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.COLOR"
+    },
+    "logicName" : "颜色索引",
+    "name" : "COLOR",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[EMAIL_CC][电子邮件抄送]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_CC"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[EMAIL_CC][电子邮件抄送]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[EMAIL_CC][电子邮件抄送]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_CC"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[EMAIL_CC][电子邮件抄送]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "email_cc",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_CC"
+    },
+    "logicName" : "电子邮件抄送",
+    "name" : "EMAIL_CC",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[DESCRIPTION][备注]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DESCRIPTION"
+        },
+        "codeName" : "Default",
+        "editorType" : "HTMLEDITOR",
+        "name" : "[DESCRIPTION][备注]",
+        "stringLength" : 1048576,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[DESCRIPTION][备注]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DESCRIPTION"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HTMLEDITOR",
+        "name" : "[DESCRIPTION][备注]移动端默认",
+        "stringLength" : 1048576,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "description",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DESCRIPTION"
+    },
+    "logicName" : "备注",
+    "name" : "DESCRIPTION",
+    "stdDataType" : 21,
+    "stringLength" : 1048576
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[REFERRED][推荐人]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.REFERRED"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[REFERRED][推荐人]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[REFERRED][推荐人]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.REFERRED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[REFERRED][推荐人]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "referred",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.REFERRED"
+    },
+    "logicName" : "推荐人",
+    "name" : "REFERRED",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[CITY][城市]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.CITY"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[CITY][城市]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[CITY][城市]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.CITY"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[CITY][城市]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "city",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.CITY"
+    },
+    "logicName" : "城市",
+    "name" : "CITY",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[CONTACT_NAME][联系人姓名]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.CONTACT_NAME"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[CONTACT_NAME][联系人姓名]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[CONTACT_NAME][联系人姓名]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.CONTACT_NAME"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[CONTACT_NAME][联系人姓名]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "contact_name",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.CONTACT_NAME"
+    },
+    "logicName" : "联系人姓名",
+    "name" : "CONTACT_NAME",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[EMAIL_DOMAIN_CRITERION][电子邮箱域名标准]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_DOMAIN_CRITERION"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[EMAIL_DOMAIN_CRITERION][电子邮箱域名标准]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[EMAIL_DOMAIN_CRITERION][电子邮箱域名标准]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_DOMAIN_CRITERION"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[EMAIL_DOMAIN_CRITERION][电子邮箱域名标准]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "email_domain_criterion",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_DOMAIN_CRITERION"
+    },
+    "logicName" : "电子邮箱域名标准",
+    "name" : "EMAIL_DOMAIN_CRITERION",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[ZIP][邮编]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ZIP"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[ZIP][邮编]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[ZIP][邮编]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ZIP"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[ZIP][邮编]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "zip",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.ZIP"
+    },
+    "logicName" : "邮编",
+    "name" : "ZIP",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MOBILE][手机号码]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MOBILE"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[MOBILE][手机号码]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MOBILE][手机号码]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MOBILE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[MOBILE][手机号码]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "mobile",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MOBILE"
+    },
+    "logicName" : "手机号码",
+    "name" : "MOBILE",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[EMAIL_FROM][电子邮件]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_FROM"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[EMAIL_FROM][电子邮件]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[EMAIL_FROM][电子邮件]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_FROM"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[EMAIL_FROM][电子邮件]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "email_from",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_FROM"
+    },
+    "logicName" : "电子邮件",
+    "name" : "EMAIL_FROM",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[PHONE][电话号码]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[PHONE][电话号码]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[PHONE][电话号码]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[PHONE][电话号码]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "phone",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE"
+    },
+    "logicName" : "电话号码",
+    "name" : "PHONE",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[FUNCTION][工作岗位]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.FUNCTION"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[FUNCTION][工作岗位]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[FUNCTION][工作岗位]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.FUNCTION"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[FUNCTION][工作岗位]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "function",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.FUNCTION"
+    },
+    "logicName" : "工作岗位",
+    "name" : "FUNCTION",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[STREET2][街道2]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.STREET2"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[STREET2][街道2]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[STREET2][街道2]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.STREET2"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[STREET2][街道2]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "street2",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.STREET2"
+    },
+    "logicName" : "街道2",
+    "name" : "STREET2",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[STREET][街道]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.STREET"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[STREET][街道]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[STREET][街道]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.STREET"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[STREET][街道]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "street",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.STREET"
+    },
+    "logicName" : "街道",
+    "name" : "STREET",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[EMAIL_NORMALIZED][规范化电子邮件]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_NORMALIZED"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[EMAIL_NORMALIZED][规范化电子邮件]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[EMAIL_NORMALIZED][规范化电子邮件]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_NORMALIZED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[EMAIL_NORMALIZED][规范化电子邮件]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "email_normalized",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_NORMALIZED"
+    },
+    "logicName" : "规范化电子邮件",
+    "name" : "EMAIL_NORMALIZED",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[REVEAL_ID][显示 ID]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.REVEAL_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[REVEAL_ID][显示 ID]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[REVEAL_ID][显示 ID]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.REVEAL_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[REVEAL_ID][显示 ID]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "reveal_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.REVEAL_ID"
+    },
+    "logicName" : "显示 ID",
+    "name" : "REVEAL_ID",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[TYPE][类型]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.TYPE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDROPDOWNLIST",
+        "name" : "[TYPE][类型]移动端默认",
+        "stringLength" : 60,
+        "uIMode" : "MOBILEDEFAULT",
+        "allowEmpty" : false,
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[TYPE][类型]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.TYPE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST",
+        "name" : "[TYPE][类型]",
+        "stringLength" : 60,
+        "uIMode" : "DEFAULT",
+        "allowEmpty" : false,
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "type",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.TYPE"
+    },
+    "logicName" : "类型",
+    "name" : "TYPE",
+    "stdDataType" : 25,
+    "stringLength" : 60
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[WEBSITE][网站]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.WEBSITE"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[WEBSITE][网站]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[WEBSITE][网站]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.WEBSITE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[WEBSITE][网站]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "website",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.WEBSITE"
+    },
+    "logicName" : "网站",
+    "name" : "WEBSITE",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[PARTNER_NAME][公司名称]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_NAME"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[PARTNER_NAME][公司名称]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[PARTNER_NAME][公司名称]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_NAME"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[PARTNER_NAME][公司名称]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "partner_name",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_NAME"
+    },
+    "logicName" : "公司名称",
+    "name" : "PARTNER_NAME",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[PHONE_SANITIZED][已净化号码]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_SANITIZED"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[PHONE_SANITIZED][已净化号码]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[PHONE_SANITIZED][已净化号码]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_SANITIZED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[PHONE_SANITIZED][已净化号码]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "phone_sanitized",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_SANITIZED"
+    },
+    "logicName" : "已净化号码",
+    "name" : "PHONE_SANITIZED",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[EMAIL_STATE][电子邮件质量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_STATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDROPDOWNLIST",
+        "name" : "[EMAIL_STATE][电子邮件质量]移动端默认",
+        "stringLength" : 60,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[EMAIL_STATE][电子邮件质量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_STATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST",
+        "name" : "[EMAIL_STATE][电子邮件质量]",
+        "stringLength" : 60,
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "email_state",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.EMAIL_STATE"
+    },
+    "logicName" : "电子邮件质量",
+    "name" : "EMAIL_STATE",
+    "stdDataType" : 25,
+    "stringLength" : 60
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[PHONE_STATE][电话号码质量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_STATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDROPDOWNLIST",
+        "name" : "[PHONE_STATE][电话号码质量]移动端默认",
+        "stringLength" : 60,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[PHONE_STATE][电话号码质量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_STATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST",
+        "name" : "[PHONE_STATE][电话号码质量]",
+        "stringLength" : 60,
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "phone_state",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_STATE"
+    },
+    "logicName" : "电话号码质量",
+    "name" : "PHONE_STATE",
+    "stdDataType" : 25,
+    "stringLength" : 60
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[PRIORITY][优先级]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PRIORITY"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST",
+        "name" : "[PRIORITY][优先级]",
+        "stringLength" : 60,
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[PRIORITY][优先级]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PRIORITY"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDROPDOWNLIST",
+        "name" : "[PRIORITY][优先级]移动端默认",
+        "stringLength" : 60,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "priority",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PRIORITY"
+    },
+    "logicName" : "优先级",
+    "name" : "PRIORITY",
+    "stdDataType" : 25,
+    "stringLength" : 60
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[LANG_ID][语言]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.LANG_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[LANG_ID][语言]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_lang.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[LANG_ID][语言]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.LANG_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[LANG_ID][语言]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_lang.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "lang_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.LANG_ID"
+    },
+    "logicName" : "语言",
+    "name" : "LANG_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[COMPANY_ID][公司]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.COMPANY_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[COMPANY_ID][公司]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_company.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[COMPANY_ID][公司]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.COMPANY_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[COMPANY_ID][公司]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_company.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "company_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.COMPANY_ID"
+    },
+    "logicName" : "公司",
+    "name" : "COMPANY_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[USER_ID][销售人员]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.USER_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[USER_ID][销售人员]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[USER_ID][销售人员]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.USER_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[USER_ID][销售人员]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "user_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.USER_ID"
+    },
+    "logicName" : "销售人员",
+    "name" : "USER_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[STATE_ID][省/州]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.STATE_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[STATE_ID][省/州]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_country_state.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[STATE_ID][省/州]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.STATE_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[STATE_ID][省/州]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_country_state.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "state_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.STATE_ID"
+    },
+    "logicName" : "省/州",
+    "name" : "STATE_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[STAGE_ID][阶段]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.STAGE_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[STAGE_ID][阶段]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/crm/PSDATAENTITIES/crm_stage.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[STAGE_ID][阶段]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.STAGE_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[STAGE_ID][阶段]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/crm/PSDATAENTITIES/crm_stage.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "stage_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.STAGE_ID"
+    },
+    "logicName" : "阶段",
+    "name" : "STAGE_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[TEAM_ID][销售团队]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.TEAM_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[TEAM_ID][销售团队]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[TEAM_ID][销售团队]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.TEAM_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[TEAM_ID][销售团队]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "team_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.TEAM_ID"
+    },
+    "logicName" : "销售团队",
+    "name" : "TEAM_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[LOST_REASON_ID][丢失原因]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.LOST_REASON_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[LOST_REASON_ID][丢失原因]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lost_reason.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[LOST_REASON_ID][丢失原因]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.LOST_REASON_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[LOST_REASON_ID][丢失原因]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lost_reason.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "lost_reason_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.LOST_REASON_ID"
+    },
+    "logicName" : "丢失原因",
+    "name" : "LOST_REASON_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[COUNTRY_ID][国家/地区]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.COUNTRY_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[COUNTRY_ID][国家/地区]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_country.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[COUNTRY_ID][国家/地区]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.COUNTRY_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[COUNTRY_ID][国家/地区]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_country.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "country_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.COUNTRY_ID"
+    },
+    "logicName" : "国家/地区",
+    "name" : "COUNTRY_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[PARTNER_ID][客户]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[PARTNER_ID][客户]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_partner.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[PARTNER_ID][客户]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[PARTNER_ID][客户]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/base/PSDATAENTITIES/res_partner.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "partner_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_ID"
+    },
+    "logicName" : "客户",
+    "name" : "PARTNER_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[LEAD_MINING_REQUEST_ID][线索挖掘申请]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.LEAD_MINING_REQUEST_ID"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "HIDDEN",
+        "name" : "[LEAD_MINING_REQUEST_ID][线索挖掘申请]移动端默认",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[LEAD_MINING_REQUEST_ID][线索挖掘申请]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.LEAD_MINING_REQUEST_ID"
+        },
+        "codeName" : "Default",
+        "editorType" : "HIDDEN",
+        "name" : "[LEAD_MINING_REQUEST_ID][线索挖掘申请]",
+        "getRefPSDataEntity" : {
+          "modelref" : true,
+          "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request.json"
+        },
+        "stringLength" : 100,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "lead_mining_request_id",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.LEAD_MINING_REQUEST_ID"
+    },
+    "logicName" : "线索挖掘申请",
+    "name" : "LEAD_MINING_REQUEST_ID",
+    "stdDataType" : 25,
+    "stringLength" : 100
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[PARTNER_PHONE_UPDATE][合作伙伴电话号码将更新]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_PHONE_UPDATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[PARTNER_PHONE_UPDATE][合作伙伴电话号码将更新]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[PARTNER_PHONE_UPDATE][合作伙伴电话号码将更新]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_PHONE_UPDATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[PARTNER_PHONE_UPDATE][合作伙伴电话号码将更新]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "partner_phone_update",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_PHONE_UPDATE"
+    },
+    "logicName" : "合作伙伴电话号码将更新",
+    "name" : "PARTNER_PHONE_UPDATE",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MESSAGE_HAS_ERROR][消息发送错误]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_ERROR"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[MESSAGE_HAS_ERROR][消息发送错误]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MESSAGE_HAS_ERROR][消息发送错误]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_ERROR"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[MESSAGE_HAS_ERROR][消息发送错误]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "message_has_error",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_ERROR"
+    },
+    "logicName" : "消息发送错误",
+    "name" : "MESSAGE_HAS_ERROR",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[IS_PARTNER_VISIBLE][是可见合作伙伴]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_PARTNER_VISIBLE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[IS_PARTNER_VISIBLE][是可见合作伙伴]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[IS_PARTNER_VISIBLE][是可见合作伙伴]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_PARTNER_VISIBLE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[IS_PARTNER_VISIBLE][是可见合作伙伴]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "is_partner_visible",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_PARTNER_VISIBLE"
+    },
+    "logicName" : "是可见合作伙伴",
+    "name" : "IS_PARTNER_VISIBLE",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[PARTNER_EMAIL_UPDATE][合作伙伴电子邮箱将更新]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_EMAIL_UPDATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[PARTNER_EMAIL_UPDATE][合作伙伴电子邮箱将更新]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[PARTNER_EMAIL_UPDATE][合作伙伴电子邮箱将更新]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_EMAIL_UPDATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[PARTNER_EMAIL_UPDATE][合作伙伴电子邮箱将更新]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "partner_email_update",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PARTNER_EMAIL_UPDATE"
+    },
+    "logicName" : "合作伙伴电子邮箱将更新",
+    "name" : "PARTNER_EMAIL_UPDATE",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MESSAGE_NEEDACTION][所需操作]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_NEEDACTION"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[MESSAGE_NEEDACTION][所需操作]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MESSAGE_NEEDACTION][所需操作]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_NEEDACTION"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[MESSAGE_NEEDACTION][所需操作]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "message_needaction",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_NEEDACTION"
+    },
+    "logicName" : "所需操作",
+    "name" : "MESSAGE_NEEDACTION",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MESSAGE_IS_FOLLOWER][是关注者]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_IS_FOLLOWER"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[MESSAGE_IS_FOLLOWER][是关注者]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MESSAGE_IS_FOLLOWER][是关注者]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_IS_FOLLOWER"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[MESSAGE_IS_FOLLOWER][是关注者]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "message_is_follower",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_IS_FOLLOWER"
+    },
+    "logicName" : "是关注者",
+    "name" : "MESSAGE_IS_FOLLOWER",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[HAS_MESSAGE][有消息]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.HAS_MESSAGE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[HAS_MESSAGE][有消息]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[HAS_MESSAGE][有消息]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.HAS_MESSAGE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[HAS_MESSAGE][有消息]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "has_message",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.HAS_MESSAGE"
+    },
+    "logicName" : "有消息",
+    "name" : "HAS_MESSAGE",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[IS_AUTOMATED_PROBABILITY][是自动概率？]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_AUTOMATED_PROBABILITY"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[IS_AUTOMATED_PROBABILITY][是自动概率？]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[IS_AUTOMATED_PROBABILITY][是自动概率？]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_AUTOMATED_PROBABILITY"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[IS_AUTOMATED_PROBABILITY][是自动概率？]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "is_automated_probability",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_AUTOMATED_PROBABILITY"
+    },
+    "logicName" : "是自动概率？",
+    "name" : "IS_AUTOMATED_PROBABILITY",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[PHONE_BLACKLISTED][列入黑名单的电话是电话]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_BLACKLISTED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[PHONE_BLACKLISTED][列入黑名单的电话是电话]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[PHONE_BLACKLISTED][列入黑名单的电话是电话]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_BLACKLISTED"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[PHONE_BLACKLISTED][列入黑名单的电话是电话]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "phone_blacklisted",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_BLACKLISTED"
+    },
+    "logicName" : "列入黑名单的电话是电话",
+    "name" : "PHONE_BLACKLISTED",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[MESSAGE_HAS_SMS_ERROR][短信发送错误]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_SMS_ERROR"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[MESSAGE_HAS_SMS_ERROR][短信发送错误]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[MESSAGE_HAS_SMS_ERROR][短信发送错误]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_SMS_ERROR"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[MESSAGE_HAS_SMS_ERROR][短信发送错误]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "message_has_sms_error",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_SMS_ERROR"
+    },
+    "logicName" : "短信发送错误",
+    "name" : "MESSAGE_HAS_SMS_ERROR",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MOBILE_BLACKLISTED][列入黑名单的电话号码是手机号码]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MOBILE_BLACKLISTED"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[MOBILE_BLACKLISTED][列入黑名单的电话号码是手机号码]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MOBILE_BLACKLISTED][列入黑名单的电话号码是手机号码]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MOBILE_BLACKLISTED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[MOBILE_BLACKLISTED][列入黑名单的电话号码是手机号码]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "mobile_blacklisted",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MOBILE_BLACKLISTED"
+    },
+    "logicName" : "列入黑名单的电话号码是手机号码",
+    "name" : "MOBILE_BLACKLISTED",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[PHONE_SANITIZED_BLACKLISTED][电话号码已被列入黑名单]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_SANITIZED_BLACKLISTED"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[PHONE_SANITIZED_BLACKLISTED][电话号码已被列入黑名单]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[PHONE_SANITIZED_BLACKLISTED][电话号码已被列入黑名单]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_SANITIZED_BLACKLISTED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[PHONE_SANITIZED_BLACKLISTED][电话号码已被列入黑名单]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "phone_sanitized_blacklisted",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_SANITIZED_BLACKLISTED"
+    },
+    "logicName" : "电话号码已被列入黑名单",
+    "name" : "PHONE_SANITIZED_BLACKLISTED",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[SALE_AMOUNT_TOTAL][销售订单的总数]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.SALE_AMOUNT_TOTAL"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[SALE_AMOUNT_TOTAL][销售订单的总数]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[SALE_AMOUNT_TOTAL][销售订单的总数]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.SALE_AMOUNT_TOTAL"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[SALE_AMOUNT_TOTAL][销售订单的总数]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "sale_amount_total",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.SALE_AMOUNT_TOTAL"
+    },
+    "logicName" : "销售订单的总数",
+    "name" : "SALE_AMOUNT_TOTAL",
+    "stdDataType" : 6
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[SHOW_ENRICH_BUTTON][允许手动丰富]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.SHOW_ENRICH_BUTTON"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[SHOW_ENRICH_BUTTON][允许手动丰富]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[SHOW_ENRICH_BUTTON][允许手动丰富]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.SHOW_ENRICH_BUTTON"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[SHOW_ENRICH_BUTTON][允许手动丰富]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "show_enrich_button",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.SHOW_ENRICH_BUTTON"
+    },
+    "logicName" : "允许手动丰富",
+    "name" : "SHOW_ENRICH_BUTTON",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[IS_BLACKLISTED][黑名单]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_BLACKLISTED"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST_100",
+        "name" : "[IS_BLACKLISTED][黑名单]",
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[IS_BLACKLISTED][黑名单]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_BLACKLISTED"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSWITCH",
+        "name" : "[IS_BLACKLISTED][黑名单]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "is_blacklisted",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.IS_BLACKLISTED"
+    },
+    "logicName" : "黑名单",
+    "name" : "IS_BLACKLISTED",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MY_ACTIVITY_DATE_DEADLINE][我的活动截止时间]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MY_ACTIVITY_DATE_DEADLINE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKEREX_NOTIME",
+        "name" : "[MY_ACTIVITY_DATE_DEADLINE][我的活动截止时间]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MY_ACTIVITY_DATE_DEADLINE][我的活动截止时间]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MY_ACTIVITY_DATE_DEADLINE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[MY_ACTIVITY_DATE_DEADLINE][我的活动截止时间]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "my_activity_date_deadline",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MY_ACTIVITY_DATE_DEADLINE"
+    },
+    "logicName" : "我的活动截止时间",
+    "name" : "MY_ACTIVITY_DATE_DEADLINE",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MEETING_DISPLAY_DATE][会议显示日期]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MEETING_DISPLAY_DATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKEREX_NOTIME",
+        "name" : "[MEETING_DISPLAY_DATE][会议显示日期]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MEETING_DISPLAY_DATE][会议显示日期]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MEETING_DISPLAY_DATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[MEETING_DISPLAY_DATE][会议显示日期]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "meeting_display_date",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MEETING_DISPLAY_DATE"
+    },
+    "logicName" : "会议显示日期",
+    "name" : "MEETING_DISPLAY_DATE",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[ACTIVITY_DATE_DEADLINE][下一活动截止日期]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_DATE_DEADLINE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDATE",
+        "name" : "[ACTIVITY_DATE_DEADLINE][下一活动截止日期]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[ACTIVITY_DATE_DEADLINE][下一活动截止日期]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_DATE_DEADLINE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DATEPICKEREX_NOTIME",
+        "name" : "[ACTIVITY_DATE_DEADLINE][下一活动截止日期]",
+        "uIMode" : "DEFAULT",
+        "valueFormat" : "%1$tY-%1$tm-%1$td"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "activity_date_deadline",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_DATE_DEADLINE"
+    },
+    "logicName" : "下一活动截止日期",
+    "name" : "ACTIVITY_DATE_DEADLINE",
+    "stdDataType" : 5,
+    "valueFormat" : "YYYY-MM-DD"
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[LANG_ACTIVE_COUNT][有效语言数量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.LANG_ACTIVE_COUNT"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[LANG_ACTIVE_COUNT][有效语言数量]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[LANG_ACTIVE_COUNT][有效语言数量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.LANG_ACTIVE_COUNT"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[LANG_ACTIVE_COUNT][有效语言数量]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "lang_active_count",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.LANG_ACTIVE_COUNT"
+    },
+    "logicName" : "有效语言数量",
+    "name" : "LANG_ACTIVE_COUNT",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[MESSAGE_ATTACHMENT_COUNT][附件数量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_ATTACHMENT_COUNT"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[MESSAGE_ATTACHMENT_COUNT][附件数量]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[MESSAGE_ATTACHMENT_COUNT][附件数量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_ATTACHMENT_COUNT"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[MESSAGE_ATTACHMENT_COUNT][附件数量]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "message_attachment_count",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_ATTACHMENT_COUNT"
+    },
+    "logicName" : "附件数量",
+    "name" : "MESSAGE_ATTACHMENT_COUNT",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[DUPLICATE_LEAD_COUNT][潜在的重复线索数量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DUPLICATE_LEAD_COUNT"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[DUPLICATE_LEAD_COUNT][潜在的重复线索数量]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[DUPLICATE_LEAD_COUNT][潜在的重复线索数量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DUPLICATE_LEAD_COUNT"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[DUPLICATE_LEAD_COUNT][潜在的重复线索数量]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "duplicate_lead_count",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DUPLICATE_LEAD_COUNT"
+    },
+    "logicName" : "潜在的重复线索数量",
+    "name" : "DUPLICATE_LEAD_COUNT",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[SALE_ORDER_COUNT][销售订单数量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.SALE_ORDER_COUNT"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[SALE_ORDER_COUNT][销售订单数量]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[SALE_ORDER_COUNT][销售订单数量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.SALE_ORDER_COUNT"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[SALE_ORDER_COUNT][销售订单数量]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "sale_order_count",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.SALE_ORDER_COUNT"
+    },
+    "logicName" : "销售订单数量",
+    "name" : "SALE_ORDER_COUNT",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[QUOTATION_COUNT][报价的数量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.QUOTATION_COUNT"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[QUOTATION_COUNT][报价的数量]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[QUOTATION_COUNT][报价的数量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.QUOTATION_COUNT"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[QUOTATION_COUNT][报价的数量]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "quotation_count",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.QUOTATION_COUNT"
+    },
+    "logicName" : "报价的数量",
+    "name" : "QUOTATION_COUNT",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MESSAGE_HAS_ERROR_COUNTER][错误数量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_ERROR_COUNTER"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[MESSAGE_HAS_ERROR_COUNTER][错误数量]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MESSAGE_HAS_ERROR_COUNTER][错误数量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_ERROR_COUNTER"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[MESSAGE_HAS_ERROR_COUNTER][错误数量]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "message_has_error_counter",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_HAS_ERROR_COUNTER"
+    },
+    "logicName" : "错误数量",
+    "name" : "MESSAGE_HAS_ERROR_COUNTER",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MESSAGE_NEEDACTION_COUNTER][操作数量]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_NEEDACTION_COUNTER"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[MESSAGE_NEEDACTION_COUNTER][操作数量]",
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MESSAGE_NEEDACTION_COUNTER][操作数量]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_NEEDACTION_COUNTER"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[MESSAGE_NEEDACTION_COUNTER][操作数量]移动端默认",
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "message_needaction_counter",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MESSAGE_NEEDACTION_COUNTER"
+    },
+    "logicName" : "操作数量",
+    "name" : "MESSAGE_NEEDACTION_COUNTER",
+    "stdDataType" : 9
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[PHONE_MOBILE_SEARCH][电话号码/手机号码]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_MOBILE_SEARCH"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[PHONE_MOBILE_SEARCH][电话号码/手机号码]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[PHONE_MOBILE_SEARCH][电话号码/手机号码]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_MOBILE_SEARCH"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[PHONE_MOBILE_SEARCH][电话号码/手机号码]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "phone_mobile_search",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.PHONE_MOBILE_SEARCH"
+    },
+    "logicName" : "电话号码/手机号码",
+    "name" : "PHONE_MOBILE_SEARCH",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[MEETING_DISPLAY_LABEL][会议显示标签]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MEETING_DISPLAY_LABEL"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[MEETING_DISPLAY_LABEL][会议显示标签]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[MEETING_DISPLAY_LABEL][会议显示标签]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.MEETING_DISPLAY_LABEL"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[MEETING_DISPLAY_LABEL][会议显示标签]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "meeting_display_label",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.MEETING_DISPLAY_LABEL"
+    },
+    "logicName" : "会议显示标签",
+    "name" : "MEETING_DISPLAY_LABEL",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[DISPLAY_NAME][显示名称]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DISPLAY_NAME"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[DISPLAY_NAME][显示名称]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[DISPLAY_NAME][显示名称]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.DISPLAY_NAME"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[DISPLAY_NAME][显示名称]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "display_name",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.DISPLAY_NAME"
+    },
+    "logicName" : "显示名称",
+    "name" : "DISPLAY_NAME",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "Default",
+      "name" : "[ACTIVITY_EXCEPTION_ICON][图标]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_EXCEPTION_ICON"
+        },
+        "codeName" : "Default",
+        "editorType" : "TEXTBOX",
+        "name" : "[ACTIVITY_EXCEPTION_ICON][图标]",
+        "stringLength" : 500,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    }, {
+      "codeName" : "MobileDefault",
+      "name" : "[ACTIVITY_EXCEPTION_ICON][图标]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_EXCEPTION_ICON"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBTEXT",
+        "name" : "[ACTIVITY_EXCEPTION_ICON][图标]移动端默认",
+        "stringLength" : 500,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    } ],
+    "codeName" : "activity_exception_icon",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_EXCEPTION_ICON"
+    },
+    "logicName" : "图标",
+    "name" : "ACTIVITY_EXCEPTION_ICON",
+    "stdDataType" : 25,
+    "stringLength" : 500
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[ACTIVITY_STATE][活动状态]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_STATE"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDROPDOWNLIST",
+        "name" : "[ACTIVITY_STATE][活动状态]移动端默认",
+        "stringLength" : 200,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[ACTIVITY_STATE][活动状态]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_STATE"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST",
+        "name" : "[ACTIVITY_STATE][活动状态]",
+        "stringLength" : 200,
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "activity_state",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_STATE"
+    },
+    "logicName" : "活动状态",
+    "name" : "ACTIVITY_STATE",
+    "stdDataType" : 25,
+    "stringLength" : 200
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[ACTIVITY_EXCEPTION_DECORATION][活动异常标示]移动端默认",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_EXCEPTION_DECORATION"
+        },
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBDROPDOWNLIST",
+        "name" : "[ACTIVITY_EXCEPTION_DECORATION][活动异常标示]移动端默认",
+        "stringLength" : 200,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true,
+        "needCodeListConfig" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[ACTIVITY_EXCEPTION_DECORATION][活动异常标示]",
+      "getPSDEFFormItem" : {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_EXCEPTION_DECORATION"
+        },
+        "codeName" : "Default",
+        "editorType" : "DROPDOWNLIST",
+        "name" : "[ACTIVITY_EXCEPTION_DECORATION][活动异常标示]",
+        "stringLength" : 200,
+        "uIMode" : "DEFAULT",
+        "needCodeListConfig" : true
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "activity_exception_decoration",
+    "getLNPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.CRM_LEAD.ACTIVITY_EXCEPTION_DECORATION"
+    },
+    "logicName" : "活动异常标示",
+    "name" : "ACTIVITY_EXCEPTION_DECORATION",
+    "stdDataType" : 25,
+    "stringLength" : 200
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[FILE][文件]移动端默认",
+      "getPSDEFFormItem" : {
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBSINGLEFILEUPLOAD",
+        "name" : "[FILE][文件]移动端默认",
+        "stringLength" : 200,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[FILE][文件]",
+      "getPSDEFFormItem" : {
+        "codeName" : "Default",
+        "editorType" : "FILEUPLOADER_ONE",
+        "name" : "[FILE][文件]",
+        "stringLength" : 200,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "file",
+    "logicName" : "文件",
+    "name" : "FILE",
+    "stdDataType" : 25,
+    "stringLength" : 200
+  }, {
+    "getAllPSAppDEFUIModes" : [ {
+      "codeName" : "MobileDefault",
+      "name" : "[IMAGE][图片]移动端默认",
+      "getPSDEFFormItem" : {
+        "codeName" : "MobileDefault",
+        "editorType" : "MOBPICTURE",
+        "name" : "[IMAGE][图片]移动端默认",
+        "stringLength" : 200,
+        "uIMode" : "MOBILEDEFAULT",
+        "mobileMode" : true
+      },
+      "type" : "MOBILEDEFAULT",
+      "mobileMode" : true
+    }, {
+      "codeName" : "Default",
+      "name" : "[IMAGE][图片]",
+      "getPSDEFFormItem" : {
+        "codeName" : "Default",
+        "editorType" : "PICTURE_ONE",
+        "name" : "[IMAGE][图片]",
+        "stringLength" : 200,
+        "uIMode" : "DEFAULT"
+      },
+      "type" : "DEFAULT"
+    } ],
+    "codeName" : "image",
+    "logicName" : "图片",
+    "name" : "IMAGE",
+    "stdDataType" : 25,
+    "stringLength" : 200
+  } ],
+  "getAllPSAppDEMethodDTOs" : [ {
+    "codeName" : "crm_lead_dto",
+    "name" : "crm_lead_dto",
+    "getPSAppDEMethodDTOFields" : [ {
+      "codeName" : "duration_tracking",
+      "logicName" : "状态时间",
+      "name" : "duration_tracking",
+      "getPSAppDEField" : {
+        "name" : "DURATION_TRACKING",
+        "codeName" : "duration_tracking"
+      },
+      "sourceType" : "DEFIELD",
+      "type" : "DTO"
+    }, {
+      "codeName" : "activities",
+      "logicName" : "活动集合",
+      "name" : "activities",
+      "getPSAppDEField" : {
+        "name" : "ACTIVITIES",
+        "codeName" : "activities"
+      },
+      "getRefPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "mail_activity_dto"
+      },
+      "getRefPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+      },
+      "sourceType" : "DEFIELD",
+      "type" : "DTOS"
+    }, {
+      "codeName" : "attachments",
+      "logicName" : "附件集合",
+      "name" : "attachments",
+      "getPSAppDEField" : {
+        "name" : "ATTACHMENTS",
+        "codeName" : "attachments"
+      },
+      "getRefPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "ir_attachment_dto"
+      },
+      "getRefPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_attachment.json"
+      },
+      "sourceType" : "DEFIELD",
+      "type" : "DTOS"
+    }, {
+      "codeName" : "followers",
+      "logicName" : "关注者",
+      "name" : "followers",
+      "getPSAppDEField" : {
+        "name" : "FOLLOWERS",
+        "codeName" : "followers"
+      },
+      "getRefPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "mail_followers_dto"
+      },
+      "getRefPSAppDataEntity" : {
+        "modelref" : true,
+        "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_followers.json"
+      },
+      "sourceType" : "DEFIELD",
+      "type" : "DTOS"
+    }, {
+      "codeName" : "active",
+      "logicName" : "有效",
+      "name" : "active",
+      "getPSAppDEField" : {
+        "name" : "ACTIVE",
+        "codeName" : "active"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "activity_date_deadline",
+      "jsonFormat" : "yyyy-MM-dd",
+      "logicName" : "下一活动截止日期",
+      "name" : "activity_date_deadline",
+      "getPSAppDEField" : {
+        "name" : "ACTIVITY_DATE_DEADLINE",
+        "codeName" : "activity_date_deadline"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "activity_exception_decoration",
+      "logicName" : "活动异常标示",
+      "name" : "activity_exception_decoration",
+      "getPSAppDEField" : {
+        "name" : "ACTIVITY_EXCEPTION_DECORATION",
+        "codeName" : "activity_exception_decoration"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "activity_exception_icon",
+      "logicName" : "图标",
+      "name" : "activity_exception_icon",
+      "getPSAppDEField" : {
+        "name" : "ACTIVITY_EXCEPTION_ICON",
+        "codeName" : "activity_exception_icon"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "activity_state",
+      "logicName" : "活动状态",
+      "name" : "activity_state",
+      "getPSAppDEField" : {
+        "name" : "ACTIVITY_STATE",
+        "codeName" : "activity_state"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "automated_probability",
+      "logicName" : "自动概率",
+      "name" : "automated_probability",
+      "getPSAppDEField" : {
+        "name" : "AUTOMATED_PROBABILITY",
+        "codeName" : "automated_probability"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 7,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "city",
+      "logicName" : "城市",
+      "name" : "city",
+      "getPSAppDEField" : {
+        "name" : "CITY",
+        "codeName" : "city"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "color",
+      "logicName" : "颜色索引",
+      "name" : "color",
+      "getPSAppDEField" : {
+        "name" : "COLOR",
+        "codeName" : "color"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "company_id",
+      "logicName" : "公司",
+      "name" : "company_id",
+      "getPSAppDEField" : {
+        "name" : "COMPANY_ID",
+        "codeName" : "company_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "contact_name",
+      "logicName" : "联系人姓名",
+      "name" : "contact_name",
+      "getPSAppDEField" : {
+        "name" : "CONTACT_NAME",
+        "codeName" : "contact_name"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "country_id",
+      "logicName" : "国家/地区",
+      "name" : "country_id",
+      "getPSAppDEField" : {
+        "name" : "COUNTRY_ID",
+        "codeName" : "country_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "create_date",
+      "jsonFormat" : "yyyy-MM-dd HH:mm:ss",
+      "logicName" : "建立时间",
+      "name" : "create_date",
+      "getPSAppDEField" : {
+        "name" : "CREATE_DATE",
+        "codeName" : "create_date"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE",
+      "allowEmpty" : false
+    }, {
+      "codeName" : "create_uid",
+      "logicName" : "建立人",
+      "name" : "create_uid",
+      "getPSAppDEField" : {
+        "name" : "CREATE_UID",
+        "codeName" : "create_uid"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE",
+      "allowEmpty" : false
+    }, {
+      "codeName" : "date_automation_last",
+      "jsonFormat" : "yyyy-MM-dd HH:mm:ss",
+      "logicName" : "最后操作",
+      "name" : "date_automation_last",
+      "getPSAppDEField" : {
+        "name" : "DATE_AUTOMATION_LAST",
+        "codeName" : "date_automation_last"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "date_closed",
+      "jsonFormat" : "yyyy-MM-dd HH:mm:ss",
+      "logicName" : "关闭日期",
+      "name" : "date_closed",
+      "getPSAppDEField" : {
+        "name" : "DATE_CLOSED",
+        "codeName" : "date_closed"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "date_conversion",
+      "jsonFormat" : "yyyy-MM-dd HH:mm:ss",
+      "logicName" : "转化日期",
+      "name" : "date_conversion",
+      "getPSAppDEField" : {
+        "name" : "DATE_CONVERSION",
+        "codeName" : "date_conversion"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "date_deadline",
+      "jsonFormat" : "yyyy-MM-dd",
+      "logicName" : "预期结束",
+      "name" : "date_deadline",
+      "getPSAppDEField" : {
+        "name" : "DATE_DEADLINE",
+        "codeName" : "date_deadline"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "date_last_stage_update",
+      "jsonFormat" : "yyyy-MM-dd HH:mm:ss",
+      "logicName" : "最后阶段更新",
+      "name" : "date_last_stage_update",
+      "getPSAppDEField" : {
+        "name" : "DATE_LAST_STAGE_UPDATE",
+        "codeName" : "date_last_stage_update"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "date_open",
+      "jsonFormat" : "yyyy-MM-dd HH:mm:ss",
+      "logicName" : "指派日期",
+      "name" : "date_open",
+      "getPSAppDEField" : {
+        "name" : "DATE_OPEN",
+        "codeName" : "date_open"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "day_close",
+      "logicName" : "待关闭天数",
+      "name" : "day_close",
+      "getPSAppDEField" : {
+        "name" : "DAY_CLOSE",
+        "codeName" : "day_close"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 7,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "day_open",
+      "logicName" : "待分配天数",
+      "name" : "day_open",
+      "getPSAppDEField" : {
+        "name" : "DAY_OPEN",
+        "codeName" : "day_open"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 7,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "description",
+      "logicName" : "备注",
+      "name" : "description",
+      "getPSAppDEField" : {
+        "name" : "DESCRIPTION",
+        "codeName" : "description"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 21,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "display_name",
+      "logicName" : "显示名称",
+      "name" : "display_name",
+      "getPSAppDEField" : {
+        "name" : "DISPLAY_NAME",
+        "codeName" : "display_name"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "duplicate_lead_count",
+      "logicName" : "潜在的重复线索数量",
+      "name" : "duplicate_lead_count",
+      "getPSAppDEField" : {
+        "name" : "DUPLICATE_LEAD_COUNT",
+        "codeName" : "duplicate_lead_count"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "email_cc",
+      "logicName" : "电子邮件抄送",
+      "name" : "email_cc",
+      "getPSAppDEField" : {
+        "name" : "EMAIL_CC",
+        "codeName" : "email_cc"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "email_domain_criterion",
+      "logicName" : "电子邮箱域名标准",
+      "name" : "email_domain_criterion",
+      "getPSAppDEField" : {
+        "name" : "EMAIL_DOMAIN_CRITERION",
+        "codeName" : "email_domain_criterion"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "email_from",
+      "logicName" : "电子邮件",
+      "name" : "email_from",
+      "getPSAppDEField" : {
+        "name" : "EMAIL_FROM",
+        "codeName" : "email_from"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "email_normalized",
+      "logicName" : "规范化电子邮件",
+      "name" : "email_normalized",
+      "getPSAppDEField" : {
+        "name" : "EMAIL_NORMALIZED",
+        "codeName" : "email_normalized"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "email_state",
+      "logicName" : "电子邮件质量",
+      "name" : "email_state",
+      "getPSAppDEField" : {
+        "name" : "EMAIL_STATE",
+        "codeName" : "email_state"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "expected_revenue",
+      "logicName" : "预期收入",
+      "name" : "expected_revenue",
+      "getPSAppDEField" : {
+        "name" : "EXPECTED_REVENUE",
+        "codeName" : "expected_revenue"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 6,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "function",
+      "logicName" : "工作岗位",
+      "name" : "function",
+      "getPSAppDEField" : {
+        "name" : "FUNCTION",
+        "codeName" : "function"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "has_message",
+      "logicName" : "有消息",
+      "name" : "has_message",
+      "getPSAppDEField" : {
+        "name" : "HAS_MESSAGE",
+        "codeName" : "has_message"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "iap_enrich_done",
+      "logicName" : "丰富结束",
+      "name" : "iap_enrich_done",
+      "getPSAppDEField" : {
+        "name" : "IAP_ENRICH_DONE",
+        "codeName" : "iap_enrich_done"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "id",
+      "logicName" : "标识",
+      "name" : "id",
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE",
+      "allowEmpty" : false
+    }, {
+      "codeName" : "is_automated_probability",
+      "logicName" : "是自动概率？",
+      "name" : "is_automated_probability",
+      "getPSAppDEField" : {
+        "name" : "IS_AUTOMATED_PROBABILITY",
+        "codeName" : "is_automated_probability"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "is_blacklisted",
+      "logicName" : "黑名单",
+      "name" : "is_blacklisted",
+      "getPSAppDEField" : {
+        "name" : "IS_BLACKLISTED",
+        "codeName" : "is_blacklisted"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "is_partner_visible",
+      "logicName" : "是可见合作伙伴",
+      "name" : "is_partner_visible",
+      "getPSAppDEField" : {
+        "name" : "IS_PARTNER_VISIBLE",
+        "codeName" : "is_partner_visible"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "lang_active_count",
+      "logicName" : "有效语言数量",
+      "name" : "lang_active_count",
+      "getPSAppDEField" : {
+        "name" : "LANG_ACTIVE_COUNT",
+        "codeName" : "lang_active_count"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "lang_id",
+      "logicName" : "语言",
+      "name" : "lang_id",
+      "getPSAppDEField" : {
+        "name" : "LANG_ID",
+        "codeName" : "lang_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "lead_mining_request_id",
+      "logicName" : "线索挖掘申请",
+      "name" : "lead_mining_request_id",
+      "getPSAppDEField" : {
+        "name" : "LEAD_MINING_REQUEST_ID",
+        "codeName" : "lead_mining_request_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "lost_reason_id",
+      "logicName" : "丢失原因",
+      "name" : "lost_reason_id",
+      "getPSAppDEField" : {
+        "name" : "LOST_REASON_ID",
+        "codeName" : "lost_reason_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "meeting_display_date",
+      "jsonFormat" : "yyyy-MM-dd",
+      "logicName" : "会议显示日期",
+      "name" : "meeting_display_date",
+      "getPSAppDEField" : {
+        "name" : "MEETING_DISPLAY_DATE",
+        "codeName" : "meeting_display_date"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "meeting_display_label",
+      "logicName" : "会议显示标签",
+      "name" : "meeting_display_label",
+      "getPSAppDEField" : {
+        "name" : "MEETING_DISPLAY_LABEL",
+        "codeName" : "meeting_display_label"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "message_attachment_count",
+      "logicName" : "附件数量",
+      "name" : "message_attachment_count",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_ATTACHMENT_COUNT",
+        "codeName" : "message_attachment_count"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "message_bounce",
+      "logicName" : "退回",
+      "name" : "message_bounce",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_BOUNCE",
+        "codeName" : "message_bounce"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "message_has_error",
+      "logicName" : "消息发送错误",
+      "name" : "message_has_error",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_HAS_ERROR",
+        "codeName" : "message_has_error"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "message_has_error_counter",
+      "logicName" : "错误数量",
+      "name" : "message_has_error_counter",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_HAS_ERROR_COUNTER",
+        "codeName" : "message_has_error_counter"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "message_has_sms_error",
+      "logicName" : "短信发送错误",
+      "name" : "message_has_sms_error",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_HAS_SMS_ERROR",
+        "codeName" : "message_has_sms_error"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "message_is_follower",
+      "logicName" : "是关注者",
+      "name" : "message_is_follower",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_IS_FOLLOWER",
+        "codeName" : "message_is_follower"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "message_needaction",
+      "logicName" : "所需操作",
+      "name" : "message_needaction",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_NEEDACTION",
+        "codeName" : "message_needaction"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "message_needaction_counter",
+      "logicName" : "操作数量",
+      "name" : "message_needaction_counter",
+      "getPSAppDEField" : {
+        "name" : "MESSAGE_NEEDACTION_COUNTER",
+        "codeName" : "message_needaction_counter"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "mobile",
+      "logicName" : "手机号码",
+      "name" : "mobile",
+      "getPSAppDEField" : {
+        "name" : "MOBILE",
+        "codeName" : "mobile"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "mobile_blacklisted",
+      "logicName" : "列入黑名单的电话号码是手机号码",
+      "name" : "mobile_blacklisted",
+      "getPSAppDEField" : {
+        "name" : "MOBILE_BLACKLISTED",
+        "codeName" : "mobile_blacklisted"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "my_activity_date_deadline",
+      "jsonFormat" : "yyyy-MM-dd",
+      "logicName" : "我的活动截止时间",
+      "name" : "my_activity_date_deadline",
+      "getPSAppDEField" : {
+        "name" : "MY_ACTIVITY_DATE_DEADLINE",
+        "codeName" : "my_activity_date_deadline"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "name",
+      "logicName" : "名称",
+      "name" : "name",
+      "getPSAppDEField" : {
+        "name" : "NAME",
+        "codeName" : "name"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "partner_email_update",
+      "logicName" : "合作伙伴电子邮箱将更新",
+      "name" : "partner_email_update",
+      "getPSAppDEField" : {
+        "name" : "PARTNER_EMAIL_UPDATE",
+        "codeName" : "partner_email_update"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "partner_id",
+      "logicName" : "客户",
+      "name" : "partner_id",
+      "getPSAppDEField" : {
+        "name" : "PARTNER_ID",
+        "codeName" : "partner_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "partner_name",
+      "logicName" : "公司名称",
+      "name" : "partner_name",
+      "getPSAppDEField" : {
+        "name" : "PARTNER_NAME",
+        "codeName" : "partner_name"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "partner_phone_update",
+      "logicName" : "合作伙伴电话号码将更新",
+      "name" : "partner_phone_update",
+      "getPSAppDEField" : {
+        "name" : "PARTNER_PHONE_UPDATE",
+        "codeName" : "partner_phone_update"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "phone",
+      "logicName" : "电话号码",
+      "name" : "phone",
+      "getPSAppDEField" : {
+        "name" : "PHONE",
+        "codeName" : "phone"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "phone_blacklisted",
+      "logicName" : "列入黑名单的电话是电话",
+      "name" : "phone_blacklisted",
+      "getPSAppDEField" : {
+        "name" : "PHONE_BLACKLISTED",
+        "codeName" : "phone_blacklisted"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "phone_mobile_search",
+      "logicName" : "电话号码/手机号码",
+      "name" : "phone_mobile_search",
+      "getPSAppDEField" : {
+        "name" : "PHONE_MOBILE_SEARCH",
+        "codeName" : "phone_mobile_search"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "phone_sanitized",
+      "logicName" : "已净化号码",
+      "name" : "phone_sanitized",
+      "getPSAppDEField" : {
+        "name" : "PHONE_SANITIZED",
+        "codeName" : "phone_sanitized"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "phone_sanitized_blacklisted",
+      "logicName" : "电话号码已被列入黑名单",
+      "name" : "phone_sanitized_blacklisted",
+      "getPSAppDEField" : {
+        "name" : "PHONE_SANITIZED_BLACKLISTED",
+        "codeName" : "phone_sanitized_blacklisted"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "phone_state",
+      "logicName" : "电话号码质量",
+      "name" : "phone_state",
+      "getPSAppDEField" : {
+        "name" : "PHONE_STATE",
+        "codeName" : "phone_state"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "priority",
+      "logicName" : "优先级",
+      "name" : "priority",
+      "getPSAppDEField" : {
+        "name" : "PRIORITY",
+        "codeName" : "priority"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "probability",
+      "logicName" : "概率",
+      "name" : "probability",
+      "getPSAppDEField" : {
+        "name" : "PROBABILITY",
+        "codeName" : "probability"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 7,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "prorated_revenue",
+      "logicName" : "按比例分配的收入",
+      "name" : "prorated_revenue",
+      "getPSAppDEField" : {
+        "name" : "PRORATED_REVENUE",
+        "codeName" : "prorated_revenue"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 6,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "quotation_count",
+      "logicName" : "报价的数量",
+      "name" : "quotation_count",
+      "getPSAppDEField" : {
+        "name" : "QUOTATION_COUNT",
+        "codeName" : "quotation_count"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "recurring_revenue",
+      "logicName" : "经常性收入",
+      "name" : "recurring_revenue",
+      "getPSAppDEField" : {
+        "name" : "RECURRING_REVENUE",
+        "codeName" : "recurring_revenue"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 6,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "recurring_revenue_monthly",
+      "logicName" : "预期 MRR",
+      "name" : "recurring_revenue_monthly",
+      "getPSAppDEField" : {
+        "name" : "RECURRING_REVENUE_MONTHLY",
+        "codeName" : "recurring_revenue_monthly"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 6,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "recurring_revenue_monthly_prorated",
+      "logicName" : "按比例分配的 MRR",
+      "name" : "recurring_revenue_monthly_prorated",
+      "getPSAppDEField" : {
+        "name" : "RECURRING_REVENUE_MONTHLY_PRORATED",
+        "codeName" : "recurring_revenue_monthly_prorated"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 6,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "recurring_revenue_prorated",
+      "logicName" : "按比例分配的经常性收入",
+      "name" : "recurring_revenue_prorated",
+      "getPSAppDEField" : {
+        "name" : "RECURRING_REVENUE_PRORATED",
+        "codeName" : "recurring_revenue_prorated"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 6,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "referred",
+      "logicName" : "推荐人",
+      "name" : "referred",
+      "getPSAppDEField" : {
+        "name" : "REFERRED",
+        "codeName" : "referred"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "reveal_id",
+      "logicName" : "显示 ID",
+      "name" : "reveal_id",
+      "getPSAppDEField" : {
+        "name" : "REVEAL_ID",
+        "codeName" : "reveal_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "sale_amount_total",
+      "logicName" : "销售订单的总数",
+      "name" : "sale_amount_total",
+      "getPSAppDEField" : {
+        "name" : "SALE_AMOUNT_TOTAL",
+        "codeName" : "sale_amount_total"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 6,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "sale_order_count",
+      "logicName" : "销售订单数量",
+      "name" : "sale_order_count",
+      "getPSAppDEField" : {
+        "name" : "SALE_ORDER_COUNT",
+        "codeName" : "sale_order_count"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "show_enrich_button",
+      "logicName" : "允许手动丰富",
+      "name" : "show_enrich_button",
+      "getPSAppDEField" : {
+        "name" : "SHOW_ENRICH_BUTTON",
+        "codeName" : "show_enrich_button"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "stage_id",
+      "logicName" : "阶段",
+      "name" : "stage_id",
+      "getPSAppDEField" : {
+        "name" : "STAGE_ID",
+        "codeName" : "stage_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "state_id",
+      "logicName" : "省/州",
+      "name" : "state_id",
+      "getPSAppDEField" : {
+        "name" : "STATE_ID",
+        "codeName" : "state_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "street",
+      "logicName" : "街道",
+      "name" : "street",
+      "getPSAppDEField" : {
+        "name" : "STREET",
+        "codeName" : "street"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "street2",
+      "logicName" : "街道2",
+      "name" : "street2",
+      "getPSAppDEField" : {
+        "name" : "STREET2",
+        "codeName" : "street2"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "team_id",
+      "logicName" : "销售团队",
+      "name" : "team_id",
+      "getPSAppDEField" : {
+        "name" : "TEAM_ID",
+        "codeName" : "team_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "type",
+      "logicName" : "类型",
+      "name" : "type",
+      "getPSAppDEField" : {
+        "name" : "TYPE",
+        "codeName" : "type"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE",
+      "allowEmpty" : false
+    }, {
+      "codeName" : "user_id",
+      "logicName" : "销售人员",
+      "name" : "user_id",
+      "getPSAppDEField" : {
+        "name" : "USER_ID",
+        "codeName" : "user_id"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "website",
+      "logicName" : "网站",
+      "name" : "website",
+      "getPSAppDEField" : {
+        "name" : "WEBSITE",
+        "codeName" : "website"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "write_date",
+      "jsonFormat" : "yyyy-MM-dd HH:mm:ss",
+      "logicName" : "更新时间",
+      "name" : "write_date",
+      "getPSAppDEField" : {
+        "name" : "WRITE_DATE",
+        "codeName" : "write_date"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 5,
+      "type" : "SIMPLE",
+      "allowEmpty" : false
+    }, {
+      "codeName" : "write_uid",
+      "logicName" : "更新人",
+      "name" : "write_uid",
+      "getPSAppDEField" : {
+        "name" : "WRITE_UID",
+        "codeName" : "write_uid"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE",
+      "allowEmpty" : false
+    }, {
+      "codeName" : "zip",
+      "logicName" : "邮编",
+      "name" : "zip",
+      "getPSAppDEField" : {
+        "name" : "ZIP",
+        "codeName" : "zip"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "file",
+      "logicName" : "文件",
+      "name" : "file",
+      "getPSAppDEField" : {
+        "name" : "FILE",
+        "codeName" : "file"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "image",
+      "logicName" : "图片",
+      "name" : "image",
+      "getPSAppDEField" : {
+        "name" : "IMAGE",
+        "codeName" : "image"
+      },
+      "sourceType" : "DEFIELD",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    } ],
+    "sourceType" : "DE",
+    "type" : "DEFAULT"
+  }, {
+    "codeName" : "crm_lead_filter_dto",
+    "name" : "crm_lead_filter_dto",
+    "getPSAppDEMethodDTOFields" : [ {
+      "codeName" : "n_activity_exception_decoration_eq",
+      "logicName" : "活动异常标示",
+      "name" : "n_activity_exception_decoration_eq",
+      "getPSAppDEField" : {
+        "name" : "ACTIVITY_EXCEPTION_DECORATION",
+        "codeName" : "activity_exception_decoration"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_activity_state_eq",
+      "logicName" : "活动状态",
+      "name" : "n_activity_state_eq",
+      "getPSAppDEField" : {
+        "name" : "ACTIVITY_STATE",
+        "codeName" : "activity_state"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_company_id_eq",
+      "logicName" : "公司",
+      "name" : "n_company_id_eq",
+      "getPSAppDEField" : {
+        "name" : "COMPANY_ID",
+        "codeName" : "company_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_country_id_eq",
+      "logicName" : "国家/地区",
+      "name" : "n_country_id_eq",
+      "getPSAppDEField" : {
+        "name" : "COUNTRY_ID",
+        "codeName" : "country_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_email_state_eq",
+      "logicName" : "电子邮件质量",
+      "name" : "n_email_state_eq",
+      "getPSAppDEField" : {
+        "name" : "EMAIL_STATE",
+        "codeName" : "email_state"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_id_eq",
+      "logicName" : "标识",
+      "name" : "n_id_eq",
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_lang_id_eq",
+      "logicName" : "语言",
+      "name" : "n_lang_id_eq",
+      "getPSAppDEField" : {
+        "name" : "LANG_ID",
+        "codeName" : "lang_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_lead_mining_request_id_eq",
+      "logicName" : "线索挖掘申请",
+      "name" : "n_lead_mining_request_id_eq",
+      "getPSAppDEField" : {
+        "name" : "LEAD_MINING_REQUEST_ID",
+        "codeName" : "lead_mining_request_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_lost_reason_id_eq",
+      "logicName" : "丢失原因",
+      "name" : "n_lost_reason_id_eq",
+      "getPSAppDEField" : {
+        "name" : "LOST_REASON_ID",
+        "codeName" : "lost_reason_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_name_like",
+      "logicName" : "名称",
+      "name" : "n_name_like",
+      "getPSAppDEField" : {
+        "name" : "NAME",
+        "codeName" : "name"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_partner_id_eq",
+      "logicName" : "客户",
+      "name" : "n_partner_id_eq",
+      "getPSAppDEField" : {
+        "name" : "PARTNER_ID",
+        "codeName" : "partner_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_phone_state_eq",
+      "logicName" : "电话号码质量",
+      "name" : "n_phone_state_eq",
+      "getPSAppDEField" : {
+        "name" : "PHONE_STATE",
+        "codeName" : "phone_state"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_priority_eq",
+      "logicName" : "优先级",
+      "name" : "n_priority_eq",
+      "getPSAppDEField" : {
+        "name" : "PRIORITY",
+        "codeName" : "priority"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_stage_id_eq",
+      "logicName" : "阶段",
+      "name" : "n_stage_id_eq",
+      "getPSAppDEField" : {
+        "name" : "STAGE_ID",
+        "codeName" : "stage_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_state_id_eq",
+      "logicName" : "省/州",
+      "name" : "n_state_id_eq",
+      "getPSAppDEField" : {
+        "name" : "STATE_ID",
+        "codeName" : "state_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_team_id_eq",
+      "logicName" : "销售团队",
+      "name" : "n_team_id_eq",
+      "getPSAppDEField" : {
+        "name" : "TEAM_ID",
+        "codeName" : "team_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_type_eq",
+      "logicName" : "类型",
+      "name" : "n_type_eq",
+      "getPSAppDEField" : {
+        "name" : "TYPE",
+        "codeName" : "type"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    }, {
+      "codeName" : "n_user_id_eq",
+      "logicName" : "销售人员",
+      "name" : "n_user_id_eq",
+      "getPSAppDEField" : {
+        "name" : "USER_ID",
+        "codeName" : "user_id"
+      },
+      "sourceType" : "DEFSEARCHMODE",
+      "stdDataType" : 25,
+      "type" : "SIMPLE"
+    } ],
+    "sourceType" : "DE",
+    "type" : "DEFILTER"
+  } ],
+  "getAllPSAppDEMethods" : [ {
+    "actionMode" : "CHECKKEY",
+    "actionTag" : "CheckKey",
+    "codeName" : "check_key",
+    "methodType" : "DEACTION",
+    "name" : "CheckKey",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "stdDataType" : 9,
+      "type" : "SIMPLE"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/CheckKey.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "CREATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "check_key"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "requestPath" : "/check_key",
+    "builtinMethod" : false
+  }, {
+    "actionMode" : "CREATE",
+    "actionTag" : "Create",
+    "codeName" : "create",
+    "methodType" : "DEACTION",
+    "name" : "Create",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO",
+      "output" : true
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Create.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "CREATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "Create"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "builtinMethod" : false,
+    "noServiceCodeName" : true
+  }, {
+    "actionMode" : "READ",
+    "actionTag" : "Get",
+    "codeName" : "get",
+    "methodType" : "DEACTION",
+    "name" : "Get",
+    "getPSAppDEMethodInput" : {
+      "getKeyPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "name" : "输入对象",
+      "type" : "KEYFIELD"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Get.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "READ"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "Get"
+    },
+    "requestField" : "ID",
+    "requestMethod" : "GET",
+    "requestParamType" : "FIELD",
+    "builtinMethod" : false,
+    "needResourceKey" : true,
+    "noServiceCodeName" : true
+  }, {
+    "actionMode" : "GETDRAFT",
+    "actionTag" : "GetDraft",
+    "codeName" : "get_draft",
+    "methodType" : "DEACTION",
+    "name" : "GetDraft",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/GetDraft.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "CREATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "get_draft"
+    },
+    "requestMethod" : "GET",
+    "requestParamType" : "NONE",
+    "requestPath" : "/get_draft",
+    "builtinMethod" : false
+  }, {
+    "actionMode" : "CUSTOM",
+    "codeName" : "message_post_with_source",
+    "methodType" : "DEACTION",
+    "name" : "message_post_with_source",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "type" : "VOID"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/message_post_with_source.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "READ"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "message_post_with_source"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "requestPath" : "/message_post_with_source",
+    "builtinMethod" : false,
+    "needResourceKey" : true
+  }, {
+    "actionMode" : "DELETE",
+    "actionTag" : "Remove",
+    "batchActionMode" : 1,
+    "codeName" : "remove",
+    "methodType" : "DEACTION",
+    "name" : "Remove",
+    "getPSAppDEMethodInput" : {
+      "getKeyPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "name" : "输入对象",
+      "type" : "KEYFIELDS"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "type" : "VOID"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Remove.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "DELETE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "Remove"
+    },
+    "requestField" : "ID",
+    "requestMethod" : "DELETE",
+    "requestParamType" : "FIELD",
+    "builtinMethod" : false,
+    "enableBatchAction" : true,
+    "needResourceKey" : true,
+    "noServiceCodeName" : true
+  }, {
+    "actionMode" : "SAVE",
+    "actionTag" : "Save",
+    "codeName" : "save",
+    "methodType" : "DEACTION",
+    "name" : "Save",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO",
+      "output" : true
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Save.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "CREATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "save"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "requestPath" : "/save",
+    "builtinMethod" : false
+  }, {
+    "actionMode" : "UPDATE",
+    "actionTag" : "Update",
+    "codeName" : "update",
+    "methodType" : "DEACTION",
+    "name" : "Update",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO",
+      "output" : true
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/Update.json"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "UPDATE"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "Update"
+    },
+    "requestMethod" : "PUT",
+    "requestParamType" : "ENTITY",
+    "builtinMethod" : false,
+    "needResourceKey" : true,
+    "noServiceCodeName" : true
+  }, {
+    "codeName" : "fetch_default",
+    "dataSetName" : "DEFAULT",
+    "dataSetTag" : "Default",
+    "methodType" : "FETCH",
+    "name" : "fetch_default",
+    "getPSAppDEMethodInput" : {
+      "name" : "输入对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_filter_dto"
+      },
+      "type" : "DTO"
+    },
+    "getPSAppDEMethodReturn" : {
+      "name" : "返回对象",
+      "getPSAppDEMethodDTO" : {
+        "modelref" : true,
+        "id" : "crm_lead_dto"
+      },
+      "type" : "PAGE"
+    },
+    "getPSDEDataSet" : {
+      "modelref" : true,
+      "id" : "Default"
+    },
+    "getPSDEOPPriv" : {
+      "modelref" : true,
+      "id" : "READ"
+    },
+    "getPSDEServiceAPIMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "requestMethod" : "POST",
+    "requestParamType" : "ENTITY",
+    "requestPath" : "/fetch_default",
+    "builtinMethod" : false
+  }, {
+    "codeName" : "FilterCreate",
+    "methodType" : "FILTERACTION",
+    "name" : "FILTERCREATE",
+    "builtinMethod" : true
+  }, {
+    "codeName" : "FilterFetch",
+    "methodType" : "FILTERACTION",
+    "name" : "FILTERFETCH",
+    "builtinMethod" : true
+  }, {
+    "codeName" : "FilterGet",
+    "methodType" : "FILTERACTION",
+    "name" : "FILTERGET",
+    "builtinMethod" : true
+  }, {
+    "codeName" : "FilterGetDraft",
+    "methodType" : "FILTERACTION",
+    "name" : "FILTERGETDRAFT",
+    "builtinMethod" : true
+  }, {
+    "codeName" : "FilterRemove",
+    "methodType" : "FILTERACTION",
+    "name" : "FILTERREMOVE",
+    "builtinMethod" : true
+  }, {
+    "codeName" : "FilterSearch",
+    "methodType" : "FILTERACTION",
+    "name" : "FILTERSEARCH",
+    "builtinMethod" : true
+  }, {
+    "codeName" : "FilterUpdate",
+    "methodType" : "FILTERACTION",
+    "name" : "FILTERUPDATE",
+    "builtinMethod" : true
+  } ],
+  "getAllPSAppViews" : [ {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/crm_lead_main_view.json",
+    "viewType" : "DEEDITVIEW"
+  }, {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/crm_lead_multi_data_view.json",
+    "viewType" : "DEMDCUSTOMVIEW"
+  } ],
+  "getAllPSDEOPPrivs" : [ {
+    "logicName" : "建立",
+    "name" : "CREATE"
+  }, {
+    "logicName" : "删除",
+    "name" : "DELETE"
+  }, {
+    "logicName" : "读取",
+    "name" : "READ"
+  }, {
+    "logicName" : "更新",
+    "name" : "UPDATE"
+  } ],
+  "codeName" : "crm_lead",
+  "dEAPICodeName" : "crm_lead",
+  "dEAPICodeName2" : "crm_leads",
+  "dEAPITag" : "CRM_LEAD",
+  "dataAccCtrlArch" : 1,
+  "dataAccCtrlMode" : 1,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/crm_lead.json",
+  "enableUIActions" : 15,
+  "getKeyPSAppDEField" : {
+    "name" : "ID",
+    "codeName" : "id"
+  },
+  "getLNPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.CRM_LEAD"
+  },
+  "logicName" : "线索/商机",
+  "getMajorPSAppDEField" : {
+    "name" : "NAME",
+    "codeName" : "name"
+  },
+  "name" : "CRM_LEAD",
+  "getPSDEName" : "CRM_LEAD",
+  "getPSDEServiceAPI" : {
+    "modelref" : true,
+    "id" : "crm_lead"
+  },
+  "getPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead.json"
+  },
+  "getPSSysServiceAPI" : {
+    "modelref" : true,
+    "path" : "PSSYSSERVICEAPIS/ServiceAPI.json"
+  },
+  "getQuickSearchPSAppDEFields" : [ {
+    "name" : "NAME",
+    "codeName" : "name"
+  } ],
+  "storageMode" : 0,
+  "sysAPITag" : "ServiceAPI",
+  "defaultMode" : true,
+  "enableFilterActions" : true,
+  "enableUICreate" : true,
+  "enableUIModify" : true,
+  "enableUIRemove" : true,
+  "enableWFActions" : false,
+  "major" : true,
+  "getAllPSAppDEUIActionGroups" : [ {
+    "codeName" : "A79119c50056dc4c1a2",
+    "name" : "商机编辑界面行为组",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/crm_lead.json"
+    },
+    "uniqueTag" : "crm_lead__A79119c50056dc4c1a2",
+    "getPSUIActionGroupDetails" : [ {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "TBB.TEXT.*.NEW"
+      },
+      "caption" : "新建",
+      "detailType" : "DEUIACTION",
+      "name" : "u37757ea",
+      "getPSSysImage" : {
+        "glyph" : "xf0f6@FontAwesome",
+        "cssClass" : "fa fa-file-text-o"
+      },
+      "getTooltipPSLanguageRes" : {
+        "lanResTag" : "TBB.TOOLTIP.*.NEW"
+      },
+      "addSeparator" : false,
+      "showCaption" : true,
+      "showIcon" : true,
+      "getPSUIAction" : {
+        "modelref" : true,
+        "id" : "New"
+      }
+    } ]
+  } ]
+}

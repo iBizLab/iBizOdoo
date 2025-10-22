@@ -1,0 +1,67 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`ACCOUNTING_DATE`",
+    "name" : "ACCOUNTING_DATE"
+  }, {
+    "expression" : "t1.`AMOUNT_RESIDUAL`",
+    "name" : "AMOUNT_RESIDUAL"
+  }, {
+    "expression" : "t1.`APPROVAL_DATE`",
+    "name" : "APPROVAL_DATE"
+  }, {
+    "expression" : "t1.`APPROVAL_STATE`",
+    "name" : "APPROVAL_STATE"
+  }, {
+    "expression" : "t1.`COMPANY_ID`",
+    "name" : "COMPANY_ID"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`CURRENCY_ID`",
+    "name" : "CURRENCY_ID"
+  }, {
+    "expression" : "t1.`DEPARTMENT_ID`",
+    "name" : "DEPARTMENT_ID"
+  }, {
+    "expression" : "t1.`EMPLOYEE_ID`",
+    "name" : "EMPLOYEE_ID"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`MESSAGE_MAIN_ATTACHMENT_ID`",
+    "name" : "MESSAGE_MAIN_ATTACHMENT_ID"
+  }, {
+    "expression" : "t1.`NAME`",
+    "name" : "NAME"
+  }, {
+    "expression" : "t1.`STATE`",
+    "name" : "STATE"
+  }, {
+    "expression" : "t1.`TOTAL_AMOUNT`",
+    "name" : "TOTAL_AMOUNT"
+  }, {
+    "expression" : "t1.`TOTAL_TAX_AMOUNT`",
+    "name" : "TOTAL_TAX_AMOUNT"
+  }, {
+    "expression" : "t1.`UNTAXED_AMOUNT`",
+    "name" : "UNTAXED_AMOUNT"
+  }, {
+    "expression" : "t1.`USER_ID`",
+    "name" : "USER_ID"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`ACCOUNTING_DATE`,\nt1.`AMOUNT_RESIDUAL`,\nt1.`APPROVAL_DATE`,\nt1.`APPROVAL_STATE`,\nt1.`COMPANY_ID`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`CURRENCY_ID`,\nt1.`DEPARTMENT_ID`,\nt1.`EMPLOYEE_ID`,\nt1.`ID`,\nt1.`MESSAGE_MAIN_ATTACHMENT_ID`,\nt1.`NAME`,\nt1.`STATE`,\nt1.`TOTAL_AMOUNT`,\nt1.`TOTAL_TAX_AMOUNT`,\nt1.`UNTAXED_AMOUNT`,\nt1.`USER_ID`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `hr_expense_sheet` t1 \n",
+  "id" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_sheet/PSDEDATAQUERIES/Default/PSDEDQCODES/MYSQL5.json"
+}

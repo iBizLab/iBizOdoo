@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "crm__crm_lead_type",
+  "codeListType" : "STATIC",
+  "codeName" : "crm_lead_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/crm/PSCODELISTS/crm_lead_type.json",
+  "emptyText" : "未定义",
+  "name" : "类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "lead",
+    "text" : "线索",
+    "value" : "lead"
+  }, {
+    "codeName" : "opportunity",
+    "text" : "商机",
+    "value" : "opportunity"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

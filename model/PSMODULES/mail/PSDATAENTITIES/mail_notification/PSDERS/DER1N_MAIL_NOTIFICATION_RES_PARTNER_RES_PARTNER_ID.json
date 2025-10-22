@@ -1,0 +1,31 @@
+{
+  "codeName" : "res_partner",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_notification/PSDERS/DER1N_MAIL_NOTIFICATION_RES_PARTNER_RES_PARTNER_ID.json",
+  "fKeyName" : "FD10A528BF799FF686",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_notification.json"
+  },
+  "name" : "DER1N_MAIL_NOTIFICATION_RES_PARTNER_RES_PARTNER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "RES_PARTNER_ID",
+    "codeName" : "res_partner_id"
+  },
+  "getPSPickupTextDEField" : {
+    "name" : "RES_PARTNER_NAME",
+    "codeName" : "res_partner_name"
+  },
+  "pickupDEFName" : "RES_PARTNER_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "res_partner",
+  "enableFKey" : true
+}

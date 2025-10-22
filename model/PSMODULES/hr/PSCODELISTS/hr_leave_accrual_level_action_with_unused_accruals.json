@@ -1,0 +1,33 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_level_action_with_unused_accruals",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_level_action_with_unused_accruals",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_action_with_unused_accruals.json",
+  "emptyText" : "未定义",
+  "name" : "结转",
+  "getPSCodeItems" : [ {
+    "codeName" : "lost",
+    "text" : "无。累计时间重置为 0",
+    "value" : "lost"
+  }, {
+    "codeName" : "all",
+    "text" : "所有累计时间结转",
+    "value" : "all"
+  }, {
+    "codeName" : "maximum",
+    "text" : "最多可结转",
+    "value" : "maximum"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

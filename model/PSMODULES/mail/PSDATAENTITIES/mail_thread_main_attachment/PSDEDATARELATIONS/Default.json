@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_thread_main_attachment/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.MAIL_THREAD_MAIN_ATTACHMENT"
+  },
+  "formCaption" : "主邮件附件管理",
+  "name" : "主邮件附件管理默认关系界面组"
+}

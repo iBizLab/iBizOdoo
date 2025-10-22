@@ -1,0 +1,33 @@
+{
+  "codeListTag" : "base__ir_actions_server_mail_post_method",
+  "codeListType" : "STATIC",
+  "codeName" : "ir_actions_server_mail_post_method",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/ir_actions_server_mail_post_method.json",
+  "emptyText" : "未定义",
+  "name" : "发送电子邮件",
+  "getPSCodeItems" : [ {
+    "codeName" : "email",
+    "text" : "电子邮件",
+    "value" : "email"
+  }, {
+    "codeName" : "comment",
+    "text" : "消息",
+    "value" : "comment"
+  }, {
+    "codeName" : "note",
+    "text" : "备注",
+    "value" : "note"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

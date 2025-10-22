@@ -1,0 +1,62 @@
+{
+  "getAllPSPanelFields" : [ {
+    "id" : "partner_id",
+    "viewFieldName" : "partner_id"
+  } ],
+  "codeName" : "a3e151516bff74ffd55",
+  "controlType" : "PANEL",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member/PSPANELS/a3e151516bff74ffd55.json",
+  "layoutMode" : "FLEX",
+  "logicName" : "list列表",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+  },
+  "getPSLayout" : {
+    "layout" : "FLEX"
+  },
+  "getRootPSPanelItems" : [ {
+    "itemStyle" : "DEFAULT",
+    "itemType" : "CONTAINER",
+    "name" : "container1",
+    "getPSLayout" : {
+      "align" : "space-between",
+      "layout" : "FLEX"
+    },
+    "getPSLayoutPos" : {
+      "grow" : -1,
+      "layout" : "FLEX"
+    },
+    "getPSPanelItems" : [ {
+      "caption" : "文本(动态)",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "FIELD",
+      "name" : "partner_id",
+      "getPSEditor" : {
+        "editorStyle" : "PERSONNEL_INFO",
+        "editorType" : "SPAN",
+        "name" : "partner_id",
+        "getPSAppCodeList" : {
+          "modelref" : true,
+          "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__res_partner.json"
+        },
+        "getPSSysPFPlugin" : {
+          "pluginType" : "EDITOR_CUSTOMSTYLE",
+          "pluginCode" : "PERSONNEL_INFO",
+          "runtimeObject" : true
+        },
+        "renderMode" : "TEXT_DYNAMIC",
+        "enableLinkView" : false
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX"
+      },
+      "viewFieldName" : "partner_id",
+      "convertToCodeItemText" : true
+    } ]
+  } ],
+  "layoutPanel" : true,
+  "modelid" : "f978cd42689966ece7da60dbbc1d01a6",
+  "modeltype" : "PSSYSVIEWPANEL"
+}

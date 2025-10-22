@@ -1,0 +1,27 @@
+{
+  "codeName" : "time_off_type",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_accrual_plan/PSDERS/DER1N_HR_LEAVE_ACCRUAL_PLAN_HR_LEAVE_TYPE_TIME_OFF_TYPE_ID.json",
+  "fKeyName" : "F3E444E0767E364F10",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_type.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_accrual_plan.json"
+  },
+  "name" : "DER1N_HR_LEAVE_ACCRUAL_PLAN_HR_LEAVE_TYPE_TIME_OFF_TYPE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "TIME_OFF_TYPE_ID",
+    "codeName" : "time_off_type_id"
+  },
+  "pickupDEFName" : "TIME_OFF_TYPE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "time_off_type",
+  "enableFKey" : true
+}

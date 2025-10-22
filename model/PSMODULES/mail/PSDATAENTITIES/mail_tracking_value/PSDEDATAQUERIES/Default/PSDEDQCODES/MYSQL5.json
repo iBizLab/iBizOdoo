@@ -1,0 +1,70 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`FIELD_INFO`",
+    "name" : "FIELD_INFO"
+  }, {
+    "expression" : "t1.`NEW_VALUE_TEXT`",
+    "name" : "NEW_VALUE_TEXT"
+  }, {
+    "expression" : "t1.`OLD_VALUE_TEXT`",
+    "name" : "OLD_VALUE_TEXT"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`CURRENCY_ID`",
+    "name" : "CURRENCY_ID"
+  }, {
+    "expression" : "t1.`FIELD_ID`",
+    "name" : "FIELD_ID"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`MAIL_MESSAGE_ID`",
+    "name" : "MAIL_MESSAGE_ID"
+  }, {
+    "expression" : "t11.`MODEL`",
+    "name" : "MODEL"
+  }, {
+    "expression" : "t1.`NEW_VALUE_CHAR`",
+    "name" : "NEW_VALUE_CHAR"
+  }, {
+    "expression" : "t1.`NEW_VALUE_DATETIME`",
+    "name" : "NEW_VALUE_DATETIME"
+  }, {
+    "expression" : "t1.`NEW_VALUE_FLOAT`",
+    "name" : "NEW_VALUE_FLOAT"
+  }, {
+    "expression" : "t1.`NEW_VALUE_INTEGER`",
+    "name" : "NEW_VALUE_INTEGER"
+  }, {
+    "expression" : "t1.`OLD_VALUE_CHAR`",
+    "name" : "OLD_VALUE_CHAR"
+  }, {
+    "expression" : "t1.`OLD_VALUE_DATETIME`",
+    "name" : "OLD_VALUE_DATETIME"
+  }, {
+    "expression" : "t1.`OLD_VALUE_FLOAT`",
+    "name" : "OLD_VALUE_FLOAT"
+  }, {
+    "expression" : "t1.`OLD_VALUE_INTEGER`",
+    "name" : "OLD_VALUE_INTEGER"
+  }, {
+    "expression" : "t11.`RES_ID`",
+    "name" : "RES_ID"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`CURRENCY_ID`,\nt1.`FIELD_ID`,\nt1.`ID`,\nt1.`MAIL_MESSAGE_ID`,\nt11.`MODEL`,\nt1.`NEW_VALUE_CHAR`,\nt1.`NEW_VALUE_DATETIME`,\nt1.`NEW_VALUE_FLOAT`,\nt1.`NEW_VALUE_INTEGER`,\nt1.`OLD_VALUE_CHAR`,\nt1.`OLD_VALUE_DATETIME`,\nt1.`OLD_VALUE_FLOAT`,\nt1.`OLD_VALUE_INTEGER`,\nt11.`RES_ID`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `mail_tracking_value` t1 \nLEFT JOIN `mail_message` t11 ON t1.`MAIL_MESSAGE_ID` = t11.`ID` \n",
+  "id" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value/PSDEDATAQUERIES/Default/PSDEDQCODES/MYSQL5.json"
+}

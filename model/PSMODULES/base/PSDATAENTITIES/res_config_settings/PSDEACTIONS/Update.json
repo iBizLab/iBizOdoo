@@ -1,0 +1,38 @@
+{
+  "actionMode" : "UPDATE",
+  "actionType" : "BUILTIN",
+  "getAfterPSDEActionLogics" : [ {
+    "actionLogicType" : 0,
+    "attachMode" : "AFTER",
+    "getDstPSDE" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/res_config_settings.json"
+    },
+    "getDstPSDEAction" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDEACTIONS/set_values.json"
+    },
+    "name" : "附加逻辑",
+    "internalLogic" : false
+  } ],
+  "codeName" : "Update",
+  "dataAccessAction" : "UPDATE",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDEACTIONS/Update.json",
+  "logicName" : "Update",
+  "name" : "Update",
+  "orderValue" : 11,
+  "getPSDEActionInput" : {
+    "name" : "UpdateInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "res_config_settings_dto"
+    },
+    "type" : "DTO",
+    "output" : true
+  },
+  "getPSDEActionReturn" : {
+    "name" : "UpdateResult",
+    "type" : "VOID"
+  },
+  "builtinAction" : true
+}

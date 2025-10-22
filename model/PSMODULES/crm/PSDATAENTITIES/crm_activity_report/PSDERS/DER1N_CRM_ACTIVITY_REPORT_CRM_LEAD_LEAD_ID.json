@@ -1,0 +1,27 @@
+{
+  "codeName" : "lead",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report/PSDERS/DER1N_CRM_ACTIVITY_REPORT_CRM_LEAD_LEAD_ID.json",
+  "fKeyName" : "F0DAD35BFD85D81C36",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report.json"
+  },
+  "name" : "DER1N_CRM_ACTIVITY_REPORT_CRM_LEAD_LEAD_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "LEAD_ID",
+    "codeName" : "lead_id"
+  },
+  "pickupDEFName" : "LEAD_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "lead",
+  "enableFKey" : true
+}

@@ -1,0 +1,27 @@
+{
+  "codeName" : "guest",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_message_reaction/PSDERS/DER1N_MAIL_MESSAGE_REACTION_MAIL_GUEST_GUEST_ID.json",
+  "fKeyName" : "F6771C774695723E12",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_guest.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message_reaction.json"
+  },
+  "name" : "DER1N_MAIL_MESSAGE_REACTION_MAIL_GUEST_GUEST_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "GUEST_ID",
+    "codeName" : "guest_id"
+  },
+  "pickupDEFName" : "GUEST_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "guest",
+  "enableFKey" : true
+}

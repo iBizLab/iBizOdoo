@@ -1,0 +1,27 @@
+{
+  "codeName" : "employee_company",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave/PSDERS/DER1N_HR_LEAVE_RES_COMPANY_EMPLOYEE_COMPANY_ID.json",
+  "fKeyName" : "F848ED10AD68ED031E",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_company.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave.json"
+  },
+  "name" : "DER1N_HR_LEAVE_RES_COMPANY_EMPLOYEE_COMPANY_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "EMPLOYEE_COMPANY_ID",
+    "codeName" : "employee_company_id"
+  },
+  "pickupDEFName" : "EMPLOYEE_COMPANY_ID",
+  "removeActionType" : -1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "employee_company",
+  "enableFKey" : true
+}

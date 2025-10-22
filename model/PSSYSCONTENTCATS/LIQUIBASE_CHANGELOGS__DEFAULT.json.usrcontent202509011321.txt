@@ -1,0 +1,15 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="heying" id="UsrContent202509011321"  failOnError="false">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <sqlCheck expectedResult="1">
+                    SELECT COUNT(*) FROM mail_template WHERE id = 'mail_notify_templ'
+                </sqlCheck>
+            </not>
+        </preConditions>
+        <sql>
+           INSERT INTO mail_template (ACTIVE,  BODY_HTML,  ID,  NAME,SUBJECT, TEMPLATE_FS) VALUES (1,  '',  'mail_notify_templ',  '默认消息模板',  '${data.write_uid}评论了${data.model}', 'mail_notify_templ');
+        </sql>
+    </changeSet>
+</databaseChangeLog>

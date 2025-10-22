@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_category/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.HR_EMPLOYEE_CATEGORY"
+  },
+  "formCaption" : "员工类别",
+  "name" : "员工类别默认关系界面组"
+}

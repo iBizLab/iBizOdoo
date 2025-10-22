@@ -1,0 +1,33 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/resource_calendar_leaves/PSSEARCHBARS/search_bar.json",
+  "groupMode" : "AND",
+  "logicName" : "休假详细信息搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/resource_calendar_leaves.json"
+  },
+  "getPSSearchBarGroups" : [ {
+    "caption" : "期间",
+    "itemType" : "GROUP",
+    "name" : "duration",
+    "width" : 0.0,
+    "addSeparator" : false
+  } ],
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : true,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "915fdf36aee8cf6e292a746772b607e2",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

@@ -1,0 +1,202 @@
+{
+  "codeName" : "hr_index_view",
+  "controlType" : "APPMENU",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPMENUS/hr_index_view.json",
+  "logicName" : "员工首页视图",
+  "getPSAppMenuItems" : [ {
+    "accUserMode" : 4,
+    "accessKey" : "MENU_EMPLOYEE",
+    "caption" : "员工",
+    "itemType" : "MENUITEM",
+    "name" : "hr_employee",
+    "getPSAppFunc" : {
+      "modelref" : true,
+      "id" : "employee"
+    },
+    "tooltip" : "员工",
+    "openDefault" : true
+  }, {
+    "accUserMode" : 4,
+    "accessKey" : "MENU_DEPARTMENT",
+    "caption" : "部门",
+    "itemType" : "MENUITEM",
+    "name" : "hr_department",
+    "getPSAppFunc" : {
+      "modelref" : true,
+      "id" : "department"
+    },
+    "tooltip" : "部门"
+  }, {
+    "accUserMode" : 4,
+    "accessKey" : "MENU_CONFIG",
+    "caption" : "设置",
+    "itemType" : "MENUITEM",
+    "name" : "hr_config",
+    "getPSAppMenuItems" : [ {
+      "accUserMode" : 4,
+      "accessKey" : "MENU_ACTIVITY_PLAN",
+      "caption" : "活动计划",
+      "itemType" : "MENUITEM",
+      "name" : "mail_activity_plan",
+      "getPSAppFunc" : {
+        "modelref" : true,
+        "id" : "mail_activity_plan"
+      },
+      "tooltip" : "活动计划"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator1",
+      "seperator" : true
+    }, {
+      "accUserMode" : 4,
+      "accessKey" : "MENU_CONFIG_EMPLOYEE",
+      "caption" : "员工",
+      "itemType" : "MENUITEM",
+      "name" : "hr_config_employee",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "工作地点",
+        "itemType" : "MENUITEM",
+        "name" : "hr_work_location",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "hr_work_location"
+        },
+        "tooltip" : "工作地点"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "工作时间表",
+        "itemType" : "MENUITEM",
+        "name" : "resource_calendar",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "resource_calendar"
+        },
+        "tooltip" : "工作时间表"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "离职原因",
+        "itemType" : "MENUITEM",
+        "name" : "hr_departure_reason",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "hr_departure_reason"
+        },
+        "tooltip" : "离职原因"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "技能类型",
+        "itemType" : "MENUITEM",
+        "name" : "hr_skill_type",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "hr_skill_type"
+        },
+        "tooltip" : "技能类型"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "标签",
+        "itemType" : "MENUITEM",
+        "name" : "hr_employee_category",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "hr_employee_category"
+        },
+        "tooltip" : "标签"
+      } ],
+      "tooltip" : "员工"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator4",
+      "seperator" : true
+    }, {
+      "accUserMode" : 4,
+      "accessKey" : "MENU_RESUME",
+      "caption" : "简历",
+      "itemType" : "MENUITEM",
+      "name" : "hr_resume_line_config",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "简历明细类型",
+        "itemType" : "MENUITEM",
+        "name" : "hr_resume_line_type",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "hr_resume_line_type"
+        },
+        "tooltip" : "简历明细类型"
+      } ],
+      "tooltip" : "简历"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator3",
+      "seperator" : true
+    }, {
+      "accUserMode" : 4,
+      "accessKey" : "MENU_RECRUITMENT",
+      "caption" : "招聘",
+      "itemType" : "MENUITEM",
+      "name" : "recruitment",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "工作岗位",
+        "itemType" : "MENUITEM",
+        "name" : "hr_job",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "hr_job"
+        },
+        "tooltip" : "工作岗位"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "就业类型",
+        "itemType" : "MENUITEM",
+        "name" : "hr_contract_type",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "hr_contract_type"
+        },
+        "tooltip" : "就业类型"
+      } ],
+      "tooltip" : "招聘"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator2",
+      "seperator" : true
+    }, {
+      "accUserMode" : 4,
+      "accessKey" : "MENU_CHALLENGE",
+      "caption" : "挑战",
+      "itemType" : "MENUITEM",
+      "name" : "challenge",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 0,
+        "caption" : "徽章",
+        "itemType" : "MENUITEM",
+        "name" : "menuitem18",
+        "tooltip" : "徽章"
+      }, {
+        "accUserMode" : 0,
+        "caption" : "挑战",
+        "itemType" : "MENUITEM",
+        "name" : "menuitem20",
+        "tooltip" : "挑战"
+      }, {
+        "accUserMode" : 0,
+        "caption" : "历史目标",
+        "itemType" : "MENUITEM",
+        "name" : "menuitem19",
+        "tooltip" : "历史目标"
+      } ],
+      "tooltip" : "挑战"
+    } ],
+    "tooltip" : "设置"
+  } ],
+  "name" : "hrindexview",
+  "modelid" : "40f69ec3627f397d8a5dcf457853c8ab",
+  "modeltype" : "PSAPPMENU"
+}

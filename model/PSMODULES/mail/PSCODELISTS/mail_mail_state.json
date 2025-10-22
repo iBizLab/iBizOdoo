@@ -1,0 +1,41 @@
+{
+  "codeListTag" : "mail__mail_mail_state",
+  "codeListType" : "STATIC",
+  "codeName" : "mail_mail_state",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/mail/PSCODELISTS/mail_mail_state.json",
+  "emptyText" : "未定义",
+  "name" : "状态",
+  "getPSCodeItems" : [ {
+    "codeName" : "outgoing",
+    "text" : "发信",
+    "value" : "outgoing"
+  }, {
+    "codeName" : "sent",
+    "text" : "已发送",
+    "value" : "sent"
+  }, {
+    "codeName" : "received",
+    "text" : "已收",
+    "value" : "received"
+  }, {
+    "codeName" : "exception",
+    "text" : "投递失败",
+    "value" : "exception"
+  }, {
+    "codeName" : "cancel",
+    "text" : "已取消",
+    "value" : "cancel"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

@@ -1,0 +1,1521 @@
+{
+  "codeName" : "main",
+  "controlType" : "FORM",
+  "getCreatePSControlAction" : {
+    "modelref" : true,
+    "id" : "create",
+    "actionName" : "Create",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "create",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "create"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+    }
+  },
+  "defaultLabelWidth" : 130,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server/PSFORMS/main.json",
+  "getGetDraftFromPSControlAction" : {
+    "modelref" : true,
+    "id" : "loaddraftfrom",
+    "actionName" : "GETDRAFTFROM",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "loaddraftfrom",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+    }
+  },
+  "getGetDraftPSControlAction" : {
+    "modelref" : true,
+    "id" : "loaddraft",
+    "actionName" : "GetDraft",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "loaddraft",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get_draft"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+    }
+  },
+  "getGetPSControlAction" : {
+    "modelref" : true,
+    "id" : "load",
+    "actionName" : "Get",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "READ",
+    "name" : "load",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+    }
+  },
+  "hookEventNames" : [ "ONLOADDRAFTSUCCESS" ],
+  "logicName" : "主编辑表单",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+  },
+  "getPSControlLogics" : [ {
+    "eventNames" : "onLoadDraftSuccess",
+    "logicTag" : "form",
+    "logicType" : "SCRIPT",
+    "name" : "fill_port",
+    "scriptCode" : "if(data[0].server_type === \"imap\"){\r\n   data[0].port = \"143\";\r\n   if(data[0].is_ssl === 1){\r\n      data[0].port = \"993\";\r\n   }\r\n}\r\n\r\nif(data[0].server_type === \"pop\"){\r\n   data[0].port = \"110\";\r\n   if(data[0].is_ssl === 1){\r\n      data[0].port = \"995\";\r\n   }\r\n}"
+  } ],
+  "getPSDEFormItemUpdates" : [ {
+    "codeName" : "change_port",
+    "name" : "change_port",
+    "getPSDEFIUpdateDetails" : [ {
+      "name" : "port"
+    } ],
+    "scriptCode" : "if(data.server_type === \"imap\"){\r\n   data.port = \"143\";\r\n   if(data.is_ssl === 1){\r\n      data.port = \"993\";\r\n   }\r\n}\r\n\r\nif(data.server_type === \"pop\"){\r\n   data.port = \"110\";\r\n   if(data.is_ssl === 1){\r\n      data.port = \"995\";\r\n   }\r\n}",
+    "customCode" : true
+  } ],
+  "getPSDEFormItems" : [ {
+    "id" : "srfupdatedate",
+    "hidden" : true,
+    "dataType" : 5,
+    "getPSAppDEField" : {
+      "name" : "WRITE_DATE",
+      "codeName" : "write_date"
+    }
+  }, {
+    "id" : "srforikey",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfkey",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "id" : "srfmajortext",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "id" : "srftempmode",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfuf",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfdeid",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfsourcekey",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "state",
+    "dataType" : 25,
+    "createDV" : "draft",
+    "getPSAppDEField" : {
+      "name" : "STATE",
+      "codeName" : "state"
+    }
+  }, {
+    "id" : "name",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "id" : "server_type",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "SERVER_TYPE",
+      "codeName" : "server_type"
+    }
+  }, {
+    "id" : "date",
+    "dataType" : 5,
+    "getPSAppDEField" : {
+      "name" : "DATE",
+      "codeName" : "date"
+    }
+  }, {
+    "id" : "server",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "SERVER",
+      "codeName" : "server"
+    }
+  }, {
+    "id" : "port",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "PORT",
+      "codeName" : "port"
+    }
+  }, {
+    "id" : "is_ssl",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "IS_SSL",
+      "codeName" : "is_ssl"
+    }
+  }, {
+    "id" : "user",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "USER",
+      "codeName" : "user"
+    }
+  }, {
+    "id" : "password",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "PASSWORD",
+      "codeName" : "password"
+    }
+  }, {
+    "id" : "object_id",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "OBJECT_ID",
+      "codeName" : "object_id"
+    }
+  }, {
+    "id" : "configuration",
+    "dataType" : 21,
+    "getPSAppDEField" : {
+      "name" : "CONFIGURATION",
+      "codeName" : "configuration"
+    }
+  }, {
+    "id" : "script",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "SCRIPT",
+      "codeName" : "script"
+    }
+  }, {
+    "id" : "priority",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "PRIORITY",
+      "codeName" : "priority"
+    }
+  }, {
+    "id" : "attach",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "ATTACH",
+      "codeName" : "attach"
+    }
+  }, {
+    "id" : "original",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "ORIGINAL",
+      "codeName" : "original"
+    }
+  }, {
+    "id" : "id",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  } ],
+  "getPSDEFormPages" : [ {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "CONTROL.DEFORM.FETCHMAIL_SERVER.MAIN.FORMPAGE.FORMPAGE1"
+    },
+    "caption" : "基本信息",
+    "codeName" : "formpage1",
+    "detailStyle" : "DEFAULT",
+    "detailType" : "FORMPAGE",
+    "name" : "formpage1",
+    "getPSDEFormDetails" : [ {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "CONTROL.DEFORM.FETCHMAIL_SERVER.MAIN.GROUPPANEL.GROUP1"
+      },
+      "caption" : "收件服务器基本信息",
+      "codeName" : "group1",
+      "detailStyle" : "DEFAULT",
+      "detailType" : "GROUPPANEL",
+      "name" : "group1",
+      "getPSDEFormDetails" : [ {
+        "codeName" : "grouppanel9",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "GROUPPANEL",
+        "name" : "grouppanel9",
+        "getPSDEFormDetails" : [ {
+          "codeName" : "grouppanel10",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "GROUPPANEL",
+          "name" : "grouppanel10",
+          "getPSDEFormDetails" : [ {
+            "actionType" : "UIACTION",
+            "caption" : "测试和确认",
+            "codeName" : "button2",
+            "detailStyle" : "DEFAULT",
+            "detailType" : "BUTTON",
+            "name" : "button2",
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "form_button2"
+            },
+            "getPSDEFDGroupLogics" : [ {
+              "groupOP" : "AND",
+              "logicCat" : "PANELVISIBLE",
+              "logicType" : "GROUP",
+              "getPSDEFDLogics" : [ {
+                "condOP" : "EQ",
+                "dEFDName" : "state",
+                "logicType" : "SINGLE",
+                "name" : "state等于(=) draft",
+                "value" : "draft"
+              } ],
+              "relatedDetailNames" : [ "state" ],
+              "notMode" : false
+            } ],
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEKEY",
+              "caption" : "测试和确认",
+              "codeName" : "button_confirm_login",
+              "fullCodeName" : "fetchmail_server_button_confirm_login",
+              "name" : "测试和确认",
+              "getPSAppDEMethod" : {
+                "modelref" : true,
+                "id" : "get"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+              },
+              "timeout" : 60000,
+              "uIActionMode" : "BACKEND",
+              "uIActionTag" : "button_confirm_login",
+              "uIActionType" : "DEUIACTION",
+              "enableConfirm" : true,
+              "id" : "button_confirm_login@fetchmail_server"
+            },
+            "tooltip" : "测试和确认",
+            "uIActionTarget" : "SINGLEKEY",
+            "showCaption" : true
+          }, {
+            "actionType" : "UIACTION",
+            "caption" : "现在收取",
+            "codeName" : "button3",
+            "detailStyle" : "DEFAULT",
+            "detailType" : "BUTTON",
+            "name" : "button3",
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "form_button3"
+            },
+            "getPSDEFDGroupLogics" : [ {
+              "groupOP" : "AND",
+              "logicCat" : "PANELVISIBLE",
+              "logicType" : "GROUP",
+              "getPSDEFDLogics" : [ {
+                "condOP" : "EQ",
+                "dEFDName" : "state",
+                "logicType" : "SINGLE",
+                "name" : "state等于(=) done",
+                "value" : "done"
+              } ],
+              "relatedDetailNames" : [ "state" ],
+              "notMode" : false
+            } ],
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEDATA",
+              "caption" : "现在收取",
+              "codeName" : "fetch_mail",
+              "fullCodeName" : "fetchmail_server_fetch_mail",
+              "name" : "现在收取",
+              "getPSAppDEMethod" : {
+                "modelref" : true,
+                "id" : "get"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+              },
+              "timeout" : 60000,
+              "uIActionMode" : "BACKEND",
+              "uIActionTag" : "fetch_mail",
+              "uIActionType" : "DEUIACTION",
+              "enableConfirm" : true,
+              "id" : "fetch_mail@fetchmail_server"
+            },
+            "tooltip" : "现在收取",
+            "uIActionTarget" : "SINGLEDATA",
+            "showCaption" : true
+          }, {
+            "actionType" : "UIACTION",
+            "caption" : "重置确认",
+            "codeName" : "button4",
+            "detailStyle" : "DEFAULT",
+            "detailType" : "BUTTON",
+            "name" : "button4",
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "form_button4"
+            },
+            "getPSDEFDGroupLogics" : [ {
+              "groupOP" : "AND",
+              "logicCat" : "PANELVISIBLE",
+              "logicType" : "GROUP",
+              "getPSDEFDLogics" : [ {
+                "condOP" : "EQ",
+                "dEFDName" : "state",
+                "logicType" : "SINGLE",
+                "name" : "state等于(=) done",
+                "value" : "done"
+              } ],
+              "relatedDetailNames" : [ "state" ],
+              "notMode" : false
+            } ],
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "SINGLEDATA",
+              "caption" : "重置确认",
+              "codeName" : "set_draft",
+              "fullCodeName" : "fetchmail_server_set_draft",
+              "name" : "重置确认",
+              "getPSAppDEMethod" : {
+                "modelref" : true,
+                "id" : "set_draft"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+              },
+              "refreshMode" : 1,
+              "timeout" : 60000,
+              "uIActionMode" : "BACKEND",
+              "uIActionTag" : "set_draft",
+              "uIActionType" : "DEUIACTION",
+              "enableConfirm" : true,
+              "reloadData" : true,
+              "id" : "set_draft@fetchmail_server"
+            },
+            "tooltip" : "重置确认",
+            "uIActionTarget" : "SINGLEDATA",
+            "showCaption" : true
+          } ],
+          "getPSLayout" : {
+            "dir" : "row",
+            "layout" : "FLEX"
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX"
+          },
+          "infoGroupMode" : false,
+          "showCaption" : false
+        }, {
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.STATE"
+          },
+          "caption" : "状态",
+          "codeName" : "state",
+          "createDV" : "draft",
+          "dataType" : 25,
+          "detailStyle" : "DEFAULT",
+          "detailType" : "FORMITEM",
+          "enableCond" : 0,
+          "ignoreInput" : 0,
+          "labelPos" : "NONE",
+          "labelWidth" : 0,
+          "name" : "state",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "STATE",
+            "codeName" : "state"
+          },
+          "getPSEditor" : {
+            "editorParams" : {
+              "duration_tracking" : "duration_tracking"
+            },
+            "editorStyle" : "STATUS_BAR",
+            "editorType" : "DROPDOWNLIST",
+            "name" : "state",
+            "getPSAppCodeList" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__fetchmail_server_state.json"
+            },
+            "getPSSysPFPlugin" : {
+              "pluginType" : "EDITOR_CUSTOMSTYLE",
+              "pluginCode" : "ODOO_STATUS_BAR",
+              "runtimeObject" : true
+            },
+            "singleSelect" : true
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX"
+          },
+          "allowEmpty" : true,
+          "needCodeListConfig" : true
+        } ],
+        "getPSLayout" : {
+          "align" : "space-between",
+          "dir" : "row",
+          "layout" : "FLEX"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "infoGroupMode" : false,
+        "showCaption" : false
+      }, {
+        "codeName" : "grouppanel8",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "GROUPPANEL",
+        "name" : "grouppanel8",
+        "getPSDEFormDetails" : [ {
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.NAME"
+          },
+          "caption" : "名称",
+          "codeName" : "name",
+          "dataType" : 25,
+          "detailStyle" : "DEFAULT",
+          "detailType" : "FORMITEM",
+          "enableCond" : 3,
+          "ignoreInput" : 0,
+          "labelPos" : "LEFT",
+          "labelWidth" : 130,
+          "name" : "name",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "NAME",
+            "codeName" : "name"
+          },
+          "getPSEditor" : {
+            "editorType" : "TEXTBOX",
+            "maxLength" : 200,
+            "name" : "name"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "allowEmpty" : false,
+          "showCaption" : true
+        }, {
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.SERVER_TYPE"
+          },
+          "caption" : "服务器类型",
+          "codeName" : "server_type",
+          "dataType" : 25,
+          "detailStyle" : "DEFAULT",
+          "detailType" : "FORMITEM",
+          "enableCond" : 3,
+          "ignoreInput" : 0,
+          "labelPos" : "LEFT",
+          "labelWidth" : 130,
+          "name" : "server_type",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "SERVER_TYPE",
+            "codeName" : "server_type"
+          },
+          "getPSDEFDGroupLogics" : [ {
+            "groupOP" : "AND",
+            "logicCat" : "ITEMENABLE",
+            "logicType" : "GROUP",
+            "getPSDEFDLogics" : [ {
+              "condOP" : "EQ",
+              "dEFDName" : "state",
+              "logicType" : "SINGLE",
+              "name" : "state等于(=) draft",
+              "value" : "draft"
+            } ],
+            "relatedDetailNames" : [ "state" ],
+            "notMode" : false
+          } ],
+          "getPSDEFormItemUpdate" : {
+            "modelref" : true,
+            "id" : "change_port"
+          },
+          "getPSEditor" : {
+            "editorType" : "RADIOBUTTONLIST",
+            "name" : "server_type",
+            "getPSAppCodeList" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__fetchmail_server_server_type.json"
+            }
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "allowEmpty" : false,
+          "needCodeListConfig" : true,
+          "showCaption" : true
+        } ],
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 12,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "infoGroupMode" : false,
+        "showCaption" : false
+      }, {
+        "codeName" : "grouppanel6",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "GROUPPANEL",
+        "name" : "grouppanel6",
+        "getPSDEFormDetails" : [ {
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.DATE"
+          },
+          "caption" : "最后收取日期",
+          "codeName" : "date",
+          "dataType" : 5,
+          "detailStyle" : "DEFAULT",
+          "detailType" : "FORMITEM",
+          "enableCond" : 3,
+          "ignoreInput" : 0,
+          "itemWidth" : 290.0,
+          "labelPos" : "LEFT",
+          "labelWidth" : 130,
+          "name" : "date",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "DATE",
+            "codeName" : "date"
+          },
+          "getPSDEFDGroupLogics" : [ {
+            "groupOP" : "AND",
+            "logicCat" : "PANELVISIBLE",
+            "logicType" : "GROUP",
+            "getPSDEFDLogics" : [ {
+              "condOP" : "ISNOTNULL",
+              "dEFDName" : "date",
+              "logicType" : "SINGLE",
+              "name" : "date值不为空(NotNil)"
+            } ],
+            "relatedDetailNames" : [ "date" ],
+            "notMode" : false
+          }, {
+            "groupOP" : "AND",
+            "logicCat" : "ITEMENABLE",
+            "logicType" : "GROUP",
+            "getPSDEFDLogics" : [ {
+              "condOP" : "EQ",
+              "dEFDName" : "state",
+              "logicType" : "SINGLE",
+              "name" : "state等于(=) draft",
+              "value" : "draft"
+            } ],
+            "relatedDetailNames" : [ "state" ],
+            "notMode" : false
+          } ],
+          "getPSEditor" : {
+            "dateTimeFormat" : "YYYY-MM-DD HH:mm:ss",
+            "editorParams" : {
+              "TIMEFMT" : "YYYY-MM-DD HH:mm:ss"
+            },
+            "editorType" : "DATEPICKER",
+            "editorWidth" : 160.0,
+            "name" : "date"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "valueFormat" : "YYYY-MM-DD HH:mm:ss",
+          "allowEmpty" : true,
+          "showCaption" : true
+        }, {
+          "codeName" : "rawitem3",
+          "contentType" : "HTML",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "RAWITEM",
+          "htmlContent" : "<p>使用一个本地脚本来获取您的电子邮件并创建新的记录。</p>",
+          "name" : "rawitem3",
+          "getPSDEFDGroupLogics" : [ {
+            "groupOP" : "AND",
+            "logicCat" : "PANELVISIBLE",
+            "logicType" : "GROUP",
+            "getPSDEFDLogics" : [ {
+              "condOP" : "EQ",
+              "dEFDName" : "server_type",
+              "logicType" : "SINGLE",
+              "name" : "server_type等于(=) local",
+              "value" : "local"
+            } ],
+            "relatedDetailNames" : [ "server_type" ],
+            "notMode" : false
+          } ],
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSRawItem" : {
+            "content" : "<p>使用一个本地脚本来获取您的电子邮件并创建新的记录。</p>",
+            "contentType" : "HTML",
+            "name" : "rawitem3",
+            "rawItemHeight" : -1.0,
+            "rawItemWidth" : -1.0
+          },
+          "rawItemHeight" : -1.0,
+          "rawItemWidth" : -1.0,
+          "showCaption" : true
+        }, {
+          "codeName" : "rawitem2",
+          "contentType" : "HTML",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "RAWITEM",
+          "htmlContent" : "<p>用OAuth 身份验证过程连接您的Gmail账户。</p><p>您将被重定向到Gmail登录页面，在那里您需要接受该权限。</p>",
+          "name" : "rawitem2",
+          "getPSDEFDGroupLogics" : [ {
+            "groupOP" : "AND",
+            "logicCat" : "PANELVISIBLE",
+            "logicType" : "GROUP",
+            "getPSDEFDLogics" : [ {
+              "condOP" : "EQ",
+              "dEFDName" : "server_type",
+              "logicType" : "SINGLE",
+              "name" : "server_type等于(=) gmail",
+              "value" : "gmail"
+            } ],
+            "relatedDetailNames" : [ "server_type" ],
+            "notMode" : false
+          } ],
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "getPSRawItem" : {
+            "content" : "<p>用OAuth 身份验证过程连接您的Gmail账户。</p><p>您将被重定向到Gmail登录页面，在那里您需要接受该权限。</p>",
+            "contentType" : "HTML",
+            "name" : "rawitem2",
+            "rawItemHeight" : -1.0,
+            "rawItemWidth" : -1.0
+          },
+          "rawItemHeight" : -1.0,
+          "rawItemWidth" : -1.0,
+          "showCaption" : true
+        } ],
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 12,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "infoGroupMode" : false,
+        "showCaption" : false
+      }, {
+        "codeName" : "grouppanel1",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "GROUPPANEL",
+        "name" : "grouppanel1",
+        "getPSDEFormDetails" : [ {
+          "codeName" : "tabpanel1",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "TABPANEL",
+          "name" : "tabpanel1",
+          "getPSDEFormTabPages" : [ {
+            "caption" : "服务器和登录",
+            "codeName" : "tabpage2",
+            "detailStyle" : "DEFAULT",
+            "detailType" : "TABPAGE",
+            "name" : "tabpage2",
+            "getPSDEFormDetails" : [ {
+              "caption" : "服务器信息",
+              "codeName" : "grouppanel2",
+              "detailStyle" : "DEFAULT",
+              "detailType" : "GROUPPANEL",
+              "name" : "grouppanel2",
+              "getPSDEFDGroupLogics" : [ {
+                "groupOP" : "AND",
+                "logicCat" : "PANELVISIBLE",
+                "logicType" : "GROUP",
+                "getPSDEFDLogics" : [ {
+                  "condOP" : "NOTEQ",
+                  "dEFDName" : "server_type",
+                  "logicType" : "SINGLE",
+                  "name" : "server_type不等于(<>) local",
+                  "value" : "local"
+                } ],
+                "relatedDetailNames" : [ "server_type" ],
+                "notMode" : false
+              } ],
+              "getPSDEFormDetails" : [ {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.SERVER"
+                },
+                "caption" : "服务器名称",
+                "codeName" : "server",
+                "dataType" : 25,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "server",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "SERVER",
+                  "codeName" : "server"
+                },
+                "getPSDEFDGroupLogics" : [ {
+                  "groupOP" : "AND",
+                  "logicCat" : "ITEMENABLE",
+                  "logicType" : "GROUP",
+                  "getPSDEFDLogics" : [ {
+                    "condOP" : "EQ",
+                    "dEFDName" : "state",
+                    "logicType" : "SINGLE",
+                    "name" : "state等于(=) draft",
+                    "value" : "draft"
+                  } ],
+                  "relatedDetailNames" : [ "state" ],
+                  "notMode" : false
+                } ],
+                "getPSEditor" : {
+                  "editorType" : "TEXTBOX",
+                  "maxLength" : 250,
+                  "name" : "server"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : false,
+                "showCaption" : true
+              }, {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.PORT"
+                },
+                "caption" : "端口",
+                "codeName" : "port",
+                "dataType" : 9,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "port",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "PORT",
+                  "codeName" : "port"
+                },
+                "getPSDEFDGroupLogics" : [ {
+                  "groupOP" : "AND",
+                  "logicCat" : "ITEMENABLE",
+                  "logicType" : "GROUP",
+                  "getPSDEFDLogics" : [ {
+                    "condOP" : "EQ",
+                    "dEFDName" : "state",
+                    "logicType" : "SINGLE",
+                    "name" : "state等于(=) draft",
+                    "value" : "draft"
+                  } ],
+                  "relatedDetailNames" : [ "state" ],
+                  "notMode" : false
+                } ],
+                "getPSEditor" : {
+                  "editorType" : "TEXTBOX",
+                  "name" : "port"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : true,
+                "showCaption" : true
+              }, {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.IS_SSL"
+                },
+                "caption" : "SSL/TLS",
+                "codeName" : "is_ssl",
+                "dataType" : 9,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "is_ssl",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "IS_SSL",
+                  "codeName" : "is_ssl"
+                },
+                "getPSDEFormItemUpdate" : {
+                  "modelref" : true,
+                  "id" : "change_port"
+                },
+                "getPSEditor" : {
+                  "editorType" : "CHECKBOX",
+                  "name" : "is_ssl"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : true,
+                "showCaption" : true
+              } ],
+              "getPSLayout" : {
+                "childColMD" : 24,
+                "columnCount" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "getPSLayoutPos" : {
+                "colLG" : 12,
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "infoGroupMode" : false,
+              "showCaption" : true
+            }, {
+              "caption" : "登录信息",
+              "codeName" : "grouppanel4",
+              "detailStyle" : "DEFAULT",
+              "detailType" : "GROUPPANEL",
+              "name" : "grouppanel4",
+              "getPSDEFDGroupLogics" : [ {
+                "groupOP" : "AND",
+                "logicCat" : "PANELVISIBLE",
+                "logicType" : "GROUP",
+                "getPSDEFDLogics" : [ {
+                  "condOP" : "NOTEQ",
+                  "dEFDName" : "server_type",
+                  "logicType" : "SINGLE",
+                  "name" : "server_type不等于(<>) local",
+                  "value" : "local"
+                } ],
+                "relatedDetailNames" : [ "server_type" ],
+                "notMode" : false
+              } ],
+              "getPSDEFormDetails" : [ {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.USER"
+                },
+                "caption" : "用户名",
+                "codeName" : "user",
+                "dataType" : 25,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "user",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "USER",
+                  "codeName" : "user"
+                },
+                "getPSDEFDGroupLogics" : [ {
+                  "groupOP" : "AND",
+                  "logicCat" : "ITEMENABLE",
+                  "logicType" : "GROUP",
+                  "getPSDEFDLogics" : [ {
+                    "condOP" : "EQ",
+                    "dEFDName" : "state",
+                    "logicType" : "SINGLE",
+                    "name" : "state等于(=) draft",
+                    "value" : "draft"
+                  } ],
+                  "relatedDetailNames" : [ "state" ],
+                  "notMode" : false
+                } ],
+                "getPSEditor" : {
+                  "editorType" : "TEXTBOX",
+                  "maxLength" : 250,
+                  "name" : "user"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : false,
+                "showCaption" : true
+              }, {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.PASSWORD"
+                },
+                "caption" : "密码",
+                "codeName" : "password",
+                "dataType" : 25,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "password",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "PASSWORD",
+                  "codeName" : "password"
+                },
+                "getPSDEFDGroupLogics" : [ {
+                  "groupOP" : "AND",
+                  "logicCat" : "PANELVISIBLE",
+                  "logicType" : "GROUP",
+                  "getPSDEFDLogics" : [ {
+                    "groupOP" : "OR",
+                    "logicType" : "GROUP",
+                    "name" : "OR",
+                    "getPSDEFDLogics" : [ {
+                      "condOP" : "EQ",
+                      "dEFDName" : "server_type",
+                      "logicType" : "SINGLE",
+                      "name" : "server_type等于(=) pop",
+                      "value" : "pop"
+                    }, {
+                      "condOP" : "EQ",
+                      "dEFDName" : "server_type",
+                      "logicType" : "SINGLE",
+                      "name" : "server_type等于(=) imap",
+                      "value" : "imap"
+                    } ],
+                    "notMode" : false
+                  } ],
+                  "relatedDetailNames" : [ "server_type" ],
+                  "notMode" : false
+                }, {
+                  "groupOP" : "AND",
+                  "logicCat" : "ITEMENABLE",
+                  "logicType" : "GROUP",
+                  "getPSDEFDLogics" : [ {
+                    "condOP" : "EQ",
+                    "dEFDName" : "state",
+                    "logicType" : "SINGLE",
+                    "name" : "state等于(=) draft",
+                    "value" : "draft"
+                  } ],
+                  "relatedDetailNames" : [ "state" ],
+                  "notMode" : false
+                } ],
+                "getPSEditor" : {
+                  "editorType" : "PASSWORD",
+                  "maxLength" : 250,
+                  "name" : "password"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : false,
+                "showCaption" : true
+              }, {
+                "actionType" : "UIACTION",
+                "caption" : "在一般设置中设置您的Gmail API凭证，以链接Gmail账户",
+                "codeName" : "button1",
+                "detailStyle" : "DEFAULT",
+                "detailType" : "BUTTON",
+                "name" : "button1",
+                "getPSAppViewUIAction" : {
+                  "modelref" : true,
+                  "id" : "form_button1"
+                },
+                "getPSDEFDGroupLogics" : [ {
+                  "groupOP" : "AND",
+                  "logicCat" : "PANELVISIBLE",
+                  "logicType" : "GROUP",
+                  "getPSDEFDLogics" : [ {
+                    "condOP" : "EQ",
+                    "dEFDName" : "server_type",
+                    "logicType" : "SINGLE",
+                    "name" : "server_type等于(=) gmail",
+                    "value" : "gmail"
+                  } ],
+                  "relatedDetailNames" : [ "server_type" ],
+                  "notMode" : false
+                } ],
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "getPSUIAction" : {
+                  "actionTarget" : "NONE",
+                  "caption" : "配置设定",
+                  "codeName" : "open_settings_view",
+                  "getFrontPSAppView" : {
+                    "modelref" : true,
+                    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_config_settings_modify_setting.json",
+                    "viewType" : "DEEDITVIEW"
+                  },
+                  "frontProcessType" : "WIZARD",
+                  "fullCodeName" : "res_config_settings_open_settings_view",
+                  "name" : "打开配置设定视图",
+                  "getPSAppDataEntity" : {
+                    "modelref" : true,
+                    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_config_settings.json"
+                  },
+                  "uIActionMode" : "FRONT",
+                  "uIActionTag" : "open_settings_view",
+                  "uIActionType" : "DEUIACTION",
+                  "globalUIAction" : true,
+                  "id" : "open_settings_view@res_config_settings"
+                },
+                "tooltip" : "在一般设置中设置您的Gmail API凭证，以链接Gmail账户",
+                "uIActionTarget" : "NONE",
+                "showCaption" : true
+              } ],
+              "getPSLayout" : {
+                "childColMD" : 24,
+                "columnCount" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "getPSLayoutPos" : {
+                "colLG" : 12,
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "infoGroupMode" : false,
+              "showCaption" : true
+            }, {
+              "caption" : "在传入邮件上执行的操作",
+              "codeName" : "grouppanel3",
+              "detailStyle" : "DEFAULT",
+              "detailType" : "GROUPPANEL",
+              "name" : "grouppanel3",
+              "getPSDEFormDetails" : [ {
+                "caption" : "创建新记录",
+                "codeName" : "object_id",
+                "dataType" : 25,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "object_id",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "OBJECT_ID",
+                  "codeName" : "object_id"
+                },
+                "getPSEditor" : {
+                  "editorType" : "DROPDOWNLIST",
+                  "name" : "object_id",
+                  "getPSAppCodeList" : {
+                    "modelref" : true,
+                    "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_model.json"
+                  },
+                  "singleSelect" : true
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : true,
+                "needCodeListConfig" : true,
+                "showCaption" : true
+              } ],
+              "getPSLayout" : {
+                "childColMD" : 24,
+                "columnCount" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "getPSLayoutPos" : {
+                "colLG" : 12,
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "infoGroupMode" : false,
+              "showCaption" : true
+            }, {
+              "caption" : "配置",
+              "codeName" : "grouppanel7",
+              "detailStyle" : "DEFAULT",
+              "detailType" : "GROUPPANEL",
+              "name" : "grouppanel7",
+              "getPSDEFDGroupLogics" : [ {
+                "groupOP" : "AND",
+                "logicCat" : "PANELVISIBLE",
+                "logicType" : "GROUP",
+                "getPSDEFDLogics" : [ {
+                  "condOP" : "EQ",
+                  "dEFDName" : "server_type",
+                  "logicType" : "SINGLE",
+                  "name" : "server_type等于(=) local",
+                  "value" : "local"
+                } ],
+                "relatedDetailNames" : [ "server_type" ],
+                "notMode" : false
+              } ],
+              "getPSDEFormDetails" : [ {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.CONFIGURATION"
+                },
+                "caption" : "配置",
+                "codeName" : "configuration",
+                "dataType" : 21,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "itemHeight" : 80.0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "configuration",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "CONFIGURATION",
+                  "codeName" : "configuration"
+                },
+                "getPSEditor" : {
+                  "editorHeight" : 80.0,
+                  "editorParams" : {
+                    "HEIGHT" : "200"
+                  },
+                  "editorType" : "TEXTAREA_10",
+                  "maxLength" : 1048576,
+                  "name" : "configuration",
+                  "showMaxLength" : true
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : true,
+                "showCaption" : true
+              }, {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.SCRIPT"
+                },
+                "caption" : "脚本",
+                "codeName" : "script",
+                "dataType" : 25,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "script",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "SCRIPT",
+                  "codeName" : "script"
+                },
+                "getPSEditor" : {
+                  "editorType" : "TEXTBOX",
+                  "maxLength" : 250,
+                  "name" : "script"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : true,
+                "showCaption" : true
+              } ],
+              "getPSLayout" : {
+                "childColMD" : 24,
+                "columnCount" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "getPSLayoutPos" : {
+                "colLG" : 12,
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "infoGroupMode" : false,
+              "showCaption" : true
+            } ],
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "infoGroupMode" : false,
+            "showCaption" : true
+          }, {
+            "caption" : "高级",
+            "codeName" : "tabpage1",
+            "detailStyle" : "DEFAULT",
+            "detailType" : "TABPAGE",
+            "name" : "tabpage1",
+            "getPSDEFormDetails" : [ {
+              "caption" : "高级选项",
+              "codeName" : "grouppanel5",
+              "detailStyle" : "DEFAULT",
+              "detailType" : "GROUPPANEL",
+              "name" : "grouppanel5",
+              "getPSDEFormDetails" : [ {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.PRIORITY"
+                },
+                "caption" : "服务器优先级",
+                "codeName" : "priority",
+                "dataType" : 9,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "priority",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "PRIORITY",
+                  "codeName" : "priority"
+                },
+                "getPSDEFDGroupLogics" : [ {
+                  "groupOP" : "AND",
+                  "logicCat" : "ITEMENABLE",
+                  "logicType" : "GROUP",
+                  "getPSDEFDLogics" : [ {
+                    "condOP" : "EQ",
+                    "dEFDName" : "state",
+                    "logicType" : "SINGLE",
+                    "name" : "state等于(=) draft",
+                    "value" : "draft"
+                  } ],
+                  "relatedDetailNames" : [ "state" ],
+                  "notMode" : false
+                } ],
+                "getPSEditor" : {
+                  "editorType" : "NUMBER",
+                  "name" : "priority"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : true,
+                "showCaption" : true
+              }, {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.ATTACH"
+                },
+                "caption" : "保存附件",
+                "codeName" : "attach",
+                "dataType" : 9,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "attach",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "ATTACH",
+                  "codeName" : "attach"
+                },
+                "getPSEditor" : {
+                  "editorType" : "CHECKBOX",
+                  "name" : "attach"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : true,
+                "showCaption" : true
+              }, {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.ORIGINAL"
+                },
+                "caption" : "保留原件",
+                "codeName" : "original",
+                "dataType" : 9,
+                "detailStyle" : "DEFAULT",
+                "detailType" : "FORMITEM",
+                "enableCond" : 3,
+                "ignoreInput" : 0,
+                "labelPos" : "LEFT",
+                "labelWidth" : 130,
+                "name" : "original",
+                "noPrivDisplayMode" : 1,
+                "getPSAppDEField" : {
+                  "name" : "ORIGINAL",
+                  "codeName" : "original"
+                },
+                "getPSEditor" : {
+                  "editorType" : "CHECKBOX",
+                  "name" : "original"
+                },
+                "getPSLayoutPos" : {
+                  "colMD" : 24,
+                  "layout" : "TABLE_24COL"
+                },
+                "allowEmpty" : true,
+                "showCaption" : true
+              } ],
+              "getPSLayout" : {
+                "childColMD" : 24,
+                "columnCount" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "getPSLayoutPos" : {
+                "colLG" : 12,
+                "colMD" : 24,
+                "layout" : "TABLE_24COL"
+              },
+              "infoGroupMode" : false,
+              "showCaption" : true
+            } ],
+            "getPSLayout" : {
+              "childColMD" : 24,
+              "columnCount" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "infoGroupMode" : false,
+            "showCaption" : true
+          } ],
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          }
+        } ],
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "infoGroupMode" : false,
+        "showCaption" : false
+      } ],
+      "getPSLayout" : {
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "infoGroupMode" : false,
+      "showCaption" : false
+    }, {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "DEF.LNAME.FETCHMAIL_SERVER.ID"
+      },
+      "caption" : "标识",
+      "codeName" : "id",
+      "dataType" : 25,
+      "detailStyle" : "DEFAULT",
+      "detailType" : "FORMITEM",
+      "enableCond" : 3,
+      "ignoreInput" : 0,
+      "labelPos" : "LEFT",
+      "labelWidth" : 130,
+      "name" : "id",
+      "noPrivDisplayMode" : 1,
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "id"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "allowEmpty" : true,
+      "hidden" : true
+    } ],
+    "getPSLayout" : {
+      "childColMD" : 24,
+      "columnCount" : 24,
+      "layout" : "TABLE_24COL"
+    },
+    "infoGroupMode" : false
+  } ],
+  "getPSLayout" : {
+    "childColMD" : 24,
+    "columnCount" : 24,
+    "layout" : "TABLE_24COL"
+  },
+  "getRemovePSControlAction" : {
+    "modelref" : true,
+    "id" : "remove",
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+    }
+  },
+  "tabHeaderPos" : "TOP",
+  "getUpdatePSControlAction" : {
+    "modelref" : true,
+    "id" : "update",
+    "actionName" : "Update",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "UPDATE",
+    "name" : "update",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "update"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+    }
+  },
+  "noTabHeader" : true,
+  "modelid" : "9dda2ac58ff88b43e0ab3f23a0836811",
+  "modeltype" : "PSDEFORM_EDITFORM"
+}

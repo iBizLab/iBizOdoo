@@ -1,0 +1,240 @@
+{
+  "aggMode" : "NONE",
+  "codeName" : "main",
+  "columnEnableFilter" : 2,
+  "columnEnableLink" : 2,
+  "controlType" : "GRID",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_default/PSGRIDS/main.json",
+  "getFetchPSControlAction" : {
+    "modelref" : true,
+    "id" : "fetch",
+    "actionType" : "DEDATASET",
+    "name" : "fetch",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_default.json"
+    }
+  },
+  "groupMode" : "NONE",
+  "logicName" : "主表格",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_default.json"
+  },
+  "getPSDEGridColumns" : [ {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "caption" : "字段",
+    "codeName" : "field_id",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "field_id",
+    "excelCaption" : "字段",
+    "name" : "field_id",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "FIELD_ID",
+      "codeName" : "field_id"
+    },
+    "width" : 1,
+    "widthUnit" : "STAR",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_DEFAULT.JSON_VALUE"
+    },
+    "caption" : "默认值 (JSON格式)",
+    "codeName" : "json_value",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "json_value",
+    "excelCaption" : "默认值 (JSON格式)",
+    "name" : "json_value",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "JSON_VALUE",
+      "codeName" : "json_value"
+    },
+    "width" : 300,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_DEFAULT.USER_ID"
+    },
+    "caption" : "用户",
+    "codeName" : "user_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "user_name",
+    "excelCaption" : "用户",
+    "name" : "user_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "USER_NAME",
+      "codeName" : "user_name"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_DEFAULT.COMPANY_ID"
+    },
+    "caption" : "公司",
+    "codeName" : "company_name",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "company_name",
+    "excelCaption" : "公司",
+    "name" : "company_name",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "COMPANY_NAME",
+      "codeName" : "company_name"
+    },
+    "width" : 250,
+    "widthUnit" : "PX",
+    "enableSort" : true
+  }, {
+    "align" : "LEFT",
+    "cLConvertMode" : "NONE",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.IR_DEFAULT.CONDITION"
+    },
+    "caption" : "条件",
+    "codeName" : "condition",
+    "columnType" : "DEFGRIDCOLUMN",
+    "dataItemName" : "condition",
+    "excelCaption" : "条件",
+    "hideMode" : 1,
+    "name" : "condition",
+    "noPrivDisplayMode" : 1,
+    "getPSAppDEField" : {
+      "name" : "CONDITION",
+      "codeName" : "condition"
+    },
+    "width" : 200,
+    "widthUnit" : "PX",
+    "enableSort" : true,
+    "hideDefault" : true
+  } ],
+  "getPSDEGridDataItems" : [ {
+    "dataType" : 25,
+    "name" : "field_id",
+    "getPSAppDEField" : {
+      "name" : "FIELD_ID",
+      "codeName" : "field_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "json_value",
+    "getPSAppDEField" : {
+      "name" : "JSON_VALUE",
+      "codeName" : "json_value"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "user_name",
+    "getPSAppDEField" : {
+      "name" : "USER_NAME",
+      "codeName" : "user_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "company_name",
+    "getPSAppDEField" : {
+      "name" : "COMPANY_NAME",
+      "codeName" : "company_name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "condition",
+    "getPSAppDEField" : {
+      "name" : "CONDITION",
+      "codeName" : "condition"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfdataaccaction",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "dataAccessAction" : true
+  }, {
+    "dataType" : 25,
+    "name" : "company_id",
+    "getPSAppDEField" : {
+      "name" : "COMPANY_ID",
+      "codeName" : "company_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "user_id",
+    "getPSAppDEField" : {
+      "name" : "USER_ID",
+      "codeName" : "user_id"
+    }
+  } ],
+  "getPSDEGridEditItems" : [ {
+    "caption" : "标识",
+    "codeName" : "srfkey",
+    "enableCond" : 3,
+    "ignoreInput" : 0,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    },
+    "getPSEditor" : {
+      "editorType" : "HIDDEN",
+      "name" : "srfkey"
+    },
+    "allowEmpty" : true
+  } ],
+  "pagingMode" : 1,
+  "pagingSize" : 20,
+  "getRemovePSControlAction" : {
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_default.json"
+    }
+  },
+  "sortMode" : "REMOTE",
+  "hasWFDataItems" : false,
+  "enableColFilter" : false,
+  "enableCustomized" : true,
+  "enableGroup" : false,
+  "enablePagingBar" : true,
+  "enableRowEdit" : false,
+  "enableRowEditOrder" : false,
+  "enableRowNew" : false,
+  "forceFit" : false,
+  "hideHeader" : false,
+  "noSort" : false,
+  "singleSelect" : false,
+  "modelid" : "a9244d69821a9c4bec5329dbc89e5bd6",
+  "modeltype" : "PSDEGRID"
+}

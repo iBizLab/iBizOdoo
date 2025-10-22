@@ -1,0 +1,118 @@
+{
+  "getAllPSCodeLists" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_lead2opportunity_partner_action.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_activity_report_lead_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_lead_priority.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_search_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_lead_email_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_error_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_quotation_partner_action.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_lead_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_lead_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_lead_phone_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_iap_lead_mining_request_contact_filter_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_lead_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_lead2opportunity_partner_mass_action.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_lead_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSCODELISTS/crm_stage.json"
+  } ],
+  "getAllPSDataEntities" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_activity_report.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_helpers.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_industry.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_role.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_seniority.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead2opportunity_partner.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead2opportunity_partner_mass.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead_lost.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead_pls_update.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead_scoring_frequency.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead_scoring_frequency_field.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lost_reason.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_merge_opportunity.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_quotation_partner.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_recurring_plan.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_stage.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_tag.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team_member.json"
+  } ],
+  "codeName" : "crm",
+  "dynaModelFilePath" : "PSMODULES/crm.json",
+  "name" : "CRM"
+}

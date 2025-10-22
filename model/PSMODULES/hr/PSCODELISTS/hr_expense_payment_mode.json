@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "hr__hr_expense_payment_mode",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_expense_payment_mode",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_expense_payment_mode.json",
+  "emptyText" : "未定义",
+  "name" : "支付",
+  "getPSCodeItems" : [ {
+    "codeName" : "own_account",
+    "text" : "报销",
+    "value" : "own_account"
+  }, {
+    "codeName" : "company_account",
+    "text" : "公司",
+    "value" : "company_account"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

@@ -1,0 +1,31 @@
+{
+  "codeName" : "ir_cron",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_cron_trigger/PSDERS/DER1N_IR_CRON_TRIGGER_IR_CRON_CRON_ID.json",
+  "fKeyName" : "FE0F5043C79511DEDD",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_cron.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/ir_cron_trigger.json"
+  },
+  "name" : "DER1N_IR_CRON_TRIGGER_IR_CRON_CRON_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "CRON_ID",
+    "codeName" : "cron_id"
+  },
+  "getPSPickupTextDEField" : {
+    "name" : "CRON_CRON_NAME",
+    "codeName" : "cron_cron_name"
+  },
+  "pickupDEFName" : "CRON_ID",
+  "removeActionType" : -1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "ir_cron",
+  "enableFKey" : true
+}

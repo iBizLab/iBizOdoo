@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_duration_mixin/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.MAIL_TRACKING_DURATION_MIXIN"
+  },
+  "formCaption" : "用于计算记录在 many2one 字段的每个值上所花费时间的混合函数",
+  "name" : "用于计算记录在 many2one 字段的每个值上所花费时间的混合函数默认关系界面组"
+}

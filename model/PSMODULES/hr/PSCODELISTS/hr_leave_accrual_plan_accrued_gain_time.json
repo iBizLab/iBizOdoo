@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_plan_accrued_gain_time",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_plan_accrued_gain_time",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_accrued_gain_time.json",
+  "emptyText" : "未定义",
+  "name" : "应计收益时间",
+  "getPSCodeItems" : [ {
+    "codeName" : "start",
+    "text" : "应计期开始时",
+    "value" : "start"
+  }, {
+    "codeName" : "end",
+    "text" : "应计期结束时",
+    "value" : "end"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

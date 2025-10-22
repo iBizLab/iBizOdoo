@@ -1,0 +1,27 @@
+{
+  "codeName" : "alias",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_recruitment_source/PSDERS/DER1N_HR_RECRUITMENT_SOURCE_MAIL_ALIAS_ALIAS_ID.json",
+  "fKeyName" : "FDAA439500899DA1B2",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_alias.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_recruitment_source.json"
+  },
+  "name" : "DER1N_HR_RECRUITMENT_SOURCE_MAIL_ALIAS_ALIAS_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "ALIAS_ID",
+    "codeName" : "alias_id"
+  },
+  "pickupDEFName" : "ALIAS_ID",
+  "removeActionType" : 3,
+  "removeOrder" : 0,
+  "serviceCodeName" : "alias",
+  "enableFKey" : true
+}

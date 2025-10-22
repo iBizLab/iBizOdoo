@@ -1,0 +1,35 @@
+{
+  "codeName" : "mail_message",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value/PSDERS/DER1N_MAIL_TRACKING_VALUE_MAIL_MESSAGE_MAIL_MESSAGE_ID.json",
+  "fKeyName" : "FE07334DD26A36CB96",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 8,
+  "minorCodeName" : "mail_tracking_values",
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_tracking_value.json"
+  },
+  "minorServiceCodeName" : "mail_tracking_values",
+  "name" : "DER1N_MAIL_TRACKING_VALUE_MAIL_MESSAGE_MAIL_MESSAGE_ID",
+  "getNestedPSDEDataSet" : {
+    "modelref" : true,
+    "id" : "Default"
+  },
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "MAIL_MESSAGE_ID",
+    "codeName" : "mail_message_id"
+  },
+  "pickupDEFName" : "MAIL_MESSAGE_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "mail_message",
+  "tempDataOrder" : 10,
+  "enableFKey" : true,
+  "nestedRS" : true
+}

@@ -1,0 +1,394 @@
+{
+  "codeName" : "setting_index_view",
+  "controlType" : "APPMENU",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPMENUS/setting_index_view.json",
+  "logicName" : "设置首页视图",
+  "getPSAppMenuItems" : [ {
+    "accUserMode" : 2,
+    "caption" : "一般设置",
+    "itemType" : "MENUITEM",
+    "name" : "base_config_setting",
+    "getPSAppFunc" : {
+      "modelref" : true,
+      "id" : "employee_modifysetting"
+    },
+    "tooltip" : "一般设置",
+    "openDefault" : true
+  }, {
+    "accUserMode" : 0,
+    "caption" : "用户和公司",
+    "itemType" : "MENUITEM",
+    "name" : "userandcompany",
+    "getPSAppMenuItems" : [ {
+      "accUserMode" : 2,
+      "caption" : "用户",
+      "itemType" : "MENUITEM",
+      "name" : "base_user",
+      "getPSAppFunc" : {
+        "modelref" : true,
+        "id" : "user"
+      },
+      "tooltip" : "用户"
+    }, {
+      "accUserMode" : 2,
+      "caption" : "群组",
+      "itemType" : "MENUITEM",
+      "name" : "base_group",
+      "getPSAppFunc" : {
+        "modelref" : true,
+        "id" : "group"
+      },
+      "tooltip" : "群组"
+    }, {
+      "accUserMode" : 2,
+      "caption" : "公司",
+      "itemType" : "MENUITEM",
+      "name" : "base_company",
+      "getPSAppFunc" : {
+        "modelref" : true,
+        "id" : "company"
+      },
+      "tooltip" : "公司"
+    } ],
+    "tooltip" : "用户和公司"
+  }, {
+    "accUserMode" : 2,
+    "caption" : "模块",
+    "itemType" : "MENUITEM",
+    "name" : "base_module",
+    "getPSAppFunc" : {
+      "modelref" : true,
+      "id" : "ir_module_module"
+    },
+    "tooltip" : "模块"
+  }, {
+    "accUserMode" : 2,
+    "caption" : "应用市场",
+    "itemType" : "MENUITEM",
+    "name" : "base_market",
+    "getPSAppFunc" : {
+      "modelref" : true,
+      "id" : "app_market"
+    },
+    "tooltip" : "应用市场"
+  }, {
+    "accUserMode" : 0,
+    "caption" : "技术",
+    "itemType" : "MENUITEM",
+    "name" : "config",
+    "getPSAppMenuItems" : [ {
+      "accUserMode" : 0,
+      "caption" : "讨论",
+      "itemType" : "MENUITEM",
+      "name" : "discuss",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "消息",
+        "itemType" : "MENUITEM",
+        "name" : "mail_message",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "message"
+        },
+        "tooltip" : "消息"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "通知",
+        "itemType" : "MENUITEM",
+        "name" : "mail_notification",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "notification"
+        },
+        "tooltip" : "通知"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "关注者",
+        "itemType" : "MENUITEM",
+        "name" : "mail_followers",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "followers"
+        },
+        "tooltip" : "关注者"
+      } ],
+      "tooltip" : "讨论"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator2",
+      "seperator" : true
+    }, {
+      "accUserMode" : 0,
+      "caption" : "活动",
+      "itemType" : "MENUITEM",
+      "name" : "activity",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "活动概览",
+        "itemType" : "MENUITEM",
+        "name" : "mail_activity",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "mail_activity"
+        },
+        "tooltip" : "活动概览"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "活动类型",
+        "itemType" : "MENUITEM",
+        "name" : "mail_activity_type",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "mail_activity_type"
+        },
+        "tooltip" : "活动类型"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "活动计划",
+        "itemType" : "MENUITEM",
+        "name" : "mail_activity_plan",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "mail_activity_plan2"
+        },
+        "tooltip" : "活动计划"
+      } ],
+      "tooltip" : "活动"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator8",
+      "seperator" : true
+    }, {
+      "accUserMode" : 0,
+      "caption" : "邮箱",
+      "itemType" : "MENUITEM",
+      "name" : "mail",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "EMail",
+        "itemType" : "MENUITEM",
+        "name" : "mail_mail",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "mail"
+        },
+        "tooltip" : "EMail"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "发送服务器",
+        "itemType" : "MENUITEM",
+        "name" : "base_mail_server",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "mail_server"
+        },
+        "tooltip" : "发送服务器"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "收件服务器",
+        "itemType" : "MENUITEM",
+        "name" : "mail_fetchmail_server",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "fetchmail_server"
+        },
+        "tooltip" : "收件服务器"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "EMail模板",
+        "itemType" : "MENUITEM",
+        "name" : "mail_template",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "mail_template"
+        },
+        "tooltip" : "EMail模板"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "别名",
+        "itemType" : "MENUITEM",
+        "name" : "mail_alias",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "mail_alias"
+        },
+        "tooltip" : "别名"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "别名域",
+        "itemType" : "MENUITEM",
+        "name" : "mail_alias_domain",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "mail_alias_domain"
+        },
+        "tooltip" : "别名域"
+      } ],
+      "tooltip" : "邮箱"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator7",
+      "seperator" : true
+    }, {
+      "accUserMode" : 0,
+      "caption" : "操作",
+      "itemType" : "MENUITEM",
+      "name" : "operation",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "服务器操作",
+        "itemType" : "MENUITEM",
+        "name" : "base_actions_server",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "actions_server"
+        },
+        "tooltip" : "服务器操作"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "用户定义的默认值",
+        "itemType" : "MENUITEM",
+        "name" : "base_default",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "ir_default"
+        },
+        "tooltip" : "用户定义的默认值"
+      } ],
+      "tooltip" : "操作"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator5",
+      "seperator" : true
+    }, {
+      "accUserMode" : 0,
+      "caption" : "数据库结构",
+      "itemType" : "MENUITEM",
+      "name" : "database_structure",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "模型",
+        "itemType" : "MENUITEM",
+        "name" : "base_model",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "model"
+        },
+        "tooltip" : "模型"
+      } ],
+      "tooltip" : "数据库结构"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator6",
+      "seperator" : true
+    }, {
+      "accUserMode" : 0,
+      "caption" : "自动化",
+      "itemType" : "MENUITEM",
+      "name" : "automation",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "计划的操作",
+        "itemType" : "MENUITEM",
+        "name" : "base_cron",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "cron"
+        },
+        "tooltip" : "计划的操作"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "计划行动触发器",
+        "itemType" : "MENUITEM",
+        "name" : "base_cron_trigger",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "cron_trigger"
+        },
+        "tooltip" : "计划行动触发器"
+      } ],
+      "tooltip" : "自动化"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator4",
+      "seperator" : true
+    }, {
+      "accUserMode" : 2,
+      "caption" : "系统参数",
+      "itemType" : "MENUITEM",
+      "name" : "base_config_param",
+      "getPSAppFunc" : {
+        "modelref" : true,
+        "id" : "config_parameter"
+      },
+      "tooltip" : "系统参数"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator1",
+      "seperator" : true
+    }, {
+      "accUserMode" : 0,
+      "caption" : "安全",
+      "itemType" : "MENUITEM",
+      "name" : "safety",
+      "getPSAppMenuItems" : [ {
+        "accUserMode" : 2,
+        "caption" : "记录规则",
+        "itemType" : "MENUITEM",
+        "name" : "base_rule",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "rule"
+        },
+        "tooltip" : "记录规则"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "访问权限",
+        "itemType" : "MENUITEM",
+        "name" : "base_model_access",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "ir_model_access"
+        },
+        "tooltip" : "访问权限"
+      }, {
+        "accUserMode" : 2,
+        "caption" : "统一资源",
+        "itemType" : "MENUITEM",
+        "name" : "base_extend_unires",
+        "getPSAppFunc" : {
+          "modelref" : true,
+          "id" : "unires"
+        },
+        "tooltip" : "统一资源"
+      } ],
+      "tooltip" : "安全"
+    }, {
+      "accUserMode" : 0,
+      "itemType" : "SEPERATOR",
+      "name" : "seperator3",
+      "seperator" : true
+    }, {
+      "accUserMode" : 2,
+      "caption" : "应用分类",
+      "itemType" : "MENUITEM",
+      "name" : "base_module_category",
+      "getPSAppFunc" : {
+        "modelref" : true,
+        "id" : "ir_module_category"
+      },
+      "tooltip" : "应用分类"
+    } ],
+    "tooltip" : "技术"
+  } ],
+  "name" : "settingindexview",
+  "modelid" : "ee54fe6b6d5724649ed016e36e88b06c",
+  "modeltype" : "PSAPPMENU"
+}

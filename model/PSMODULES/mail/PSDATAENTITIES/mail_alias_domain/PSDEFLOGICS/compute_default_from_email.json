@@ -1,0 +1,17 @@
+{
+  "codeName" : "compute_default_from_email",
+  "dEFLogicMode" : "COMPUTE",
+  "defaultParamName" : "DEFAULT",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_domain/PSDEFLOGICS/compute_default_from_email.json",
+  "logicName" : "compute_default_from_email",
+  "logicSubType" : "DEFIELD",
+  "name" : "compute_default_from_email",
+  "getPSDEField" : {
+    "name" : "DEFAULT_FROM_EMAIL",
+    "codeName" : "default_from_email"
+  },
+  "scriptCode" : "if (data.default_from && data.default_from.includes('@')) {\r\n    data.default_from_email = data.default_from;\r\n} else {\r\n    data.default_from_email=data.default_from+'@'+data.name;\r\n}",
+  "customCode" : true,
+  "enableBackend" : false,
+  "enableFront" : true
+}

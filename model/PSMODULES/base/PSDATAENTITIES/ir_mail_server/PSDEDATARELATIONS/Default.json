@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_mail_server/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.IR_MAIL_SERVER"
+  },
+  "formCaption" : "邮件服务器",
+  "name" : "邮件服务器默认关系界面组"
+}

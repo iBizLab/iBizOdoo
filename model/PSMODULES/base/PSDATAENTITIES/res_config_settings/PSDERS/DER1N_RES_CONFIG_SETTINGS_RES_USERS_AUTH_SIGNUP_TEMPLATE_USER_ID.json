@@ -1,0 +1,27 @@
+{
+  "codeName" : "auth_signup_template_user",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDERS/DER1N_RES_CONFIG_SETTINGS_RES_USERS_AUTH_SIGNUP_TEMPLATE_USER_ID.json",
+  "fKeyName" : "FE57427C6724F3A08E",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_config_settings.json"
+  },
+  "name" : "DER1N_RES_CONFIG_SETTINGS_RES_USERS_AUTH_SIGNUP_TEMPLATE_USER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "AUTH_SIGNUP_TEMPLATE_USER_ID",
+    "codeName" : "auth_signup_template_user_id"
+  },
+  "pickupDEFName" : "AUTH_SIGNUP_TEMPLATE_USER_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "auth_signup_template_user",
+  "enableFKey" : true
+}

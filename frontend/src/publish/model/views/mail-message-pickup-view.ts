@@ -1,0 +1,67 @@
+export default {
+  funcViewMode: 'PICKUPVIEW',
+  deviewCodeName: 'PickupView',
+  deviewId: '1de5b157f0dd5e5b1a81f680312ff519',
+  accUserMode: 2,
+  capLanguageRes: {
+    lanResTag: 'DE.LNAME.MAIL_MESSAGE',
+  },
+  caption: '消息',
+  codeName: 'mail_message_pickup_view',
+  appDataEntityId: 'ibizodooapp.mail_message',
+  appViewEngines: [
+    {
+      engineCat: 'VIEW',
+      engineType: 'PickupView',
+      id: 'engine',
+    },
+  ],
+  controls: [
+    {
+      embeddedAppDEViewId: 'ibizodooapp.mail_message_pickup_grid_view',
+      codeName: 'pickup_view_pickupviewpanel',
+      controlType: 'PICKUPVIEWPANEL',
+      appDataEntityId: 'ibizodooapp.mail_message',
+      controlParam: {
+        id: 'pickupviewpanel',
+      },
+      name: 'pickupviewpanel',
+      id: 'pickup_view_pickupviewpanel',
+    },
+    {
+      capLanguageRes: {
+        lanResTag: 'DE.LNAME.MAIL_MESSAGE',
+      },
+      caption: '消息',
+      codeName: 'pickup_view_captionbar',
+      controlType: 'CAPTIONBAR',
+      appDataEntityId: 'ibizodooapp.mail_message',
+      controlParam: {},
+      name: 'captionbar',
+      id: 'pickup_view_captionbar',
+    },
+  ],
+  viewLayoutPanel: {
+    layoutBodyOnly: true,
+    useDefaultLayout: true,
+    layoutPanel: true,
+    codeName: 'layoutpanel',
+    controlStyle: 'APPDEPICKUPVIEW',
+    controlType: 'VIEWLAYOUTPANEL',
+    appDataEntityId: 'ibizodooapp.mail_message',
+    controlParam: {},
+    id: 'layoutpanel',
+  },
+  title: '消息数据选择视图',
+  titleLanguageRes: {
+    lanResTag: 'PAGE.TITLE.MAIL_MESSAGE.PICKUPVIEW',
+  },
+  viewStyle: 'DEFAULT',
+  viewType: 'DEPICKUPVIEW',
+  enableDP: true,
+  showCaptionBar: false,
+  modelId: 'fe168adfdbe8b1083d19f7b8566f9077',
+  modelType: 'PSAPPDEVIEW',
+  name: 'mail_messagePickupView',
+  id: 'ibizodooapp.mail_message_pickup_view',
+};

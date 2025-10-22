@@ -1,0 +1,37 @@
+{
+  "codeListTag" : "mail__mail_notification_notification_type",
+  "codeListType" : "STATIC",
+  "codeName" : "mail_notification_notification_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/mail/PSCODELISTS/mail_notification_notification_type.json",
+  "emptyText" : "未定义",
+  "name" : "通知类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "inbox",
+    "text" : "收件箱",
+    "value" : "inbox"
+  }, {
+    "codeName" : "email",
+    "text" : "电子邮件",
+    "value" : "email"
+  }, {
+    "codeName" : "sms",
+    "text" : "短信息",
+    "value" : "sms"
+  }, {
+    "codeName" : "snail",
+    "text" : "传统信件",
+    "value" : "snail"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

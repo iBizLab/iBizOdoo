@@ -1,0 +1,27 @@
+{
+  "codeName" : "notification",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_partner/PSDERS/DER1N_MAIL_RESEND_PARTNER_MAIL_NOTIFICATION_NOTIFICATION_ID.json",
+  "fKeyName" : "F448A7F888F382C1A3",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_notification.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_partner.json"
+  },
+  "name" : "DER1N_MAIL_RESEND_PARTNER_MAIL_NOTIFICATION_NOTIFICATION_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "NOTIFICATION_ID",
+    "codeName" : "notification_id"
+  },
+  "pickupDEFName" : "NOTIFICATION_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "notification",
+  "enableFKey" : true
+}

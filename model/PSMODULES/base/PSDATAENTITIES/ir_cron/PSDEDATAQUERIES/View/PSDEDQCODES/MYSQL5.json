@@ -1,0 +1,145 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`ACTIVE`",
+    "name" : "ACTIVE"
+  }, {
+    "expression" : "t11.`ACTIVITY_DATE_DEADLINE_RANGE`",
+    "name" : "ACTIVITY_DATE_DEADLINE_RANGE"
+  }, {
+    "expression" : "t11.`ACTIVITY_DATE_DEADLINE_RANGE_TYPE`",
+    "name" : "ACTIVITY_DATE_DEADLINE_RANGE_TYPE"
+  }, {
+    "expression" : "t11.`ACTIVITY_NOTE`",
+    "name" : "ACTIVITY_NOTE"
+  }, {
+    "expression" : "t11.`ACTIVITY_SUMMARY`",
+    "name" : "ACTIVITY_SUMMARY"
+  }, {
+    "expression" : "t11.`ACTIVITY_TYPE_ID`",
+    "name" : "ACTIVITY_TYPE_ID"
+  }, {
+    "expression" : "t21.`NAME`",
+    "name" : "ACTIVITY_TYPE_NAME"
+  }, {
+    "expression" : "t11.`ACTIVITY_USER_FIELD_NAME`",
+    "name" : "ACTIVITY_USER_FIELD_NAME"
+  }, {
+    "expression" : "t11.`ACTIVITY_USER_ID`",
+    "name" : "ACTIVITY_USER_ID"
+  }, {
+    "expression" : "t41.`NAME`",
+    "name" : "ACTIVITY_USER_NAME"
+  }, {
+    "expression" : "t11.`ACTIVITY_USER_TYPE`",
+    "name" : "ACTIVITY_USER_TYPE"
+  }, {
+    "expression" : "t11.`CODE`",
+    "name" : "CODE"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`CRON_NAME`",
+    "name" : "CRON_NAME"
+  }, {
+    "expression" : "t11.`CRUD_MODEL_ID`",
+    "name" : "CRUD_MODEL_ID"
+  }, {
+    "expression" : "t11.`EVALUATION_TYPE`",
+    "name" : "EVALUATION_TYPE"
+  }, {
+    "expression" : "t1.`FAILURE_COUNT`",
+    "name" : "FAILURE_COUNT"
+  }, {
+    "expression" : "t1.`FIRST_FAILURE_DATE`",
+    "name" : "FIRST_FAILURE_DATE"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`INTERVAL_NUMBER`",
+    "name" : "INTERVAL_NUMBER"
+  }, {
+    "expression" : "t1.`INTERVAL_TYPE`",
+    "name" : "INTERVAL_TYPE"
+  }, {
+    "expression" : "t1.`IR_ACTIONS_SERVER_ID`",
+    "name" : "IR_ACTIONS_SERVER_ID"
+  }, {
+    "expression" : "t1.`LASTCALL`",
+    "name" : "LASTCALL"
+  }, {
+    "expression" : "t11.`LINK_FIELD_ID`",
+    "name" : "LINK_FIELD_ID"
+  }, {
+    "expression" : "t11.`MAIL_POST_AUTOFOLLOW`",
+    "name" : "MAIL_POST_AUTOFOLLOW"
+  }, {
+    "expression" : "t11.`MAIL_POST_METHOD`",
+    "name" : "MAIL_POST_METHOD"
+  }, {
+    "expression" : "t1.`MODEL_ID`",
+    "name" : "MODEL_ID"
+  }, {
+    "expression" : "t11.`NAME`",
+    "name" : "NAME"
+  }, {
+    "expression" : "t1.`NEXTCALL`",
+    "name" : "NEXTCALL"
+  }, {
+    "expression" : "t1.`PRIORITY`",
+    "name" : "PRIORITY"
+  }, {
+    "expression" : "t11.`SMS_METHOD`",
+    "name" : "SMS_METHOD"
+  }, {
+    "expression" : "t11.`STATE`",
+    "name" : "STATE"
+  }, {
+    "expression" : "t11.`TEMPLATE_ID`",
+    "name" : "TEMPLATE_ID"
+  }, {
+    "expression" : "t51.`NAME`",
+    "name" : "TEMPLATE_NAME"
+  }, {
+    "expression" : "t11.`UPDATE_BOOLEAN_VALUE`",
+    "name" : "UPDATE_BOOLEAN_VALUE"
+  }, {
+    "expression" : "t11.`UPDATE_FIELD_ID`",
+    "name" : "UPDATE_FIELD_ID"
+  }, {
+    "expression" : "t11.`UPDATE_PATH`",
+    "name" : "UPDATE_PATH"
+  }, {
+    "expression" : "t11.`UPDATE_RELATED_MODEL_ID`",
+    "name" : "UPDATE_RELATED_MODEL_ID"
+  }, {
+    "expression" : "t11.`USAGE`",
+    "name" : "USAGE"
+  }, {
+    "expression" : "t1.`USER_ID`",
+    "name" : "USER_ID"
+  }, {
+    "expression" : "t71.`NAME`",
+    "name" : "USER_NAME"
+  }, {
+    "expression" : "t11.`VALUE`",
+    "name" : "VALUE"
+  }, {
+    "expression" : "t11.`WEBHOOK_URL`",
+    "name" : "WEBHOOK_URL"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`ACTIVE`,\nt11.`ACTIVITY_DATE_DEADLINE_RANGE`,\nt11.`ACTIVITY_DATE_DEADLINE_RANGE_TYPE`,\nt11.`ACTIVITY_NOTE`,\nt11.`ACTIVITY_SUMMARY`,\nt11.`ACTIVITY_TYPE_ID`,\nt21.`NAME` AS `ACTIVITY_TYPE_NAME`,\nt11.`ACTIVITY_USER_FIELD_NAME`,\nt11.`ACTIVITY_USER_ID`,\nt41.`NAME` AS `ACTIVITY_USER_NAME`,\nt11.`ACTIVITY_USER_TYPE`,\nt11.`CODE`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`CRON_NAME`,\nt11.`CRUD_MODEL_ID`,\nt11.`EVALUATION_TYPE`,\nt1.`FAILURE_COUNT`,\nt1.`FIRST_FAILURE_DATE`,\nt1.`ID`,\nt1.`INTERVAL_NUMBER`,\nt1.`INTERVAL_TYPE`,\nt1.`IR_ACTIONS_SERVER_ID`,\nt1.`LASTCALL`,\nt11.`LINK_FIELD_ID`,\nt11.`MAIL_POST_AUTOFOLLOW`,\nt11.`MAIL_POST_METHOD`,\nt1.`MODEL_ID`,\nt11.`NAME`,\nt1.`NEXTCALL`,\nt1.`PRIORITY`,\nt11.`SMS_METHOD`,\nt11.`STATE`,\nt11.`TEMPLATE_ID`,\nt51.`NAME` AS `TEMPLATE_NAME`,\nt11.`UPDATE_BOOLEAN_VALUE`,\nt11.`UPDATE_FIELD_ID`,\nt11.`UPDATE_PATH`,\nt11.`UPDATE_RELATED_MODEL_ID`,\nt11.`USAGE`,\nt1.`USER_ID`,\nt71.`NAME` AS `USER_NAME`,\nt11.`VALUE`,\nt11.`WEBHOOK_URL`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `ir_cron` t1 \nLEFT JOIN `ir_actions_server` t11 ON t1.`IR_ACTIONS_SERVER_ID` = t11.`ID` \nLEFT JOIN `mail_activity_type` t21 ON t11.`ACTIVITY_TYPE_ID` = t21.`ID` \nLEFT JOIN `res_users` t31 ON t11.`ACTIVITY_USER_ID` = t31.`ID` \nLEFT JOIN `res_partner` t41 ON t31.`PARTNER_ID` = t41.`ID` \nLEFT JOIN `mail_template` t51 ON t11.`TEMPLATE_ID` = t51.`ID` \nLEFT JOIN `res_users` t61 ON t1.`USER_ID` = t61.`ID` \nLEFT JOIN `res_partner` t71 ON t61.`PARTNER_ID` = t71.`ID` \n",
+  "id" : "PSMODULES/base/PSDATAENTITIES/ir_cron/PSDEDATAQUERIES/View/PSDEDQCODES/MYSQL5.json"
+}

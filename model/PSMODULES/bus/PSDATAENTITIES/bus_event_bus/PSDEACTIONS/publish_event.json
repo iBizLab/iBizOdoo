@@ -1,0 +1,21 @@
+{
+  "actionMode" : "CUSTOM",
+  "actionType" : "USERCUSTOM",
+  "codeName" : "publish_event",
+  "dynaModelFilePath" : "PSMODULES/bus/PSDATAENTITIES/bus_event_bus/PSDEACTIONS/publish_event.json",
+  "logicName" : "发布事件",
+  "memo" : "手动推送事件",
+  "name" : "publish_event",
+  "getPSDEActionInput" : {
+    "name" : "Publish_eventInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "bus_event_busDTO"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "Publish_eventResult",
+    "type" : "VOID"
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:g="http://www.jboss.org/drools/flow/gpd" xmlns:tns="http://www.jboss.org/drools" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" expressionLanguage="http://www.mvel.org/2.0" id="Definition" name="" targetNamespace="http://www.jboss.org/drools" typeLanguage="http://www.java.com/javaTypes">
+        <process id="cn.ibizlab.ibizodoo.core.base.service.logic.ir_module_modulecur_user_app" isClosed="false" isExecutable="true" name="base_ir_module_module_cur_user_app_ruleFlow" processType="Private" tns:packageName="cn.ibizlab.ibizodoo.core.base.service.logic.ir_module_modulecur_user_app">
+            <extensionElements>
+                <tns:import name="java.util.Map" />
+                <tns:import name="org.springframework.util.StringUtils"/>
+                <tns:import name="cn.ibizlab.ibizodoo.util.helper.RuleUtils"/>
+                                <tns:metaData express="" name="ir_module_modulecur_user_appdefault" type="entity"/>
+                                <tns:metaData express="new cn.ibizlab.ibizodoo.core.base.domain.ir_module_module()" name="ir_module_modulecur_user_appaccess_modules" type="refentity"/>
+                                <tns:metaData express="new cn.ibizlab.ibizodoo.core.base.domain.ir_module_module()" name="ir_module_modulecur_user_appinstalled_modules" type="refentity"/>
+                                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.SpringContextHolder).getBean(T(cn.ibizlab.ibizodoo.core.base.service.Iir_module_moduleService))" name="ir_module_moduleservice" type="service"/>
+                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.SpringContextHolder).getBean(T(cn.ibizlab.ibizodoo.core.base.service.Iir_module_moduleService))" name="iBzSysIr_module_moduleDefaultService" type="service"/>
+                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.AuthenticationUser).getAuthenticationUser()" name="curuser" type="session"/>
+                            <tns:global identifier="ir_module_modulecur_user_appdefault" type="cn.ibizlab.ibizodoo.core.base.domain.ir_module_module" />
+                            <tns:global identifier="ir_module_modulecur_user_appaccess_modules" type="cn.ibizlab.ibizodoo.core.base.domain.ir_module_module" />
+                            <tns:global identifier="ir_module_modulecur_user_appinstalled_modules" type="cn.ibizlab.ibizodoo.core.base.domain.ir_module_module" />
+            </extensionElements>
+                        <startEvent id="begin" isInterrupting="true"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="ir_module_modulecur_user_appdedataset_01" id="dedataset_01" implementation="http://www.jboss.org/drools/rule" name="查询安装应用"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="ir_module_modulecur_user_apprawsfcode_01" id="rawsfcode_01" implementation="http://www.jboss.org/drools/rule" name="查询当前用户的授权应用"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="ir_module_modulecur_user_append_01" id="end_01" implementation="http://www.jboss.org/drools/rule" name="结束"/>
+                        <endEvent id="end_01_end" name="end"/>
+                        <sequenceFlow id="end_01_end_line" sourceRef="end_01" targetRef="end_01_end"/>
+                    <sequenceFlow id="begin_dedataset_01" sourceRef="begin" targetRef="dedataset_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="dedataset_01_rawsfcode_01" sourceRef="dedataset_01" targetRef="rawsfcode_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="rawsfcode_01_end_01" sourceRef="rawsfcode_01" targetRef="end_01">
+                    </sequenceFlow>
+        </process>
+    </definitions>

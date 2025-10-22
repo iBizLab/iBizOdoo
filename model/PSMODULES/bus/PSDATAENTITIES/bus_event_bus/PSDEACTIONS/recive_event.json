@@ -1,0 +1,21 @@
+{
+  "actionMode" : "CUSTOM",
+  "actionType" : "USERCUSTOM",
+  "codeName" : "recive_event",
+  "dynaModelFilePath" : "PSMODULES/bus/PSDATAENTITIES/bus_event_bus/PSDEACTIONS/recive_event.json",
+  "logicName" : "监听事件",
+  "memo" : "订阅事件后自动触发该壳方法，业务系统配置执行后附加可以执行事件逻辑",
+  "name" : "recive_event",
+  "getPSDEActionInput" : {
+    "name" : "Recive_eventInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "bus_event_busDTO"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "Recive_eventResult",
+    "type" : "VOID"
+  }
+}

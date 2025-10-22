@@ -1,0 +1,55 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`AUTHOR_ID`",
+    "name" : "AUTHOR_ID"
+  }, {
+    "expression" : "t1.`FAILURE_REASON`",
+    "name" : "FAILURE_REASON"
+  }, {
+    "expression" : "t1.`FAILURE_TYPE`",
+    "name" : "FAILURE_TYPE"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`IS_READ`",
+    "name" : "IS_READ"
+  }, {
+    "expression" : "t1.`MAIL_MAIL_ID`",
+    "name" : "MAIL_MAIL_ID"
+  }, {
+    "expression" : "t1.`MAIL_MESSAGE_ID`",
+    "name" : "MAIL_MESSAGE_ID"
+  }, {
+    "expression" : "t11.`RECORD_NAME`",
+    "name" : "MAIL_MESSAGE_RECORD_NAME"
+  }, {
+    "expression" : "t11.`BODY`",
+    "name" : "MESSAGE_CONTENT"
+  }, {
+    "expression" : "t1.`NOTIFICATION_STATUS`",
+    "name" : "NOTIFICATION_STATUS"
+  }, {
+    "expression" : "t1.`NOTIFICATION_TYPE`",
+    "name" : "NOTIFICATION_TYPE"
+  }, {
+    "expression" : "t1.`READ_DATE`",
+    "name" : "READ_DATE"
+  }, {
+    "expression" : "t1.`RES_PARTNER_ID`",
+    "name" : "RES_PARTNER_ID"
+  }, {
+    "expression" : "t21.`NAME`",
+    "name" : "RES_PARTNER_NAME"
+  }, {
+    "expression" : "t1.`SMS_ID_INT`",
+    "name" : "SMS_ID_INT"
+  }, {
+    "expression" : "t1.`SMS_NUMBER`",
+    "name" : "SMS_NUMBER"
+  } ],
+  "queryCode" : "SELECT\nt1.`AUTHOR_ID`,\nt1.`FAILURE_REASON`,\nt1.`FAILURE_TYPE`,\nt1.`ID`,\nt1.`IS_READ`,\nt1.`MAIL_MAIL_ID`,\nt1.`MAIL_MESSAGE_ID`,\nt11.`RECORD_NAME` AS `MAIL_MESSAGE_RECORD_NAME`,\nt11.`BODY` AS `MESSAGE_CONTENT`,\nt1.`NOTIFICATION_STATUS`,\nt1.`NOTIFICATION_TYPE`,\nt1.`READ_DATE`,\nt1.`RES_PARTNER_ID`,\nt21.`NAME` AS `RES_PARTNER_NAME`,\nt1.`SMS_ID_INT`,\nt1.`SMS_NUMBER`\nFROM `mail_notification` t1 \nLEFT JOIN `mail_message` t11 ON t1.`MAIL_MESSAGE_ID` = t11.`ID` \nLEFT JOIN `res_partner` t21 ON t1.`RES_PARTNER_ID` = t21.`ID` \n",
+  "id" : "PSMODULES/mail/PSDATAENTITIES/mail_notification/PSDEDATAQUERIES/View/PSDEDQCODES/MYSQL5.json"
+}

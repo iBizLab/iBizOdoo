@@ -1,0 +1,27 @@
+{
+  "codeName" : "employee",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_candidate/PSDERS/DER1N_HR_CANDIDATE_HR_EMPLOYEE_EMPLOYEE_ID.json",
+  "fKeyName" : "F2E7CDE4BFD4B4217E",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_candidate.json"
+  },
+  "name" : "DER1N_HR_CANDIDATE_HR_EMPLOYEE_EMPLOYEE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "EMPLOYEE_ID",
+    "codeName" : "employee_id"
+  },
+  "pickupDEFName" : "EMPLOYEE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "employee",
+  "enableFKey" : true
+}

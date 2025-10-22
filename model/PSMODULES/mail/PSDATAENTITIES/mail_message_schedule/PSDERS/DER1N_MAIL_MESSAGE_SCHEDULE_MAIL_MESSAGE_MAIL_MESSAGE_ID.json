@@ -1,0 +1,27 @@
+{
+  "codeName" : "mail_message",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_message_schedule/PSDERS/DER1N_MAIL_MESSAGE_SCHEDULE_MAIL_MESSAGE_MAIL_MESSAGE_ID.json",
+  "fKeyName" : "FD24D1093F1A567B27",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_message_schedule.json"
+  },
+  "name" : "DER1N_MAIL_MESSAGE_SCHEDULE_MAIL_MESSAGE_MAIL_MESSAGE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "MAIL_MESSAGE_ID",
+    "codeName" : "mail_message_id"
+  },
+  "pickupDEFName" : "MAIL_MESSAGE_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "mail_message",
+  "enableFKey" : true
+}

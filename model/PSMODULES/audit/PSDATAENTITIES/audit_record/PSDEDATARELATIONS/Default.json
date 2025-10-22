@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/audit/PSDATAENTITIES/audit_record/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.AUDIT_RECORD"
+  },
+  "formCaption" : "审计记录",
+  "name" : "审计记录默认关系界面组"
+}

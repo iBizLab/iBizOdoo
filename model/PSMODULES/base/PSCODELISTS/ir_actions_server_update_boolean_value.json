@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "base__ir_actions_server_update_boolean_value",
+  "codeListType" : "STATIC",
+  "codeName" : "ir_actions_server_update_boolean_value",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/ir_actions_server_update_boolean_value.json",
+  "emptyText" : "未定义",
+  "name" : "布尔值",
+  "getPSCodeItems" : [ {
+    "codeName" : "true",
+    "text" : "是（真）",
+    "value" : "true"
+  }, {
+    "codeName" : "false",
+    "text" : "否（假）",
+    "value" : "false"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

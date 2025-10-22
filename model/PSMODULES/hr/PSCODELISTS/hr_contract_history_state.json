@@ -1,0 +1,37 @@
+{
+  "codeListTag" : "hr__hr_contract_history_state",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_contract_history_state",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_contract_history_state.json",
+  "emptyText" : "未定义",
+  "name" : "状态",
+  "getPSCodeItems" : [ {
+    "codeName" : "draft",
+    "text" : "新建",
+    "value" : "draft"
+  }, {
+    "codeName" : "open",
+    "text" : "运行中",
+    "value" : "open"
+  }, {
+    "codeName" : "close",
+    "text" : "过期",
+    "value" : "close"
+  }, {
+    "codeName" : "cancel",
+    "text" : "已取消",
+    "value" : "cancel"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

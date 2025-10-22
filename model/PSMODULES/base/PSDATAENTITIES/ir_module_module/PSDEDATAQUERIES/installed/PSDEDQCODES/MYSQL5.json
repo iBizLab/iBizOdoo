@@ -1,0 +1,114 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeConds" : [ {
+    "condType" : "CUSTOM",
+    "customCond" : "( t1.`STATE` = 'installed' )",
+    "name" : "查询条件"
+  } ],
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`CONTRIBUTORS`",
+    "name" : "CONTRIBUTORS"
+  }, {
+    "expression" : "t1.`DESCRIPTION`",
+    "name" : "DESCRIPTION"
+  }, {
+    "expression" : "t1.`MENUS_BY_MODULE`",
+    "name" : "MENUS_BY_MODULE"
+  }, {
+    "expression" : "t1.`REPORTS_BY_MODULE`",
+    "name" : "REPORTS_BY_MODULE"
+  }, {
+    "expression" : "t1.`VIEWS_BY_MODULE`",
+    "name" : "VIEWS_BY_MODULE"
+  }, {
+    "expression" : "t1.`APPLICATION`",
+    "name" : "APPLICATION"
+  }, {
+    "expression" : "t1.`APP_ID`",
+    "name" : "APP_ID"
+  }, {
+    "expression" : "t1.`AUTHOR`",
+    "name" : "AUTHOR"
+  }, {
+    "expression" : "t1.`AUTO_INSTALL`",
+    "name" : "AUTO_INSTALL"
+  }, {
+    "expression" : "t1.`CATEGORY_ID`",
+    "name" : "CATEGORY_ID"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`DEMO`",
+    "name" : "DEMO"
+  }, {
+    "expression" : "t1.`DISPLAY_NAME`",
+    "name" : "DISPLAY_NAME"
+  }, {
+    "expression" : "t1.`ICON`",
+    "name" : "ICON"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`IMPORTED`",
+    "name" : "IMPORTED"
+  }, {
+    "expression" : "t1.`LATEST_VERSION`",
+    "name" : "LATEST_VERSION"
+  }, {
+    "expression" : "t1.`LICENSE`",
+    "name" : "LICENSE"
+  }, {
+    "expression" : "t1.`MAINTAINER`",
+    "name" : "MAINTAINER"
+  }, {
+    "expression" : "t1.`MODULE_TYPE`",
+    "name" : "MODULE_TYPE"
+  }, {
+    "expression" : "t1.`NAME`",
+    "name" : "NAME"
+  }, {
+    "expression" : "t1.`ORDER`",
+    "name" : "ORDER"
+  }, {
+    "expression" : "t1.`PUBLISHED_VERSION`",
+    "name" : "PUBLISHED_VERSION"
+  }, {
+    "expression" : "t1.`RES_CODE`",
+    "name" : "RES_CODE"
+  }, {
+    "expression" : "t1.`SEQUENCE`",
+    "name" : "SEQUENCE"
+  }, {
+    "expression" : "t1.`SHORTDESC`",
+    "name" : "SHORTDESC"
+  }, {
+    "expression" : "t1.`STATE`",
+    "name" : "STATE"
+  }, {
+    "expression" : "t1.`SUMMARY`",
+    "name" : "SUMMARY"
+  }, {
+    "expression" : "t1.`TO_BUY`",
+    "name" : "TO_BUY"
+  }, {
+    "expression" : "t1.`URL`",
+    "name" : "URL"
+  }, {
+    "expression" : "t1.`WEBSITE`",
+    "name" : "WEBSITE"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`APPLICATION`,\nt1.`APP_ID`,\nt1.`AUTHOR`,\nt1.`AUTO_INSTALL`,\nt1.`CATEGORY_ID`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`DEMO`,\nt1.`DISPLAY_NAME`,\nt1.`ICON`,\nt1.`ID`,\nt1.`IMPORTED`,\nt1.`LATEST_VERSION`,\nt1.`LICENSE`,\nt1.`MAINTAINER`,\nt1.`MODULE_TYPE`,\nt1.`NAME`,\nt1.`ORDER`,\nt1.`PUBLISHED_VERSION`,\nt1.`RES_CODE`,\nt1.`SEQUENCE`,\nt1.`SHORTDESC`,\nt1.`STATE`,\nt1.`SUMMARY`,\nt1.`TO_BUY`,\nt1.`URL`,\nt1.`WEBSITE`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `ir_module_module` t1 \n",
+  "id" : "PSMODULES/base/PSDATAENTITIES/ir_module_module/PSDEDATAQUERIES/installed/PSDEDQCODES/MYSQL5.json"
+}

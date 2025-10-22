@@ -1,0 +1,326 @@
+{
+  "getAllPSPanelFields" : [ {
+    "id" : "name",
+    "viewFieldName" : "NAME"
+  }, {
+    "id" : "channel_type",
+    "viewFieldName" : "CHANNEL_TYPE"
+  }, {
+    "id" : "description",
+    "viewFieldName" : "DESCRIPTION"
+  }, {
+    "id" : "is_member",
+    "hidden" : true,
+    "viewFieldName" : "IS_MEMBER"
+  } ],
+  "codeName" : "discuss_channel_info",
+  "controlType" : "PANEL",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel/PSPANELS/discuss_channel_info.json",
+  "layoutMode" : "FLEX",
+  "logicName" : "discuss_channel卡片视图",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+  },
+  "getPSLayout" : {
+    "layout" : "FLEX"
+  },
+  "getRootPSPanelItems" : [ {
+    "caption" : "容器",
+    "itemStyle" : "DEFAULT",
+    "itemType" : "CONTAINER",
+    "name" : "container",
+    "getPSLayout" : {
+      "align" : "space-between",
+      "dir" : "row",
+      "layout" : "FLEX"
+    },
+    "getPSLayoutPos" : {
+      "grow" : -1,
+      "layout" : "FLEX"
+    },
+    "getPSPanelItems" : [ {
+      "caption" : "容器",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "CONTAINER",
+      "name" : "container3",
+      "getPSLayout" : {
+        "dir" : "row",
+        "layout" : "FLEX"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX",
+        "spacingTop" : "OUTERLARGE"
+      },
+      "getPSPanelItems" : [ {
+        "caption" : "容器",
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "container1",
+        "getPSLayout" : {
+          "layout" : "FLEX"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "hAlignSelf" : "CENTER",
+          "layout" : "FLEX",
+          "shrink" : 0
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "图片",
+          "contentHeight" : 50.0,
+          "contentType" : "IMAGE",
+          "contentWidth" : 50.0,
+          "height" : 50.0,
+          "itemStyle" : "DEFAULT",
+          "itemType" : "RAWITEM",
+          "name" : "static_image",
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "height" : 50,
+            "heightMode" : "PX",
+            "layout" : "FLEX",
+            "shrink" : 0,
+            "width" : 50,
+            "widthMode" : "PX"
+          },
+          "getPSRawItem" : {
+            "contentType" : "IMAGE",
+            "name" : "static_image",
+            "getPSSysImage" : {
+              "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 530.06 530.06\">\n<circle cx=\"265.03\" cy=\"265.03\" r=\"265.03\" fill=\"hsl(257, 43%, 45%)\"/>\n<path d=\"M416.74,217.29l5-28a8.4,8.4,0,0,0-8.27-9.88H361.09l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H334.61a8.4,8.4,0,0,0-8.27,6.93L315.57,179.4H246.5l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H220a8.4,8.4,0,0,0-8.27,6.93L201,179.4H145.6a8.42,8.42,0,0,0-8.28,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H193l-16,89.62H121.59a8.4,8.4,0,0,0-8.27,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H169L158.73,416a8.4,8.4,0,0,0,8.27,9.88h28.45a8.42,8.42,0,0,0,8.28-6.93l10.76-60.29h69.07L273.32,416a8.4,8.4,0,0,0,8.27,9.88H310a8.4,8.4,0,0,0,8.27-6.93l10.77-60.29h55.38a8.41,8.41,0,0,0,8.28-6.93l5-28a8.4,8.4,0,0,0-8.27-9.88H337.08l16-89.62h55.38A8.4,8.4,0,0,0,416.74,217.29ZM291.56,313.84H222.5l16-89.62h69.07Z\" fill=\"#ffffff\"/>\n</svg>"
+            },
+            "predefinedType" : "STATIC_IMAGE",
+            "rawItemHeight" : 50.0,
+            "rawItemWidth" : 50.0
+          },
+          "getPSSysImage" : {
+            "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 530.06 530.06\">\n<circle cx=\"265.03\" cy=\"265.03\" r=\"265.03\" fill=\"hsl(257, 43%, 45%)\"/>\n<path d=\"M416.74,217.29l5-28a8.4,8.4,0,0,0-8.27-9.88H361.09l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H334.61a8.4,8.4,0,0,0-8.27,6.93L315.57,179.4H246.5l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H220a8.4,8.4,0,0,0-8.27,6.93L201,179.4H145.6a8.42,8.42,0,0,0-8.28,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H193l-16,89.62H121.59a8.4,8.4,0,0,0-8.27,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H169L158.73,416a8.4,8.4,0,0,0,8.27,9.88h28.45a8.42,8.42,0,0,0,8.28-6.93l10.76-60.29h69.07L273.32,416a8.4,8.4,0,0,0,8.27,9.88H310a8.4,8.4,0,0,0,8.27-6.93l10.77-60.29h55.38a8.41,8.41,0,0,0,8.28-6.93l5-28a8.4,8.4,0,0,0-8.27-9.88H337.08l16-89.62h55.38A8.4,8.4,0,0,0,416.74,217.29ZM291.56,313.84H222.5l16-89.62h69.07Z\" fill=\"#ffffff\"/>\n</svg>"
+          },
+          "rawItemHeight" : 50.0,
+          "rawItemWidth" : 50.0,
+          "width" : 50.0,
+          "showCaption" : true
+        } ]
+      }, {
+        "caption" : "容器",
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "container2",
+        "getPSLayout" : {
+          "dir" : "column",
+          "layout" : "FLEX"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "layout" : "FLEX",
+          "spacingLeft" : "OUTERSMALL"
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "文本(动态)",
+          "cssStyle" : "font-weight: var(--ibiz-font-weight-bold);",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "FIELD",
+          "name" : "name",
+          "getPSEditor" : {
+            "editorType" : "SPAN",
+            "name" : "name",
+            "predefinedType" : "FIELD_TEXT_DYNAMIC",
+            "renderMode" : "TEXT_DYNAMIC",
+            "enableLinkView" : false
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX"
+          },
+          "viewFieldName" : "NAME"
+        }, {
+          "caption" : "文本(动态)",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "FIELD",
+          "name" : "channel_type",
+          "getPSEditor" : {
+            "editorType" : "SPAN",
+            "name" : "channel_type",
+            "predefinedType" : "FIELD_TEXT_DYNAMIC",
+            "renderMode" : "TEXT_DYNAMIC",
+            "enableLinkView" : false
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX"
+          },
+          "viewFieldName" : "CHANNEL_TYPE"
+        }, {
+          "caption" : "文本(动态)",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "FIELD",
+          "name" : "description",
+          "getPSEditor" : {
+            "editorType" : "SPAN",
+            "name" : "description",
+            "predefinedType" : "FIELD_TEXT_DYNAMIC",
+            "renderMode" : "TEXT_DYNAMIC",
+            "enableLinkView" : false
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX"
+          },
+          "viewFieldName" : "DESCRIPTION"
+        } ]
+      } ]
+    }, {
+      "caption" : "容器",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "CONTAINER",
+      "name" : "container5",
+      "getPSLayout" : {
+        "layout" : "FLEX"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "hAlignSelf" : "RIGHT",
+        "layout" : "FLEX",
+        "vAlignSelf" : "BOTTOM"
+      },
+      "getPSPanelItems" : [ {
+        "actionType" : "UIACTION",
+        "buttonStyle" : "DEFAULT",
+        "caption" : "加入",
+        "itemStyle" : "DEFAULT",
+        "itemType" : "BUTTON",
+        "name" : "button_calluilogic1",
+        "getPSAppViewUIAction" : {
+          "modelref" : true,
+          "id" : "itemlayoutpanel_button_calluilogic1"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "layout" : "FLEX"
+        },
+        "getPSPanelItemGroupLogics" : [ {
+          "groupOP" : "AND",
+          "logicCat" : "PANELVISIBLE",
+          "logicType" : "GROUP",
+          "getPSPanelItemLogics" : [ {
+            "condOp" : "EQ",
+            "dstModelField" : "IS_MEMBER",
+            "logicType" : "SINGLE",
+            "name" : "IS_MEMBER 等于(=) 0",
+            "value" : "0"
+          } ],
+          "relatedItemNames" : [ "is_member" ],
+          "notMode" : false
+        } ],
+        "getPSUIAction" : {
+          "actionTarget" : "SINGLEKEY",
+          "caption" : "加入频道",
+          "codeName" : "join_channel",
+          "fullCodeName" : "discuss_channel_join_channel",
+          "name" : "加入频道",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "join_channel"
+          },
+          "getPSAppDEUILogic" : {
+            "modelref" : true,
+            "id" : "refresh__channel"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+          },
+          "timeout" : 60000,
+          "uIActionMode" : "BACKEND",
+          "uIActionTag" : "join_channel",
+          "uIActionType" : "DEUIACTION",
+          "uILogicAttachMode" : "AFTER",
+          "enableConfirm" : true,
+          "id" : "join_channel@discuss_channel"
+        },
+        "tooltip" : "加入",
+        "uIActionTarget" : "SINGLEKEY",
+        "showCaption" : true
+      }, {
+        "actionType" : "UIACTION",
+        "buttonStyle" : "DEFAULT",
+        "caption" : "离开",
+        "itemStyle" : "DEFAULT",
+        "itemType" : "BUTTON",
+        "name" : "button_calluilogic",
+        "getPSAppViewUIAction" : {
+          "modelref" : true,
+          "id" : "itemlayoutpanel_button_calluilogic"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "layout" : "FLEX"
+        },
+        "getPSPanelItemGroupLogics" : [ {
+          "groupOP" : "AND",
+          "logicCat" : "PANELVISIBLE",
+          "logicType" : "GROUP",
+          "getPSPanelItemLogics" : [ {
+            "condOp" : "EQ",
+            "dstModelField" : "IS_MEMBER",
+            "logicType" : "SINGLE",
+            "name" : "IS_MEMBER 等于(=) 1",
+            "value" : "1"
+          } ],
+          "relatedItemNames" : [ "is_member" ],
+          "notMode" : false
+        } ],
+        "getPSUIAction" : {
+          "actionTarget" : "SINGLEKEY",
+          "caption" : "离开频道",
+          "codeName" : "action_unfollow",
+          "confirmMsg" : "确认离开频道？",
+          "fullCodeName" : "discuss_channel_action_unfollow",
+          "name" : "离开频道",
+          "getPSAppDEMethod" : {
+            "modelref" : true,
+            "id" : "action_unfollow"
+          },
+          "getPSAppDEUILogic" : {
+            "modelref" : true,
+            "id" : "refresh__channel"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+          },
+          "timeout" : 60000,
+          "uIActionMode" : "BACKEND",
+          "uIActionTag" : "action_unfollow",
+          "uIActionType" : "DEUIACTION",
+          "uILogicAttachMode" : "AFTER",
+          "enableConfirm" : true,
+          "id" : "action_unfollow@discuss_channel"
+        },
+        "tooltip" : "离开",
+        "uIActionTarget" : "SINGLEKEY",
+        "showCaption" : true
+      }, {
+        "caption" : "文本(动态)",
+        "itemType" : "FIELD",
+        "name" : "is_member",
+        "getPSEditor" : {
+          "editorType" : "HIDDEN",
+          "name" : "is_member",
+          "predefinedType" : "FIELD_TEXT_DYNAMIC"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "layout" : "FLEX"
+        },
+        "viewFieldName" : "IS_MEMBER",
+        "hidden" : true
+      } ]
+    } ]
+  } ],
+  "layoutPanel" : true,
+  "modelid" : "9680055b78f912e5208a93a187e35ceb",
+  "modeltype" : "PSSYSVIEWPANEL"
+}

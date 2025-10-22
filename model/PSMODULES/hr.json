@@ -1,0 +1,439 @@
+{
+  "getAllPSCodeLists" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_candidate_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_resume_line_display_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_contract_kanban_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_expense_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_first_month.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_allocation_allocation_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_resume_line_expiration_status.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_applicant_application_status.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_type_employee_requests.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_certificate.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_accrual_validity_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_department_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_generate_multi_wizard_allocation_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_public_work_location_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_yearly_month.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_report_leave_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_applicant_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_department_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_base_hr_presence_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_holidays_summary_employee_holiday_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_hr_presence_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_added_value_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_base_current_leave_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_allocation_generate_multi_wizard_allocation_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_frequency_hourly_source.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_attendance_out_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_expense_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_frequency.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_expense_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_work_location_location_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_public_current_leave_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_base_work_location_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_expense_sheet_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_second_month.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_contract_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_transition_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_contract_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_employee_type_report_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_applicant_priority.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_allocation_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_allocation_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_type_time_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_week_day.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_carryover_month.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_attendance_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_expense_payment_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_type_leave_validation_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_expense_sheet_activity_exception_decoration.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_hr_icon_display.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_applicant_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_action_with_unused_accruals.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_carryover_date.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_added_value_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_report_calendar_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_type_requires_allocation.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_allocation_type_request_unit.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_contract_history_under_contract_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_employee_type_report_holiday_status.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_public_hr_presence_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_allocation_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_candidate_priority.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_report_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_type_request_unit.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/org_chart.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_candidate_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_base_hr_icon_display.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_work_location_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_expense_sheet_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_start_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_attendance_overtime_status.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_accrued_gain_time.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_expense_sheet_approval_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_applicant_kanban_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_request_date_from_period.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_current_leave_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_contract_activity_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_gender.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_distance_home_work_unit.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/department_hierarchy.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_employee_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_attendance_in_mode.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_allocation_generate_multi_wizard_allocation_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_leave_type_allocation_validation_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_contract_history_state.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSCODELISTS/hr_employee_public_hr_icon_display.json"
+  } ],
+  "getAllPSDataEntities" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_applicant.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_applicant_category.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_applicant_refuse_reason.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_attendance.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_attendance_overtime.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_candidate.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_candidate_skill.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_contract.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_contract_history.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_contract_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_department.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_departure_reason.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_departure_wizard.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_base.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_category.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_cv_wizard.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_public.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_skill.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_skill_log.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_skill_report.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_approve_duplicate.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_refuse_wizard.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_sheet.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_split.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_split_wizard.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_holidays_cancel_leave.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_holidays_summary_employee.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_job.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_job_platform.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_accrual_level.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_accrual_plan.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_allocation.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_allocation_generate_multi_wizard.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_employee_type_report.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_generate_multi_wizard.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_mandatory_day.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_report.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_report_calendar.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_manager_department_report.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_payroll_structure_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_recruitment_degree.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_recruitment_source.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_recruitment_stage.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_resume_line.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_resume_line_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_skill.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_skill_level.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_skill_type.json"
+  }, {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_work_location.json"
+  } ],
+  "codeName" : "hr",
+  "dynaModelFilePath" : "PSMODULES/hr.json",
+  "name" : "人力资源"
+}

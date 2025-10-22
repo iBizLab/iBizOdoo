@@ -1,0 +1,27 @@
+{
+  "codeName" : "expense",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_split/PSDERS/DER1N_HR_EXPENSE_SPLIT_HR_EXPENSE_EXPENSE_ID.json",
+  "fKeyName" : "FCE54AC02278A8543F",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_split.json"
+  },
+  "name" : "DER1N_HR_EXPENSE_SPLIT_HR_EXPENSE_EXPENSE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "EXPENSE_ID",
+    "codeName" : "expense_id"
+  },
+  "pickupDEFName" : "EXPENSE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "expense",
+  "enableFKey" : true
+}

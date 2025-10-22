@@ -1,0 +1,1741 @@
+{
+  "codeName" : "main",
+  "controlType" : "FORM",
+  "getCreatePSControlAction" : {
+    "modelref" : true,
+    "id" : "create",
+    "actionName" : "Create",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "create",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "create"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+    }
+  },
+  "defaultLabelWidth" : 130,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel/PSFORMS/main.json",
+  "getGetDraftFromPSControlAction" : {
+    "modelref" : true,
+    "id" : "loaddraftfrom",
+    "actionName" : "GETDRAFTFROM",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "loaddraftfrom",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+    }
+  },
+  "getGetDraftPSControlAction" : {
+    "modelref" : true,
+    "id" : "loaddraft",
+    "actionName" : "GetDraft",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "loaddraft",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get_draft"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+    }
+  },
+  "getGetPSControlAction" : {
+    "modelref" : true,
+    "id" : "load",
+    "actionName" : "Get",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "READ",
+    "name" : "load",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+    }
+  },
+  "logicName" : "主编辑表单",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+  },
+  "getPSDEFormItems" : [ {
+    "id" : "srfupdatedate",
+    "hidden" : true,
+    "dataType" : 5,
+    "getPSAppDEField" : {
+      "name" : "WRITE_DATE",
+      "codeName" : "write_date"
+    }
+  }, {
+    "id" : "srforikey",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfkey",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "id" : "srfmajortext",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "id" : "srftempmode",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfuf",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfdeid",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfsourcekey",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "name",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "id" : "channel_type",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "CHANNEL_TYPE",
+      "codeName" : "channel_type"
+    }
+  }, {
+    "id" : "parent_channel_name",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "PARENT_CHANNEL_NAME",
+      "codeName" : "parent_channel_name"
+    }
+  }, {
+    "id" : "uuid",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "UUID",
+      "codeName" : "uuid"
+    }
+  }, {
+    "id" : "sfu_server_url",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "SFU_SERVER_URL",
+      "codeName" : "sfu_server_url"
+    }
+  }, {
+    "id" : "invitation_url",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "INVITATION_URL",
+      "codeName" : "invitation_url"
+    }
+  }, {
+    "id" : "group_public_name",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "GROUP_PUBLIC_NAME",
+      "codeName" : "group_public_name"
+    }
+  }, {
+    "id" : "group_public_id",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "GROUP_PUBLIC_ID",
+      "codeName" : "group_public_id"
+    }
+  }, {
+    "id" : "id",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "id" : "parent_channel_id",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "PARENT_CHANNEL_ID",
+      "codeName" : "parent_channel_id"
+    }
+  } ],
+  "getPSDEFormPages" : [ {
+    "caption" : "基本信息",
+    "codeName" : "formpage1",
+    "detailStyle" : "DEFAULT",
+    "detailType" : "FORMPAGE",
+    "name" : "formpage1",
+    "getPSDEFormDetails" : [ {
+      "caption" : "核心信息",
+      "codeName" : "base_info",
+      "detailStyle" : "DEFAULT",
+      "detailType" : "GROUPPANEL",
+      "name" : "base_info",
+      "getPSDEFormDetails" : [ {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.NAME"
+        },
+        "caption" : "名称",
+        "codeName" : "name",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "name",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "NAME",
+          "codeName" : "name"
+        },
+        "getPSEditor" : {
+          "editorParams" : {
+            "ISAUTO" : "true"
+          },
+          "editorType" : "TEXTAREA",
+          "maxLength" : 200,
+          "name" : "name",
+          "showMaxLength" : true
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 24,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.CHANNEL_TYPE"
+        },
+        "caption" : "频道类型",
+        "codeName" : "channel_type",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 3,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "channel_type",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "CHANNEL_TYPE",
+          "codeName" : "channel_type"
+        },
+        "getPSEditor" : {
+          "editorType" : "SPAN",
+          "name" : "channel_type",
+          "getPSAppCodeList" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/discuss__discuss_channel_channel_type.json"
+          },
+          "enableLinkView" : false
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 24,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "convertToCodeItemText" : true,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.PARENT_CHANNEL_ID"
+        },
+        "caption" : "父频道名称",
+        "codeName" : "parent_channel_name",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 0,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "parent_channel_name",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "PARENT_CHANNEL_NAME",
+          "codeName" : "parent_channel_name"
+        },
+        "getPSEditor" : {
+          "editorParams" : {
+            "AC" : "TRUE",
+            "PICKUPVIEW" : "TRUE"
+          },
+          "editorType" : "PICKER",
+          "handlerType" : "PickupText",
+          "name" : "parent_channel_name",
+          "getPSAppDEACMode" : {
+            "modelref" : true,
+            "id" : "Default"
+          },
+          "getPSAppDEDataSet" : {
+            "modelref" : true,
+            "id" : "fetch_default"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+          },
+          "getPSEditorItems" : [ {
+            "name" : "parent_channel_id"
+          } ],
+          "getPickupPSAppView" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_pickup_view.json",
+            "viewType" : "DEPICKUPVIEW"
+          },
+          "valueItemName" : "parent_channel_id",
+          "enableAC" : true,
+          "enablePickupView" : true,
+          "forceSelection" : true,
+          "showTrigger" : true,
+          "singleSelect" : true
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 24,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "valueItemName" : "parent_channel_id",
+        "allowEmpty" : true,
+        "showCaption" : true
+      }, {
+        "codeName" : "druipart1",
+        "contentHeight" : 400.0,
+        "dRItemTag" : "Auto51321856",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "DRUIPART",
+        "height" : 400.0,
+        "maskMode" : 0,
+        "name" : "druipart1",
+        "getPSAppView" : {
+          "accUserMode" : 2,
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DE.LNAME.DISCUSS_CHANNEL"
+          },
+          "caption" : "子频道",
+          "codeName" : "discuss_channel_sub_channel_grid_view",
+          "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_sub_channel_grid_view.json",
+          "gridRowActiveMode" : 1,
+          "name" : "discuss_channelsub_channel_grid_view",
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+          },
+          "getPSAppModule" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPMODULES/discuss.json"
+          },
+          "getPSAppViewEngines" : [ {
+            "engineCat" : "VIEW",
+            "engineType" : "GridView",
+            "name" : "engine"
+          } ],
+          "getPSAppViewLogics" : [ {
+            "logicTrigger" : "CUSTOM",
+            "logicType" : "APPUILOGIC",
+            "name" : "newdata",
+            "getPSAppUILogic" : {
+              "actionAfterWizard" : "DEFAULT",
+              "logicType" : "PREDEFINED",
+              "name" : "新建数据",
+              "getNewDataPSAppView" : {
+                "getRefPSAppView" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+                  "viewType" : "DEEDITVIEW"
+                }
+              },
+              "getPSAppUILogicRefViews" : [ {
+                "getRefPSAppView" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+                  "viewType" : "DEEDITVIEW"
+                }
+              } ],
+              "viewLogicType" : "APP_NEWDATA",
+              "batchAddOnly" : false,
+              "enableBatchAdd" : false,
+              "enableWizardAdd" : false
+            }
+          }, {
+            "logicTrigger" : "CUSTOM",
+            "logicType" : "APPUILOGIC",
+            "name" : "opendata",
+            "getPSAppUILogic" : {
+              "logicType" : "PREDEFINED",
+              "name" : "打开数据",
+              "getOpenDataPSAppView" : {
+                "getRefPSAppView" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+                  "viewType" : "DEEDITVIEW"
+                }
+              },
+              "getPSAppUILogicRefViews" : [ {
+                "getRefPSAppView" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+                  "viewType" : "DEEDITVIEW"
+                }
+              } ],
+              "viewLogicType" : "APP_OPENDATA",
+              "editMode" : true
+            }
+          } ],
+          "getPSAppViewRefs" : [ {
+            "name" : "NEWDATA",
+            "realTitle" : "讨论频道快速配置视图",
+            "getRefPSAppView" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+              "viewType" : "DEEDITVIEW"
+            }
+          }, {
+            "name" : "EDITDATA",
+            "realTitle" : "讨论频道快速配置视图",
+            "getRefPSAppView" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+              "viewType" : "DEEDITVIEW"
+            }
+          } ],
+          "getPSControls" : [ {
+            "aggMode" : "NONE",
+            "codeName" : "sub_channel",
+            "columnEnableFilter" : 2,
+            "columnEnableLink" : 2,
+            "controlType" : "GRID",
+            "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel/PSGRIDS/sub_channel.json",
+            "getFetchPSControlAction" : {
+              "modelref" : true,
+              "id" : "fetch",
+              "actionType" : "DEDATASET",
+              "name" : "fetch",
+              "getPSAppDEMethod" : {
+                "modelref" : true,
+                "id" : "fetch_default"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+              }
+            },
+            "groupMode" : "NONE",
+            "logicName" : "子频道表格",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "getPSControlHandler" : {
+              "getPSHandlerActions" : [ {
+                "actionName" : "Get",
+                "actionType" : "DEACTION",
+                "dataAccessAction" : "READ",
+                "name" : "load",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "get"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+                }
+              }, {
+                "actionName" : "Create",
+                "actionType" : "DEACTION",
+                "dataAccessAction" : "CREATE",
+                "name" : "create",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "create"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+                }
+              }, {
+                "actionName" : "Update",
+                "actionType" : "DEACTION",
+                "dataAccessAction" : "UPDATE",
+                "name" : "update",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "update"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+                }
+              }, {
+                "actionName" : "Remove",
+                "actionType" : "DEACTION",
+                "dataAccessAction" : "DELETE",
+                "name" : "remove",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "remove"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+                }
+              }, {
+                "actionName" : "GetDraft",
+                "actionType" : "DEACTION",
+                "dataAccessAction" : "CREATE",
+                "name" : "loaddraft",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "get_draft"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+                }
+              }, {
+                "actionType" : "DEDATASET",
+                "name" : "fetch",
+                "getPSAppDEMethod" : {
+                  "modelref" : true,
+                  "id" : "fetch_default"
+                },
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+                }
+              } ],
+              "userDRAction" : "READ",
+              "enableDEFieldPrivilege" : false,
+              "id" : "数据表格处理器"
+            },
+            "getPSControlParam" : {
+              "autoLoad" : true,
+              "showBusyIndicator" : true,
+              "id" : "GRID"
+            },
+            "getPSDEGridColumns" : [ {
+              "align" : "LEFT",
+              "cLConvertMode" : "NONE",
+              "getCapPSLanguageRes" : {
+                "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.NAME"
+              },
+              "caption" : "名称",
+              "codeName" : "name",
+              "columnType" : "DEFGRIDCOLUMN",
+              "dataItemName" : "name",
+              "excelCaption" : "名称",
+              "name" : "name",
+              "noPrivDisplayMode" : 1,
+              "getPSAppDEField" : {
+                "name" : "NAME",
+                "codeName" : "name"
+              },
+              "getPSDEUIActionGroup" : {
+                "codeName" : "Auto83146635",
+                "name" : "通用表格界面删除界面行为组",
+                "getPSUIActionGroupDetails" : [ {
+                  "actionLevel" : 200,
+                  "detailType" : "DEUIACTION",
+                  "name" : "uf676d6d",
+                  "getPSSysImage" : {
+                    "glyph" : "xf014@FontAwesome",
+                    "cssClass" : "fa fa-trash-o"
+                  },
+                  "getPSUIAction" : {
+                    "actionTarget" : "MULTIKEY",
+                    "getCapPSLanguageRes" : {
+                      "lanResTag" : "TBB.TEXT.*.REMOVE"
+                    },
+                    "caption" : "删除",
+                    "codeName" : "Remove",
+                    "fullCodeName" : "Remove",
+                    "name" : "表格界面_删除操作",
+                    "getPSSysImage" : {
+                      "glyph" : "xf00d@FontAwesome",
+                      "cssClass" : "fa fa-remove"
+                    },
+                    "predefinedType" : "GRIDVIEW_REMOVEACTION",
+                    "timeout" : 60000,
+                    "getTooltipPSLanguageRes" : {
+                      "lanResTag" : "TBB.TOOLTIP.*.REMOVE"
+                    },
+                    "uIActionMode" : "SYS",
+                    "uIActionTag" : "Remove",
+                    "uIActionType" : "DEUIACTION",
+                    "globalUIAction" : true
+                  },
+                  "getTooltipPSLanguageRes" : {
+                    "lanResTag" : "TBB.TOOLTIP.*.REMOVE"
+                  },
+                  "addSeparator" : false,
+                  "showCaption" : false,
+                  "showIcon" : true
+                } ]
+              },
+              "width" : 100,
+              "widthUnit" : "STAR",
+              "enableSort" : true
+            }, {
+              "align" : "RIGHT",
+              "codeName" : "uagridcolumn1",
+              "columnType" : "UAGRIDCOLUMN",
+              "name" : "uagridcolumn1",
+              "noPrivDisplayMode" : 1,
+              "getPSDEUIActionGroup" : {
+                "codeName" : "Auto83146635",
+                "name" : "通用表格界面删除界面行为组",
+                "getPSUIActionGroupDetails" : [ {
+                  "actionLevel" : 200,
+                  "detailType" : "DEUIACTION",
+                  "name" : "uf676d6d",
+                  "getPSSysImage" : {
+                    "glyph" : "xf014@FontAwesome",
+                    "cssClass" : "fa fa-trash-o"
+                  },
+                  "getPSUIAction" : {
+                    "actionTarget" : "MULTIKEY",
+                    "getCapPSLanguageRes" : {
+                      "lanResTag" : "TBB.TEXT.*.REMOVE"
+                    },
+                    "caption" : "删除",
+                    "codeName" : "Remove",
+                    "fullCodeName" : "Remove",
+                    "name" : "表格界面_删除操作",
+                    "getPSSysImage" : {
+                      "glyph" : "xf00d@FontAwesome",
+                      "cssClass" : "fa fa-remove"
+                    },
+                    "predefinedType" : "GRIDVIEW_REMOVEACTION",
+                    "timeout" : 60000,
+                    "getTooltipPSLanguageRes" : {
+                      "lanResTag" : "TBB.TOOLTIP.*.REMOVE"
+                    },
+                    "uIActionMode" : "SYS",
+                    "uIActionTag" : "Remove",
+                    "uIActionType" : "DEUIACTION",
+                    "globalUIAction" : true
+                  },
+                  "getTooltipPSLanguageRes" : {
+                    "lanResTag" : "TBB.TOOLTIP.*.REMOVE"
+                  },
+                  "addSeparator" : false,
+                  "showCaption" : false,
+                  "showIcon" : true
+                } ]
+              },
+              "width" : 70,
+              "widthUnit" : "PX",
+              "enableSort" : false
+            } ],
+            "getPSDEGridDataItems" : [ {
+              "dataType" : 25,
+              "name" : "name",
+              "getPSAppDEField" : {
+                "name" : "NAME",
+                "codeName" : "name"
+              }
+            }, {
+              "dataType" : 25,
+              "name" : "srfkey",
+              "getPSAppDEField" : {
+                "name" : "ID",
+                "codeName" : "id"
+              }
+            }, {
+              "dataType" : 25,
+              "name" : "srfdataaccaction",
+              "getPSAppDEField" : {
+                "name" : "ID",
+                "codeName" : "id"
+              },
+              "dataAccessAction" : true
+            }, {
+              "dataType" : 25,
+              "name" : "from_message_id",
+              "getPSAppDEField" : {
+                "name" : "FROM_MESSAGE_ID",
+                "codeName" : "from_message_id"
+              }
+            }, {
+              "dataType" : 25,
+              "name" : "parent_channel_id",
+              "getPSAppDEField" : {
+                "name" : "PARENT_CHANNEL_ID",
+                "codeName" : "parent_channel_id"
+              }
+            }, {
+              "dataType" : 25,
+              "name" : "group_public_id",
+              "getPSAppDEField" : {
+                "name" : "GROUP_PUBLIC_ID",
+                "codeName" : "group_public_id"
+              }
+            }, {
+              "dataType" : 25,
+              "name" : "srfmajortext",
+              "getPSAppDEField" : {
+                "name" : "NAME",
+                "codeName" : "name"
+              }
+            } ],
+            "getPSDEGridEditItems" : [ {
+              "caption" : "标识",
+              "codeName" : "srfkey",
+              "enableCond" : 3,
+              "ignoreInput" : 0,
+              "name" : "srfkey",
+              "getPSAppDEField" : {
+                "name" : "ID",
+                "codeName" : "id"
+              },
+              "getPSEditor" : {
+                "editorType" : "HIDDEN",
+                "name" : "srfkey"
+              },
+              "allowEmpty" : true
+            } ],
+            "pagingSize" : 500,
+            "getRemovePSControlAction" : {
+              "actionName" : "Remove",
+              "actionType" : "DEACTION",
+              "dataAccessAction" : "DELETE",
+              "name" : "remove",
+              "getPSAppDEMethod" : {
+                "modelref" : true,
+                "id" : "remove"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+              }
+            },
+            "sortMode" : "REMOTE",
+            "hasWFDataItems" : false,
+            "enableColFilter" : false,
+            "enableCustomized" : true,
+            "enableGroup" : false,
+            "enablePagingBar" : false,
+            "enableRowEdit" : false,
+            "enableRowEditOrder" : false,
+            "enableRowNew" : false,
+            "forceFit" : false,
+            "hideHeader" : false,
+            "noSort" : false,
+            "singleSelect" : false,
+            "name" : "grid",
+            "modelid" : "1952679d850aad2b7a9a323289a3085b",
+            "modeltype" : "PSDEGRID"
+          }, {
+            "controlType" : "SEARCHBAR",
+            "name" : "searchbar",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "getPSControlParam" : {
+              "id" : "searchbar"
+            },
+            "quickGroupCount" : -1,
+            "quickSearchMode" : 0,
+            "quickSearchWidth" : 0,
+            "enableFilter" : false,
+            "enableGroup" : false,
+            "enableQuickSearch" : false,
+            "mobileSearchBar" : false
+          }, {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DE.LNAME.DISCUSS_CHANNEL"
+            },
+            "caption" : "子频道",
+            "codeName" : "sub_channel_grid_view_captionbar",
+            "controlType" : "CAPTIONBAR",
+            "name" : "captionbar",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "getPSControlParam" : { }
+          } ],
+          "getPSDEViewCodeName" : "sub_channel_grid_view",
+          "getPSDEViewId" : "91ab412857239b0b43dc2898d21f164b",
+          "getPSViewLayoutPanel" : {
+            "codeName" : "layoutpanel",
+            "controlStyle" : "APPDEGRIDVIEW",
+            "controlType" : "VIEWLAYOUTPANEL",
+            "name" : "layoutpanel",
+            "getPSAppDataEntity" : {
+              "modelref" : true,
+              "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "getPSControlParam" : { },
+            "layoutBodyOnly" : true,
+            "layoutPanel" : true,
+            "useDefaultLayout" : true
+          },
+          "title" : "子频道列表",
+          "viewStyle" : "DEFAULT",
+          "viewType" : "DEGRIDVIEW",
+          "xDataControlName" : "grid",
+          "enableDP" : true,
+          "enableExport" : true,
+          "enableFilter" : true,
+          "enableImport" : true,
+          "enableRowEdit" : false,
+          "enableSearch" : true,
+          "rowEditDefault" : false,
+          "modelid" : "05f317643084d42538cadacc6312def9",
+          "modeltype" : "PSAPPDEVIEW"
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 24,
+          "colMD" : 24,
+          "height" : 400,
+          "heightMode" : "PX",
+          "layout" : "TABLE_24COL"
+        },
+        "getPSNavigateParams" : [ {
+          "key" : "n_parent_channel_id_eq",
+          "name" : "n_parent_channel_id_eq",
+          "value" : "discuss_channel",
+          "rawValue" : false
+        } ],
+        "parentDataJO" : {
+          "SRFPARENTTYPE" : "DER1N",
+          "srfparentdename" : "DISCUSS_CHANNEL",
+          "srfparentmode" : "DER1N_DISCUSS_CHANNEL_DISCUSS_CHANNEL_PARENT_CHANNEL_ID",
+          "srfparentdefname" : "PARENT_CHANNEL_ID",
+          "SRFDER1NID" : "DER1N_DISCUSS_CHANNEL_DISCUSS_CHANNEL_PARENT_CHANNEL_ID"
+        },
+        "needSave" : false,
+        "refreshItemsSetParamOnly" : false,
+        "showCaption" : true
+      }, {
+        "caption" : "标识信息",
+        "codeName" : "identity",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "GROUPPANEL",
+        "name" : "identity",
+        "getPSDEFormDetails" : [ {
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.UUID"
+          },
+          "caption" : "Sfu 服务器uuid",
+          "codeName" : "uuid",
+          "dataType" : 25,
+          "detailStyle" : "DEFAULT",
+          "detailType" : "FORMITEM",
+          "enableCond" : 0,
+          "ignoreInput" : 0,
+          "labelPos" : "LEFT",
+          "labelWidth" : 130,
+          "name" : "uuid",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "UUID",
+            "codeName" : "uuid"
+          },
+          "getPSEditor" : {
+            "editorType" : "TEXTBOX",
+            "maxLength" : 250,
+            "name" : "uuid"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "allowEmpty" : true,
+          "showCaption" : true
+        }, {
+          "getCapPSLanguageRes" : {
+            "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.SFU_SERVER_URL"
+          },
+          "caption" : "Sfu 服务器网址",
+          "codeName" : "sfu_server_url",
+          "dataType" : 25,
+          "detailStyle" : "DEFAULT",
+          "detailType" : "FORMITEM",
+          "enableCond" : 3,
+          "ignoreInput" : 0,
+          "labelPos" : "LEFT",
+          "labelWidth" : 130,
+          "name" : "sfu_server_url",
+          "noPrivDisplayMode" : 1,
+          "getPSAppDEField" : {
+            "name" : "SFU_SERVER_URL",
+            "codeName" : "sfu_server_url"
+          },
+          "getPSEditor" : {
+            "editorType" : "TEXTBOX",
+            "maxLength" : 250,
+            "name" : "sfu_server_url"
+          },
+          "getPSLayoutPos" : {
+            "colMD" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "allowEmpty" : true,
+          "showCaption" : true
+        } ],
+        "getPSLayout" : {
+          "childColMD" : 24,
+          "columnCount" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 24,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "infoGroupMode" : false,
+        "showCaption" : false
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.INVITATION_URL"
+        },
+        "caption" : "邀请URL",
+        "codeName" : "invitation_url",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "invitation_url",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "INVITATION_URL",
+          "codeName" : "invitation_url"
+        },
+        "getPSEditor" : {
+          "editorType" : "TEXTBOX",
+          "maxLength" : 250,
+          "name" : "invitation_url"
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 24,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "showCaption" : true
+      }, {
+        "codeName" : "tabpanel1",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "TABPANEL",
+        "name" : "tabpanel1",
+        "getPSDEFormTabPages" : [ {
+          "caption" : "隐私",
+          "codeName" : "tabpage1",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "TABPAGE",
+          "name" : "tabpage1",
+          "getPSDEFormDetails" : [ {
+            "getCapPSLanguageRes" : {
+              "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.GROUP_PUBLIC_ID"
+            },
+            "caption" : "授权群组",
+            "codeName" : "group_public_name",
+            "dataType" : 25,
+            "detailStyle" : "DEFAULT",
+            "detailType" : "FORMITEM",
+            "enableCond" : 3,
+            "ignoreInput" : 0,
+            "labelPos" : "LEFT",
+            "labelWidth" : 130,
+            "name" : "group_public_name",
+            "noPrivDisplayMode" : 1,
+            "getPSAppDEField" : {
+              "name" : "GROUP_PUBLIC_NAME",
+              "codeName" : "group_public_name"
+            },
+            "getPSEditor" : {
+              "editorParams" : {
+                "AC" : "TRUE",
+                "PICKUPVIEW" : "TRUE"
+              },
+              "editorType" : "PICKER",
+              "handlerType" : "PickupText",
+              "name" : "group_public_name",
+              "getPSAppDEACMode" : {
+                "modelref" : true,
+                "id" : "Default"
+              },
+              "getPSAppDEDataSet" : {
+                "modelref" : true,
+                "id" : "fetch_default"
+              },
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_groups.json"
+              },
+              "getPSEditorItems" : [ {
+                "name" : "group_public_id"
+              } ],
+              "getPickupPSAppView" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_pickup_view.json",
+                "viewType" : "DEPICKUPVIEW"
+              },
+              "valueItemName" : "group_public_id",
+              "enableAC" : true,
+              "enablePickupView" : true,
+              "forceSelection" : true,
+              "showTrigger" : true,
+              "singleSelect" : true
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "layout" : "TABLE_24COL"
+            },
+            "valueItemName" : "group_public_id",
+            "allowEmpty" : true,
+            "showCaption" : true
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "infoGroupMode" : false,
+          "showCaption" : true
+        }, {
+          "caption" : "成员",
+          "codeName" : "tabpage2",
+          "detailStyle" : "DEFAULT",
+          "detailType" : "TABPAGE",
+          "name" : "tabpage2",
+          "getPSDEFormDetails" : [ {
+            "codeName" : "druipart2",
+            "contentHeight" : 400.0,
+            "dRItemTag" : "Auto82098443",
+            "detailStyle" : "DEFAULT",
+            "detailType" : "DRUIPART",
+            "height" : 400.0,
+            "name" : "druipart2",
+            "getPSAppView" : {
+              "accUserMode" : 2,
+              "getCapPSLanguageRes" : {
+                "lanResTag" : "DE.LNAME.DISCUSS_CHANNEL_MEMBER"
+              },
+              "caption" : "频道成员",
+              "codeName" : "discuss_channel_member_grid_view",
+              "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_grid_view.json",
+              "funcViewMode" : "MDATAVIEW",
+              "gridRowActiveMode" : 1,
+              "memo" : "系统自动添加",
+              "name" : "discuss_channel_memberGridView",
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+              },
+              "getPSAppModule" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPMODULES/discuss.json"
+              },
+              "getPSAppViewEngines" : [ {
+                "engineCat" : "VIEW",
+                "engineType" : "GridView",
+                "name" : "engine"
+              } ],
+              "getPSAppViewLogics" : [ {
+                "logicTrigger" : "CUSTOM",
+                "logicType" : "APPUILOGIC",
+                "name" : "newdata",
+                "getPSAppUILogic" : {
+                  "actionAfterWizard" : "DEFAULT",
+                  "logicType" : "PREDEFINED",
+                  "name" : "新建数据",
+                  "getNewDataPSAppView" : {
+                    "openMode" : "POPUPMODAL",
+                    "getRefPSAppView" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_edit_view.json",
+                      "viewType" : "DEEDITVIEW"
+                    }
+                  },
+                  "getPSAppUILogicRefViews" : [ {
+                    "openMode" : "POPUPMODAL",
+                    "getRefPSAppView" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_edit_view.json",
+                      "viewType" : "DEEDITVIEW"
+                    }
+                  } ],
+                  "viewLogicType" : "APP_NEWDATA",
+                  "batchAddOnly" : false,
+                  "enableBatchAdd" : false,
+                  "enableWizardAdd" : false
+                }
+              }, {
+                "logicTrigger" : "CUSTOM",
+                "logicType" : "APPUILOGIC",
+                "name" : "opendata",
+                "getPSAppUILogic" : {
+                  "logicType" : "PREDEFINED",
+                  "name" : "打开数据",
+                  "getOpenDataPSAppView" : {
+                    "openMode" : "POPUPMODAL",
+                    "getRefPSAppView" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_edit_view.json",
+                      "viewType" : "DEEDITVIEW"
+                    }
+                  },
+                  "getPSAppUILogicRefViews" : [ {
+                    "openMode" : "POPUPMODAL",
+                    "getRefPSAppView" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_edit_view.json",
+                      "viewType" : "DEEDITVIEW"
+                    }
+                  } ],
+                  "viewLogicType" : "APP_OPENDATA",
+                  "editMode" : true
+                }
+              } ],
+              "getPSAppViewRefs" : [ {
+                "name" : "EDITDATA",
+                "openMode" : "POPUPMODAL",
+                "realOpenMode" : "POPUPMODAL",
+                "realTitle" : "频道成员编辑视图",
+                "getRefPSAppView" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_edit_view.json",
+                  "viewType" : "DEEDITVIEW"
+                }
+              }, {
+                "name" : "NEWDATA",
+                "openMode" : "POPUPMODAL",
+                "realOpenMode" : "POPUPMODAL",
+                "realTitle" : "频道成员编辑视图",
+                "getRefPSAppView" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_edit_view.json",
+                  "viewType" : "DEEDITVIEW"
+                }
+              } ],
+              "getPSControls" : [ {
+                "aggMode" : "NONE",
+                "codeName" : "main",
+                "columnEnableFilter" : 2,
+                "columnEnableLink" : 2,
+                "controlType" : "GRID",
+                "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member/PSGRIDS/main.json",
+                "getFetchPSControlAction" : {
+                  "modelref" : true,
+                  "id" : "fetch",
+                  "actionType" : "DEDATASET",
+                  "name" : "fetch",
+                  "getPSAppDEMethod" : {
+                    "modelref" : true,
+                    "id" : "fetch_default"
+                  },
+                  "getPSAppDataEntity" : {
+                    "modelref" : true,
+                    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                  }
+                },
+                "groupMode" : "NONE",
+                "logicName" : "主表格",
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                },
+                "getPSControlHandler" : {
+                  "getPSHandlerActions" : [ {
+                    "actionName" : "Get",
+                    "actionType" : "DEACTION",
+                    "dataAccessAction" : "READ",
+                    "name" : "load",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "get"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                    }
+                  }, {
+                    "actionName" : "Create",
+                    "actionType" : "DEACTION",
+                    "dataAccessAction" : "CREATE",
+                    "name" : "create",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "create"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                    }
+                  }, {
+                    "actionName" : "Update",
+                    "actionType" : "DEACTION",
+                    "dataAccessAction" : "UPDATE",
+                    "name" : "update",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "update"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                    }
+                  }, {
+                    "actionName" : "Remove",
+                    "actionType" : "DEACTION",
+                    "dataAccessAction" : "DELETE",
+                    "name" : "remove",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "remove"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                    }
+                  }, {
+                    "actionName" : "GetDraft",
+                    "actionType" : "DEACTION",
+                    "dataAccessAction" : "CREATE",
+                    "name" : "loaddraft",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "get_draft"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                    }
+                  }, {
+                    "actionType" : "DEDATASET",
+                    "name" : "fetch",
+                    "getPSAppDEMethod" : {
+                      "modelref" : true,
+                      "id" : "fetch_default"
+                    },
+                    "getPSAppDataEntity" : {
+                      "modelref" : true,
+                      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                    }
+                  } ],
+                  "userDRAction" : "READ",
+                  "enableDEFieldPrivilege" : false,
+                  "id" : "数据表格处理器"
+                },
+                "getPSControlParam" : {
+                  "autoLoad" : true,
+                  "showBusyIndicator" : true,
+                  "id" : "GRID"
+                },
+                "getPSDEGridColumns" : [ {
+                  "align" : "LEFT",
+                  "cLConvertMode" : "NONE",
+                  "getCapPSLanguageRes" : {
+                    "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL_MEMBER.PARTNER_ID"
+                  },
+                  "caption" : "合作伙伴",
+                  "codeName" : "partner_name",
+                  "columnType" : "DEFGRIDCOLUMN",
+                  "dataItemName" : "partner_name",
+                  "excelCaption" : "合作伙伴",
+                  "name" : "partner_name",
+                  "noPrivDisplayMode" : 1,
+                  "getPSAppDEField" : {
+                    "name" : "PARTNER_NAME",
+                    "codeName" : "partner_name"
+                  },
+                  "width" : 100,
+                  "widthUnit" : "STAR",
+                  "enableSort" : true
+                }, {
+                  "align" : "LEFT",
+                  "cLConvertMode" : "NONE",
+                  "getCapPSLanguageRes" : {
+                    "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL_MEMBER.GUEST_ID"
+                  },
+                  "caption" : "访客",
+                  "codeName" : "guest_name",
+                  "columnType" : "DEFGRIDCOLUMN",
+                  "dataItemName" : "guest_name",
+                  "excelCaption" : "访客",
+                  "name" : "guest_name",
+                  "noPrivDisplayMode" : 1,
+                  "getPSAppDEField" : {
+                    "name" : "GUEST_NAME",
+                    "codeName" : "guest_name"
+                  },
+                  "width" : 100,
+                  "widthUnit" : "STAR",
+                  "enableSort" : true
+                }, {
+                  "align" : "RIGHT",
+                  "codeName" : "uagridcolumn1",
+                  "columnType" : "UAGRIDCOLUMN",
+                  "name" : "uagridcolumn1",
+                  "noPrivDisplayMode" : 1,
+                  "getPSDEUIActionGroup" : {
+                    "codeName" : "Auto83146635",
+                    "name" : "通用表格界面删除界面行为组",
+                    "getPSUIActionGroupDetails" : [ {
+                      "actionLevel" : 200,
+                      "detailType" : "DEUIACTION",
+                      "name" : "uf676d6d",
+                      "getPSSysImage" : {
+                        "glyph" : "xf014@FontAwesome",
+                        "cssClass" : "fa fa-trash-o"
+                      },
+                      "getPSUIAction" : {
+                        "actionTarget" : "MULTIKEY",
+                        "getCapPSLanguageRes" : {
+                          "lanResTag" : "TBB.TEXT.*.REMOVE"
+                        },
+                        "caption" : "删除",
+                        "codeName" : "Remove",
+                        "fullCodeName" : "Remove",
+                        "name" : "表格界面_删除操作",
+                        "getPSSysImage" : {
+                          "glyph" : "xf00d@FontAwesome",
+                          "cssClass" : "fa fa-remove"
+                        },
+                        "predefinedType" : "GRIDVIEW_REMOVEACTION",
+                        "timeout" : 60000,
+                        "getTooltipPSLanguageRes" : {
+                          "lanResTag" : "TBB.TOOLTIP.*.REMOVE"
+                        },
+                        "uIActionMode" : "SYS",
+                        "uIActionTag" : "Remove",
+                        "uIActionType" : "DEUIACTION",
+                        "globalUIAction" : true
+                      },
+                      "getTooltipPSLanguageRes" : {
+                        "lanResTag" : "TBB.TOOLTIP.*.REMOVE"
+                      },
+                      "addSeparator" : false,
+                      "showCaption" : false,
+                      "showIcon" : true
+                    } ]
+                  },
+                  "width" : 100,
+                  "widthUnit" : "PX",
+                  "enableSort" : false
+                } ],
+                "getPSDEGridDataItems" : [ {
+                  "dataType" : 25,
+                  "name" : "partner_name",
+                  "getPSAppDEField" : {
+                    "name" : "PARTNER_NAME",
+                    "codeName" : "partner_name"
+                  }
+                }, {
+                  "dataType" : 25,
+                  "name" : "guest_name",
+                  "getPSAppDEField" : {
+                    "name" : "GUEST_NAME",
+                    "codeName" : "guest_name"
+                  }
+                }, {
+                  "dataType" : 25,
+                  "name" : "srfkey",
+                  "getPSAppDEField" : {
+                    "name" : "ID",
+                    "codeName" : "id"
+                  }
+                }, {
+                  "dataType" : 25,
+                  "name" : "srfdataaccaction",
+                  "getPSAppDEField" : {
+                    "name" : "ID",
+                    "codeName" : "id"
+                  },
+                  "dataAccessAction" : true
+                }, {
+                  "dataType" : 25,
+                  "name" : "guest_id",
+                  "getPSAppDEField" : {
+                    "name" : "GUEST_ID",
+                    "codeName" : "guest_id"
+                  }
+                }, {
+                  "dataType" : 25,
+                  "name" : "channel_id",
+                  "getPSAppDEField" : {
+                    "name" : "CHANNEL_ID",
+                    "codeName" : "channel_id"
+                  }
+                }, {
+                  "dataType" : 25,
+                  "name" : "fetched_message_id",
+                  "getPSAppDEField" : {
+                    "name" : "FETCHED_MESSAGE_ID",
+                    "codeName" : "fetched_message_id"
+                  }
+                }, {
+                  "dataType" : 25,
+                  "name" : "partner_id",
+                  "getPSAppDEField" : {
+                    "name" : "PARTNER_ID",
+                    "codeName" : "partner_id"
+                  }
+                }, {
+                  "dataType" : 25,
+                  "name" : "seen_message_id",
+                  "getPSAppDEField" : {
+                    "name" : "SEEN_MESSAGE_ID",
+                    "codeName" : "seen_message_id"
+                  }
+                }, {
+                  "dataType" : 25,
+                  "name" : "rtc_inviting_session_id",
+                  "getPSAppDEField" : {
+                    "name" : "RTC_INVITING_SESSION_ID",
+                    "codeName" : "rtc_inviting_session_id"
+                  }
+                } ],
+                "getPSDEGridEditItems" : [ {
+                  "caption" : "标识",
+                  "codeName" : "srfkey",
+                  "enableCond" : 3,
+                  "ignoreInput" : 0,
+                  "name" : "srfkey",
+                  "getPSAppDEField" : {
+                    "name" : "ID",
+                    "codeName" : "id"
+                  },
+                  "getPSEditor" : {
+                    "editorType" : "HIDDEN",
+                    "name" : "srfkey"
+                  },
+                  "allowEmpty" : true
+                } ],
+                "pagingSize" : 500,
+                "getRemovePSControlAction" : {
+                  "actionName" : "Remove",
+                  "actionType" : "DEACTION",
+                  "dataAccessAction" : "DELETE",
+                  "name" : "remove",
+                  "getPSAppDEMethod" : {
+                    "modelref" : true,
+                    "id" : "remove"
+                  },
+                  "getPSAppDataEntity" : {
+                    "modelref" : true,
+                    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                  }
+                },
+                "sortMode" : "REMOTE",
+                "hasWFDataItems" : false,
+                "enableColFilter" : false,
+                "enableCustomized" : true,
+                "enableGroup" : false,
+                "enablePagingBar" : false,
+                "enableRowEdit" : false,
+                "enableRowEditOrder" : false,
+                "enableRowNew" : false,
+                "forceFit" : false,
+                "hideHeader" : false,
+                "noSort" : false,
+                "singleSelect" : false,
+                "name" : "grid",
+                "modelid" : "1ebd74287173b99d8af491cf47b4d433",
+                "modeltype" : "PSDEGRID"
+              }, {
+                "controlType" : "SEARCHBAR",
+                "name" : "searchbar",
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                },
+                "getPSControlParam" : {
+                  "id" : "searchbar"
+                },
+                "quickGroupCount" : -1,
+                "quickSearchMode" : 0,
+                "quickSearchWidth" : 0,
+                "enableFilter" : false,
+                "enableGroup" : false,
+                "enableQuickSearch" : false,
+                "mobileSearchBar" : false
+              }, {
+                "getCapPSLanguageRes" : {
+                  "lanResTag" : "DE.LNAME.DISCUSS_CHANNEL_MEMBER"
+                },
+                "caption" : "频道成员",
+                "codeName" : "grid_view_captionbar",
+                "controlType" : "CAPTIONBAR",
+                "name" : "captionbar",
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                },
+                "getPSControlParam" : { }
+              } ],
+              "getPSDEViewCodeName" : "GridView",
+              "getPSDEViewId" : "77d5fd7c17d6a208c154fab7cb038a9e",
+              "getPSViewLayoutPanel" : {
+                "codeName" : "layoutpanel",
+                "controlStyle" : "APPDEGRIDVIEW",
+                "controlType" : "VIEWLAYOUTPANEL",
+                "name" : "layoutpanel",
+                "getPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                },
+                "getPSControlParam" : { },
+                "layoutBodyOnly" : true,
+                "layoutPanel" : true,
+                "useDefaultLayout" : true
+              },
+              "title" : "频道成员表格视图",
+              "viewStyle" : "DEFAULT",
+              "viewType" : "DEGRIDVIEW",
+              "xDataControlName" : "grid",
+              "enableDP" : true,
+              "enableExport" : true,
+              "enableFilter" : true,
+              "enableImport" : true,
+              "enableRowEdit" : false,
+              "enableSearch" : true,
+              "rowEditDefault" : false,
+              "showCaptionBar" : false,
+              "modelid" : "6e56164976164c7fdf6eb0db76430189",
+              "modeltype" : "PSAPPDEVIEW",
+              "getPSAppDERSPaths" : [ [ {
+                "actionRSMode" : 1,
+                "codeName" : "channel_members",
+                "dataRSMode" : 0,
+                "majorDECodeName" : "discuss_channel",
+                "majorDEName" : "DISCUSS_CHANNEL",
+                "getMajorPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+                },
+                "minorDECodeName" : "discuss_channel_member",
+                "minorDEName" : "DISCUSS_CHANNEL_MEMBER",
+                "getMinorPSAppDataEntity" : {
+                  "modelref" : true,
+                  "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel_member.json"
+                },
+                "name" : "频道-频道成员",
+                "getParentPSAppDEField" : {
+                  "name" : "CHANNEL_ID",
+                  "codeName" : "channel_id"
+                },
+                "rSMode" : 2,
+                "tempDataOrder" : 10
+              } ] ]
+            },
+            "getPSLayoutPos" : {
+              "colMD" : 24,
+              "height" : 400,
+              "heightMode" : "PX",
+              "layout" : "TABLE_24COL"
+            },
+            "parentDataJO" : {
+              "SRFPARENTTYPE" : "DER1N",
+              "srfparentdename" : "DISCUSS_CHANNEL",
+              "srfparentmode" : "DER1N_DISCUSS_CHANNEL_MEMBER_DISCUSS_CHANNEL_CHANNEL_ID",
+              "srfparentdefname" : "CHANNEL_ID",
+              "SRFDER1NID" : "DER1N_DISCUSS_CHANNEL_MEMBER_DISCUSS_CHANNEL_CHANNEL_ID"
+            },
+            "needSave" : false,
+            "refreshItemsSetParamOnly" : false,
+            "showCaption" : true
+          } ],
+          "getPSLayout" : {
+            "childColMD" : 24,
+            "columnCount" : 24,
+            "layout" : "TABLE_24COL"
+          },
+          "infoGroupMode" : false,
+          "showCaption" : true
+        } ],
+        "getPSLayoutPos" : {
+          "colLG" : 24,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        }
+      } ],
+      "getPSLayout" : {
+        "childColLG" : 24,
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "infoGroupMode" : false,
+      "showCaption" : false
+    }, {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.GROUP_PUBLIC_ID"
+      },
+      "caption" : "授权群组",
+      "codeName" : "group_public_id",
+      "dataType" : 25,
+      "detailStyle" : "DEFAULT",
+      "detailType" : "FORMITEM",
+      "enableCond" : 3,
+      "ignoreInput" : 0,
+      "labelPos" : "LEFT",
+      "labelWidth" : 130,
+      "name" : "group_public_id",
+      "noPrivDisplayMode" : 1,
+      "getPSAppDEField" : {
+        "name" : "GROUP_PUBLIC_ID",
+        "codeName" : "group_public_id"
+      },
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "group_public_id"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "allowEmpty" : true,
+      "hidden" : true
+    }, {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.ID"
+      },
+      "caption" : "标识",
+      "codeName" : "id",
+      "dataType" : 25,
+      "detailStyle" : "DEFAULT",
+      "detailType" : "FORMITEM",
+      "enableCond" : 3,
+      "ignoreInput" : 0,
+      "labelPos" : "LEFT",
+      "labelWidth" : 130,
+      "name" : "id",
+      "noPrivDisplayMode" : 1,
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "id"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "allowEmpty" : true,
+      "hidden" : true
+    }, {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "DEF.LNAME.DISCUSS_CHANNEL.PARENT_CHANNEL_ID"
+      },
+      "caption" : "父频道",
+      "codeName" : "parent_channel_id",
+      "dataType" : 25,
+      "detailStyle" : "DEFAULT",
+      "detailType" : "FORMITEM",
+      "enableCond" : 3,
+      "ignoreInput" : 0,
+      "labelPos" : "LEFT",
+      "labelWidth" : 130,
+      "name" : "parent_channel_id",
+      "noPrivDisplayMode" : 1,
+      "getPSAppDEField" : {
+        "name" : "PARENT_CHANNEL_ID",
+        "codeName" : "parent_channel_id"
+      },
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "parent_channel_id"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "allowEmpty" : true,
+      "hidden" : true
+    } ],
+    "getPSLayout" : {
+      "childColMD" : 24,
+      "columnCount" : 24,
+      "layout" : "TABLE_24COL"
+    },
+    "infoGroupMode" : false
+  } ],
+  "getPSLayout" : {
+    "childColMD" : 24,
+    "columnCount" : 24,
+    "layout" : "TABLE_24COL"
+  },
+  "getRemovePSControlAction" : {
+    "modelref" : true,
+    "id" : "remove",
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+    }
+  },
+  "tabHeaderPos" : "TOP",
+  "getUpdatePSControlAction" : {
+    "modelref" : true,
+    "id" : "update",
+    "actionName" : "Update",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "UPDATE",
+    "name" : "update",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "update"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+    }
+  },
+  "noTabHeader" : true,
+  "modelid" : "d7eca7e21b52c9faf41727ef2fc5b9d5",
+  "modeltype" : "PSDEFORM_EDITFORM"
+}

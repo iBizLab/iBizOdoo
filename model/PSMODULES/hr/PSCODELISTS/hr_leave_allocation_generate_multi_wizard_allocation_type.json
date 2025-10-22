@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "hr__hr_leave_allocation_generate_multi_wizard_allocation_type",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_allocation_generate_multi_wizard_allocation_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_allocation_generate_multi_wizard_allocation_type.json",
+  "emptyText" : "未定义",
+  "name" : "分配类别",
+  "getPSCodeItems" : [ {
+    "codeName" : "regular",
+    "text" : "常规的配置",
+    "value" : "regular"
+  }, {
+    "codeName" : "accrual",
+    "text" : "应计分配",
+    "value" : "accrual"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

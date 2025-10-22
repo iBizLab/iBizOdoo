@@ -1,0 +1,53 @@
+package cn.ibizlab.ibizodoo.base.logic.ir_module_modulelogic.cur_user_app;
+        import java.util.Map;
+        import java.util.HashMap;
+        import com.alibaba.fastjson.JSONObject;
+        import org.springframework.util.StringUtils;
+        import org.springframework.util.ObjectUtils;
+        import cn.ibizlab.ibizodoo.util.errors.BadRequestAlertException;
+                global cn.ibizlab.ibizodoo.core.base.domain.ir_module_module ir_module_modulecur_user_appdefault;
+                global cn.ibizlab.ibizodoo.core.base.domain.ir_module_module ir_module_modulecur_user_appaccess_modules;
+                global cn.ibizlab.ibizodoo.core.base.domain.ir_module_module ir_module_modulecur_user_appinstalled_modules;
+                    global cn.ibizlab.ibizodoo.core.base.service.Iir_module_moduleService ir_module_moduleservice;
+        global cn.ibizlab.ibizodoo.core.base.service.Iir_module_moduleService iBzSysIr_module_moduleDefaultService;
+        global cn.ibizlab.ibizodoo.util.security.AuthenticationUser curuser;
+
+
+    no-loop
+
+            //逻辑处理节点[开始]
+            rule "begin"
+            ruleflow-group "ir_module_modulecur_user_appbegin"
+            when
+            then
+            end
+
+            //逻辑处理节点[查询安装应用]
+            rule "dedataset_01"
+            ruleflow-group "ir_module_modulecur_user_appdedataset_01"
+            when
+            then
+                        update(ir_module_modulecur_user_appdefault);//更新fact中变量值
+                        update(ir_module_modulecur_user_appaccess_modules);//更新fact中变量值
+                        update(ir_module_modulecur_user_appinstalled_modules);//更新fact中变量值
+            end
+
+            //逻辑处理节点[查询当前用户的授权应用]
+            rule "rawsfcode_01"
+            ruleflow-group "ir_module_modulecur_user_apprawsfcode_01"
+            when
+            then
+                        update(ir_module_modulecur_user_appdefault);//更新fact中变量值
+                        update(ir_module_modulecur_user_appaccess_modules);//更新fact中变量值
+                        update(ir_module_modulecur_user_appinstalled_modules);//更新fact中变量值
+            end
+
+            //逻辑处理节点[结束]
+            rule "end_01"
+            ruleflow-group "ir_module_modulecur_user_append_01"
+            when
+            then
+                        update(ir_module_modulecur_user_appdefault);//更新fact中变量值
+                        update(ir_module_modulecur_user_appaccess_modules);//更新fact中变量值
+                        update(ir_module_modulecur_user_appinstalled_modules);//更新fact中变量值
+            end

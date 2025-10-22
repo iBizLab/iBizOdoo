@@ -1,0 +1,598 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "(SELECT count(1) FROM `res_users` user where user.`SHARE`=0 )",
+    "name" : "ACTIVE_USER_COUNT"
+  }, {
+    "expression" : "t1.`AUTH_SIGNUP_RESET_PASSWORD`",
+    "name" : "AUTH_SIGNUP_RESET_PASSWORD"
+  }, {
+    "expression" : "t1.`AUTH_SIGNUP_TEMPLATE_USER_ID`",
+    "name" : "AUTH_SIGNUP_TEMPLATE_USER_ID"
+  }, {
+    "expression" : "t1.`AUTH_SIGNUP_UNINVITED`",
+    "name" : "AUTH_SIGNUP_UNINVITED"
+  }, {
+    "expression" : "t1.`AUTOMATIC_INVOICE`",
+    "name" : "AUTOMATIC_INVOICE"
+  }, {
+    "expression" : "t1.`BARCODE_SEPARATOR`",
+    "name" : "BARCODE_SEPARATOR"
+  }, {
+    "expression" : "(SELECT count(1)  FROM `res_company`)",
+    "name" : "COMPANY_COUNT"
+  }, {
+    "expression" : "t1.`COMPANY_ID`",
+    "name" : "COMPANY_ID"
+  }, {
+    "expression" : "t11.`NAME`",
+    "name" : "COMPANY_NAME"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`CRM_AUTO_ASSIGNMENT_ACTION`",
+    "name" : "CRM_AUTO_ASSIGNMENT_ACTION"
+  }, {
+    "expression" : "t1.`CRM_AUTO_ASSIGNMENT_INTERVAL_NUMBER`",
+    "name" : "CRM_AUTO_ASSIGNMENT_INTERVAL_NUMBER"
+  }, {
+    "expression" : "t1.`CRM_AUTO_ASSIGNMENT_INTERVAL_TYPE`",
+    "name" : "CRM_AUTO_ASSIGNMENT_INTERVAL_TYPE"
+  }, {
+    "expression" : "t1.`CRM_AUTO_ASSIGNMENT_RUN_DATETIME`",
+    "name" : "CRM_AUTO_ASSIGNMENT_RUN_DATETIME"
+  }, {
+    "expression" : "t1.`CRM_USE_AUTO_ASSIGNMENT`",
+    "name" : "CRM_USE_AUTO_ASSIGNMENT"
+  }, {
+    "expression" : "t1.`DEFAULT_INVOICE_POLICY`",
+    "name" : "DEFAULT_INVOICE_POLICY"
+  }, {
+    "expression" : "t1.`DEFAULT_PICKING_POLICY`",
+    "name" : "DEFAULT_PICKING_POLICY"
+  }, {
+    "expression" : "t1.`DEFAULT_PURCHASE_METHOD`",
+    "name" : "DEFAULT_PURCHASE_METHOD"
+  }, {
+    "expression" : "t1.`DELAY_ALERT_CONTRACT`",
+    "name" : "DELAY_ALERT_CONTRACT"
+  }, {
+    "expression" : "t1.`DIGEST_EMAILS`",
+    "name" : "DIGEST_EMAILS"
+  }, {
+    "expression" : "t1.`EXTERNAL_EMAIL_SERVER_DEFAULT`",
+    "name" : "EXTERNAL_EMAIL_SERVER_DEFAULT"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_CLIENT_IDENTIFIER`",
+    "name" : "GOOGLE_GMAIL_CLIENT_IDENTIFIER"
+  }, {
+    "expression" : "t1.`GOOGLE_GMAIL_CLIENT_SECRET`",
+    "name" : "GOOGLE_GMAIL_CLIENT_SECRET"
+  }, {
+    "expression" : "t1.`GOOGLE_TRANSLATE_API_KEY`",
+    "name" : "GOOGLE_TRANSLATE_API_KEY"
+  }, {
+    "expression" : "t1.`GROUP_ANALYTIC_ACCOUNTING`",
+    "name" : "GROUP_ANALYTIC_ACCOUNTING"
+  }, {
+    "expression" : "t1.`GROUP_APPLICANT_CV_DISPLAY`",
+    "name" : "GROUP_APPLICANT_CV_DISPLAY"
+  }, {
+    "expression" : "t1.`GROUP_AUTO_DONE_SETTING`",
+    "name" : "GROUP_AUTO_DONE_SETTING"
+  }, {
+    "expression" : "t1.`GROUP_CASH_ROUNDING`",
+    "name" : "GROUP_CASH_ROUNDING"
+  }, {
+    "expression" : "t1.`GROUP_DISCOUNT_PER_SO_LINE`",
+    "name" : "GROUP_DISCOUNT_PER_SO_LINE"
+  }, {
+    "expression" : "t1.`GROUP_LOT_ON_DELIVERY_SLIP`",
+    "name" : "GROUP_LOT_ON_DELIVERY_SLIP"
+  }, {
+    "expression" : "t1.`GROUP_LOT_ON_INVOICE`",
+    "name" : "GROUP_LOT_ON_INVOICE"
+  }, {
+    "expression" : "t1.`GROUP_MASS_MAILING_CAMPAIGN`",
+    "name" : "GROUP_MASS_MAILING_CAMPAIGN"
+  }, {
+    "expression" : "t1.`GROUP_MRP_BYPRODUCTS`",
+    "name" : "GROUP_MRP_BYPRODUCTS"
+  }, {
+    "expression" : "t1.`GROUP_MRP_RECEPTION_REPORT`",
+    "name" : "GROUP_MRP_RECEPTION_REPORT"
+  }, {
+    "expression" : "t1.`GROUP_MRP_ROUTINGS`",
+    "name" : "GROUP_MRP_ROUTINGS"
+  }, {
+    "expression" : "t1.`GROUP_MRP_WORKORDER_DEPENDENCIES`",
+    "name" : "GROUP_MRP_WORKORDER_DEPENDENCIES"
+  }, {
+    "expression" : "t1.`GROUP_MULTI_CURRENCY`",
+    "name" : "GROUP_MULTI_CURRENCY"
+  }, {
+    "expression" : "t1.`GROUP_PRODUCT_PRICELIST`",
+    "name" : "GROUP_PRODUCT_PRICELIST"
+  }, {
+    "expression" : "t1.`GROUP_PRODUCT_VARIANT`",
+    "name" : "GROUP_PRODUCT_VARIANT"
+  }, {
+    "expression" : "t1.`GROUP_PROFORMA_SALES`",
+    "name" : "GROUP_PROFORMA_SALES"
+  }, {
+    "expression" : "t1.`GROUP_PROJECT_MILESTONE`",
+    "name" : "GROUP_PROJECT_MILESTONE"
+  }, {
+    "expression" : "t1.`GROUP_PROJECT_RATING`",
+    "name" : "GROUP_PROJECT_RATING"
+  }, {
+    "expression" : "t1.`GROUP_PROJECT_RECURRING_TASKS`",
+    "name" : "GROUP_PROJECT_RECURRING_TASKS"
+  }, {
+    "expression" : "t1.`GROUP_PROJECT_STAGES`",
+    "name" : "GROUP_PROJECT_STAGES"
+  }, {
+    "expression" : "t1.`GROUP_PROJECT_TASK_DEPENDENCIES`",
+    "name" : "GROUP_PROJECT_TASK_DEPENDENCIES"
+  }, {
+    "expression" : "t1.`GROUP_SALE_DELIVERY_ADDRESS`",
+    "name" : "GROUP_SALE_DELIVERY_ADDRESS"
+  }, {
+    "expression" : "t1.`GROUP_SALE_ORDER_TEMPLATE`",
+    "name" : "GROUP_SALE_ORDER_TEMPLATE"
+  }, {
+    "expression" : "t1.`GROUP_SEND_REMINDER`",
+    "name" : "GROUP_SEND_REMINDER"
+  }, {
+    "expression" : "t1.`GROUP_SHOW_PURCHASE_RECEIPTS`",
+    "name" : "GROUP_SHOW_PURCHASE_RECEIPTS"
+  }, {
+    "expression" : "t1.`GROUP_SHOW_SALE_RECEIPTS`",
+    "name" : "GROUP_SHOW_SALE_RECEIPTS"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_ACCOUNTING_AUTOMATIC`",
+    "name" : "GROUP_STOCK_ACCOUNTING_AUTOMATIC"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_ADV_LOCATION`",
+    "name" : "GROUP_STOCK_ADV_LOCATION"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_LOT_PRINT_GS1`",
+    "name" : "GROUP_STOCK_LOT_PRINT_GS1"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_MULTI_LOCATIONS`",
+    "name" : "GROUP_STOCK_MULTI_LOCATIONS"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_PACKAGING`",
+    "name" : "GROUP_STOCK_PACKAGING"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_PRODUCTION_LOT`",
+    "name" : "GROUP_STOCK_PRODUCTION_LOT"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_RECEPTION_REPORT`",
+    "name" : "GROUP_STOCK_RECEPTION_REPORT"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_SIGN_DELIVERY`",
+    "name" : "GROUP_STOCK_SIGN_DELIVERY"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_TRACKING_LOT`",
+    "name" : "GROUP_STOCK_TRACKING_LOT"
+  }, {
+    "expression" : "t1.`GROUP_STOCK_TRACKING_OWNER`",
+    "name" : "GROUP_STOCK_TRACKING_OWNER"
+  }, {
+    "expression" : "t1.`GROUP_UNLOCKED_BY_DEFAULT`",
+    "name" : "GROUP_UNLOCKED_BY_DEFAULT"
+  }, {
+    "expression" : "t1.`GROUP_UOM`",
+    "name" : "GROUP_UOM"
+  }, {
+    "expression" : "t1.`GROUP_USE_LEAD`",
+    "name" : "GROUP_USE_LEAD"
+  }, {
+    "expression" : "t1.`GROUP_USE_RECURRING_REVENUES`",
+    "name" : "GROUP_USE_RECURRING_REVENUES"
+  }, {
+    "expression" : "t1.`GROUP_WARNING_ACCOUNT`",
+    "name" : "GROUP_WARNING_ACCOUNT"
+  }, {
+    "expression" : "t1.`GROUP_WARNING_PURCHASE`",
+    "name" : "GROUP_WARNING_PURCHASE"
+  }, {
+    "expression" : "t1.`GROUP_WARNING_SALE`",
+    "name" : "GROUP_WARNING_SALE"
+  }, {
+    "expression" : "t1.`GROUP_WARNING_STOCK`",
+    "name" : "GROUP_WARNING_STOCK"
+  }, {
+    "expression" : "t1.`HR_EMPLOYEE_SELF_EDIT`",
+    "name" : "HR_EMPLOYEE_SELF_EDIT"
+  }, {
+    "expression" : "t1.`HR_EXPENSE_ALIAS_PREFIX`",
+    "name" : "HR_EXPENSE_ALIAS_PREFIX"
+  }, {
+    "expression" : "t1.`HR_EXPENSE_USE_MAILGATEWAY`",
+    "name" : "HR_EXPENSE_USE_MAILGATEWAY"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`INVOICE_MAIL_TEMPLATE_ID`",
+    "name" : "INVOICE_MAIL_TEMPLATE_ID"
+  }, {
+    "expression" : "t1.`IS_INSTALLED_SALE`",
+    "name" : "IS_INSTALLED_SALE"
+  }, {
+    "expression" : "t1.`IS_MEMBERSHIP_MULTI`",
+    "name" : "IS_MEMBERSHIP_MULTI"
+  }, {
+    "expression" : "t1.`LEAD_ENRICH_AUTO`",
+    "name" : "LEAD_ENRICH_AUTO"
+  }, {
+    "expression" : "t1.`LEAD_MINING_IN_PIPELINE`",
+    "name" : "LEAD_MINING_IN_PIPELINE"
+  }, {
+    "expression" : "t1.`LOCK_CONFIRMED_PO`",
+    "name" : "LOCK_CONFIRMED_PO"
+  }, {
+    "expression" : "t1.`MASS_MAILING_OUTGOING_MAIL_SERVER`",
+    "name" : "MASS_MAILING_OUTGOING_MAIL_SERVER"
+  }, {
+    "expression" : "t1.`MASS_MAILING_REPORTS`",
+    "name" : "MASS_MAILING_REPORTS"
+  }, {
+    "expression" : "t1.`MASS_MAILING_SPLIT_CONTACT_NAME`",
+    "name" : "MASS_MAILING_SPLIT_CONTACT_NAME"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_3WAY_MATCH`",
+    "name" : "MODULE_ACCOUNT_3WAY_MATCH"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_ACCOUNTANT`",
+    "name" : "MODULE_ACCOUNT_ACCOUNTANT"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_BANK_STATEMENT_EXTRACT`",
+    "name" : "MODULE_ACCOUNT_BANK_STATEMENT_EXTRACT"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CAMT`",
+    "name" : "MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CAMT"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CSV`",
+    "name" : "MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CSV"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_OFX`",
+    "name" : "MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_OFX"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_QIF`",
+    "name" : "MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_QIF"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_BATCH_PAYMENT`",
+    "name" : "MODULE_ACCOUNT_BATCH_PAYMENT"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_BUDGET`",
+    "name" : "MODULE_ACCOUNT_BUDGET"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_CHECK_PRINTING`",
+    "name" : "MODULE_ACCOUNT_CHECK_PRINTING"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_EXTRACT`",
+    "name" : "MODULE_ACCOUNT_EXTRACT"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_INTER_COMPANY_RULES`",
+    "name" : "MODULE_ACCOUNT_INTER_COMPANY_RULES"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_INTRASTAT`",
+    "name" : "MODULE_ACCOUNT_INTRASTAT"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_INVOICE_EXTRACT`",
+    "name" : "MODULE_ACCOUNT_INVOICE_EXTRACT"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_ISO20022`",
+    "name" : "MODULE_ACCOUNT_ISO20022"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_PAYMENT`",
+    "name" : "MODULE_ACCOUNT_PAYMENT"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_PEPPOL`",
+    "name" : "MODULE_ACCOUNT_PEPPOL"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_REPORTS`",
+    "name" : "MODULE_ACCOUNT_REPORTS"
+  }, {
+    "expression" : "t1.`MODULE_ACCOUNT_SEPA_DIRECT_DEBIT`",
+    "name" : "MODULE_ACCOUNT_SEPA_DIRECT_DEBIT"
+  }, {
+    "expression" : "t1.`MODULE_AUTH_LDAP`",
+    "name" : "MODULE_AUTH_LDAP"
+  }, {
+    "expression" : "t1.`MODULE_AUTH_OAUTH`",
+    "name" : "MODULE_AUTH_OAUTH"
+  }, {
+    "expression" : "t1.`MODULE_BASE_GEOLOCALIZE`",
+    "name" : "MODULE_BASE_GEOLOCALIZE"
+  }, {
+    "expression" : "t1.`MODULE_BASE_IMPORT`",
+    "name" : "MODULE_BASE_IMPORT"
+  }, {
+    "expression" : "t1.`MODULE_CRM_IAP_ENRICH`",
+    "name" : "MODULE_CRM_IAP_ENRICH"
+  }, {
+    "expression" : "t1.`MODULE_CRM_IAP_MINE`",
+    "name" : "MODULE_CRM_IAP_MINE"
+  }, {
+    "expression" : "t1.`MODULE_CURRENCY_RATE_LIVE`",
+    "name" : "MODULE_CURRENCY_RATE_LIVE"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY`",
+    "name" : "MODULE_DELIVERY"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_BPOST`",
+    "name" : "MODULE_DELIVERY_BPOST"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_DHL`",
+    "name" : "MODULE_DELIVERY_DHL"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_EASYPOST`",
+    "name" : "MODULE_DELIVERY_EASYPOST"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_FEDEX`",
+    "name" : "MODULE_DELIVERY_FEDEX"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_SENDCLOUD`",
+    "name" : "MODULE_DELIVERY_SENDCLOUD"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_SHIPROCKET`",
+    "name" : "MODULE_DELIVERY_SHIPROCKET"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_STARSHIPIT`",
+    "name" : "MODULE_DELIVERY_STARSHIPIT"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_UPS`",
+    "name" : "MODULE_DELIVERY_UPS"
+  }, {
+    "expression" : "t1.`MODULE_DELIVERY_USPS`",
+    "name" : "MODULE_DELIVERY_USPS"
+  }, {
+    "expression" : "t1.`MODULE_GOOGLE_CALENDAR`",
+    "name" : "MODULE_GOOGLE_CALENDAR"
+  }, {
+    "expression" : "t1.`MODULE_GOOGLE_GMAIL`",
+    "name" : "MODULE_GOOGLE_GMAIL"
+  }, {
+    "expression" : "t1.`MODULE_GOOGLE_RECAPTCHA`",
+    "name" : "MODULE_GOOGLE_RECAPTCHA"
+  }, {
+    "expression" : "t1.`MODULE_HR_EXPENSE_EXTRACT`",
+    "name" : "MODULE_HR_EXPENSE_EXTRACT"
+  }, {
+    "expression" : "t1.`MODULE_HR_HOMEWORKING`",
+    "name" : "MODULE_HR_HOMEWORKING"
+  }, {
+    "expression" : "t1.`MODULE_HR_PAYROLL_EXPENSE`",
+    "name" : "MODULE_HR_PAYROLL_EXPENSE"
+  }, {
+    "expression" : "t1.`MODULE_HR_PRESENCE`",
+    "name" : "MODULE_HR_PRESENCE"
+  }, {
+    "expression" : "t1.`MODULE_HR_RECRUITMENT_EXTRACT`",
+    "name" : "MODULE_HR_RECRUITMENT_EXTRACT"
+  }, {
+    "expression" : "t1.`MODULE_HR_RECRUITMENT_SURVEY`",
+    "name" : "MODULE_HR_RECRUITMENT_SURVEY"
+  }, {
+    "expression" : "t1.`MODULE_HR_SKILLS`",
+    "name" : "MODULE_HR_SKILLS"
+  }, {
+    "expression" : "t1.`MODULE_HR_TIMESHEET`",
+    "name" : "MODULE_HR_TIMESHEET"
+  }, {
+    "expression" : "t1.`MODULE_L10N_EU_OSS`",
+    "name" : "MODULE_L10N_EU_OSS"
+  }, {
+    "expression" : "t1.`MODULE_LOYALTY`",
+    "name" : "MODULE_LOYALTY"
+  }, {
+    "expression" : "t1.`MODULE_MAIL_PLUGIN`",
+    "name" : "MODULE_MAIL_PLUGIN"
+  }, {
+    "expression" : "t1.`MODULE_MAINTENANCE_WORKSHEET`",
+    "name" : "MODULE_MAINTENANCE_WORKSHEET"
+  }, {
+    "expression" : "t1.`MODULE_MICROSOFT_CALENDAR`",
+    "name" : "MODULE_MICROSOFT_CALENDAR"
+  }, {
+    "expression" : "t1.`MODULE_MICROSOFT_OUTLOOK`",
+    "name" : "MODULE_MICROSOFT_OUTLOOK"
+  }, {
+    "expression" : "t1.`MODULE_MRP_MPS`",
+    "name" : "MODULE_MRP_MPS"
+  }, {
+    "expression" : "t1.`MODULE_MRP_PLM`",
+    "name" : "MODULE_MRP_PLM"
+  }, {
+    "expression" : "t1.`MODULE_MRP_SUBCONTRACTING`",
+    "name" : "MODULE_MRP_SUBCONTRACTING"
+  }, {
+    "expression" : "t1.`MODULE_PARTNER_AUTOCOMPLETE`",
+    "name" : "MODULE_PARTNER_AUTOCOMPLETE"
+  }, {
+    "expression" : "t1.`MODULE_PRODUCT_EMAIL_TEMPLATE`",
+    "name" : "MODULE_PRODUCT_EMAIL_TEMPLATE"
+  }, {
+    "expression" : "t1.`MODULE_PRODUCT_EXPIRY`",
+    "name" : "MODULE_PRODUCT_EXPIRY"
+  }, {
+    "expression" : "t1.`MODULE_PRODUCT_IMAGES`",
+    "name" : "MODULE_PRODUCT_IMAGES"
+  }, {
+    "expression" : "t1.`MODULE_PRODUCT_MARGIN`",
+    "name" : "MODULE_PRODUCT_MARGIN"
+  }, {
+    "expression" : "t1.`MODULE_PURCHASE_PRODUCT_MATRIX`",
+    "name" : "MODULE_PURCHASE_PRODUCT_MATRIX"
+  }, {
+    "expression" : "t1.`MODULE_PURCHASE_REQUISITION`",
+    "name" : "MODULE_PURCHASE_REQUISITION"
+  }, {
+    "expression" : "t1.`MODULE_QUALITY_CONTROL`",
+    "name" : "MODULE_QUALITY_CONTROL"
+  }, {
+    "expression" : "t1.`MODULE_QUALITY_CONTROL_WORKSHEET`",
+    "name" : "MODULE_QUALITY_CONTROL_WORKSHEET"
+  }, {
+    "expression" : "t1.`MODULE_SALE_AMAZON`",
+    "name" : "MODULE_SALE_AMAZON"
+  }, {
+    "expression" : "t1.`MODULE_SALE_COMMISSION`",
+    "name" : "MODULE_SALE_COMMISSION"
+  }, {
+    "expression" : "t1.`MODULE_SALE_LOYALTY`",
+    "name" : "MODULE_SALE_LOYALTY"
+  }, {
+    "expression" : "t1.`MODULE_SALE_MARGIN`",
+    "name" : "MODULE_SALE_MARGIN"
+  }, {
+    "expression" : "t1.`MODULE_SALE_PDF_QUOTE_BUILDER`",
+    "name" : "MODULE_SALE_PDF_QUOTE_BUILDER"
+  }, {
+    "expression" : "t1.`MODULE_SALE_PRODUCT_MATRIX`",
+    "name" : "MODULE_SALE_PRODUCT_MATRIX"
+  }, {
+    "expression" : "t1.`MODULE_SMS`",
+    "name" : "MODULE_SMS"
+  }, {
+    "expression" : "t1.`MODULE_SNAILMAIL_ACCOUNT`",
+    "name" : "MODULE_SNAILMAIL_ACCOUNT"
+  }, {
+    "expression" : "t1.`MODULE_STOCK_BARCODE`",
+    "name" : "MODULE_STOCK_BARCODE"
+  }, {
+    "expression" : "t1.`MODULE_STOCK_BARCODE_BARCODELOOKUP`",
+    "name" : "MODULE_STOCK_BARCODE_BARCODELOOKUP"
+  }, {
+    "expression" : "t1.`MODULE_STOCK_DROPSHIPPING`",
+    "name" : "MODULE_STOCK_DROPSHIPPING"
+  }, {
+    "expression" : "t1.`MODULE_STOCK_FLEET`",
+    "name" : "MODULE_STOCK_FLEET"
+  }, {
+    "expression" : "t1.`MODULE_STOCK_LANDED_COSTS`",
+    "name" : "MODULE_STOCK_LANDED_COSTS"
+  }, {
+    "expression" : "t1.`MODULE_STOCK_PICKING_BATCH`",
+    "name" : "MODULE_STOCK_PICKING_BATCH"
+  }, {
+    "expression" : "t1.`MODULE_STOCK_SMS`",
+    "name" : "MODULE_STOCK_SMS"
+  }, {
+    "expression" : "t1.`MODULE_VOIP`",
+    "name" : "MODULE_VOIP"
+  }, {
+    "expression" : "t1.`MODULE_WEBSITE_CF_TURNSTILE`",
+    "name" : "MODULE_WEBSITE_CF_TURNSTILE"
+  }, {
+    "expression" : "t1.`MODULE_WEBSITE_CRM_IAP_REVEAL`",
+    "name" : "MODULE_WEBSITE_CRM_IAP_REVEAL"
+  }, {
+    "expression" : "t1.`MODULE_WEBSITE_HR_RECRUITMENT`",
+    "name" : "MODULE_WEBSITE_HR_RECRUITMENT"
+  }, {
+    "expression" : "t1.`MODULE_WEB_UNSPLASH`",
+    "name" : "MODULE_WEB_UNSPLASH"
+  }, {
+    "expression" : "t1.`OVERTIME_COMPANY_THRESHOLD`",
+    "name" : "OVERTIME_COMPANY_THRESHOLD"
+  }, {
+    "expression" : "t1.`OVERTIME_EMPLOYEE_THRESHOLD`",
+    "name" : "OVERTIME_EMPLOYEE_THRESHOLD"
+  }, {
+    "expression" : "t1.`PAY_INVOICES_ONLINE`",
+    "name" : "PAY_INVOICES_ONLINE"
+  }, {
+    "expression" : "t1.`PO_ORDER_APPROVAL`",
+    "name" : "PO_ORDER_APPROVAL"
+  }, {
+    "expression" : "t1.`PREDICTIVE_LEAD_SCORING_FIELDS_STR`",
+    "name" : "PREDICTIVE_LEAD_SCORING_FIELDS_STR"
+  }, {
+    "expression" : "t1.`PREDICTIVE_LEAD_SCORING_START_DATE_STR`",
+    "name" : "PREDICTIVE_LEAD_SCORING_START_DATE_STR"
+  }, {
+    "expression" : "t1.`PRODUCT_VOLUME_VOLUME_IN_CUBIC_FEET`",
+    "name" : "PRODUCT_VOLUME_VOLUME_IN_CUBIC_FEET"
+  }, {
+    "expression" : "t1.`PRODUCT_WEIGHT_IN_LBS`",
+    "name" : "PRODUCT_WEIGHT_IN_LBS"
+  }, {
+    "expression" : "t1.`PROFILING_ENABLED_UNTIL`",
+    "name" : "PROFILING_ENABLED_UNTIL"
+  }, {
+    "expression" : "t1.`RESTRICT_TEMPLATE_RENDERING`",
+    "name" : "RESTRICT_TEMPLATE_RENDERING"
+  }, {
+    "expression" : "t1.`SFU_SERVER_KEY`",
+    "name" : "SFU_SERVER_KEY"
+  }, {
+    "expression" : "t1.`SFU_SERVER_URL`",
+    "name" : "SFU_SERVER_URL"
+  }, {
+    "expression" : "t1.`SHOW_BLACKLIST_BUTTONS`",
+    "name" : "SHOW_BLACKLIST_BUTTONS"
+  }, {
+    "expression" : "t1.`SHOW_EFFECT`",
+    "name" : "SHOW_EFFECT"
+  }, {
+    "expression" : "t1.`TENOR_API_KEY`",
+    "name" : "TENOR_API_KEY"
+  }, {
+    "expression" : "t1.`TENOR_CONTENT_FILTER`",
+    "name" : "TENOR_CONTENT_FILTER"
+  }, {
+    "expression" : "t1.`TENOR_GIF_LIMIT`",
+    "name" : "TENOR_GIF_LIMIT"
+  }, {
+    "expression" : "t1.`TWILIO_ACCOUNT_SID`",
+    "name" : "TWILIO_ACCOUNT_SID"
+  }, {
+    "expression" : "t1.`TWILIO_ACCOUNT_TOKEN`",
+    "name" : "TWILIO_ACCOUNT_TOKEN"
+  }, {
+    "expression" : "t1.`UNSPLASH_ACCESS_KEY`",
+    "name" : "UNSPLASH_ACCESS_KEY"
+  }, {
+    "expression" : "t1.`UNSPLASH_APP_ID`",
+    "name" : "UNSPLASH_APP_ID"
+  }, {
+    "expression" : "t1.`USER_DEFAULT_RIGHTS`",
+    "name" : "USER_DEFAULT_RIGHTS"
+  }, {
+    "expression" : "t1.`USE_INVOICE_TERMS`",
+    "name" : "USE_INVOICE_TERMS"
+  }, {
+    "expression" : "t1.`USE_MANUFACTURING_LEAD`",
+    "name" : "USE_MANUFACTURING_LEAD"
+  }, {
+    "expression" : "t1.`USE_PO_LEAD`",
+    "name" : "USE_PO_LEAD"
+  }, {
+    "expression" : "t1.`USE_SECURITY_LEAD`",
+    "name" : "USE_SECURITY_LEAD"
+  }, {
+    "expression" : "t1.`USE_TWILIO_RTC_SERVERS`",
+    "name" : "USE_TWILIO_RTC_SERVERS"
+  }, {
+    "expression" : "t1.`WEB_APP_NAME`",
+    "name" : "WEB_APP_NAME"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\n(SELECT count(1) FROM `res_users` user where user.`SHARE`=0 ) AS `ACTIVE_USER_COUNT`,\nt1.`AUTH_SIGNUP_RESET_PASSWORD`,\nt1.`AUTH_SIGNUP_TEMPLATE_USER_ID`,\nt1.`AUTH_SIGNUP_UNINVITED`,\nt1.`AUTOMATIC_INVOICE`,\nt1.`BARCODE_SEPARATOR`,\n(SELECT count(1)  FROM `res_company`) AS `COMPANY_COUNT`,\nt1.`COMPANY_ID`,\nt11.`NAME` AS `COMPANY_NAME`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`CRM_AUTO_ASSIGNMENT_ACTION`,\nt1.`CRM_AUTO_ASSIGNMENT_INTERVAL_NUMBER`,\nt1.`CRM_AUTO_ASSIGNMENT_INTERVAL_TYPE`,\nt1.`CRM_AUTO_ASSIGNMENT_RUN_DATETIME`,\nt1.`CRM_USE_AUTO_ASSIGNMENT`,\nt1.`DEFAULT_INVOICE_POLICY`,\nt1.`DEFAULT_PICKING_POLICY`,\nt1.`DEFAULT_PURCHASE_METHOD`,\nt1.`DELAY_ALERT_CONTRACT`,\nt1.`DIGEST_EMAILS`,\nt1.`EXTERNAL_EMAIL_SERVER_DEFAULT`,\nt1.`GOOGLE_GMAIL_CLIENT_IDENTIFIER`,\nt1.`GOOGLE_GMAIL_CLIENT_SECRET`,\nt1.`GOOGLE_TRANSLATE_API_KEY`,\nt1.`GROUP_ANALYTIC_ACCOUNTING`,\nt1.`GROUP_APPLICANT_CV_DISPLAY`,\nt1.`GROUP_AUTO_DONE_SETTING`,\nt1.`GROUP_CASH_ROUNDING`,\nt1.`GROUP_DISCOUNT_PER_SO_LINE`,\nt1.`GROUP_LOT_ON_DELIVERY_SLIP`,\nt1.`GROUP_LOT_ON_INVOICE`,\nt1.`GROUP_MASS_MAILING_CAMPAIGN`,\nt1.`GROUP_MRP_BYPRODUCTS`,\nt1.`GROUP_MRP_RECEPTION_REPORT`,\nt1.`GROUP_MRP_ROUTINGS`,\nt1.`GROUP_MRP_WORKORDER_DEPENDENCIES`,\nt1.`GROUP_MULTI_CURRENCY`,\nt1.`GROUP_PRODUCT_PRICELIST`,\nt1.`GROUP_PRODUCT_VARIANT`,\nt1.`GROUP_PROFORMA_SALES`,\nt1.`GROUP_PROJECT_MILESTONE`,\nt1.`GROUP_PROJECT_RATING`,\nt1.`GROUP_PROJECT_RECURRING_TASKS`,\nt1.`GROUP_PROJECT_STAGES`,\nt1.`GROUP_PROJECT_TASK_DEPENDENCIES`,\nt1.`GROUP_SALE_DELIVERY_ADDRESS`,\nt1.`GROUP_SALE_ORDER_TEMPLATE`,\nt1.`GROUP_SEND_REMINDER`,\nt1.`GROUP_SHOW_PURCHASE_RECEIPTS`,\nt1.`GROUP_SHOW_SALE_RECEIPTS`,\nt1.`GROUP_STOCK_ACCOUNTING_AUTOMATIC`,\nt1.`GROUP_STOCK_ADV_LOCATION`,\nt1.`GROUP_STOCK_LOT_PRINT_GS1`,\nt1.`GROUP_STOCK_MULTI_LOCATIONS`,\nt1.`GROUP_STOCK_PACKAGING`,\nt1.`GROUP_STOCK_PRODUCTION_LOT`,\nt1.`GROUP_STOCK_RECEPTION_REPORT`,\nt1.`GROUP_STOCK_SIGN_DELIVERY`,\nt1.`GROUP_STOCK_TRACKING_LOT`,\nt1.`GROUP_STOCK_TRACKING_OWNER`,\nt1.`GROUP_UNLOCKED_BY_DEFAULT`,\nt1.`GROUP_UOM`,\nt1.`GROUP_USE_LEAD`,\nt1.`GROUP_USE_RECURRING_REVENUES`,\nt1.`GROUP_WARNING_ACCOUNT`,\nt1.`GROUP_WARNING_PURCHASE`,\nt1.`GROUP_WARNING_SALE`,\nt1.`GROUP_WARNING_STOCK`,\nt1.`HR_EMPLOYEE_SELF_EDIT`,\nt1.`HR_EXPENSE_ALIAS_PREFIX`,\nt1.`HR_EXPENSE_USE_MAILGATEWAY`,\nt1.`ID`,\nt1.`INVOICE_MAIL_TEMPLATE_ID`,\nt1.`IS_INSTALLED_SALE`,\nt1.`IS_MEMBERSHIP_MULTI`,\nt1.`LEAD_ENRICH_AUTO`,\nt1.`LEAD_MINING_IN_PIPELINE`,\nt1.`LOCK_CONFIRMED_PO`,\nt1.`MASS_MAILING_OUTGOING_MAIL_SERVER`,\nt1.`MASS_MAILING_REPORTS`,\nt1.`MASS_MAILING_SPLIT_CONTACT_NAME`,\nt1.`MODULE_ACCOUNT_3WAY_MATCH`,\nt1.`MODULE_ACCOUNT_ACCOUNTANT`,\nt1.`MODULE_ACCOUNT_BANK_STATEMENT_EXTRACT`,\nt1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CAMT`,\nt1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_CSV`,\nt1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_OFX`,\nt1.`MODULE_ACCOUNT_BANK_STATEMENT_IMPORT_QIF`,\nt1.`MODULE_ACCOUNT_BATCH_PAYMENT`,\nt1.`MODULE_ACCOUNT_BUDGET`,\nt1.`MODULE_ACCOUNT_CHECK_PRINTING`,\nt1.`MODULE_ACCOUNT_EXTRACT`,\nt1.`MODULE_ACCOUNT_INTER_COMPANY_RULES`,\nt1.`MODULE_ACCOUNT_INTRASTAT`,\nt1.`MODULE_ACCOUNT_INVOICE_EXTRACT`,\nt1.`MODULE_ACCOUNT_ISO20022`,\nt1.`MODULE_ACCOUNT_PAYMENT`,\nt1.`MODULE_ACCOUNT_PEPPOL`,\nt1.`MODULE_ACCOUNT_REPORTS`,\nt1.`MODULE_ACCOUNT_SEPA_DIRECT_DEBIT`,\nt1.`MODULE_AUTH_LDAP`,\nt1.`MODULE_AUTH_OAUTH`,\nt1.`MODULE_BASE_GEOLOCALIZE`,\nt1.`MODULE_BASE_IMPORT`,\nt1.`MODULE_CRM_IAP_ENRICH`,\nt1.`MODULE_CRM_IAP_MINE`,\nt1.`MODULE_CURRENCY_RATE_LIVE`,\nt1.`MODULE_DELIVERY`,\nt1.`MODULE_DELIVERY_BPOST`,\nt1.`MODULE_DELIVERY_DHL`,\nt1.`MODULE_DELIVERY_EASYPOST`,\nt1.`MODULE_DELIVERY_FEDEX`,\nt1.`MODULE_DELIVERY_SENDCLOUD`,\nt1.`MODULE_DELIVERY_SHIPROCKET`,\nt1.`MODULE_DELIVERY_STARSHIPIT`,\nt1.`MODULE_DELIVERY_UPS`,\nt1.`MODULE_DELIVERY_USPS`,\nt1.`MODULE_GOOGLE_CALENDAR`,\nt1.`MODULE_GOOGLE_GMAIL`,\nt1.`MODULE_GOOGLE_RECAPTCHA`,\nt1.`MODULE_HR_EXPENSE_EXTRACT`,\nt1.`MODULE_HR_HOMEWORKING`,\nt1.`MODULE_HR_PAYROLL_EXPENSE`,\nt1.`MODULE_HR_PRESENCE`,\nt1.`MODULE_HR_RECRUITMENT_EXTRACT`,\nt1.`MODULE_HR_RECRUITMENT_SURVEY`,\nt1.`MODULE_HR_SKILLS`,\nt1.`MODULE_HR_TIMESHEET`,\nt1.`MODULE_L10N_EU_OSS`,\nt1.`MODULE_LOYALTY`,\nt1.`MODULE_MAIL_PLUGIN`,\nt1.`MODULE_MAINTENANCE_WORKSHEET`,\nt1.`MODULE_MICROSOFT_CALENDAR`,\nt1.`MODULE_MICROSOFT_OUTLOOK`,\nt1.`MODULE_MRP_MPS`,\nt1.`MODULE_MRP_PLM`,\nt1.`MODULE_MRP_SUBCONTRACTING`,\nt1.`MODULE_PARTNER_AUTOCOMPLETE`,\nt1.`MODULE_PRODUCT_EMAIL_TEMPLATE`,\nt1.`MODULE_PRODUCT_EXPIRY`,\nt1.`MODULE_PRODUCT_IMAGES`,\nt1.`MODULE_PRODUCT_MARGIN`,\nt1.`MODULE_PURCHASE_PRODUCT_MATRIX`,\nt1.`MODULE_PURCHASE_REQUISITION`,\nt1.`MODULE_QUALITY_CONTROL`,\nt1.`MODULE_QUALITY_CONTROL_WORKSHEET`,\nt1.`MODULE_SALE_AMAZON`,\nt1.`MODULE_SALE_COMMISSION`,\nt1.`MODULE_SALE_LOYALTY`,\nt1.`MODULE_SALE_MARGIN`,\nt1.`MODULE_SALE_PDF_QUOTE_BUILDER`,\nt1.`MODULE_SALE_PRODUCT_MATRIX`,\nt1.`MODULE_SMS`,\nt1.`MODULE_SNAILMAIL_ACCOUNT`,\nt1.`MODULE_STOCK_BARCODE`,\nt1.`MODULE_STOCK_BARCODE_BARCODELOOKUP`,\nt1.`MODULE_STOCK_DROPSHIPPING`,\nt1.`MODULE_STOCK_FLEET`,\nt1.`MODULE_STOCK_LANDED_COSTS`,\nt1.`MODULE_STOCK_PICKING_BATCH`,\nt1.`MODULE_STOCK_SMS`,\nt1.`MODULE_VOIP`,\nt1.`MODULE_WEBSITE_CF_TURNSTILE`,\nt1.`MODULE_WEBSITE_CRM_IAP_REVEAL`,\nt1.`MODULE_WEBSITE_HR_RECRUITMENT`,\nt1.`MODULE_WEB_UNSPLASH`,\nt1.`OVERTIME_COMPANY_THRESHOLD`,\nt1.`OVERTIME_EMPLOYEE_THRESHOLD`,\nt1.`PAY_INVOICES_ONLINE`,\nt1.`PO_ORDER_APPROVAL`,\nt1.`PREDICTIVE_LEAD_SCORING_FIELDS_STR`,\nt1.`PREDICTIVE_LEAD_SCORING_START_DATE_STR`,\nt1.`PRODUCT_VOLUME_VOLUME_IN_CUBIC_FEET`,\nt1.`PRODUCT_WEIGHT_IN_LBS`,\nt1.`PROFILING_ENABLED_UNTIL`,\nt1.`RESTRICT_TEMPLATE_RENDERING`,\nt1.`SFU_SERVER_KEY`,\nt1.`SFU_SERVER_URL`,\nt1.`SHOW_BLACKLIST_BUTTONS`,\nt1.`SHOW_EFFECT`,\nt1.`TENOR_API_KEY`,\nt1.`TENOR_CONTENT_FILTER`,\nt1.`TENOR_GIF_LIMIT`,\nt1.`TWILIO_ACCOUNT_SID`,\nt1.`TWILIO_ACCOUNT_TOKEN`,\nt1.`UNSPLASH_ACCESS_KEY`,\nt1.`UNSPLASH_APP_ID`,\nt1.`USER_DEFAULT_RIGHTS`,\nt1.`USE_INVOICE_TERMS`,\nt1.`USE_MANUFACTURING_LEAD`,\nt1.`USE_PO_LEAD`,\nt1.`USE_SECURITY_LEAD`,\nt1.`USE_TWILIO_RTC_SERVERS`,\nt1.`WEB_APP_NAME`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `res_config_settings` t1 \nLEFT JOIN `res_company` t11 ON t1.`COMPANY_ID` = t11.`ID` \n",
+  "id" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDEDATAQUERIES/Default/PSDEDQCODES/MYSQL5.json"
+}

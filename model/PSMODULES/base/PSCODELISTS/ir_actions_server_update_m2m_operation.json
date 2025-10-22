@@ -1,0 +1,37 @@
+{
+  "codeListTag" : "base__ir_actions_server_update_m2m_operation",
+  "codeListType" : "STATIC",
+  "codeName" : "ir_actions_server_update_m2m_operation",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/ir_actions_server_update_m2m_operation.json",
+  "emptyText" : "未定义",
+  "name" : "Many2many 业务",
+  "getPSCodeItems" : [ {
+    "codeName" : "add",
+    "text" : "添加",
+    "value" : "add"
+  }, {
+    "codeName" : "remove",
+    "text" : "正在删除",
+    "value" : "remove"
+  }, {
+    "codeName" : "set",
+    "text" : "将其设置为",
+    "value" : "set"
+  }, {
+    "codeName" : "clear",
+    "text" : "正在清理",
+    "value" : "clear"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

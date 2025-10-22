@@ -1,0 +1,27 @@
+{
+  "codeName" : "user",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_users_settings/PSDERS/DER1N_RES_USERS_SETTINGS_RES_USERS_USER_ID.json",
+  "fKeyName" : "F951D99811A5E90F65",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users_settings.json"
+  },
+  "name" : "DER1N_RES_USERS_SETTINGS_RES_USERS_USER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "USER_ID",
+    "codeName" : "user_id"
+  },
+  "pickupDEFName" : "USER_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "user",
+  "enableFKey" : true
+}

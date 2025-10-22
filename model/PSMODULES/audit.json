@@ -1,0 +1,9 @@
+{
+  "getAllPSDataEntities" : [ {
+    "modelref" : true,
+    "path" : "PSMODULES/audit/PSDATAENTITIES/audit_record.json"
+  } ],
+  "codeName" : "audit",
+  "dynaModelFilePath" : "PSMODULES/audit.json",
+  "name" : "审计"
+}

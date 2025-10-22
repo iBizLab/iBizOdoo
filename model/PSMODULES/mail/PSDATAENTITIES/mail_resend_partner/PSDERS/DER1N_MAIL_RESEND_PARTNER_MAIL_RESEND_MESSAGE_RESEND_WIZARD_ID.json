@@ -1,0 +1,27 @@
+{
+  "codeName" : "resend_wizard",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_partner/PSDERS/DER1N_MAIL_RESEND_PARTNER_MAIL_RESEND_MESSAGE_RESEND_WIZARD_ID.json",
+  "fKeyName" : "FF6FE8B28B6F0714BB",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_message.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_resend_partner.json"
+  },
+  "name" : "DER1N_MAIL_RESEND_PARTNER_MAIL_RESEND_MESSAGE_RESEND_WIZARD_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "RESEND_WIZARD_ID",
+    "codeName" : "resend_wizard_id"
+  },
+  "pickupDEFName" : "RESEND_WIZARD_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "resend_wizard",
+  "enableFKey" : true
+}

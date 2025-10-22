@@ -1,0 +1,27 @@
+{
+  "codeName" : "preferred_role",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request/PSDERS/DER1N_CRM_IAP_LEAD_MINING_REQUEST_CRM_IAP_LEAD_ROLE_PREFERRED_ROLE_ID.json",
+  "fKeyName" : "F40A0A70C3ABBE334B",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_role.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request.json"
+  },
+  "name" : "DER1N_CRM_IAP_LEAD_MINING_REQUEST_CRM_IAP_LEAD_ROLE_PREFERRED_ROLE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "PREFERRED_ROLE_ID",
+    "codeName" : "preferred_role_id"
+  },
+  "pickupDEFName" : "PREFERRED_ROLE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "preferred_role",
+  "enableFKey" : true
+}

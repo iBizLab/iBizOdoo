@@ -1,0 +1,27 @@
+{
+  "codeName" : "accrual_plan",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_accrual_level/PSDERS/DER1N_HR_LEAVE_ACCRUAL_LEVEL_HR_LEAVE_ACCRUAL_PLAN_ACCRUAL_PLAN_ID.json",
+  "fKeyName" : "FFB4421BEE927853E8",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_accrual_plan.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave_accrual_level.json"
+  },
+  "name" : "DER1N_HR_LEAVE_ACCRUAL_LEVEL_HR_LEAVE_ACCRUAL_PLAN_ACCRUAL_PLAN_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "ACCRUAL_PLAN_ID",
+    "codeName" : "accrual_plan_id"
+  },
+  "pickupDEFName" : "ACCRUAL_PLAN_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "accrual_plan",
+  "enableFKey" : true
+}

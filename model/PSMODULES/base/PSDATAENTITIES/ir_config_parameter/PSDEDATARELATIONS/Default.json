@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/ir_config_parameter/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.IR_CONFIG_PARAMETER"
+  },
+  "formCaption" : "系统参数",
+  "name" : "系统参数默认关系界面组"
+}

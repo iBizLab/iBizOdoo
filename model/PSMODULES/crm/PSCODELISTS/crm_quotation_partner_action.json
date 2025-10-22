@@ -1,0 +1,33 @@
+{
+  "codeListTag" : "crm__crm_quotation_partner_action",
+  "codeListType" : "STATIC",
+  "codeName" : "crm_quotation_partner_action",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/crm/PSCODELISTS/crm_quotation_partner_action.json",
+  "emptyText" : "未定义",
+  "name" : "报价给客户",
+  "getPSCodeItems" : [ {
+    "codeName" : "create",
+    "text" : "创建客户",
+    "value" : "create"
+  }, {
+    "codeName" : "exist",
+    "text" : "链接到现有客户",
+    "value" : "exist"
+  }, {
+    "codeName" : "nothing",
+    "text" : "不要链接到某个客户",
+    "value" : "nothing"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

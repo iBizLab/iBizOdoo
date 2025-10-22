@@ -1,0 +1,49 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_level_week_day",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_level_week_day",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_week_day.json",
+  "emptyText" : "未定义",
+  "name" : "分配",
+  "getPSCodeItems" : [ {
+    "codeName" : "mon",
+    "text" : "周一",
+    "value" : "mon"
+  }, {
+    "codeName" : "tue",
+    "text" : "周二",
+    "value" : "tue"
+  }, {
+    "codeName" : "wed",
+    "text" : "周三",
+    "value" : "wed"
+  }, {
+    "codeName" : "thu",
+    "text" : "周四",
+    "value" : "thu"
+  }, {
+    "codeName" : "fri",
+    "text" : "周五",
+    "value" : "fri"
+  }, {
+    "codeName" : "sat",
+    "text" : "周六",
+    "value" : "sat"
+  }, {
+    "codeName" : "sun",
+    "text" : "周日",
+    "value" : "sun"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

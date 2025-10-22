@@ -1,0 +1,27 @@
+{
+  "codeName" : "record_alias_domain",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_compose_message/PSDERS/DER1N_MAIL_COMPOSE_MESSAGE_MAIL_ALIAS_DOMAIN_RECORD_ALIAS_DOMAIN_ID.json",
+  "fKeyName" : "F6C0A49A649AB17B3A",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_alias_domain.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_compose_message.json"
+  },
+  "name" : "DER1N_MAIL_COMPOSE_MESSAGE_MAIL_ALIAS_DOMAIN_RECORD_ALIAS_DOMAIN_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "RECORD_ALIAS_DOMAIN_ID",
+    "codeName" : "record_alias_domain_id"
+  },
+  "pickupDEFName" : "RECORD_ALIAS_DOMAIN_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "record_alias_domain",
+  "enableFKey" : true
+}

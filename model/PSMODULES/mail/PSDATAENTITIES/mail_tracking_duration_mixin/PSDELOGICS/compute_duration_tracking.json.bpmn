@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:g="http://www.jboss.org/drools/flow/gpd" xmlns:tns="http://www.jboss.org/drools" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" expressionLanguage="http://www.mvel.org/2.0" id="Definition" name="" targetNamespace="http://www.jboss.org/drools" typeLanguage="http://www.java.com/javaTypes">
+        <process id="cn.ibizlab.ibizodoo.core.mail.service.logic.mail_tracking_duration_mixincompute_duration_tracking" isClosed="false" isExecutable="true" name="mail_mail_tracking_duration_mixin_compute_duration_tracking_ruleFlow" processType="Private" tns:packageName="cn.ibizlab.ibizodoo.core.mail.service.logic.mail_tracking_duration_mixincompute_duration_tracking">
+            <extensionElements>
+                <tns:import name="java.util.Map" />
+                <tns:import name="org.springframework.util.StringUtils"/>
+                <tns:import name="cn.ibizlab.ibizodoo.util.helper.RuleUtils"/>
+                                <tns:metaData express="" name="mail_tracking_duration_mixincompute_duration_trackingdefault" type="entity"/>
+                                <tns:metaData express="new cn.ibizlab.ibizodoo.core.mail.domain.mail_tracking_value()" name="mail_tracking_duration_mixincompute_duration_trackingfilterparam" type="refentity"/>
+                                <tns:metaData express="new cn.ibizlab.ibizodoo.core.mail.domain.mail_tracking_value()" name="mail_tracking_duration_mixincompute_duration_trackingresultlist" type="refentity"/>
+                                <tns:metaData express="new HashMap()" name="mail_tracking_duration_mixincompute_duration_trackingtracking_field" type="refentity"/>
+                                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.SpringContextHolder).getBean(T(cn.ibizlab.ibizodoo.core.mail.service.Imail_tracking_valueService))" name="mail_tracking_valueservice" type="service"/>
+                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.SpringContextHolder).getBean(T(cn.ibizlab.ibizodoo.core.mail.service.Imail_tracking_duration_mixinService))" name="iBzSysMail_tracking_duration_mixinDefaultService" type="service"/>
+                    <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.AuthenticationUser).getAuthenticationUser()" name="curuser" type="session"/>
+                            <tns:global identifier="mail_tracking_duration_mixincompute_duration_trackingdefault" type="cn.ibizlab.ibizodoo.core.mail.domain.mail_tracking_value" />
+                            <tns:global identifier="mail_tracking_duration_mixincompute_duration_trackingfilterparam" type="cn.ibizlab.ibizodoo.core.mail.domain.mail_tracking_value" />
+                            <tns:global identifier="mail_tracking_duration_mixincompute_duration_trackingresultlist" type="cn.ibizlab.ibizodoo.core.mail.domain.mail_tracking_value" />
+            </extensionElements>
+                        <startEvent id="begin" isInterrupting="true"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="mail_tracking_duration_mixincompute_duration_trackingrawsfcode_01" id="rawsfcode_01" implementation="http://www.jboss.org/drools/rule" name="构造查询条件"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="mail_tracking_duration_mixincompute_duration_trackingbindparam_01" id="bindparam_01" implementation="http://www.jboss.org/drools/rule" name="绑定跟踪属性参数"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="mail_tracking_duration_mixincompute_duration_trackingdedataset_01" id="dedataset_01" implementation="http://www.jboss.org/drools/rule" name="查询邮件跟踪值数据集"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="mail_tracking_duration_mixincompute_duration_trackingrawsfcode_02" id="rawsfcode_02" implementation="http://www.jboss.org/drools/rule" name="回填属性跟踪耗时结构对象"/>
+                        <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="mail_tracking_duration_mixincompute_duration_trackingend_01" id="end_01" implementation="http://www.jboss.org/drools/rule" name="结束"/>
+                        <endEvent id="end_01_end" name="end"/>
+                        <sequenceFlow id="end_01_end_line" sourceRef="end_01" targetRef="end_01_end"/>
+                    <sequenceFlow id="begin_rawsfcode_01" sourceRef="begin" targetRef="rawsfcode_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="rawsfcode_01_bindparam_01" sourceRef="rawsfcode_01" targetRef="bindparam_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="bindparam_01_dedataset_01" sourceRef="bindparam_01" targetRef="dedataset_01">
+                    </sequenceFlow>
+                    <sequenceFlow id="dedataset_01_rawsfcode_02" sourceRef="dedataset_01" targetRef="rawsfcode_02">
+                    </sequenceFlow>
+                    <sequenceFlow id="rawsfcode_02_end_01" sourceRef="rawsfcode_02" targetRef="end_01">
+                    </sequenceFlow>
+        </process>
+    </definitions>

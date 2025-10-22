@@ -1,0 +1,27 @@
+{
+  "codeName" : "work_contact",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_public/PSDERS/DER1N_HR_EMPLOYEE_PUBLIC_RES_PARTNER_WORK_CONTACT_ID.json",
+  "fKeyName" : "F8A955F087930FD3F1",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_partner.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee_public.json"
+  },
+  "name" : "DER1N_HR_EMPLOYEE_PUBLIC_RES_PARTNER_WORK_CONTACT_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "WORK_CONTACT_ID",
+    "codeName" : "work_contact_id"
+  },
+  "pickupDEFName" : "WORK_CONTACT_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "work_contact",
+  "enableFKey" : true
+}

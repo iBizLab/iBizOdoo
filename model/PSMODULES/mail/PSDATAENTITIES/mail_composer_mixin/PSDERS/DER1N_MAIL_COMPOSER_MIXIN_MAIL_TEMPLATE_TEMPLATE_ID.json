@@ -1,0 +1,27 @@
+{
+  "codeName" : "template",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_composer_mixin/PSDERS/DER1N_MAIL_COMPOSER_MIXIN_MAIL_TEMPLATE_TEMPLATE_ID.json",
+  "fKeyName" : "FAC25379037E282616",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_template.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_composer_mixin.json"
+  },
+  "name" : "DER1N_MAIL_COMPOSER_MIXIN_MAIL_TEMPLATE_TEMPLATE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "TEMPLATE_ID",
+    "codeName" : "template_id"
+  },
+  "pickupDEFName" : "TEMPLATE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "template",
+  "enableFKey" : true
+}

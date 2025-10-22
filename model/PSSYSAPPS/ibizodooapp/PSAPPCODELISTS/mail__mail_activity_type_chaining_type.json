@@ -1,0 +1,19 @@
+{
+  "codeListTag" : "mail__mail_activity_type_chaining_type",
+  "codeListType" : "STATIC",
+  "codeName" : "mail__mail_activity_type_chaining_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__mail_activity_type_chaining_type.json",
+  "emptyText" : "未定义",
+  "name" : "链接类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "suggest",
+    "text" : "建议下一个活动",
+    "value" : "suggest"
+  }, {
+    "codeName" : "trigger",
+    "text" : "触发下一个活动",
+    "value" : "trigger"
+  } ],
+  "enableCache" : true
+}

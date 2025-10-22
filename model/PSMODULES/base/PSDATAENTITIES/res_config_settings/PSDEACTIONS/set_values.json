@@ -1,0 +1,20 @@
+{
+  "actionMode" : "CUSTOM",
+  "actionType" : "USERCUSTOM",
+  "codeName" : "set_values",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDEACTIONS/set_values.json",
+  "logicName" : "设置配置值",
+  "name" : "set_values",
+  "getPSDEActionInput" : {
+    "name" : "Set_valuesInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "res_config_settings_dto"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "Set_valuesResult",
+    "type" : "VOID"
+  }
+}

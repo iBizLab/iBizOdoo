@@ -1,0 +1,27 @@
+{
+  "codeName" : "seniority",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request/PSDERS/DER1N_CRM_IAP_LEAD_MINING_REQUEST_CRM_IAP_LEAD_SENIORITY_SENIORITY_ID.json",
+  "fKeyName" : "FB109CB9F6D024828D",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_seniority.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request.json"
+  },
+  "name" : "DER1N_CRM_IAP_LEAD_MINING_REQUEST_CRM_IAP_LEAD_SENIORITY_SENIORITY_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "SENIORITY_ID",
+    "codeName" : "seniority_id"
+  },
+  "pickupDEFName" : "SENIORITY_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "seniority",
+  "enableFKey" : true
+}

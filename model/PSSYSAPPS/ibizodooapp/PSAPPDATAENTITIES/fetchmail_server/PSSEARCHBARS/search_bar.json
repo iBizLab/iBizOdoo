@@ -1,0 +1,61 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server/PSSEARCHBARS/search_bar.json",
+  "groupMode" : "AND",
+  "logicName" : "收件服务器搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/fetchmail_server.json"
+  },
+  "getPSSearchBarGroups" : [ {
+    "caption" : "IMAP",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"server_type\",\"condop\":\"EQ\",\"value\":\"imap\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "imap",
+    "width" : 0.0,
+    "addSeparator" : false,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  }, {
+    "caption" : "POP",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"server_type\",\"condop\":\"EQ\",\"value\":\"pop\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "pop",
+    "width" : 0.0,
+    "addSeparator" : true,
+    "getUserParam" : {
+      "filterorgroup" : "group1"
+    }
+  }, {
+    "caption" : "SSL",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"is_ssl\",\"condop\":\"EQ\",\"value\":\"1\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "ssl",
+    "width" : 0.0,
+    "addSeparator" : true
+  }, {
+    "caption" : "已归档",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"active\",\"condop\":\"EQ\",\"value\":\"1\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "active",
+    "width" : 0.0,
+    "addSeparator" : true
+  } ],
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : true,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "1a69503c836f8b0c207b0ea5a7561f19",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

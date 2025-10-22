@@ -1,0 +1,27 @@
+{
+  "codeName" : "sheet",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_expense/PSDERS/DER1N_HR_EXPENSE_HR_EXPENSE_SHEET_SHEET_ID.json",
+  "fKeyName" : "FDCA82B0B15B5FA3A3",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense_sheet.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_expense.json"
+  },
+  "name" : "DER1N_HR_EXPENSE_HR_EXPENSE_SHEET_SHEET_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "SHEET_ID",
+    "codeName" : "sheet_id"
+  },
+  "pickupDEFName" : "SHEET_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "sheet",
+  "enableFKey" : true
+}

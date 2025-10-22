@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_resume_line_type/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.HR_RESUME_LINE_TYPE"
+  },
+  "formCaption" : "简历明细的类型",
+  "name" : "简历明细的类型默认关系界面组"
+}

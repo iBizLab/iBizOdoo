@@ -1,0 +1,27 @@
+{
+  "codeName" : "user",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_todo_create/PSDERS/DER1N_MAIL_ACTIVITY_TODO_CREATE_RES_USERS_USER_ID.json",
+  "fKeyName" : "F2C60EB079D0D99251",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_users.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/mail_activity_todo_create.json"
+  },
+  "name" : "DER1N_MAIL_ACTIVITY_TODO_CREATE_RES_USERS_USER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "USER_ID",
+    "codeName" : "user_id"
+  },
+  "pickupDEFName" : "USER_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "user",
+  "enableFKey" : true
+}

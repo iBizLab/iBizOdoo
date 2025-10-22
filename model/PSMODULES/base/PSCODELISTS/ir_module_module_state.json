@@ -1,0 +1,45 @@
+{
+  "codeListTag" : "base__ir_module_module_state",
+  "codeListType" : "STATIC",
+  "codeName" : "ir_module_module_state",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/ir_module_module_state.json",
+  "emptyText" : "未定义",
+  "name" : "状态",
+  "getPSCodeItems" : [ {
+    "codeName" : "uninstallable",
+    "text" : "不可安装",
+    "value" : "uninstallable"
+  }, {
+    "codeName" : "uninstalled",
+    "text" : "未安装",
+    "value" : "uninstalled"
+  }, {
+    "codeName" : "installed",
+    "text" : "已安装",
+    "value" : "installed"
+  }, {
+    "codeName" : "to_upgrade",
+    "text" : "待升级",
+    "value" : "to upgrade"
+  }, {
+    "codeName" : "to_remove",
+    "text" : "待移除",
+    "value" : "to remove"
+  }, {
+    "codeName" : "to_install",
+    "text" : "待安装",
+    "value" : "to install"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

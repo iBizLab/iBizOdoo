@@ -1,0 +1,27 @@
+{
+  "codeName" : "state",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDERS/DER1N_CRM_LEAD_RES_COUNTRY_STATE_STATE_ID.json",
+  "fKeyName" : "FD8BD1E825B79AB470",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_country_state.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead.json"
+  },
+  "name" : "DER1N_CRM_LEAD_RES_COUNTRY_STATE_STATE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "STATE_ID",
+    "codeName" : "state_id"
+  },
+  "pickupDEFName" : "STATE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "state",
+  "enableFKey" : true
+}

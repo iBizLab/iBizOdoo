@@ -1,0 +1,27 @@
+{
+  "codeName" : "team",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead2opportunity_partner/PSDERS/DER1N_CRM_LEAD2OPPORTUNITY_PARTNER_CRM_TEAM_TEAM_ID.json",
+  "fKeyName" : "F836F436E05435AF73",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead2opportunity_partner.json"
+  },
+  "name" : "DER1N_CRM_LEAD2OPPORTUNITY_PARTNER_CRM_TEAM_TEAM_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "TEAM_ID",
+    "codeName" : "team_id"
+  },
+  "pickupDEFName" : "TEAM_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "team",
+  "enableFKey" : true
+}

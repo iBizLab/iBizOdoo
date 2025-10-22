@@ -1,0 +1,33 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_plan_carryover_date",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_plan_carryover_date",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_carryover_date.json",
+  "emptyText" : "未定义",
+  "name" : "结转时间",
+  "getPSCodeItems" : [ {
+    "codeName" : "year_start",
+    "text" : "年初",
+    "value" : "year_start"
+  }, {
+    "codeName" : "allocation",
+    "text" : "分配日期",
+    "value" : "allocation"
+  }, {
+    "codeName" : "other",
+    "text" : "其他",
+    "value" : "other"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:g="http://www.jboss.org/drools/flow/gpd" xmlns:tns="http://www.jboss.org/drools" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" expressionLanguage="http://www.mvel.org/2.0" id="Definition" name="" targetNamespace="http://www.jboss.org/drools" typeLanguage="http://www.java.com/javaTypes">
+        <process id="cn.ibizlab.ibizodoo.core.base.res_config_settings.get.afterLogic" isClosed="false" isExecutable="true" name="base_res_config_settings_get_afterLogic" processType="Private" tns:packageName="cn.ibizlab.ibizodoo.core.base.res_config_settings.get.afterLogic">
+            <extensionElements>
+                <tns:import name="java.util.Map"/>
+                <tns:import name="org.springframework.util.StringUtils"/>
+                <tns:import name="cn.ibizlab.ibizodoo.util.helper.RuleUtils"/>
+                <tns:import name="cn.ibizlab.ibizodoo.core.base.domain.res_config_settings"/>
+                            <tns:metaData express="T(cn.ibizlab.ibizodoo.util.security.SpringContextHolder).getBean(T(cn.ibizlab.ibizodoo.core.base.service.Ires_config_settingsService))" name="resConfigSettingsService" type="service"/>
+                    <tns:metaData express="" name="et" type="entity"/>
+            </extensionElements>
+                <startEvent id="begin" isInterrupting="true"/>
+                <endEvent id="prepareparam1_end" name="end"/>
+                            <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="95d7c6f540e9eb5bd0ad6f344f0bf07a" id="95d7c6f540e9eb5bd0ad6f344f0bf07a" implementation="http://www.jboss.org/drools/rule" name="res_config_settingsdefault_get"/>
+                        <sequenceFlow id="begin_95d7c6f540e9eb5bd0ad6f344f0bf07a" sourceRef="begin" targetRef="95d7c6f540e9eb5bd0ad6f344f0bf07a"/>
+                            <businessRuleTask activiti:exclusive="true" g:ruleFlowGroup="9328104053b6445417c0fbb8749a921d" id="9328104053b6445417c0fbb8749a921d" implementation="http://www.jboss.org/drools/rule" name="res_config_settingsget_values"/>
+                        <sequenceFlow id="95d7c6f540e9eb5bd0ad6f344f0bf07a_9328104053b6445417c0fbb8749a921d" sourceRef="95d7c6f540e9eb5bd0ad6f344f0bf07a" targetRef="9328104053b6445417c0fbb8749a921d"/>
+                            <sequenceFlow id="9328104053b6445417c0fbb8749a921d_prepareparam1_end" sourceRef="9328104053b6445417c0fbb8749a921d" targetRef="prepareparam1_end"/>
+        </process>
+    </definitions>

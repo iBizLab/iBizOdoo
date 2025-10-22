@@ -1,0 +1,95 @@
+{
+  "getAllPSPanelFields" : [ {
+    "id" : "name",
+    "viewFieldName" : "name"
+  } ],
+  "codeName" : "discuss_sidebar_node_panel",
+  "controlType" : "PANEL",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel/PSPANELS/discuss_sidebar_node_panel.json",
+  "layoutMode" : "FLEX",
+  "logicName" : "讨论边栏节点绘制面板",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+  },
+  "getPSLayout" : {
+    "layout" : "FLEX"
+  },
+  "getRootPSPanelItems" : [ {
+    "caption" : "容器",
+    "contentHeight" : 32.0,
+    "height" : 32.0,
+    "itemStyle" : "DEFAULT",
+    "itemType" : "CONTAINER",
+    "name" : "container",
+    "getPSLayout" : {
+      "align" : "flex-start",
+      "dir" : "row",
+      "layout" : "FLEX",
+      "vAlign" : "center"
+    },
+    "getPSLayoutPos" : {
+      "grow" : -1,
+      "height" : 32,
+      "heightMode" : "PX",
+      "layout" : "FLEX"
+    },
+    "getPSPanelItems" : [ {
+      "caption" : "图片",
+      "contentHeight" : 24.0,
+      "contentType" : "IMAGE",
+      "contentWidth" : 24.0,
+      "height" : 24.0,
+      "itemStyle" : "DEFAULT",
+      "itemType" : "RAWITEM",
+      "name" : "static_image",
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "height" : 24,
+        "heightMode" : "PX",
+        "layout" : "FLEX",
+        "width" : 24,
+        "widthMode" : "PX"
+      },
+      "getPSRawItem" : {
+        "contentType" : "IMAGE",
+        "name" : "static_image",
+        "getPSSysImage" : {
+          "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 530.06 530.06\">\n<circle cx=\"265.03\" cy=\"265.03\" r=\"265.03\" fill=\"hsl(257, 43%, 45%)\"/>\n<path d=\"M416.74,217.29l5-28a8.4,8.4,0,0,0-8.27-9.88H361.09l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H334.61a8.4,8.4,0,0,0-8.27,6.93L315.57,179.4H246.5l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H220a8.4,8.4,0,0,0-8.27,6.93L201,179.4H145.6a8.42,8.42,0,0,0-8.28,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H193l-16,89.62H121.59a8.4,8.4,0,0,0-8.27,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H169L158.73,416a8.4,8.4,0,0,0,8.27,9.88h28.45a8.42,8.42,0,0,0,8.28-6.93l10.76-60.29h69.07L273.32,416a8.4,8.4,0,0,0,8.27,9.88H310a8.4,8.4,0,0,0,8.27-6.93l10.77-60.29h55.38a8.41,8.41,0,0,0,8.28-6.93l5-28a8.4,8.4,0,0,0-8.27-9.88H337.08l16-89.62h55.38A8.4,8.4,0,0,0,416.74,217.29ZM291.56,313.84H222.5l16-89.62h69.07Z\" fill=\"#ffffff\"/>\n</svg>"
+        },
+        "predefinedType" : "STATIC_IMAGE",
+        "rawItemHeight" : 24.0,
+        "rawItemWidth" : 24.0
+      },
+      "getPSSysImage" : {
+        "rawContent" : "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 530.06 530.06\">\n<circle cx=\"265.03\" cy=\"265.03\" r=\"265.03\" fill=\"hsl(257, 43%, 45%)\"/>\n<path d=\"M416.74,217.29l5-28a8.4,8.4,0,0,0-8.27-9.88H361.09l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H334.61a8.4,8.4,0,0,0-8.27,6.93L315.57,179.4H246.5l10.24-57.34a8.4,8.4,0,0,0-8.27-9.88H220a8.4,8.4,0,0,0-8.27,6.93L201,179.4H145.6a8.42,8.42,0,0,0-8.28,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H193l-16,89.62H121.59a8.4,8.4,0,0,0-8.27,6.93l-5,28a8.4,8.4,0,0,0,8.27,9.88H169L158.73,416a8.4,8.4,0,0,0,8.27,9.88h28.45a8.42,8.42,0,0,0,8.28-6.93l10.76-60.29h69.07L273.32,416a8.4,8.4,0,0,0,8.27,9.88H310a8.4,8.4,0,0,0,8.27-6.93l10.77-60.29h55.38a8.41,8.41,0,0,0,8.28-6.93l5-28a8.4,8.4,0,0,0-8.27-9.88H337.08l16-89.62h55.38A8.4,8.4,0,0,0,416.74,217.29ZM291.56,313.84H222.5l16-89.62h69.07Z\" fill=\"#ffffff\"/>\n</svg>"
+      },
+      "rawItemHeight" : 24.0,
+      "rawItemWidth" : 24.0,
+      "width" : 24.0,
+      "showCaption" : true
+    }, {
+      "caption" : "文本(动态)",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "FIELD",
+      "name" : "name",
+      "getPSEditor" : {
+        "editorType" : "SPAN",
+        "name" : "name",
+        "predefinedType" : "FIELD_TEXT_DYNAMIC",
+        "renderMode" : "TEXT_DYNAMIC",
+        "enableLinkView" : false
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX",
+        "spacingLeft" : "OUTERSMALL"
+      },
+      "viewFieldName" : "name"
+    } ]
+  } ],
+  "layoutPanel" : true,
+  "mobilePanel" : true,
+  "modelid" : "f6923ad9acfcc7058fb95cd9b0f9599b",
+  "modeltype" : "PSSYSVIEWPANEL"
+}

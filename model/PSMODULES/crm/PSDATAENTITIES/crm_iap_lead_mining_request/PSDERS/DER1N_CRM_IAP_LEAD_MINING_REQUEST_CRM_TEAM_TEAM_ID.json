@@ -1,0 +1,27 @@
+{
+  "codeName" : "team",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request/PSDERS/DER1N_CRM_IAP_LEAD_MINING_REQUEST_CRM_TEAM_TEAM_ID.json",
+  "fKeyName" : "FD7441FEA3C8A58FC1",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_team.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_iap_lead_mining_request.json"
+  },
+  "name" : "DER1N_CRM_IAP_LEAD_MINING_REQUEST_CRM_TEAM_TEAM_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "TEAM_ID",
+    "codeName" : "team_id"
+  },
+  "pickupDEFName" : "TEAM_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "team",
+  "enableFKey" : true
+}

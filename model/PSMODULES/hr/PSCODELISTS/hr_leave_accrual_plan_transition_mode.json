@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_plan_transition_mode",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_plan_transition_mode",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_plan_transition_mode.json",
+  "emptyText" : "未定义",
+  "name" : "里程碑式的过渡",
+  "getPSCodeItems" : [ {
+    "codeName" : "immediately",
+    "text" : "马上",
+    "value" : "immediately"
+  }, {
+    "codeName" : "end_of_accrual",
+    "text" : "在这个应计的时期之后",
+    "value" : "end_of_accrual"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

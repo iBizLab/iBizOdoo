@@ -1,0 +1,27 @@
+{
+  "codeListTag" : "base__ir_mail_server_smtp_authentication",
+  "codeListType" : "STATIC",
+  "codeName" : "base__ir_mail_server_smtp_authentication",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_mail_server_smtp_authentication.json",
+  "emptyText" : "未定义",
+  "name" : "验证",
+  "getPSCodeItems" : [ {
+    "codeName" : "login",
+    "text" : "用户名",
+    "value" : "login"
+  }, {
+    "codeName" : "certificate",
+    "text" : "SSL 安全证书",
+    "value" : "certificate"
+  }, {
+    "codeName" : "cli",
+    "text" : "命令行界面",
+    "value" : "cli"
+  }, {
+    "codeName" : "gmail",
+    "text" : "Gmail OAuth身份验证",
+    "value" : "gmail"
+  } ],
+  "enableCache" : true
+}

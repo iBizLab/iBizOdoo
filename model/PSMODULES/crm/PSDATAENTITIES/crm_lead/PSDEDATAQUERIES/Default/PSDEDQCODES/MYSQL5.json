@@ -1,0 +1,181 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`DESCRIPTION`",
+    "name" : "DESCRIPTION"
+  }, {
+    "expression" : "t1.`ACTIVE`",
+    "name" : "ACTIVE"
+  }, {
+    "expression" : "t1.`AUTOMATED_PROBABILITY`",
+    "name" : "AUTOMATED_PROBABILITY"
+  }, {
+    "expression" : "t1.`CITY`",
+    "name" : "CITY"
+  }, {
+    "expression" : "t1.`COLOR`",
+    "name" : "COLOR"
+  }, {
+    "expression" : "t1.`COMPANY_ID`",
+    "name" : "COMPANY_ID"
+  }, {
+    "expression" : "t1.`CONTACT_NAME`",
+    "name" : "CONTACT_NAME"
+  }, {
+    "expression" : "t1.`COUNTRY_ID`",
+    "name" : "COUNTRY_ID"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`DATE_AUTOMATION_LAST`",
+    "name" : "DATE_AUTOMATION_LAST"
+  }, {
+    "expression" : "t1.`DATE_CLOSED`",
+    "name" : "DATE_CLOSED"
+  }, {
+    "expression" : "t1.`DATE_CONVERSION`",
+    "name" : "DATE_CONVERSION"
+  }, {
+    "expression" : "t1.`DATE_DEADLINE`",
+    "name" : "DATE_DEADLINE"
+  }, {
+    "expression" : "t1.`DATE_LAST_STAGE_UPDATE`",
+    "name" : "DATE_LAST_STAGE_UPDATE"
+  }, {
+    "expression" : "t1.`DATE_OPEN`",
+    "name" : "DATE_OPEN"
+  }, {
+    "expression" : "t1.`DAY_CLOSE`",
+    "name" : "DAY_CLOSE"
+  }, {
+    "expression" : "t1.`DAY_OPEN`",
+    "name" : "DAY_OPEN"
+  }, {
+    "expression" : "t1.`EMAIL_CC`",
+    "name" : "EMAIL_CC"
+  }, {
+    "expression" : "t1.`EMAIL_DOMAIN_CRITERION`",
+    "name" : "EMAIL_DOMAIN_CRITERION"
+  }, {
+    "expression" : "t1.`EMAIL_FROM`",
+    "name" : "EMAIL_FROM"
+  }, {
+    "expression" : "t1.`EMAIL_NORMALIZED`",
+    "name" : "EMAIL_NORMALIZED"
+  }, {
+    "expression" : "t1.`EMAIL_STATE`",
+    "name" : "EMAIL_STATE"
+  }, {
+    "expression" : "t1.`EXPECTED_REVENUE`",
+    "name" : "EXPECTED_REVENUE"
+  }, {
+    "expression" : "t1.`FUNCTION`",
+    "name" : "FUNCTION"
+  }, {
+    "expression" : "t1.`IAP_ENRICH_DONE`",
+    "name" : "IAP_ENRICH_DONE"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`LANG_ID`",
+    "name" : "LANG_ID"
+  }, {
+    "expression" : "t1.`LEAD_MINING_REQUEST_ID`",
+    "name" : "LEAD_MINING_REQUEST_ID"
+  }, {
+    "expression" : "t1.`LOST_REASON_ID`",
+    "name" : "LOST_REASON_ID"
+  }, {
+    "expression" : "t1.`MESSAGE_BOUNCE`",
+    "name" : "MESSAGE_BOUNCE"
+  }, {
+    "expression" : "t1.`MOBILE`",
+    "name" : "MOBILE"
+  }, {
+    "expression" : "t1.`NAME`",
+    "name" : "NAME"
+  }, {
+    "expression" : "t1.`PARTNER_ID`",
+    "name" : "PARTNER_ID"
+  }, {
+    "expression" : "t1.`PARTNER_NAME`",
+    "name" : "PARTNER_NAME"
+  }, {
+    "expression" : "t1.`PHONE`",
+    "name" : "PHONE"
+  }, {
+    "expression" : "t1.`PHONE_SANITIZED`",
+    "name" : "PHONE_SANITIZED"
+  }, {
+    "expression" : "t1.`PHONE_STATE`",
+    "name" : "PHONE_STATE"
+  }, {
+    "expression" : "t1.`PRIORITY`",
+    "name" : "PRIORITY"
+  }, {
+    "expression" : "t1.`PROBABILITY`",
+    "name" : "PROBABILITY"
+  }, {
+    "expression" : "t1.`PRORATED_REVENUE`",
+    "name" : "PRORATED_REVENUE"
+  }, {
+    "expression" : "t1.`RECURRING_REVENUE`",
+    "name" : "RECURRING_REVENUE"
+  }, {
+    "expression" : "t1.`RECURRING_REVENUE_MONTHLY`",
+    "name" : "RECURRING_REVENUE_MONTHLY"
+  }, {
+    "expression" : "t1.`RECURRING_REVENUE_MONTHLY_PRORATED`",
+    "name" : "RECURRING_REVENUE_MONTHLY_PRORATED"
+  }, {
+    "expression" : "t1.`RECURRING_REVENUE_PRORATED`",
+    "name" : "RECURRING_REVENUE_PRORATED"
+  }, {
+    "expression" : "t1.`REFERRED`",
+    "name" : "REFERRED"
+  }, {
+    "expression" : "t1.`REVEAL_ID`",
+    "name" : "REVEAL_ID"
+  }, {
+    "expression" : "t1.`STAGE_ID`",
+    "name" : "STAGE_ID"
+  }, {
+    "expression" : "t1.`STATE_ID`",
+    "name" : "STATE_ID"
+  }, {
+    "expression" : "t1.`STREET`",
+    "name" : "STREET"
+  }, {
+    "expression" : "t1.`STREET2`",
+    "name" : "STREET2"
+  }, {
+    "expression" : "t1.`TEAM_ID`",
+    "name" : "TEAM_ID"
+  }, {
+    "expression" : "t1.`TYPE`",
+    "name" : "TYPE"
+  }, {
+    "expression" : "t1.`USER_ID`",
+    "name" : "USER_ID"
+  }, {
+    "expression" : "t1.`WEBSITE`",
+    "name" : "WEBSITE"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  }, {
+    "expression" : "t1.`ZIP`",
+    "name" : "ZIP"
+  } ],
+  "queryCode" : "SELECT\nt1.`ACTIVE`,\nt1.`AUTOMATED_PROBABILITY`,\nt1.`CITY`,\nt1.`COLOR`,\nt1.`COMPANY_ID`,\nt1.`CONTACT_NAME`,\nt1.`COUNTRY_ID`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`DATE_AUTOMATION_LAST`,\nt1.`DATE_CLOSED`,\nt1.`DATE_CONVERSION`,\nt1.`DATE_DEADLINE`,\nt1.`DATE_LAST_STAGE_UPDATE`,\nt1.`DATE_OPEN`,\nt1.`DAY_CLOSE`,\nt1.`DAY_OPEN`,\nt1.`EMAIL_CC`,\nt1.`EMAIL_DOMAIN_CRITERION`,\nt1.`EMAIL_FROM`,\nt1.`EMAIL_NORMALIZED`,\nt1.`EMAIL_STATE`,\nt1.`EXPECTED_REVENUE`,\nt1.`FUNCTION`,\nt1.`IAP_ENRICH_DONE`,\nt1.`ID`,\nt1.`LANG_ID`,\nt1.`LEAD_MINING_REQUEST_ID`,\nt1.`LOST_REASON_ID`,\nt1.`MESSAGE_BOUNCE`,\nt1.`MOBILE`,\nt1.`NAME`,\nt1.`PARTNER_ID`,\nt1.`PARTNER_NAME`,\nt1.`PHONE`,\nt1.`PHONE_SANITIZED`,\nt1.`PHONE_STATE`,\nt1.`PRIORITY`,\nt1.`PROBABILITY`,\nt1.`PRORATED_REVENUE`,\nt1.`RECURRING_REVENUE`,\nt1.`RECURRING_REVENUE_MONTHLY`,\nt1.`RECURRING_REVENUE_MONTHLY_PRORATED`,\nt1.`RECURRING_REVENUE_PRORATED`,\nt1.`REFERRED`,\nt1.`REVEAL_ID`,\nt1.`STAGE_ID`,\nt1.`STATE_ID`,\nt1.`STREET`,\nt1.`STREET2`,\nt1.`TEAM_ID`,\nt1.`TYPE`,\nt1.`USER_ID`,\nt1.`WEBSITE`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`,\nt1.`ZIP`\nFROM `crm_lead` t1 \n",
+  "id" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEDATAQUERIES/Default/PSDEDQCODES/MYSQL5.json"
+}

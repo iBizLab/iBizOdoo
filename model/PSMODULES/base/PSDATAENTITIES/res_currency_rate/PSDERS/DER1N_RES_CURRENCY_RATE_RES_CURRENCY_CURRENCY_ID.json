@@ -1,0 +1,27 @@
+{
+  "codeName" : "currency",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_currency_rate/PSDERS/DER1N_RES_CURRENCY_RATE_RES_CURRENCY_CURRENCY_ID.json",
+  "fKeyName" : "FCB40EBC30CACBF8D6",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_currency.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_currency_rate.json"
+  },
+  "name" : "DER1N_RES_CURRENCY_RATE_RES_CURRENCY_CURRENCY_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "CURRENCY_ID",
+    "codeName" : "currency_id"
+  },
+  "pickupDEFName" : "CURRENCY_ID",
+  "removeActionType" : 1,
+  "removeOrder" : 0,
+  "serviceCodeName" : "currency",
+  "enableFKey" : true
+}

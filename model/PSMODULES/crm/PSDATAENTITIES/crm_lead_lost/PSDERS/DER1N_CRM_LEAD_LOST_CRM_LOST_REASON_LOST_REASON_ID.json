@@ -1,0 +1,27 @@
+{
+  "codeName" : "lost_reason",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead_lost/PSDERS/DER1N_CRM_LEAD_LOST_CRM_LOST_REASON_LOST_REASON_ID.json",
+  "fKeyName" : "F0667F97478D04EBA9",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lost_reason.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/crm/PSDATAENTITIES/crm_lead_lost.json"
+  },
+  "name" : "DER1N_CRM_LEAD_LOST_CRM_LOST_REASON_LOST_REASON_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "LOST_REASON_ID",
+    "codeName" : "lost_reason_id"
+  },
+  "pickupDEFName" : "LOST_REASON_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "lost_reason",
+  "enableFKey" : true
+}

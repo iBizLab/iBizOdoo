@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "mail__mail_compose_message_reply_to_mode",
+  "codeListType" : "STATIC",
+  "codeName" : "mail_compose_message_reply_to_mode",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/mail/PSCODELISTS/mail_compose_message_reply_to_mode.json",
+  "emptyText" : "未定义",
+  "name" : "回复",
+  "getPSCodeItems" : [ {
+    "codeName" : "update",
+    "text" : "将电子邮件和回复存储在每条记录的聊天中",
+    "value" : "update"
+  }, {
+    "codeName" : "new",
+    "text" : "收集对特定电子邮件地址的回复",
+    "value" : "new"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

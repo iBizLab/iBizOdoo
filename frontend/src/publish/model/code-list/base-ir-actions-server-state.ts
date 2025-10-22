@@ -1,0 +1,71 @@
+export default {
+  codeListTag: 'base__ir_actions_server_state',
+  codeListType: 'STATIC',
+  codeName: 'base__ir_actions_server_state',
+  emptyText: '未定义',
+  codeItems: [
+    {
+      codeName: 'object_write',
+      text: '更新记录',
+      value: 'object_write',
+      id: 'object_write',
+    },
+    {
+      codeName: 'next_activity',
+      text: '创建活动',
+      value: 'next_activity',
+      id: 'next_activity',
+    },
+    {
+      codeName: 'mail_post',
+      text: '发送电子邮件',
+      value: 'mail_post',
+      id: 'mail_post',
+    },
+    {
+      codeName: 'sms',
+      text: '发送短信息',
+      value: 'sms',
+      id: 'sms',
+    },
+    {
+      codeName: 'followers',
+      text: '添加关注者',
+      value: 'followers',
+      id: 'followers',
+    },
+    {
+      codeName: 'remove_followers',
+      text: '删除关注者',
+      value: 'remove_followers',
+      id: 'remove_followers',
+    },
+    {
+      codeName: 'object_create',
+      text: '创建记录',
+      value: 'object_create',
+      id: 'object_create',
+    },
+    {
+      codeName: 'code',
+      text: '执行代码',
+      value: 'code',
+      id: 'code',
+    },
+    {
+      codeName: 'webhook',
+      text: '发送 Webhook 通知',
+      value: 'webhook',
+      id: 'webhook',
+    },
+    {
+      codeName: 'multi',
+      text: '执行已有动作',
+      value: 'multi',
+      id: 'multi',
+    },
+  ],
+  enableCache: true,
+  name: '类型',
+  id: 'ibizodooapp.base__ir_actions_server_state',
+};

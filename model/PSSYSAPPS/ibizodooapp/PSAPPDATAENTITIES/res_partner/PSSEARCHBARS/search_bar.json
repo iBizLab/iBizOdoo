@@ -1,0 +1,69 @@
+{
+  "codeName" : "search_bar",
+  "controlStyle" : "ODOO_SEARCH_BAR",
+  "controlType" : "SEARCHBAR",
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner/PSSEARCHBARS/search_bar.json",
+  "groupMode" : "AND",
+  "logicName" : "联系人搜索栏",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+  },
+  "getPSSearchBarGroups" : [ {
+    "caption" : "个人",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"is_company\",\"condop\":\"EQ\",\"value\":\"0\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "personal",
+    "width" : 0.0,
+    "addSeparator" : false
+  }, {
+    "caption" : "公司",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"is_company\",\"condop\":\"EQ\",\"value\":\"1\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "company",
+    "width" : 0.0,
+    "addSeparator" : false
+  }, {
+    "caption" : "员工",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":null,\"condop\":null,\"value\":null}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "employee",
+    "width" : 0.0,
+    "addSeparator" : true
+  }, {
+    "caption" : "客户发票",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"customer_rank\",\"condop\":\"GT\",\"value\":\"0\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "customer_invoice",
+    "width" : 0.0,
+    "addSeparator" : false
+  }, {
+    "caption" : "供应商账单",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"supplier_rank\",\"condop\":\"GT\",\"value\":\"0\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "supplier_bill",
+    "width" : 0.0,
+    "addSeparator" : false
+  }, {
+    "caption" : "已归档",
+    "data" : "{\"theme_model\":{\"searchconds\":[{\"condtype\":\"GROUP\",\"condop\":\"AND\",\"bnotmode\":false,\"searchconds\":[{\"condtype\":\"DEFIELD\",\"fieldname\":\"active\",\"condop\":\"EQ\",\"value\":\"0\"}]}]}}",
+    "itemType" : "GROUP",
+    "name" : "inactive",
+    "width" : 0.0,
+    "addSeparator" : true
+  } ],
+  "getPSSysPFPlugin" : {
+    "pluginType" : "CUSTOM",
+    "pluginCode" : "ODOO_SEARCH_BAR",
+    "runtimeObject" : true
+  },
+  "quickGroupCount" : 1,
+  "quickSearchMode" : 1,
+  "quickSearchWidth" : 0,
+  "enableFilter" : false,
+  "enableGroup" : true,
+  "enableQuickSearch" : true,
+  "mobileSearchBar" : false,
+  "modelid" : "ffde83ae046cc38e19bc76d1d7b59ec6",
+  "modeltype" : "PSSYSSEARCHBAR"
+}

@@ -1,0 +1,22 @@
+{
+  "actionMode" : "CUSTOM",
+  "actionType" : "INHERIT",
+  "codeName" : "message_post_with_source",
+  "dataAccessAction" : "READ",
+  "dynaModelFilePath" : "PSMODULES/crm/PSDATAENTITIES/crm_lead/PSDEACTIONS/message_post_with_source.json",
+  "logicName" : "带模板的消息发送",
+  "name" : "message_post_with_source",
+  "getPSDEActionInput" : {
+    "name" : "Message_post_with_sourceInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "crm_lead_dto"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "Message_post_with_sourceResult",
+    "type" : "VOID"
+  },
+  "enableAudit" : true
+}

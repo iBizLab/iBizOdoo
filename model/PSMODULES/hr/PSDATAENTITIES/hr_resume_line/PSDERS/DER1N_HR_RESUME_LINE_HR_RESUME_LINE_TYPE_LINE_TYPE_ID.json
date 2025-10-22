@@ -1,0 +1,27 @@
+{
+  "codeName" : "line_type",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_resume_line/PSDERS/DER1N_HR_RESUME_LINE_HR_RESUME_LINE_TYPE_LINE_TYPE_ID.json",
+  "fKeyName" : "FDDD433F685179AB95",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_resume_line_type.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_resume_line.json"
+  },
+  "name" : "DER1N_HR_RESUME_LINE_HR_RESUME_LINE_TYPE_LINE_TYPE_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "LINE_TYPE_ID",
+    "codeName" : "line_type_id"
+  },
+  "pickupDEFName" : "LINE_TYPE_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "line_type",
+  "enableFKey" : true
+}

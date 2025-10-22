@@ -1,0 +1,3597 @@
+{
+  "getAllPSAppDEUIActionGroups": [
+    {
+      "codeName": "Auto76188473",
+      "name": "技能等级实体操作栏",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/hr_skill_level.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "detailType": "DEUIACTION",
+          "name": "uddce83c",
+          "getPSSysImage": {
+            "glyph": "xf00d@FontAwesome",
+            "cssClass": "fa fa-remove"
+          },
+          "getPSUIAction": {
+            "actionTarget": "MULTIKEY",
+            "getCapPSLanguageRes": {
+              "lanResTag": "TBB.TEXT.*.REMOVE"
+            },
+            "caption": "删除",
+            "codeName": "Remove",
+            "fullCodeName": "Remove",
+            "name": "表格界面_删除操作",
+            "getPSSysImage": {
+              "glyph": "xf00d@FontAwesome",
+              "cssClass": "fa fa-remove"
+            },
+            "predefinedType": "GRIDVIEW_REMOVEACTION",
+            "timeout": 60000,
+            "getTooltipPSLanguageRes": {
+              "lanResTag": "TBB.TOOLTIP.*.REMOVE"
+            },
+            "uIActionMode": "SYS",
+            "uIActionTag": "Remove",
+            "uIActionType": "DEUIACTION",
+            "globalUIAction": true
+          },
+          "getTooltipPSLanguageRes": {
+            "lanResTag": "TBB.TOOLTIP.*.REMOVE"
+          },
+          "addSeparator": false,
+          "showCaption": false,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "hr_skill_level__Auto76188473"
+    },
+    {
+      "codeName": "Auto12032820",
+      "name": "用户实体主视图界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_users.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "getCapPSLanguageRes": {
+            "lanResTag": "TBB.TEXT.EDITVIEW.REMOVEANDCLOSE"
+          },
+          "caption": "删除并关闭",
+          "detailType": "DEUIACTION",
+          "name": "u3bb9258",
+          "getPSSysImage": {
+            "glyph": "xf00d@FontAwesome",
+            "cssClass": "fa fa-remove"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "getCapPSLanguageRes": {
+              "lanResTag": "TBB.TEXT.EDITVIEW.REMOVEANDCLOSE"
+            },
+            "caption": "删除并关闭",
+            "codeName": "RemoveAndExit",
+            "fullCodeName": "RemoveAndExit",
+            "name": "编辑界面_删除并退出操作",
+            "getPSSysImage": {
+              "glyph": "xf00d@FontAwesome",
+              "cssClass": "fa fa-remove"
+            },
+            "predefinedType": "EDITVIEW_REMOVEANDEXITACTION",
+            "timeout": 60000,
+            "getTooltipPSLanguageRes": {
+              "lanResTag": "TBB.TOOLTIP.EDITVIEW.REMOVEANDCLOSE"
+            },
+            "uIActionMode": "SYS",
+            "uIActionTag": "RemoveAndExit",
+            "uIActionType": "DEUIACTION"
+          },
+          "getTooltipPSLanguageRes": {
+            "lanResTag": "TBB.TOOLTIP.EDITVIEW.REMOVEANDCLOSE"
+          },
+          "addSeparator": true,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "修改密码",
+          "detailType": "DEUIACTION",
+          "name": "u3580fae",
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "修改密码",
+            "codeName": "open_chg_pwd_view",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_chg_pwd_view.json",
+              "viewType": "DEEDITVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "res_users_open_chg_pwd_view",
+            "name": "打开密码修改视图",
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_users.json"
+            },
+            "uIActionMode": "FRONT",
+            "uIActionTag": "open_chg_pwd_view",
+            "uIActionType": "DEUIACTION",
+            "id": "open_chg_pwd_view@res_users"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "res_users__Auto12032820"
+    },
+    {
+      "codeName": "Auto76188473",
+      "name": "技能实体操作栏",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/hr_skill.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "detailType": "DEUIACTION",
+          "name": "u578507e",
+          "getPSSysImage": {
+            "glyph": "xf00d@FontAwesome",
+            "cssClass": "fa fa-remove"
+          },
+          "getPSUIAction": {
+            "actionTarget": "MULTIKEY",
+            "getCapPSLanguageRes": {
+              "lanResTag": "TBB.TEXT.*.REMOVE"
+            },
+            "caption": "删除",
+            "codeName": "Remove",
+            "fullCodeName": "Remove",
+            "name": "表格界面_删除操作",
+            "getPSSysImage": {
+              "glyph": "xf00d@FontAwesome",
+              "cssClass": "fa fa-remove"
+            },
+            "predefinedType": "GRIDVIEW_REMOVEACTION",
+            "timeout": 60000,
+            "getTooltipPSLanguageRes": {
+              "lanResTag": "TBB.TOOLTIP.*.REMOVE"
+            },
+            "uIActionMode": "SYS",
+            "uIActionTag": "Remove",
+            "uIActionType": "DEUIACTION",
+            "globalUIAction": true
+          },
+          "getTooltipPSLanguageRes": {
+            "lanResTag": "TBB.TOOLTIP.*.REMOVE"
+          },
+          "addSeparator": false,
+          "showCaption": false,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "hr_skill__Auto76188473"
+    },
+    {
+      "codeName": "Auto59229723",
+      "name": "频道消息更多操作",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "caption": "取消置顶",
+          "detailType": "DEUIACTION",
+          "name": "u4dba5bd",
+          "getPSSysImage": {
+            "glyph": "xf08d@FontAwesome",
+            "cssClass": "fa fa-thumb-tack"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "取消置顶",
+            "codeName": "unpin",
+            "confirmMsg": "是否取消置顶该消息",
+            "fullCodeName": "mail_message_unpin",
+            "name": "取消置顶",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "unpin"
+            },
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "refresh_comment"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+            },
+            "getPSSysImage": {
+              "glyph": "xf08d@FontAwesome",
+              "cssClass": "fa fa-thumb-tack"
+            },
+            "timeout": 60000,
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "unpin",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "AFTER",
+            "enableConfirm": true,
+            "id": "unpin@mail_message"
+          },
+          "visibleScriptCode": "data.pinned_at!=null",
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "置顶",
+          "detailType": "DEUIACTION",
+          "name": "uc963833",
+          "getPSSysImage": {
+            "glyph": "xf08d@FontAwesome",
+            "cssClass": "fa fa-thumb-tack"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "置顶",
+            "codeName": "pin",
+            "confirmMsg": "是否置顶该消息？",
+            "fullCodeName": "mail_message_pin",
+            "name": "置顶消息",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "pin"
+            },
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "refresh_comment"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+            },
+            "getPSSysImage": {
+              "glyph": "xf08d@FontAwesome",
+              "cssClass": "fa fa-thumb-tack"
+            },
+            "timeout": 60000,
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "pin",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "AFTER",
+            "enableConfirm": true,
+            "id": "pin@mail_message"
+          },
+          "visibleScriptCode": "data.pinned_at==null",
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "收藏",
+          "detailType": "DEUIACTION",
+          "name": "uc99fbe9",
+          "getPSSysImage": {
+            "rawContent": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M9.54013,6.48742551 L8,3.36677551 L6.45987,6.48742551 L3.01604,6.98784551 L5.50802,9.41692551 L4.91975,12.8468255 L8,11.2274255 L11.08025,12.8468255 L10.49195,9.41692551 L12.98395,6.98784551 L9.54013,6.48742551 Z M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"currentColor\" fill-rule=\"nonzero\"></path>\n</svg>"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "收藏",
+            "codeName": "add_favorite",
+            "fullCodeName": "mail_message_add_favorite",
+            "name": "收藏",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "add_favorite"
+            },
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "refresh_comment"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+            },
+            "getPSSysImage": {
+              "rawContent": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M9.54013,6.48742551 L8,3.36677551 L6.45987,6.48742551 L3.01604,6.98784551 L5.50802,9.41692551 L4.91975,12.8468255 L8,11.2274255 L11.08025,12.8468255 L10.49195,9.41692551 L12.98395,6.98784551 L9.54013,6.48742551 Z M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"currentColor\" fill-rule=\"nonzero\"></path>\n</svg>"
+            },
+            "refreshMode": 1,
+            "timeout": 60000,
+            "tooltip": "收藏",
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "add_favorite",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "AFTER",
+            "enableConfirm": true,
+            "reloadData": true,
+            "id": "add_favorite@mail_message"
+          },
+          "tooltip": "收藏",
+          "visibleScriptCode": "data.is_favorite!=1",
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "取消收藏",
+          "detailType": "DEUIACTION",
+          "name": "u9de05ba",
+          "getPSSysImage": {
+            "rawContent": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"#FFB31A\" fill-rule=\"nonzero\"></path>\n</svg>"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "取消收藏",
+            "codeName": "remove_favorite",
+            "fullCodeName": "mail_message_remove_favorite",
+            "name": "取消收藏",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "remove_favorite"
+            },
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "refresh_comment"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_message.json"
+            },
+            "getPSSysImage": {
+              "rawContent": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\" class=\"design-iconfont\" width=\"16\" height=\"16\">\n  <path d=\"M14.53135,6.20219551 C14.77745,6.23794551 14.87565,6.54033551 14.69765,6.71389551 L11.56645,9.76604551 L12.30565,14.0757255 C12.34765,14.3208255 12.09045,14.5077255 11.87035,14.3920255 L8,12.3572255 L4.12966,14.3920255 C3.90957,14.5077255 3.65234,14.3208255 3.69437,14.0757255 L4.43354,9.76604551 L1.30237,6.71389551 C1.12431,6.54033551 1.22256,6.23794551 1.46863,6.20219551 L5.79581,5.57341551 L7.73098,1.65232551 C7.84103,1.42934551 8.15898,1.42935551 8.26902,1.65232551 L10.20415,5.57341551 L14.53135,6.20219551 Z\" fill-opacity=\".9\" fill=\"#FFB31A\" fill-rule=\"nonzero\"></path>\n</svg>"
+            },
+            "refreshMode": 1,
+            "timeout": 60000,
+            "tooltip": "取消收藏",
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "remove_favorite",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "AFTER",
+            "enableConfirm": true,
+            "reloadData": true,
+            "id": "remove_favorite@mail_message"
+          },
+          "tooltip": "取消收藏",
+          "visibleScriptCode": "data.is_favorite==1",
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "mail_message__Auto59229723"
+    },
+    {
+      "codeName": "activity_card",
+      "name": "卡片界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "detailType": "DEUIACTION",
+          "name": "u5fc4fcd",
+          "getPSSysCss": {
+            "cssName": "success-rawitem"
+          },
+          "getPSSysImage": {
+            "glyph": "xf00c@FontAwesome",
+            "cssClass": "fa fa-check"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "完成活动",
+            "codeName": "open_action_done_view",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_feedback_view.json",
+              "viewType": "DEEDITVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "mail_activity_open_action_done_view",
+            "name": "打开完成活动视图",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "action_done"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSNavigateParams": [
+              {
+                "key": "mail_activity_mixin",
+                "name": "mail_activity_mixin",
+                "value": "mail_activity_mixin",
+                "rawValue": false
+              },
+              {
+                "key": "srfmodelname",
+                "name": "srfmodelname",
+                "value": "srfmodelname",
+                "rawValue": false
+              }
+            ],
+            "getPSSysImage": {
+              "glyph": "xf00c@FontAwesome",
+              "cssClass": "fa fa-check"
+            },
+            "tooltip": "标记为完成",
+            "uIActionMode": "FRONT",
+            "uIActionTag": "open_action_done_view",
+            "uIActionType": "DEUIACTION",
+            "globalUIAction": true,
+            "id": "open_action_done_view@mail_activity"
+          },
+          "tooltip": "标记为完成",
+          "addSeparator": false,
+          "showCaption": false,
+          "showIcon": true
+        },
+        {
+          "detailType": "DEUIACTION",
+          "name": "u3526ed0",
+          "getPSSysImage": {
+            "glyph": "xf040@FontAwesome",
+            "cssClass": "fa fa-pencil"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "编辑",
+            "codeName": "edit_activity",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_quick_cfg_view.json",
+              "viewType": "DEEDITVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "mail_activity_edit_activity",
+            "name": "编辑活动",
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSNavigateParams": [
+              {
+                "key": "mail_activity_mixin",
+                "name": "mail_activity_mixin",
+                "value": "mail_activity_mixin",
+                "rawValue": false
+              },
+              {
+                "key": "srfmodelname",
+                "name": "srfmodelname",
+                "value": "srfmodelname",
+                "rawValue": false
+              }
+            ],
+            "getPSSysImage": {
+              "glyph": "xf040@FontAwesome",
+              "cssClass": "fa fa-pencil"
+            },
+            "tooltip": "编辑",
+            "uIActionMode": "FRONT",
+            "uIActionTag": "edit_activity",
+            "uIActionType": "DEUIACTION",
+            "id": "edit_activity@mail_activity"
+          },
+          "tooltip": "编辑",
+          "addSeparator": false,
+          "showCaption": false,
+          "showIcon": true
+        },
+        {
+          "detailType": "DEUIACTION",
+          "name": "u2e5883e",
+          "getPSSysImage": {
+            "glyph": "xf00d@FontAwesome",
+            "cssClass": "fa fa-remove"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "取消",
+            "codeName": "del_activity",
+            "confirmMsg": "确认取消活动？",
+            "fullCodeName": "mail_activity_del_activity",
+            "name": "取消活动",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "remove"
+            },
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "refresh_activity"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSSysImage": {
+              "glyph": "xf00d@FontAwesome",
+              "cssClass": "fa fa-remove"
+            },
+            "successMsg": "取消成功",
+            "timeout": 60000,
+            "tooltip": "取消",
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "del_activity",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "AFTER",
+            "enableConfirm": true,
+            "id": "del_activity@mail_activity"
+          },
+          "tooltip": "取消",
+          "addSeparator": false,
+          "showCaption": false,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "mail_activity__activity_card"
+    },
+    {
+      "codeName": "activity_list",
+      "name": "列表界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "caption": "完成活动",
+          "detailType": "DEUIACTION",
+          "name": "ud086e58",
+          "getPSSysImage": {
+            "glyph": "xf00c@FontAwesome",
+            "cssClass": "fa fa-check"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "完成活动",
+            "codeName": "open_action_done_view",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_feedback_view.json",
+              "viewType": "DEEDITVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "mail_activity_open_action_done_view",
+            "name": "打开完成活动视图",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "action_done"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSNavigateParams": [
+              {
+                "key": "mail_activity_mixin",
+                "name": "mail_activity_mixin",
+                "value": "mail_activity_mixin",
+                "rawValue": false
+              },
+              {
+                "key": "srfmodelname",
+                "name": "srfmodelname",
+                "value": "srfmodelname",
+                "rawValue": false
+              }
+            ],
+            "getPSSysImage": {
+              "glyph": "xf00c@FontAwesome",
+              "cssClass": "fa fa-check"
+            },
+            "tooltip": "标记为完成",
+            "uIActionMode": "FRONT",
+            "uIActionTag": "open_action_done_view",
+            "uIActionType": "DEUIACTION",
+            "globalUIAction": true,
+            "id": "open_action_done_view@mail_activity"
+          },
+          "tooltip": "标记为完成",
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "编辑",
+          "detailType": "DEUIACTION",
+          "name": "u7ccbcb6",
+          "getPSSysImage": {
+            "glyph": "xf040@FontAwesome",
+            "cssClass": "fa fa-pencil"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "编辑",
+            "codeName": "edit_activity",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_quick_cfg_view.json",
+              "viewType": "DEEDITVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "mail_activity_edit_activity",
+            "name": "编辑活动",
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSNavigateParams": [
+              {
+                "key": "mail_activity_mixin",
+                "name": "mail_activity_mixin",
+                "value": "mail_activity_mixin",
+                "rawValue": false
+              },
+              {
+                "key": "srfmodelname",
+                "name": "srfmodelname",
+                "value": "srfmodelname",
+                "rawValue": false
+              }
+            ],
+            "getPSSysImage": {
+              "glyph": "xf040@FontAwesome",
+              "cssClass": "fa fa-pencil"
+            },
+            "tooltip": "编辑",
+            "uIActionMode": "FRONT",
+            "uIActionTag": "edit_activity",
+            "uIActionType": "DEUIACTION",
+            "id": "edit_activity@mail_activity"
+          },
+          "tooltip": "编辑",
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "取消",
+          "detailType": "DEUIACTION",
+          "name": "ue57845a",
+          "getPSSysImage": {
+            "glyph": "xf00d@FontAwesome",
+            "cssClass": "fa fa-remove"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "取消",
+            "codeName": "del_activity",
+            "confirmMsg": "确认取消活动？",
+            "fullCodeName": "mail_activity_del_activity",
+            "name": "取消活动",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "remove"
+            },
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "refresh_activity"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSSysImage": {
+              "glyph": "xf00d@FontAwesome",
+              "cssClass": "fa fa-remove"
+            },
+            "successMsg": "取消成功",
+            "timeout": 60000,
+            "tooltip": "取消",
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "del_activity",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "AFTER",
+            "enableConfirm": true,
+            "id": "del_activity@mail_activity"
+          },
+          "tooltip": "取消",
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "mail_activity__activity_list"
+    },
+    {
+      "codeName": "activity_multi",
+      "name": "活动管理页面界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "caption": "已完成",
+          "detailType": "DEUIACTION",
+          "name": "u51cd25d",
+          "getPSSysImage": {
+            "glyph": "xf00c@FontAwesome",
+            "cssClass": "fa fa-check"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEDATA",
+            "caption": "已完成",
+            "codeName": "action_done1",
+            "fullCodeName": "mail_activity_action_done1",
+            "memo": "供管理视图使用",
+            "name": "已完成",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "action_done"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSNavigateParams": [
+              {
+                "key": "srfpartnerid",
+                "name": "srfpartnerid",
+                "value": "srfpartnerid",
+                "rawValue": false
+              },
+              {
+                "key": "srfuserid",
+                "name": "srfuserid",
+                "value": "srfuserid",
+                "rawValue": false
+              }
+            ],
+            "getPSSysImage": {
+              "glyph": "xf00c@FontAwesome",
+              "cssClass": "fa fa-check"
+            },
+            "refreshMode": 1,
+            "successMsg": "活动已完成！",
+            "timeout": 60000,
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "action_done1",
+            "uIActionType": "DEUIACTION",
+            "enableConfirm": true,
+            "reloadData": true,
+            "id": "action_done1@mail_activity"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "取消",
+          "detailType": "DEUIACTION",
+          "name": "uc181c38",
+          "getPSSysImage": {
+            "glyph": "xf00d@FontAwesome",
+            "cssClass": "fa fa-remove"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "取消",
+            "codeName": "del_activity",
+            "confirmMsg": "确认取消活动？",
+            "fullCodeName": "mail_activity_del_activity",
+            "name": "取消活动",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "remove"
+            },
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "refresh_activity"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSSysImage": {
+              "glyph": "xf00d@FontAwesome",
+              "cssClass": "fa fa-remove"
+            },
+            "successMsg": "取消成功",
+            "timeout": 60000,
+            "tooltip": "取消",
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "del_activity",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "AFTER",
+            "enableConfirm": true,
+            "id": "del_activity@mail_activity"
+          },
+          "tooltip": "取消",
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "延后7天",
+          "detailType": "DEUIACTION",
+          "name": "u239dd7c",
+          "getPSSysImage": {
+            "glyph": "xf1f6@FontAwesome",
+            "cssClass": "fa fa-bell-slash"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEDATA",
+            "caption": "延后7天",
+            "codeName": "action_snooze",
+            "fullCodeName": "mail_activity_action_snooze",
+            "name": "延后7天",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "action_snooze"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSSysImage": {
+              "glyph": "xf1f6@FontAwesome",
+              "cssClass": "fa fa-bell-slash"
+            },
+            "refreshMode": 1,
+            "timeout": 60000,
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "action_snooze",
+            "uIActionType": "DEUIACTION",
+            "enableConfirm": true,
+            "reloadData": true,
+            "id": "action_snooze@mail_activity"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "mail_activity__activity_multi"
+    },
+    {
+      "codeName": "emp_activity_list",
+      "name": "员工卡片安排活动界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "detailType": "DEUIACTION",
+          "name": "u956e252",
+          "getPSSysImage": {
+            "glyph": "xf00c@FontAwesome",
+            "cssClass": "fa fa-check"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "完成活动",
+            "codeName": "open_action_done_view",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_feedback_view.json",
+              "viewType": "DEEDITVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "mail_activity_open_action_done_view",
+            "name": "打开完成活动视图",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "action_done"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSNavigateParams": [
+              {
+                "key": "mail_activity_mixin",
+                "name": "mail_activity_mixin",
+                "value": "mail_activity_mixin",
+                "rawValue": false
+              },
+              {
+                "key": "srfmodelname",
+                "name": "srfmodelname",
+                "value": "srfmodelname",
+                "rawValue": false
+              }
+            ],
+            "getPSSysImage": {
+              "glyph": "xf00c@FontAwesome",
+              "cssClass": "fa fa-check"
+            },
+            "tooltip": "标记为完成",
+            "uIActionMode": "FRONT",
+            "uIActionTag": "open_action_done_view",
+            "uIActionType": "DEUIACTION",
+            "globalUIAction": true,
+            "id": "open_action_done_view@mail_activity"
+          },
+          "tooltip": "标记为完成",
+          "addSeparator": false,
+          "showCaption": false,
+          "showIcon": true
+        },
+        {
+          "detailType": "DEUIACTION",
+          "name": "uf3364b4",
+          "getPSSysImage": {
+            "glyph": "xf040@FontAwesome",
+            "cssClass": "fa fa-pencil"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "编辑",
+            "codeName": "edit_activity",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_quick_cfg_view.json",
+              "viewType": "DEEDITVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "mail_activity_edit_activity",
+            "name": "编辑活动",
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSNavigateParams": [
+              {
+                "key": "mail_activity_mixin",
+                "name": "mail_activity_mixin",
+                "value": "mail_activity_mixin",
+                "rawValue": false
+              },
+              {
+                "key": "srfmodelname",
+                "name": "srfmodelname",
+                "value": "srfmodelname",
+                "rawValue": false
+              }
+            ],
+            "getPSSysImage": {
+              "glyph": "xf040@FontAwesome",
+              "cssClass": "fa fa-pencil"
+            },
+            "tooltip": "编辑",
+            "uIActionMode": "FRONT",
+            "uIActionTag": "edit_activity",
+            "uIActionType": "DEUIACTION",
+            "id": "edit_activity@mail_activity"
+          },
+          "tooltip": "编辑",
+          "addSeparator": false,
+          "showCaption": false,
+          "showIcon": true
+        },
+        {
+          "detailType": "DEUIACTION",
+          "name": "ua1c082a",
+          "getPSSysImage": {
+            "glyph": "xf00d@FontAwesome",
+            "cssClass": "fa fa-remove"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "取消",
+            "codeName": "del_activity",
+            "confirmMsg": "确认取消活动？",
+            "fullCodeName": "mail_activity_del_activity",
+            "name": "取消活动",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "remove"
+            },
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "refresh_activity"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+            },
+            "getPSSysImage": {
+              "glyph": "xf00d@FontAwesome",
+              "cssClass": "fa fa-remove"
+            },
+            "successMsg": "取消成功",
+            "timeout": 60000,
+            "tooltip": "取消",
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "del_activity",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "AFTER",
+            "enableConfirm": true,
+            "id": "del_activity@mail_activity"
+          },
+          "tooltip": "取消",
+          "addSeparator": false,
+          "showCaption": false,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "mail_activity__emp_activity_list"
+    },
+    {
+      "codeName": "Usr0728525275",
+      "name": "表格操作列界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "caption": "卸载",
+          "detailType": "DEUIACTION",
+          "name": "u3656f01",
+          "getPSSysCss": {
+            "cssName": "red-span"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "卸载",
+            "codeName": "Uninstall",
+            "fullCodeName": "PSCorePrdFunc_Uninstall",
+            "name": "禁用",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "uninstall"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+            },
+            "getPSNavigateContexts": [
+              {
+                "key": "PSCOREPRDFUNC",
+                "name": "PSCOREPRDFUNC",
+                "value": "pscoreprdfuncid",
+                "rawValue": false
+              }
+            ],
+            "getPSNavigateParams": [
+              {
+                "key": "n_pscoreprdid_eq",
+                "name": "n_pscoreprdid_eq",
+                "value": "srfv2systemid",
+                "rawValue": false
+              }
+            ],
+            "refreshMode": 1,
+            "successMsg": "卸载成功！",
+            "timeout": 60000,
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "Uninstall",
+            "uIActionType": "DEUIACTION",
+            "enableConfirm": true,
+            "reloadData": true,
+            "id": "Uninstall@PSCorePrdFunc"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "详情",
+          "detailType": "DEUIACTION",
+          "name": "u0c1c246",
+          "getPSUIAction": {
+            "actionTarget": "NONE",
+            "caption": "详情",
+            "codeName": "open_app_detail_view_logic",
+            "frontProcessType": "OTHER",
+            "fullCodeName": "PSCorePrdFunc_open_app_detail_view_logic",
+            "name": "打开卡片详情页面_界面逻辑",
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "open_app_info"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+            },
+            "uIActionMode": "FRONT",
+            "uIActionTag": "open_app_detail_view_logic",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "REPLACE",
+            "id": "open_app_detail_view_logic@PSCorePrdFunc"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "PSCorePrdFunc__Usr0728525275"
+    },
+    {
+      "codeName": "Usr1204311237",
+      "name": "卸载界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "caption": "卸载",
+          "detailType": "DEUIACTION",
+          "name": "ucfd738d",
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "caption": "卸载",
+            "codeName": "Uninstall",
+            "fullCodeName": "PSCorePrdFunc_Uninstall",
+            "name": "禁用",
+            "getPSAppDEMethod": {
+              "modelref": true,
+              "id": "uninstall"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+            },
+            "getPSNavigateContexts": [
+              {
+                "key": "PSCOREPRDFUNC",
+                "name": "PSCOREPRDFUNC",
+                "value": "pscoreprdfuncid",
+                "rawValue": false
+              }
+            ],
+            "getPSNavigateParams": [
+              {
+                "key": "n_pscoreprdid_eq",
+                "name": "n_pscoreprdid_eq",
+                "value": "srfv2systemid",
+                "rawValue": false
+              }
+            ],
+            "refreshMode": 1,
+            "successMsg": "卸载成功！",
+            "timeout": 60000,
+            "uIActionMode": "BACKEND",
+            "uIActionTag": "Uninstall",
+            "uIActionType": "DEUIACTION",
+            "enableConfirm": true,
+            "reloadData": true,
+            "id": "Uninstall@PSCorePrdFunc"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": false
+        },
+        {
+          "caption": "安装特定版本",
+          "detailType": "DEUIACTION",
+          "name": "uf74003e",
+          "getPSUIAction": {
+            "actionTarget": "SINGLEDATA",
+            "caption": "安装特定版本",
+            "codeName": "install_specific_ver_test",
+            "frontProcessType": "OTHER",
+            "fullCodeName": "PSCorePrdFunc_install_specific_ver_test",
+            "name": "安装特定版本_提示开发中",
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+            },
+            "scriptCode": "util.message.info(\"功能正在开发中\");",
+            "uIActionMode": "FRONT",
+            "uIActionTag": "install_specific_ver_test",
+            "uIActionType": "DEUIACTION",
+            "id": "install_specific_ver_test@PSCorePrdFunc"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "PSCorePrdFunc__Usr1204311237"
+    },
+    {
+      "codeName": "Usr1205348150",
+      "name": "模型界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "caption": "构建信息",
+          "detailType": "DEUIACTION",
+          "name": "u93c5449",
+          "getPSUIAction": {
+            "actionTarget": "NONE",
+            "caption": "构建信息",
+            "codeName": "model_build_info",
+            "frontProcessType": "OTHER",
+            "fullCodeName": "PSCorePrdFunc_model_build_info",
+            "name": "模型构建信息",
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+            },
+            "scriptCode": "util.message.info(\"功能正在开发中\");",
+            "uIActionMode": "FRONT",
+            "uIActionTag": "model_build_info",
+            "uIActionType": "DEUIACTION",
+            "id": "model_build_info@PSCorePrdFunc"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        },
+        {
+          "caption": "clone此应用",
+          "detailType": "DEUIACTION",
+          "name": "u6377bb7",
+          "getPSUIAction": {
+            "actionTarget": "NONE",
+            "caption": "clone此应用",
+            "codeName": "clone_git",
+            "frontProcessType": "OTHER",
+            "fullCodeName": "PSCorePrdFunc_clone_git",
+            "name": "clone此应用",
+            "getPSAppDEUILogic": {
+              "modelref": true,
+              "id": "clone_git"
+            },
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/PSCorePrdFunc.json"
+            },
+            "uIActionMode": "FRONT",
+            "uIActionTag": "clone_git",
+            "uIActionType": "DEUIACTION",
+            "uILogicAttachMode": "REPLACE",
+            "id": "clone_git@PSCorePrdFunc"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "PSCorePrdFunc__Usr1205348150"
+    },
+    {
+      "codeName": "Acad8c265e5fb136ce8",
+      "name": "编辑界面默认行为组01",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "caption": "邀请人员",
+          "detailType": "DEUIACTION",
+          "name": "u1520f17",
+          "getPSUIAction": {
+            "actionTarget": "NONE",
+            "caption": "邀请人员",
+            "codeName": "invite_member",
+            "getFrontPSAppView": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_invite_member_view.json",
+              "viewType": "DEOPTVIEW"
+            },
+            "frontProcessType": "WIZARD",
+            "fullCodeName": "discuss_channel_invite_member",
+            "name": "邀请人员",
+            "getPSAppDataEntity": {
+              "modelref": true,
+              "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/discuss_channel.json"
+            },
+            "getPSNavigateParams": [
+              {
+                "key": "channel_id",
+                "name": "channel_id",
+                "value": "discuss_channel",
+                "rawValue": false
+              }
+            ],
+            "uIActionMode": "FRONT",
+            "uIActionTag": "invite_member",
+            "uIActionType": "DEUIACTION",
+            "globalUIAction": true,
+            "id": "invite_member@discuss_channel"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "discuss_channel__Acad8c265e5fb136ce8"
+    },
+    {
+      "codeName": "A79119c50056dc4c1a2",
+      "name": "商机编辑界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/crm_lead.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "getCapPSLanguageRes": {
+            "lanResTag": "TBB.TEXT.*.NEW"
+          },
+          "caption": "新建",
+          "detailType": "DEUIACTION",
+          "name": "u37757ea",
+          "getPSSysImage": {
+            "glyph": "xf0f6@FontAwesome",
+            "cssClass": "fa fa-file-text-o"
+          },
+          "getPSUIAction": {
+            "getCapPSLanguageRes": {
+              "lanResTag": "TBB.TEXT.*.NEW"
+            },
+            "caption": "新建",
+            "codeName": "New",
+            "fullCodeName": "New",
+            "name": "编辑界面_新建操作",
+            "getPSSysImage": {
+              "glyph": "xf0f6@FontAwesome",
+              "cssClass": "fa fa-file-text-o"
+            },
+            "predefinedType": "EDITVIEW_NEWACTION",
+            "timeout": 60000,
+            "getTooltipPSLanguageRes": {
+              "lanResTag": "TBB.TOOLTIP.*.NEW"
+            },
+            "uIActionMode": "SYS",
+            "uIActionTag": "New",
+            "uIActionType": "DEUIACTION"
+          },
+          "getTooltipPSLanguageRes": {
+            "lanResTag": "TBB.TOOLTIP.*.NEW"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "crm_lead__A79119c50056dc4c1a2"
+    },
+    {
+      "codeName": "Af0a16dc799f729ef8e",
+      "name": "默认值实体界面行为组",
+      "getPSAppDataEntity": {
+        "modelref": true,
+        "path": "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_default.json"
+      },
+      "getPSUIActionGroupDetails": [
+        {
+          "getCapPSLanguageRes": {
+            "lanResTag": "TBB.TEXT.EDITVIEW.REMOVEANDCLOSE"
+          },
+          "caption": "删除并关闭",
+          "detailType": "DEUIACTION",
+          "name": "uc155b00",
+          "getPSSysImage": {
+            "glyph": "xf00d@FontAwesome",
+            "cssClass": "fa fa-remove"
+          },
+          "getPSUIAction": {
+            "actionTarget": "SINGLEKEY",
+            "getCapPSLanguageRes": {
+              "lanResTag": "TBB.TEXT.EDITVIEW.REMOVEANDCLOSE"
+            },
+            "caption": "删除并关闭",
+            "codeName": "RemoveAndExit",
+            "fullCodeName": "RemoveAndExit",
+            "name": "编辑界面_删除并退出操作",
+            "getPSSysImage": {
+              "glyph": "xf00d@FontAwesome",
+              "cssClass": "fa fa-remove"
+            },
+            "predefinedType": "EDITVIEW_REMOVEANDEXITACTION",
+            "timeout": 60000,
+            "getTooltipPSLanguageRes": {
+              "lanResTag": "TBB.TOOLTIP.EDITVIEW.REMOVEANDCLOSE"
+            },
+            "uIActionMode": "SYS",
+            "uIActionTag": "RemoveAndExit",
+            "uIActionType": "DEUIACTION"
+          },
+          "getTooltipPSLanguageRes": {
+            "lanResTag": "TBB.TOOLTIP.EDITVIEW.REMOVEANDCLOSE"
+          },
+          "addSeparator": false,
+          "showCaption": true,
+          "showIcon": true
+        }
+      ],
+      "uniqueTag": "ir_default__Af0a16dc799f729ef8e"
+    }
+  ],
+  "getAllPSDEDRControls": [],
+  "getAllPSControls": [],
+  "getAllPSAppPFPluginRefs": [
+    {
+      "name": "HTML（评论）",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "COMMENT",
+        "runtimeObject": true
+      },
+      "pluginCode": "COMMENT",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "IBizHtmlComment",
+      "rTObjectRepo": "@ibiz-template-plm/html-comment@0.0.3-alpha.262",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo人员信息",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "ODOO_PERSONNEL_INFO",
+        "runtimeObject": true
+      },
+      "pluginCode": "ODOO_PERSONNEL_INFO",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "IBizOdooPersonalInfo",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-personal-info@0.1.8-alpha.308",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo分组表格",
+      "getPSSysPFPlugin": {
+        "pluginType": "GRID_RENDER",
+        "pluginCode": "ODOO_GROUP_GRID",
+        "runtimeObject": true,
+        "pluginParams": {
+          "replaceglobal": "true"
+        }
+      },
+      "pluginCode": "ODOO_GROUP_GRID",
+      "pluginParams": {
+        "replaceglobal": "true"
+      },
+      "pluginType": "GRID_RENDER",
+      "rTObjectName": "IBizOdooGroupGrid",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-group-grid@0.1.8-alpha.311",
+      "refMode": "CONTROL",
+      "refTag": "GRID",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo图表",
+      "getPSSysPFPlugin": {
+        "pluginType": "CUSTOM",
+        "pluginCode": "ODOO_CHART",
+        "runtimeObject": true
+      },
+      "pluginCode": "ODOO_CHART",
+      "pluginType": "CUSTOM",
+      "rTObjectName": "IBizOdooChartControl",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-chart@0.1.8-alpha.335",
+      "refMode": "CONTROL",
+      "refTag": "CHART",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo数据关系栏",
+      "getPSSysPFPlugin": {
+        "pluginType": "CUSTOM",
+        "pluginCode": "ODOO_DRBAR",
+        "runtimeObject": true
+      },
+      "pluginCode": "ODOO_DRBAR",
+      "pluginType": "CUSTOM",
+      "rTObjectName": "IBizOdooDRbarControl",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-drbar@0.1.8-alpha.315",
+      "refMode": "CONTROL",
+      "refTag": "DRBAR",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo泳道看板",
+      "getPSSysPFPlugin": {
+        "pluginType": "DATAVIEW_RENDER",
+        "pluginCode": "ODOO_SWIMLANE_KANBAN",
+        "runtimeObject": true
+      },
+      "pluginCode": "ODOO_SWIMLANE_KANBAN",
+      "pluginType": "DATAVIEW_RENDER",
+      "rTObjectName": "ODOO_SWIMLANE_KANBAN",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-swimlane-kanban@0.1.8-alpha.295",
+      "refMode": "CONTROL",
+      "refTag": "KANBAN",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo状态栏",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "ODOO_STATUS_BAR",
+        "runtimeObject": true
+      },
+      "pluginCode": "ODOO_STATUS_BAR",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "IBizOdooStatusBar",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-status-bar@0.1.8-alpha.276",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo组织结构树",
+      "getPSSysPFPlugin": {
+        "pluginType": "TREE_RENDER",
+        "pluginCode": "ODOO_ORG_TREE",
+        "runtimeObject": true
+      },
+      "pluginCode": "ODOO_ORG_TREE",
+      "pluginType": "TREE_RENDER",
+      "rTObjectName": "IBizOdooOrgTreeControl",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-org-tree@0.1.8-alpha.280",
+      "refMode": "CONTROL",
+      "refTag": "TREEVIEW",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo聊天窗",
+      "getPSSysPFPlugin": {
+        "pluginType": "CUSTOM",
+        "pluginCode": "ODOO_CHAT",
+        "runtimeObject": true
+      },
+      "pluginCode": "ODOO_CHAT",
+      "pluginType": "CUSTOM",
+      "rTObjectName": "IBizOdooChat",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-chat@0.1.8-alpha.243",
+      "refMode": "CONTROLITEM",
+      "refTag": "VIEWLAYOUTPANEL",
+      "refTag2": "RAWITEM",
+      "runtimeObject": true
+    },
+    {
+      "name": "odoo风格搜索栏",
+      "getPSSysPFPlugin": {
+        "pluginType": "CUSTOM",
+        "pluginCode": "ODOO_SEARCH_BAR",
+        "runtimeObject": true
+      },
+      "pluginCode": "ODOO_SEARCH_BAR",
+      "pluginType": "CUSTOM",
+      "rTObjectName": "IBizStyleSearchBarControl",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-search-bar@0.1.8-alpha.279",
+      "refMode": "CONTROL",
+      "refTag": "SEARCHBAR",
+      "runtimeObject": true
+    },
+    {
+      "name": "人员信息",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "PERSONNEL_INFO",
+        "runtimeObject": true
+      },
+      "pluginCode": "PERSONNEL_INFO",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "IBizPersonalInfo",
+      "rTObjectRepo": "@ibiz-template-plm/personal-info@0.0.3-alpha.256",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "人员头像上传",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "AVATAR_UPLOAD",
+        "runtimeObject": true
+      },
+      "pluginCode": "AVATAR_UPLOAD",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "AvatarUpload",
+      "rTObjectRepo": "@ibiz-template-plm/avatar-upload@0.0.3-alpha.265",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "人员选择",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "PERSON_SELECT",
+        "runtimeObject": true
+      },
+      "pluginCode": "PERSON_SELECT",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "IBizPersonelSelect",
+      "rTObjectRepo": "@ibiz-template-plm/person-select@0.0.3-alpha.256",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "关注",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "ATTENTION",
+        "runtimeObject": true
+      },
+      "pluginCode": "ATTENTION",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "IBizAttention",
+      "rTObjectRepo": "@ibiz-template-plm/attention@0.0.3-alpha.256",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "列表树",
+      "getPSSysPFPlugin": {
+        "pluginType": "TREE_RENDER",
+        "pluginCode": "LIST_TREE",
+        "runtimeObject": true
+      },
+      "pluginCode": "LIST_TREE",
+      "pluginType": "TREE_RENDER",
+      "rTObjectName": "IBizListTreeControl",
+      "rTObjectRepo": "@ibiz-template-plm/list-tree@0.0.3-dev.198",
+      "refMode": "CONTROL",
+      "refTag": "TREEVIEW",
+      "runtimeObject": true
+    },
+    {
+      "name": "多对多表格",
+      "getPSSysPFPlugin": {
+        "pluginType": "GRID_RENDER",
+        "pluginCode": "NTON_GRID",
+        "runtimeObject": true
+      },
+      "pluginCode": "NTON_GRID",
+      "pluginType": "GRID_RENDER",
+      "rTObjectName": "IBizNToNGridControl",
+      "rTObjectRepo": "@ibiz-template-plugin/nton-grid@0.1.8-alpha.313",
+      "refMode": "CONTROL",
+      "refTag": "GRID",
+      "runtimeObject": true
+    },
+    {
+      "name": "打开odoo聊天窗",
+      "getPSSysPFPlugin": {
+        "pluginType": "DEUIACTION",
+        "pluginCode": "OPEN_ODOO_CHAT",
+        "runtimeObject": true
+      },
+      "pluginCode": "OPEN_ODOO_CHAT",
+      "pluginType": "DEUIACTION",
+      "rTObjectName": "IBizOdooChatAction",
+      "rTObjectRepo": "@ibiz-template-odoo/odoo-chat@0.1.8-alpha.243",
+      "refMode": "UIACTION",
+      "refTag": "FRONT",
+      "runtimeObject": true
+    },
+    {
+      "name": "编号标题栏",
+      "getPSSysPFPlugin": {
+        "pluginType": "CUSTOM",
+        "pluginCode": "IDENTIFIER_TITLE",
+        "runtimeObject": true
+      },
+      "pluginCode": "IDENTIFIER_TITLE",
+      "pluginType": "CUSTOM",
+      "rTObjectName": "IBizIdentifierTitle",
+      "rTObjectRepo": "@ibiz-template-plm/identifier-title@0.0.3-alpha.138",
+      "refMode": "CONTROLITEM",
+      "refTag": "VIEWLAYOUTPANEL",
+      "refTag2": "CTRLPOS",
+      "runtimeObject": true
+    },
+    {
+      "name": "自定义用户信息",
+      "getPSSysPFPlugin": {
+        "pluginType": "CUSTOM",
+        "pluginCode": "CUSTOM_AUTH_USERINFO",
+        "runtimeObject": true
+      },
+      "pluginCode": "CUSTOM_AUTH_USERINFO",
+      "pluginType": "CUSTOM",
+      "rTObjectName": "IBizCustomUserInfo",
+      "rTObjectRepo": "@ibiz-template-plm/custom-user-info@0.0.3-dev.98",
+      "refMode": "CONTROLITEM",
+      "refTag": "VIEWLAYOUTPANEL",
+      "refTag2": "RAWITEM",
+      "runtimeObject": true
+    },
+    {
+      "name": "评论列表项",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "MAIL_MESSAGE_ITEM",
+        "runtimeObject": true
+      },
+      "pluginCode": "MAIL_MESSAGE_ITEM",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "IBizCommentItemRawItem",
+      "rTObjectRepo": "@ibiz-template-plm/comment-item@0.0.3-alpha.209",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "透视表",
+      "getPSSysPFPlugin": {
+        "pluginType": "CUSTOM",
+        "pluginCode": "PIVOTTABLE",
+        "runtimeObject": true
+      },
+      "pluginCode": "PIVOTTABLE",
+      "pluginType": "CUSTOM",
+      "rTObjectName": "IBizPivotTable",
+      "rTObjectRepo": "@ibiz-template-plugin/pivottable@1.1.0",
+      "refMode": "CONTROL",
+      "refTag": "GRID",
+      "runtimeObject": true
+    },
+    {
+      "name": "锚点富文本",
+      "getPSSysPFPlugin": {
+        "pluginType": "EDITOR_CUSTOMSTYLE",
+        "pluginCode": "ANCHO_HTML",
+        "runtimeObject": true
+      },
+      "pluginCode": "ANCHO_HTML",
+      "pluginType": "EDITOR_CUSTOMSTYLE",
+      "rTObjectName": "AnchoHtml",
+      "rTObjectRepo": "@ibiz-template-plm/ancho-html@0.0.3-alpha.216",
+      "refMode": "EDITORSTYPE",
+      "runtimeObject": true
+    },
+    {
+      "name": "面包屑导航区占位",
+      "getPSSysPFPlugin": {
+        "pluginType": "CUSTOM",
+        "pluginCode": "BREADCRUMB_NAV_POS",
+        "runtimeObject": true
+      },
+      "pluginCode": "BREADCRUMB_NAV_POS",
+      "pluginType": "CUSTOM",
+      "rTObjectName": "BREADCRUMB_NAV_POS",
+      "rTObjectRepo": "@ibiz-template-plm/breadcrumb-nav-pos@0.0.3-alpha.164",
+      "refMode": "CONTROLITEM",
+      "refTag": "VIEWLAYOUTPANEL",
+      "refTag2": "RAWITEM",
+      "runtimeObject": true
+    }
+  ],
+  "dynamodeltag": null,
+  "modelStamp": null,
+  "appMode": "CLOUDHUBAPP",
+  "getAllPSAppMenuModels": [],
+  "getAllPSAppViews": [
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_resource_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "resource_resource",
+      "view": "multi_data_view",
+      "name": "resource_resourcemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_category_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_employee_category",
+      "view": "EditView",
+      "name": "hr_employee_categoryEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_m_pickup_view.json",
+      "viewType": "DEMPICKUPVIEW",
+      "resource": "res_users",
+      "view": "MPickupView",
+      "name": "res_usersMPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_leaves_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "resource_calendar_leaves",
+      "view": "multi_data_view",
+      "name": "resource_calendar_leavesmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_config_parameter_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_config_parameter",
+      "view": "multi_data_view",
+      "name": "ir_config_parametermulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "hr_employee",
+      "view": "PickupGridView",
+      "name": "hr_employeePickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_department_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "hr_department",
+      "view": "PickupView",
+      "name": "hr_departmentPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_sub_channel_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "discuss_channel",
+      "view": "sub_channel_grid_view",
+      "name": "discuss_channelsub_channel_grid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_leaves_multi_data_view1.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "resource_calendar_leaves",
+      "view": "multi_data_view1",
+      "name": "resource_calendar_leavesmulti_data_view1"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_unires_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "ir_unires",
+      "view": "PickupGridView",
+      "name": "ir_uniresPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_company_edit_view.json",
+      "viewType": "DEOPTVIEW",
+      "resource": "res_company",
+      "view": "edit_view",
+      "name": "res_companyedit_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_company_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "res_company",
+      "view": "multi_data_view",
+      "name": "res_companymulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_partner_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "res_partner",
+      "view": "PickupView",
+      "name": "res_partnerPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_type_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "mail_activity_type",
+      "view": "PickupGridView",
+      "name": "mail_activity_typePickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_mail_server_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_mail_server",
+      "view": "multi_data_view",
+      "name": "ir_mail_servermulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_groups",
+      "view": "main_view",
+      "name": "res_groupsmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_config_parameter_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_config_parameter",
+      "view": "EditView",
+      "name": "ir_config_parameterEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ps_core_prd_func_info_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "PSCorePrdFunc",
+      "view": "InfoView",
+      "name": "PSCorePrdFuncInfoView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_activity",
+      "view": "multi_data_view",
+      "name": "mail_activitymulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_trigger_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_cron_trigger",
+      "view": "EditView",
+      "name": "ir_cron_triggerEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_plan_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity_plan",
+      "view": "main_view",
+      "name": "mail_activity_planmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_template_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_template",
+      "view": "main_view",
+      "name": "mail_templatemain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_list_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "discuss_channel_member",
+      "view": "list_view",
+      "name": "discuss_channel_memberlist_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_org_chart_view.json",
+      "viewType": "DETREEVIEW",
+      "resource": "hr_employee",
+      "view": "org_chart_view",
+      "name": "hr_employeeorg_chart_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_company_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_company",
+      "view": "main_view",
+      "name": "res_companymain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_resume_line_type_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_resume_line_type",
+      "view": "multi_data_view",
+      "name": "hr_resume_line_typemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_resource_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "resource_resource",
+      "view": "PickupGridView",
+      "name": "resource_resourcePickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_alias_domain_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "mail_alias_domain",
+      "view": "PickupView",
+      "name": "mail_alias_domainPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPINDEXVIEWS/crm_index_view.json",
+      "viewType": "APPINDEXVIEW",
+      "view": "crm_index_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_type_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_activity_type",
+      "view": "multi_data_view",
+      "name": "mail_activity_typemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "resource_calendar",
+      "view": "multi_data_view",
+      "name": "resource_calendarmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity",
+      "view": "main_view",
+      "name": "mail_activitymain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_history_list_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "mail_message",
+      "view": "discuss_history_list_view",
+      "name": "mail_messagediscuss_history_list_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_plan_template_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity_plan_template",
+      "view": "EditView",
+      "name": "mail_activity_plan_templateEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_country_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "res_country",
+      "view": "PickupGridView",
+      "name": "res_countryPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "hr_employee",
+      "view": "PickupView",
+      "name": "hr_employeePickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "res_groups",
+      "view": "multi_data_view",
+      "name": "res_groupsmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_implied_rel_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "res_groups_implied_rel",
+      "view": "PickupGridView",
+      "name": "res_groups_implied_relPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_rule_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "ir_rule",
+      "view": "PickupGridView",
+      "name": "ir_rulePickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_template_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_template",
+      "view": "multi_data_view",
+      "name": "mail_templatemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_feedback_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity",
+      "view": "feedback_view",
+      "name": "mail_activityfeedback_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_contract_type_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_contract_type",
+      "view": "EditView",
+      "name": "hr_contract_typeEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_unires_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "ir_unires",
+      "view": "grid_view",
+      "name": "ir_uniresgrid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_invite_member_view.json",
+      "viewType": "DEOPTVIEW",
+      "resource": "discuss_channel",
+      "view": "invite_member_view",
+      "name": "discuss_channelinvite_member_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPINDEXVIEWS/partner_index_view.json",
+      "viewType": "APPINDEXVIEW",
+      "view": "partner_index_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_job_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "hr_job",
+      "view": "PickupView",
+      "name": "hr_jobPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_mail_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_mail",
+      "view": "main_view",
+      "name": "mail_mailmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "ir_cron",
+      "view": "PickupGridView",
+      "name": "ir_cronPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_redirect_view.json",
+      "viewType": "DEREDIRECTVIEW",
+      "resource": "mail_activity",
+      "view": "redirect_view",
+      "name": "mail_activityredirect_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_actions_server_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_actions_server",
+      "view": "multi_data_view",
+      "name": "ir_actions_servermulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "ir_cron",
+      "view": "PickupView",
+      "name": "ir_cronPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "mail_message",
+      "view": "PickupGridView",
+      "name": "mail_messagePickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_resource_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "resource_resource",
+      "view": "main_view",
+      "name": "resource_resourcemain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ps_core_prd_func_market_application_view.json",
+      "viewType": "DEDATAVIEW",
+      "resource": "PSCorePrdFunc",
+      "view": "MarketApplicationView",
+      "name": "PSCorePrdFuncMarketApplicationView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_main_view.json",
+      "viewType": "DECUSTOMVIEW",
+      "resource": "discuss_channel",
+      "view": "main_view",
+      "name": "discuss_channelmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_channel_list_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "mail_message",
+      "view": "discuss_channel_list_view",
+      "name": "mail_messagediscuss_channel_list_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_mail_server_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_mail_server",
+      "view": "EditView",
+      "name": "ir_mail_serverEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_work_location_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_work_location",
+      "view": "main_view",
+      "name": "hr_work_locationmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_skill_level_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_skill_level",
+      "view": "EditView",
+      "name": "hr_skill_levelEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_alias_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_alias",
+      "view": "main_view",
+      "name": "mail_aliasmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_info_custom_view.json",
+      "viewType": "DECUSTOMVIEW",
+      "resource": "res_users",
+      "view": "info_custom_view",
+      "name": "res_usersinfo_custom_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_plan_main_view2.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity_plan",
+      "view": "main_view2",
+      "name": "mail_activity_planmain_view2"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_unires_info_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_unires",
+      "view": "info_view",
+      "name": "ir_uniresinfo_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_plan_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_activity_plan",
+      "view": "multi_data_view",
+      "name": "mail_activity_planmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_employee",
+      "view": "multi_data_view",
+      "name": "hr_employeemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_currency_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "res_currency",
+      "view": "PickupView",
+      "name": "res_currencyPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_model_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "ir_model",
+      "view": "PickupGridView",
+      "name": "ir_modelPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_m_pickup_view.json",
+      "viewType": "DEMPICKUPVIEW",
+      "resource": "res_groups",
+      "view": "MPickupView",
+      "name": "res_groupsMPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_alias_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_alias",
+      "view": "multi_data_view",
+      "name": "mail_aliasmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_currency_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "res_currency",
+      "view": "PickupGridView",
+      "name": "res_currencyPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_main_pop_view.json",
+      "viewType": "DECUSTOMVIEW",
+      "resource": "discuss_channel",
+      "view": "main_pop_view",
+      "name": "discuss_channelmain_pop_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "res_groups",
+      "view": "PickupView",
+      "name": "res_groupsPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ps_core_prd_info_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "PSCorePrd",
+      "view": "InfoView",
+      "name": "PSCorePrdInfoView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ps_core_prd_func_installed_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "PSCorePrdFunc",
+      "view": "InstalledGridView",
+      "name": "PSCorePrdFuncInstalledGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_alias_domain_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "mail_alias_domain",
+      "view": "PickupGridView",
+      "name": "mail_alias_domainPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_rule_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_rule",
+      "view": "multi_data_view",
+      "name": "ir_rulemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_plan_template_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "mail_activity_plan_template",
+      "view": "GridView",
+      "name": "mail_activity_plan_templateGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_partner_pick_up_list_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "res_partner",
+      "view": "pick_up_list_view",
+      "name": "res_partnerpick_up_list_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/unires_group_rel_m_pickup_view.json",
+      "viewType": "DEMPICKUPVIEW",
+      "resource": "unires_group_rel",
+      "view": "MPickupView",
+      "name": "unires_group_relMPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_config_parameter_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_config_parameter",
+      "view": "main_view",
+      "name": "ir_config_parametermain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_users_rel_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_groups_users_rel",
+      "view": "EditView",
+      "name": "res_groups_users_relEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_template_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "mail_template",
+      "view": "PickupView",
+      "name": "mail_templatePickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_company_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "res_company",
+      "view": "PickupGridView",
+      "name": "res_companyPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/unires_group_rel_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "unires_group_rel",
+      "view": "PickupGridView",
+      "name": "unires_group_relPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_followers_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_followers",
+      "view": "main_view",
+      "name": "mail_followersmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_personal_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_users",
+      "view": "personal_view",
+      "name": "res_userspersonal_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_departure_reason_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "hr_departure_reason",
+      "view": "GridView",
+      "name": "hr_departure_reasonGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_notification_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_notification",
+      "view": "main_view",
+      "name": "mail_notificationmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_thread_component_view.json",
+      "viewType": "DECUSTOMVIEW",
+      "resource": "mail_thread",
+      "view": "component_view",
+      "name": "mail_threadcomponent_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_alias_domain_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_alias_domain",
+      "view": "multi_data_view",
+      "name": "mail_alias_domainmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_config_settings_modify_setting.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_config_settings",
+      "view": "modify_setting",
+      "name": "res_config_settingsmodify_setting"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_unires_m_pickup_view.json",
+      "viewType": "DEMPICKUPVIEW",
+      "resource": "ir_unires",
+      "view": "MPickupView",
+      "name": "ir_uniresMPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "res_users",
+      "view": "GridView",
+      "name": "res_usersGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_emp_schedule_act_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "mail_activity",
+      "view": "emp_schedule_act_view",
+      "name": "mail_activityemp_schedule_act_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_public_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "discuss_channel",
+      "view": "public_multi_data_view",
+      "name": "discuss_channelpublic_multi_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_actions_server_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_actions_server",
+      "view": "main_view",
+      "name": "ir_actions_servermain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_model_access_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_model_access",
+      "view": "multi_data_view",
+      "name": "ir_model_accessmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_base_info_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_employee",
+      "view": "base_info_view",
+      "name": "hr_employeebase_info_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "resource_calendar",
+      "view": "PickupView",
+      "name": "resource_calendarPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_skill_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_skill",
+      "view": "EditView",
+      "name": "hr_skillEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ps_core_prd_market_application_view.json",
+      "viewType": "DEDATAVIEW",
+      "resource": "PSCorePrd",
+      "view": "MarketApplicationView",
+      "name": "PSCorePrdMarketApplicationView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_schedule_quick_create_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity_schedule",
+      "view": "quick_create_view",
+      "name": "mail_activity_schedulequick_create_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_job_multi_data_view_test.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_job",
+      "view": "multi_data_view_test",
+      "name": "hr_jobmulti_data_view_test"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_multi_data_view_user.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "res_groups",
+      "view": "multi_data_view_user",
+      "name": "res_groupsmulti_data_view_user"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_employee",
+      "view": "main_view",
+      "name": "hr_employeemain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_skill_type_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_skill_type",
+      "view": "main_view",
+      "name": "hr_skill_typemain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_implied_rel_m_pickup_view.json",
+      "viewType": "DEMPICKUPVIEW",
+      "resource": "res_groups_implied_rel",
+      "view": "MPickupView",
+      "name": "res_groups_implied_relMPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_starred_list_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "mail_message",
+      "view": "discuss_starred_list_view",
+      "name": "mail_messagediscuss_starred_list_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_groups",
+      "view": "edit_view",
+      "name": "res_groupsedit_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_default_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_default",
+      "view": "multi_data_view",
+      "name": "ir_defaultmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_country_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "res_country",
+      "view": "PickupView",
+      "name": "res_countryPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_followers_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_followers",
+      "view": "multi_data_view",
+      "name": "mail_followersmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/crm_lead_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "crm_lead",
+      "view": "main_view",
+      "name": "crm_leadmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_unires_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_unires",
+      "view": "multi_data_view",
+      "name": "ir_uniresmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "discuss_channel_member",
+      "view": "GridView",
+      "name": "discuss_channel_memberGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hub_app_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hub_app",
+      "view": "EditView",
+      "name": "hub_appEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_notification_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_notification",
+      "view": "multi_data_view",
+      "name": "mail_notificationmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/crm_lead_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "crm_lead",
+      "view": "multi_data_view",
+      "name": "crm_leadmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_implied_rel_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "res_groups_implied_rel",
+      "view": "PickupView",
+      "name": "res_groups_implied_relPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_actions_server_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_actions_server",
+      "view": "EditView",
+      "name": "ir_actions_serverEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_company_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "res_company",
+      "view": "PickupView",
+      "name": "res_companyPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_model_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_model",
+      "view": "multi_data_view",
+      "name": "ir_modelmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_category_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_employee_category",
+      "view": "multi_data_view",
+      "name": "hr_employee_categorymulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_skill_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "hr_skill",
+      "view": "GridView",
+      "name": "hr_skillGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "hr_employee",
+      "view": "GridView",
+      "name": "hr_employeeGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_module_category_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "ir_module_category",
+      "view": "GridView",
+      "name": "ir_module_categoryGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/rule_group_rel_nested_group_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "rule_group_rel",
+      "view": "nested_group_grid_view",
+      "name": "rule_group_relnested_group_grid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_employee_org_tree_view9.json",
+      "viewType": "DETREEVIEW9",
+      "resource": "hr_employee",
+      "view": "org_tree_view9",
+      "name": "hr_employeeorg_tree_view9"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "res_users",
+      "view": "PickupGridView",
+      "name": "res_usersPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_mail_server_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_mail_server",
+      "view": "main_view",
+      "name": "ir_mail_servermain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPINDEXVIEWS/setting_index_view.json",
+      "viewType": "APPINDEXVIEW",
+      "view": "setting_index_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_quick_cfg_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity",
+      "view": "quick_cfg_view",
+      "name": "mail_activityquick_cfg_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_type_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity_type",
+      "view": "main_view",
+      "name": "mail_activity_typemain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_rule_m_pickup_view.json",
+      "viewType": "DEMPICKUPVIEW",
+      "resource": "ir_rule",
+      "view": "MPickupView",
+      "name": "ir_ruleMPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/unires_group_rel_nested_group_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "unires_group_rel",
+      "view": "nested_group_grid_view",
+      "name": "unires_group_relnested_group_grid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ps_core_prd_func_setting_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "PSCorePrdFunc",
+      "view": "setting_edit_view",
+      "name": "PSCorePrdFuncsetting_edit_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_department_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "hr_department",
+      "view": "PickupGridView",
+      "name": "hr_departmentPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_work_location_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_work_location",
+      "view": "multi_data_view",
+      "name": "hr_work_locationmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_model_access_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_model_access",
+      "view": "EditView",
+      "name": "ir_model_accessEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_contract_type_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_contract_type",
+      "view": "multi_data_view",
+      "name": "hr_contract_typemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_work_location_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "hr_work_location",
+      "view": "PickupView",
+      "name": "hr_work_locationPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity",
+      "view": "EditView",
+      "name": "mail_activityEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_leave_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "hr_leave",
+      "view": "PickupGridView",
+      "name": "hr_leavePickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_module_category_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_module_category",
+      "view": "EditView",
+      "name": "ir_module_categoryEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_plan_multi_data_view2.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_activity_plan",
+      "view": "multi_data_view2",
+      "name": "mail_activity_planmulti_data_view2"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hub_app_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "hub_app",
+      "view": "GridView",
+      "name": "hub_appGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_model_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "ir_model",
+      "view": "PickupView",
+      "name": "ir_modelPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_search_list_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "mail_message",
+      "view": "search_list_view",
+      "name": "mail_messagesearch_list_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "resource_calendar",
+      "view": "main_view",
+      "name": "resource_calendarmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_message",
+      "view": "EditView",
+      "name": "mail_messageEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_model_access_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "ir_model_access",
+      "view": "GridView",
+      "name": "ir_model_accessGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_attendance_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "resource_calendar_attendance",
+      "view": "EditView",
+      "name": "resource_calendar_attendanceEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_attendance_grid_view_nested.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "resource_calendar_attendance",
+      "view": "grid_view_nested",
+      "name": "resource_calendar_attendancegrid_view_nested"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_module_module_grid_view_test.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "ir_module_module",
+      "view": "grid_view_test",
+      "name": "ir_module_modulegrid_view_test"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_module_module_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_module_module",
+      "view": "EditView",
+      "name": "ir_module_moduleEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_info_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_users",
+      "view": "info_view",
+      "name": "res_usersinfo_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPINDEXVIEWS/hr_index_view.json",
+      "viewType": "APPINDEXVIEW",
+      "view": "hr_index_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_department_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_department",
+      "view": "multi_data_view",
+      "name": "hr_departmentmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/fetchmail_server_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "fetchmail_server",
+      "view": "main_view",
+      "name": "fetchmail_servermain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "res_users",
+      "view": "multi_data_view",
+      "name": "res_usersmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_users_rel_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "res_groups_users_rel",
+      "view": "GridView",
+      "name": "res_groups_users_relGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_template_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "mail_template",
+      "view": "PickupGridView",
+      "name": "mail_templatePickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_cron",
+      "view": "multi_data_view",
+      "name": "ir_cronmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_department_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_department",
+      "view": "main_view",
+      "name": "hr_departmentmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/rule_group_rel_nested_rule_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "rule_group_rel",
+      "view": "nested_rule_grid_view",
+      "name": "rule_group_relnested_rule_grid_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_quick_cfg_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "discuss_channel",
+      "view": "quick_cfg_view",
+      "name": "discuss_channelquick_cfg_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_rule_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "ir_rule",
+      "view": "GridView",
+      "name": "ir_ruleGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_module_category_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "ir_module_category",
+      "view": "PickupGridView",
+      "name": "ir_module_categoryPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_skill_level_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "hr_skill_level",
+      "view": "GridView",
+      "name": "hr_skill_levelGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_resume_line_type_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_resume_line_type",
+      "view": "EditView",
+      "name": "hr_resume_line_typeEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_message",
+      "view": "multi_data_view",
+      "name": "mail_messagemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_rule_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "ir_rule",
+      "view": "PickupView",
+      "name": "ir_rulePickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/rule_group_rel_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "rule_group_rel",
+      "view": "EditView",
+      "name": "rule_group_relEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_cron",
+      "view": "main_view",
+      "name": "ir_cronmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_default_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_default",
+      "view": "main_view",
+      "name": "ir_defaultmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_users",
+      "view": "main_view",
+      "name": "res_usersmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "discuss_channel",
+      "view": "PickupGridView",
+      "name": "discuss_channelPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_job_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_job",
+      "view": "main_view",
+      "name": "hr_jobmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "discuss_channel",
+      "view": "PickupView",
+      "name": "discuss_channelPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_rule_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_rule",
+      "view": "EditView",
+      "name": "ir_ruleEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_implied_rel_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "res_groups_implied_rel",
+      "view": "GridView",
+      "name": "res_groups_implied_relGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/discuss_channel_member_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "discuss_channel_member",
+      "view": "EditView",
+      "name": "discuss_channel_memberEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_message",
+      "view": "main_view",
+      "name": "mail_messagemain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_job_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "hr_job",
+      "view": "PickupGridView",
+      "name": "hr_jobPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_leaves_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "resource_calendar_leaves",
+      "view": "GridView",
+      "name": "resource_calendar_leavesGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/fetchmail_server_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "fetchmail_server",
+      "view": "multi_data_view",
+      "name": "fetchmail_servermulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_job_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_job",
+      "view": "EditView",
+      "name": "hr_jobEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_partner_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "res_partner",
+      "view": "PickupGridView",
+      "name": "res_partnerPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_departure_reason_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_departure_reason",
+      "view": "multi_data_view",
+      "name": "hr_departure_reasonmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_alias_domain_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_alias_domain",
+      "view": "main_view",
+      "name": "mail_alias_domainmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_job_main_view_test.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_job",
+      "view": "main_view_test",
+      "name": "hr_jobmain_view_test"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_module_module_grid_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "ir_module_module",
+      "view": "GridView",
+      "name": "ir_module_moduleGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_implied_rel_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_groups_implied_rel",
+      "view": "EditView",
+      "name": "res_groups_implied_relEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_mail_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "mail_mail",
+      "view": "multi_data_view",
+      "name": "mail_mailmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_default_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_default",
+      "view": "EditView",
+      "name": "ir_defaultEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_job_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_job",
+      "view": "multi_data_view",
+      "name": "hr_jobmulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_create_user_view.json",
+      "viewType": "DEOPTVIEW",
+      "resource": "res_users",
+      "view": "create_user_view",
+      "name": "res_userscreate_user_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "res_users",
+      "view": "PickupView",
+      "name": "res_usersPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "res_groups",
+      "view": "PickupGridView",
+      "name": "res_groupsPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_departure_reason_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "hr_departure_reason",
+      "view": "EditView",
+      "name": "hr_departure_reasonEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_unires_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_unires",
+      "view": "main_view",
+      "name": "ir_uniresmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_plan_template_quick_create_view.json",
+      "viewType": "DEOPTVIEW",
+      "resource": "mail_activity_plan_template",
+      "view": "quick_create_view",
+      "name": "mail_activity_plan_templatequick_create_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_trigger_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_cron_trigger",
+      "view": "main_view",
+      "name": "ir_cron_triggermain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_work_location_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "hr_work_location",
+      "view": "PickupGridView",
+      "name": "hr_work_locationPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_partner_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_partner",
+      "view": "main_view",
+      "name": "res_partnermain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ps_core_prd_func_tree_exp_view.json",
+      "viewType": "DETREEEXPVIEW",
+      "resource": "PSCorePrdFunc",
+      "view": "TreeExpView",
+      "name": "PSCorePrdFuncTreeExpView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_rule_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_rule",
+      "view": "main_view",
+      "name": "ir_rulemain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_cron_trigger_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "ir_cron_trigger",
+      "view": "multi_data_view",
+      "name": "ir_cron_triggermulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_inbox_list_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "mail_message",
+      "view": "discuss_inbox_list_view",
+      "name": "mail_messagediscuss_inbox_list_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_groups_users_rel_user_group_mgr_view.json",
+      "viewType": "DEGRIDVIEW",
+      "resource": "res_groups_users_rel",
+      "view": "user_group_mgr_view",
+      "name": "res_groups_users_reluser_group_mgr_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_model_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_model",
+      "view": "EditView",
+      "name": "ir_modelEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_chg_pwd_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "res_users",
+      "view": "chg_pwd_view",
+      "name": "res_userschg_pwd_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_pickup_grid_view.json",
+      "viewType": "DEPICKUPGRIDVIEW",
+      "resource": "resource_calendar",
+      "view": "PickupGridView",
+      "name": "resource_calendarPickupGridView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_discuss_main_view.json",
+      "viewType": "DETREEEXPVIEW",
+      "resource": "mail_message",
+      "view": "discuss_main_view",
+      "name": "mail_messagediscuss_main_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_skill_type_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "hr_skill_type",
+      "view": "multi_data_view",
+      "name": "hr_skill_typemulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_department_department_hierarchy_view.json",
+      "viewType": "DETREEVIEW",
+      "resource": "hr_department",
+      "view": "department_hierarchy_view",
+      "name": "hr_departmentdepartment_hierarchy_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_unires_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "ir_unires",
+      "view": "EditView",
+      "name": "ir_uniresEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/ir_module_category_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "ir_module_category",
+      "view": "PickupView",
+      "name": "ir_module_categoryPickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_pinned_list_view.json",
+      "viewType": "DELISTVIEW",
+      "resource": "mail_message",
+      "view": "pinned_list_view",
+      "name": "mail_messagepinned_list_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_resource_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "resource_resource",
+      "view": "PickupView",
+      "name": "resource_resourcePickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_partner_multi_data_view.json",
+      "viewType": "DEMDCUSTOMVIEW",
+      "resource": "res_partner",
+      "view": "multi_data_view",
+      "name": "res_partnermulti_data_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPINDEXVIEWS/discuss_index_view.json",
+      "viewType": "APPINDEXVIEW",
+      "view": "discuss_index_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/res_users_edit_view.json",
+      "viewType": "DEOPTVIEW",
+      "resource": "res_users",
+      "view": "edit_view",
+      "name": "res_usersedit_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/unires_group_rel_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "unires_group_rel",
+      "view": "EditView",
+      "name": "unires_group_relEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_type_edit_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "mail_activity_type",
+      "view": "EditView",
+      "name": "mail_activity_typeEditView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_type_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "mail_activity_type",
+      "view": "PickupView",
+      "name": "mail_activity_typePickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_redirect_view.json",
+      "viewType": "DEREDIRECTVIEW",
+      "resource": "mail_message",
+      "view": "RedirectView",
+      "name": "mail_messageRedirectView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/resource_calendar_leaves_main_view.json",
+      "viewType": "DEEDITVIEW",
+      "resource": "resource_calendar_leaves",
+      "view": "main_view",
+      "name": "resource_calendar_leavesmain_view"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_message_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "mail_message",
+      "view": "PickupView",
+      "name": "mail_messagePickupView"
+    },
+    {
+      "modelref": true,
+      "path": "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/hr_leave_pickup_view.json",
+      "viewType": "DEPICKUPVIEW",
+      "resource": "hr_leave",
+      "view": "PickupView",
+      "name": "hr_leavePickupView"
+    }
+  ]
+}

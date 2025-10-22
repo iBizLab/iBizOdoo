@@ -1,0 +1,79 @@
+package cn.ibizlab.ibizodoo.mail.logic.mail_tracking_duration_mixinlogic.compute_duration_tracking;
+        import java.util.Map;
+        import java.util.HashMap;
+        import com.alibaba.fastjson.JSONObject;
+        import org.springframework.util.StringUtils;
+        import org.springframework.util.ObjectUtils;
+        import cn.ibizlab.ibizodoo.util.errors.BadRequestAlertException;
+                global cn.ibizlab.ibizodoo.core.mail.domain.mail_tracking_value mail_tracking_duration_mixincompute_duration_trackingdefault;
+                global cn.ibizlab.ibizodoo.core.mail.domain.mail_tracking_value mail_tracking_duration_mixincompute_duration_trackingfilterparam;
+                global cn.ibizlab.ibizodoo.core.mail.domain.mail_tracking_value mail_tracking_duration_mixincompute_duration_trackingresultlist;
+                global java.util.Map mail_tracking_duration_mixincompute_duration_trackingtracking_field;
+                    global cn.ibizlab.ibizodoo.core.mail.service.Imail_tracking_valueService mail_tracking_valueservice;
+        global cn.ibizlab.ibizodoo.core.mail.service.Imail_tracking_duration_mixinService iBzSysMail_tracking_duration_mixinDefaultService;
+        global cn.ibizlab.ibizodoo.util.security.AuthenticationUser curuser;
+
+
+    no-loop
+
+            //逻辑处理节点[开始]
+            rule "begin"
+            ruleflow-group "mail_tracking_duration_mixincompute_duration_trackingbegin"
+            when
+            then
+            end
+
+            //逻辑处理节点[构造查询条件]
+            rule "rawsfcode_01"
+            ruleflow-group "mail_tracking_duration_mixincompute_duration_trackingrawsfcode_01"
+            when
+            then
+                        update(mail_tracking_duration_mixincompute_duration_trackingdefault);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingfilterparam);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingresultlist);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingtracking_field);//更新fact中变量值
+            end
+
+            //逻辑处理节点[绑定跟踪属性参数]
+            rule "bindparam_01"
+            ruleflow-group "mail_tracking_duration_mixincompute_duration_trackingbindparam_01"
+            when
+            then
+                        update(mail_tracking_duration_mixincompute_duration_trackingdefault);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingfilterparam);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingresultlist);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingtracking_field);//更新fact中变量值
+            end
+
+            //逻辑处理节点[查询邮件跟踪值数据集]
+            rule "dedataset_01"
+            ruleflow-group "mail_tracking_duration_mixincompute_duration_trackingdedataset_01"
+            when
+            then
+                        update(mail_tracking_duration_mixincompute_duration_trackingdefault);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingfilterparam);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingresultlist);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingtracking_field);//更新fact中变量值
+            end
+
+            //逻辑处理节点[回填属性跟踪耗时结构对象]
+            rule "rawsfcode_02"
+            ruleflow-group "mail_tracking_duration_mixincompute_duration_trackingrawsfcode_02"
+            when
+            then
+                        update(mail_tracking_duration_mixincompute_duration_trackingdefault);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingfilterparam);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingresultlist);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingtracking_field);//更新fact中变量值
+            end
+
+            //逻辑处理节点[结束]
+            rule "end_01"
+            ruleflow-group "mail_tracking_duration_mixincompute_duration_trackingend_01"
+            when
+            then
+                        update(mail_tracking_duration_mixincompute_duration_trackingdefault);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingfilterparam);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingresultlist);//更新fact中变量值
+                        update(mail_tracking_duration_mixincompute_duration_trackingtracking_field);//更新fact中变量值
+            end

@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "mail__mail_compose_message_composition_mode",
+  "codeListType" : "STATIC",
+  "codeName" : "mail_compose_message_composition_mode",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/mail/PSCODELISTS/mail_compose_message_composition_mode.json",
+  "emptyText" : "未定义",
+  "name" : "写作模式",
+  "getPSCodeItems" : [ {
+    "codeName" : "comment",
+    "text" : "提交在文件上",
+    "value" : "comment"
+  }, {
+    "codeName" : "mass_mail",
+    "text" : "邮件群发",
+    "value" : "mass_mail"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

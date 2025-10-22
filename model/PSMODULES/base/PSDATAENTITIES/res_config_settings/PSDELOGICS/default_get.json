@@ -1,0 +1,264 @@
+{
+  "codeName" : "default_get",
+  "defaultParamName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDELOGICS/default_get.json",
+  "logicName" : "默认获取数据逻辑",
+  "name" : "默认获取数据逻辑",
+  "getPSDELogicNodes" : [ {
+    "codeName" : "Begin",
+    "leftPos" : 60,
+    "logicNodeType" : "BEGIN",
+    "name" : "开始",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "Begin"
+      }
+    } ],
+    "topPos" : 102,
+    "parallelOutput" : true
+  }, {
+    "code" : "  def defaultListParam = []\r\n  def moduleListParam= []\r\n  def groupListParam= []\r\n  def  configListParam= []\r\n  \r\n  // 获取实体运行时对象（通过逻辑参数中的实体参数）\r\n  def _default = logic.param(\"Default\")\r\n  def entityRuntime = _default.getDataEntityRuntime()\r\n  \r\n  // 遍历属性进行分类\r\n  entityRuntime.getPSDEFields(true).each { field ->\r\n    def _name = field.getName()\r\n    def fieldtag = field.getUserTag()\r\n    if(_name.startsWith('default_')) {\r\n      defaultListParam.add(_name)\r\n    } else if(_name.startsWith('module_')) {\r\n      moduleListParam.add(_name)\r\n    } else if(_name.startsWith('group_')) {\r\n      groupListParam.add(_name)\r\n    } else if(fieldtag != null && fieldtag.startsWith('config_parameter')) {\r\n      configListParam.add(_name)\r\n    }\r\n  }\r\n  \r\n  // 绑定更新后的列表到参数（如果需要显式绑定）\r\n  logic.param(\"defaultList\").bind(defaultListParam)\r\n  logic.param(\"moduleList\").bind(moduleListParam)\r\n  logic.param(\"groupList\").bind(groupListParam)\r\n  logic.param(\"configList\").bind(configListParam)\r\n",
+    "codeName" : "RAWSFCODE_01",
+    "codeType" : "Groovy",
+    "leftPos" : 236,
+    "logicNodeType" : "RAWSFCODE",
+    "name" : "分类属性",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "PREPAREPARAM_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_01"
+      }
+    } ],
+    "topPos" : 98,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "PREPAREPARAM_01",
+    "leftPos" : 236,
+    "logicNodeType" : "PREPAREPARAM",
+    "name" : "准备config过滤参数",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "DEDATASET_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "PREPAREPARAM_01"
+      }
+    } ],
+    "getPSDELogicNodeParams" : [ {
+      "dstFieldName" : "n_key_in",
+      "getDstPSDELogicParam" : {
+        "modelref" : true,
+        "id" : "parameter_filter"
+      },
+      "paramAction" : "SETPARAMVALUE",
+      "getSrcPSDELogicParam" : {
+        "modelref" : true,
+        "id" : "configList"
+      },
+      "srcValueType" : "SRCDLPARAM"
+    }, {
+      "dstFieldName" : "size",
+      "getDstPSDELogicParam" : {
+        "modelref" : true,
+        "id" : "parameter_filter"
+      },
+      "paramAction" : "SETPARAMVALUE",
+      "srcValue" : "1000",
+      "srcValueType" : "SRCVALUE"
+    } ],
+    "topPos" : 207,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "DEDATASET_01",
+    "getDstPSDEDataSet" : {
+      "modelref" : true,
+      "id" : "Default"
+    },
+    "getDstPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "parameter_filter"
+    },
+    "getDstPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/ir_config_parameter.json"
+    },
+    "leftPos" : 20,
+    "logicNodeType" : "DEDATASET",
+    "name" : "获取parameter数据",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "LOOPSUBCALL_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "DEDATASET_01"
+      }
+    } ],
+    "getRetPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "parameter_list"
+    },
+    "topPos" : 330,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "LOOPSUBCALL_01",
+    "getDstPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "parameter_temp"
+    },
+    "leftPos" : 20,
+    "logicNodeType" : "LOOPSUBCALL",
+    "name" : "循环子调用",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_02"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "LOOPSUBCALL_01"
+      },
+      "subCallLink" : true
+    }, {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "END_02"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "LOOPSUBCALL_01"
+      }
+    } ],
+    "getSrcPSDELogicParam" : {
+      "modelref" : true,
+      "id" : "parameter_list"
+    },
+    "topPos" : 460,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "END_02",
+    "leftPos" : 394,
+    "logicNodeType" : "END",
+    "name" : "结束",
+    "getReturnParam" : {
+      "modelref" : true,
+      "id" : "Default"
+    },
+    "returnType" : "LOGICPARAM",
+    "topPos" : 462,
+    "parallelOutput" : true
+  }, {
+    "code" : "def _default = logic.param(\"Default\").getReal()\r\ndef parameter_temp = logic.param(\"parameter_temp\").getReal()\r\n_default.set(parameter_temp.get(\"key\"),parameter_temp.get(\"value\"))",
+    "codeName" : "RAWSFCODE_02",
+    "codeType" : "Groovy",
+    "leftPos" : 20,
+    "logicNodeType" : "RAWSFCODE",
+    "name" : "回写参数",
+    "getPSDELogicLinks" : [ {
+      "getDstPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "END_01"
+      },
+      "name" : "连接名称",
+      "getSrcPSDELogicNode" : {
+        "modelref" : true,
+        "id" : "RAWSFCODE_02"
+      }
+    } ],
+    "topPos" : 570,
+    "parallelOutput" : true
+  }, {
+    "codeName" : "END_01",
+    "leftPos" : 60,
+    "logicNodeType" : "END",
+    "name" : "结束",
+    "topPos" : 670,
+    "parallelOutput" : true
+  } ],
+  "getPSDELogicParams" : [ {
+    "codeName" : "Default",
+    "logicName" : "传入实体参数",
+    "name" : "传入实体参数",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/res_config_settings.json"
+    },
+    "default" : true,
+    "entityParam" : true
+  }, {
+    "codeName" : "configList",
+    "logicName" : "config_前缀属性列表",
+    "name" : "config_前缀属性列表",
+    "stdDataType" : 25,
+    "simpleListParam" : true
+  }, {
+    "codeName" : "defaultList",
+    "logicName" : "default_前缀属性列表",
+    "name" : "default_前缀属性列表",
+    "stdDataType" : 25,
+    "simpleListParam" : true
+  }, {
+    "codeName" : "groupList",
+    "logicName" : "group_前缀属性列表",
+    "name" : "group_前缀属性列表",
+    "stdDataType" : 25,
+    "simpleListParam" : true
+  }, {
+    "codeName" : "moduleList",
+    "logicName" : "module_前缀属性列表",
+    "name" : "module_前缀属性列表",
+    "stdDataType" : 25,
+    "simpleListParam" : true
+  }, {
+    "codeName" : "parameter_filter",
+    "logicName" : "存储参数过滤",
+    "name" : "存储参数过滤",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/ir_config_parameter.json"
+    },
+    "filterParam" : true
+  }, {
+    "codeName" : "parameter_list",
+    "logicName" : "parameter列表",
+    "name" : "parameter列表",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/ir_config_parameter.json"
+    },
+    "entityPageParam" : true
+  }, {
+    "codeName" : "parameter_temp",
+    "logicName" : "参数对象",
+    "name" : "参数对象",
+    "getParamPSDataEntity" : {
+      "modelref" : true,
+      "path" : "PSMODULES/base/PSDATAENTITIES/ir_config_parameter.json"
+    },
+    "entityParam" : true
+  } ],
+  "getStartPSDELogicNode" : {
+    "modelref" : true,
+    "id" : "Begin"
+  },
+  "enableBackend" : true,
+  "enableFront" : false
+}

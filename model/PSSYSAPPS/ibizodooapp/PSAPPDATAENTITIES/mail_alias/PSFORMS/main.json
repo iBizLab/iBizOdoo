@@ -1,0 +1,792 @@
+{
+  "codeName" : "main",
+  "controlType" : "FORM",
+  "getCreatePSControlAction" : {
+    "modelref" : true,
+    "id" : "create",
+    "actionName" : "Create",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "create",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "create"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias.json"
+    }
+  },
+  "defaultLabelWidth" : 130,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias/PSFORMS/main.json",
+  "getGetDraftFromPSControlAction" : {
+    "modelref" : true,
+    "id" : "loaddraftfrom",
+    "actionName" : "GETDRAFTFROM",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "loaddraftfrom",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias.json"
+    }
+  },
+  "getGetDraftPSControlAction" : {
+    "modelref" : true,
+    "id" : "loaddraft",
+    "actionName" : "GetDraft",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "loaddraft",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get_draft"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias.json"
+    }
+  },
+  "getGetPSControlAction" : {
+    "modelref" : true,
+    "id" : "load",
+    "actionName" : "Get",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "READ",
+    "name" : "load",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias.json"
+    }
+  },
+  "logicName" : "主编辑表单",
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias.json"
+  },
+  "getPSDEFormItemUpdates" : [ {
+    "codeName" : "compute_alias_full_name",
+    "name" : "compute_alias_full_name",
+    "getPSDEFIUpdateDetails" : [ {
+      "name" : "alias_full_name"
+    } ],
+    "scriptCode" : "if (data.alias_domain_id && data.alias_name) {\r\n    data.alias_full_name = data.alias_name + \"@\" + data.alias_domain_name;\r\n} else if (data.alias_name) {\r\n    data.alias_full_name = data.alias_name;\r\n} else {\r\n    data.alias_full_name = null;\r\n}",
+    "customCode" : true
+  } ],
+  "getPSDEFormItems" : [ {
+    "id" : "srfupdatedate",
+    "hidden" : true,
+    "dataType" : 5,
+    "getPSAppDEField" : {
+      "name" : "WRITE_DATE",
+      "codeName" : "write_date"
+    }
+  }, {
+    "id" : "srforikey",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfkey",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "id" : "srftempmode",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfuf",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfdeid",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "srfsourcekey",
+    "hidden" : true,
+    "dataType" : 25
+  }, {
+    "id" : "alias_name",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_NAME",
+      "codeName" : "alias_name"
+    }
+  }, {
+    "id" : "alias_domain_name",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_DOMAIN_NAME",
+      "codeName" : "alias_domain_name"
+    }
+  }, {
+    "id" : "alias_status",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_STATUS",
+      "codeName" : "alias_status"
+    }
+  }, {
+    "id" : "alias_model_id",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_MODEL_ID",
+      "codeName" : "alias_model_id"
+    }
+  }, {
+    "id" : "alias_force_thread_id",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_FORCE_THREAD_ID",
+      "codeName" : "alias_force_thread_id"
+    }
+  }, {
+    "id" : "alias_defaults",
+    "dataType" : 21,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_DEFAULTS",
+      "codeName" : "alias_defaults"
+    }
+  }, {
+    "id" : "alias_contact",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_CONTACT",
+      "codeName" : "alias_contact"
+    }
+  }, {
+    "id" : "alias_incoming_local",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_INCOMING_LOCAL",
+      "codeName" : "alias_incoming_local"
+    }
+  }, {
+    "id" : "alias_parent_model_id",
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_PARENT_MODEL_ID",
+      "codeName" : "alias_parent_model_id"
+    }
+  }, {
+    "id" : "alias_parent_thread_id",
+    "dataType" : 9,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_PARENT_THREAD_ID",
+      "codeName" : "alias_parent_thread_id"
+    }
+  }, {
+    "id" : "alias_full_name",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_FULL_NAME",
+      "codeName" : "alias_full_name"
+    }
+  }, {
+    "id" : "alias_domain_id",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ALIAS_DOMAIN_ID",
+      "codeName" : "alias_domain_id"
+    }
+  }, {
+    "id" : "id",
+    "hidden" : true,
+    "dataType" : 25,
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  } ],
+  "getPSDEFormPages" : [ {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "CONTROL.DEFORM.MAIL_ALIAS.MAIN.FORMPAGE.FORMPAGE1"
+    },
+    "caption" : "基本信息",
+    "codeName" : "formpage1",
+    "detailStyle" : "DEFAULT",
+    "detailType" : "FORMPAGE",
+    "name" : "formpage1",
+    "getPSDEFormDetails" : [ {
+      "codeName" : "grouppanel2",
+      "detailStyle" : "DEFAULT",
+      "detailType" : "GROUPPANEL",
+      "name" : "grouppanel2",
+      "getPSDEFormDetails" : [ {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_NAME"
+        },
+        "caption" : "别名",
+        "codeName" : "alias_name",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "NONE",
+        "labelWidth" : 0,
+        "name" : "alias_name",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_NAME",
+          "codeName" : "alias_name"
+        },
+        "getPSDEFormItemUpdate" : {
+          "modelref" : true,
+          "id" : "compute_alias_full_name"
+        },
+        "getPSEditor" : {
+          "cssStyle" : "font-weight: var(--ibiz-font-weight-bold);",
+          "editorType" : "TEXTBOX",
+          "maxLength" : 500,
+          "name" : "alias_name"
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 6,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true
+      }, {
+        "codeName" : "rawitem1",
+        "contentType" : "HTML",
+        "detailStyle" : "DEFAULT",
+        "detailType" : "RAWITEM",
+        "htmlContent" : "<p><strong>@</strong></p>",
+        "name" : "rawitem1",
+        "getPSLayoutPos" : {
+          "colLG" : 1,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "getPSRawItem" : {
+          "content" : "<p><strong>@</strong></p>",
+          "contentType" : "HTML",
+          "name" : "rawitem1",
+          "rawItemHeight" : -1.0,
+          "rawItemWidth" : -1.0
+        },
+        "rawItemHeight" : -1.0,
+        "rawItemWidth" : -1.0,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_DOMAIN_ID"
+        },
+        "caption" : "别名域名称",
+        "codeName" : "alias_domain_name",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "NONE",
+        "labelWidth" : 0,
+        "name" : "alias_domain_name",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_DOMAIN_NAME",
+          "codeName" : "alias_domain_name"
+        },
+        "getPSDEFormItemUpdate" : {
+          "modelref" : true,
+          "id" : "compute_alias_full_name"
+        },
+        "getPSEditor" : {
+          "cssStyle" : "font-weight: var(--ibiz-font-weight-bold);",
+          "editorParams" : {
+            "AC" : "TRUE",
+            "PICKUPVIEW" : "TRUE"
+          },
+          "editorType" : "PICKER",
+          "handlerType" : "PickupText",
+          "name" : "alias_domain_name",
+          "getPSAppDEACMode" : {
+            "modelref" : true,
+            "id" : "Default"
+          },
+          "getPSAppDEDataSet" : {
+            "modelref" : true,
+            "id" : "fetch_default"
+          },
+          "getPSAppDataEntity" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias_domain.json"
+          },
+          "getPSEditorItems" : [ {
+            "name" : "alias_domain_id"
+          } ],
+          "getPickupPSAppView" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_alias_domain_pickup_view.json",
+            "viewType" : "DEPICKUPVIEW"
+          },
+          "valueItemName" : "alias_domain_id",
+          "enableAC" : true,
+          "enablePickupView" : true,
+          "forceSelection" : true,
+          "showTrigger" : true,
+          "singleSelect" : true
+        },
+        "getPSLayoutPos" : {
+          "colLG" : 6,
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "valueItemName" : "alias_domain_id",
+        "allowEmpty" : true
+      } ],
+      "getPSLayout" : {
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "getPSLayoutPos" : {
+        "colLG" : 20,
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "infoGroupMode" : false,
+      "showCaption" : false
+    }, {
+      "codeName" : "grouppanel1",
+      "detailStyle" : "DEFAULT",
+      "detailType" : "GROUPPANEL",
+      "name" : "grouppanel1",
+      "getPSDEFormDetails" : [ {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_STATUS"
+        },
+        "caption" : "别名状态",
+        "codeName" : "alias_status",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 3,
+        "labelPos" : "NONE",
+        "labelWidth" : 0,
+        "name" : "alias_status",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_STATUS",
+          "codeName" : "alias_status"
+        },
+        "getPSEditor" : {
+          "editorType" : "SPAN",
+          "name" : "alias_status",
+          "getPSAppCodeList" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__mail_alias_alias_status.json"
+          },
+          "enableLinkView" : false
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "convertToCodeItemText" : true
+      } ],
+      "getPSLayout" : {
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "getPSLayoutPos" : {
+        "colLG" : 4,
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "infoGroupMode" : false,
+      "showCaption" : false
+    }, {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "CONTROL.DEFORM.MAIL_ALIAS.MAIN.GROUPPANEL.GROUP1"
+      },
+      "caption" : "EMail别名基本信息",
+      "codeName" : "group1",
+      "detailStyle" : "DEFAULT",
+      "detailType" : "GROUPPANEL",
+      "name" : "group1",
+      "getPSDEFormDetails" : [ {
+        "caption" : "模型别名",
+        "codeName" : "alias_model_id",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "alias_model_id",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_MODEL_ID",
+          "codeName" : "alias_model_id"
+        },
+        "getPSEditor" : {
+          "editorType" : "DROPDOWNLIST",
+          "name" : "alias_model_id",
+          "getPSAppCodeList" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_model.json"
+          },
+          "singleSelect" : true
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : false,
+        "needCodeListConfig" : true,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_FORCE_THREAD_ID"
+        },
+        "caption" : "记录线索ID",
+        "codeName" : "alias_force_thread_id",
+        "dataType" : 9,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "alias_force_thread_id",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_FORCE_THREAD_ID",
+          "codeName" : "alias_force_thread_id"
+        },
+        "getPSEditor" : {
+          "editorType" : "TEXTBOX",
+          "name" : "alias_force_thread_id"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_DEFAULTS"
+        },
+        "caption" : "默认值",
+        "codeName" : "alias_defaults",
+        "dataType" : 21,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "itemHeight" : 80.0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "alias_defaults",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_DEFAULTS",
+          "codeName" : "alias_defaults"
+        },
+        "getPSEditor" : {
+          "editorHeight" : 80.0,
+          "editorParams" : {
+            "HEIGHT" : "200"
+          },
+          "editorType" : "TEXTAREA_10",
+          "maxLength" : 1048576,
+          "name" : "alias_defaults",
+          "showMaxLength" : true
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : false,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_CONTACT"
+        },
+        "caption" : "别名授权于",
+        "codeName" : "alias_contact",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "alias_contact",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_CONTACT",
+          "codeName" : "alias_contact"
+        },
+        "getPSEditor" : {
+          "editorType" : "DROPDOWNLIST",
+          "name" : "alias_contact",
+          "getPSAppCodeList" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/mail__mail_alias_alias_contact.json"
+          },
+          "singleSelect" : true
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : false,
+        "needCodeListConfig" : true,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_INCOMING_LOCAL"
+        },
+        "caption" : "收件时检测本地的别名域",
+        "codeName" : "alias_incoming_local",
+        "dataType" : 9,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 166,
+        "name" : "alias_incoming_local",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_INCOMING_LOCAL",
+          "codeName" : "alias_incoming_local"
+        },
+        "getPSEditor" : {
+          "editorType" : "CHECKBOX",
+          "name" : "alias_incoming_local"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "showCaption" : true
+      }, {
+        "caption" : "上级模型",
+        "codeName" : "alias_parent_model_id",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "alias_parent_model_id",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_PARENT_MODEL_ID",
+          "codeName" : "alias_parent_model_id"
+        },
+        "getPSEditor" : {
+          "editorType" : "DROPDOWNLIST",
+          "name" : "alias_parent_model_id",
+          "getPSAppCodeList" : {
+            "modelref" : true,
+            "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base__ir_model.json"
+          },
+          "singleSelect" : true
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "needCodeListConfig" : true,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_PARENT_THREAD_ID"
+        },
+        "caption" : "上级记录ID",
+        "codeName" : "alias_parent_thread_id",
+        "dataType" : 9,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "alias_parent_thread_id",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_PARENT_THREAD_ID",
+          "codeName" : "alias_parent_thread_id"
+        },
+        "getPSEditor" : {
+          "editorType" : "TEXTBOX",
+          "name" : "alias_parent_thread_id"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "showCaption" : true
+      }, {
+        "getCapPSLanguageRes" : {
+          "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_FULL_NAME"
+        },
+        "caption" : "别名电子邮件",
+        "codeName" : "alias_full_name",
+        "dataType" : 25,
+        "detailStyle" : "DEFAULT",
+        "detailType" : "FORMITEM",
+        "enableCond" : 3,
+        "ignoreInput" : 0,
+        "labelPos" : "LEFT",
+        "labelWidth" : 130,
+        "name" : "alias_full_name",
+        "noPrivDisplayMode" : 1,
+        "getPSAppDEField" : {
+          "name" : "ALIAS_FULL_NAME",
+          "codeName" : "alias_full_name"
+        },
+        "getPSEditor" : {
+          "editorType" : "HIDDEN",
+          "name" : "alias_full_name"
+        },
+        "getPSLayoutPos" : {
+          "colMD" : 24,
+          "layout" : "TABLE_24COL"
+        },
+        "allowEmpty" : true,
+        "hidden" : true
+      } ],
+      "getPSLayout" : {
+        "childColMD" : 24,
+        "columnCount" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "infoGroupMode" : false,
+      "showCaption" : false
+    }, {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ALIAS_DOMAIN_ID"
+      },
+      "caption" : "别名域",
+      "codeName" : "alias_domain_id",
+      "dataType" : 25,
+      "detailStyle" : "DEFAULT",
+      "detailType" : "FORMITEM",
+      "enableCond" : 3,
+      "ignoreInput" : 0,
+      "labelPos" : "LEFT",
+      "labelWidth" : 130,
+      "name" : "alias_domain_id",
+      "noPrivDisplayMode" : 1,
+      "getPSAppDEField" : {
+        "name" : "ALIAS_DOMAIN_ID",
+        "codeName" : "alias_domain_id"
+      },
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "alias_domain_id"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "allowEmpty" : true,
+      "hidden" : true
+    }, {
+      "getCapPSLanguageRes" : {
+        "lanResTag" : "DEF.LNAME.MAIL_ALIAS.ID"
+      },
+      "caption" : "标识",
+      "codeName" : "id",
+      "dataType" : 25,
+      "detailStyle" : "DEFAULT",
+      "detailType" : "FORMITEM",
+      "enableCond" : 3,
+      "ignoreInput" : 0,
+      "labelPos" : "LEFT",
+      "labelWidth" : 130,
+      "name" : "id",
+      "noPrivDisplayMode" : 1,
+      "getPSAppDEField" : {
+        "name" : "ID",
+        "codeName" : "id"
+      },
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "id"
+      },
+      "getPSLayoutPos" : {
+        "colMD" : 24,
+        "layout" : "TABLE_24COL"
+      },
+      "allowEmpty" : true,
+      "hidden" : true
+    } ],
+    "getPSLayout" : {
+      "childColMD" : 24,
+      "columnCount" : 24,
+      "layout" : "TABLE_24COL"
+    },
+    "infoGroupMode" : false
+  } ],
+  "getPSLayout" : {
+    "childColMD" : 24,
+    "columnCount" : 24,
+    "layout" : "TABLE_24COL"
+  },
+  "getRemovePSControlAction" : {
+    "modelref" : true,
+    "id" : "remove",
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias.json"
+    }
+  },
+  "tabHeaderPos" : "TOP",
+  "getUpdatePSControlAction" : {
+    "modelref" : true,
+    "id" : "update",
+    "actionName" : "Update",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "UPDATE",
+    "name" : "update",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "update"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_alias.json"
+    }
+  },
+  "noTabHeader" : true,
+  "modelid" : "c231336a084710e6d8b022b7952083ad",
+  "modeltype" : "PSDEFORM_EDITFORM"
+}

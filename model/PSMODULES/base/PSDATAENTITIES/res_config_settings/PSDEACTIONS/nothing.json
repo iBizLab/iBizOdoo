@@ -1,0 +1,27 @@
+{
+  "actionHolder" : 2,
+  "actionMode" : "CUSTOM",
+  "actionType" : "DELOGIC",
+  "codeName" : "nothing",
+  "dataAccessAction" : "CREATE",
+  "dynaModelFilePath" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDEACTIONS/nothing.json",
+  "logicName" : "nothing",
+  "name" : "nothing",
+  "getPSDEActionInput" : {
+    "name" : "NothingInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "res_config_settings_dto"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "NothingResult",
+    "type" : "VOID"
+  },
+  "getPSDELogic" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base/PSDATAENTITIES/res_config_settings/PSDELOGICS/nothing.json"
+  },
+  "enableBackend" : false
+}

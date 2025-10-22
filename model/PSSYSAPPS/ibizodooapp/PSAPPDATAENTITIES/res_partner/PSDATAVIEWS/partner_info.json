@@ -1,0 +1,781 @@
+{
+  "cardColLG" : 6,
+  "cardColMD" : 8,
+  "cardColSM" : 12,
+  "cardColXS" : 12,
+  "cardHeight" : 150,
+  "codeName" : "partner_info",
+  "controlType" : "DATAVIEW",
+  "getCreatePSControlAction" : {
+    "modelref" : true,
+    "id" : "create",
+    "actionName" : "Create",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "CREATE",
+    "name" : "create",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "create"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+    }
+  },
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner/PSDATAVIEWS/partner_info.json",
+  "getFetchPSControlAction" : {
+    "modelref" : true,
+    "id" : "fetch",
+    "actionType" : "DEDATASET",
+    "name" : "fetch",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "fetch_default"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+    }
+  },
+  "getGetPSControlAction" : {
+    "modelref" : true,
+    "id" : "load",
+    "actionName" : "Get",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "READ",
+    "name" : "load",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "get"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+    }
+  },
+  "groupMode" : "NONE",
+  "getItemPSLayoutPanel" : {
+    "getAllPSPanelFields" : [ {
+      "id" : "personal_info",
+      "viewFieldName" : "NAME"
+    }, {
+      "id" : "avatar",
+      "hidden" : true,
+      "viewFieldName" : "avatar"
+    }, {
+      "id" : "display_name",
+      "viewFieldName" : "DISPLAY_NAME"
+    }, {
+      "id" : "function",
+      "viewFieldName" : "FUNCTION"
+    }, {
+      "id" : "parent_name",
+      "viewFieldName" : "PARENT_NAME"
+    }, {
+      "id" : "city",
+      "viewFieldName" : "CITY"
+    }, {
+      "id" : "country_name",
+      "viewFieldName" : "COUNTRY_NAME"
+    }, {
+      "id" : "email",
+      "viewFieldName" : "EMAIL"
+    }, {
+      "id" : "is_company",
+      "hidden" : true,
+      "viewFieldName" : "IS_COMPANY"
+    } ],
+    "codeName" : "partner_info",
+    "controlType" : "PANEL",
+    "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner/PSPANELS/partner_info.json",
+    "layoutMode" : "FLEX",
+    "logicName" : "partner_info卡片视图",
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+    },
+    "getPSControlParam" : { },
+    "getPSLayout" : {
+      "layout" : "FLEX"
+    },
+    "getRootPSPanelItems" : [ {
+      "caption" : "容器",
+      "itemStyle" : "DEFAULT",
+      "itemType" : "CONTAINER",
+      "name" : "container",
+      "getPSLayout" : {
+        "align" : "space-between",
+        "dir" : "row",
+        "layout" : "FLEX"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX"
+      },
+      "getPSPanelItems" : [ {
+        "caption" : "容器",
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "container3",
+        "getPSLayout" : {
+          "dir" : "row",
+          "layout" : "FLEX"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "layout" : "FLEX"
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "容器",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "container1",
+          "getPSLayout" : {
+            "layout" : "FLEX"
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX",
+            "shrink" : 0
+          },
+          "getPSPanelItems" : [ {
+            "caption" : "文本(动态)",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "FIELD",
+            "name" : "personal_info",
+            "getPSEditor" : {
+              "editorParams" : {
+                "SHOWNAMETEXT" : "false",
+                "avatarfield" : "avatar"
+              },
+              "editorStyle" : "ODOO_PERSONNEL_INFO",
+              "editorType" : "SPAN",
+              "name" : "personal_info",
+              "getPSSysPFPlugin" : {
+                "pluginType" : "EDITOR_CUSTOMSTYLE",
+                "pluginCode" : "ODOO_PERSONNEL_INFO",
+                "runtimeObject" : true
+              },
+              "predefinedType" : "FIELD_TEXT_DYNAMIC",
+              "renderMode" : "TEXT_DYNAMIC",
+              "enableLinkView" : false
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "viewFieldName" : "NAME"
+          }, {
+            "caption" : "文本(动态)",
+            "itemType" : "FIELD",
+            "name" : "avatar",
+            "getPSEditor" : {
+              "editorType" : "HIDDEN",
+              "name" : "avatar",
+              "predefinedType" : "FIELD_TEXT_DYNAMIC"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "viewFieldName" : "avatar",
+            "hidden" : true
+          } ]
+        }, {
+          "caption" : "容器",
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "container2",
+          "getPSLayout" : {
+            "dir" : "column",
+            "layout" : "FLEX"
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "layout" : "FLEX",
+            "spacingLeft" : "OUTERSMALL"
+          },
+          "getPSPanelItems" : [ {
+            "caption" : "容器",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container8",
+            "getPSLayout" : {
+              "dir" : "row",
+              "layout" : "FLEX"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX"
+            },
+            "getPSPanelItems" : [ {
+              "caption" : "文本(动态)",
+              "cssStyle" : "font-weight: var(--ibiz-font-weight-bold);",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "display_name",
+              "getPSEditor" : {
+                "editorType" : "SPAN",
+                "name" : "display_name",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "DISPLAY_NAME"
+            } ]
+          }, {
+            "caption" : "容器",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container6",
+            "getPSLayout" : {
+              "dir" : "row",
+              "layout" : "FLEX"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX",
+              "spacingTop" : "OUTERSMALL"
+            },
+            "getPSPanelItemGroupLogics" : [ {
+              "groupOP" : "AND",
+              "logicCat" : "PANELVISIBLE",
+              "logicType" : "GROUP",
+              "getPSPanelItemLogics" : [ {
+                "condOp" : "EQ",
+                "dstModelField" : "IS_COMPANY",
+                "logicType" : "SINGLE",
+                "name" : "IS_COMPANY 等于(=) 0",
+                "value" : "0"
+              }, {
+                "condOp" : "ISNOTNULL",
+                "dstModelField" : "PARENT_NAME",
+                "logicType" : "SINGLE",
+                "name" : "PARENT_NAME 值不为空(NotNil)"
+              } ],
+              "relatedItemNames" : [ "is_company", "parent_name" ],
+              "notMode" : false
+            } ],
+            "getPSPanelItems" : [ {
+              "caption" : "文本(动态)",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "function",
+              "getPSEditor" : {
+                "editorType" : "SPAN",
+                "name" : "function",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "FUNCTION"
+            }, {
+              "caption" : "在",
+              "contentType" : "RAW",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "RAWITEM",
+              "name" : "static_label",
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "getPSRawItem" : {
+                "caption" : "在",
+                "contentType" : "RAW",
+                "name" : "static_label",
+                "predefinedType" : "STATIC_LABEL",
+                "renderMode" : "PARAGRAPH"
+              },
+              "rawContent" : "在",
+              "showCaption" : true
+            }, {
+              "caption" : "文本(动态)",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "parent_name",
+              "getPSEditor" : {
+                "editorType" : "SPAN",
+                "name" : "parent_name",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "PARENT_NAME"
+            } ]
+          }, {
+            "caption" : "容器",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container7",
+            "getPSLayout" : {
+              "dir" : "row",
+              "layout" : "FLEX"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX",
+              "spacingTop" : "OUTERSMALL"
+            },
+            "getPSPanelItemGroupLogics" : [ {
+              "groupOP" : "AND",
+              "logicCat" : "PANELVISIBLE",
+              "logicType" : "GROUP",
+              "getPSPanelItemLogics" : [ {
+                "condOp" : "ISNOTNULL",
+                "dstModelField" : "COUNTRY_NAME",
+                "logicType" : "SINGLE",
+                "name" : "COUNTRY_NAME 值不为空(NotNil)"
+              } ],
+              "relatedItemNames" : [ "country_name" ],
+              "notMode" : false
+            } ],
+            "getPSPanelItems" : [ {
+              "caption" : "文本(动态)",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "city",
+              "getPSEditor" : {
+                "editorType" : "SPAN",
+                "name" : "city",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "CITY"
+            }, {
+              "caption" : "逗号",
+              "contentType" : "RAW",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "RAWITEM",
+              "name" : "static_label1",
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "getPSRawItem" : {
+                "caption" : "，",
+                "contentType" : "RAW",
+                "name" : "static_label1",
+                "predefinedType" : "STATIC_LABEL",
+                "renderMode" : "PARAGRAPH"
+              },
+              "rawContent" : "，",
+              "showCaption" : true
+            }, {
+              "caption" : "文本(动态)",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "country_name",
+              "getPSEditor" : {
+                "editorType" : "SPAN",
+                "name" : "country_name",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "COUNTRY_NAME"
+            } ]
+          }, {
+            "caption" : "容器",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "CONTAINER",
+            "name" : "container9",
+            "getPSLayout" : {
+              "layout" : "FLEX"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX",
+              "spacingTop" : "OUTERSMALL"
+            },
+            "getPSPanelItems" : [ {
+              "caption" : "文本(动态)",
+              "itemStyle" : "DEFAULT",
+              "itemType" : "FIELD",
+              "name" : "email",
+              "getPSEditor" : {
+                "editorType" : "SPAN",
+                "name" : "email",
+                "predefinedType" : "FIELD_TEXT_DYNAMIC",
+                "renderMode" : "TEXT_DYNAMIC",
+                "enableLinkView" : false
+              },
+              "getPSLayoutPos" : {
+                "grow" : -1,
+                "layout" : "FLEX"
+              },
+              "viewFieldName" : "EMAIL"
+            } ]
+          } ]
+        } ],
+        "getPSSysCss" : {
+          "cssName" : "car-image"
+        }
+      }, {
+        "caption" : "容器",
+        "itemStyle" : "DEFAULT",
+        "itemType" : "CONTAINER",
+        "name" : "container5",
+        "getPSLayout" : {
+          "align" : "space-between",
+          "dir" : "column",
+          "layout" : "FLEX"
+        },
+        "getPSLayoutPos" : {
+          "grow" : -1,
+          "layout" : "FLEX"
+        },
+        "getPSPanelItems" : [ {
+          "caption" : "容器",
+          "contentHeight" : 69.0,
+          "height" : 69.0,
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "container10",
+          "getPSLayout" : {
+            "layout" : "FLEX"
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "height" : 69,
+            "heightMode" : "PERCENTAGE",
+            "layout" : "FLEX"
+          }
+        }, {
+          "caption" : "容器",
+          "contentHeight" : 31.0,
+          "height" : 31.0,
+          "itemStyle" : "DEFAULT",
+          "itemType" : "CONTAINER",
+          "name" : "container4",
+          "getPSLayout" : {
+            "layout" : "FLEX"
+          },
+          "getPSLayoutPos" : {
+            "grow" : -1,
+            "height" : 31,
+            "heightMode" : "PERCENTAGE",
+            "layout" : "FLEX"
+          },
+          "getPSPanelItems" : [ {
+            "actionType" : "UIACTION",
+            "buttonStyle" : "DEFAULT",
+            "caption" : "显示活动",
+            "itemStyle" : "DEFAULT",
+            "itemType" : "BUTTON",
+            "name" : "button_calluilogic",
+            "getPSAppViewUIAction" : {
+              "modelref" : true,
+              "id" : "itemlayoutpanel_button_calluilogic"
+            },
+            "getPSLayoutPos" : {
+              "grow" : -1,
+              "layout" : "FLEX",
+              "shrink" : 0
+            },
+            "getPSSysCss" : {
+              "cssName" : "car-activity"
+            },
+            "getPSSysImage" : {
+              "glyph" : "xf017@FontAwesome",
+              "cssClass" : "fa fa-clock-o"
+            },
+            "getPSUIAction" : {
+              "actionTarget" : "NONE",
+              "caption" : "安排联系人活动",
+              "codeName" : "open_partner_act_view",
+              "getFrontPSAppView" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDEVIEWS/mail_activity_emp_schedule_act_view.json",
+                "viewType" : "DELISTVIEW"
+              },
+              "frontProcessType" : "WIZARD",
+              "fullCodeName" : "mail_activity_open_partner_act_view",
+              "name" : "打开安排联系人活动视图",
+              "getPSAppDataEntity" : {
+                "modelref" : true,
+                "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/mail_activity.json"
+              },
+              "getPSNavigateContexts" : [ {
+                "key" : "MAIL_ACTIVITY_MIXIN",
+                "name" : "MAIL_ACTIVITY_MIXIN",
+                "value" : "id",
+                "rawValue" : false
+              }, {
+                "key" : "SRFMODELNAME",
+                "name" : "SRFMODELNAME",
+                "value" : "res_partner",
+                "rawValue" : true
+              } ],
+              "getPSNavigateParams" : [ {
+                "key" : "n_res_model_eq",
+                "name" : "n_res_model_eq",
+                "value" : "res_partner",
+                "rawValue" : true
+              }, {
+                "key" : "n_res_id_eq",
+                "name" : "n_res_id_eq",
+                "value" : "id",
+                "rawValue" : false
+              } ],
+              "uIActionMode" : "FRONT",
+              "uIActionTag" : "open_partner_act_view",
+              "uIActionType" : "DEUIACTION",
+              "id" : "open_partner_act_view@mail_activity"
+            },
+            "renderMode" : "LINK",
+            "tooltip" : "显示活动",
+            "uIActionTarget" : "NONE"
+          } ]
+        } ]
+      } ]
+    }, {
+      "caption" : "文本(动态)",
+      "itemType" : "FIELD",
+      "name" : "is_company",
+      "getPSEditor" : {
+        "editorType" : "HIDDEN",
+        "name" : "is_company",
+        "predefinedType" : "FIELD_TEXT_DYNAMIC"
+      },
+      "getPSLayoutPos" : {
+        "grow" : -1,
+        "layout" : "FLEX"
+      },
+      "viewFieldName" : "IS_COMPANY",
+      "hidden" : true
+    } ],
+    "layoutPanel" : true,
+    "name" : "itemlayoutpanel",
+    "modelid" : "1fe5d4e5822b6ad53d43fd82167c5e74",
+    "modeltype" : "PSSYSVIEWPANEL"
+  },
+  "logicName" : "联系人卡片",
+  "minorSortDir" : "DESC",
+  "getMinorSortPSAppDEField" : {
+    "name" : "WRITE_DATE",
+    "codeName" : "write_date"
+  },
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+  },
+  "getPSDEDataViewDataItems" : [ {
+    "dataType" : 9,
+    "getFrontPSCodeList" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/YesNo.json"
+    },
+    "name" : "is_company"
+  }, {
+    "dataType" : 25,
+    "name" : "display_name"
+  }, {
+    "dataType" : 25,
+    "name" : "name"
+  }, {
+    "dataType" : 25,
+    "name" : "email"
+  }, {
+    "dataType" : 25,
+    "name" : "srfkey",
+    "getPSAppDEField" : {
+      "name" : "ID",
+      "codeName" : "id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "srfmajortext",
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "commercial_partner_id",
+    "getPSAppDEField" : {
+      "name" : "COMMERCIAL_PARTNER_ID",
+      "codeName" : "commercial_partner_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "company_id",
+    "getPSAppDEField" : {
+      "name" : "COMPANY_ID",
+      "codeName" : "company_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "user_id",
+    "getPSAppDEField" : {
+      "name" : "USER_ID",
+      "codeName" : "user_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "buyer_id",
+    "getPSAppDEField" : {
+      "name" : "BUYER_ID",
+      "codeName" : "buyer_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "country_id",
+    "getPSAppDEField" : {
+      "name" : "COUNTRY_ID",
+      "codeName" : "country_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "parent_id",
+    "getPSAppDEField" : {
+      "name" : "PARENT_ID",
+      "codeName" : "parent_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "state_id",
+    "getPSAppDEField" : {
+      "name" : "STATE_ID",
+      "codeName" : "state_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "industry_id",
+    "getPSAppDEField" : {
+      "name" : "INDUSTRY_ID",
+      "codeName" : "industry_id"
+    }
+  }, {
+    "dataType" : 25,
+    "name" : "property_purchase_currency_id",
+    "getPSAppDEField" : {
+      "name" : "PROPERTY_PURCHASE_CURRENCY_ID",
+      "codeName" : "property_purchase_currency_id"
+    }
+  } ],
+  "getPSDEDataViewItems" : [ {
+    "cLConvertMode" : "FRONT",
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RES_PARTNER.IS_COMPANY"
+    },
+    "caption" : "是公司",
+    "dataItemName" : "is_company",
+    "itemType" : "DATAITEM",
+    "name" : "IS_COMPANY",
+    "getPSAppDEField" : {
+      "name" : "IS_COMPANY",
+      "codeName" : "is_company"
+    },
+    "getPSCodeList" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/YesNo.json"
+    },
+    "enableSort" : true
+  }, {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RES_PARTNER.DISPLAY_NAME"
+    },
+    "caption" : "显示名称",
+    "dataItemName" : "display_name",
+    "itemType" : "DATAITEM",
+    "name" : "DISPLAY_NAME",
+    "getPSAppDEField" : {
+      "name" : "DISPLAY_NAME",
+      "codeName" : "display_name"
+    },
+    "enableSort" : true
+  }, {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RES_PARTNER.NAME"
+    },
+    "caption" : "名称",
+    "dataItemName" : "name",
+    "itemType" : "DATAITEM",
+    "name" : "NAME",
+    "getPSAppDEField" : {
+      "name" : "NAME",
+      "codeName" : "name"
+    },
+    "enableSort" : true
+  }, {
+    "getCapPSLanguageRes" : {
+      "lanResTag" : "DEF.LNAME.RES_PARTNER.EMAIL"
+    },
+    "caption" : "邮箱",
+    "dataItemName" : "email",
+    "itemType" : "DATAITEM",
+    "name" : "EMAIL",
+    "getPSAppDEField" : {
+      "name" : "EMAIL",
+      "codeName" : "email"
+    },
+    "enableSort" : true
+  } ],
+  "pagingMode" : 1,
+  "pagingSize" : 20,
+  "getRemovePSControlAction" : {
+    "modelref" : true,
+    "id" : "remove",
+    "actionName" : "Remove",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "DELETE",
+    "name" : "remove",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "remove"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+    }
+  },
+  "getUpdatePSControlAction" : {
+    "modelref" : true,
+    "id" : "update",
+    "actionName" : "Update",
+    "actionType" : "DEACTION",
+    "dataAccessAction" : "UPDATE",
+    "name" : "update",
+    "getPSAppDEMethod" : {
+      "modelref" : true,
+      "id" : "update"
+    },
+    "getPSAppDataEntity" : {
+      "modelref" : true,
+      "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/res_partner.json"
+    }
+  },
+  "hasWFDataItems" : false,
+  "appendDEItems" : true,
+  "enableCardEdit" : false,
+  "enableCardEditGroup" : false,
+  "enableCardEditOrder" : false,
+  "enableCardNew" : false,
+  "enableGroup" : false,
+  "enablePagingBar" : true,
+  "noSort" : false,
+  "singleSelect" : true,
+  "modelid" : "1fe5d4e5822b6ad53d43fd82167c5e74",
+  "modeltype" : "PSDEDATAVIEW"
+}

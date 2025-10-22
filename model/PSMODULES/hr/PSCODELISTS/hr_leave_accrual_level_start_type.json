@@ -1,0 +1,33 @@
+{
+  "codeListTag" : "hr__hr_leave_accrual_level_start_type",
+  "codeListType" : "STATIC",
+  "codeName" : "hr_leave_accrual_level_start_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/hr/PSCODELISTS/hr_leave_accrual_level_start_type.json",
+  "emptyText" : "未定义",
+  "name" : "null",
+  "getPSCodeItems" : [ {
+    "codeName" : "day",
+    "text" : "天",
+    "value" : "day"
+  }, {
+    "codeName" : "month",
+    "text" : "月",
+    "value" : "month"
+  }, {
+    "codeName" : "year",
+    "text" : "年",
+    "value" : "year"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

@@ -1,0 +1,27 @@
+{
+  "codeName" : "first_approver",
+  "dERType" : "DER1N",
+  "dynaModelFilePath" : "PSMODULES/hr/PSDATAENTITIES/hr_leave/PSDERS/DER1N_HR_LEAVE_HR_EMPLOYEE_FIRST_APPROVER_ID.json",
+  "fKeyName" : "F91BA71AF9478B9089",
+  "getMajorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_employee.json"
+  },
+  "masterOrder" : -1,
+  "masterRS" : 0,
+  "getMinorPSDataEntity" : {
+    "modelref" : true,
+    "path" : "PSMODULES/hr/PSDATAENTITIES/hr_leave.json"
+  },
+  "name" : "DER1N_HR_LEAVE_HR_EMPLOYEE_FIRST_APPROVER_ID",
+  "orderValue" : 100,
+  "getPSPickupDEField" : {
+    "name" : "FIRST_APPROVER_ID",
+    "codeName" : "first_approver_id"
+  },
+  "pickupDEFName" : "FIRST_APPROVER_ID",
+  "removeActionType" : 2,
+  "removeOrder" : 0,
+  "serviceCodeName" : "first_approver",
+  "enableFKey" : true
+}

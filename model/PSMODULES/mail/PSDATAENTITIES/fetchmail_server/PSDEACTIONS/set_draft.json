@@ -1,0 +1,27 @@
+{
+  "actionHolder" : 1,
+  "actionMode" : "CUSTOM",
+  "actionType" : "DELOGIC",
+  "codeName" : "set_draft",
+  "dataAccessAction" : "UPDATE",
+  "dynaModelFilePath" : "PSMODULES/mail/PSDATAENTITIES/fetchmail_server/PSDEACTIONS/set_draft.json",
+  "logicName" : "重置确认",
+  "name" : "set_draft",
+  "getPSDEActionInput" : {
+    "name" : "Set_draftInput",
+    "getPSDEMethodDTO" : {
+      "modelref" : true,
+      "id" : "fetchmail_server_dto"
+    },
+    "type" : "DTO"
+  },
+  "getPSDEActionReturn" : {
+    "name" : "Set_draftResult",
+    "type" : "VOID"
+  },
+  "getPSDELogic" : {
+    "modelref" : true,
+    "path" : "PSMODULES/mail/PSDATAENTITIES/fetchmail_server/PSDELOGICS/set_draft.json"
+  },
+  "enableFront" : false
+}

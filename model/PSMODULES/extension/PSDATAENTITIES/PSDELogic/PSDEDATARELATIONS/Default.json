@@ -1,0 +1,9 @@
+{
+  "codeName" : "Default",
+  "dynaModelFilePath" : "PSMODULES/extension/PSDATAENTITIES/PSDELogic/PSDEDATARELATIONS/Default.json",
+  "getFormCapPSLanguageRes" : {
+    "lanResTag" : "DE.LNAME.PSDELOGIC"
+  },
+  "formCaption" : "实体处理逻辑",
+  "name" : "实体处理逻辑默认关系界面组"
+}

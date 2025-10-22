@@ -1,0 +1,79 @@
+{
+  "dBType" : "MYSQL5",
+  "name" : "MySQL5",
+  "getPSDEDataQueryCodeExps" : [ {
+    "expression" : "t1.`ACTIVE`",
+    "name" : "ACTIVE"
+  }, {
+    "expression" : "t1.`AVAILABILITY`",
+    "name" : "AVAILABILITY"
+  }, {
+    "expression" : "t1.`COLOR`",
+    "name" : "COLOR"
+  }, {
+    "expression" : "t1.`COMPANY_ID`",
+    "name" : "COMPANY_ID"
+  }, {
+    "expression" : "t1.`CREATE_DATE`",
+    "name" : "CREATE_DATE"
+  }, {
+    "expression" : "t1.`CREATE_UID`",
+    "name" : "CREATE_UID"
+  }, {
+    "expression" : "t1.`EMAIL_CC`",
+    "name" : "EMAIL_CC"
+  }, {
+    "expression" : "t1.`EMAIL_FROM`",
+    "name" : "EMAIL_FROM"
+  }, {
+    "expression" : "t1.`EMAIL_NORMALIZED`",
+    "name" : "EMAIL_NORMALIZED"
+  }, {
+    "expression" : "t1.`EMPLOYEE_ID`",
+    "name" : "EMPLOYEE_ID"
+  }, {
+    "expression" : "t1.`ID`",
+    "name" : "ID"
+  }, {
+    "expression" : "t1.`LINKEDIN_PROFILE`",
+    "name" : "LINKEDIN_PROFILE"
+  }, {
+    "expression" : "t1.`MESSAGE_BOUNCE`",
+    "name" : "MESSAGE_BOUNCE"
+  }, {
+    "expression" : "t1.`MESSAGE_MAIN_ATTACHMENT_ID`",
+    "name" : "MESSAGE_MAIN_ATTACHMENT_ID"
+  }, {
+    "expression" : "t1.`PARTNER_ID`",
+    "name" : "PARTNER_ID"
+  }, {
+    "expression" : "t1.`PARTNER_NAME`",
+    "name" : "PARTNER_NAME"
+  }, {
+    "expression" : "t1.`PARTNER_PHONE`",
+    "name" : "PARTNER_PHONE"
+  }, {
+    "expression" : "t1.`PARTNER_PHONE_SANITIZED`",
+    "name" : "PARTNER_PHONE_SANITIZED"
+  }, {
+    "expression" : "t1.`PHONE_SANITIZED`",
+    "name" : "PHONE_SANITIZED"
+  }, {
+    "expression" : "t1.`PRIORITY`",
+    "name" : "PRIORITY"
+  }, {
+    "expression" : "t1.`TYPE_ID`",
+    "name" : "TYPE_ID"
+  }, {
+    "expression" : "t1.`USER_ID`",
+    "name" : "USER_ID"
+  }, {
+    "expression" : "t1.`WRITE_DATE`",
+    "name" : "WRITE_DATE"
+  }, {
+    "expression" : "t1.`WRITE_UID`",
+    "name" : "WRITE_UID"
+  } ],
+  "queryCode" : "SELECT\nt1.`ACTIVE`,\nt1.`AVAILABILITY`,\nt1.`COLOR`,\nt1.`COMPANY_ID`,\nt1.`CREATE_DATE`,\nt1.`CREATE_UID`,\nt1.`EMAIL_CC`,\nt1.`EMAIL_FROM`,\nt1.`EMAIL_NORMALIZED`,\nt1.`EMPLOYEE_ID`,\nt1.`ID`,\nt1.`LINKEDIN_PROFILE`,\nt1.`MESSAGE_BOUNCE`,\nt1.`MESSAGE_MAIN_ATTACHMENT_ID`,\nt1.`PARTNER_ID`,\nt1.`PARTNER_NAME`,\nt1.`PARTNER_PHONE`,\nt1.`PARTNER_PHONE_SANITIZED`,\nt1.`PHONE_SANITIZED`,\nt1.`PRIORITY`,\nt1.`TYPE_ID`,\nt1.`USER_ID`,\nt1.`WRITE_DATE`,\nt1.`WRITE_UID`\nFROM `hr_candidate` t1 \n",
+  "id" : "PSMODULES/hr/PSDATAENTITIES/hr_candidate/PSDEDATAQUERIES/View/PSDEDQCODES/MYSQL5.json"
+}

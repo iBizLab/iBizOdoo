@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "base__ir_actions_server_binding_type",
+  "codeListType" : "STATIC",
+  "codeName" : "ir_actions_server_binding_type",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/ir_actions_server_binding_type.json",
+  "emptyText" : "未定义",
+  "name" : "绑定类型",
+  "getPSCodeItems" : [ {
+    "codeName" : "action",
+    "text" : "动作",
+    "value" : "action"
+  }, {
+    "codeName" : "report",
+    "text" : "报告",
+    "value" : "report"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}

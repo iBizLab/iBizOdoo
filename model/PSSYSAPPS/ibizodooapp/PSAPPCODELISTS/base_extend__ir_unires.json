@@ -1,0 +1,26 @@
+{
+  "codeListTag" : "base_extend__ir_unires",
+  "codeListType" : "DYNAMIC",
+  "codeName" : "base_extend__ir_unires",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSSYSAPPS/ibizodooapp/PSAPPCODELISTS/base_extend__ir_unires.json",
+  "emptyText" : "未定义",
+  "name" : "统一资源",
+  "getPSAppDEDataSet" : {
+    "modelref" : true,
+    "id" : "FetchDefault"
+  },
+  "getPSAppDataEntity" : {
+    "modelref" : true,
+    "path" : "PSSYSAPPS/ibizodooapp/PSAPPDATAENTITIES/ir_unires.json"
+  },
+  "getTextPSAppDEField" : {
+    "name" : "NAME",
+    "codeName" : "name"
+  },
+  "getValuePSAppDEField" : {
+    "name" : "RES_CODE",
+    "codeName" : "res_code"
+  },
+  "enableCache" : true
+}

@@ -1,0 +1,29 @@
+{
+  "codeListTag" : "base__res_config_settings_default_purchase_method",
+  "codeListType" : "STATIC",
+  "codeName" : "res_config_settings_default_purchase_method",
+  "dynaInstMode" : 0,
+  "dynaModelFilePath" : "PSMODULES/base/PSCODELISTS/res_config_settings_default_purchase_method.json",
+  "emptyText" : "未定义",
+  "name" : "账单管理",
+  "getPSCodeItems" : [ {
+    "codeName" : "purchase",
+    "text" : "订购数量",
+    "value" : "purchase"
+  }, {
+    "codeName" : "receive",
+    "text" : "收到数量",
+    "value" : "receive"
+  } ],
+  "getPSSystemModule" : {
+    "modelref" : true,
+    "path" : "PSMODULES/base.json"
+  },
+  "refFlag" : true,
+  "systemTag" : "iBizOdoo",
+  "codeItemValueNumber" : false,
+  "enableCache" : true,
+  "subSysAsCloud" : false,
+  "subSysCodeList" : false,
+  "userScope" : false
+}
